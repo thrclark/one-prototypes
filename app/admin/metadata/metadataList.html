@@ -1,0 +1,49 @@
+<h2>Metadata List</h2>
+<ul class="breadcrumb">
+  <li><a href="#/">Administration</a></li>
+  <li><a href="#/tenants">Tenants</a></li>
+  <li class="active">Metadata List</li>
+</ul>
+<div id="alert_{{$index}}" class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts" ><button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>{{alert.msg}}</div>
+<p><a href="#/metadata/new/{{tenantId}}" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i>&nbsp;New Metadata</a></p>
+<table class="table table-hover table-condensed">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Type</th>
+			<th>URL</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="metadata in metadataList">
+			<td>{{metadata.metadataId}}</td>
+			<td>{{metadata.type}}</td>
+			<td>{{metadata.url}}</td>
+			<td>
+				<a ng-href="#/metadata/{{metadata.metadataId}}" class="btn btn-primary btn-sm">Edit</a>
+				<button ng-click="confirmDelete(metadata)" class="btn btn-danger btn-sm">Delete</button>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div class="modal fade" id="deleteMetadataDialog" tabindex="-1" role="dialog" aria-labelledby="deleteMetadataLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="deleteMetadataLabel">Confirm Metadata Deletion</h4>
+			</div>
+			<div class="modal-body">
+				Are you sure you want to delete the metadata "{{metadataToDelete.metadataId}}"?
+				<br/>
+				{{metadataToDelete.url}}{{metadataToDelete.metadata}}
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+				<button type="button" class="btn btn-success" ng-click="deleteMetadata()">Yes</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

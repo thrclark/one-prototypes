@@ -1,0 +1,27 @@
+<h2>System Parameter</h2>
+<ul class="breadcrumb">
+    <li><a href="#/">Administration</a></li>
+    <li><a href="#/systemParameters">System Parameters</a></li>
+    <li class="active">System Parameter</li>
+</ul>
+<div class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>
+    {{alert.msg}}
+</div>
+
+<form name="systemParameterForm" ng-submit="saveSystemParameter()" validate="errors" novalidate>
+    <fieldset>
+        <div class="row">
+            <div class="form-group col-md-12" ng-class="{'has-error': (systemParameterForm.value.$invalid || systemParameterForm.$serverError.value.$invalid)}">
+                <label for="value" class="control-label">{{systemParameter.name}}<br />
+                <small>{{systemParameter.directions}}</small></label>
+                <div class="controls">
+                    <textarea ng-model="systemParameter.value" name="value" cols="50" rows="5" class="form-control"></textarea>
+                    <p ng-repeat="message in systemParameterForm.$serverError.value.messages" class="text-danger">{{message}}</p>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <button type="submit" class="btn btn-success">Save</button>
+    <a href="#/systemParameters" class="btn btn-danger">Cancel</a>
+</form>

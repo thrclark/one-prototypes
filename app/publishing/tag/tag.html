@@ -1,0 +1,58 @@
+<h2><span ng-show="tag.tagId == null">New</span><span ng-show="tag.tagId != null">Edit</span> Tag</h2>
+<ul class="breadcrumb">
+  <li><a href="#/">Publishing</a></li>
+  <li><a href="#/tags">Tags</a></li>
+  <li class="active"><span ng-show="tag.tagId == null">Create</span><span ng-show="tag.tagId != null">Edit</span> Tag</li>
+</ul>
+<form name="tagForm" ng-submit="saveTag()" validate="errors" novalidate>
+	<fieldset>
+		<div class="row">
+			<div class="col-md-9 form-group" ng-class="{'has-error': (tagForm.name.$invalid || tagForm.$serverError.name.$invalid)}">
+				<label for="text" class="control-label">Tag name</label>
+				<div class="controls">
+					<div class="counter-container">
+						<input type="text" ng-model="tag.name" name="name" required unique="/publish/tag/validateTag" ng-maxlength="100" entity-id="{{tag.tagId}}" class="form-control" popover="The display name of the tag."/>
+						<span class="label pull-right" ng-class="{'label-info':tag.name.length<90, 'label-warning':tag.name.length>=90 && tag.name.length<100, 'label-danger': tag.name.length>=100}">{{100-tag.name.length}}</span>
+                	</div>
+                	<p ng-repeat="(validator, invalid) in tagForm.name.$error" ng-show="invalid && pageData.validationMessages.name[validator]" class="text-danger">{{pageData.validationMessages.name[validator]}}</p>
+					<p ng-repeat="message in tagForm.$serverError.name.messages" class="text-danger">{{message}}</p>
+				</div>
+			</div>
+			<div class="form-group col-md-3">
+            	<label for="isHidden" class="control-label">Tag Visibility</label>
+                <div class="checkbox">
+			    	<label>
+			    		<input type="checkbox" name="isHidden" ng-model="tag.hiddenDefault" ng-true-value="'T'" ng-false-value="'F'" /> Hidden by Default
+			    	</label>
+				</div>
+        	</div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+	                <label for="alias" class="control-label">Alias</label>
+	                <div class="counter-container">
+	                	<input type="text" ng-model="selectedAlias" name="alias" ng-maxlength="100" class="form-control" popover="Optional alternate name to refer to this tag.  Used for improving search results."/>
+	                	<span class="label pull-right" ng-class="{'label-info':selectedAlias.length<90, 'label-warning':selectedAlias.length>=90 && selectedAlias.length<100, 'label-danger': selectedAlias.length>=100}">{{100-selectedAlias.length}}</span>
+                	</div>
+                	<p ng-repeat="(validator, invalid) in tagForm.alias.$error" ng-show="invalid && pageData.validationMessages.alias[validator]" class="text-danger">{{pageData.validationMessages.alias[validator]}}</p>
+	            </div>
+	            <div class="clearfix"></div>
+	            <div class="form-group">
+	                <button class="btn btn-default pull-right" type="button" ng-click="addAlias()">Add</button>
+	                <div class="clearfix"></div>
+	            </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="button-list well">
+	                <button type="button" ng-repeat="alias in tag.aliases" ng-click="removeAlias(alias)" class="btn btn-sm btn-default">
+	                    {{alias.name}}&nbsp;<i class="glyphicon glyphicon-remove"></i>
+	                </button>
+	            </div>
+            </div>
+        </div>
+	</fieldset>
+	<button type="submit" class="btn btn-success" ng-disabled="tagForm.$invalid">Save</button>
+	<a href="#/tags" class="btn btn-danger">Cancel</a>
+</form>

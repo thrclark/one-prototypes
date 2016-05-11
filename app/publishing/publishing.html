@@ -1,0 +1,105 @@
+<h2>Publishing</h2>
+<div class="row">
+	<div class="col-md-12 publishing">
+	
+		<!-- Task Settings -->
+		<div ng-show="tabSelection=='ts'">
+			<a href="#/tasks" class="task wrap">
+				<i class="pull-left glyphicon glyphicon-check" style="color: #088A08"></i>
+				<h4>Maintain Tasks</h4>
+				<small class="text-muted">Add/Edit/Delete tasks</small>
+			</a>
+			<a href="#/featuredTasks" class="task wrap" ng-if="pageData.admin">
+				<i class="pull-left glyphicon glyphicon-certificate" style="color: #0404B4"></i>
+				<h4>Maintain Featured Tasks</h4>
+				<small class="text-muted">Choose which tasks are featured</small>
+			</a>
+			<a href="#/pendingTasks" class="task wrap" ng-if="pageData.admin">
+				<i class="pull-left glyphicon glyphicon-inbox" style="color: #8904B1"></i>
+				<h4>Manage Submitted Tasks</h4>
+				<small class="text-muted">Approve or Decline tasks</small>
+				<div class="badge" ng-if="pageData.pendingTaskCount > 0">{{pageData.pendingTaskCount}}</div>
+			</a>
+			<a href="#/support" class="task wrap" ng-if="pageData.support">
+				<i class="pull-left glyphicon glyphicon-question-sign" style="color: #DF0101"></i>
+				<h4>Task Support</h4>
+				<small class="text-muted">Look up task owners</small>
+			</a>
+			<a href="#/contacts" class="task wrap" ng-if="pageData.admin">
+				<i class="pull-left glyphicon glyphicon-folder-open" style="color: #FAAC58"></i>
+				<h4>Maintain Task Contact Info.</h4>
+				<small class="text-muted">Create, Edit, &amp; Delete Contacts</small>
+			</a>
+			<a href="#/images" class="task wrap" ng-if="pageData.admin">
+				<i class="pull-left glyphicon glyphicon-picture" style="color: #61210B"></i>
+				<h4>Maintain Shared Task Images</h4>
+				<small class="text-muted">Create, Edit, &amp; Delete Images</small>
+			</a>
+		</div>
+		
+		<!-- Filter Settings -->
+		<div ng-show="tabSelection=='fs'">
+			<a href="#/tags" class="task wrap" ng-if="pageData.admin">
+				<i class="pull-left glyphicon glyphicon-tags" style="color: #FE642E"></i>
+				<h4>Maintain Tags</h4>
+			</a>
+			<a href="#/categories" class="task wrap" ng-if="pageData.admin">
+				<i class="pull-left glyphicon glyphicon-folder-open" style="color: #DBA901"></i>
+				<h4>Maintain Categories</h4>
+			</a>
+			<a href="#/roles" class="task wrap" ng-if="pageData.admin">
+				<i class="pull-left glyphicon glyphicon-user" style="color: #0174DF"></i>
+				<h4>Maintain Roles</h4>
+			</a>
+		</div>
+		
+		<!-- Data Settings -->
+		<div ng-show="tabSelection=='ds'">
+			<a href="#/reports" class="task wrap">
+				<i class="pull-left glyphicon glyphicon-exclamation-sign" style="color: #0489B1"></i>
+				<h4>View Flagged Comments</h4>
+			</a>
+			<a href="#/recentComments" class="task wrap">
+				<i class="pull-left glyphicon glyphicon-comment" style="color: #5FB404"></i>
+				<h4>Recent Comments</h4>
+			</a>
+			<a href="#/reviewCommentReplies" class="task wrap">
+				<i class="pull-left glyphicon glyphicon-share-alt flip-horiz" style="color: #8904B1"></i>
+				<h4>Review Comment Replies</h4>
+				<small class="text-muted">Review replies to edited comments</small>
+				<div class="badge" ng-if="pageData.repliesNeedingReview > 0">{{pageData.repliesNeedingReview}}</div>
+			</a>
+			<a href="#/feedback" class="task wrap" ng-if="pageData.feedback">
+				<i class="pull-left glyphicon glyphicon-bullhorn" style="color: #F78181"></i>
+				<h4>View Feedback</h4>
+			</a>
+		</div>
+		
+		<!-- Advanced Settings -->
+		<div ng-show="tabSelection=='as'">
+			<a href="#/tenantSettings" class="task wrap" ng-if="pageData.admin">
+	            <i class="pull-left glyphicon glyphicon-cog" style="color: #DBA901"></i>
+	            <h4>Maintain Settings</h4>
+        	</a>
+        	<a href="#/publishers" class="task wrap" ng-if="pageData.admin">
+				<i class="pull-left glyphicon glyphicon-user" style="color: #FAAC58"></i>
+				<h4>Maintain Publishers</h4>
+			</a>
+			<a href="#/markets" class="task wrap" ng-if="pageData.admin">
+				<i class="pull-left glyphicon glyphicon-home" style="color: #61210B"></i>
+				<h4>Maintain {{pageData.marketsTitle}}</h4>
+			</a>
+			<a href="#/restrict" class="task wrap" ng-if="pageData.admin">
+				<i class="pull-left glyphicon glyphicon-ban-circle" style="color: #DF0101"></i>
+				<h4>Maintain Restricted Users</h4>
+				<small class="text-muted">Control access to comments &amp; ratings</small>
+			</a>
+			<a href="#/resourceImages" class="task wrap" ng-if="pageData.admin">
+	            <i class="pull-left glyphicon glyphicon-header" style="color: #F79F81"></i>
+	            <h4>Maintain Header &amp; Footer</h4>
+	            <small class="text-muted">Create a custom header/footer</small>
+        	</a>
+		</div>
+		
+	</div>
+</div>

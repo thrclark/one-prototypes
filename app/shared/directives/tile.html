@@ -1,0 +1,51 @@
+<div class="task2" ng-mouseenter="setFocused(true)" ng-mouseleave="setFocused(false)" ng-swipe-left="displayTaskMobileMenu(true)" ng-swipe-right="displayTaskMobileMenu(false)">
+	<a ng-href="{{launchUrl}}" target="{{target}}" aria-hidden="true" tabindex="-1" class="task-image">
+		<img draggable="false"
+			ng-src="{{task.phoneHighResolutionImageCdnUrl}}" 
+			ng-src-responsive="[['small', '{{task.phoneHighResolutionImageCdnUrl}}'],
+			        			['small-retina', '{{task.desktopImageCdnUrl}}']]"
+			alt="launch {{task.title + (task.applicationName?'('+task.applicationName+')':'')}}" />
+	</a> <!-- task icon -->
+	<div class="tile-contents-wrapper"> <!-- container for right 2/3 of the tile positioned inline with left margin for image -->
+		<div> <!-- bottom layer with description, and buttons -->
+			<a ng-href="{{launchUrl}}" target="{{target}}" class="description-text"><small ng-bind-html="task.description | truncate:125"></small></a>
+			<div class="bottom-container">
+				<div class="pull-right">
+					<a class="btn btn-xs btn-default details-button" ng-href="{{detailsUrl}}"><i class="glyphicon glyphicon-info-sign text-info"></i>&nbsp;Details<span class="sr-only" ng-bind="' for ' + task.title"></span></a>
+					<button type="button" class="btn btn-default btn-xs favorite-add-button"    ng-hide="task.favorite" ng-click="addSingleFavorite()"    ng-disabled="savePending || taskCollection != null"><i class="glyphicon glyphicon-plus text-success"></i><span class="sr-only" ng-bind="'Add ' + task.title + ' as a '"></span>&nbsp;Favorite</button>
+					<button type="button" class="btn btn-default btn-xs favorite-remove-button" ng-show="task.favorite" ng-click="removeSingleFavorite()" ng-disabled="savePending || taskCollection != null"><i class="glyphicon glyphicon-minus text-danger"></i><span class="sr-only" ng-bind="'Remove ' + task.title + ' as a '"></span>&nbsp;Favorite</button>
+				</div>
+			</div>
+		</div>
+		<a ng-href="{{launchUrl}}" ng-if="!focused" class="top-layer fade-animation" ng-style="mobileMenuPos"> <!-- top layer with title, campus(es), ratings, and live data. disappears on hover -->
+			<h4 class="h5 title-text"><span ng-bind="task.title"></span><span ng-show="!!task.applicationName" ng-bind="' (' + task.applicationName + ')'"></span></h4>
+			<div class="data-container">
+				 <!-- first slide with title, etc. -->
+					<div class="bottom-container">
+						<div class="pull-right">
+							<div class="star-bar">
+			        			<div class="bar" role="presentation" ng-style="widthStyle(task.averageRating*20)" ></div>
+			        			<div class="mask" role="presentation"></div>
+			        			<span class="sr-only" ng-bind="task.ratingCount + ' ratings with an average of ' + (task.averageRating|number:2) + ' stars out of 5'"></span>
+			        		</div>
+			        		<small class="text-muted" aria-hidden="true" ng-bind="'('+task.ratingCount+')'"></small>
+		        		</div>
+						<div class="fade-wrapper">
+				        	<div>
+				        		<p>
+					        		<small class="text-muted" ng-repeat="marketId in task.marketIds" ng-show="task.marketIds.length > 0"><span ng-bind="marketMap[marketId]"></span><span ng-hide="$last">,&nbsp;</span></small>
+					        		<small class="text-muted" ng-show="task.marketIds.length == 0" ng-bind="'All ' + marketsTitle"></small>
+				        		</p>
+				        	</div>
+					        <span class="paragraph-end"></span>
+				        </div>
+	        		</div>
+				
+				<div ng-repeat="dataItem in liveData" ng-show="selectedDataTileIndex == ($index + 1)" class="slide-up-animation fade-animation" style="line-height: 17px; font-size: 12px;">
+					<p ng-repeat="line in dataItem.text track by $index">{{line || '&nbsp;'}}</p>
+				</div>
+			</div>
+		</a>
+	</div>
+	<button type="button" class="remove btn btn-danger btn-xs" ng-if="taskCollection != null" ng-click="remove()"><i class="glyphicon glyphicon-remove"></i><span class="sr-only" ng-bind="'remove task ' + task.title + ' from ' + taskCollection.name"></span></button>
+</div>

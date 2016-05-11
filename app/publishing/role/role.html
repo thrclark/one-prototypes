@@ -1,0 +1,32 @@
+<h2><span ng-show="role.roleId == null">New</span><span ng-show="role.roleId != null">Edit</span> Role</h2>
+<ul class="breadcrumb">
+  <li><a href="#/">Publishing</a></li>
+  <li><a href="#/roles">Roles</a></li>
+  <li class="active"><span ng-show="role.roleId == null">Create</span><span ng-show="role.roleId != null">Edit</span> Role</li>
+</ul>
+<form name="roleForm" ng-submit="saveRole()" validate="errors" novalidate>
+	<fieldset>
+		<div class="row">
+			<div class="form-group col-md-6" ng-class="{'has-error': (roleForm.name.$invalid || roleForm.$serverError.name.$invalid)}">
+				<label for="name" class="control-label">Name</label>
+				<div class="counter-container">
+					<input type="text" name="name" ng-model="role.name" required ng-maxlength="2000" class="form-control" unique="/publish/role/validateName" entity-id="{{role.roleId}}"  popover="Display name of the role."/>
+					<span class="label pull-right" ng-class="{'label-info':role.name.length<1900, 'label-warning':role.name.length>=1900 && role.name.length<2000, 'label-danger': role.name.length>=2000}">{{2000-role.name.length}}</span>
+               	</div>
+               	<p ng-repeat="(validator, invalid) in roleForm.name.$error" ng-show="invalid && pageData.validationMessages.name[validator]" class="text-danger">{{pageData.validationMessages.name[validator]}}</p>
+				<p ng-repeat="message in roleForm.$serverError.name.messages" class="text-danger">{{message}}</p>
+			</div>
+			<div class="form-group col-md-6" ng-class="{'has-error': (roleForm.uniqueKey.$invalid || roleForm.$serverError.uniqueKey.$invalid)}">
+				<label for="uniqueKey" class="control-label">Unique Key</label>
+        		<div class="counter-container">
+        			<input type="text" name="uniqueKey" ng-model="role.uniqueKey" class="form-control" required ng-maxlength="100" unique="/publish/role/validateKey" ng-pattern="/^[a-z0-9\\-]+$/" entity-id="{{role.roleId}}" popover="Unique value representing the role." />
+        			<span class="label pull-right" ng-class="{'label-info':role.uniqueKey.length<90, 'label-warning':role.uniqueKey.length>=90 && role.uniqueKey.length<100, 'label-danger': role.uniqueKey.length>=100}">{{100-role.uniqueKey.length}}</span>
+               	</div>
+               	<p ng-repeat="(validator, invalid) in roleForm.uniqueKey.$error" ng-show="invalid && pageData.validationMessages.uniqueKey[validator]" class="text-danger">{{pageData.validationMessages.uniqueKey[validator]}}</p>
+        		<p ng-repeat="message in roleForm.$serverError.uniqueKey.messages" class="text-danger">{{message}}</p>
+			</div>
+		</div>
+	</fieldset>
+	<button type="submit" class="btn btn-success" ng-disabled="roleForm.$invalid">Save</button>
+	<a href="#/roles" class="btn btn-danger">Cancel</a>
+</form>

@@ -1,0 +1,3589 @@
+[
+  {
+    "Title": "1098-T tax form",
+    "Categories": "Finances,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "3D Digitization",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "3D Stereoscopic Video Camera Rigs",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "3rd Party User Access",
+    "Categories": "Finances,",
+    "Roles": "Student, Staff,Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Academic Calendar",
+    "Categories": "Academics,",
+    "Roles": "",
+    "Campuses": "IU Kokomo, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Academic calendar",
+    "Categories": "Academics,",
+    "Roles": "Student,Faculty,",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Academic calendar",
+    "Categories": "Academics,",
+    "Roles": "",
+    "Campuses": "IU Southeast, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Academic calendar",
+    "Categories": "Academics,",
+    "Roles": "Student,Faculty,",
+    "Campuses": "IU South Bend, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Academic calendar",
+    "Categories": "Academics,",
+    "Roles": "",
+    "Campuses": "IU East, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Academic calendar",
+    "Categories": "Academics,",
+    "Roles": "",
+    "Campuses": "IU Northwest, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Academic calendar",
+    "Categories": "Academics,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Academic plan",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Accept or decline financial awards",
+    "Categories": "Finances,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Account Creation",
+    "Categories": "Accounts, Orientation,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Action List (Kuali Rice)",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Advanced technical & design training (Pluralsight)",
+    "Categories": "Training,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Inactive",
+    "Type": ""
+  },
+  {
+    "Title": "Advanced technical training (EdCert)",
+    "Categories": "Training,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Advisement report",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Advising action list (AdRx)",
+    "Categories": "Academics,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Inactive",
+    "Type": ""
+  },
+  {
+    "Title": "Advising profile (AdRx)",
+    "Categories": "Academics,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Inactive",
+    "Type": ""
+  },
+  {
+    "Title": "Advising records (AdRx)",
+    "Categories": "Academics,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Advising resources (AdRx)",
+    "Categories": "Academics,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Inactive",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Advisor",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Advisor student search (AdRx)",
+    "Categories": "Academics,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Inactive",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Affiliate accounts",
+    "Categories": "Accounts,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Alfresco Share",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Inactive",
+    "Type": ""
+  },
+  {
+    "Title": "Amend/Renew protocol (Kuali Coeus)",
+    "Categories": "Research,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Analysis and Software Delivery and Support",
+    "Categories": "Faculty Services, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Apple",
+    "Categories": "IT Services, Campus Life,Employee Benefits,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Application status",
+    "Categories": "Admissions,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Arts & Sciences Career Services",
+    "Categories": "Careers,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Ask Questions (AskIU)",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Benefit Enrollment Information",
+    "Categories": "Employee Benefits,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Big Red II Supercomputer",
+    "Categories": "Accounts, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Big Red II Supercomputer Machine Software Information",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Bill pay (IU Bursar Pay)",
+    "Categories": "Finances,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Box",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Break housing & early arrival sign up (Arrivals)",
+    "Categories": "Housing & Dining,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Broader Impacts Resource Guide",
+    "Categories": "Faculty Services, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Bursar bill (QuikPAY)",
+    "Categories": "Finances,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Inactive",
+    "Type": ""
+  },
+  {
+    "Title": "Bursar Calendar",
+    "Categories": "Academics, Finances,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Bus schedule & routes (Bloomington Transit)",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Bus Schedules (Mobile)",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Bus tracking (DoubleMap)",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Bus tracking (DoubleMap)",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Calendar (Canvas)",
+    "Categories": "Academics,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus 411 Information",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus Alerts",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus Bridging: Connecting to Local and National Cyberinfrastructure",
+    "Categories": "Faculty Services, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus card funds (Cougar Card)",
+    "Categories": "Housing & Dining,",
+    "Roles": "",
+    "Campuses": "IU Kokomo, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus card funds (Jagtag)",
+    "Categories": "Housing & Dining,",
+    "Roles": "",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus card funds (UCard)",
+    "Categories": "Finances,",
+    "Roles": "",
+    "Campuses": "IU Southeast, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus card funds (Wolf Card)",
+    "Categories": "Housing & Dining,",
+    "Roles": "",
+    "Campuses": "IU East, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus events",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IU Northwest, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus events",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IU Kokomo, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus events",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IU East, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus events",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus events",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IUPUC Columbus, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus events",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus events",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IU South Bend, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus events",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IU Southeast, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus map and directions",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus map and directions",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IU Northwest, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus map and directions",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IU East, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus map and directions",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IU Kokomo, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus map and directions",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus map and directions",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IU Southeast, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus map and directions",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IU South Bend, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus shuttles",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Campus Tour",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Cancel Housing Contract, Appeal Charges, Request Residency Exemption (Housing Appeals)",
+    "Categories": "Housing & Dining,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Canvas",
+    "Categories": "Academics,",
+    "Roles": "Student, Staff,Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Career Development Center",
+    "Categories": "Careers,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Career Development Center",
+    "Categories": "Careers,",
+    "Roles": "",
+    "Campuses": "IU Southeast, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Castlight Health Transparency Tool",
+    "Categories": "Employee Benefits,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Certification for Use of Personally Owned Devices",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Change name (students)",
+    "Categories": "Personal Information,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Chemistry placement exam",
+    "Categories": "Orientation,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Childcare fees",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IU Southeast, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Citizenship verification",
+    "Categories": "Personal Information,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Class permissions",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Class registration",
+    "Categories": "Enrollment, Orientation,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Class schedule",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Inactive",
+    "Type": ""
+  },
+  {
+    "Title": "Classifieds",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Classrooms",
+    "Categories": "Academics,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Classrooms",
+    "Categories": "Academics,",
+    "Roles": "Student,Faculty,",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Cloud Storage",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Coaching sessions",
+    "Categories": "Training,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Code of conduct",
+    "Categories": "Campus Life,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Collaborate online (Connect)",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Compass Admin",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Computation",
+    "Categories": "Faculty Services, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Conference accounts",
+    "Categories": "Accounts,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Confluence",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Consolidated Business Intelligence (CBI)",
+    "Categories": "IT Services,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Consultation for Visualization, Interaction, and Advanced Media Production",
+    "Categories": "Training, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Consulting for Supercomputing",
+    "Categories": "Training, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Course Browser",
+    "Categories": "Enrollment,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Course Evaluations",
+    "Categories": "Academics,",
+    "Roles": "Student,Faculty,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Course history",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Courses (Canvas)",
+    "Categories": "Academics,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Create IRB protocol (Kuali Coeus)",
+    "Categories": "Research,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Credit Transfer Service",
+    "Categories": "Admissions,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "CRM (Talisma)",
+    "Categories": "Administrative,",
+    "Roles": "Staff,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Cyberinfrastructure for Digital Humanities",
+    "Categories": "Faculty Services, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Data Capacitor II",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Data Capacitor Wide-area Network",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Data Storage",
+    "Categories": "Faculty Services, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Degree Map Search",
+    "Categories": "Academics,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Degree Requirements",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Dell store for IU",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Digital Humanities Cyberinfrastructure Consulting",
+    "Categories": "Training, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Digital Humanities Cyberinfrastructure Software Support",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Direct Deposit of Bursar Refunds",
+    "Categories": "Finances,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Document Search (Kuali Rice)",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Donor information (AIS)",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Drop or Add Classes",
+    "Categories": "Enrollment,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Duo",
+    "Categories": "Accounts,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Duplicate tax form request",
+    "Categories": "Payroll & Taxes,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "E Training",
+    "Categories": "Training,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "eApp Administrative Center",
+    "Categories": "Admissions, Academics,Administrative,",
+    "Roles": "",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "eDocLite (Kuali Rice)",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "eDossier",
+    "Categories": "Academics, Faculty Services,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Education and Outreach",
+    "Categories": "Faculty Services, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Education, Outreach and Training for Visualization, Interaction, and Advanced Media",
+    "Categories": "Training, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Education, Outreach, and Training Highlights of UITS Research Technologies",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "eGrade change",
+    "Categories": "Academics,",
+    "Roles": "Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Email (Cyrus IMAP)",
+    "Categories": "IT Services,",
+    "Roles": "Student, Staff,Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Email (Exchange)",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Email (Imail)",
+    "Categories": "IT Services,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Email (Umail)",
+    "Categories": "IT Services,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Email management",
+    "Categories": "Accounts,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "eMeal",
+    "Categories": "Housing & Dining,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Emergency Contact Phone Numbers",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Emergency Contacts",
+    "Categories": "Personal Information,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Inactive",
+    "Type": ""
+  },
+  {
+    "Title": "Emergency notification settings (IU Notify)",
+    "Categories": "Personal Information,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Endowment information (ETA-Web)",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Energy Matters",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Enrollment shopping cart",
+    "Categories": "Enrollment,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Enrollment verification certificate",
+    "Categories": "Enrollment,",
+    "Roles": "Student,",
+    "Campuses": "IU Kokomo, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Enrollment verification certificate",
+    "Categories": "Enrollment,",
+    "Roles": "Student,",
+    "Campuses": "IU Northwest, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Enrollment verification certificate",
+    "Categories": "Enrollment,",
+    "Roles": "Student,",
+    "Campuses": "IU Southeast, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Enrollment verification certificate",
+    "Categories": "Enrollment,",
+    "Roles": "Student,",
+    "Campuses": "IUPUC Columbus, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Enrollment verification certificate",
+    "Categories": "Enrollment,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Enrollment verification certificate",
+    "Categories": "Enrollment,",
+    "Roles": "Student,",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Enrollment verification certificate",
+    "Categories": "Enrollment,",
+    "Roles": "Student,",
+    "Campuses": "IU South Bend, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Enrollment verification certificate",
+    "Categories": "Enrollment,",
+    "Roles": "Student,",
+    "Campuses": "IU East, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "eTranscript Request (Former Students)",
+    "Categories": "Academics, Accounts,Orientation,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "eTranscript Request (Recent Student)",
+    "Categories": "Academics, Accounts,Orientation,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Faculty Annual Report (FAR)",
+    "Categories": "Faculty Services,",
+    "Roles": "Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Faculty center",
+    "Categories": "Faculty Services,",
+    "Roles": "Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Fax service",
+    "Categories": "IT Services,",
+    "Roles": "Student, Staff,Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Federal W-4",
+    "Categories": "Payroll & Taxes,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Files (Canvas)",
+    "Categories": "Academics,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Final exams",
+    "Categories": "Academics,",
+    "Roles": "Student,Faculty,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Final exams",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "IU Southeast, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Final exams",
+    "Categories": "Academics,",
+    "Roles": "",
+    "Campuses": "IU Northwest, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Financial aid assistance",
+    "Categories": "Finances,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Financial aid information",
+    "Categories": "Finances,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Financial aid student authorizations",
+    "Categories": "Finances,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Flex Bucks Plan",
+    "Categories": "Housing & Dining,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "FootPrints",
+    "Categories": "IT Services,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Foreign language placement exam",
+    "Categories": "Orientation,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Freshman Admission",
+    "Categories": "Admissions,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+    {
+    "Title": "Freshman Orientation",
+    "Categories": "Admissions,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+    {
+    "Title": "Freshman Connections",
+    "Categories": "Admissions,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+
+      {
+    "Title": "Fresh Ideas Club",
+    "Categories": "Admissions,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+
+
+  {
+    "Title": "FY(Me) To-Do List",
+    "Categories": "Orientation,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Geographic Information Systems (GIS) Consulting Services",
+    "Categories": "Training, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Geographic Information Systems (GIS) software",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "GitHub Enterprise",
+    "Categories": "Academics,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Grade distribution",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Grades (Canvas)",
+    "Categories": "Academics,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Grades",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Graduation",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Inactive",
+    "Type": ""
+  },
+  {
+    "Title": "Grant Support",
+    "Categories": "Faculty Services, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Grid Operations Center",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Group (Kuali Rice)",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Group accounts",
+    "Categories": "Accounts,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Guest accounts",
+    "Categories": "Accounts,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Health Savings Account (Chase)",
+    "Categories": "Employee Benefits,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Inactive",
+    "Type": ""
+  },
+  {
+    "Title": "High Throughput Computing Software Optimization",
+    "Categories": "Training, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "High Throughput Computing: Access to Local and National Resources",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Housing",
+    "Categories": "Housing & Dining,",
+    "Roles": "Student,",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Housing Damage Charges (Damage Appeals)",
+    "Categories": "Housing & Dining,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Housing for Incoming Students (New Housing)",
+    "Categories": "Housing & Dining,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Housing for new student orientation (FYE Housing)",
+    "Categories": "Orientation,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Housing information (My Housing)",
+    "Categories": "Housing & Dining,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Housing Mail Services (Mailroom)",
+    "Categories": "Housing & Dining,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Housing RA or CUE Position (RA/CUE)",
+    "Categories": "Housing & Dining,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "HSA, TSB & HRA (Nyhart)",
+    "Categories": "Employee Benefits,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "I-BUCKS Meal Plans",
+    "Categories": "Housing & Dining,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "idsnews.com",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Immunization Compliance Form",
+    "Categories": "Personal Information,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Inbox (Canvas)",
+    "Categories": "Academics,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Incident Teams Reporting",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Indiana Clinical and Translational Science Institute (CTSI)",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Indiana Hoosiers Gameday Live",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Indiana Spatial Data Portal",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Intercampus transfer",
+    "Categories": "Enrollment,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IQ-Force Visualization Resource",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IQ-Station Visualization Resource",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IQ-Table Visualization Resource",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IQ-Tilt Visualization Resource",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IQ-Wall Visualization Resource",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "iStart",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IT Notices",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IT Training Center",
+    "Categories": "Training,",
+    "Roles": "",
+    "Campuses": "IU Kokomo, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "IT Training certificate series",
+    "Categories": "Training,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "IT Training materials",
+    "Categories": "Training,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IT Training sessions",
+    "Categories": "Training,",
+    "Roles": "Student, Staff,Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IT Training tips",
+    "Categories": "Training,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "ITHelpLive",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IU Address Book",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IU Athletics",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IU Cyberinfrastructure Gateway",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IU Cyberinfrastructure Statement for Project Description",
+    "Categories": "Faculty Services, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IU Data Management Plan",
+    "Categories": "Faculty Services, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IU eTexts Adoption (Coordinator)",
+    "Categories": "Faculty Services,",
+    "Roles": "Staff,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IU eTexts Adoption (Faculty)",
+    "Categories": "Faculty Services,",
+    "Roles": "Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IU eTexts Catalog",
+    "Categories": "Faculty Services,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IU Facilities Statement",
+    "Categories": "Faculty Services, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IU ID accounts (My IU ID Accounts)",
+    "Categories": "Housing & Dining,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IU Knowledge Base (KB)",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IU Mobile for Android",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IU Mobile for iTunes",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IU Newsroom",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IU Real Estate",
+    "Categories": "Housing & Dining,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IU Southeast Bookstore",
+    "Categories": "Academics,",
+    "Roles": "",
+    "Campuses": "IU Southeast, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IU VPN",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IUanyWare",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IUB Libraries",
+    "Categories": "Libraries,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IUBeginnings reservation",
+    "Categories": "Orientation,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IUIE reports",
+    "Categories": "Administrative,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IUPay Plus",
+    "Categories": "Finances,",
+    "Roles": "Student,",
+    "Campuses": "IU Northwest, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IUPUI Athletics",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IUPUI Libraries",
+    "Categories": "Libraries,",
+    "Roles": "",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IUS Athletics",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IU Southeast, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "IUScholarWorks",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "JIRA",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Job Listings (OLA)",
+    "Categories": "Administrative,",
+    "Roles": "Student, Staff,Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Karst Supercomputer",
+    "Categories": "Accounts, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Karst Supercomputer Machine Software Information",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Kelley Connect",
+    "Categories": "Careers,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Kokomo bus routes (City Line)",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IU Kokomo, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "KPME Time at IU (Kuali Time)",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Removed",
+    "Type": ""
+  },
+  {
+    "Title": "Kuali Time",
+    "Categories": "Payroll & Taxes,",
+    "Roles": "Student, Staff,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Letters of Support for IU Researchers",
+    "Categories": "Faculty Services, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Library catalog (IUCAT)",
+    "Categories": "Libraries,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Library resources (OneSearch)",
+    "Categories": "Libraries,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Licensed HPC Software",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Live workshops",
+    "Categories": "Training,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Lost ID card (Gold Account Management)",
+    "Categories": "Housing & Dining,",
+    "Roles": "Student, Staff,Faculty,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Mason Supercomputer",
+    "Categories": "Accounts, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Mason Supercomputer Machine Software Information",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Math placement exam (ALEKS)",
+    "Categories": "Orientation,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Math tutoring",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "IU Northwest, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Mathematical Software Support and Services",
+    "Categories": "Training, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Meal plan",
+    "Categories": "Housing & Dining,",
+    "Roles": "Student,",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Media Collections Online",
+    "Categories": "Libraries,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Mobile Device Security",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "MoneySmarts",
+    "Categories": "Finances,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Motor pool",
+    "Categories": "Transportation,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "My advisees (AdRx)",
+    "Categories": "Academics,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Inactive",
+    "Type": ""
+  },
+  {
+    "Title": "My Class Schedule",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "My IU Calendar",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "My Jobs",
+    "Categories": "Careers,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "MyRA - My Research Administration",
+    "Categories": "Research,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "MyStudentBody",
+    "Categories": "Orientation,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Inactive",
+    "Type": ""
+  },
+  {
+    "Title": "MyStudentBody",
+    "Categories": "Campus Life,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, IU Northwest, IU South Bend, IU Kokomo, IU East,IU Southeast, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "New prospective student form",
+    "Categories": "Admissions,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "IU Northwest, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "New prospective student form 2",
+    "Categories": "Admissions,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "IU Northwest, All IU Campuses",
+    "Status": "Removed",
+    "Type": ""
+  },
+  {
+    "Title": "Nominate Student for RA or CUE Position (RA/CUE Nomination)",
+    "Categories": "Housing & Dining,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Notify IRB on protocol (Kuali Coeus)",
+    "Categories": "Research,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "NSO Reservation",
+    "Categories": "Orientation,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Nutrition information for food products (Net Nutrition)",
+    "Categories": "Housing & Dining,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Official course descriptions",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Official transcript",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Oncourse",
+    "Categories": "Academics,",
+    "Roles": "Student, Staff,Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Oncourse Dashboard",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Inactive",
+    "Type": ""
+  },
+  {
+    "Title": "One Degree Imager - Portal, Pipeline, and Archive",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Online training (lynda.com)",
+    "Categories": "Training,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Open computer labs (STC)",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "IU Northwest, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Open Enrollment",
+    "Categories": "Employee Benefits, Payroll & Taxes,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Inactive",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Open Enrollment Employee Benefits Fair",
+    "Categories": "Employee Benefits,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Open Enrollment Employee Benefits Fair",
+    "Categories": "Employee Benefits,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Open Enrollment Information Sessions",
+    "Categories": "Employee Benefits,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Open Enrollment Webinar Info",
+    "Categories": "Employee Benefits,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Open Science Grid",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Optional Registration Purchases",
+    "Categories": "Campus Life, Orientation,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active(Draft)",
+    "Type": ""
+  },
+  {
+    "Title": "Orbitz for Business",
+    "Categories": "Administrative,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Orientation",
+    "Categories": "Orientation,",
+    "Roles": "Student,",
+    "Campuses": "IU Southeast, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "OTP Token",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Outreach to Students in the State of Indiana",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Paid time off (ePTO)",
+    "Categories": "Employee Benefits,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Parking citation (Citation Appeal)",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Parking citation (Citation Payment)",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Parking citation",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Parking Permit",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IU Southeast, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Parking Permit",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Parking Permit",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IU Kokomo, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Parking Permit",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Passphrase questions",
+    "Categories": "Accounts,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Inactive",
+    "Type": ""
+  },
+  {
+    "Title": "Passphrase reset",
+    "Categories": "Personal Information,",
+    "Roles": "Student, Staff,Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Paycheck details (Mobile)",
+    "Categories": "Payroll & Taxes,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Paycheck details",
+    "Categories": "Payroll & Taxes,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Paycheck Direct Deposit",
+    "Categories": "Payroll & Taxes,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Payroll Year-To-Date",
+    "Categories": "Payroll & Taxes,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Permission (Kuali rice)",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Person (Kuali Rice)",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Personal Information (employees)",
+    "Categories": "Personal Information,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Personal information (students)",
+    "Categories": "Personal Information,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Pervasive Technology Institute Multimedia Gallery",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Pervasive Technology Institute Publications",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Print quota (IU Print)",
+    "Categories": "IT Services,",
+    "Roles": "Student,",
+    "Campuses": "IUPUC Columbus, IU East, IU Southeast, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Print quota (IU PrintanyWare)",
+    "Categories": "IT Services,",
+    "Roles": "Student,Faculty,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Printed materials (IT Training)",
+    "Categories": "Training,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Printing Credits (IU Print)",
+    "Categories": "IT Services,",
+    "Roles": "Student,",
+    "Campuses": "IU Northwest, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Printing Credits (Titan Print)",
+    "Categories": "IT Services,",
+    "Roles": "Student,",
+    "Campuses": "IU South Bend, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Purchase requisitions (KFS)",
+    "Categories": "Administrative,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Push Notifications",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Quicklinks (Kuali Rice)",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Ready, Set, Robots! Program",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Recommend Student for RA or CUE Position (RA/CUE Recommendation)",
+    "Categories": "Housing & Dining,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Record Holds",
+    "Categories": "Enrollment,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "REDCap",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Redhawk Review",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IU Northwest, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "RedHawk Shuttle",
+    "Categories": "Transportation,",
+    "Roles": "Student, Staff,Faculty,",
+    "Campuses": "IU Northwest, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Reimbursement - Phone, PDA & ISP",
+    "Categories": "Employee Benefits,",
+    "Roles": "Staff,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Renew Housing for Current Residents (Housing Renewal)",
+    "Categories": "Housing & Dining,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Report a Compliance Concern",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Report Hazards",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Report water pollution",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Request a SharePoint site",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Request GI Bill Certification",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Required financial literacy (Transit)",
+    "Categories": "Finances,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Inactive",
+    "Type": ""
+  },
+  {
+    "Title": "Research Administration Office",
+    "Categories": "Research,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Research Database Support",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Research File System (RFS)",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Residence Hall Parking (RPS Parking Waitlist)",
+    "Categories": "Housing & Dining,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Residence Life and Housing",
+    "Categories": "Housing & Dining,",
+    "Roles": "",
+    "Campuses": "IU Southeast, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Residential guest registration",
+    "Categories": "Housing & Dining,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Residential Programs and Services info (RPS Live Chat)",
+    "Categories": "Housing & Dining,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Responsibility (Kuali Rice)",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Retirement Readiness Calculator",
+    "Categories": "Employee Benefits,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Review Remonstrance List (CARMIn)",
+    "Categories": "Faculty Services,",
+    "Roles": "Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Rockhopper ",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Role (Kuali Rice)",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Routing and Identity Management Document Type Hierarchy(Kuali Rice)",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Routing Report (Kuali Rice)",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "RPS 3rd party access (eProxy)",
+    "Categories": "Housing & Dining,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "RPS Calendar",
+    "Categories": "Housing & Dining,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "RPS Dining Services",
+    "Categories": "Housing & Dining,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "RPS emergency contact information (PECI)",
+    "Categories": "Housing & Dining,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "RPS Laundry status",
+    "Categories": "Housing & Dining,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Rule Delegations (Kuali Rice)",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Rules (Kuali Rice)",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Schedule of Classes",
+    "Categories": "Academics,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Scholarly Data Archive (SDA)",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Scholarly Highlights of UITS Research Technologies",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "School of Education Office of Career Connections",
+    "Categories": "Careers,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "School of Public Health Career Services",
+    "Categories": "Careers,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Science Gateways",
+    "Categories": "Faculty Services, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Science on a Sphere Visualization Resource",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Search Courses",
+    "Categories": "Enrollment,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Search my IRB protocol (Kuali Coeus)",
+    "Categories": "Research,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Services for Biomedical, Biological, and Health-related Research()",
+    "Categories": "Faculty Services, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Services in Support of Cyber-risk Mitigation and IT-28 Mitigation",
+    "Categories": "Faculty Services, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Set Up 3rd Party Users",
+    "Categories": "Personal Information,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Shop Catalogs (KFS)",
+    "Categories": "Administrative,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Shorten URL (Go.IU)",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "SIS Training",
+    "Categories": "Training,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Slashtmp",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Software Consultation",
+    "Categories": "Training, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Software downloads (IUware)",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Software for Advanced Visualization",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Software Installation Request",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "SoIC Career Fair",
+    "Categories": "Careers,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Inactive",
+    "Type": ""
+  },
+  {
+    "Title": "SoIC Careers",
+    "Categories": "Careers,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Solution Finder",
+    "Categories": "Campus Life,",
+    "Roles": "Student,",
+    "Campuses": "IU Kokomo, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "South Bend Bus routes (TRANSPO)",
+    "Categories": "Transportation,",
+    "Roles": "",
+    "Campuses": "IU South Bend, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "SSN/educational tax credit verification",
+    "Categories": "Finances,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Stastical Software Support and Services",
+    "Categories": "Training, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "State & local tax withholding",
+    "Categories": "Payroll & Taxes,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Stop Sexual Violence",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Student activities (MyINvolvement)",
+    "Categories": "Campus Life,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Student activities (MyINvolvement)",
+    "Categories": "Campus Life,",
+    "Roles": "Student,",
+    "Campuses": "IU Northwest, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Student activities (MyINvolvement)",
+    "Categories": "Campus Life,",
+    "Roles": "Student,",
+    "Campuses": "IU Kokomo, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Student activities (MyINvolvement)",
+    "Categories": "Campus Life,",
+    "Roles": "Student,",
+    "Campuses": "IU Southeast, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Student activities (MyINvolvement)",
+    "Categories": "Campus Life,",
+    "Roles": "Student,",
+    "Campuses": "IU South Bend, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Student activities (MyINvolvement)",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Student advising records (AdRx)",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Student center",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Student Information System (SIS)",
+    "Categories": "Administrative,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Student loan management",
+    "Categories": "Finances,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Student Technology Centers (STC)",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Talk Nerdy to Me",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Tax savings plans",
+    "Categories": "Employee Benefits,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Test credits reports",
+    "Categories": "Enrollment,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Textbook orders",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "The Horizon",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IU Southeast, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "The Preface",
+    "Categories": "Campus Life,",
+    "Roles": "Student,",
+    "Campuses": "IU South Bend, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Tickets (IU Auditorium)",
+    "Categories": "Campus Life,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "To Do List",
+    "Categories": "Enrollment,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Total Compensation",
+    "Categories": "Employee Benefits,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Tours of High Performance Computing Facilities",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Tours of Visualization Facilities",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Training About Research Computing",
+    "Categories": "Training, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Training facility reservation (IT Training)",
+    "Categories": "Training,",
+    "Roles": "Student, Staff,Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Training on High Performance Computing",
+    "Categories": "Training, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Transfer Admission",
+    "Categories": "Admissions,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Transfer Courses",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "IU Northwest, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Transfer Courses",
+    "Categories": "Admissions,",
+    "Roles": "Student,",
+    "Campuses": "IU East, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Transfer Courses",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "IU Southeast, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Transfer Courses",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "IUPUI Indianapolis, IUPUC Columbus, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Transfer Courses",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "IU South Bend, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Transfer Courses",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "IU Kokomo, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Transfer Credits",
+    "Categories": "Admissions,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Travel arrangements",
+    "Categories": "Administrative,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Travel reimbursement direct deposit",
+    "Categories": "Transportation,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Tuition Benefit",
+    "Categories": "Employee Benefits,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Tutor Matching Service",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "UITS Research Technologies Service Request",
+    "Categories": "Accounts, Training, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Ultra-high Resolution Photography Gigapan Robot",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Undergraduate Admission",
+    "Categories": "Admissions,",
+    "Roles": "Student,",
+    "Campuses": "IU East, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Undergraduate Admission",
+    "Categories": "Admissions,",
+    "Roles": "Student,",
+    "Campuses": "IU Southeast, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Undergraduate Admission",
+    "Categories": "Admissions,",
+    "Roles": "Student,",
+    "Campuses": "IU Northwest, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Undergraduate Admission",
+    "Categories": "Admissions,",
+    "Roles": "Student,",
+    "Campuses": "IU South Bend, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Undergraduate Admission",
+    "Categories": "Admissions,",
+    "Roles": "Student,",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "Undergraduate Admission",
+    "Categories": "Admissions,",
+    "Roles": "Student,",
+    "Campuses": "IU Kokomo, All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "University ID",
+    "Categories": "Personal Information,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Unofficial transcript",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Upcoming Outreach, Training, and Education Events",
+    "Categories": "Training, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "View academic plan",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Removed",
+    "Type": ""
+  },
+  {
+    "Title": "View accounts",
+    "Categories": "Accounts,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "View My Housing (My Housing)",
+    "Categories": "Housing & Dining,",
+    "Roles": "Student,",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Removed",
+    "Type": ""
+  },
+  {
+    "Title": "Virtual Reality Theater",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "IUPUI Indianapolis, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Visualization & Collaboration Theater",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "IU Bloomington, All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Visualization Facilities and Services",
+    "Categories": "Faculty Services, Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": "Task Center"
+  },
+  {
+    "Title": "VM Request - Quarry Gateway Web Services Hosting",
+    "Categories": "Research,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "W-2 Electronic Consent",
+    "Categories": "Payroll & Taxes,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "W-2 Tax Form",
+    "Categories": "Payroll & Taxes,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Wake on Lan",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Web Content Management System (WCMS)",
+    "Categories": "IT Services,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "What-If advising report",
+    "Categories": "Academics,",
+    "Roles": "Student,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Workflow User Preferences (Kuali Rice)",
+    "Categories": "Administrative,",
+    "Roles": "",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Workshop materials for instructors",
+    "Categories": "Training,",
+    "Roles": "Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  },
+  {
+    "Title": "Workshop requests",
+    "Categories": "Training,",
+    "Roles": "Staff, Faculty,",
+    "Campuses": "All IU Campuses",
+    "Status": "Active",
+    "Type": ""
+  }
+]

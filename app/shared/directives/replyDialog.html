@@ -1,0 +1,31 @@
+<div class="modal fade" id="replyModal" tabindex="-1" role="dialog" aria-labelledby="replyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <span class="h4 modal-title" id="replyModalLabel">Response to review</span>
+            </div>
+            <div class="modal-body">
+				<form name="commentReplyForm" novalidate validate="replyErrors">
+					<div class="form-group">
+						<label class="control-label">Review Text</label>
+						<p class="form-control-static" ng-bind="comment.comment"></p>
+					</div>
+		        	<div class="form-group" ng-class="{'has-error': commentReplyForm.publisherAlias.$invalid}">
+						<label for="replyPublisherAlias" class="control-label">Display Name</label>
+						<input type="text" ng-model="commentReply.publisherAlias" id="replyPublisherAlias" name="publisherAlias" class="form-control" ng-max-length="100" required />
+					</div>
+					<div class="form-group" ng-class="{'has-error': commentReplyForm.comments.$invalid}">
+		            	<label for="replyComments" class="control-label">Reply Text</label>
+			            <textarea ng-model="commentReply.text" id="replyComments" name="comments" class="form-control" rows="3" ng-maxlength="2000" required></textarea>
+			            <span class="label pull-right" ng-class="{'label-info':commentReply.text.length<1900, 'label-warning':commentReply.text.length>=1900 && commentReply.text.length<2000, 'label-danger': commentReply.text.length>=2000}">{{2000-commentReply.text.length}}</span>
+		            </div>
+				</form>
+            </div>
+            <div class="modal-footer">
+            	<button type="button" class="btn btn-primary" ng-disabled="commentReplyForm.$invalid || disableReplySubmit" ng-click="submitReply()">Submit</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>

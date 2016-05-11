@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>IU One</title>
+  <!-- Base CSS -->
+  <link href="../less/styles.less" rel="stylesheet/less" type="text/css">
+  <!-- MetisMenu CSS -->
+  <link href="../vendor/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+  <!-- Timeline CSS -->
+  <link href="../vendor/timeline/timeline.css" rel="stylesheet">
+  <!-- Morris Charts CSS -->
+  <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="../less/brand.css" rel="stylesheet" type="text/css">
+  <link href="../vendor/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet" type="text/css">
+  <link href="../app/vendor/js/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+  <link href="../app/vendor/js/expandgrid/css/component.css" rel="stylesheet" type="text/css">
+
+  <!--<link rel="stylesheet" type="text/css" href="../app/vendor/js/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="../app/vendor/js/slick/slick-theme.css"/>-->
+
+  <link rel="stylesheet" type="text/css" href="../app/vendor/js/lightSlider/css/lightslider.css">
+  <link type="text/css" rel="stylesheet" href="../app/vendor/js/lightGallery/css/lightgallery.css" />
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <style>
+.menuslide-out {
+	right: -227px;
+	visibility: hidden;
+}
+.menuslide-in {
+	right: 0px;
+	visibility: visible;
+}
+.bottom-container-controls i {
+	margin-left: -3px;
+	margin-right: -3px;
+}
+.label {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+h2 a, h2 a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+.trash {
+	color: rgb(209, 91, 71);
+}
+.flag {
+	color: rgb(248, 148, 6);
+}
+.panel-body {
+	padding: 0px;
+}
+.panel-footer .pagination {
+	margin: 0;
+}
+.panel .glyphicon, .list-group-item .glyphicon {
+	margin-right: 5px;
+}
+.panel-body .radio, .checkbox {
+	display: inline-block;
+	margin: 0px;
+}
+.panel-body input[type=checkbox]:checked + label {
+	text-decoration: line-through;
+	color: rgb(128, 144, 160);
+}
+.list-group-item:hover, a.list-group-item:focus {
+	text-decoration: none;
+	background-color: rgb(245, 245, 245);
+}
+.list-group {
+	margin-bottom: 0px;
+}
+.rating-list {
+	font-size: 12px;
+	color: #727272
+}
+.rating-list .stars {
+	display: inline
+}
+.rating-list .progress {
+	height: 5px;
+	display: inline-flex;
+	width: 150px;
+	margin-bottom: 0px
+}
+</style>
+  <style>
+.btn-round-lg {
+	border-radius: 10px;
+}
+.btn-round {
+	border-radius: 17px;
+}
+.btn-round-sm {
+	border-radius: 15px;
+}
+.btn-round-xs {
+	border-radius: 11px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+</style>
+  <style type="text/css">
+.twitter-typeahead .tt-dropdown-menu .tt-dataset-task h3, .twitter-typeahead .tt-dropdown-menu .tt-dataset-task-center h3 {
+	color: #555;
+	padding: 3px 3px 10px 0;
+	margin: 10px 20px 5px 20px;
+	border-bottom: 1px solid #ccc;
+	font-size: 18px;
+	color: #a94442;
+}
+.twitter-typeahead .tt-suggestion:hover {
+	color: #fff;
+	background-color: #337ab7;
+}
+.twitter-typeahead .tt-suggestion:hover .text-muted {
+	padding-left: 10px;
+	color: #fff;
+}
+</style>
+  <style>
+.loadthis {
+	display: none
+}
+</style>
+  <style>
+.tab-content .tab-pane .panel-main .task6 {
+	width: 292px;
+}
+.tab-content .tab-pane .panel-main .task6 .tile-content {
+	width: 203px;
+}
+
+@media (max-width: 992px) {
+.tab-content .tab-pane .panel-main .task6 {
+	width: 341px;
+}
+.tab-content .tab-pane .panel-main .task6 .tile-content {
+	width: 247px;
+}
+}
+
+@media (max-width: 767px) {
+.tab-content .tab-pane .panel-main .task6 {
+	width: 100%;
+}
+.tab-content .tab-pane .panel-main .task6 .tile-content {
+	width: 100%;
+}
+}
+</style>
+  <script type="text/javascript" >
+            var contextPath = '';
+            var htmlTemplateVersion = '1';
+        </script>
+  <script type="text/javascript" src="../app/vendor/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="../app/vendor/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../app/vendor/js/store.min.js"></script>
+  <!--<script type="text/javascript" src="../app/vendor/js/typeahead.min.js"></script>-->
+
+  <script type="text/javascript" src="../app/vendor/js/typeahead.bundle.js"></script>
+  <script type="text/javascript" src="../app/vendor/js/handlebars-v3.0.0.js"></script>
+  <script type="text/javascript" src="../app/vendor/js/jquery.touchSwipe.js"></script>
+  <script type="text/javascript" src="../app/vendor/js/ng-responsive-images.js"></script>
+  <script type="text/javascript" src="../app/vendor/js/less.min.js"></script>
+  <script type="text/javascript" src="../app/vendor/bootstrap2/ui-bootstrap-tpls-0.3.0.min.js"></script>
+  <script type="text/javascript" src="../app/vendor/js/jquery-ui-1.10.3.custom.min.js"></script>
+  <script type="text/javascript" src="../app/vendor/js/jquery.ui.widget.js"></script>
+  <script type="text/javascript" src="../app/vendor/js/sortable.js"></script>
+  <script type="text/javascript" src="../app/vendor/js/jquery.dotdotdot.min.js"></script>
+  <script type="text/javascript" src="../app/vendor/js/jquery.ui.touch-punch.min.js"></script>
+  <script type="text/javascript" src="../app/shared/controllers/headerController.js"></script>
+  <script type="text/javascript" src="../app/shared/services/sessionService.js"></script>
+  <script type="text/javascript" src="../app/store/taskStoreModule.js"></script>
+  <script type="text/javascript" src="../app/shared/directives/directives.js"></script>
+  <script type="text/javascript" src="../app/shared/services/alertService.js"></script>
+  <script type="text/javascript" src="../app/shared/services/searchService.js"></script>
+  <script type="text/javascript" src="../app/shared/services/cookieService.js"></script>
+  <script type="text/javascript" src="../app/store/taskStoreService.js"></script>
+  <script type="text/javascript" src="../app/store/taskStoreController.js"></script>
+  <script type="text/javascript" src="../app/shared/utilities/help.js"></script>
+  <link rel="stylesheet" type="text/css" href="../app/vendor/css/ie10.responsive-fix.css" />
+  <script type="text/javascript" src="../app/vendor/js/ie10.responsive-fix.js"></script>
+  <script type="text/javascript" src="../app/vendor/js/ie8.responsive-fix.js"></script>
+  <script type="text/javascript" src="../vendor/bootstrap3-editable/js/bootstrap-editable.js"></script>
+  <script type="text/javascript" src="../app/vendor/js/readmore.min.js"></script>
+  <script type="text/javascript" src="../app/vendor/js/jRate.min.js"></script>
+  <script type="text/javascript" src="../app/vendor/js/bootstrap-tabcollapse.js"></script>
+
+  <!-- <script type="text/javascript" src="../app/vendor/js/slick/slick.min.js"></script>-->
+
+  <script type="text/javascript" src="../app/vendor/js/lightSlider/js/lightslider.min.js"></script>
+  <script type="text/javascript" src="../app/vendor/js/lightGallery/js/lightgallery.js"></script>
+  <script type="text/javascript" src="../app/vendor/js/colorbox/jquery.colorbox-min.js"></script>
+  <script type="text/javascript" src="../app/vendor/js/jquery.growl/js/jquery.growl.js"></script>
+  <script type="text/javascript" src="../js/typehead-sectioned.js"></script>
+  <script>localStorage.clear(); </script>
+  <script>
+$(document).ready(function(){
+  $("#menu_button").click(function(){
+    $("#main-content,header,footer").addClass("fade-blur");
+	$("#sidebar_menu").addClass("menuslide-in");
+	$("#sidebar_menu").removeClass("menuslide-out");
+	 $("body").append("<div class='menu-overlay' style='opacity:0.0;background:#000;width:100%;height:100%; z-index:10;top:0;left:0; position:fixed;'></div>");
+  });
+  
+  $("#menuCloseButton").click(function(){
+    $("#main-content,header,footer").removeClass("fade-blur");
+	$("#sidebar_menu").removeClass("menuslide-in");
+	$("#sidebar_menu").addClass("menuslide-out");
+	$( ".menu-overlay" ).remove();
+  });
+  
+  
+
+});
+</script>
+  <script>
+$(document).ready(function() {
+   $(".favorite").click(function() {
+        $(this).parent().find(".icon-heart-empty").toggle(), 
+		$(this).parent().find(".icon-heart").toggle()
+    })
+	
+});
+  
+  </script>
+  </head>
+  <body id="top">
+<div class="menu visible-xs visible-sm container" id="sidebar_menu">
+      <div class="row menu-actions">
+        <div class="col-xs-9 ng-scope" style="  padding-top: 5px;padding-left: 10px;"> Hello, Tom </div>
+        <div class="col-xs-3" style="height: 40px;">
+              <button type="button" id="menuCloseButton" class="btn btn-danger " title="Close" tabindex="0" style="position: absolute;right: 10px;"><i class="icon-cancel-3"></i></button>
+          </div>
+    </div>
+      <hr class="double-border">
+      <div class="menu-row ng-scope">
+        <div class="panel panel-default">
+              <div class="panel-heading"> <a class="accordion-toggle collapsed" data-toggle="collapse" href="#collapseCategories"> Browse Categories </a> </div>
+              <div id="collapseCategories" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                      <ul class="list-unstyled">
+                        <li><a role="menuitem" href="#">All Categories</a></li>
+                        <li><a role="menuitem" href="#"><span >Academics</span></a></li>
+                        <li><a role="menuitem" href="#"><span >Accounts</span></a></li>
+                        <li><a role="menuitem" href="#"><span >Administrative</span></a></li>
+                        <li><a role="menuitem" href="#"><span >Admissions</span></a></li>
+                        <li><a role="menuitem" href="#"><span >Campus Life</span></a></li>
+                        <li><a role="menuitem" href="#"><span >Careers</span></a></li>
+                        <li><a role="menuitem" href="#"><span >Employee Benefits</span></a></li>
+                        <li><a role="menuitem" href="#"><span >Enrollment</span></a></li>
+                        <li><a role="menuitem" href="#"><span >Faculty Services</span></a></li>
+                        <li><a role="menuitem" href="#"><span >Finances</span></a></li>
+                        <li><a role="menuitem" href="#"><span >Housing &amp; Dining</span></a></li>
+                        <li><a role="menuitem" href="#"><span >IT Services</span></a></li>
+                        <li><a role="menuitem" href="#"><span >Libraries</span></a></li>
+                        <li><a role="menuitem" href="#"><span >Orientation</span></a></li>
+                        <li><a role="menuitem" href="#"><span >Payroll &amp; Taxes</span></a></li>
+                        <li><a role="menuitem" href="#"><span >Personal Information</span></a></li>
+                        <li><a role="menuitem" href="#"><span >Research</span></a></li>
+                        <li><a role="menuitem" href="#"><span >Training</span></a></li>
+                        <li><a role="menuitem" href="#"><span >Transportation</span></a></li>
+                    </ul>
+                  </div>
+            </div>
+          </div>
+    </div>
+      <hr class="">
+      <div class="menu-row ng-scope">
+        <div class="panel panel-default">
+              <div class="panel-heading"> <a class="accordion-toggle collapsed" data-toggle="collapse" href="#collapseRole"> Roles </a> </div>
+              <div id="collapseRole" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                      <ul class="list-unstyled">
+                        <li><a href="#" class=""><span >Faculty</span><i role="presentation" class="pull-right icon-check-1"></i></a></li>
+                        <li><a href="#" class=""><span >Staff</span><i role="presentation" class="pull-right icon-check-1"></i></a></li>
+                        <li><a href="#" class=""><span >Student</span><i role="presentation" class="pull-right icon-check-1"></i></a></li>
+                    </ul>
+                  </div>
+            </div>
+          </div>
+    </div>
+      <div class="menu-row ng-scope">
+        <div class="panel panel-default">
+              <div class="panel-heading"> <a class="accordion-toggle collapsed" data-toggle="collapse" href="#collapseMarket"> IU Campuses </a> </div>
+              <div id="collapseMarket" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                      <ul class="list-unstyled">
+                        <li><a href="#">All IU Campuses<i role="presentation" class="pull-right icon-check-1"></i></a></li>
+                        <li><a href="#"><span >IU Bloomington</span></a></li>
+                        <li><a href="#"><span >IU East</span></a></li>
+                        <li><a href="#"><span >IU Kokomo</span></a></li>
+                        <li><a href="#"><span >IU Northwest</span></a></li>
+                        <li><a href="#"><span >IU South Bend</span></a></li>
+                        <li><a href="#"><span >IU Southeast</span></a></li>
+                        <li><a href="#"><span >IUPUC Columbus</span></a></li>
+                        <li><a href="#"><span >IUPUI Indianapolis</span></a></li>
+                    </ul>
+                  </div>
+            </div>
+          </div>
+    </div>
+      <hr class="double-border">
+      <div class="menu-row"><a href="/favorites" class="btn btn-usercontrols btn-block" style="text-align:left;"><i class="icon-heart"></i>My Favorites</a>
+        <button type="button" class="btn btn-usercontrols btn-block" style="text-align:left;" tabindex="0" data-toggle="modal" data-target="#settings"><i class="icon-cog"></i>Preferences</button>
+        <hr>
+        <button type="button" class="btn btn-usercontrols btn-block" style="text-align:left;" tabindex="0"><i class="icon-comment"></i>Send Feedback</button>
+        <button type="button" class="btn btn-usercontrols btn-block" style="text-align:left;" tabindex="0"><i class="icon-info"></i><span class="sr-only">Display </span>Help</button>
+        <hr>
+        <button type="button" class="btn btn-usercontrols btn-block" style="text-align:left;" tabindex="0"><i class="icon-logout"></i>Not Tom? <small>(sign out)</small></button>
+    </div>
+  </div>
+<div id="branding-bar" itemscope="itemscope" itemtype="http://schema.org/CollegeOrUniversity" role="complementary" aria-labelledby="iu-campus" class="hidden-xs hidden-sm">
+      <div class="container ">
+        <div class="row pad"> <img src="//assets.iu.edu/brand/2.x/trident-large.jpg" alt="IU">
+              <p id="iu-campus"> <a href="http://www.iu.edu" title="Indiana University" class="external"> <span class="show-on-desktop" itemprop="name">Indiana University</span> <span class="show-on-tablet" itemprop="name">Indiana University</span> <span class="show-on-mobile" itemprop="name">Indiana University</span> </a> </p>
+          </div>
+    </div>
+  </div>
+<script>
+    $(document).ready(function() {
+
+
+        $(".getAll").click(function() {
+            $("#asdf").text("All Categories");
+            $('.typeahead2').attr('placeholder', 'Search All Categories');
+        });
+        $(".getAcademics").click(function() {
+            $("#asdf").text("Academics");
+            $('.typeahead2').attr('placeholder', 'Search Academics');
+        });
+        $(".getAccounts").click(function() {
+            $("#asdf").text("Accounts");
+            $('.typeahead2').attr('placeholder', 'Search Accounts');
+        });
+        $(".getAdministrative").click(function() {
+            $("#asdf").text("Administrative");
+            $('.typeahead2').attr('placeholder', 'Search Administrative');
+        });
+        $(".getAdmissions").click(function() {
+            $("#asdf").text("Admissions");
+            $('.typeahead2').attr('placeholder', 'Search Admissions');
+        });
+        $(".getCampus").click(function() {
+            $("#asdf").text("Campus Life");
+            $('.typeahead2').attr('placeholder', 'Search Campus Life');
+        });
+        $(".getCareers").click(function() {
+            $("#asdf").text("Careers");
+            $('.typeahead2').attr('placeholder', 'Search Careers');
+        });
+        $(".getEmployee").click(function() {
+            $("#asdf").text("Employee Benefits");
+            $('.typeahead2').attr('placeholder', 'Search Employee Benefits');
+        });
+        $(".getEnrollment").click(function() {
+            $("#asdf").text("Enrollment");
+            $('.typeahead2').attr('placeholder', 'Search Enrollment');
+        });
+        $(".getFaculty").click(function() {
+            $("#asdf").text("Faculty Services");
+            $('.typeahead2').attr('placeholder', 'Search Faculty Services');
+        });
+        $(".getFinances").click(function() {
+            $("#asdf").text("Finances");
+            $('.typeahead2').attr('placeholder', 'Search Finances');
+        });
+        $(".getHousing").click(function() {
+            $("#asdf").text("Housing & Dining");
+            $('.typeahead2').attr('placeholder', 'Search Housing & Dining');
+        });
+        $(".getIT").click(function() {
+            $("#asdf").text("IT Services");
+            $('.typeahead2').attr('placeholder', 'Search IT Services');
+        });
+        $(".getLibraries").click(function() {
+            $("#asdf").text("Libraries");
+            $('.typeahead2').attr('placeholder', 'Search Libraries');
+        });
+        $(".getOrientation").click(function() {
+            $("#asdf").text("Orientation");
+            $('.typeahead2').attr('placeholder', 'Search Orientation');
+        });
+        $(".getPayroll").click(function() {
+            $("#asdf").text("Payroll & Taxes");
+            $('.typeahead2').attr('placeholder', 'Search Payroll & Taxes');
+        });
+        $(".getPersonal").click(function() {
+            $("#asdf").text("Personal Information");
+            $('.typeahead2').attr('placeholder', 'Search Personal Information');
+        });
+        $(".getResearch").click(function() {
+            $("#asdf").text("Research");
+            $('.typeahead2').attr('placeholder', 'Search Research');
+        });
+        $(".getTraining").click(function() {
+            $("#asdf").text("Training");
+            $('.typeahead2').attr('placeholder', 'Search Training');
+        });
+        $(".getTransportation").click(function() {
+            $("#asdf").text("Transportation");
+			 $('.typeahead2').attr('placeholder', 'Search Transportation');
+
+        });
+
+    });
+</script> 
+<script>
+$(document).ready(function() {
+    //toggle `popup` / `inline` mode
+    $.fn.editable.defaults.mode = 'popup';     
+    
+   
+    
+    //make status editable
+    $('#status').editable({
+        type: 'select',
+        title: 'Select status',
+        placement: 'bottom',
+        value: 2,
+        source: [
+            {value: 1, text: 'status 1'},
+            {value: 2, text: 'status 2'},
+            {value: 3, text: 'status 3'}
+        ]
+        /*
+        //uncomment these lines to send data on server
+        ,pk: 1
+        ,url: '/post'
+        */
+    });
+	
+	 $('#roles').editable({
+	placement: 'bottom',
+       pk: 1,
+       limit: 3,
+       source: [
+        {value: 1, text: 'Student'},
+        {value: 2, text: 'Staff'},
+        {value: 3, text: 'Faculty'},
+       ]
+    }); 
+	
+	
+	$('#campuses').editable({
+		placement: 'bottom',
+		showbuttons: false,
+        source: [
+            {value: 1, text: 'All Campuses'},
+            {value: 2, text: 'IU Bloomington'},
+			{value: 3, text: 'IU East'},
+			{value: 4, text: 'IU Kokomo'},
+			{value: 5, text: 'IU Northwest'},
+			{value: 6, text: 'IU South Bend'},
+			{value: 7, text: 'IU Southeast'},
+			{value: 8, text: 'IUPUC Columbus'},
+			{value: 9, text: 'IUPUI Indianapolis'}
+
+        ]
+       
+    });    
+	
+	
+	
+});
+
+</script> 
+<script>
+    $(document).ready(function() {
+        $(".togglebrowse").click(function() {
+            $(".browsecat-panel").slideToggle("slow");
+			$( ".app-header .well" ).toggleClass( "open" );
+        });
+        $(".dropdown-toggle").click(function() {
+            $(".browsecat-panel").slideUp("slow");
+			$( ".app-header .well" ).removeClass( "open" );
+        });
+        $('#thesearchbox').keydown(function() {
+            tmpval = $(this).val();
+            if (tmpval == '') {
+
+                $("#cleartext").css({"display": "none"});
+            } else {
+                $("#cleartext").css({"display": "block"});
+            }
+        });
+        $("#cleartext").click(function() {
+            $("#cleartext").hide();
+            $("#thesearchbox").val("");
+			$("#thesearchbox").focus();
+        });
+    });
+</script> 
+<script>
+
+
+$(function() {                       
+  $(".clickable").click(function() {  
+    $(".clickable").removeClass("active"); 
+	$(this).addClass("active");      
+  });
+});
+
+</script>
+<header class="">
+      <div class="container app-header " id="contain2">
+        <div class="row">
+              <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 brand"> <a class="logo" href="SD-home.php" id="sidebar_logo" tabindex="0"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo.png" class="hidden-xs hidden-sm"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo-mobile.png" class="hidden-md hidden-lg">
+                  <h1><span class="sr-only">One.IU</span></h1></a> </div>
+              <div class="col-xs-6 col-sm-6 hidden-md hidden-lg mobile-menu">
+                <div class="pull-right"> <a href="#" class="btn btn-link launch-notifications"> <i class="icon-bell-alt"></i>
+                    <div class="container-badge"><span class="badge">2</span></div>
+                    <span class="sr-only">Announcements</span></a>
+                      <button type="button" id="menu_button" class="btn btn-signin" tabindex="0"><span class="sr-only">Toggle menu</span><i class="icon-menu"></i></button>
+                  </div>
+            </div>
+              <div class="col-xs-12 col-md-9 col-lg-9 search">
+                <div class="well well-sm">
+                      <form class="input-group mainsearch">
+                        <div class="input-group-btn" style="display:" id="categoryfilter"> <a href="#" style="  margin-right: -2px;" class="btn btn-lg btn-default dropdown-toggle catfilter" data-toggle="dropdown" aria-expanded="false"> <span style="font-size:14px" id="asdf" class="hidden-xs hidden-sm">All Categories</span> <span class="caret"></span> </a>
+                              <ul class="dropdown-menu catfilter-menu" role="menu" style="">
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getAll" href="#"><i class="icon-globe"></i>All Categories</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getAcademics"  href="#"><i class="icon-graduation-cap"></i>Academics</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getAccounts"  href="#"><i class="icon-lock-2"></i>Accounts</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getAdministrative"  href="#"><i class="icon-cog"></i>Administrative</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getAdmissions"  href="#"><i class="icon-login"></i>Admissions</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getCampus"  href="#"><i class="icon-leaf"></i>Campus Life</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getCareers"  href="#"><i class="icon-briefcase"></i>Careers</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getEmployee"  href="#"><i class="icon-stethoscope"></i>Employee Benefits</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getEnrollment"  href="#"><i class="icon-puzzle"></i>Enrollment</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getFaculty"  href="#"><i class="icon-users"></i>Faculty Services</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getFinances"  href="#"><i class="icon-money-1"></i>Finances</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getHousing"  href="#"><i class="icon-food"></i>Housing &amp; Dining</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getIT"  href="#"><i class="icon-monitor"></i>IT Services</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getLibraries"  href="#"><i class="icon-book"></i>Libraries</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getOrientation"  href="#"><i class="icon-compass-2"></i>Orientation</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getPayroll"  href="#"><i class="icon-money"></i>Payroll &amp; Taxes</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getPersonal"  href="#"><i class="icon-info-circled-1"></i>Personal Information</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getResearch"  href="#"><i class="icon-cubes"></i>Research</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getTraining"  href="#"><i class="icon-empire"></i>Training</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getTransportation"  href="#"><i class="icon-bus"></i>Transportation</a> </li>
+                            </ul>
+                          </div>
+                        <input type="text" class="form-control typeahead2 tt-query" autocomplete="off" spellcheck="false" placeholder="What would you like to do?" id="thesearchbox">
+                        <div id="cleartext" style="display:none"> <i class="icon-cancel-squared" ></i></div>
+                        <span class="input-group-btn">
+                          <button onclick="location.href = 'SD-searchresults.php';" class="btn-mainsearch" type="button"><i class="icon-search-3"></i></button>
+                          </span>
+                    </form>
+                      <div class="row hidden-xs hidden-sm">
+                        <div class="col-xs-4">
+                              <div class="browsecat"> <a href="#" class="togglebrowse"> <span>Browse Categories</span> <span class="caret"></span> </a>
+                                <div class="browsecat-panel" style="display:none">
+                                      <ul class="list-unstyled" role="menu">
+                                        <li class="divider"></li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-globe"></i> All Categories</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-graduation-cap"></i> Academics</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-lock-2"></i> Accounts</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-cog"></i> Administrative</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-login"></i> Admissions</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-leaf"></i> Campus Life</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-briefcase"></i> Careers</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-stethoscope"></i> Employee Benefits</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-puzzle"></i> Enrollment</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-users"></i> Faculty Services</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-money-1"></i> Finances</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-food"></i> Housing &amp; Dining</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-monitor"></i> IT Services</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-book"></i> Libraries</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-compass-2"></i> Orientation</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-money"></i> Payroll &amp; Taxes</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-info-circled-1"></i> Personal Information</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-cubes"></i> Research</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-empire"></i> Training</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-bus"></i> Transportation</a> </li>
+                                    </ul>
+                                  </div>
+                            </div>
+                          </div>
+                        <div class="col-xs-8 text-right">
+                              <div class="dropdown" id="market_select" aria-hidden="false"> <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">All&nbsp;IU Campuses&nbsp;<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                      <li role="menuitem"><a href="#" tabindex="0">All IU Campuses</a></li>
+                                      <li role="menuitem" class=""><a tabindex="-1" href="#">IU Bloomington</a></li>
+                                      <li role="menuitem" class=""><a tabindex="-1" href="#">IU East</a></li>
+                                      <li role="menuitem" class=""><a tabindex="-1" href="#">IU Kokomo</a></li>
+                                      <li role="menuitem" class=""><a tabindex="-1" href="#">IU Northwest</a></li>
+                                      <li role="menuitem" class=""><a tabindex="-1" href="#">IU South Bend</a></li>
+                                      <li role="menuitem" class=""><a tabindex="-1" href="#">IU Southeast</a></li>
+                                      <li role="menuitem" class=""><a tabindex="-1" href="#">IUPUC</a></li>
+                                      <li role="menuitem" class=""><a tabindex="-1" href="#">IUPUI</a></li>
+                                  </ul>
+                            </div>
+                              <div class="dropdown" id="role_select" aria-hidden="false"> <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"> <span class="">All Roles</span><span class="caret"></span> </a>
+                                <ul class="dropdown-menu dropdown-menu-right checked-list" role="menu">
+                                      <li role="menuitem" class=""> <a href="#" tabindex="0"> <i role="presentation" class="pull-right icon-ok ng-hide" aria-hidden="true"></i> <span>Faculty</span> </a> </li>
+                                      <li role="menuitem" class=""> <a href="#" tabindex="0"> <i role="presentation" class="pull-right icon-ok ng-hide" aria-hidden="true"></i> <span>Staff</span> </a> </li>
+                                      <li role="menuitem" class=""> <a href="#" tabindex="0"> <i role="presentation" class="pull-right icon-ok ng-hide" aria-hidden="true"></i> <span>Student</span> </a> </li>
+                                  </ul>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+    </div>
+  </header>
+<section class="utilities-bar">
+    <div class="container">
+        <nav class="navbar navbar-default"  style="margin-bottom:0px;     min-height: 30px;">
+              <div class="row">
+                <div class="col-md-8 col-xs-12">
+                      <div id="bc2" class="btn-group btn-breadcrumb" > <a href="SD-home.php" class="btn btn-default"><i class="icon-home-2"></i><span class="sr-only">Home</></a>  <div class="btn btn-default seemore">...</div>
+                         <a href="breadcrumb01.html" class="btn btn-default">
+                          <div>Level 1</div></a> <a href="breadcrumb02.html" class="btn btn-default">
+                          <div>Level 2</div></a> <a href="breadcrumb03.html" class="btn btn-default">
+                          <div>Level 3</div></a> <div class="btn">
+                          <div>Level 4long title long title long title long title </div></div></div>
+                  </div>
+                <div class="col-md-4 hidden-xs hidden-sm">
+                      <ul class="nav navbar-nav navbar-right"> <li><a href="#" class=""><i class="icon-bell-3"></i>
+                       
+                            <span class="sr-only">Notifications</span></a> </li>
+
+<li><a href="#" class="launch-notifications"><i class="icon-inbox-alt"></i>
+                            <div class="container-badge"><span class="badge">2</span></div>
+                            <span class="sr-only">Inbox</span></a> </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-user-3"></i> Hello, Tom</a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#" tabindex="0" class=""><i class="icon-heart"></i> My Favorites</a></li>
+                                <li><a href="#"  data-toggle="modal" data-target="#settings"><i class="icon-cog"></i>Preferences</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#" id="feedbackButton" tabindex="0"><i class="icon-comment-empty"></i> Send Feedback</a></li>
+                                <li><a href="#" tabindex="0" class="ng-click-active"><i class="icon-info-circled-1"></i> Help</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"><i class="icon-edit"></i> Publishing</a></li>
+                                <li><a href="/#"><i class="icon-tools"></i> Admin</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#" tabindex="0" aria-disabled="false"><i class="icon-logout"></i> Not Tom? <small class="text-muted">(sign out)</small></a></li>
+                            </ul>
+                          </li>
+                    </ul>
+                  </div>
+            </div>
+          </nav>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="main-content container" role="main" style="min-height:inherit">
+    <div id="main-content">
+      
+        <div data-ng-repeat="taskCollection in store.tasks.taskCollections" class="task-collection">
+            <div class="category">
+                <div class="row"> <div class="col-xs-10">
+                        <h3>Level 4long title long title long title long title</h3>
+                    </div>
+                    
+                </div>
+            </div>
+          
+        </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="text-center lead" style="padding-top:60px"> <a href="breadcrumb05.html" class="btn btn-default btn-lg"> Drill Down <i class="icon-down-1"></i></a> </div>
+<script>
+   $(document).ready(function(){
+    $(window).load(function() {
+
+        ellipses1 = $("#bc1 :nth-child(2)")
+        if ($("#bc1 a:hidden").length >0) {ellipses1.show()} else {ellipses1.hide()}
+        
+        ellipses2 = $("#bc2 :nth-child(2)")
+        if ($("#bc2 a:hidden").length >0) {ellipses2.show()} else {ellipses2.hide()}
+        
+    })
+	
+    
+});
+</script> 
+<script>
+    $(document).ready(function() {
+        $('.dismiss-announcement1').click(function() {
+            $('.announcement1').hide('fast');
+
+        });
+        $('.dismiss-announcement2,.dismiss-announcement-all').click(function() {
+            $('.announcement1,.announcement2,#announcement-counter, .dismiss-announcement-all').hide('fast');
+            $('.announcements-nonew').show('fast');
+
+        });
+    });
+</script> 
+<script>
+    $(".launch-notifications").click(function() {
+        $('#notifications').modal('toggle')
+        if ($(window).width() > 975) {
+            $('.modal-backdrop').css("display", "none");
+        } else {
+            $('.modal-backdrop').css("display", "block");
+        }
+        $('.message-content').readmore({
+            speed: 200,
+            collapsedHeight: 35,
+            moreLink: '<a href="#"><em>view more...</em></a>',
+            lessLink: '<a href="#"><em>view less</em></a>'
+        });
+    });
+</script> 
+<script>
+$(document).ready(function() {
+    $(".mobile-showdetails").click(function() {
+        $(this).parent().parent().parent().toggleClass("slideaway"),
+		 $(this).children().toggleClass("icon-angle-circled-right")
+    })	
+});
+</script> 
+<script>
+  
+  $(document).ready(function() {
+	$(".task-title-primary, .task-title-secondary,.tile-description-mobile, .tile-description, .task-activecontent").dotdotdot({
+		/*	The text to add as ellipsis. */
+		ellipsis	: '... ',
+ 
+		/*	How to cut off the text/html: 'word'/'letter'/'children' */
+		wrap		: 'word',
+ 
+		/*	Wrap-option fallback to 'letter' for long words */
+		fallbackToLetter: true,
+ 
+		/*	jQuery-selector for the element to keep and put after the ellipsis. */
+		after: "a.readmore",
+ 
+		/*	Whether to update the ellipsis: true/'window' */
+		watch		: true,
+	
+		/*	Optionally set a max-height, if null, the height will be measured. */
+		height		: null,
+ 
+		/*	Deviation for the height-option. */
+		tolerance	: 0,
+ 
+		/*	Callback function that is fired after the ellipsis is added,
+			receives two parameters: isTruncated(boolean), orgContent(string). */
+		callback	: function( isTruncated, orgContent ) {},
+ 
+		lastCharacter	: {
+ 
+			/*	Remove these characters from the end of the truncated text. */
+			remove		: [ ' ', ',', ';', '.', '!', '?' ],
+ 
+			/*	Don't add an ellipsis if this array contains 
+				the last character of the truncated text. */
+			noEllipsis	: []
+		}
+	});
+});
+
+
+
+</script> 
+<script>
+$('.description').readmore({
+  speed: 200,
+  collapsedHeight: 80,
+  moreLink: '<a href="#"><em>view more...</em></a>',
+  lessLink: '<a href="#"><em>view less</em></a>'
+});
+  </script> 
+<script>
+    $("#dismissall1").click(function() {
+        $(".announcement-section").hide();
+		$("#trigger-dismissedannouncements").show();
+    });
+    $("#signinmanage1").click(function() {
+        $("#dismiss-trigger1, #dismiss-trigger2, #dismissall1").show();
+        $("#signinmanage1").hide();
+    });
+</script> 
+<script>
+
+$(document).ready(function() {
+
+$('.divider').on('hide.bs.dropdown', function () {
+    return false;
+});
+
+
+
+});
+
+
+</script>
+</body>
+</html>

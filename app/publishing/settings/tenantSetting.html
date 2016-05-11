@@ -1,0 +1,96 @@
+<h2>Setting</h2>
+<ul class="breadcrumb">
+    <li><a href="#/">Publishing</a></li>
+    <li><a href="#/tenantSettings">Settings</a></li>
+    <li class="active">Setting</li>
+</ul>
+<div id="alert_{{$index}}" class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts" ><button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>{{alert.msg}}</div>
+
+<fieldset>
+    <h2>
+        <span ng-if="admin">{{setting.tenantSetting.uniqueKey}}<br /></span>
+        <small>{{setting.tenantSetting.directions}}</small>
+    </h2>
+    <div class="row" ng-if="setting.tenantSetting.multivalued">
+        <div class="col-md-2">
+            <div class="form-group">
+                <div ng-form name="tenantSettingSubForm">
+                    <div class="input-append">
+                        <label for="text" class="control-label">Value</label> <input type="text" name="text" ng-model="selectedValue.tenantSettingValue.value" class="form-control" required />
+                        <p ng-show="tenantSettingSubForm.text.$error.required" class="text-danger">This is required</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group clearfix">
+                <button class="btn btn-default pull-right" type="button" ng-click="addTenantSettingValue()" ng-disabled="tenantSettingSubForm.$invalid">{{selectedValue.buttonName}}</button>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="button-list media-list well">
+                <ul>
+                    <li data-ng-repeat="settingValue in setting.multiValuedTenantSettingValues | filter:{status: 'A'}">
+                        <div style="display: inline-block; margin-right: 5px;">
+                            <p>
+                                <strong ng-bind-html="settingValue.value|truncate:30"></strong>
+                            </p>
+                        </div>
+                        <button ng-click="editTenantSettingValue(settingValue)" type="button" class="btn btn-danger btn-xs" style="vertical-align: top;">
+                            <i class="glyphicon glyphicon-edit"></i>
+                        </button>
+
+                        <button ng-click="removeTenantSettingValue(settingValue)" type="button" class="btn btn-danger btn-xs" style="vertical-align: top;">
+                            <i class="glyphicon glyphicon-remove"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <form name="tenantSettingForm" ng-submit="saveTenantSetting()" validate="errors" novalidate>
+        <div class="row" ng-if="!setting.tenantSetting.multivalued && !setting.tenantSetting.acl && !setting.tenantSetting.image">
+            <div class="form-group col-md-12" ng-class="{'has-error': (tenantSettingForm.value.$invalid || tenantSettingForm.$serverError.value.$invalid)}">
+                <label for="tenantSettingValue" class="control-label">Value</label>
+                <div class="controls">
+                	<select ng-if="setting.tenantSetting.selectOptions" ng-model="setting.tenantSettingValue.value" ng-options="key as value for (key , value) in setting.tenantSetting.selectOptions" name="value" class="form-control"></select>
+                    <textarea ng-if="!setting.tenantSetting.selectOptions" ng-model="setting.tenantSettingValue.value" name="tenantSettingValue" cols="50" rows="5" class="form-control" ></textarea>
+                    <p ng-repeat="message in tenantSettingForm.$serverError.tenantSettingValue.messages" class="text-danger">{{message}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" ng-if="setting.tenantSetting.acl">
+            <div class="form-group col-md-12" ng-class="{'has-error': (tenantSettingForm.value.$invalid || tenantSettingForm.$serverError.value.$invalid)}">
+                <label class="control-label">Value</label>
+                <div permissions="setting.tenantSetting.aclExpression.expression"></div>
+                <p ng-repeat="message in tenantSettingForm.$serverError.value.messages" class="text-danger">{{message}}</p>
+            </div>
+        </div>
+        
+        <div class="row" ng-if="setting.tenantSetting.image">
+        	<div class="form-group col-md-3" ng-class="{'has-error': false}">
+	            <div>
+		            <span class="btn btn-success fileinput-button">
+		            	<i class="glyphicon glyphicon-plus glyphicon glyphicon"></i>
+		            	<span>Upload image&hellip;</span>
+		            	<input id="imageUpload" type="file" fileupload name="files[]" uploadurl="uploadUrl" done="uploadDone(e, data, 'imageUploadReturn', 'setting.tenantSetting.media')" fail="uploadFail(e, data, 'imageUploadReturn')" progress="uploadProgress(e, data, 'imageUploadReturn')">
+		            </span>
+					<div class="panel">
+						<span data-ng-show="imageUploadReturn.error" class="file-error">
+			                <span class="label label-danger">Error</span> {{imageUploadReturn.errorMessage}}
+			            </span>
+						<div data-ng-switch data-on="!!setting.tenantSetting.media.mediaId">
+							<img data-ng-switch-when="true" ng-src="{{contextPath}}/publish/image/setting/{{setting.tenantSetting.uniqueKey}}" alt="" style="width:100%">
+	                        <img data-ng-switch-default ng-src="{{contextPath}}/publish/image/file?name={{setting.tenantSetting.media.name}}" alt="" style="width:100%">
+	                    </div>
+					</div>
+				</div>
+				<p ng-show="setting.tenantSetting.media == null" class="text-danger">An image is required</p>
+                <p ng-repeat="message in tenantSettingForm.$serverError.media.messages" class="text-danger">{{message}}</p>
+	        </div>
+	    </div>
+
+        <button type="submit" class="btn btn-success">Save</button>
+        <a href="#/tenantSettings" class="btn btn-danger">Cancel</a>
+    </form>
+</fieldset>

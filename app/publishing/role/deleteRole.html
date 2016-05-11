@@ -1,0 +1,20 @@
+<h2>Delete Role</h2>
+<ul class="breadcrumb">
+  <li><a href="#/">Publishing</a></li>
+  <li><a href="#/roles">Roles</a></li>
+  <li class="active">Delete Role</li>
+</ul>
+<form name="roleForm" ng-submit="deleteRole()" novalidate>
+	<fieldset>
+		<div class="row">
+			<div class="form-group col-md-6">
+				<label for="name">Name</label>{{role.name}}
+			</div>
+			<div class="form-group col-md-6">
+				 <label for="uniqueKey">Unique Key</label>{{role.uniqueKey}}
+			</div>
+		</div>
+	</fieldset>
+	<button type="submit" class="btn btn-danger">Delete</button>
+	<a href="#/roles" class="btn">Cancel</a>
+</form>

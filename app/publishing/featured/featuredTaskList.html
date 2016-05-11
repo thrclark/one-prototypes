@@ -1,0 +1,66 @@
+<h2>Featured Tasks</h2>
+<p><a href="#/tasks?featured=true" class="btn btn-success pull-right"><i class="glyphicon glyphicon-plus"></i>&nbsp;New Featured Task</a></p>
+<ul class="breadcrumb">
+  <li><a href="#/">Publishing</a></li>
+  <li class="active">Featured Tasks</li>
+</ul>
+<div id="alert_{{$index}}" class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts" ><button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>{{alert.msg}}</div>
+
+<h3>Currently displayed or scheduled to display soon</h3>
+<table class="table table-hover table-condensed">
+	<thead>
+		<tr>
+			<th></th>
+			<th>Display Order</th>
+			<th>Task (Application)</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody ui-sortable="featuredOrder" ng-model="featuredTasks">
+		<tr data-ng-repeat="featuredTask in featuredTasks" class="reorder-cursor">
+			<td><span class="gripper"></span></td>
+			<td width="10%">{{$index+1}}</td>
+			<td>{{featuredTask.task.title}} <span ng-show="!!featuredTask.task.applicationName">({{featuredTask.task.applicationName}})</span><span ng-show="featuredTask.task.status == 'R'" class="text-danger"> - Task is Removed</span><span ng-show="featuredTask.task.status == 'I'" class="text-danger"> - Task is Inactive</span></td>
+			<td>
+				<a href="#/featuredTask/{{featuredTask.taskUid}}" class="btn btn-primary btn-small">Edit</a>
+                <button ng-click="confirmDelete(featuredTask)" class="btn btn-danger btn-small">Delete</button>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<h3>No longer displaying</h3>
+<table class="table table-hover table-condensed">
+	<thead>
+		<tr>
+			<th>Task (Application)</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="featuredTask in expiredFeaturedTasks">
+			<td>{{featuredTask.task.title}} <span ng-show="!!featuredTask.task.applicationName">({{featuredTask.task.applicationName}})</span></td>
+			<td>
+				<a href="#/featuredTask/{{featuredTask.taskUid}}" class="btn btn-primary btn-small">Edit</a>
+                <button ng-click="confirmDelete(featuredTask)" class="btn btn-danger btn-small">Delete</button>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div class="modal fade" id="deleteTaskDialog" tabindex="-1" role="dialog" aria-labelledby="deleteTaskLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="deleteTaskLabel">Confirm Featured Task Deletion</h4>
+			</div>
+			<div class="modal-body">
+				Are you sure you want to stop featuring the task "{{taskToDelete.task.title}}"?
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+				<button type="button" class="btn btn-success" ng-click="deleteFeaturedTask()">Yes</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

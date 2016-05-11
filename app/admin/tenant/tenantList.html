@@ -1,0 +1,55 @@
+<h2>Tenants</h2>
+<p><a href="#/tenant" class="btn btn-success pull-right"><i class="glyphicon glyphicon-plus"></i>&nbsp;New Tenant</a></p>
+<ul class="breadcrumb">
+  <li><a href="#/">Administration</a></li>
+  <li class="active">Tenants</li>
+</ul>
+<div id="alert_{{$index}}" class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts" ><button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>{{alert.msg}}</div>
+<table class="table table-hover table-condensed">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Unique Key</th>
+			<th>Status</th>
+			<th>URL</th>
+			<th>Is Primary</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="tenant in tenants">
+			<td>{{tenant.name}}</td>
+			<td>{{tenant.uniqueKey}}</td>
+			<td>{{tenant.status}}</td>
+			<td>
+            	<span ng-repeat="url in tenant.domainUrls">{{url.url}} </span>
+            </td>
+            <td>{{tenant.primary}}</td>
+			<td>
+				<a ng-href="#/tenant/{{tenant.tenantId}}" class="btn btn-primary btn-sm">Edit</a>
+		        <a ng-href="#/userAttributeMappingList/{{tenant.tenantId}}" class="btn btn-info btn-sm">Attribute Mappings</a>		
+		        <a ng-href="{{contextPath}}/admin/viewas/{{tenant.tenantId}}" class="btn btn-warning btn-sm" ng-disabled="{{tenant.status != 'A'}}">View As</a>
+		        <a ng-href="#/metadataList/{{tenant.tenantId}}" class="btn btn-info btn-sm">Metadata</a>
+		        <button ng-click="confirmDelete(tenant)" class="btn btn-danger btn-sm">Delete</button>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div class="modal fade" id="deleteTenantDialog" tabindex="-1" role="dialog" aria-labelledby="deleteTenantLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="deleteTenantLabel">Confirm Tenant Deletion</h4>
+			</div>
+			<div class="modal-body">
+				Are you sure you want to delete the tenant "{{tenantToDelete.name}}"?
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+				<button type="button" class="btn btn-success" ng-click="deleteTenant()">Yes</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

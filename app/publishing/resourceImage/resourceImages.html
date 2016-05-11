@@ -1,0 +1,85 @@
+<h2>Header &amp; Footer</h2>
+<ul class="breadcrumb">
+  <li><a href="#/">Publishing</a></li>
+  <li class="active">Edit Header &amp; Footer</li>
+</ul>
+<form name="resourceImageForm" ng-submit="saveHeaderFooter()" validate="errors" novalidate>
+	<fieldset>
+        <legend>
+        	<div ng-form id="fileupload" class="pull-right" action="/publish/resourceImage/file" method="POST" enctype="multipart/form-data" file-upload="fileUploadOptions" ng-class="{true: 'fileupload-processing'}[!!processing() || loadingFiles]">
+	            <div class="row fileupload-buttonbar">
+	                <div class="col-md-7">
+	                    <span class="btn btn-success fileinput-button"> <i class="glyphicon glyphicon-plus glyphicon glyphicon"></i> <span>Upload images&hellip;</span> <input type="file" name="files[]" multiple></span>
+	                    <div class="fileupload-loading"></div>
+	                </div>
+	                <!-- 
+	                <div class="col-md-5 fade" data-ng-class="{true: 'in'}[!!active()]">
+	                    <div class="progress" data-file-upload-progress="progress()">
+	                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{num}}" aria-valuemin="0" aria-valuemax="100" data-ng-style="{width: num + '%'}">
+	                            <span class="sr-only">{{num}}% Complete</span>
+	                        </div>
+	                    </div>
+	                </div> -->
+	            </div>
+	        </div>
+        	Images
+        	<div class="clearfix"></div>
+       	</legend>
+        
+        <table class="table table-striped">
+        	<thead>
+        		<tr>
+        			<th>Preview</th>
+        			<th>Name</th>
+        			<th>URL</th>
+        			<th>Dimensions</th>
+        			<th>Actions</th>
+        		</tr>
+        	</thead>
+        	<tbody>
+				<tr ng-repeat="file in queue" data-ng-class="{'processing': file.$processing()}">
+	            	<td>
+		            	<img ng-src="{{file.thumbnail_url}}" alt="" style="max-height:50px;" class="img-responsive" get-dimensions="file" />
+		            </td>
+		            <td>{{file.name}}</td>
+		            <td>
+		            	<p>{{file.url}}</p>
+		            	<div ng-show="file.$progress()" class="progress progress-striped active fade" style="magin-bottom:0;" data-ng-class="{pending: 'in'}[file.$state()]" data-file-upload-progress="file.$progress()"><div class="progress-bar progress-bar-success" data-ng-style="{width: num + '%'}"></div></div>
+		            	<strong data-ng-show="file.error" class="error text-danger">{{file.error}}</strong>
+		            </td>
+		            <td>
+		            	<span ng-show="file.dimensions.w">{{file.dimensions.w}} &times; {{file.dimensions.h}}</span>
+		            </td>
+		            <td>
+		                <button type="button" class="btn btn-primary start" data-ng-click="file.$submit()" data-ng-hide="!file.$submit || options.autoUpload" data-ng-disabled="file.$state() == 'pending' || file.$state() == 'rejected'">
+		                      <i class="glyphicon glyphicon-upload"></i>
+		                      <span>Start</span>
+		                </button>
+		                <button type="button" class="btn btn-warning cancel" data-ng-click="file.$cancel()" data-ng-hide="!file.$cancel">
+		                      <i class="glyphicon glyphicon-ban-circle"></i>
+		                      <span>Cancel</span>
+		                </button>
+		            	<button data-ng-controller="FileDestroyController" type="button" class="btn btn-danger destroy" data-ng-click="file.$destroy()" data-ng-hide="!file.$destroy">
+		                      <i class="glyphicon glyphicon-trash"></i>
+		                      <span>Delete</span>
+		            	</button>
+		        	</td>
+		    	</tr>
+	    	</tbody>
+       	</table>
+    </fieldset>
+    <fieldset class="form-group">
+        <legend>Header</legend>
+        <textarea rows="8" class="form-control" ng-model="header.tenantSettingValues[0].value"></textarea>
+    </fieldset>
+    <fieldset class="form-group">
+        <legend>Footer</legend>
+        <textarea rows="8" class="form-control" ng-model="footer.tenantSettingValues[0].value"></textarea>
+    </fieldset>
+    <fieldset class="form-group">
+        <legend>CSS</legend>
+        <textarea rows="8" class="form-control" ng-model="css.tenantSettingValues[0].value"></textarea>
+    </fieldset>
+	<button type="submit" class="btn btn-success">Save</button>
+	<a href="#/publish" class="btn btn-danger">Cancel</a>
+</form>

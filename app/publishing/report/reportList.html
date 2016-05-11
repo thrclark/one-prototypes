@@ -1,0 +1,35 @@
+<h2>Flagged Comments</h2>
+<ul class="breadcrumb">
+  <li><a href="#/">Publishing</a></li>
+  <li ng-if="!historical" class="active">Flagged Comments</li>
+  <li ng-if="historical"><a href="#/reports">Flagged Comments</a></li>
+  <li ng-if="historical" class="active">Flagged Comment History</li>
+</ul>
+<div id="alert_{{$index}}" class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts" ><button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>{{alert.msg}}</div>
+
+<div ng-if="!historical" class="form-group">
+	<a href="#/reports?historical=true" type="button" class="btn btn-warning" >View Flagged Comment History</a>
+</div>
+
+<table class="table table-hover table-condensed">
+	<thead>
+		<tr>
+            <th>Alias Name</th>
+			<th>Comment Text</th>
+			<th>Post Date</th>
+			<th>Number of Flags</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="comment in comments">
+			<td>{{comment.userAlias}}</td>
+			<td ng-bind-html="comment.comment|truncate:20"></td>
+			<td>{{comment.postDate | date:'MMM d, y h:mm a'}}</td>
+			<td>{{comment.reports.length}}</td>
+			<td>
+				<a ng-href="#/report/{{comment.commentId}}{{historical ? '?historical=true' : ''}}" class="btn btn-primary btn-sm">View</a>
+			</td>
+		</tr>
+	</tbody>
+</table>

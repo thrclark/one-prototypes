@@ -1,0 +1,19 @@
+<div class="sidebar-container-pub">
+  <a href="" ng-click="selectTab('ts')" id='ts' ng-class="{active: tabSelection=='ts', inactive: tabSelection!='ts'}">
+	Task Settings
+	 <span>Add/Edit task related features</span>
+  </a>
+  <a ng-if="admin" href="" ng-click="selectTab('fs')" id='fs' ng-class="{active: tabSelection=='fs', inactive: tabSelection!='fs'}">
+	Filter Settings
+	<span>Add/Edit filter related features</span>
+  </a>
+  <a href="" ng-click="selectTab('ds')" id='ds' ng-class="{active: tabSelection=='ds', inactive: tabSelection!='ds'}">
+	Data Settings
+	<span>Manage data related features</span>
+  </a>
+  <a ng-if="admin" href="" ng-click="selectTab('as')" id='as' ng-class="{active: tabSelection=='as', inactive: tabSelection!='as'}">
+	Advanced Settings
+	<span>Manage advanced features</span>
+  </a>
+  <div class="hidden-xs" style="height: 250px;"></div>
+</div>

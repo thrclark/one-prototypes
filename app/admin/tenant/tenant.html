@@ -1,0 +1,84 @@
+<h1><span ng-show="tenant.tenantId == null">New</span><span ng-show="tenant.tenantId != null">Edit</span> Tenant</h1>
+<ul class="breadcrumb">
+  <li><a href="#/">Administration</a></li>
+  <li><a href="#/tenants">Tenants</a></li>
+  <li class="active"><span ng-show="tenant.tenantId == null">Create</span><span ng-show="tenant.tenantId != null">Edit</span> Tenant</li>
+</ul>
+<div id="alert_{{$index}}" class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts" ><button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>{{alert.msg}}</div>
+
+<form name="tenantForm" ng-submit="saveTenant()" validate="errors" novalidate>
+	<fieldset>
+		<div class="row">
+			<div class="form-group col-md-5" ng-class="{'has-error': (tenantForm.name.$invalid || tenantForm.$serverError.name.$invalid)}">
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="text" name="name" ng-model="tenant.name" required class="form-control" />
+					<p ng-repeat="message in tenantForm.$serverError.name.messages" class="text-danger">{{message}}</p>
+				</div>
+			</div>	
+			<div class="form-group col-md-5" ng-class="{'has-error': (tenantForm.uniqueKey.$invalid || tenantForm.$serverError.uniqueKey.$invalid)}">
+				<div class="form-group">
+					<label for="uniqueKey">Unique Key</label>
+					<input type="text" name="uniqueKey" ng-model="tenant.uniqueKey" required class="form-control" unique="/admin/tenant/validateUniqueKey" entity-id="{{tenant.tenantId}}" ng-pattern="/^[a-z0-9\\-]+$/"/>
+					<p ng-repeat="message in tenantForm.$serverError.uniqueKey.messages" class="text-danger">{{message}}</p>
+				</div>
+			</div>
+			<div class="form-group col-md-2">
+				<div class="form-group">
+					<label for="primary">Is Primary</label>
+			    	<select id="primary" name="primary" ng-model="tenant.primary" class="form-control">
+			        	<option value="Y">Yes</option>
+			        	<option value="N">No</option>
+			    	</select>
+				</div>
+			</div>
+        </div>
+         <div class="row">
+            <div class="col-md-3">
+	            <div class="form-group">
+	                <label for="url">URL</label>
+	                <input type="text" name="url" ng-model="selectedUrl" class="form-control"/>
+	            </div>
+	            <div class="form-group">
+	                <button class="btn btn-default pull-right" type="button" ng-click="addUrl()">Add</button>
+                </div>
+            </div>
+
+            <div class="col-md-9 button-list well">
+                <button type="button" ng-repeat="url in tenant.domainUrls" ng-click="removeUrl(url)" class="btn btn-default btn-sm">
+                    {{url.url}}&nbsp;<i class="glyphicon glyphicon-remove"></i>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="form-group col-md-3">
+            	<label for="status">Status</label>
+            	<select ng-model="tenant.status" ng-options="key as value for (key, value) in pageData.status" class="form-control"></select>
+            </div>
+        	<div class="form-group col-md-3" ng-class="{'has-error': (tenantForm.idpEntityId.$invalid || tenantForm.$serverError.idpEntityId.$invalid)}">
+           		<label for="idpEntityId">Identity Provider Entity Id</label>
+ 				<input type="text" name="idpEntityId" ng-model="tenant.idpEntityId" class="form-control" />
+ 				<p ng-repeat="message in tenantForm.$serverError.idpEntityId.messages" class="text-danger">{{message}}</p>
+            </div>
+        	<div class="form-group col-md-3" ng-class="{'has-error': (tenantForm.spAlias.$invalid || tenantForm.$serverError.spAlias.$invalid)}">
+           		<label for="spAlias">Service Provider Alias</label>
+ 				<input type="text" name="spAlias" ng-model="tenant.spAlias" class="form-control" />
+ 				<p ng-repeat="message in tenantForm.$serverError.spAlias.messages" class="text-danger">{{message}}</p>
+            </div>
+        	<div class="form-group col-md-3" ng-class="{'has-error': (tenantForm.spEntityId.$invalid || tenantForm.$serverError.spEntityId.$invalid)}">
+           		<label for="spEntityId">Service Provider Entity Id</label>
+ 				<input type="text" name="spEntityId" ng-model="tenant.spEntityId" class="form-control" />
+ 				<p ng-repeat="message in tenantForm.$serverError.spEntityId.messages" class="text-danger">{{message}}</p>
+            </div>
+        </div>
+		<div class="row">
+			<div class="form-group col-md-12" ng-class="{'has-error': (tenantForm.adminAclExpression.$invalid || tenantForm.$serverError.adminAclExpression.$invalid)}">
+				<label for="adminAclExpression">Admin ACL Expression</label>
+				<div permissions="tenant.adminAclExpression.expression" tenant-id="{{tenant.tenantId}}"></div>
+				<p ng-repeat="message in tenantForm.$serverError.adminAclExpression.messages" class="text-danger">{{message}}</p>
+			</div>
+		</div>
+	</fieldset>
+	<button type="submit" class="btn btn-success">Save</button>
+	<a href="#/tenants" class="btn btn-danger">Cancel</a>
+</form>

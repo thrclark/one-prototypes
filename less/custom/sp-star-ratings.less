@@ -1,0 +1,137 @@
+.star-bar {
+  position: relative;
+  height: 16px;
+  width: 80px;
+  background-color: #CCC;
+  display: inline-block;
+  vertical-align:text-bottom;
+
+  .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #F1C249;
+  }
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/stars.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    &.grey {
+      background-image: url('../img/stars-grey.png');
+    }
+  }
+}
+
+.star-grey {
+  color: #ccc;
+}
+
+// new design
+
+
+.star-widget {
+  display: inline-block;
+  float: left;
+  position: relative;
+  ul {
+    list-style: none outside none;
+    overflow: hidden;
+    padding-left: 0px;
+    white-space: nowrap;
+    li {
+      display: inline-block;
+      margin-left: -2px;
+      margin-right: -2px;
+      padding: 0;
+      vertical-align: middle;
+    }
+  }
+  ul.star-foreground {
+    position: absolute;
+    top: 0;
+    span {
+      color: orange;
+    }
+  }
+  ul.star-background {
+    span {
+      color: silver;
+    }
+  }
+}
+
+
+.star-review-count {
+  display: inline-block;
+  padding-left: 5px;
+}
+
+
+
+.message .message-header .message-title .star-widget {
+  margin-top: -3px;
+  margin-right: 8px;
+}
+
+
+
+
+.ratings-hero {
+  .star-widget {
+    margin-top: -3px;
+    padding-right: 3px;
+    li {
+      margin-right: -3px;
+    }
+    ul {
+      list-style: none outside none;
+      margin-bottom: 0px;
+      overflow: hidden;
+      padding-left: 0px;
+      white-space: nowrap;
+    }
+  }
+  .panel-actionheader {
+    .panel-controls {
+      margin-top: 20px;
+    }
+  }
+  .ratings-overview {
+    .ratings-average {
+      display: inline-block;
+      font-family: @headings-font-family;
+      padding-left: 5px;
+    }
+  }
+  .star-review-count {
+    font-size: 14px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left:0px;
+  }
+  .ratings-starbars {
+    margin-bottom: 30px;
+  }
+}
+
+
+.task6 {
+  .tile-content {
+    .task-attributes {
+      .star-widget {
+        font-size: 12px;
+        margin-right: 4px;
+      }
+      .review-count {
+        font-size: 12px;
+        color: #999999;
+      }
+    }
+  }
+}

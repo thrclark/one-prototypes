@@ -1,0 +1,134 @@
+<h2><span ng-show="image.imageSetId == null">New</span><span ng-show="image.imageSetId != null">Edit</span> Image</h2>
+<ul class="breadcrumb">
+  <li><a href="#/">Publishing</a></li>
+  <li><a href="#/images">Images</a></li>
+  <li class="active"><span ng-show="image.imageSetId == null">Create</span><span ng-show="image.imageSetId != null">Edit</span> Image</li>
+</ul>
+<form name="imageForm" ng-submit="saveImage()" validate="errors" novalidate>
+	<fieldset>
+		<div class="row">
+	        <div class="form-group col-sm-6" ng-class="{'has-error': (imageForm.name.$invalid || imageForm.$serverError.name.$invalid)}">
+	            <label for="name" class="control-label">Image name</label>
+	            <div class="counter-container">
+	            	<input type="text" name="name" ng-model="image.name" ng-maxlength="100" required class="form-control" />
+	            	<span class="label pull-right" ng-class="{'label-info':image.name.length<90, 'label-warning':image.name.length>=90 && image.name.length<100, 'label-danger': image.name.length>=100}">{{100-image.name.length}}</span>
+               	</div>
+	            <p ng-repeat="(validator, invalid) in imageForm.name.$error" ng-show="invalid && pageData.validationMessages.name[validator]" class="text-danger">{{pageData.validationMessages.name[validator]}}</p>
+	            <p ng-repeat="message in imageForm.$serverError.name.messages" class="text-danger">{{message}}</p>
+	        </div>
+        	<div class="form-group col-sm-6">
+            	<div class="checkbox">
+			    	<label>
+			    		<input type="checkbox" ng-model="image.generateSmallerImageSizes" /> Automatically generate smaller image sizes.
+			    	</label>
+				</div>
+        	</div>
+        </div>
+		<div class="row">
+        	<div class="form-group col-md-3" ng-class="{'has-error': image.desktopImage == null || desktopUploadReturn.error || imageForm.$serverError.desktopImage.$invalid}">
+	            <label class="control-label">Desktop Image (153&times;153)</label>
+	            <div>
+		            <span class="btn btn-success fileinput-button">
+		            	<i class="glyphicon glyphicon-plus glyphicon glyphicon"></i>
+		            	<span>Upload image&hellip;</span>
+		            	<input id="desktopUpload" type="file" fileupload name="files[]" customdata="{size:5}" uploadurl="uploadUrl" done="uploadDone(e, data, 'desktopUploadReturn', 'image.desktopImage')" fail="uploadFail(e, data, 'desktopUploadReturn')" progress="uploadProgress(e, data, 'desktopUploadReturn')">
+		            </span>
+					<div class="panel">
+						<span data-ng-show="desktopUploadReturn.error" class="file-error">
+			                <span class="label label-danger">Error</span> {{desktopUploadReturn.errorMessage}}
+			            </span>
+	                    <img ng-if="!!image.desktopImage.mediaId && !!image.desktopImage.contentUrl" ng-src="{{image.desktopImage.contentUrl}}" alt="" style="width: 100%" />
+                        <img ng-if="!!image.desktopImage.mediaId && !image.desktopImage.contentUrl"  ng-src="{{contextPath}}/publish/image/media/{{image.imageSetId}}/{{image.desktopImage.mediaId}}" alt="" style="width: 100%" />
+                        <img ng-if="!image.desktopImage.mediaId" ng-src="{{contextPath}}/publish/image/file?name={{image.desktopImage.name}}" alt="" style="width: 100%" />
+					</div>
+				</div>
+				<p ng-show="image.desktopImage == null" class="text-danger">An image is required</p>
+                <p ng-repeat="message in imageForm.$serverError.desktopImage.messages" class="text-danger">{{message}}</p>
+	        </div>
+	        <div class="form-group col-md-3" ng-hide="image.generateSmallerImageSizes" ng-class="{'has-error': image.tabletHighResolutionImage == null || tabletHiResUploadReturn.error || imageForm.$serverError.tabletHighResolutionImage.$invalid}">
+	            <label class="control-label">Tablet High-Resolution Image (144&times;144)</label>
+	            <div>
+		            <span class="btn btn-success fileinput-button">
+		            	<i class="glyphicon glyphicon-plus glyphicon glyphicon"></i>
+		            	<span>Upload image&hellip;</span>
+		            	<input id="tabletHiResUpload" type="file" fileupload name="files[]" customdata="{size:4}" uploadurl="uploadUrl" done="uploadDone(e, data, 'tabletHiResUploadReturn', 'image.tabletHighResolutionImage')" fail="uploadFail(e, data, 'tabletHiResUploadReturn')" progress="uploadProgress(e, data, 'tabletHiResUploadReturn')">
+		            </span>
+					<div class="panel">
+						<span data-ng-show="tabletHiResUploadReturn.error" class="file-error">
+			                <span class="label label-danger">Error</span> {{tabletHiResUploadReturn.errorMessage}}
+			            </span>
+	                    <img ng-if="!!image.tabletHighResolutionImage.mediaId && !!image.tabletHighResolutionImage.contentUrl" ng-src="{{image.tabletHighResolutionImage.contentUrl}}" alt="" style="width: 100%" />
+                        <img ng-if="!!image.tabletHighResolutionImage.mediaId && !image.tabletHighResolutionImage.contentUrl"  ng-src="{{contextPath}}/publish/image/media/{{image.imageSetId}}/{{image.tabletHighResolutionImage.mediaId}}" alt="" style="width: 100%" />
+                        <img ng-if="!image.tabletHighResolutionImage.mediaId" ng-src="{{contextPath}}/publish/image/file?name={{image.tabletHighResolutionImage.name}}" alt="" style="width: 100%" />
+					</div>
+				</div>
+				<p ng-show="image.tabletHighResolutionImage == null" class="text-danger">An image is required</p>
+                <p ng-repeat="message in imageForm.$serverError.tabletHighResolutionImage.messages" class="text-danger">{{message}}</p>
+	        </div>
+               <div class="form-group col-md-3" ng-hide="image.generateSmallerImageSizes" ng-class="{'has-error': image.phoneHighResolutionImage == null || phoneHiResUploadReturn.error || imageForm.$serverError.phoneHighResolutionImage.$invalid}">
+	            <label class="control-label">Phone High-Resolution Image (114&times;114)</label>
+	            <div>
+		            <span class="btn btn-success fileinput-button">
+		            	<i class="glyphicon glyphicon-plus glyphicon glyphicon"></i>
+		            	<span>Upload image&hellip;</span>
+		            	<input id="phoneHiResUpload" type="file" fileupload name="files[]" customdata="{size:2}" uploadurl="uploadUrl" done="uploadDone(e, data, 'phoneHiResUploadReturn', 'image.phoneHighResolutionImage')" fail="uploadFail(e, data, 'phoneHiResUploadReturn')" progress="uploadProgress(e, data, 'phoneHiResUploadReturn')">
+		            </span>
+					<div class="panel">
+						<span data-ng-show="phoneHiResUploadReturn.error" class="file-error">
+			                <span class="label label-danger">Error</span> {{phoneHiResUploadReturn.errorMessage}}
+			            </span>
+	                    <img ng-if="!!image.phoneHighResolutionImage.mediaId && !!image.phoneHighResolutionImage.contentUrl" ng-src="{{image.phoneHighResolutionImage.contentUrl}}" alt="" style="width: 100%" />
+                        <img ng-if="!!image.phoneHighResolutionImage.mediaId && !image.phoneHighResolutionImage.contentUrl"  ng-src="{{contextPath}}/publish/image/media/{{image.imageSetId}}/{{image.phoneHighResolutionImage.mediaId}}" alt="" style="width: 100%" />
+                        <img ng-if="!image.phoneHighResolutionImage.mediaId" ng-src="{{contextPath}}/publish/image/file?name={{image.phoneHighResolutionImage.name}}" alt="" style="width: 100%" />
+					</div>
+				</div>
+				<p ng-show="image.phoneHighResolutionImage == null" class="text-danger">An image is required</p>
+                <p ng-repeat="message in imageForm.$serverError.phoneHighResolutionImage.messages" class="text-danger">{{message}}</p>
+	        </div>
+           </div>
+           <div class="row">
+	        <div class="form-group col-md-3" ng-hide="image.generateSmallerImageSizes" ng-class="{'has-error': image.tabletLowResolutionImage == null || tabletLoResUploadReturn.error || imageForm.$serverError.tabletLowResolutionImage.$invalid}">
+	            <label class="control-label">Tablet Low-Resolution Image (72&times;72)</label>
+	            <div>
+		            <span class="btn btn-success fileinput-button">
+		            	<i class="glyphicon glyphicon-plus glyphicon glyphicon"></i>
+		            	<span>Upload image&hellip;</span>
+		            	<input id="tabletLoResUpload" type="file" fileupload name="files[]" customdata="{size:3}" uploadurl="uploadUrl" done="uploadDone(e, data, 'tabletLoResUploadReturn', 'image.tabletLowResolutionImage')" fail="uploadFail(e, data, 'tabletLoResUploadReturn')" progress="uploadProgress(e, data, 'tabletLoResUploadReturn')">
+		            </span>
+					<div class="panel">
+						<span data-ng-show="tabletLoResUploadReturn.error" class="file-error">
+			                <span class="label label-danger">Error</span> {{tabletLoResUploadReturn.errorMessage}}
+			            </span>
+	                    <img ng-if="!!image.tabletLowResolutionImage.mediaId && !!image.tabletLowResolutionImage.contentUrl" ng-src="{{image.tabletLowResolutionImage.contentUrl}}" alt="" style="width: 100%" />
+                        <img ng-if="!!image.tabletLowResolutionImage.mediaId && !image.tabletLowResolutionImage.contentUrl"  ng-src="{{contextPath}}/publish/image/media/{{image.imageSetId}}/{{image.tabletLowResolutionImage.mediaId}}" alt="" style="width: 100%" />
+                        <img ng-if="!image.tabletLowResolutionImage.mediaId" ng-src="{{contextPath}}/publish/image/file?name={{image.tabletLowResolutionImage.name}}" alt="" style="width: 100%" />
+					</div>
+				</div>
+				<p ng-show="image.tabletLowResolutionImage == null" class="text-danger">An image is required</p>
+                <p ng-repeat="message in imageForm.$serverError.tabletLowResolutionImage.messages" class="text-danger">{{message}}</p>
+	        </div>
+	        <div class="form-group col-md-3" ng-hide="image.generateSmallerImageSizes" ng-class="{'has-error': image.phoneLowResolutionImage == null || phoneLoResUploadReturn.error || imageForm.$serverError.phoneLowResolutionImage.$invalid}">
+	            <label class="control-label">Phone Low-Resolution Image (57&times;57)</label>
+	            <div>
+		            <span class="btn btn-success fileinput-button">
+		            	<i class="glyphicon glyphicon-plus glyphicon glyphicon"></i>
+		            	<span>Upload image&hellip;</span>
+		            	<input id="phoneLoResUpload" type="file" fileupload name="files[]" customdata="{size:1}" uploadurl="uploadUrl" done="uploadDone(e, data, 'phoneLoResUploadReturn', 'image.phoneLowResolutionImage')" fail="uploadFail(e, data, 'phoneLoResUploadReturn')" progress="uploadProgress(e, data, 'phoneLoResUploadReturn')">
+		            </span>
+					<div class="panel">
+						<span data-ng-show="phoneLoResUploadReturn.error" class="file-error">
+			                <span class="label label-danger">Error</span> {{phoneLoResUploadReturn.errorMessage}}
+			            </span>
+	                    <img ng-if="!!image.phoneLowResolutionImage.mediaId && !!image.phoneLowResolutionImage.contentUrl" ng-src="{{image.phoneLowResolutionImage.contentUrl}}" alt="" style="width: 100%" />
+                        <img ng-if="!!image.phoneLowResolutionImage.mediaId && !image.phoneLowResolutionImage.contentUrl"  ng-src="{{contextPath}}/publish/image/media/{{image.imageSetId}}/{{image.phoneLowResolutionImage.mediaId}}" alt="" style="width: 100%" />
+                        <img ng-if="!image.phoneLowResolutionImage.mediaId" ng-src="{{contextPath}}/publish/image/file?name={{image.phoneLowResolutionImage.name}}" alt="" style="width: 100%" />
+					</div>
+				</div>
+				<p ng-show="image.phoneLowResolutionImage == null" class="text-danger">An image is required</p>
+                <p ng-repeat="message in imageForm.$serverError.phoneLowResolutionImage.messages" class="text-danger">{{message}}</p>
+	        </div>
+           </div>
+	</fieldset>
+	<button type="submit" class="btn btn-success">Save</button>
+	<a href="#/images" class="btn btn-danger">Cancel</a>
+</form>

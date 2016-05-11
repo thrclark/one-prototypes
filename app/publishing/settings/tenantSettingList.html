@@ -1,0 +1,36 @@
+<h2>Settings</h2>
+<ul class="breadcrumb">
+    <li><a href="#/">Publishing</a></li>
+    <li class="active">Settings</li>
+</ul>
+<div id="alert_{{$index}}" class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts" ><button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>{{alert.msg}}</div>
+
+<table class="table table-hover table-condensed">
+    <thead>
+        <tr>
+            <th ng-if="admin">Setting</th>
+            <th>Description</th>
+            <th>Current Value</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody ng-repeat="settingGroup in settings">
+    	<tr>
+    		<th colspan="{{admin ? 4 : 3}}" class="h4">{{settingGroup.title}}</th>
+    	</tr>
+        <tr ng-repeat="setting in settingGroup.settings">
+            <td ng-if="admin">{{setting.tenantSetting.uniqueKey}}</td>
+            <td>{{setting.tenantSetting.directions}}</td>
+            <td>
+	            <span ng-show="setting.tenantSetting.tenantSettingValues.length == 0 && setting.tenantSetting.acl && !!setting.tenantSetting.aclExpression">Setting present</span>
+	            <span ng-show="setting.tenantSetting.tenantSettingValues.length == 0 && setting.tenantSetting.image && !!setting.tenantSetting.media">Image Present</span>
+	            <span ng-show="setting.tenantSetting.tenantSettingValues.length > 0" ng-repeat="tenantSettingValue in setting.tenantSetting.tenantSettingValues | filter:{status: 'A'}">
+	            	<div ng-bind-html="(setting.tenantSetting.selectOptions ? setting.tenantSetting.selectOptions[tenantSettingValue.value] : tenantSettingValue.value)  | truncate:100"></div>
+	            </span>
+            </td>
+            <td>
+                <a href="#/tenantSetting/{{setting.tenantSetting.uniqueKey}}" class="btn btn-primary btn-sm">Update</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

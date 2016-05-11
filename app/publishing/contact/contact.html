@@ -1,0 +1,81 @@
+<h2>
+    <span ng-show="contact.contactId == null">New</span><span ng-show="contact.contactId != null">Edit</span> Contact
+</h2>
+<ul class="breadcrumb">
+  <li><a href="#/">Publishing</a></li>
+  <li><a href="#/contacts">Contacts</a></li>
+  <li class="active"><span ng-show="contact.contactId == null">Create</span><span ng-show="contact.contactId != null">Edit</span> Contact</li>
+</ul>
+<div id="alert_{{$index}}" class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts" ><button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>{{alert.msg}}</div>
+<form name="contactForm" ng-submit="saveContact()" validate="errors" novalidate>
+	<fieldset>
+		<div class="row">
+		    <div class="form-group col-md-6">
+		        <label for="name">Name</label>
+		        <div class="counter-container">
+                    <input type="text" name="name" ng-model="contact.name" required ng-maxlength="2000" unique="/publish/contact/validateName" entity-id="{{contact.contactId}}" class="form-control" popover="Display name of the contact." /> <span class="label pull-right" ng-class="{'label-info':contact.name.length<1900, 'label-warning':contact.name.length>=1900 && contact.name.length<2000, 'label-danger': contact.name.length>=2000}">{{2000-contact.name.length}}</span>
+               	</div>
+               	<p ng-repeat="(validator, invalid) in contactForm.name.$error" ng-show="invalid && pageData.validationMessages.name[validator]" class="text-danger">{{pageData.validationMessages.name[validator]}}</p>
+		        <p ng-repeat="message in contactForm.$serverError.name.messages" class="text-danger">{{message}}</p>
+		    </div>
+		</div>
+    </fieldset>
+	
+    <fieldset>
+		<legend> Contact Methods </legend>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                	<div ng-form name="contactSubForm">
+                        <label for="methodName" class="control-label">Name</label>
+                        <input type="text" ng-model="contactMethod.name" name="methodName" ng-maxlength="100" class="form-control" required popover="The display value for this contact method." />
+		                <p ng-show="contactSubForm.methodName.$error.required" class="text-danger">This is required</p>
+                        
+                        <label for="methodValue" class="control-label">Value</label>
+                        <input type="text" ng-model="contactMethod.value" name="methodValue" ng-maxlength="2000" class="form-control" required popover="The value for this contact method. (Actual email address, phone number, or URL)" />
+		                <p ng-show="contactSubForm.methodValue.$error.required" class="text-danger">This is required</p>
+                        
+                        <label for="methodType" class="control-label">Type</label>
+                        <select ng-model="contactMethod.type" name="methodType" ng-options="key as value for (key, value) in pageData.contactMethodTypes" class="form-control" required popover="What type of contact method is this?">
+	                        <option value="">Select Type</option>
+	                    </select>
+	                    <p ng-show="contactSubForm.methodType.$error.required" class="text-danger">This is required</p>
+                    </div>
+	            </div>
+	            <div class="form-group clearfix pull-right">
+	                <button ng-if="!editingContctMethod" class="btn btn-default" type="button" ng-click="saveContactMethod()" ng-disabled="contactSubForm.$invalid">Add</button>
+	                <button ng-if="editingContctMethod" class="btn btn-danger" type="button" ng-click="newContactMethod()" ng-disabled="contactSubForm.$invalid">Done</button>
+	            </div>
+	            <div class="clearfix"></div>
+            </div>
+            <div class="col-md-9">
+                <div class="button-list media-list well">
+	                <ul ui-sortable ng-model="contact.contactMethods">
+	                    <li data-ng-repeat="contactMethod in contact.contactMethods">
+	                       	<div style="display:inline-block;margin-right:5px;">
+                                <p>
+                                    <strong>{{contactMethod.name}}</strong>
+                                </p>
+								<p>{{contactMethod.value}}</p>
+								<p>{{pageData.contactMethodTypes[contactMethod.type]}}</p>
+	                       	</div>
+	                       	<button ng-click="editContactMethod(contactMethod)" type="button" class="btn btn-warning btn-xs" style="vertical-align: top;">
+                                <i class="glyphicon glyphicon-pencil"></i>
+                            </button>
+                            <button ng-click="removeContactMethod(contactMethod)" type="button" class="btn btn-danger btn-xs" style="vertical-align: top;">
+                                <i class="glyphicon glyphicon-remove"></i>
+                            </button>
+	                    </li>
+	                </ul>
+                </div>
+            </div>
+        </div>
+	</fieldset>
+    <p ng-repeat="(validator, invalid) in contactForm.contactMethods.$error" ng-show="invalid && pageData.validationMessages.contactMethods[validator]" class="text-danger">{{pageData.validationMessages.contactMethods[validator]}}</p>
+    <p ng-repeat="message in contactForm.$serverError.contactMethods.messages" class="text-danger">{{message}}</p>
+    <div class="form-group">
+    	<button type="button" class="btn btn-success" ng-click="saveContact()" ng-disabled="contactForm.name.$invalid">Save</button>
+		<a href="#/contacts" class="btn btn-danger">Cancel</a>
+    </div>
+</form>
+

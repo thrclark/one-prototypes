@@ -1,0 +1,51 @@
+<div>
+	<legend> Comments for {{task.title}} Version {{task.displayVersion}}</legend>
+	
+	<ul ng-if="previousPage == 'taskList'" class="breadcrumb">
+   		<li><a href="#/">Publishing</a></li>
+   		<li><a href="#/tasks">Tasks</a></li>
+   		<li><a ng-href="#/comment/{{task.uid}}/{{previousPage}}">Versions</a></li>
+   		<li class="active"> {{task.title}}</li>
+   	</ul>
+   	
+   	<ul ng-if="previousPage == 'recentComments'" class="breadcrumb">
+   		<li><a href="#/">Publishing</a></li>
+   		<li><a href="#/recentComments">Recent Comments</a></li>
+   		<li><a ng-href="#/comment/{{task.uid}}/{{previousPage}}">Versions</a></li>
+   		<li class="active"> {{task.title}}</li>
+   	</ul>
+  
+
+	<div>
+		<strong>Task (Application Name)</strong>
+		<p ng-show="task.applicationName">{{task.title}} ({{task.applicationName}})</p>
+		<p ng-show="!task.applicationName">{{task.title}}</p>
+		<strong>Campuses</strong>
+		<p ng-if="task.markets.length == 0">All {{marketsTitle}}</p>
+		<p ng-repeat="market in task.markets">{{market.name}}</p>
+	</div>
+
+	<table class="table table-hover table-condensed">
+		<tbody>
+			<tr>
+				<th>User Name</th>
+				<th>User Alias</th>
+				<th>Post Date</th>
+				<th>Comment</th> 
+				<th>Actions</th>
+			</tr>
+			<tr ng-repeat="comment in comments">
+				<td>{{comment.userName}}</td>
+				<td>{{comment.userAlias}}</td>
+				<td>{{comment.postDate | date:'MMM d, y h:mm a'}}</td>
+				<td ng-bind-html="comment.comment | truncate:50"></td>
+				<td>
+					<a ng-href="publish#/commentDetails/{{comment.commentId}}/{{previousPage}}/{{task.taskId}}/{{task.uid}}/true" class="btn btn-primary btn-sm">More Details...</a>				
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="form-group">
+		<button type="button" class="btn btn-default btn-more" ng-show="comments.length >= 1 && hasMore" ng-click="loadNextPageComments(comments)">See More</button>
+	</div>
+</div>

@@ -1,0 +1,20 @@
+<h2>Delete Task</h2>
+<div id="alert_{{$index}}" class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts" ><button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>{{alert.msg}}</div>
+<dl>
+	<dt>Title</dt>
+	<dd>{{task.title}}</dd>
+	<dt>Unique Key</dt>
+	<dd>{{task.uniqueKey}}</dd>
+	<dt>Task URL</dt>
+	<dd>{{task.url}}</dd>
+	<dt>Description</dt>
+	<dd>{{task.description}}</dd>
+	<dt>Contact Name</dt>
+	<dd>{{task.contactName}}</dd>
+	<dt>Contact Email</dt>
+	<dd>{{task.contactEmail}}</dd>
+	<dt>Contact URL</dt>
+	<dd>{{task.contactUrl}}</dd>
+</dl>
+<button class="btn btn-danger" ng-click="deleteTask()">Delete</button>
+<a href="#/tasks" class="btn">Cancel</a>

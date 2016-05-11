@@ -1,0 +1,148 @@
+<h2>
+    <span ng-show="market.marketId == null">New</span><span ng-show="market.marketId != null">Edit</span> {{pageData.marketTitle}}
+</h2>
+<ul class="breadcrumb">
+    <li><a href="#/">Publishing</a></li>
+    <li><a href="#/markets">{{pageData.marketsTitle || ' '}}</a></li>
+    <li class="active"><span ng-show="market.marketId == null">Create</span><span ng-show="market.marketId != null">Edit</span> {{pageData.marketTitle}}</li>
+</ul>
+<div id="alert_{{$index}}" class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts" ><button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>{{alert.msg}}</div>
+<form name="marketForm" ng-submit="saveMarket()" validate="errors" novalidate>
+    <fieldset>
+        <div class="row">
+            <div class="form-group col-md-6" ng-class="{'has-error': (marketForm.name.$invalid || marketForm.$serverError.name.$invalid)}">
+                <label for="name">Name</label>
+                <div class="counter-container">
+                	<input type="text" name="name" ng-model="market.name" ng-maxlength="100" required class="form-control"  popover="This name will be used to identify this object internally and to end users."/>
+                	<span class="label pull-right" ng-class="{'label-info':market.name.length<90, 'label-warning':market.name.length>=90 && market.name.length<100, 'label-danger': market.name.length>=100}">{{100-market.name.length}}</span>
+                </div>
+                <p ng-repeat="(validator, invalid) in marketForm.name.$error" ng-show="invalid && pageData.validationMessages.name[validator]" class="text-danger">{{pageData.validationMessages.name[validator]}}</p>
+                <p ng-repeat="message in marketForm.$serverError.name.messages" class="text-danger">{{message}}</p>
+            </div>
+            <div class="form-group col-md-6" ng-class="{'has-error': (marketForm.uniqueKey.$invalid || marketForm.$serverError.uniqueKey.$invalid)}">
+                <label for="uniqueKey">Unique Key</label>
+                <div class="counter-container">
+                	<input type="text" name="uniqueKey" ng-model="market.uniqueKey" required class="form-control" ng-pattern="/^[a-z0-9\\-]+$/" ng-maxlength="100" unique="/publish/market/validateMarketUniqueKey" entity-id="{{market.marketId}}" popover="A unique name for this object that will be used in URLs"/>
+                	<span class="label pull-right" ng-class="{'label-info':market.uniqueKey.length<90, 'label-warning':market.uniqueKey.length>=90 && market.uniqueKey.length<100, 'label-danger': market.uniqueKey.length>=100}">{{100-market.uniqueKey.length}}</span>
+                </div>
+                <p ng-repeat="(validator, invalid) in marketForm.uniqueKey.$error" ng-show="invalid && pageData.validationMessages.uniqueKey[validator]" class="text-danger">{{pageData.validationMessages.uniqueKey[validator]}}</p>
+                <p ng-repeat="message in marketForm.$serverError.uniqueKey.messages" class="text-danger">{{message}}</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+	                <label for="url" class="control-label">URL</label>
+	                <div class="counter-container">
+	                	<input type="url" ng-model="selectedUrl" name="url" ng-maxlength="2000" class="form-control" popover="A domain URL for this application which should link directly to this object."/>
+		                <span class="label pull-right" ng-class="{'label-info':selectedUrl.length<1900, 'label-warning':selectedUrl.length>=1900 && selectedUrl.length<100, 'label-danger': selectedUrl.length>=2000}">{{2000-selectedUrl.length}}</span>
+	                </div>
+	                <p ng-repeat="(validator, invalid) in marketForm.url.$error" ng-show="invalid && pageData.validationMessages.url[validator]" class="text-danger">{{pageData.validationMessages.url[validator]}}</p>
+	            </div>
+	            <div class="clearfix"></div>
+	            <div class="form-group">
+	                <button class="btn btn-default pull-right" type="button" ng-click="addUrl()">Add</button>
+	                <div class="clearfix"></div>
+	            </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="button-list well">
+	                <button type="button" ng-repeat="url in market.domainUrls" ng-click="removeUrl(url)" class="btn btn-default btn-sm">
+	                    {{url.url}}&nbsp;<i class="glyphicon glyphicon-remove"></i>
+	                </button>
+	            </div>
+            </div>
+        </div>
+        
+         <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+	                <label for="alias" class="control-label">Alias</label>
+	                <div class="counter-container">
+	                	<input type="text" name="alias" ng-model="selectedAlias" ng-maxlength="100" class="form-control" popover="Provide alternate names to refer to this object."/>
+	                	<span class="label pull-right" ng-class="{'label-info':selectedAlias.length<90, 'label-warning':selectedAlias.length>=90 && selectedAlias.length<100, 'label-danger': selectedAlias.length>=100}">{{100-selectedAlias.length}}</span>
+                	</div>
+	                <p ng-repeat="(validator, invalid) in marketForm.alias.$error" ng-show="invalid && pageData.validationMessages.alias[validator]" class="text-danger">{{pageData.validationMessages.alias[validator]}}</p>
+	            </div>
+	            <div class="clearfix"></div>
+	            <div class="form-group">
+	                <button class="btn btn-default pull-right" type="button" ng-click="addAlias()">Add</button>
+	                <div class="clearfix"></div>
+	            </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="button-list well">
+	                <button type="button" ng-repeat="alias in market.aliases" ng-click="removeAlias(alias)" class="btn btn-default btn-sm">
+	                    {{alias.name}}&nbsp;<i class="glyphicon glyphicon-remove"></i>
+	                </button>
+	            </div>
+            </div>
+        </div>
+        
+        <div class="row" ng-if="pageData.resourceImages.length > 0">
+        	<div class="col-sm-12">
+	        	<div class="panel panel-default">
+				    <div class="panel-heading">
+				      <h4 class="panel-title">
+				        <a data-toggle="collapse" href="#collapseOne" eat-click>
+				          Resource Images
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseOne" class="panel-collapse collapse">
+				    	<div class="panel-body">
+				        	<table class="table table-striped">
+					        	<thead>
+					        		<tr>
+					        			<th>Preview</th>
+					        			<th>Name</th>
+					        			<th>URL</th>
+					        			<th>Dimensions</th>
+					        		</tr>
+					        	</thead>
+					        	<tbody>
+									<tr ng-repeat="file in pageData.resourceImages">
+						            	<td>
+							            	<img ng-src="{{file.url}}" alt="" style="max-height:50px;" class="img-responsive" get-dimensions="file" />
+							            </td>
+							            <td>{{file.name}}</td>
+							            <td>
+							            	<p>{{file.url}}</p>
+							            </td>
+							            <td>
+							            	<span ng-show="file.dimensions.w">{{file.dimensions.w}} &times; {{file.dimensions.h}}</span>
+							            </td>
+							    	</tr>
+						    	</tbody>
+					       	</table>
+				    	</div>
+				    </div>
+				</div>
+			</div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-md-12">
+                <label for="header">Header</label>
+                <textarea name="header" ng-model="market.header" class="form-control" rows="8"  popover="HTML that will replace the standard header."></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-12">
+                <label for="footer">Footer</label>
+                <textarea name="footer" ng-model="market.footer" class="form-control" rows="8" popover="HTML that will replace the standard footer."></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-12">
+                <label for="css">CSS</label>
+                <textarea name="css" ng-model="market.css" class="form-control" rows="8" popover="CSS to customize the look of the store."></textarea>
+            </div>
+        </div>
+    </fieldset>
+    <button type="submit" class="btn btn-success" ng-disabled="marketForm.$invalid">Save</button>
+    <a href="#/markets" class="btn btn-danger">Cancel</a>
+</form>

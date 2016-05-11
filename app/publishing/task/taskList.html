@@ -1,0 +1,121 @@
+<h2><span ng-show="pending">Submitted</span><span ng-show="isFeatured">Feature a </span> Task<span ng-hide="isFeatured">s</span></h2>
+<a href="#/task" class="btn btn-success pull-right" ng-hide="pending || isFeatured"><i class="glyphicon glyphicon-plus"></i>&nbsp;New Task</a>
+<ul class="breadcrumb">
+    <li><a href="#/">Publishing</a></li>
+    <li ng-show="isFeatured"><a href="#/featuredTasks">Featured Tasks</a></li>
+    <li class="active"><span ng-show="pending">Submitted </span><span ng-show="isFeatured">Feature a </span>Task<span ng-hide="isFeatured">s</span></li>
+</ul>
+<div id="alert_{{$index}}" class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts" ><button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>{{alert.msg}}</div>
+<div class="row" ng-show="!pending">
+    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-7" aria-labelledby="search_heading" role="search">
+		<div class="form-group input-group">
+			<input class="form-control" type="text" placeholder="Search for a task" title="Search" ng-model="searchTerm" ng-enter="search()">
+			<span class="input-group-addon btn-danger btn-orange" ng-click="search()" role="button">
+				<span class="glyphicon glyphicon-search"></span>
+				<span class="sr-only">search submit</span>
+			</span>
+   		</div>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2" aria-labelledby="search_heading" role="search">
+	    <select ng-model="categoryUniqueKey" name="category" ng-options="category.uniqueKey as category.name for category in pageData.categories" class="form-control">
+            <option value="">All Categories</option>
+        </select>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3" aria-labelledby="search_heading" role="search">
+	    <div class="pull-right">
+			<strong>Displaying tasks {{tasks.length ? 1 : 0}} through {{tasksDisplayedEndingIndex}} of {{taskListSize}}</strong>
+		</div>
+    </div>
+</div>
+
+<table class="table table-hover table-condensed">
+    <thead>
+        <tr>
+            <th>Title (Application)</th>
+            <th>Categories</th>
+            <th>Roles</th>
+            <th>{{pageData.marketsTitle}}</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="task in tasks" ng-if="!isFeatured || (isFeatured && task.versionStatus != 'R')">
+            <td>
+                {{task.title}}<span ng-show="!!task.applicationName"> ({{task.applicationName}})</span>
+            </td>
+            <td>
+           		<span ng-repeat="category in task.categories">{{categoryMap[category.categoryId].name}}<span ng-show="!$last">, </span></span>
+           	</td>
+           	<td>
+           		<span ng-repeat="role in task.roles">{{roleMap[role.roleId].name}}<span ng-show="!$last">, </span></span>
+           	</td>
+            <td>
+            	<span ng-show="task.markets.length > 0"><span ng-repeat="market in task.markets">{{marketMap[market.marketId]}}<span ng-show="!$last">, </span></span></span>
+            	<span ng-show="task.markets.length == 0">All {{pageData.marketsTitle}}</span>
+            </td>
+            <td>{{pageData.status[task.status]}}<span ng-if="task.versionStatus == 'R'"> (Draft)</span></td>
+            <td>
+            	<span ng-if="isFeatured"><!-- isFeatured means that we are viewing the list from the featured task part of publishing -->
+            		<a ng-href="#/featuredTask/{{task.uid}}" class="btn btn-info btn-sm">Feature</a>
+            	</span>
+            	<span ng-if="pending">
+            		<a ng-href="#/pendingTask/{{task.taskId}}" class="btn btn-primary btn-sm">View to Approve / Decline</a>
+            	</span>
+            	<span ng-if="!pending && !isFeatured">
+	            	<span ng-if="!pageData.pendingTaskIds[task.taskId]">
+	            		<a ng-href="#/task/{{task.taskId}}" class="btn btn-primary btn-sm">Edit</a>
+	            		<a ng-href="#/featuredTask/{{task.uid}}" class="btn btn-info btn-sm" ng-show="pageData.admin && task.versionStatus != 'R'">Feature</a>
+	            		<a ng-href="#/comment/{{task.uid}}/{{previousPage}}" class="btn btn-success btn-sm" ng-hide="task.versionStatus == 'R'">View Comments</a>
+	                	<button ng-click="confirmRemove(task)" ng-show="task.status != 'R'" class="btn btn-warning btn-sm" ng-hide="task.versionStatus == 'R'">Remove</button>
+	                	<button ng-click="confirmDelete(task)" ng-show="pageData.admin" class="btn btn-danger btn-sm">Delete</button>
+	                </span>
+	                <span ng-if="pageData.pendingTaskIds[task.taskId]">
+						<span class="label label-info" ng-hide="pageData.approver">Changes Pending Approval</span>
+	                	<a ng-href="#/pendingTask/{{pageData.pendingTaskIds[task.taskId]}}" class="btn btn-primary btn-sm" ng-show="pageData.approver">Changes Pending Approval</a>
+	                	<a ng-href="#/comment/{{task.uid}}/{{previousPage}}" class="btn btn-success btn-sm">View Comments</a>
+	                	<button ng-click="confirmDelete(task)" ng-show="pageData.admin" class="btn btn-danger btn-sm">Delete</button>
+					</span>
+                </span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div class="form-group" ng-show="hasMore">
+	<button class="btn btn-default btn-more" ng-click="loadNextPage(taskCollection)"><strong>See More</strong></button>
+</div>
+<div class="modal fade" id="deleteTaskDialog" tabindex="-1" role="dialog" aria-labelledby="deleteTaskLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="deleteTaskLabel">Confirm Task Deletion</h4>
+			</div>
+			<div class="modal-body">
+				Are you sure you want to delete the task "{{taskToDelete.title}}"?
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+				<button type="button" class="btn btn-success" ng-click="deleteTask()">Yes</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="removeTaskDialog" tabindex="-1" role="dialog" aria-labelledby="removeTaskLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="removeTaskLabel">Confirm Task Removal</h4>
+			</div>
+			<div class="modal-body">
+				Are you sure you want to remove the task "{{taskToRemove.title}}"?
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+				<button type="button" class="btn btn-success" ng-click="removeTask()">Yes</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

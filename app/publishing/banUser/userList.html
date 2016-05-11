@@ -1,0 +1,37 @@
+<h2>Restricted Users</h2>
+<ul class="breadcrumb">
+  <li><a href="#/">Publishing</a></li>
+  <li class="active">Restricted Users</li>
+</ul>
+<div id="alert_{{$index}}" class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts" ><button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>{{alert.msg}}</div>
+<div class="row">
+	<form name="banForm" novalidate validate="errors">
+		<div class="form-group col-md-3">
+	        <label for="banUser" class="control-label">User to Restrict</label>
+	        <input type="text" name="banUser" ng-model="banUserId" required class="form-control" popover="userId or userName of user to restrict."/>
+	        <p ng-repeat="message in banForm.$serverError.banUser.messages" class="text-danger">{{message}}</p>
+	    </div>
+		<div class="col-md-4">
+			<button type="button" class="btn btn-danger" ng-click="banUser(banUserId)">Restrict User</button>
+		</div>
+	</form>
+</div>
+
+<table class="table table-hover table-condensed">
+	<thead>
+		<tr>
+			<th>User Name</th>
+			<th>Restriction Date</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="user in users">
+			<td>{{user.userName}}</td>
+			<td>{{user.banDate | date:'MMM d, y h:mm a'}}</td>
+			<td>
+				<button type="button" class="btn btn-success" ng-click="restoreUser(user.userId)">Restore User</button>
+			</td>
+		</tr>
+	</tbody>
+</table>

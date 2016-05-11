@@ -1,0 +1,57 @@
+<h2>Images</h2>
+<p><a href="#/image" class="btn btn-success pull-right"><i class="glyphicon glyphicon-plus"></i>&nbsp;New Image</a></p>
+<ul class="breadcrumb">
+  <li><a href="#/">Publishing</a></li>
+  <li class="active">Images</li>
+</ul>
+<div id="alert_{{$index}}" class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts" ><button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>{{alert.msg}}</div>
+<table class="table table-hover table-condensed">
+	<thead>
+		<tr>
+			<th>Preview</th>
+			<th>Name</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="image in images">
+			<td><img ng-src="{{image.phoneLowResolutionImageCdnUrl}}" style="max-height:57px;"/></td>
+			<td>{{image.name}}</td>
+			<td>
+				<a href="#/image/{{image.imageSetId}}" class="btn btn-primary btn-sm">Edit</a>
+				<button ng-click="confirmDelete(image)" class="btn btn-danger btn-sm">Delete</button>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<div class="modal fade" id="deleteImageDialog" tabindex="-1" role="dialog" aria-labelledby="deleteImageLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="deleteImageLabel">Confirm Image Deletion</h4>
+			</div>
+			<div class="modal-body">
+				<div ng-if="tasksWithImage.length > 0">
+					<p>This image is currently being used on {{tasksWithImage.length}} task<span ng-show="tasksWithImage.length > 1">s</span>.</p>
+					<p>Remove this image from these tasks before deleting.</p>
+					<ul>
+						<li ng-repeat="task in tasksWithImage" style="margin-bottom:5px;">{{task.title}} <span ng-show="task.applicationName.length > 0">({{task.applicationName}})</span> <a ng-href="#/task/{{task.taskId}}" class="btn btn-xs btn-primary pull-right" title="Edit {{task.title}}">Edit</a></li>
+					</ul>
+				</div>
+				<span ng-if="tasksWithImage.length == 0">Are you sure you want to delete the image "{{imageToDelete.name}}"?</span>
+			</div>
+			<div class="modal-footer">
+				<div ng-if="tasksWithImage.length == 0">
+					<button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+					<button type="button" class="btn btn-danger" ng-click="deleteImage()">Yes</button>
+				</div>
+				<div ng-if="tasksWithImage.length > 0">
+					<button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+				</div>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

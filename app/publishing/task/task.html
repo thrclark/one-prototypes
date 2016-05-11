@@ -1,0 +1,740 @@
+<h2>
+    <span ng-show="task.taskId == null && !pending">New</span><span ng-show="task.taskId != null && !pending">Edit</span><span ng-show="pending">Approve</span> Task Definition
+</h2>
+<ul class="breadcrumb">
+    <li><a href="#/">Publishing</a></li>
+    <li ng-hide="pending"><a href="#/tasks">Tasks</a></li>
+    <li ng-show="pending"><a href="#/pendingTasks">Pending Tasks</a></li>
+    <li class="active"><span ng-show="task.taskId == null && !pending">Create</span><span ng-show="task.taskId != null && !pending">Edit</span><span ng-show="pending">Approve</span> Task</li>
+</ul>
+<div class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>
+    {{alert.msg}}
+</div>
+<form name="taskForm" novalidate validate="errors" id="taskForm">
+    <fieldset>
+        <legend>General</legend>
+        <div class="row">
+            <div class="form-group col-md-3" ng-class="{'has-error': (taskForm.title.$invalid || taskForm.$serverError.title.$invalid)}">
+                <label for="title" class="control-label">Task title</label>
+                <div class="counter-container">
+                    <input type="text" name="title" ng-model="task.title" required ng-maxlength="100" class="form-control" popover="The task title is how the task will be referred to throughout the system." />
+                    <span class="label pull-right" ng-class="{'label-info':task.title.length<90, 'label-warning':task.title.length>=90 && task.title.length<100, 'label-danger': task.title.length>=100}">{{100-task.title.length}}</span>
+                </div>
+                <p ng-repeat="(validator, invalid) in taskForm.title.$error" ng-show="invalid && pageData.validationMessages.title[validator]" class="text-danger">{{pageData.validationMessages.title[validator]}}</p>
+                <p ng-repeat="message in taskForm.$serverError.title.messages" class="text-danger">{{message}}</p>
+            </div>
+            <div class="form-group col-md-6" ng-class="{'has-error': (taskForm.taskUrl.$invalid || taskForm.$serverError.taskUrl.$invalid)}">
+                <label for="taskUrl" class="control-label">Task URL</label>
+                <div class="counter-container">
+                    <input type="url" name="taskUrl" ng-model="task.taskUrl" class="form-control" required ng-maxlength="2000" popover="The URL will take users to the location where they can perform this task." /> <span class="label pull-right" ng-class="{'label-info':task.taskUrl.length<1900, 'label-warning':task.taskUrl.length>=1900 && task.taskUrl.length<2000, 'label-danger': task.taskUrl.length>=2000}">{{2000-task.taskUrl.length}}</span>
+                </div>
+                <p ng-repeat="(validator, invalid) in taskForm.taskUrl.$error" ng-show="invalid && pageData.validationMessages.taskUrl[validator]" class="text-danger">{{pageData.validationMessages.taskUrl[validator]}}</p>
+                <p ng-repeat="message in taskForm.$serverError.taskUrl.messages" class="text-danger">{{message}}</p>
+            </div>
+            <div class="form-group col-md-3" ng-class="{'has-error': (taskForm.openInNewWindow.$invalid || taskForm.$serverError.openInNewWindow.$invalid)}">
+                <label for="openInNewWindow" class="control-label">Launch</label>
+                <div class="checkbox">
+			    	<label>
+			    		<input type="checkbox" name="openInNewWindow" ng-model="task.openInNewWindow" ng-true-value="'yes'" ng-false-value="'no'" /> Open task in a new tab/window
+			    	</label>
+				</div>
+                <p ng-repeat="(validator, invalid) in taskForm.openInNewWindow.$error" ng-show="invalid && pageData.validationMessages.openInNewWindow[validator]" class="text-danger">{{pageData.validationMessages.openInNewWindow[validator]}}</p>
+                <p ng-repeat="message in taskForm.$serverError.openInNewWindow.messages" class="text-danger">{{message}}</p>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="form-group col-md-3">
+                <label for="applicationName" class="control-label">Application Name</label>
+                <div class="counter-container">
+                    <input type="text" name="applicationName" ng-model="task.applicationName" ng-maxlength="100" class="form-control" popover="The name of the application that provides this task. If two tasks have the same title, the application can be used to differentiate between them." />
+                    <span class="label pull-right" ng-class="{'label-info':task.applicationName.length<90, 'label-warning':task.applicationName.length>=90 && task.applicationName.length<100, 'label-danger': task.applicationName.length>=100}">{{100-task.applicationName.length}}</span>
+                </div>
+                <p ng-repeat="(validator, invalid) in taskForm.applicationName.$error" ng-show="invalid && pageData.validationMessages.applicationName[validator]" class="text-danger">{{pageData.validationMessages.applicationName[validator]}}</p>
+                <p ng-repeat="message in taskForm.$serverError.applicationName.messages" class="text-danger">{{message}}</p>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="authenticated">Authentication Type</label> <select ng-model="task.authenticated" ng-options="key as value for (key, value) in pageData.authenticatedValues" class="form-control"></select>
+                <p ng-repeat="message in taskForm.$serverError.authenticated.messages" class="text-danger">{{message}}</p>
+            </div>
+            <div class="form-group col-md-3" ng-class="{'has-error': taskForm.beginDate.$invalid}">
+                <label for="beginDate" class="control-label">Begin Date</label> <input type="text" name="beginDate" datepicker="body" time ng-model="task.beginDate" class="form-control" popover="The date that this task will become available. If left blank, task will be available immediately if status is active." popover-placement="auto top" />
+                <p ng-repeat="(validator, invalid) in taskForm.beginDate.$error" ng-show="invalid && pageData.validationMessages.beginDate[validator]" class="text-danger">{{pageData.validationMessages.beginDate[validator]}}</p>
+                <p ng-repeat="message in taskForm.$serverError.beginDate.messages" class="text-danger">{{message}}</p>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="endDate" class="control-label">End Date</label> <input type="text" name="endDate" datepicker="body" time ng-model="task.endDate" class="form-control" popover="The date that this task will become unavailable. If left blank, task will alwys be available." popover-placement="auto top" />
+                <p ng-repeat="(validator, invalid) in taskForm.endDate.$error" ng-show="invalid && pageData.validationMessages.endDate[validator]" class="text-danger">{{pageData.validationMessages.endDate[validator]}}</p>
+                <p ng-repeat="message in taskForm.$serverError.endDate.messages" class="text-danger">{{message}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-3">
+                <label for="status" class="control-label">Status</label> <select ng-model="task.status" ng-options="key as value for (key, value) in pageData.status" class="form-control" required></select>
+                <p ng-repeat="(validator, invalid) in taskForm.status.$error" ng-show="invalid && pageData.validationMessages.status[validator]" class="text-danger">{{pageData.validationMessages.status[validator]}}</p>
+                <p ng-repeat="message in taskForm.$serverError.status.messages" class="text-danger">{{message}}</p>
+            </div>
+            <div class="form-group col-md-3" ng-class="{'has-error': (taskForm.contactId.$invalid || taskForm.$serverError.contactId.$invalid)}">
+                <label for="contactId" class="control-label">Primary Contact</label> <select ng-model="task.contactId" name="contactId" ng-options="contact.contactId as contact.name for contact in pageData.contacts" class="form-control" required>
+                    <option value="">Select Contact</option>
+                </select>
+                <p ng-repeat="(validator, invalid) in taskForm.contactId.$error" ng-show="invalid && pageData.validationMessages.contactId[validator]" class="text-danger">{{pageData.validationMessages.contactId[validator]}}</p>
+                <p ng-repeat="message in taskForm.$serverError.contactId.messages" class="text-danger">{{message}}</p>
+            </div>
+            <div class="form-group col-md-3" ng-class="{'has-error': (taskForm.secondaryContactId.$invalid || taskForm.$serverError.secondaryContactId.$invalid)}">
+                <label for="secondaryContactId" class="control-label">Secondary Contact</label> <select ng-model="task.secondaryContactId" name="secondaryContactId" ng-options="contact.contactId as contact.name for contact in pageData.contacts" class="form-control">
+                    <option value="">No Contact</option>
+                </select>
+                <p ng-repeat="(validator, invalid) in taskForm.secondaryContactId.$error" ng-show="invalid && pageData.validationMessages.secondaryContactId[validator]" class="text-danger">{{pageData.validationMessages.secondaryContactId[validator]}}</p>
+                <p ng-repeat="message in taskForm.$serverError.secondaryContactId.messages" class="text-danger">{{message}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-12" ng-class="{'has-error': (taskForm.description.$invalid || taskForm.$serverError.description.$invalid)}">
+                <label for="description" class="control-label">Description</label>
+                <textarea ng-model="task.description" name="description" required class="form-control" rows="5"></textarea>
+                <p ng-repeat="(validator, invalid) in taskForm.description.$error" ng-show="invalid && pageData.validationMessages.description[validator]" class="text-danger">{{pageData.validationMessages.description[validator]}}</p>
+                <p ng-repeat="message in taskForm.$serverError.description.messages" class="text-danger">{{message}}</p>
+            </div>
+        </div>
+        
+		<legend>Versioning</legend>
+		<div class="row">
+			<div class="form-group col-md-3" ng-class="{'has-error': (taskForm.displayVersion.$invalid || taskForm.$serverError.displayVersion.$invalid)}">
+                <label for="displayVersion" class="control-label">Version Number</label>
+                <input type="text" name="displayVersion" ng-model="task.displayVersion" ng-pattern="/^[0-9]+\.[0-9]+\.[0-9]+(\-[0-9a-z]+)?$/" ng-maxlength="10" unique="/publish/task/validateDisplayVersion" entity-id="{{task.taskId || task.previousVersionId}}" class="form-control" required popover="Versioning helps users to identify when improvements have been made to the service.  Note that when this version number changes, comments and ratings will start over, but the old ones will be kept for review." />
+                <p ng-repeat="(validator, invalid) in taskForm.displayVersion.$error" ng-show="invalid && pageData.validationMessages.displayVersion[validator]" class="text-danger">{{pageData.validationMessages.displayVersion[validator]}}</p>
+                <p ng-repeat="message in taskForm.$serverError.displayVersion.messages" class="text-danger">{{message}}</p>
+            </div>
+        </div>
+        <div class="row">
+              <div class="col-md-12"><label class="control-label">Release Notes</label></div>
+        </div>
+        <div class="row" ng-class="{'has-error': (taskForm.releaseNotes.$invalid || taskForm.$serverError.releaseNotes.$invalid)}">
+			<div class="col-md-4">
+            	<div class="form-group">
+	            	<input type="text" ng-model="releaseNote" name="releaseNote" class="form-control" ng-maxlength="1000" popover="Add notes to inform users of changes or new features in this version."></textarea>
+	            </div>
+	            <div class="form-group">
+	            	<button class="btn btn-default pull-right" type="button" ng-disabled="releaseNote == null || releaseNote.length == 0" ng-click="addReleaseNote()">Add</button>
+	            	<div class="clearfix"></div>
+	            </div>
+          	</div>
+          	<div class="form-group col-md-8">
+            	<div class="well release-notes">
+                	<ul class="list-unstyled" ui-sortable ng-model="task.releaseNotes">
+                 		<li ng-repeat="note in task.releaseNotes">
+                 			<button ng-click="removeReleaseNote(note)" class="btn btn-danger btn-xs">
+		                        <i class="glyphicon glyphicon-remove"></i>
+		                    </button>
+                 			{{note.note}}
+                 		</li>
+                 	</ul>
+                 </div>
+                 <p ng-repeat="(validator, invalid) in taskForm.releaseNotes.$error" ng-show="invalid && pageData.validationMessages.releaseNotes[validator]" class="text-danger">{{pageData.validationMessages.releaseNotes[validator]}}</p>
+                 <p ng-repeat="message in taskForm.$serverError.releaseNotes.messages" class="text-danger">{{message}}</p>
+             </div>
+		</div>
+        
+        <legend ng-if="pending || pageData.approver"> Additional Information </legend>
+        <div ng-if="pending || pageData.approver">
+            <div class="row">
+                <div class="form-group col-md-3" ng-class="{'has-error': (taskForm.uniqueKey.$invalid || taskForm.$serverError.uniqueKey.$invalid)}">
+                    <label for="uniqueKey" class="control-label">Unique Key</label>
+                    <div class="counter-container">
+                        <input type="text" name="uniqueKey" ng-model="task.uniqueKey" unique="/publish/task/validateUniqueKey" unique-data="task.markets" ng-pattern="/^[a-z0-9\\-]+$/" entity-id="{{task.taskId || task.previousVersionId}}" required ng-maxlength="100" class="form-control" popover="The unique key uniquely identifies this task. This value will be used as part of the URL for this task." /> <span class="label pull-right" ng-class="{'label-info':task.uniqueKey.length<90, 'label-warning':task.uniqueKey.length>=90 && task.uniqueKey.length<100, 'label-danger': task.uniqueKey.length>=100}">{{100-task.uniqueKey.length}}</span>
+                    </div>
+                    <p ng-repeat="(validator, invalid) in taskForm.uniqueKey.$error" ng-show="invalid && pageData.validationMessages.uniqueKey[validator]" class="text-danger">{{pageData.validationMessages.uniqueKey[validator]}}</p>
+                    <p ng-repeat="message in taskForm.$serverError.uniqueKey.messages" class="text-danger">{{message}}</p>
+                </div>
+                
+                <div class="form-group col-md-3" ng-class="{'has-error': (taskForm.statType.$invalid || taskForm.$serverError.statType.$invalid)}">
+                    <label for="statType" class="control-label">Stat Recording Type</label>
+                    <div class="counter-container">
+                       <select ng-model="task.statType" name="statType" ng-options="key as value for (key, value) in pageData.statTypes" class="form-control" required popover="If the user is logged in, record who the user was with the stat being recorded.">
+                    </select>
+                    </div>
+                    <p ng-repeat="(validator, invalid) in taskForm.statType.$error" ng-show="invalid && pageData.validationMessages.statType[validator]" class="text-danger">{{pageData.validationMessages.statType[validator]}}</p>
+                    <p ng-repeat="message in taskForm.$serverError.statType.messages" class="text-danger">{{message}}</p>
+                </div>
+                
+                <div class="form-group col-md-6" ng-class="{'has-error': (taskForm.metaTitle.$invalid || taskForm.$serverError.metaTitle.$invalid)}">
+                    <label for="metaTitle" class="control-label">Meta Title (Search Engine Optimization)</label>
+                    <div class="counter-container">
+                        <input type="text" name="metaTitle" ng-model="task.metaTitle" required ng-maxlength="65" unique="/publish/task/validateMetaTitle" unique-data="task.markets" entity-id="{{task.taskId || task.previousVersionId}}" class="form-control" popover="The meta title will appear only to search engines. This title may be more descriptive than the task title." /> <span class="label pull-right" ng-class="{'label-info':task.metaTitle.length<50, 'label-warning':task.metaTitle.length>=50 && task.metaTitle.length<65, 'label-danger': task.metaTitle.length>=65}">{{65-task.metaTitle.length}}</span>
+                    </div>
+                    <p ng-repeat="(validator, invalid) in taskForm.metaTitle.$error" ng-show="invalid && pageData.validationMessages.metaTitle[validator]" class="text-danger">{{pageData.validationMessages.metaTitle[validator]}}</p>
+                    <p ng-repeat="message in taskForm.$serverError.metaTitle.messages" class="text-danger">{{message}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-12" ng-class="{'has-error': (taskForm.metaDescription.$invalid || taskForm.$serverError.metaDescription.$invalid)}">
+                    <label for="metaDescription" class="control-label">Meta Description (Search Engine Optimization)</label>
+                    <div class="counter-container">
+                        <textarea ng-model="task.metaDescription" name="metaDescription" required ng-maxlength="155" unique="/publish/task/validateMetaDescription" unique-data="task.markets" entity-id="{{task.taskId || task.previousVersionId}}"  class="form-control" rows="5" popover="The meta description is a more concise description that is visible to search engines. This description may show up in search results on those search engines."></textarea>
+                        <span class="label pull-right" ng-class="{'label-info':task.metaDescription.length<100, 'label-warning':task.metaDescription.length>=100 && task.metaDescription.length<155, 'label-danger': task.metaDescription.length>=155}">{{155-task.metaDescription.length}}</span>
+                    </div>
+                    <p ng-repeat="(validator, invalid) in taskForm.metaDescription.$error" ng-show="invalid && pageData.validationMessages.metaDescription[validator]" class="text-danger">{{pageData.validationMessages.metaDescription[validator]}}</p>
+                    <p ng-repeat="message in taskForm.$serverError.metaDescription.messages" class="text-danger">{{message}}</p>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset ng-show="pageData.publishers.length > 1 || taskForm.$serverError.publisherId.$invalid">
+        <legend>Publisher</legend>
+        <div>
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <select ng-model="task.publisherId" ng-options="publisher.publisherId as publisher.name for publisher in pageData.publishers" class="form-control" required></select>
+                    <p ng-repeat="(validator, invalid) in taskForm.publisherId.$error" ng-show="invalid && pageData.validationMessages.publisherId[validator]" class="text-danger">{{pageData.validationMessages.publisherId[validator]}}</p>
+                    <p ng-repeat="message in taskForm.$serverError.publisherId.messages" class="text-danger">{{message}}</p>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Icon Images</legend>
+        <div>
+            <p ng-repeat="message in taskForm.$serverError.imageSetId.messages" class="text-danger">{{message}}</p>
+            <p ng-show="!taskForm.$serverError.imageSetId.$invalid && (task.imageSetId==null || task.imageSetId=='') && (task.desktopImage == null || (!task.generateSmallerImageSizes && (task.tabletHighResolutionImage == null || task.tabletLowResolutionImage == null || task.phoneHighResolutionImage == null || task.phoneLowResolutionImage == null)))" class="text-danger">{{pageData.validationMessages.imageSetId.required}}</p>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#selectImage" data-toggle="tab" eat-click>Select An Image</a></li>
+                <li><a href="#uploadImages" data-toggle="tab" eat-click>Upload Images</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="selectImage">
+                    <div class="row">
+                        <div class="form-group col-md-3" ng-class="{'has-error': (taskForm.imageSetId.$invalid || taskForm.$serverError.imageSetId.$invalid)}">
+                            <label for="imageSetId" class="control-label">Choose an Image</label>
+                            <select ng-model="selectedImageSet" ng-change="task.imageSetId = selectedImageSet.imageSetId" name="imageSetId" ng-options="imageSet as imageSet.name for imageSet in pageData.imageSets" class="form-control">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="control-label">Image Preview</label>
+                            <img ng-if="selectedImageSet && selectedImageSet.desktopImageCdnUrl" ng-src="{{selectedImageSet.desktopImageCdnUrl}}" alt="icon image preview" style="width: 100%" />
+                        	<img ng-if="selectedImageSet && !selectedImageSet.desktopImageCdnUrl"  ng-src="{{contextPath}}/publish/image/media/{{selectedImageSet.imageSetId}}/{{selectedImageSet.desktopImageId}}" alt="icon image preview" style="width: 100%" />
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="uploadImages">
+                    <div class="row">
+	                    <div class="form-group col-sm-12">
+		                    <div class="checkbox">
+						    	<label>
+						    		<input type="checkbox" ng-model="task.generateSmallerImageSizes" /> Automatically generate smaller image sizes.
+						    	</label>
+							</div>
+		                </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-3" ng-class="{'has-error': task.desktopImage == null || desktopUploadReturn.error || taskForm.$serverError.desktopImage.$invalid}">
+                            <label class="control-label">Desktop Image<br />(153&times;153)
+                            </label>
+                            <div>
+                                <span class="btn btn-success fileinput-button"> <i class="glyphicon glyphicon-plus glyphicon glyphicon"></i> <span>Upload image&hellip;</span> <input id="desktopUpload" type="file" fileupload name="files[]" customdata="{size:5}" uploadurl="uploadUrl" done="uploadDone(e, data, 'desktopUploadReturn', 'task.desktopImage')" fail="uploadFail(e, data, 'desktopUploadReturn')" progress="uploadProgress(e, data, 'desktopUploadReturn')">
+                                </span>
+                                <button type="button" class="btn btn-danger" ng-click="task.desktopImage = null" ng-show="task.desktopImage != null">
+                                    <i class="glyphicon glyphicon-trash"></i>
+                                </button>
+                                <div class="panel">
+                                    <span data-ng-show="desktopUploadReturn.error" class="file-error"><span class="label label-danger">Error</span> {{desktopUploadReturn.errorMessage}}</span>
+                                    <img ng-if="!!task.desktopImage.mediaId && task.desktopImage.contentUrl" ng-src="{{task.desktopImage.contentUrl}}" alt="" style="width: 100%">
+                                    <img ng-if="!!task.desktopImage.mediaId && !task.desktopImage.contentUrl" ng-src="{{contextPath}}/publish/media/{{task.taskId}}/{{task.desktopImage.mediaId}}" alt="" style="width: 100%">
+                                    <img ng-if="!task.desktopImage.mediaId && task.desktopImage.name" ng-src="{{contextPath}}/publish/image/file?name={{task.desktopImage.name}}" alt="" style="width: 100%">
+                                </div>
+                            </div>
+                            <p ng-repeat="message in taskForm.$serverError.desktopImage.messages" class="text-danger">{{message}}</p>
+                        </div>
+                        <div class="form-group col-md-3" ng-hide="task.generateSmallerImageSizes" ng-class="{'has-error': (!task.generateSmallerImageSizes && task.tabletHighResolutionImage == null) || tabletHiResUploadReturn.error || taskForm.$serverError.tabletHighResolutionImage.$invalid}">
+                            <label class="control-label">Tablet High-Resolution Image (144&times;144)</label>
+                            <div>
+                                <span class="btn btn-success fileinput-button"> <i class="glyphicon glyphicon-plus glyphicon glyphicon"></i> <span>Upload image&hellip;</span> <input id="tabletHiResUpload" type="file" fileupload name="files[]" customdata="{size:4}" uploadurl="uploadUrl" done="uploadDone(e, data, 'tabletHiResUploadReturn', 'task.tabletHighResolutionImage')" fail="uploadFail(e, data, 'tabletHiResUploadReturn')" progress="uploadProgress(e, data, 'tabletHiResUploadReturn')">
+                                </span>
+                                <button type="button" class="btn btn-danger" ng-click="task.tabletHighResolutionImage = null" ng-show="task.tabletHighResolutionImage != null">
+                                    <i class="glyphicon glyphicon-trash"></i>
+                                </button>
+                                <div class="panel">
+                                    <span data-ng-show="tabletHiResUploadReturn.error" class="file-error"><span class="label label-danger">Error</span> {{tabletHiResUploadReturn.errorMessage}}</span>
+                                    <img ng-if="!!task.tabletHighResolutionImage.mediaId && task.tabletHighResolutionImage.contentUrl" ng-src="{{task.tabletHighResolutionImage.contentUrl}}" alt="" style="width: 100%">
+                                    <img ng-if="!!task.tabletHighResolutionImage.mediaId && !task.tabletHighResolutionImage.contentUrl" ng-src="{{contextPath}}/publish/media/{{task.taskId}}/{{task.tabletHighResolutionImage.mediaId}}" alt="" style="width: 100%">
+                                    <img ng-if="!task.tabletHighResolutionImage.mediaId && task.tabletHighResolutionImage.name" ng-src="{{contextPath}}/publish/image/file?name={{task.tabletHighResolutionImage.name}}" alt="" style="width: 100%">
+                                </div>
+                            </div>
+                            <p ng-repeat="message in taskForm.$serverError.tabletHighResolutionImage.messages" class="text-danger">{{message}}</p>
+                        </div>
+                        <div class="form-group col-md-3" ng-hide="task.generateSmallerImageSizes" ng-class="{'has-error': (!task.generateSmallerImageSizes && task.phoneHighResolutionImage == null) || phoneHiResUploadReturn.error || taskForm.$serverError.phoneHighResolutionImage.$invalid}">
+                            <label class="control-label">Phone High-Resolution Image (114&times;114)</label>
+                            <div>
+                                <span class="btn btn-success fileinput-button"> <i class="glyphicon glyphicon-plus glyphicon glyphicon"></i> <span>Upload image&hellip;</span> <input id="phoneHiResUpload" type="file" fileupload name="files[]" customdata="{size:2}" uploadurl="uploadUrl" done="uploadDone(e, data, 'phoneHiResUploadReturn', 'task.phoneHighResolutionImage')" fail="uploadFail(e, data, 'phoneHiResUploadReturn')" progress="uploadProgress(e, data, 'phoneHiResUploadReturn')">
+                                </span>
+                                <button type="button" class="btn btn-danger" ng-click="task.phoneHighResolutionImage = null" ng-show="task.phoneHighResolutionImage != null">
+                                    <i class="glyphicon glyphicon-trash"></i>
+                                </button>
+                                <div class="panel">
+                                    <span data-ng-show="phoneHiResUploadReturn.error" class="file-error"><span class="label label-danger">Error</span> {{phoneHiResUploadReturn.errorMessage}}</span>
+                                    <img ng-if="!!task.phoneHighResolutionImage.mediaId && task.phoneHighResolutionImage.contentUrl" ng-src="{{task.phoneHighResolutionImage.contentUrl}}" alt="" style="width: 100%">
+                                    <img ng-if="!!task.phoneHighResolutionImage.mediaId && !task.phoneHighResolutionImage.contentUrl" ng-src="{{contextPath}}/publish/media/{{task.taskId}}/{{task.phoneHighResolutionImage.mediaId}}" alt="" style="width: 100%">
+                                    <img ng-if="!task.phoneHighResolutionImage.mediaId && task.phoneHighResolutionImage.name" ng-src="{{contextPath}}/publish/image/file?name={{task.phoneHighResolutionImage.name}}" alt="" style="width: 100%">
+                                </div>
+                            </div>
+                            <p ng-repeat="message in taskForm.$serverError.phoneHighResolutionImage.messages" class="text-danger">{{message}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-3" ng-hide="task.generateSmallerImageSizes" ng-class="{'has-error': (!task.generateSmallerImageSizes && task.tabletLowResolutionImage == null) || tabletLoResUploadReturn.error || taskForm.$serverError.tabletLowResolutionImage.$invalid}">
+                            <label class="control-label">Tablet Low-Resolution Image (72&times;72)</label>
+                            <div>
+                                <span class="btn btn-success fileinput-button"> <i class="glyphicon glyphicon-plus glyphicon glyphicon"></i> <span>Upload image&hellip;</span> <input id="tabletLoResUpload" type="file" fileupload name="files[]" customdata="{size:3}" uploadurl="uploadUrl" done="uploadDone(e, data, 'tabletLoResUploadReturn', 'task.tabletLowResolutionImage')" fail="uploadFail(e, data, 'tabletLoResUploadReturn')" progress="uploadProgress(e, data, 'tabletLoResUploadReturn')">
+                                </span>
+                                <button type="button" class="btn btn-danger" ng-click="task.tabletLowResolutionImage = null" ng-show="task.tabletLowResolutionImage != null">
+                                    <i class="glyphicon glyphicon-trash"></i>
+                                </button>
+                                <div class="panel">
+                                    <span data-ng-show="tabletLoResUploadReturn.error" class="file-error"><span class="label label-danger">Error</span> {{tabletLoResUploadReturn.errorMessage}}</span>
+                                    <img ng-if="!!task.tabletLowResolutionImage.mediaId && task.tabletLowResolutionImage.contentUrl" ng-src="{{task.tabletLowResolutionImage.contentUrl}}" alt="" style="width: 100%">
+                                    <img ng-if="!!task.tabletLowResolutionImage.mediaId && !task.tabletLowResolutionImage.contentUrl" ng-src="{{contextPath}}/publish/media/{{task.taskId}}/{{task.tabletLowResolutionImage.mediaId}}" alt="" style="width: 100%">
+                                    <img ng-if="!task.tabletLowResolutionImage.mediaId && task.tabletLowResolutionImage.name" ng-src="{{contextPath}}/publish/image/file?name={{task.tabletLowResolutionImage.name}}" alt="" style="width: 100%">
+                                </div>
+                            </div>
+                            <p ng-repeat="message in taskForm.$serverError.tabletLowResolutionImage.messages" class="text-danger">{{message}}</p>
+                        </div>
+                        <div class="form-group col-md-3" ng-hide="task.generateSmallerImageSizes" ng-class="{'has-error': (!task.generateSmallerImageSizes && task.phoneLowResolutionImage == null) || phoneLoResUploadReturn.error || taskForm.$serverError.phoneLowResolutionImage.$invalid}">
+                            <label class="control-label">Phone Low-Resolution Image (57&times;57)</label>
+                            <div>
+                                <span class="btn btn-success fileinput-button"> <i class="glyphicon glyphicon-plus glyphicon glyphicon"></i> <span>Upload image&hellip;</span> <input id="phoneLoResUpload" type="file" fileupload name="files[]" customdata="{size:1}" uploadurl="uploadUrl" done="uploadDone(e, data, 'phoneLoResUploadReturn', 'task.phoneLowResolutionImage')" fail="uploadFail(e, data, 'phoneLoResUploadReturn')" progress="uploadProgress(e, data, 'phoneLoResUploadReturn')">
+                                </span>
+                                <button type="button" class="btn btn-danger" ng-click="task.phoneLowResolutionImage = null" ng-show="task.phoneLowResolutionImage != null">
+                                    <i class="glyphicon glyphicon-trash"></i>
+                                </button>
+                                <div class="panel">
+                                    <span data-ng-show="phoneLoResUploadReturn.error" class="file-error"><span class="label label-danger">Error</span> {{phoneLoResUploadReturn.errorMessage}}</span>
+                                    <img ng-if="!!task.phoneLowResolutionImage.mediaId && task.phoneLowResolutionImage.contentUrl" ng-src="{{task.phoneLowResolutionImage.contentUrl}}" alt="" style="width: 100%">
+                                    <img ng-if="!!task.phoneLowResolutionImage.mediaId && !task.phoneLowResolutionImage.contentUrl" ng-src="{{contextPath}}/publish/media/{{task.taskId}}/{{task.phoneLowResolutionImage.mediaId}}" alt="" style="width: 100%">
+                                    <img ng-if="!task.phoneLowResolutionImage.mediaId && task.phoneLowResolutionImage.name" ng-src="{{contextPath}}/publish/image/file?name={{task.phoneLowResolutionImage.name}}" alt="" style="width: 100%">
+                                </div>
+                            </div>
+                            <p ng-repeat="message in taskForm.$serverError.phoneLowResolutionImage.messages" class="text-danger">{{message}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend> Screen Shots &amp; Video </legend>
+        <div class="form-group" ng-class="{'has-error': (task.media.length < 1 || taskForm.$serverError.media.$invalid)}">
+            <p ng-repeat="message in taskForm.$serverError.media.messages" class="text-danger">{{message}}</p>
+            <p ng-show="task.media.length < 1" class="text-danger">{{pageData.validationMessages.media.required}}</p>
+            <label class="control-label">All Files</label>
+            <div class="well media-list ng-cloak">
+                <ul ui-sortable ng-model="task.media">
+                    <li data-ng-repeat="file in task.media">
+                        <div data-ng-switch data-on="file.mediaType">
+                            <div data-ng-switch-when="V">
+                                <div ng-show="!!file.contentUrl">
+                                    <iframe ng-src="{{file.contentUrlTrusted}}" frameborder="0"></iframe>
+                                    <div>
+                                        <button type="button" class="btn btn-danger destroy btn-xs" data-ng-click="deleteMedia(file)">
+                                            <i class="glyphicon glyphicon-ban-circle glyphicon glyphicon"></i> Delete
+                                        </button>
+                                    </div>
+                                </div>
+                                <div ng-show="!file.contentUrl && (!!file.webmUrl || !!file.oggUrl || !!file.mp4Url)">
+                                    <video width="320" height="240" controls>
+                                        <source ng-src="file.mp4UrlTrusted" type="video/mp4" ng-if="!!file.mp4Url">
+										<source ng-src="file.oggUrlTrusted" type="video/ogg" ng-if="!!file.oggUrl">
+										<source ng-src="file.webmUrlTrusted" type="video/webm" ng-if="!!file.webmUrl">
+										Your browser does not support the video tag.
+                                    </video>
+                                    <div>
+                                        <button type="button" class="btn btn-danger destroy btn-xs" data-ng-click="deleteMedia(file)">
+                                            <i class="glyphicon glyphicon-ban-circle glyphicon glyphicon"></i> Delete
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-ng-switch-default>
+                            	<img ng-if="!!file.contentUrl" ng-src="{{file.contentUrlTrusted}}" title="{{file.caption}}">
+                            	<img ng-if="!file.contentUrl && !!file.mediaId" ng-src="{{contextPath}}/publish/media/{{task.taskId}}/{{file.mediaId}}" title="{{file.caption}}">
+                            	<img ng-if="!file.contentUrl && !file.mediaId" ng-src="{{contextPath}}/publish/image/file?name={{file.name}}" title="{{file.caption}}">
+                            	<div>
+                            		<button type="button" class="btn btn-warning btn-xs" ng-click="editCaption(file)">
+                                        <i class="glyphicon glyphicon-edit glyphicon"></i> <span ng-if="!file.caption.length">Add</span><span ng-if="file.caption.length">Edit</span> Alt Text
+                                    </button>
+                                    <button type="button" class="btn btn-danger btn-xs" ng-click="deleteMedia(file)" ng-show="!file.$destroy">
+                                        <i class="glyphicon glyphicon-ban-circle glyphicon"></i> Delete
+                                    </button>
+                                    <button ng-controller="FileDestroyController" type="button" class="btn btn-danger destroy btn-xs" ng-click="file.$destroy()" ng-hide="!file.$destroy">
+                                        <i class="glyphicon glyphicon-ban-circle glyphicon"></i> Delete
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div style="clear: both"></div>
+            </div>
+            Add more files
+            <div>
+                <div ng-form id="fileupload" action="/publish/task/image" method="POST" enctype="multipart/form-data" file-upload="fileUploadOptions" ng-class="{true: 'fileupload-processing'}[!!processing() || loadingFiles]">
+                    <div class="row fileupload-buttonbar">
+                        <div class="col-md-7">
+                            <span class="btn btn-success fileinput-button"> <i class="glyphicon glyphicon-plus glyphicon glyphicon"></i> <span>Upload images&hellip;</span> <input type="file" name="files[]" multiple>
+                            </span>
+                            <!-- not part of the upload widget -->
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#imageModal">
+                                <i class="glyphicon glyphicon-plus glyphicon glyphicon"></i> Link an image&hellip;
+                            </button>
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#videoModal">
+                                <i class="glyphicon glyphicon-plus glyphicon glyphicon"></i> Link a video&hellip;
+                            </button>
+                            <!-- end not part of the upload widget -->
+                            <div class="fileupload-loading"></div>
+                        </div>
+                        <div class="col-md-5 fade" data-ng-class="{true: 'in'}[!!active()]">
+                            <div class="progress" data-file-upload-progress="progress()">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{num}}" aria-valuemin="0" aria-valuemax="100" data-ng-style="{width: num + '%'}">
+                                    <span class="sr-only">{{num}}% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <label>Upload Files Queue</label>
+            <div class="well media-list ng-cloak">
+                <ul>
+                    <li data-ng-repeat="file in queue">
+                        <div data-ng-switch data-on="!!file.thumbnail_url">
+                            <div data-ng-switch-when="true">
+                                <img data-ng-src="{{file.thumbnail_url}}" alt="">
+                            </div>
+                            <div data-ng-switch-default data-file-upload-preview="file"></div>
+                        </div>
+                        <div data-ng-show="file.error" class="file-error">
+                            <span class="label label-danger">Error</span> {{file.error}}
+                        </div> <!-- <div>
+		                    <p class="size">{{file.size | formatFileSize}}</p>
+		                    <div class="progress progress-success progress-striped active fade" data-ng-class="{pending: 'in'}[file.$state()]" data-file-upload-progress="file.$progress()"><div class="bar" data-ng-style="{width: num + '%'}"></div></div> 
+		                </div>-->
+                        <div>
+                            <button type="button" class="btn btn-primary start btn-xs" data-ng-click="file.$submit()" data-ng-hide="!file.$submit">
+                                <i class="glyphicon glyphicon-upload glyphicon glyphicon"></i> <span>Start</span>
+                            </button>
+                            <button type="button" class="btn btn-warning cancel btn-xs" data-ng-click="file.$cancel()" data-ng-hide="!file.$cancel">
+                                <i class="glyphicon glyphicon-ban-circle glyphicon glyphicon"></i> <span>Cancel</span>
+                            </button>
+                            <button ng-controller="FileDestroyController" type="button" class="btn btn-danger destroy btn-xs" data-ng-click="file.$destroy()" data-ng-hide="!file.$destroy">
+                                <i class="glyphicon glyphicon-ban-circle glyphicon glyphicon"></i> <span>Delete</span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+                <div style="clear: both"></div>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>{{pageData.marketTitle}}</legend>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <select ng-model="selectedMarket" ng-options="market.name for market in pageData.markets" class="form-control">
+                        <option value="">All {{pageData.marketsTitle}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-default pull-right" type="button" ng-click="addMarket()">Add</button>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="button-list well">
+                    <span ng-show="task.markets.length == 0" class="label label-default">All {{pageData.marketsTitle}}</span>
+                    <button ng-repeat="market in task.markets" ng-click="removeMarket(market)" class="btn btn-default btn-sm">
+                        {{market.name}}&nbsp;<i class="glyphicon glyphicon-remove"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Roles</legend>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <select ng-model="selectedRole" ng-options="role.name for role in pageData.roles" class="form-control">
+                    	<option value="">All Roles</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-default pull-right" type="button" ng-click="addRole()">Add</button>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="button-list well">
+                	<span ng-show="task.roles.length == 0" class="label label-default">All Roles</span>
+                    <button type="button" ng-repeat="role in task.roles" ng-click="removeRole(role)" class="btn btn-default btn-sm">
+                        {{role.name}}&nbsp;<i class="glyphicon glyphicon-remove"></i>
+                    </button>
+                </div>
+                <p class="text-danger" ng-if="invalidRoles.length > 0">The task must have at least one category for the following role<span ng-hide="invalidRoles.length == 1">s</span>: <span ng-repeat="role in invalidRoles">{{role}}<span ng-if="!$last">, </span></span>.</p>
+                <p ng-repeat="message in taskForm.$serverError.roles.messages" class="text-danger">{{message}}</p>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Categories</legend>
+        <div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <select ng-model="selectedCategory" ng-options="category.name for category in pageData.categories" class="form-control"></select>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-default pull-right" type="button" ng-click="addCategory()">Add</button>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="button-list well">
+                    	<span ng-show="task.categories.length == 0" class="label label-danger">A category is required</span>
+                        <button type="button" ng-repeat="category in task.categories" ng-click="removeCategory(category)" class="btn btn-default btn-sm">
+                            {{category.name}}&nbsp;<i class="glyphicon glyphicon-remove"></i>
+                        </button>
+                    </div>
+                    <p ng-repeat="message in taskForm.$serverError.categories.messages" class="text-danger">{{message}}</p>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend> Tags </legend>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#tagModal">Choose Tags&hellip;</button>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="button-list well">
+                	<div ng-repeat="taskTag in task.tags" class="btn-sm" style="color: #333333; background-color: #ffffff; border:1px solid #cccccc; display: inline-block;vertical-align: middle;white-space: nowrap;">
+                		<button ng-click="removeTag(taskTag)" class="btn btn-danger btn-xs pull-right">
+	                        <i class="glyphicon glyphicon-remove"></i>
+	                    </button>
+	                    <span class="h5" style="font-weight:normal;">{{taskTag.tag.name}}&nbsp;&nbsp;&nbsp;</span>
+	                    <div class="clearfix"></div>
+	                    <div class="checkbox" style="margin-bottom:0;">
+					    	<label>
+					    		<input type="checkbox" ng-model="taskTag.hidden" ng-true-value="'T'" ng-false-value="'F'" /> Hidden
+					    	</label>
+						</div>
+                	</div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Active Content</legend>
+        <div>
+            <div class="row">
+                <div class="form-group col-sm-6" ng-class="{'has-error': (taskForm.activeContentUrl.$invalid || taskForm.$serverError.activeContentUrl.$invalid)}">
+                    <label for="activeContentUrl" class="control-label">Active Content Public URL</label>
+                    <div class="counter-container">
+                        <input type="url" ng-model="task.activeContentUrl" name="activeContentUrl" ng-maxlength="2000" class="form-control" />
+                        <span class="label pull-right" ng-class="{'label-info':task.activeContentUrl.length<1900, 'label-warning':task.activeContentUrl.length>=1900 && task.activeContentUrl.length<2000, 'label-danger': task.activeContentUrl.length>=2000}">{{2000-task.activeContentUrl.length}}</span>
+                    </div>
+                    <p ng-repeat="(validator, invalid) in taskForm.activeContentUrl.$error" ng-show="invalid && pageData.validationMessages.activeContentUrl[validator]" class="text-danger">{{pageData.validationMessages.activeContentUrl[validator]}}</p>
+                    <p ng-repeat="message in taskForm.$serverError.activeContentUrl.messages" class="text-danger">{{message}}</p>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <!-- <fieldset>
+		<legend>
+			Maintenance
+		</legend>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="form-group col-md-3">
+					<label for="maintenanceBeginDate" class="control-label">Maintenance Begin Date</label> <input type="text" datepicker="body" time ng-model="task.maintenanceBeginDate" class="form-control" />
+				</div>
+				<div class="form-group col-md-3">
+					<label for="maintenanceEndDate" class="control-label">Maintenance End Date</label> <input type="text" datepicker="body" time ng-model="task.maintenanceEndDate" class="form-control" />
+				</div>
+				<div class="form-group col-md-6">
+					<label for="maintenanceDescription" class="control-label">Maintenance Description</label>
+					<textarea ng-model="task.maintenanceDescription" class="form-control"></textarea>
+				</div>
+			</div>
+		</div>
+	</fieldset> -->
+    <button class="btn btn-success" type="button" ng-hide="pending || !pageData.approver" ng-click="saveTask(false)" ng-disabled="taskForm.$invalid || invalidRoles.length > 0">Save</button>
+    <button class="btn btn-info" type="button" ng-hide="pending || (task.versionStatus != null && task.versionStatus != 'R')" ng-disabled="taskForm.uniqueKey.$invalid || taskForm.title.$invalid" ng-click="saveTask(true)">Save As Draft</button>
+    <button class="btn btn-warning" type="button" ng-hide="pending || pageData.approver" ng-click="submitTask()" ng-disabled="taskForm.$invalid || invalidRoles.length > 0">Submit</button>
+    <button class="btn btn-primary" type="button" ng-show="pending && pageData.approver" ng-click="approveTask()" ng-disabled="taskForm.$invalid || invalidRoles.length > 0">Approve</button>
+    <button class="btn btn-danger" type="button" ng-show="pending && pageData.approver" ng-click="declineTask()">Decline</button>
+    <a href="#/tasks" ng-hide="pending" class="btn btn-danger">Cancel</a>
+    <a href="#/pendingTasks" ng-show="pending" class="btn btn-default">Cancel</a>
+</form>
+
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="imageModalLabel">Link an Image</h4>
+            </div>
+            <div class="modal-body">
+                <form name="imageLinkForm" novalidate>
+                    <div class="form-group" ng-class="{'has-error': imageLinkForm.imageLinkUrl.$invalid}">
+                        <label for="imageLinkUrl" class="control-label">URL</label> <input type="url" name="imageLinkUrl" ng-pattern="/^https:\/\/.+$/" required ng-model="linkedImageUrl" class="form-control" />
+                        <p ng-show="imageLinkForm.imageLinkUrl.$error.pattern" class="text-danger">Must be a valid secure URL</p>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                <button class="btn btn-success" ng-click="linkImage()">Save</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<div class="modal fade" id="captionModal" tabindex="-1" role="dialog" aria-labelledby="captionModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="captionModalLabel">Edit Alternative Text For Image</h4>
+            </div>
+            <div class="modal-body">
+                <form name="altTextForm" novalidate>
+                    <div ng-class="{'has-error': altTextForm.imageCaption.$invalid}">
+                        <label for="imageCaption" class="control-label">Alternative (Alt) Text</label>
+                        <div class="counter-container">
+	                        <input type="text" name="imageCaption" ng-model="imageCaption" ng-maxlength="200" class="form-control" popover="Alternative text that can be read by screen readers." />
+	                        <span class="label pull-right" ng-class="{'label-info':imageCaption.length<180, 'label-warning':imageCaption.length>=180 && imageCaption.length<200, 'label-danger': imageCaption.length>=200}">{{200-imageCaption.length}}</span>
+	                    </div>
+                        <div ng-show="altTextForm.imageCaption.$error.maxlength" class="text-danger">Must be no more than 200 characters.</div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                <button class="btn btn-success" ng-click="saveCaption()" ng-disabled="imageCaption.length > 200 || imageCaption == null">Save</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="videoModalLabel">Link a Video</h4>
+            </div>
+            <div class="modal-body">
+                <form name="videoLinkForm" novalidate>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#youtubeUrl" data-toggle="tab" eat-click>YouTube / Vimeo</a></li>
+                        <li><a href="#videoFiles" data-toggle="tab" eat-click>File</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="youtubeUrl">
+                            <div class="form-group" ng-class="{'has-error': videoLinkForm.videoLinkUrl.$invalid}">
+                                <label for="videoLinkUrl" class="control-label">URL</label> <input type="url" name="videoLinkUrl" id="videoLinkUrl" ng-pattern="/^https:\/\/.+$/" ng-model="linkedVideo.contentUrl" class="form-control" />
+                                <p ng-show="videoLinkForm.videoLinkUrl.$error.pattern" class="text-danger">Must be a valid secure URL</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="videoFiles">
+                            <div class="form-group" ng-class="{'has-error': videoLinkForm.webmUrl.$invalid}">
+                                <label for="webmUrl" class="control-label">WebM URL</label> <input type="url" id="webmUrl" name="webmUrl" ng-pattern="/^https:\/\/.+$/" ng-model="linkedVideo.webmUrl" class="form-control" />
+                                <p ng-show="videoLinkForm.webmUrl.$error.pattern" class="text-danger">Must be a valid secure URL</p>
+                            </div>
+                            <div class="form-group" ng-class="{'has-error': videoLinkForm.oggUrl.$invalid}">
+                                <label for="oggUrl" class="control-label">Ogg URL</label> <input type="url" id="oggUrl" name="oggUrl" ng-pattern="/^https:\/\/.+$/" ng-model="linkedVideo.oggUrl" class="form-control" />
+                                <p ng-show="videoLinkForm.oggUrl.$error.pattern" class="text-danger">Must be a valid secure URL</p>
+                            </div>
+                            <div class="form-group" ng-class="{'has-error': videoLinkForm.mp4Url.$invalid}">
+                                <label for="mp4Url" class="control-label">MP4 URL</label> <input type="url" id="mp4Url" name="mp4Url" ng-pattern="/^https:\/\/.+$/" ng-model="linkedVideo.mp4Url" class="form-control" />
+                                <p ng-show="videoLinkForm.mp4Url.$error.pattern" class="text-danger">Must be a valid secure URL</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                <button class="btn btn-success" ng-click="linkVideo()">Save</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<div class="modal fade" id="tagModal" tabindex="-1" role="dialog" aria-labelledby="tagModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="tagModalLabel">Select Tags</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label" for="tagSearch">Filter Tags</label> <input type="text" name="tagSearch" ng-model="tagSearch" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="tagSelect">Choose Tags</label> <select ng-model="selectedTags" name="tagSelect" multiple ng-options="tag as tag.name for tag in pageData.tags | filter:tagSearch | orderBy:'+name'" size="6" class="form-control"></select>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary pull-right" type="button" ng-click="addTags()">Add Selected</button>
+                        </div>
+                    </div>
+                    <div class="form Group col-md-6">
+                        <label class="control-label">Currently Selected Tags</label>
+                        <!-- <div class="button-list well">
+                        	<div ng-repeat="taskTag in task.tags">
+                        		{{taskTag.tag.name}}
+                        		<button ng-click="removeTag(taskTag)" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove"></i></button>
+                        	</div>
+                            
+                        </div> -->
+                        <div style="max-height:300px; overflow-y:auto;overflow-x:none;">
+	                        <table class="table well">
+	                        	<tr ng-repeat="taskTag in task.tags">
+	                        		<td>{{taskTag.tag.name}}</td>
+	                        		<td>
+	                        			<input type="checkbox" ng-model="taskTag.hidden" ng-true-value="'T'" ng-false-value="'F'" /> Hidden
+	                        		</td>
+	                        		<td>
+	                        			<button ng-click="removeTag(taskTag)" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove"></i></button>
+	                        		</td>
+	                        	</tr>
+	                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->

@@ -1,0 +1,36 @@
+<h2>View Comments</h2>
+
+<ul class="breadcrumb">
+  <li><a href="#/">Publishing</a></li>
+  <li ng-if="previousPage == 'recentComments'"><a href="#/recentComments">Recent Comments</a></li>
+  <li ng-if="previousPage == 'taskList'"><a href="#/tasks">Tasks</a></li>
+  <li class="active">Versions</li>
+</ul>
+
+<div class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>
+    {{alert.msg}}
+</div>
+<div>
+	<legend> Versions with Comments </legend>
+
+	<table class="table table-hover table-condensed">
+		<tr>
+			<th>Version</th>
+			<th>Title (Application)</th>
+			<th>{{pageData.marketsTitle}}</th>
+			<th>Actions</th>
+		</tr>
+		<tr ng-repeat="task in tasks">
+			<td>{{task.displayVersion}}</td>
+			<td>{{task.title}}<span ng-show="task.applicationName"> ({{task.applicationName}})</span></td>
+			<td>
+				<div ng-if="task.markets.length == 0">All {{marketsTitle}}</div>
+				<div ng-repeat="market in task.markets">{{market.name}}</div>
+			</td>
+			<td>
+				<a ng-href="publish#/commentsForTaskVersion/{{task.taskId}}/{{previousPage}}/{{task.uid}}" class="btn btn-warning btn-sm">View</a>
+			</td>
+		</tr>
+	</table>
+</div>

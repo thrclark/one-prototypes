@@ -1,0 +1,336 @@
+<h2>Feature: {{featuredTask.task.title}} <span ng-show="!!featuredTask.task.applicationName">({{featuredTask.task.applicationName}})</span></h2>
+<ul class="breadcrumb">
+  <li><a href="#/">Publishing</a></li>
+  <li><a href="#/featuredTasks">Featured Tasks</a></li>
+  <li class="active"><span ng-show="featuredTask.featuredTaskId == null">Create</span><span ng-show="featuredTask.featuredTaskId != null">Edit</span> Featured Task</li>
+</ul>
+<div id="alert_{{$index}}" class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts" ><button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>{{alert.msg}}</div>
+<form name="featuredTaskForm" ng-submit="saveFeaturedTask()" validate="errors" id="featuredTaskForm" novalidate>
+	<fieldset>
+		<div class="row">
+			<div class="form-group col-md-12" ng-class="{'has-error': (featuredTaskForm.description.$invalid || featuredTaskForm.$serverError.description.$invalid)}">
+				<label for="description" class="control-label">Advertisement Description</label>
+				<textarea name="description" ng-model="featuredTask.description" class="form-control" popover="This text will appear in the carousel on tablet and desktop devices."></textarea>
+				<p ng-repeat="(validator, invalid) in featuredTaskForm.description.$error" ng-show="invalid && pageData.validationMessages.description[validator]" class="text-danger">{{pageData.validationMessages.description[validator]}}</p>
+				<p ng-repeat="message in featuredTaskForm.$serverError.description.messages" class="text-danger">{{message}}</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group col-md-12" ng-class="{'has-error': (featuredTaskForm.mobileDescription.$invalid || featuredTaskForm.$serverError.mobileDescription.$invalid)}">
+				<label for="mobileDescription" class="control-label">Mobile Advertisement Description</label>
+				<div class="counter-container">
+					<textarea name="mobileDescription" ng-model="featuredTask.mobileDescription" ng-maxlength="200" class="form-control"  popover="This text will appear in the carousel on mobile devices."></textarea>
+					<span class="label pull-right" ng-class="{'label-info':featuredTask.mobileDescription.length<190, 'label-warning':featuredTask.mobileDescription.length>=190 && featuredTask.mobileDescription.length<200, 'label-danger': featuredTask.mobileDescription.length>=200}">{{200-featuredTask.mobileDescription.length}}</span>
+                </div>
+				<p ng-repeat="(validator, invalid) in featuredTaskForm.mobileDescription.$error" ng-show="invalid && pageData.validationMessages.mobileDescription[validator]" class="text-danger">{{pageData.validationMessages.mobileDescription[validator]}}</p>
+				<p ng-repeat="message in featuredTaskForm.$serverError.mobileDescription.messages" class="text-danger">{{message}}</p>
+			</div>
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>
+            Dates (Schedule a One Time or a Recurring)
+        </legend>
+        <ul class="nav nav-tabs">
+			<li ng-class="{'active': (featuredTask.beginDate == null && featuredTask.duration == null || featuredTask.beginDate != null && featuredTask.duration == null)}"><a href="#one-time" data-toggle="tab" eat-click>One Time</a></li>
+			<li ng-class="{'active': (featuredTask.beginDate == null && featuredTask.duration != null)}"><a href="#recurring" data-toggle="tab" eat-click>Recurring</a></li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane" ng-class="{'active': (featuredTask.beginDate == null && featuredTask.duration == null || featuredTask.beginDate != null && featuredTask.duration == null)}" id="one-time">
+				<div class="row">
+					<div class="form-group col-md-3" ng-class="{'has-error': featuredTaskForm.beginDate.$invalid}">
+		                <label for="beginDate" class="control-label">Begin Date (Inclusive)</label>
+		                <input type="text" name="beginDate" datepicker="body" ng-model="featuredTask.beginDate" class="form-control"  popover="The date that the task should start being featured."/>
+		                <p ng-repeat="(validator, invalid) in featuredTaskForm.beginDate.$error" ng-show="invalid && pageData.validationMessages.beginDate[validator]" class="text-danger">{{pageData.validationMessages.beginDate[validator]}}</p>
+						<p ng-repeat="message in featuredTaskForm.$serverError.beginDate.messages" class="text-danger">{{message}}</p>
+		            </div>
+		            <div class="form-group col-md-3" ng-class="{'has-error': featuredTaskForm.endDate.$invalid}">
+		                <label for="endDate" class="control-label">End Date (Exclusive)</label>
+		                <input type="text" name="endDate" datepicker="body" ng-model="featuredTask.endDate" class="form-control" popover="The date that the task should stop being featured. The task will not be featured on this date." />
+		                <p ng-repeat="(validator, invalid) in featuredTaskForm.endDate.$error" ng-show="invalid && pageData.validationMessages.endDate[validator]" class="text-danger">{{pageData.validationMessages.endDate[validator]}}</p>
+						<p ng-repeat="message in featuredTaskForm.$serverError.endDate.messages" class="text-danger">{{message}}</p>
+		            </div>
+				</div>
+			</div>
+			<div class="tab-pane" ng-class="{'active': featuredTask.beginDate == null && featuredTask.duration != null}" id="recurring">
+		        <div class="row">
+            		<div class="col-md-3">
+		                <div class="form-group">
+		                	<label class="control-label">Recurrence Dates</label> 
+			                <input type="text" name="recurDate" datepicker="body" date-format="MM/DD" ng-model="recurDate" class="form-control"  popover="A date to repeat the featured task on.  The task will be featured for the duration specified by Begin Date and End Date, starting on the date selected here."/>
+			            </div>
+			            <div class="form-group">
+			                <button class="btn btn-default pull-right" type="button" ng-click="addRecurDate()">Add</button>
+		                </div>
+	               </div>
+	               <div class="col-md-9">
+	                   <div class="button-list well">
+		                    <button type="button" ng-repeat="recurDate in featuredTask.recurDates" ng-click="removeRecurrence(recurDate)" class="btn btn-default btn-sm">
+		                        {{recurDate.month + 1}} / {{recurDate.day}}&nbsp;<i class="glyphicon glyphicon-remove"></i>
+		                    </button>
+		                </div>
+		                <p ng-repeat="(validator, invalid) in featuredTaskForm.recurDates.$error" ng-show="invalid && pageData.validationMessages.recurDates[validator]" class="text-danger">{{pageData.validationMessages.recurDates[validator]}}</p>
+				        <p ng-repeat="message in featuredTaskForm.$serverError.recurDates.messages" class="text-danger">{{message}}</p>
+	               </div>
+	            </div>
+	            <div class="row">
+					<div class="form-group col-md-3" ng-class="{'has-error': featuredTaskForm.duration.$invalid}">
+		                <label for="duration" class="control-label">Duration (in days)</label>
+		                <input type="text" name="duration" ng-model="featuredTask.duration" class="form-control"  popover="The number of days that the task should be featured when a recurring date is met."/>
+		                <p ng-repeat="(validator, invalid) in featuredTaskForm.duration.$error" ng-show="invalid && pageData.validationMessages.duration[validator]" class="text-danger">{{pageData.validationMessages.duration[validator]}}</p>
+						<p ng-repeat="message in featuredTaskForm.$serverError.duration.messages" class="text-danger">{{message}}</p>
+		            </div>
+					<div class="form-group col-md-3" ng-class="{'has-error': (featuredTaskForm.untilDate.$invalid || featuredTaskForm.$serverError.untilDate.$invalid)}">
+		                <label for="untilDate" class="control-label">Until Date</label>
+		                <input type="text" name="untilDate" datepicker="body" ng-model="featuredTask.untilDate" class="form-control"  popover="Feature the task on every Recurrence Date until this date.  If left blank, it will repeat forever."/>
+		                <p ng-repeat="message in featuredTaskForm.$serverError.untilDate.messages" class="text-danger">{{message}}</p>
+		            </div>
+				</div>
+			</div>
+		</div>
+	</fieldset>
+	<fieldset>
+        <legend>
+            Images
+        </legend>
+        <ul class="nav nav-tabs">
+			<li class="active"><a href="#large-image" data-toggle="tab" eat-click>Banner Image</a></li>
+			<li><a href="#small-image" data-toggle="tab" eat-click>Square Image</a></li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" id="large-image">
+				<div class="row">
+                    <div class="form-group col-sm-12">
+	                    <div class="checkbox">
+					    	<label>
+					    		<input type="checkbox" ng-model="featuredTask.generateSmallerBannerImageSizes" /> Automatically generate smaller image sizes.
+					    	</label>
+						</div>
+	                </div>
+                </div>
+				<p class="text-danger" ng-show="(featuredTask.highResolutionBannerImage == null || (!featuredTask.generateSmallerBannerImageSizes && featuredTask.lowResolutionBannerImage == null))">Both images are required.</p>
+				<div class="row">
+			        <div class="form-group col-md-6" ng-class="{'has-error': (hiResUploadReturn.error || featuredTaskForm.$serverError.highResolutionBannerImage.$invalid)}">
+			            <label class="control-label">High-Resolution Image<br/>(740&times;236)</label>
+			            <div>
+				            <span class="btn btn-success fileinput-button">
+				            	<i class="glyphicon glyphicon-plus glyphicon glyphicon"></i>
+				            	<span>Upload image&hellip;</span>
+				            	<input id="hiResUpload" type="file" fileupload name="files[]" customdata="{size:7}" uploadurl="uploadUrl"
+					            	done="uploadDone(e, data, 'hiResUploadReturn', 'featuredTask.highResolutionBannerImage')"
+					            	fail="uploadFail(e, data, 'hiResUploadReturn')"
+					            	progress="uploadProgress(e, data, 'hiResUploadReturn')" />
+				            </span>
+				            <button type="button" class="btn btn-danger" ng-click="featuredTask.highResolutionBannerImage = null" ng-show="featuredTask.highResolutionBannerImage != null"><i class="glyphicon glyphicon-trash"></i></button>
+							<span data-ng-show="hiResUploadReturn.error" class="file-error">
+		                        <span class="label label-danger">Error</span> {{hiResUploadReturn.errorMessage}}
+		                    </span>
+							<div class="panel">
+								<div ng-if="featuredTask.highResolutionBannerImage != null">
+			                        <img ng-if="!!featuredTask.highResolutionBannerImage.mediaId && featuredTask.highResolutionBannerImage.contentUrl" ng-src="{{featuredTask.highResolutionBannerImage.contentUrl}}" alt="" style="width: 100%">
+                                    <img ng-if="!!featuredTask.highResolutionBannerImage.mediaId && !featuredTask.highResolutionBannerImage.contentUrl" ng-src="{{contextPath}}/media/feature/{{featuredTask.featuredTaskId}}/{{featuredTask.highResolutionBannerImage.mediaId}}" alt="" style="width: 100%">
+                                    <img ng-if="!featuredTask.highResolutionBannerImage.mediaId && featuredTask.highResolutionBannerImage.name" ng-src="{{contextPath}}/publish/image/file?name={{featuredTask.highResolutionBannerImage.name}}" alt="" style="width: 100%">
+			                    </div>
+							</div>
+						</div>
+		                <p ng-repeat="message in featuredTaskForm.$serverError.highResolutionBannerImage.messages" class="text-danger">{{message}}</p>
+			        </div>
+			        <div class="form-group col-md-6" ng-hide="featuredTask.generateSmallerBannerImageSizes" ng-class="{'has-error': (featuredTaskForm.$serverError.lowResolutionBannerImage.$invalid)}">
+			            <label class="control-label">Low-Resolution Image<br/>(370&times;118)</label>
+			            <div>
+				            <span class="btn btn-success fileinput-button">
+				            	<i class="glyphicon glyphicon-plus glyphicon glyphicon"></i>
+				            	<span>Upload image&hellip;</span>
+				            	<input id="loResUpload" type="file" fileupload name="files[]" customdata="{size:6}" uploadurl="uploadUrl"
+					            	done="uploadDone(e, data, 'loResUploadReturn', 'featuredTask.lowResolutionBannerImage')"
+					            	fail="uploadFail(e, data, 'loResUploadReturn')"
+					            	progress="uploadProgress(e, data, 'loResUploadReturn')" />
+				            </span>
+				            <button type="button" class="btn btn-danger" ng-click="featuredTask.lowResolutionBannerImage = null" ng-show="featuredTask.lowResolutionBannerImage != null"><i class="glyphicon glyphicon-trash"></i></button>
+							<span data-ng-show="loResUploadReturn.error" class="file-error">
+		                        <span class="label label-danger">Error</span> {{loResUploadReturn.errorMessage}}
+		                    </span>
+							<div class="panel">
+								<div ng-if="featuredTask.lowResolutionBannerImage != null">
+			                        <img ng-if="!!featuredTask.lowResolutionBannerImage.mediaId && featuredTask.lowResolutionBannerImage.contentUrl" ng-src="{{featuredTask.lowResolutionBannerImage.contentUrl}}" alt="" style="width: 100%">
+                                    <img ng-if="!!featuredTask.lowResolutionBannerImage.mediaId && !featuredTask.lowResolutionBannerImage.contentUrl" ng-src="{{contextPath}}/media/feature/{{featuredTask.featuredTaskId}}/{{featuredTask.lowResolutionBannerImage.mediaId}}" alt="" style="width: 100%">
+                                    <img ng-if="!featuredTask.lowResolutionBannerImage.mediaId && featuredTask.lowResolutionBannerImage.name" ng-src="{{contextPath}}/publish/image/file?name={{featuredTask.lowResolutionBannerImage.name}}" alt="" style="width: 100%">
+			                    </div>
+							</div>
+						</div>
+		                <p ng-repeat="message in featuredTaskForm.$serverError.lowResolutionBannerImage.messages" class="text-danger">{{message}}</p>
+			        </div>
+		    	</div>
+			</div>
+			<div class="tab-pane" id="small-image">
+				<div class="row">
+					<div class="form-group col-sm-6">
+	                    <label class="control-label">Background Color</label>
+	                    <div>
+	                    	<div colorpicker ng-model="featuredTask.color" options="{showPaletteOnly: true, showPalette:true, palette: [['#e24141', '#ff7777', '#ffbbdd', '#ff9914'], ['#ebaf4b', '#fbcd83', '#eeee88', '#f4fad5'], ['#cbf1c4', '#a7e79c', '#ccd3ff', '#9baae8'], ['#6f85e1', '#c3b2e0', '#cc51e9', '#cc6655'], ['#ffffff']]}"></div>
+	                    </div>
+	                </div>
+	                <div class="form-group col-sm-6">
+	                    <label class="control-label">Text Color</label>
+	                    <div>
+	                    	<div colorpicker ng-model="featuredTask.textColor" options="{showPaletteOnly: true, showPalette:true, palette: [['#e24141', '#ff7777', '#ffbbdd', '#ff9914'], ['#ebaf4b', '#fbcd83', '#eeee88', '#f4fad5'], ['#cbf1c4', '#a7e79c', '#ccd3ff', '#9baae8'], ['#6f85e1', '#c3b2e0', '#cc51e9', '#cc6655'], ['#000000', '#666666', '#cccccc', '#ffffff']]}"></div>
+	                    </div>
+	                </div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#choose-image" data-toggle="tab" eat-click>Choose Image</a></li>
+							<li><a href="#upload-image" data-toggle="tab" eat-click>Upload Image</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="choose-image">
+								<div class="row">
+					            	<div class="form-group col-md-3" ng-class="{'has-error': (featuredTaskForm.imageSetId.$invalid || featuredTaskForm.$serverError.imageSetId.$invalid)}">
+					            		<label for="imageSetId" class="control-label">Choose an Image</label>
+										<select ng-model="selectedImageSet" ng-change="featuredTask.imageSetId = selectedImageSet.imageSetId" name="imageSetId" ng-options="imageSet as imageSet.name for imageSet in pageData.imageSets" class="form-control">
+					                        <option value=""></option>
+					                    </select>
+					                </div>
+				                    <div class="form-group col-md-3">
+					            		<label class="control-label">Image Preview</label>
+										<img ng-if="selectedImageSet && selectedImageSet.desktopImageCdnUrl" ng-src="{{selectedImageSet.desktopImageCdnUrl}}" alt="icon image preview" style="width: 100%" />
+                        				<img ng-if="selectedImageSet && !selectedImageSet.desktopImageCdnUrl"  ng-src="{{contextPath}}/publish/image/media/{{selectedImageSet.imageSetId}}/{{selectedImageSet.desktopImageId}}" alt="icon image preview" style="width: 100%" />
+					                </div>
+								</div>
+							</div>
+							<div class="tab-pane" id="upload-image">
+								<div class="row">
+				                    <div class="form-group col-sm-12">
+					                    <div class="checkbox">
+									    	<label>
+									    		<input type="checkbox" ng-model="featuredTask.generateSmallerImageSizes" /> Automatically generate smaller image sizes.
+									    	</label>
+										</div>
+					                </div>
+				                </div>
+								<p class="text-danger" ng-show="featuredTask.desktopImage == null || (!featuredTask.generateSmallerImageSizes && (featuredTask.tabletHighResolutionImage == null || featuredTask.tabletLowResolutionImage == null || featuredTask.phoneHighResolutionImage == null || featuredTask.phoneLowResolutionImage == null))">All 5 images are required.</p>
+								<div class="row">
+					                <div class="form-group col-md-3" ng-class="{'has-error': desktopUploadReturn.error || featuredTaskForm.$serverError.desktopImage.$invalid}">
+							            <label class="control-label">Desktop Image<br/>(153&times;153)</label>
+							            <div>
+								            <span class="btn btn-success fileinput-button">
+								            	<i class="glyphicon glyphicon-plus glyphicon glyphicon"></i>
+								            	<span>Upload image&hellip;</span>
+								            	<input id="desktopUpload" type="file" fileupload name="files[]" customdata="{size:5}" uploadurl="uploadUrl" done="uploadDone(e, data, 'desktopUploadReturn', 'featuredTask.desktopImage')" fail="uploadFail(e, data, 'desktopUploadReturn')" progress="uploadProgress(e, data, 'desktopUploadReturn')">
+								            </span>
+								            <button type="button" class="btn btn-danger" ng-click="featuredTask.desktopImage = null" ng-show="featuredTask.desktopImage != null"><i class="glyphicon glyphicon-trash"></i></button>
+											<div class="panel">
+												<span data-ng-show="desktopUploadReturn.error" class="file-error">
+									                <span class="label label-danger">Error</span> {{desktopUploadReturn.errorMessage}}
+									            </span>
+							                    <div ng-if="featuredTask.desktopImage != null">
+							                        <img ng-if="!!featuredTask.desktopImage.mediaId && featuredTask.desktopImage.contentUrl" ng-src="{{featuredTask.desktopImage.contentUrl}}" alt="" style="width: 100%">
+				                                    <img ng-if="!!featuredTask.desktopImage.mediaId && !featuredTask.desktopImage.contentUrl" ng-src="{{contextPath}}/media/feature/{{featuredTask.featuredTaskId}}/{{featuredTask.desktopImage.mediaId}}" alt="" style="width: 100%">
+				                                    <img ng-if="!featuredTask.desktopImage.mediaId && featuredTask.desktopImage.name" ng-src="{{contextPath}}/publish/image/file?name={{featuredTask.desktopImage.name}}" alt="" style="width: 100%">
+							                    </div>
+											</div>
+										</div>
+						                <p ng-repeat="message in featuredTaskForm.$serverError.desktopImage.messages" class="text-danger">{{message}}</p>
+							        </div>
+							        <div class="form-group col-md-3" ng-hide="featuredTask.generateSmallerImageSizes" ng-class="{'has-error': tabletHiResUploadReturn.error || featuredTaskForm.$serverError.tabletHighResolutionImage.$invalid}">
+							            <label class="control-label">Tablet High-Resolution Image (144&times;144)</label>
+							            <div>
+								            <span class="btn btn-success fileinput-button">
+								            	<i class="glyphicon glyphicon-plus glyphicon glyphicon"></i>
+								            	<span>Upload image&hellip;</span>
+								            	<input id="tabletHiResUpload" type="file" fileupload name="files[]" customdata="{size:4}" uploadurl="uploadUrl" done="uploadDone(e, data, 'tabletHiResUploadReturn', 'featuredTask.tabletHighResolutionImage')" fail="uploadFail(e, data, 'tabletHiResUploadReturn')" progress="uploadProgress(e, data, 'tabletHiResUploadReturn')">
+								            </span>
+								            <button type="button" class="btn btn-danger" ng-click="featuredTask.tabletHighResolutionImage = null" ng-show="featuredTask.tabletHighResolutionImage != null"><i class="glyphicon glyphicon-trash"></i></button>
+											<div class="panel">
+												<span data-ng-show="tabletHiResUploadReturn.error" class="file-error">
+									                <span class="label label-danger">Error</span> {{tabletHiResUploadReturn.errorMessage}}
+									            </span>
+												<div ng-if="featuredTask.desktopImage != null">
+													<img ng-if="!!featuredTask.tabletHighResolutionImage.mediaId && featuredTask.tabletHighResolutionImage.contentUrl" ng-src="{{featuredTask.tabletHighResolutionImage.contentUrl}}" alt="" style="width: 100%">
+				                                    <img ng-if="!!featuredTask.tabletHighResolutionImage.mediaId && !featuredTask.tabletHighResolutionImage.contentUrl" ng-src="{{contextPath}}/media/feature/{{featuredTask.featuredTaskId}}/{{featuredTask.tabletHighResolutionImage.mediaId}}" alt="" style="width: 100%">
+				                                    <img ng-if="!featuredTask.tabletHighResolutionImage.mediaId && featuredTask.tabletHighResolutionImage.name" ng-src="{{contextPath}}/publish/image/file?name={{featuredTask.tabletHighResolutionImage.name}}" alt="" style="width: 100%">
+							                    </div>
+											</div>
+										</div>
+						                <p ng-repeat="message in featuredTaskForm.$serverError.tabletHighResolutionImage.messages" class="text-danger">{{message}}</p>
+							        </div>
+					                <div class="form-group col-md-3" ng-hide="featuredTask.generateSmallerImageSizes" ng-class="{'has-error': phoneHiResUploadReturn.error || featuredTaskForm.$serverError.phoneHighResolutionImage.$invalid}">
+							            <label class="control-label">Phone High-Resolution Image (114&times;114)</label>
+							            <div>
+								            <span class="btn btn-success fileinput-button">
+								            	<i class="glyphicon glyphicon-plus glyphicon glyphicon"></i>
+								            	<span>Upload image&hellip;</span>
+								            	<input id="phoneHiResUpload" type="file" fileupload name="files[]" customdata="{size:2}" uploadurl="uploadUrl" done="uploadDone(e, data, 'phoneHiResUploadReturn', 'featuredTask.phoneHighResolutionImage')" fail="uploadFail(e, data, 'phoneHiResUploadReturn')" progress="uploadProgress(e, data, 'phoneHiResUploadReturn')">
+								            </span>
+								            <button type="button" class="btn btn-danger" ng-click="featuredTask.phoneHighResolutionImage = null" ng-show="featuredTask.phoneHighResolutionImage != null"><i class="glyphicon glyphicon-trash"></i></button>
+											<div class="panel">
+												<span data-ng-show="phoneHiResUploadReturn.error" class="file-error">
+									                <span class="label label-danger">Error</span> {{phoneHiResUploadReturn.errorMessage}}
+									            </span>
+												<div ng-if="featuredTask.desktopImage != null">
+													<img ng-if="!!featuredTask.phoneHighResolutionImage.mediaId && featuredTask.phoneHighResolutionImage.contentUrl" ng-src="{{featuredTask.phoneHighResolutionImage.contentUrl}}" alt="" style="width: 100%">
+				                                    <img ng-if="!!featuredTask.phoneHighResolutionImage.mediaId && !featuredTask.phoneHighResolutionImage.contentUrl" ng-src="{{contextPath}}/media/feature/{{featuredTask.featuredTaskId}}/{{featuredTask.phoneHighResolutionImage.mediaId}}" alt="" style="width: 100%">
+				                                    <img ng-if="!featuredTask.phoneHighResolutionImage.mediaId && featuredTask.phoneHighResolutionImage.name" ng-src="{{contextPath}}/publish/image/file?name={{featuredTask.phoneHighResolutionImage.name}}" alt="" style="width: 100%">
+							                    </div>
+											</div>
+										</div>
+						                <p ng-repeat="message in featuredTaskForm.$serverError.phoneHighResolutionImage.messages" class="text-danger">{{message}}</p>
+							        </div>
+					            </div>
+					            <div class="row">
+							        <div class="form-group col-md-3" ng-hide="featuredTask.generateSmallerImageSizes" ng-class="{'has-error': tabletLoResUploadReturn.error || featuredTaskForm.$serverError.tabletLowResolutionImage.$invalid}">
+							            <label class="control-label">Tablet Low-Resolution Image (72&times;72)</label>
+							            <div>
+								            <span class="btn btn-success fileinput-button">
+								            	<i class="glyphicon glyphicon-plus glyphicon glyphicon"></i>
+								            	<span>Upload image&hellip;</span>
+								            	<input id="tabletLoResUpload" type="file" fileupload name="files[]" customdata="{size:3}" uploadurl="uploadUrl" done="uploadDone(e, data, 'tabletLoResUploadReturn', 'featuredTask.tabletLowResolutionImage')" fail="uploadFail(e, data, 'tabletLoResUploadReturn')" progress="uploadProgress(e, data, 'tabletLoResUploadReturn')">
+								            </span>
+								            <button type="button" class="btn btn-danger" ng-click="featuredTask.tabletLowResolutionImage = null" ng-show="featuredTask.tabletLowResolutionImage != null"><i class="glyphicon glyphicon-trash"></i></button>
+											<div class="panel">
+												<span data-ng-show="tabletLoResUploadReturn.error" class="file-error">
+									                <span class="label label-danger">Error</span> {{tabletLoResUploadReturn.errorMessage}}
+									            </span>
+												<div ng-if="featuredTask.desktopImage != null">
+													<img ng-if="!!featuredTask.tabletLowResolutionImage.mediaId && featuredTask.tabletLowResolutionImage.contentUrl" ng-src="{{featuredTask.tabletLowResolutionImage.contentUrl}}" alt="" style="width: 100%">
+				                                    <img ng-if="!!featuredTask.tabletLowResolutionImage.mediaId && !featuredTask.tabletLowResolutionImage.contentUrl" ng-src="{{contextPath}}/media/feature/{{featuredTask.featuredTaskId}}/{{featuredTask.tabletLowResolutionImage.mediaId}}" alt="" style="width: 100%">
+				                                    <img ng-if="!featuredTask.tabletLowResolutionImage.mediaId && featuredTask.tabletLowResolutionImage.name" ng-src="{{contextPath}}/publish/image/file?name={{featuredTask.tabletLowResolutionImage.name}}" alt="" style="width: 100%">
+							                    </div>
+											</div>
+										</div>
+						                <p ng-repeat="message in featuredTaskForm.$serverError.tabletLowResolutionImage.messages" class="text-danger">{{message}}</p>
+							        </div>
+							        <div class="form-group col-md-3" ng-hide="featuredTask.generateSmallerImageSizes" ng-class="{'has-error': phoneLoResUploadReturn.error || featuredTaskForm.$serverError.phoneLowResolutionImage.$invalid}">
+							            <label class="control-label">Phone Low-Resolution Image (57&times;57)</label>
+							            <div>
+								            <span class="btn btn-success fileinput-button">
+								            	<i class="glyphicon glyphicon-plus glyphicon glyphicon"></i>
+								            	<span>Upload image&hellip;</span>
+								            	<input id="phoneLoResUpload" type="file" fileupload name="files[]" customdata="{size:1}" uploadurl="uploadUrl" done="uploadDone(e, data, 'phoneLoResUploadReturn', 'featuredTask.phoneLowResolutionImage')" fail="uploadFail(e, data, 'phoneLoResUploadReturn')" progress="uploadProgress(e, data, 'phoneLoResUploadReturn')">
+								            </span>
+								            <button type="button" class="btn btn-danger" ng-click="featuredTask.phoneLowResolutionImage = null" ng-show="featuredTask.phoneLowResolutionImage != null"><i class="glyphicon glyphicon-trash"></i></button>
+											<div class="panel">
+												<span data-ng-show="phoneLoResUploadReturn.error" class="file-error">
+									                <span class="label label-danger">Error</span> {{phoneLoResUploadReturn.errorMessage}}
+									            </span>
+												<div ng-if="featuredTask.desktopImage != null">
+													<img ng-if="!!featuredTask.phoneLowResolutionImage.mediaId && featuredTask.phoneLowResolutionImage.contentUrl" ng-src="{{featuredTask.phoneLowResolutionImage.contentUrl}}" alt="" style="width: 100%">
+				                                    <img ng-if="!!featuredTask.phoneLowResolutionImage.mediaId && !featuredTask.phoneLowResolutionImage.contentUrl" ng-src="{{contextPath}}/media/feature/{{featuredTask.featuredTaskId}}/{{featuredTask.phoneLowResolutionImage.mediaId}}" alt="" style="width: 100%">
+				                                    <img ng-if="!featuredTask.phoneLowResolutionImage.mediaId && featuredTask.phoneLowResolutionImage.name" ng-src="{{contextPath}}/publish/image/file?name={{featuredTask.phoneLowResolutionImage.name}}" alt="" style="width: 100%">
+							                    </div>
+											</div>
+										</div>
+						                <p ng-repeat="message in featuredTaskForm.$serverError.phoneLowResolutionImage.messages" class="text-danger">{{message}}</p>
+							        </div>
+					            </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </fieldset>
+	<button type="submit" class="btn btn-success" ng-disabled="featuredTaskForm.$invalid">Save</button>
+	<a href="#/featuredTasks" class="btn btn-danger">Cancel</a>
+</form>

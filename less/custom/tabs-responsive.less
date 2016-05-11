@@ -1,0 +1,184 @@
+.nav.nav-tabs.nav-tabs-responsive {
+  a {
+    color: #555555;
+    font-family: @headings-font-family;
+    font-size: 18px;
+    padding: 10px 31px;
+    .container-badge {
+      top: 7px;
+      right: 7px;
+    }
+  }
+}
+.nav.nav-tabs.nav-tabs-responsive>li.active>a {
+  background-color: #ffffff;
+  &:hover {
+    background-color: #ffffff;
+  }
+  &:focus {
+    background-color: #ffffff;
+  }
+}
+.tab-content {
+  background: white;
+  border-bottom: none;
+  border-top: none;
+  border-left: solid 1px @nav-tabs-active-link-hover-border-color;
+  border-right: solid 1px @nav-tabs-active-link-hover-border-color;
+  .tab-pane {
+    background: #ffffff;
+    border-bottom: solid 1px #cccccc;
+    padding-top: 0px;
+    .panel-main {
+      background: white;
+      border-right: 1px solid #ebebeb;
+      min-height: 500px;
+      padding-left: 15px;
+      padding-right: 15px;
+      .nav.nav-pills {
+        a {
+          padding: 5px 15px;
+        }
+      }
+      .tab-content {
+        border: none;
+        .tab-pane {
+          border-bottom: none;
+        }
+      }
+      .panel-actionheader {
+        border-bottom: solid 1px #CCCCCC;
+        .panel-controls {
+          margin-top: 15px;
+        }
+      }
+    }
+    .panel-aside {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+
+
+
+
+
+
+.panel-group {
+  .panel {
+    .panel-heading{
+      position: relative;
+      .panel-title {
+        a {
+          display: block;
+          &:hover, &:focus{
+            text-decoration: none;
+          }
+          .container-badge {
+            top: 7px;
+            right: 12px;
+            .badge{
+              background-color: red;
+            }
+          }
+        }
+      }
+    }
+    .panel-body {
+      .panel-main {
+        .panel-actionheader {
+          border-bottom: solid 1px #CCCCCC;
+          margin-bottom: 15px;
+          .panel-controls {
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.panel-group .panel .panel-body h5,
+.tab-content .tab-pane h5,
+ {
+  font-family: @font-family;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+@media (max-width:@screen-md) {
+  .panel-group {
+    .panel {
+      .panel-heading {
+        border-bottom: solid 1px #dddddd;
+        border-top: solid 1px #ffffff;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 10px 8px;
+        .panel-title {
+          font-size: 18px;
+        }
+      }
+      .panel-body {
+        .panel-main {
+          border-right: none;
+          min-height: inherit;
+        }
+      }
+    }
+  }
+}
+@media (max-width:@screen-sm) {
+  .panel-group {
+    .panel {
+      margin-left: -5px;
+      margin-right: -5px;
+      .panel-body {
+        .panel-main {
+          border-right: none;
+          min-height: inherit;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        .panel-aside {
+          padding-bottom: 20px;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+
+// color & height variation for tcp tabs
+
+.tcp-tabs {
+  .tab-content {
+    .tab-pane {
+      .panel-main {
+        background: #f5f5f5;
+        min-height: inherit;
+        .tab-content {
+          .tab-pane {
+            background: #f5f5f5;
+          }
+        }
+      }
+    }
+  }
+  .nav.nav-tabs.nav-tabs-responsive>li.active>a {
+    background: #f5f5f5;
+    &:hover {
+      background: #f5f5f5;
+    }
+    &:focus {
+      background: #f5f5f5;
+    }
+  }
+}
+

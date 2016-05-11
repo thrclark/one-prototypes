@@ -1,0 +1,29 @@
+<h2>User Attribute Mappings</h2>
+<ul class="breadcrumb">
+  <li><a href="#/">Administration</a></li>
+  <li><a href="#/tenants">Tenants</a></li>
+  <li class="active">User Attribute Mappings</li>
+</ul>
+<div id="alert_{{$index}}" class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts" ><button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>{{alert.msg}}</div>
+<table class="table table-hover table-condensed">
+	<thead>
+		<tr>
+			<th>Mapping Id</th>
+			<th>Application Key</th>
+			<th>Tenant Key</th>
+			<th>Status</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="userAttributeMapping in userAttributeMappingList">
+			<td>{{userAttributeMapping.mappingId}}</td>
+			<td>{{userAttributeMapping.applicationKey}}</td>
+			<td>{{userAttributeMapping.tenantKey}}</td>
+            <td>{{userAttributeMapping.status}}</td>
+			<td>
+				<a href="#/userAttributeMapping/{{userAttributeMapping.mappingId}}" class="btn btn-primary btn-sm">Edit</a>
+			</td>
+		</tr>
+	</tbody>
+</table>

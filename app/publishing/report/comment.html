@@ -1,0 +1,60 @@
+<h2>Flagged Comment</h2>
+<ul class="breadcrumb">
+    <li><a href="#/">Publishing</a></li>
+    <li><a href="#/reports">Flagged Comments</a></li>
+    <li ng-if="historical"><a href="#/reports?historical=true">Flagged Comment History</a></li>
+    <li class="active">Comment
+</ul>
+<div class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>
+    {{alert.msg}}
+</div>
+<h2>Comment Details</h2>
+<div class="row">
+    <div class="col-md-6">
+        <dl>
+            <dt>Posted by</dt>
+            <dd>&nbsp;Email: {{comment.user.email}}</dd>
+            <dd>&nbsp;User Name: {{comment.user.userName}}</dd>
+
+            <dt>Alias Name</dt>
+            <dd>&nbsp;{{comment.userAlias}}</dd>
+            <dt>Comment</dt>
+            <dd>&nbsp;{{comment.comment}}</dd>
+        </dl>
+    </div>
+    <div class="col-md-6">
+        <dl>
+            <dt>Task</dt>
+            <dd>&nbsp;{{task.title}} <span ng-show="!!task.applicationName">({{task.applicationName}})</span>
+            </dd>
+            <dt>Posted on</dt>
+            <dd>&nbsp;{{comment.postDate | date:'MMM d, y h:mm a'}}</dd>
+        </dl>
+    </div>
+</div>
+<div ng-if="!historical && comment.status == 'A'" class="form-group">
+	<button type="button" class="btn btn-danger" ng-click="deleteComment(comment.commentId)">Deactivate Comment</button>
+	<button type="button" class="btn btn-warning" ng-click="acceptComment(comment.commentId)">Comment is Acceptable</button>
+</div>
+<h2>Flags From Users</h2>
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-hover table-condensed">
+            <thead>
+                <tr>
+                    <th>User Email</th>
+                    <th>Flagged Reason</th>
+                    <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="report in comment.reports">
+                    <td>{{report.user.email}}</td>
+                    <td>{{reportedCommentMap[report.type]}}</td>
+                    <td>{{report.text}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

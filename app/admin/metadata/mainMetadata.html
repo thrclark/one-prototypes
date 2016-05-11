@@ -1,0 +1,22 @@
+<h2>Main Metadata</h2>
+<ul class="breadcrumb">
+  <li><a href="#/">Administration</a></li>
+  <li class="active">Main Metadata</li>
+</ul>
+<div id="alert_{{$index}}" class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts" ><button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>{{alert.msg}}</div>
+
+<form name="metadataSystemParameterForm" ng-submit="reloadMetadataSystemParameter()" validate="errors" novalidate>
+    <fieldset>
+        <div class="row">
+            <div class="form-group col-md-12" ng-class="{'has-error': (metadataSystemParameterForm.value.$invalid || metadataSystemParameterForm.$serverError.value.$invalid)}">
+                <label for="value" class="control-label">This will reload the main metadata url in the system parameter: {{metadataSystemParameter.name}} to allow new/updated IDPs and SPs to be loaded.<br />
+                <small>{{metadataSystemParameter.value}}</small></label>
+            </div>
+        </div>
+    </fieldset>
+    <div ng-if="!metadataSystemParameter.value" class="form-group">
+    	There is not currently a value in {{metadataSystemParameter.name}} to reload.  Please first add a value in Maintain System Parameters
+    </div>
+    <button type="submit" class="btn btn-success" ng-if="metadataSystemParameter.value">Reload</button>
+    <a href="#/" class="btn btn-danger">Cancel</a>
+</form>

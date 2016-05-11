@@ -1,0 +1,35 @@
+<h2>Review Comment Replies</h2>
+<ul class="breadcrumb">
+    <li><a href="#/">Publishing</a></li>
+    <li class="active">Review Comment Replies</li>
+</ul>
+<div class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>
+    {{alert.msg}}
+</div>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Post Date</th>
+			<th>Display Name</th>
+			<th>Response Text</th>
+			<th>Comment Text</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="reply in replies">
+			<td>{{reply.postDate | date:'MMM d, y h:mm a'}}</td>
+			<td>{{reply.publisherAlias}}</td>
+			<td><span data-toggle="popover" data-trigger="hover" title="Full Response" data-content="{{reply.text}}" ng-bind-html="reply.text | truncate:100"></span></td>
+			<td ng-bind-html="reply.comment.comment | truncate:50"></td>
+			<td>
+				<button class="btn btn-sm btn-primary" ng-click="replyToComment(reply)">Edit</button>
+				<button class="btn btn-sm btn-danger" ng-click="deleteReply(reply)" ng-disabled="disableReplySubmit">Remove</button>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div comment-reply-dialog="commentReply" comment="comment" success-callback="submitSuccessCallback(commentId)"></div>

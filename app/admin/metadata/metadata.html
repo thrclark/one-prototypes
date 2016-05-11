@@ -1,0 +1,52 @@
+<h1><span ng-show="metadata.metadataId == null">New</span><span ng-show="metadata.metadataId != null">Edit</span> Metadata</h1>
+<ul class="breadcrumb">
+  <li><a href="#/">Administration</a></li>
+  <li><a href="#/tenants">Tenants</a></li>
+  <li><a href="#/metadataList/{{metadata.tenantId}}">Metadata List</a></li>
+  <li class="active"><span ng-show="metadata.metadataId == null">Create</span><span ng-show="metadata.metadataId != null">Edit</span> Metadata</li>
+</ul>
+<div id="alert_{{$index}}" class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts" ><button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>{{alert.msg}}</div>
+
+<form name="metadataForm" ng-submit="saveMetadata()" validate="errors" novalidate>
+	<fieldset>
+		<div class="row">
+			<div class="form-group col-md-2">
+				<div class="form-group">
+					<label for="type">Type</label>
+			    	<select id="type" name="type" ng-model="metadata.type" class="form-control">
+			        	<option value="S">Service Provider</option>
+			        	<option value="I">Identity Provider</option>
+			    	</select>
+				</div>
+			</div>
+			<div class="form-group col-md-5" ng-class="{'has-error': (metadataForm.url.$invalid || metadataForm.$serverError.url.$invalid)}">
+				<div class="form-group">
+					<label for="url">Url</label>
+					<input type="text" name="url" ng-model="metadata.url" class="form-control" popover="A URL to a valid Metadata XML file. This takes precidence over the Metadata text field below." />
+					<p ng-repeat="message in metadataForm.$serverError.url.messages" class="text-danger">{{message}}</p>
+				</div>
+			</div>
+			<div class="form-group col-md-2">
+				<div class="form-group">
+					<label for="status">Status</label>
+			    	<select id="status" name="status" ng-model="metadata.status" class="form-control">
+			        	<option value="A">Active</option>
+			        	<option value="I">Inactive</option>
+			    	</select>
+			   		<p ng-repeat="message in metadataForm.$serverError.status.messages" class="text-danger">{{message}}</p>
+				</div>
+			</div>
+        </div>
+        <div class="row" >
+            <div class="form-group col-md-12" ng-class="{'has-error': (metadataForm.metadata.$invalid || metadataForm.$serverError.metadata.$invalid)}">
+                <label for="metadata" >Metadata</label>
+                <div class="form-group">
+                    <textarea ng-model="metadata.metadata" name="metadata" cols="50" rows="10" class="form-control" popover="This must be a valid Metadata XML file. It will be used in the absense of a URL or failure to retrieve the file at the URL. If a URL is present, the data returned from the URL will be stored here as a backup, overriding any previous value." ></textarea>
+                    <p ng-repeat="message in metadataForm.$serverError.metadata.messages" class="text-danger">{{message}}</p>
+                </div>
+            </div>
+        </div>
+	</fieldset>
+	<button type="submit" class="btn btn-success">Save</button>
+	<a href="#/metadataList/{{metadata.tenantId}}" class="btn btn-danger">Cancel</a>
+</form>

@@ -1,0 +1,137 @@
+<h2>Support</h2>
+<ul class="breadcrumb">
+    <li><a href="#/">Publishing</a></li>
+    <li class="active">Support</li>
+</ul>
+<div id="alert_{{$index}}" class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts" ><button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>{{alert.msg}}</div>
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+    	<div class="form-group">
+			<input type="text" auto-complete="" ng-change="search()" ng-model="searchTerm" placeholder="Search for a task" class="form-control">
+		</div>
+    </div>
+</div>
+
+<div class="row" ng-show="tasks">
+    <div class="col-md-12">
+        <table class="table table-hover table-condensed table-bordered">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>{{pageData.marketTitle}}</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody >
+                <tr ng-repeat="task in tasks">
+                    <td>{{task.title}} <span ng-show="task.applicationName != null">({{task.applicationName}})</span></td>
+                    <td><span ng-show="task.marketIds.length > 0"> <span ng-repeat="marketId in task.marketIds">{{pageData.markets[marketId]}}<span ng-show="!$last">, </span></span>
+                    </span>
+                    <span ng-show="task.marketIds.length == 0">All {{pageData.marketsTitle}}</span>
+                    </td>
+                    <td>
+                        <button type="button" ng-click="viewDetails(task.taskId)" class="btn btn-primary btn-sm">View</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="modal fade" id="taskDetailsDialog" tabindex="-1" role="dialog" aria-labelledby="taskDetailsLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="taskDetailsLabel">Task Details</h4>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+		            <div class="col-sm-6">
+		                <dl>
+		                    <dt>Task Name</dt>
+		                    <dd>{{taskInfo.task.title}} <span ng-if="taskInfo.task.applicationName">({{taskInfo.task.applicationName}})</span></dd>
+		                </dl>
+		            </div>
+		            <div class="col-sm-6">
+		                <dl>
+		                    <dt>{{pageData.marketTitle}}</dt>
+		                    <dd>
+		                        <span ng-show="taskInfo.task.markets.length > 0"><span ng-repeat="market in taskInfo.task.markets">{{market.name}}<span ng-show="!$last">, </span></span></span>
+		                        <span ng-show="taskInfo.task.markets.length == 0">All {{pageData.marketsTitle}}</span>
+		                    </dd>
+		                </dl>
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="col-sm-12">
+		                <dl style="margin-bottom:0;">
+		                    <dt>Publisher</dt>
+                            <dd>{{taskInfo.publisher.name || 'Unknown'}}</dd>
+		                </dl>
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="col-sm-6">
+		                <dl>
+                            <dt>Contact</dt>
+                            <dd>{{taskInfo.publisher.contact || 'Unknown'}}</dd>
+		                </dl>
+		            </div>
+		            <div class="col-sm-6">
+		                <dl>
+                            <dt>Technical Contact</dt>
+                            <dd>{{taskInfo.publisher.technicalContact || 'Unknown'}}</dd>
+		                </dl>
+		            </div>
+		        </div>
+				<div class="row">
+		            <div class="col-sm-6">
+		                <dl>
+		                    <dt>Primary Contact</dt>
+                            <dd>{{taskInfo.contact.name || 'Unknown'}}</dd>
+                            <dt>Contact</dt>
+                            <dd>
+                            	<ul class="list-unstyled">
+                            		<li ng-repeat="contactMethod in taskInfo.contact.contactMethods" ng-switch="contactMethod.type">
+                            			<a ng-switch-when="P" href="tel:{{contactMethod.value}}">{{contactMethod.name}}</a>
+                            			<a ng-switch-when="E" href="mailto:{{contactMethod.value}}">{{contactMethod.name}}</a>
+                            			<a ng-switch-when="U" href="{{contactMethod.value}}">{{contactMethod.name}}</a>
+                            		</li>
+                            	</ul>
+                            </dd>
+		                </dl>
+		            </div>
+		            <div class="col-sm-6" ng-if="taskInfo.secondaryContact != null">
+		                <dl>
+		                    <dt>Secondary Contact</dt>
+                            <dd>{{taskInfo.secondaryContact.name || 'Unknown'}}</dd>
+                            <dt>Contact</dt>
+                            <dd>
+                            	<ul class="list-unstyled">
+                            		<li ng-repeat="contactMethod in taskInfo.secondaryContact.contactMethods" ng-switch="contactMethod.type">
+                            			<a ng-switch-when="P" href="tel:{{contactMethod.value}}">{{contactMethod.name}}</a>
+                            			<a ng-switch-when="E" href="mailto:{{contactMethod.value}}">{{contactMethod.name}}</a>
+                            			<a ng-switch-when="U" href="{{contactMethod.value}}">{{contactMethod.name}}</a>
+                            		</li>
+                            	</ul>
+                            </dd>
+		                </dl>
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="col-sm-12">
+		                <dl>
+		                    <dt>Task Description</dt>
+		                    <dd>{{taskInfo.task.description}}</dd>
+		                </dl>
+		            </div>
+		        </div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

@@ -1,0 +1,42 @@
+<h2>Roles</h2>
+<p><a href="#/role" class="btn btn-success pull-right"><i class="glyphicon glyphicon-plus"></i>&nbsp;New Role</a></p>
+<ul class="breadcrumb">
+  <li><a href="#/">Publishing</a></li>
+  <li class="active">Roles</li>
+</ul>
+<div id="alert_{{$index}}" class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts" ><button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>{{alert.msg}}</div>
+<table class="table table-hover table-condensed">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="role in roles">
+			<td>{{role.name}}</td>
+			<td>
+				<a href="#/role/{{role.roleId}}" class="btn btn-primary btn-sm">Edit</a>
+                <button ng-click="confirmDelete(role)" class="btn btn-danger btn-sm">Delete</button>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div class="modal fade" id="deleteRoleDialog" tabindex="-1" role="dialog" aria-labelledby="deleteRoleLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="deleteRoleLabel">Confirm Role Deletion</h4>
+			</div>
+			<div class="modal-body">
+				Are you sure you want to delete the role "{{roleToDelete.name}}"?
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+				<button type="button" class="btn btn-success" ng-click="deleteRole()">Yes</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

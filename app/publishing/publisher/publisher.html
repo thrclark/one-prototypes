@@ -1,0 +1,51 @@
+<h2><span ng-show="publisher.publisherId == null">New</span><span ng-show="publisher.publisherId != null">Edit</span> Publisher</h2>
+<ul class="breadcrumb">
+  <li><a href="#/">Publishing</a></li>
+  <li><a href="#/publishers">Publishers</a></li>
+  <li class="active"><span ng-show="publisher.publisherId == null">Create</span><span ng-show="publisher.publisherId != null">Edit</span> Publisher</li>
+</ul>
+<div id="alert_{{$index}}" class="alert fade in alert-{{alert.type}}" ng-repeat="alert in alertService.alerts" ><button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="alertService.removeAlert(alert)">&times;</button>{{alert.msg}}</div>
+<form name="publisherForm" ng-submit="savePublisher()" validate="errors" novalidate>
+	<fieldset>
+		<div class="row">
+			<div class="form-group col-md-6" ng-class="{'has-error': (publisherForm.name.$invalid || publisherForm.$serverError.name.$invalid)}">
+				<label for="name" class="control-label">Name</label>
+				<div class="counter-container">
+					<input type="text" name="name" ng-model="publisher.name" required class="form-control" ng-maxlength="100" unique="/publish/publisher/validateName" entity-id="{{publisher.publisherId}}"  popover="Display name of the publisher."/>
+					<span class="label pull-right" ng-class="{'label-info':publisher.name.length<90, 'label-warning':publisher.name.length>=90 && publisher.name.length<100, 'label-danger': publisher.name.length>=100}">{{100-publisher.name.length}}</span>
+                </div>
+                <p ng-repeat="(validator, invalid) in publisherForm.name.$error" ng-show="invalid && pageData.validationMessages.name[validator]" class="text-danger">{{pageData.validationMessages.name[validator]}}</p>
+				<p ng-repeat="message in publisherForm.$serverError.name.messages" class="text-danger">{{message}}</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group col-md-6">
+				<label for="contact" class="control-label">Contact</label>
+        		<div class="counter-container">
+        			<input type="text" name="contact" ng-model="publisher.contact" class="form-control" ng-maxlength="100" popover="Functional contact information." />
+					<span class="label pull-right" ng-class="{'label-info':publisher.contact.length<90, 'label-warning':publisher.contact.length>=90 && publisher.contact.length<100, 'label-danger': publisher.contact.length>=100}">{{100-publisher.contact.length}}</span>
+                </div>
+                <p ng-repeat="(validator, invalid) in publisherForm.contact.$error" ng-show="invalid && pageData.validationMessages.contact[validator]" class="text-danger">{{pageData.validationMessages.contact[validator]}}</p>
+                <p ng-repeat="message in publisherForm.$serverError.contact.messages" class="text-danger">{{message}}</p>
+			</div>
+			<div class="form-group col-md-6">
+				<label for="technicalContact" class="control-label">Technical Contact</label>
+        		<div class="counter-container">
+        			<input type="text" name="technicalContact" ng-model="publisher.technicalContact" class="form-control" ng-maxlength="100" popover="Technical contact information" />
+					<span class="label pull-right" ng-class="{'label-info':publisher.technicalContact.length<90, 'label-warning':market.name.length>=90 && publisher.technicalContact.length<100, 'label-danger': publisher.technicalContact.length>=100}">{{100-publisher.technicalContact.length}}</span>
+                </div>
+                <p ng-repeat="(validator, invalid) in publisherForm.technicalContact.$error" ng-show="invalid && pageData.validationMessages.technicalContact[validator]" class="text-danger">{{pageData.validationMessages.technicalContact[validator]}}</p>
+                <p ng-repeat="message in publisherForm.$serverError.technicalContact.messages" class="text-danger">{{message}}</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group col-md-12" ng-class="{'has-error': (publisherForm.aclExpression.$invalid || publisherForm.$serverError.aclExpression.$invalid)}">
+				<label for="aclExpression" class="control-label">Member ACL Expression</label>
+				<div permissions="publisher.aclExpression.expression"></div>
+				<p ng-repeat="message in publisherForm.$serverError.aclExpression.messages" class="text-danger">{{message}}</p>
+			</div>
+		</div>
+	</fieldset>
+	<button type="submit" class="btn btn-success" ng-disabled="publisherForm.$invalid">Save</button>
+	<a href="#/publishers" class="btn btn-danger">Cancel</a>
+</form>
