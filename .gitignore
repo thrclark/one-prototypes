@@ -1,5 +1,6 @@
 npm_modules
 bower_components
+node_modules
 trash
 Error.log
 .DS_Store
