@@ -12,7 +12,20 @@ $page = '';
 <?php include('includes/styles.php') ?>
 <?php include('includes/scripts.php') ?>
 <style>
-
+.lSPager.lSGallery li:last-child a:before {
+	    position: absolute;
+    content: '\e810';
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 90px;
+    height: 60px;
+    font-family: 'fontello';
+    color: #ffffff;
+    left: 0px;
+    font-size: 36px;
+    padding-left: 26px;
+    padding-top: 4px;
+	
+	}
 </style>
 </head>
 <body id="top">
@@ -123,6 +136,7 @@ $page = '';
                                     <li data-thumb="../img/app-screenshots/ccl2-thumb.png"><img src="../img/app-screenshots/ccl2.png" /></li>
                                     <li data-thumb="../img/app-screenshots/ccl3-thumb.png"><img src="../img/app-screenshots/ccl3.png" /></li>
                                     <li data-thumb="../img/app-screenshots/ccl4-thumb.png"><img src="../img/app-screenshots/ccl4.png" /></li>
+                                    <li data-thumb="../img/app-screenshots/ccl5-videothumb.png"><img src="../img/app-screenshots/ccl5-videothumb.png" /></li>
                                 </ul>
                             </div>
                             <h5 class="visible-xs">Media</h5>
