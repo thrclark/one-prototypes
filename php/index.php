@@ -46,15 +46,16 @@ header .app-header h1 {
                 <li><a href="modal5.php" target="_blank">example 5</a> (color backgrounds + border)</li>
                 <li><a href="modal6.php" target="_blank">example 6</a> (color borders)</li>
             </ul>
-            
             <h4>Breadcrumb pattern</h4>
             <ul>
                 <li><a href="breadcrumb.html" target="_blank">view</a> (mobile, tablet, &amp; desktop) </li>
-               
             </ul>
-            
-            
-            
+            <h4>Global Announcements</h4>
+            <ul>
+                <li><a href="SD-global-announce1.php" target="_blank">view</a> version 1 </li>
+                <li><a href="SD-global-announce2.php" target="_blank">view</a> version 2 </li>
+                <li><a href="SD-global-announce3.php" target="_blank">view</a> version 3 </li>
+            </ul>
         </div>
     </div>
 </div>
