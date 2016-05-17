@@ -13,6 +13,15 @@
 <script>
 $( ".toggle-global-announcements" ).click(function() {
   $( "#global-announcements" ).slideToggle( "slow" );
+  		setTimeout(function(){
+        $( ".toggle-global-announcements").toggleClass( "open" );
+    }, 500); 
+});
+</script>
+<script>
+$( ".close" ).click(function() {
+   $(this).closest(".col-md-4").fadeOut( "fast" );
+  
 });
 </script>
 <script>
@@ -165,7 +174,7 @@ $('.divider').on('hide.bs.dropdown', function () {
 
 
 </script>
-<script>
+<!--<script>
   $(document).ready(function () {
    $('#myCarousel .review-content').readmore({
             moreLink: '<a href="#" class="moreless">more...</a>',
@@ -185,8 +194,28 @@ $('.divider').on('hide.bs.dropdown', function () {
 
 
 </script>
+-->
+
+<script>
+  $(document).ready(function () {
+   $('.ga-body p').readmore({
+            moreLink: '<a href="#" class="moreless">more...</a>',
+            lessLink: '<a href="#" class="moreless">less...</a>',
+            collapsedHeight: 60,
+			speed:500,
+        });
+    $('#myCarousel').on('slid.bs.carousel', function () {
+        $('#myCarousel .ga-body p').readmore({
+            moreLink: '<a href="#" class="moreless">more...</a>',
+            lessLink: '<a href="#" class="moreless">less...</a>',
+            collapsedHeight: 60,
+			speed:500,
+        });
+      });
+    });
 
 
+</script>
 <script>
     $(document).ready(function() {
         $('.dismiss-announcement1').click(function() {
@@ -200,11 +229,6 @@ $('.divider').on('hide.bs.dropdown', function () {
         });
     });
 </script>
-
-
-
-
-
 <script>
     $(document).ready(function() {
 
@@ -215,19 +239,14 @@ $('.divider').on('hide.bs.dropdown', function () {
 
     });
 	
-</script> 
-
+</script>
 <script>
     $(document).ready(function() {
         $(function() {
             $('[data-toggle="tooltip"]').tooltip()
         })
     });
-</script> 
-
-
-
-
+</script>
 <script type='text/javascript'>
     $(window).load(function() {
         $("#releasenotes").popover({
@@ -250,11 +269,7 @@ $('.divider').on('hide.bs.dropdown', function () {
             });
         });
     });
-</script> 
-
-
-
-
+</script>
 <script type='text/javascript'>
     //<![CDATA[
     $(document).ready(function() {
@@ -278,5 +293,3 @@ $('.divider').on('hide.bs.dropdown', function () {
         });
     }); //]]>
 </script>
-
-

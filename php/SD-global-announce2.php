@@ -8,74 +8,157 @@ $page = '';
 <?php include ('includes/head-meta.php') ?>
 <?php include ('includes/styles.php') ?>
 <?php include ('includes/scripts.php') ?>
-<style>
-.comment-list .message-header h5 {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weightttt: bold;
-	display: inline;
-	font-size: 28px;
-}
-.comment-list .icon-star, .ratings-overview .icon-star, .ratings .icon-star {
-	color: orange;
-}
-.comment-list .icon-star-empty {
-	color: #cccccc;
-}
-.comment-list li {
-	border-bottom: solid 1px #CCCCCC;
-}
-.comment-list li:last-child {
-	border-bottom: none;
-}
-.comment-list .post-date {
-	font-style: italic;
-}
-.comment-list .post-author {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: bold;
-}
-.comment-list .message-header .review-postinfo {
-	text-align: right;
-}
-.comment-list .review-content {
-	margin-bottommm: 10px;
-}
-.comment-list .message-header {
-	padding-bottom: 10px;
-	padding-top: 10px;
-}
-.comment-list li:last-child {
-	border-bottom: none;
-}
-.carousel-linked-nav, .item img {
-	displayyyyy: block;
-	margin: 0 auto;
-}
-.carousel-linked-nav {
-	widthhhhhh: 190px;
-	margin-bottom: 0px;
-}
-.pagination.announcemet>li>a, .pagination.announcemet>li>span {
-	border-radius: 50%;
-	margin: 0 5px;
-}
-
-@media (max-width: 992px) {
-.comment-list .message-header .review-postinfo {
-	text-align: left;
-}
-}
+<style type="text/css">
 .carousel-inner {
-	min-heightttt: 150px
+	min-height: 150px
+}
+.carousel .carousel-control {
+	background: transparent;
+	width: inherit;
+	color: black;
+	font-size: 60px;
+	text-shadow: 0 1px 2px #999;
+	top: 25px;
+}
+.carousel .carousel-control.right {
+	right: -35px;
+}
+.carousel .carousel-control.left {
+	left: -35px;
+}
+.comment-list .message-header h5 {
+	font-size: 18px;
+}
+.comment-list .message-header .hidden-xs.col-md-2.text-center i[class*='icon-'] {
+	line-height: 0;
+	font-size: 50px;
+}
+.comment-list .message-header .hidden-xs.col-md-2.text-center img {
+	width: 50px;
+}
+.carousel-inner .well.well-sm {
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.global-announcements .global-announcement {
+	min-height: 140px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.global-announcements .global-announcement .ga-header {
+	background: grey;
+	color: white;
+	height: 45px;
+	padding-left: 75px;
+	text-shadow: 1px 1px 1px #000000;
+	font-size: 18px;
+	padding-top: 8px;
+	border: solid 1px grey;
+}
+.global-announcements .global-announcement .ga-header img, .global-announcements .global-announcement .ga-header .icon-graphic {
+	position: absolute;
+	width: 55px;
+	height: 55px;
+	left: 25px;
+	top: 6px;
+	border: solid 1px grey;
+	background: grey;
+}
+.global-announcements .global-announcement .ga-body {
+	padding: 10px;
+	padding-top: 15px;
+	border: solid 1px #EBEBEB;
+	min-height: 117px;
+}
+.global-announcements .global-announcement .ga-header .icon-graphic i {
+	font-size: 44px;
+	line-height: 52px;
+	text-shadow: none;
+	opacity: .7;
+}
+.global-announcements .global-announcement.color1 .ga-header {
+	background: #4838A5;
+	color: white;
+	border-color: #4838A5;
+}
+.global-announcements .global-announcement.color1 .ga-header img {
+	border-color: #A89AF9;
+}
+.global-announcements .global-announcement.color1 .ga-header .icon-graphic {
+	background: #FF586A;
+}
+.global-announcements .global-announcement.color2 .ga-header {
+	background: #E6263B;
+	color: white;
+	border-color: #E6263B;
+}
+.global-announcements .global-announcement.color2 .ga-header img {
+	border-color: #E6263B;
+}
+.global-announcements .global-announcement.color2 .ga-header .icon-graphic {
+	background: #FF586A;
+	border-color: #FF8491;
+}
+.global-announcements .global-announcement.color3 .ga-header {
+	background: #E8AB15;
+	color: white;
+	border-color: #E8AB15;
+}
+.global-announcements .global-announcement.color3 .ga-header img {
+	border-color: #E8AB15;
+}
+.global-announcements .global-announcement.color3 .ga-header .icon-graphic {
+	background: #E8AB15;
+	border-color: #E8AB15;
+}
+.global-announcements .global-announcement.color4 .ga-header {
+	background: #BD610B;
+	color: white;
+	border-color: #BD610B;
+}
+.global-announcements .global-announcement.color4 .ga-header img {
+	border-color: #BD610B;
+}
+.global-announcements .global-announcement.color4 .ga-header .icon-graphic {
+	background: #BD610B;
+	border-color: #BD610B;
+}
+.global-announcements .global-announcement.color5 .ga-header {
+	background: #2B9E41;
+	color: white;
+	border-color: #2B9E41;
+}
+.global-announcements .global-announcement.color5 .ga-header img {
+	border-color: #2B9E41;
+}
+.global-announcements .global-announcement.color5 .ga-header .icon-graphic {
+	background: #29B743;
+	border-color: #2B9E41;
+}
+.global-announcements .global-announcement .ga-header .close {
+	position: absolute;
+	right: 20px;
+	font-size: 14px;
+	color: white;
+	top: 15px;
+	opacity: .5;
+	text-shadow: none;
+}
+.toggle-global-announcements.open:before {
+	content: '';
+	background: #FFFFFF;
+	position: absolute;
+	width: 49px;
+	left: 0px;
+	top: 30px;
+	display: block;
+	height: 15px;
 }
 
-
-.pagination>li>a.last:last-child {
-    border-radius:0px;
-    margin: 0 5px;
-}
-
-
+.moreless {
+	font-style:italic}
 </style>
 </head>
 <body id="top" >
@@ -88,11 +171,9 @@ $page = '';
                     <div class="col-xs-12 col-md-9 message-title">
                         <h5>Tornado Watch</h5>
                     </div>
-                  
                 </div>
                 <div class="message-content">
-                    <p> The National Weather Service is reporting a tornado sighting in Monroe County. Please seek shelter immediately.
-                     </p>
+                    <p> The National Weather Service is reporting a tornado sighting in Monroe County. Please seek shelter immediately. </p>
                 </div>
             </div>
         </div>
@@ -105,12 +186,10 @@ $page = '';
     <div class="container">
         <nav class="navbar navbar-default"  style="margin-bottom:0px">
             <div class="row">
-                <div class="col-md-6 col-xs-12">
-                  
-                </div>
+                <div class="col-md-6 col-xs-12"> </div>
                 <div class="col-md-6 hidden-xs hidden-sm">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" class="toggle-global-announcements"><i class="icon-bell-3"></i> <span class="sr-only">Notifications</span></a> </li>
+                        <li><a href="#" class="toggle-global-announcements open"><i class="icon-bell-3"></i> <span class="sr-only">Notifications</span></a> </li>
                         <!--<li><a href="#" class="launch-notifications"><i class="icon-inbox-alt"></i>
                             <div class="container-badge"><span class="badge">2</span></div>
                             <span class="sr-only">Inbox</span></a> </li>-->
@@ -159,7 +238,8 @@ $page = '';
                                 <h4 class="task-title-primary">IU Classifieds</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All IU Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent one"><span class="activecontent-label">Selling:</span> <span class="activecontent-value">2007 BMW 750i Low milage </span></div></a>
+                            <div class="task-activecontent one"><span class="activecontent-label">Selling:</span> <span class="activecontent-value">2007 BMW 750i Low milage </span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -198,7 +278,8 @@ $page = '';
                                 <h4 class="task-title-primary">To Do List</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -237,7 +318,8 @@ $page = '';
                                 <h4 class="task-title-primary">Enrollment Shopping Cart</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -276,7 +358,8 @@ $page = '';
                                 <h4 class="task-title-primary">Course History </h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -315,7 +398,8 @@ $page = '';
                                 <h4 class="task-title-primary">Student Center</h4>
                                 <div class="task-title-secondary"> <span class="app-name">SIS</span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -354,7 +438,8 @@ $page = '';
                                 <h4 class="task-title-primary">Email</h4>
                                 <div class="task-title-secondary"> <span class="app-name">Umail</span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -387,13 +472,15 @@ $page = '';
                         </div>
                     </div>
                     <div class="task6 taskcenter"><a aria-hidden="true" tabindex="-1" class="task-image" href="#" data-toggle="modal" data-target="#announcement_tcp">
-                        <div class="collage"> <img alt=""  src="../img/task-icons-new/icon-to-do_list.png"> <img alt=""  src="../img/task-icons-new/icon-time.png"> <img alt=""  src="../img/task-icons-new/icon-paycheck.png"> <img alt=""  src="../img/task-icons-new/icon-grade-report.png"> <img alt=""  src="../img/task-icons-new/icon-acadcal.png"> <img alt=""  src="../img/task-icons-new/icon-code-of_conduct.png"> <img alt=""  src="../img/task-icons-new/icon-change-name.png"> <img alt=""  src="../img/task-icons-new/icon-academic-calendar.png"> <img alt=""  src="../img/task-icons-new/icon-emergency-contact.png"></div></a>
+                        <div class="collage"> <img alt=""  src="../img/task-icons-new/icon-to-do_list.png"> <img alt=""  src="../img/task-icons-new/icon-time.png"> <img alt=""  src="../img/task-icons-new/icon-paycheck.png"> <img alt=""  src="../img/task-icons-new/icon-grade-report.png"> <img alt=""  src="../img/task-icons-new/icon-acadcal.png"> <img alt=""  src="../img/task-icons-new/icon-code-of_conduct.png"> <img alt=""  src="../img/task-icons-new/icon-change-name.png"> <img alt=""  src="../img/task-icons-new/icon-academic-calendar.png"> <img alt=""  src="../img/task-icons-new/icon-emergency-contact.png"></div>
+                        </a>
                         <div class="container-badge" id=""><span class="badge">1</span></div>
                         <div class="tile-content"> <a aria-hidden="true" tabindex="-1" href="#" data-toggle="modal" data-target="#announcement_tcp">
                             <div class="tile-header">
                                 <h4 class="task-title-primary">New Student Orientation</h4>
                                 <div class="task-title-secondary"> <span class="market">(All IU Campuses)</span></div>
-                            </div></a>
+                            </div>
+                            </a>
                             <div class="tile-actions btn-group" style=" ">
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
@@ -406,7 +493,8 @@ $page = '';
                                 <h4 class="task-title-primary">Record Holds</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -445,7 +533,8 @@ $page = '';
                                 <h4 class="task-title-primary">Class Registration</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -478,13 +567,15 @@ $page = '';
                         </div>
                     </div>
                     <div class="task6 taskcenter"><a aria-hidden="true" tabindex="-1" class="task-image" href="#" data-toggle="modal" data-target="#announcement_tcp">
-                        <div class="collage"> <img alt=""  src="../img/task-icons-new/icon-paycheck.png"> <img alt=""  src="../img/task-icons-new/icon-grade-report.png"> <img alt=""  src="../img/task-icons-new/icon-acadcal.png"> <img alt=""  src="../img/task-icons-new/icon-code-of_conduct.png"> </div></a>
+                        <div class="collage"> <img alt=""  src="../img/task-icons-new/icon-paycheck.png"> <img alt=""  src="../img/task-icons-new/icon-grade-report.png"> <img alt=""  src="../img/task-icons-new/icon-acadcal.png"> <img alt=""  src="../img/task-icons-new/icon-code-of_conduct.png"> </div>
+                        </a>
                         <div class="container-badge" id=""></div>
                         <div class="tile-content"> <a aria-hidden="true" tabindex="-1" href="#" data-toggle="modal" data-target="#announcement_tcp">
                             <div class="tile-header">
                                 <h4 class="task-title-primary">Accounts Management</h4>
                                 <div class="task-title-secondary"> <span class="market">(All IU Campuses)</span></div>
-                            </div></a>
+                            </div>
+                            </a>
                             <div class="tile-actions btn-group" style=" ">
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
@@ -497,7 +588,8 @@ $page = '';
                                 <h4 class="task-title-primary">Set Up 3rd Party Users</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -536,7 +628,8 @@ $page = '';
                                 <h4 class="task-title-primary">Passphrase Reset</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -589,7 +682,8 @@ $page = '';
                                 <h4 class="task-title-primary">Drop or Add Classes</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -628,7 +722,8 @@ $page = '';
                                 <h4 class="task-title-primary">Create My First IU Account</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -667,7 +762,8 @@ $page = '';
                                 <h4 class="task-title-primary">iGPS Plan</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -706,7 +802,8 @@ $page = '';
                                 <h4 class="task-title-primary">Degree Map Search</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -745,7 +842,8 @@ $page = '';
                                 <h4 class="task-title-primary">Textbook Orders</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -784,7 +882,8 @@ $page = '';
                                 <h4 class="task-title-primary">Emergency Notification Settings</h4>
                                 <div class="task-title-secondary"> <span class="app-name">IU Notify</span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -823,7 +922,8 @@ $page = '';
                                 <h4 class="task-title-primary">Passphrase Reset</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -862,7 +962,8 @@ $page = '';
                                 <h4 class="task-title-primary">Citizenship Verification</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -901,7 +1002,8 @@ $page = '';
                                 <h4 class="task-title-primary">My Class Schedule</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -940,7 +1042,8 @@ $page = '';
                                 <h4 class="task-title-primary">Title IV Financial Aid Authorizations</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -979,7 +1082,8 @@ $page = '';
                                 <h4 class="task-title-primary">Record Holds</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1018,7 +1122,8 @@ $page = '';
                                 <h4 class="task-title-primary">Class Registration</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1067,7 +1172,8 @@ $page = '';
                                 <h4 class="task-title-primary">Passphrase Reset</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1106,7 +1212,8 @@ $page = '';
                                 <h4 class="task-title-primary">Citizenship Verification</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1145,7 +1252,8 @@ $page = '';
                                 <h4 class="task-title-primary">My Class Schedule</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1184,7 +1292,8 @@ $page = '';
                                 <h4 class="task-title-primary">Title IV Financial Aid Authorizations</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1223,7 +1332,8 @@ $page = '';
                                 <h4 class="task-title-primary">Record Holds</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1262,7 +1372,8 @@ $page = '';
                                 <h4 class="task-title-primary">Class Registration</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1301,7 +1412,8 @@ $page = '';
                                 <h4 class="task-title-primary">Set Up 3rd Party Users</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1340,7 +1452,8 @@ $page = '';
                                 <h4 class="task-title-primary"> Immunization Compliance Form</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1379,7 +1492,8 @@ $page = '';
                                 <h4 class="task-title-primary">Software Downloads</h4>
                                 <div class="task-title-secondary"> <span class="app-name">IUWare</span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1418,7 +1532,8 @@ $page = '';
                                 <h4 class="task-title-primary">Drop or Add Classes</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1457,7 +1572,8 @@ $page = '';
                                 <h4 class="task-title-primary">Create My First IU Account</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1496,7 +1612,8 @@ $page = '';
                                 <h4 class="task-title-primary">iGPS Plan</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1556,7 +1673,8 @@ $page = '';
                                 <h4 class="task-title-primary">Software Downloads</h4>
                                 <div class="task-title-secondary"> <span class="app-name">IUWare</span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1595,7 +1713,8 @@ $page = '';
                                 <h4 class="task-title-primary">Passphrase Reset</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1634,7 +1753,8 @@ $page = '';
                                 <h4 class="task-title-primary">Citizenship Verification</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1673,7 +1793,8 @@ $page = '';
                                 <h4 class="task-title-primary">My Class Schedule</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1712,7 +1833,8 @@ $page = '';
                                 <h4 class="task-title-primary">Title IV Financial Aid Authorizations</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1751,7 +1873,8 @@ $page = '';
                                 <h4 class="task-title-primary">Record Holds</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1790,7 +1913,8 @@ $page = '';
                                 <h4 class="task-title-primary">Class Registration</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1829,7 +1953,8 @@ $page = '';
                                 <h4 class="task-title-primary">Set Up 3rd Party Users</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1868,7 +1993,8 @@ $page = '';
                                 <h4 class="task-title-primary"> Immunization Compliance Form</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1907,7 +2033,8 @@ $page = '';
                                 <h4 class="task-title-primary">Degree Map Search</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1946,7 +2073,8 @@ $page = '';
                                 <h4 class="task-title-primary">Textbook Orders</h4>
                                 <div class="task-title-secondary"> <span class="app-name"></span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -1985,7 +2113,8 @@ $page = '';
                                 <h4 class="task-title-primary">Emergency Notification Settings</h4>
                                 <div class="task-title-secondary"> <span class="app-name">IU Notify</span> <span class="market">(All Campuses)</span></div>
                             </div>
-                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                            <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                            </a>
                             <div class="task-attributes">
                                 <div class="star-widget">
                                     <ul class="star-background" aria-hidden="true">
@@ -2029,7 +2158,8 @@ $page = '';
 <?php include ('modal/announcement-task.php') ?>
 <?php include ('modal/announcement-taskcenter.php') ?>
 <?php include ('modal/SD-1002-settings.php') ?>
-<?php include('includes/brand-footer.php') ?><?php include('includes/footer-scripts.php') ?>
+<?php include('includes/brand-footer.php') ?>
+<?php include('includes/footer-scripts.php') ?>
 <script>
 
 $(document).ready(function() {
@@ -2043,5 +2173,6 @@ $('.divider').on('hide.bs.dropdown', function () {
 });
 
 
-</script> </body>
+</script>
+</body>
 </html>

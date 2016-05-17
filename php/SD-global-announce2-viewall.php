@@ -8,87 +8,172 @@ $page = '';
 <?php include ('includes/head-meta.php') ?>
 <?php include ('includes/styles.php') ?>
 <?php include ('includes/scripts.php') ?>
-<style>
-.message-header h5 {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weightttt: bold;
-	display: inline;
-	font-size: 22px;
-}
-.icon-star, .ratings-overview .icon-star, .ratings .icon-star {
-	color: orange;
-}
-.icon-star-empty {
-	color: #cccccc;
-}
-li:last-child {
-	border-bottom: none;
-}
-.post-date {
-	font-style: italic;
-}
-.post-author {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: bold;
-}
-.message-header .review-postinfo {
-	text-align: right;
-}
-.review-content {
-	margin-bottommm: 10px;
-}
-.message-header {
-	padding-bottom: 10px;
-	padding-top: 10px;
-}
-li:last-child {
-	border-bottom: none;
-}
-.carousel-linked-nav, .item img {
-	displayyyyy: block;
-	margin: 0 auto;
-}
-.carousel-linked-nav {
-	widthhhhhh: 190px;
-	margin-bottom: 0px;
-}
-.pagination.announcemet>li>a, .pagination.announcemet>li>span {
-	border-radius: 50%;
-	margin: 0 5px;
-}
-
-@media (max-width: 992px) {
-.message-header .review-postinfo {
-	text-align: left;
-}
-}
-.carousel-inner {
-	min-heightttt: 150px
-}
-.pagination>li>a.last:last-child {
-	border-radius: 0px;
-	margin: 0 5px;
-}
-.global-announcements .well-sm {
-	padding-top: 0px;
-	padding-bottom: 0px;
-	min-height: 130px;
-}
-.global-announcements .well.well-sm img {
-	width: 92px;
-}
-</style>
 <style type="text/css">
-.message-header h5 {
-	font-size: 22px;
+.carousel-inner {
+	min-height: 150px
 }
-.message-header .hidden-xs.col-md-2.text-center i[class*='icon-'] {
+.carousel .carousel-control {
+	background: transparent;
+	width: inherit;
+	color: black;
+	font-size: 60px;
+	text-shadow: 0 1px 2px #999;
+	top: 25px;
+}
+.carousel .carousel-control.right {
+	right: -35px;
+}
+.carousel .carousel-control.left {
+	left: -35px;
+}
+.comment-list .message-header h5 {
+	font-size: 18px;
+}
+.comment-list .message-header .hidden-xs.col-md-2.text-center i[class*='icon-'] {
 	line-height: 0;
 	font-size: 50px;
 }
-.message-header .hidden-xs.col-md-2.text-center img {
+.comment-list .message-header .hidden-xs.col-md-2.text-center img {
 	width: 50px;
 }
+.carousel-inner .well.well-sm {
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.global-announcements .global-announcement {
+	min-height: 140px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.global-announcements .global-announcement .ga-header {
+	background: grey;
+	color: white;
+	height: 45px;
+	padding-left: 75px;
+	text-shadow: 1px 1px 1px #000000;
+	font-size: 18px;
+	padding-top: 8px;
+	border: solid 1px grey;
+}
+.global-announcements .global-announcement .ga-header img, .global-announcements .global-announcement .ga-header .icon-graphic {
+	position: absolute;
+	width: 55px;
+	height: 55px;
+	left: 25px;
+	top: 6px;
+	border: solid 1px grey;
+	background: grey;
+}
+.global-announcements .global-announcement .ga-body {
+	padding: 10px;
+	padding-top: 15px;
+	border: solid 1px #EBEBEB;
+	min-height: 117px;
+}
+.global-announcements .global-announcement .ga-header .icon-graphic i {
+	font-size: 44px;
+	line-height: 52px;
+	text-shadow: none;
+	opacity: .7;
+}
+.global-announcements .global-announcement.color1 .ga-header {
+	background: #4838A5;
+	color: white;
+	border-color: #4838A5;
+}
+.global-announcements .global-announcement.color1 .ga-header img {
+	border-color: #A89AF9;
+}
+.global-announcements .global-announcement.color1 .ga-header .icon-graphic {
+	background: #FF586A;
+}
+.global-announcements .global-announcement.color2 .ga-header {
+	background: #E6263B;
+	color: white;
+	border-color: #E6263B;
+}
+.global-announcements .global-announcement.color2 .ga-header img {
+	border-color: #E6263B;
+}
+.global-announcements .global-announcement.color2 .ga-header .icon-graphic {
+	background: #FF586A;
+	border-color: #FF8491;
+}
+.global-announcements .global-announcement.color3 .ga-header {
+	background: #E8AB15;
+	color: white;
+	border-color: #E8AB15;
+}
+.global-announcements .global-announcement.color3 .ga-header img {
+	border-color: #E8AB15;
+}
+.global-announcements .global-announcement.color3 .ga-header .icon-graphic {
+	background: #E8AB15;
+	border-color: #E8AB15;
+}
+.global-announcements .global-announcement.color4 .ga-header {
+	background: #BD610B;
+	color: white;
+	border-color: #BD610B;
+}
+.global-announcements .global-announcement.color4 .ga-header img {
+	border-color: #BD610B;
+}
+.global-announcements .global-announcement.color4 .ga-header .icon-graphic {
+	background: #BD610B;
+	border-color: #BD610B;
+}
+.global-announcements .global-announcement.color5 .ga-header {
+	background: #2B9E41;
+	color: white;
+	border-color: #2B9E41;
+}
+.global-announcements .global-announcement.color5 .ga-header img {
+	border-color: #2B9E41;
+}
+.global-announcements .global-announcement.color5 .ga-header .icon-graphic {
+	background: #29B743;
+	border-color: #2B9E41;
+}
+.global-announcements .global-announcement .ga-header .close {
+	position: absolute;
+	right: 20px;
+	font-size: 14px;
+	color: white;
+	top: 15px;
+	opacity: .5;
+	text-shadow: none;
+}
+.toggle-global-announcements.open:before {
+	content: '';
+	background: #FFFFFF;
+	position: absolute;
+	width: 49px;
+	left: 0px;
+	top: 30px;
+	display: block;
+	height: 15px;
+}
+
+
+
+.sdfgsdfg:before {
+	    content:'';
+    background: #FFFFFF;
+    position: absolute;
+    width: 49px;
+    left: 0px;
+    top: 30px;
+    display: block;
+	height:15px;
+	}
+
+.moreless {
+	font-style:italic}
+
+
 </style>
 </head>
 <body id="top" style=" background-color:#FFFFFF" >
@@ -126,8 +211,8 @@ li:last-child {
                 </div>
                 <div class="col-md-6 hidden-xs hidden-sm">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" class="" ><i class="icon-bell-3"></i> <span class="sr-only">Notifications</span></a> </li>
-                       <!-- <li><a href="#" class="launch-notifications"><i class="icon-inbox-alt"></i>
+                        <li><a href="#" class="sdfgsdfg" ><i class="icon-bell-3"></i> <span class="sr-only">Notifications</span></a> </li>
+                        <!-- <li><a href="#" class="launch-notifications"><i class="icon-inbox-alt"></i>
                             <div class="container-badge"><span class="badge">2</span></div>
                             <span class="sr-only">Inbox</span></a> </li>-->
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-user-3"></i> Hello, Tom</a>
@@ -154,280 +239,84 @@ li:last-child {
     </div>
 </section>
 <section id="global-announcements" class="global-announcements" style=" display:; background: #ffffff; min-height:;-webkit-box-shadow: inset 0 20px 15px -20px rgba(0,0,0,0.1);-moz-box-shadow: inset 0 20px 15px -20px rgba(0,0,0,0.1);box-shadow: inset 0 20px 15px -20px rgba(0,0,0,0.1);border-top: solid 1px #ebebeb;">
-    <div class="container" style="padding-top: 10px;padding-bottom: 10px;">
+    <div class="container" style="padding-top: 20px;padding-bottom: 10px;">
         <div class="category" style="margin-bottom:-1px; border-bottom: none">
             <div class="row">
                 <div class="col-xs-10">
-                    <h3> <i class="icon-bell" style="color:#44697d"></i> Announcements</h3>
+                    <h3>Current Announcements</h3>
                 </div>
                 <div class="col-xs-2 text-right"> </div>
             </div>
             <div class="row" style="margin-top:20px">
                 <div class="col-md-4">
-                    <div class="well well-sm announcement2">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
-                                <div class="row message-header">
-                                    <div class="hidden-xs col-md-2 text-center"> <i class="icon-phone-squared"></i></div>
-                                    <div class="col-xs-12 col-md-10 review-title">
-                                        <h5>Telephone Service Disruption</h5>
-                                    </div>
-                                </div>
-                                <div class="review-content">
-                                    <p> Campus telephone services are currently experiencing intermittent disruptions. IT Services is aware of the issue, and are working to resolve it. </p>
-                                </div>
-                            </div>
+                    <div class="global-announcement color1">
+                        <div class="ga-header"><img class="img-circle" src="../img/task-icons-new/SD-016.png"> Class Regitsration Begins Today <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span> </a> </div>
+                        <div class="ga-body">
+                            <p>Spring term 2016 is open. Check your email for information on your registration appointment. Register early and get the classes you need.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="well well-sm announcement1">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
-                                <div class="row message-header">
-                                    <div class="hidden-xs col-md-2 text-center"> <img src="../img/task-icons-new/SD-016.png"></div>
-                                    <div class="col-xs-12 col-md-10 review-title">
-                                        <h5>Class Regitsration Begins Today</h5>
-                                    </div>
-                                </div>
-                                <div class="review-content">
-                                    <p> Spring term 2016 is open. Check your email for information on your registration appointment. Register early and get the classes you need. </p>
-                                </div>
-                            </div>
+                    <div class="global-announcement color2">
+                        <div class="ga-header">
+                            <div class="icon-graphic"><i class="icon-phone-squared"></i></div>
+                            Telephone Service Disruption <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span> </a></div>
+                        <div class="ga-body">
+                            <p>Campus telephone services are currently experiencing intermittent disruptions. IT Services is aware of the issue, and are working to resolve it.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="well well-sm announcement3">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
-                                <div class="row message-header">
-                                    <div class="hidden-xs col-md-2 text-center"> <img src="../img/task-icons-new/SD-009.png"></div>
-                                    <div class="col-xs-12 col-md-10 review-title">
-                                        <h5>Textbook Order Deadline</h5>
-                                    </div>
-                                </div>
-                                <div class="review-content">
-                                    <p> If you are placing a textbook order for the Summer 2016 session, the last day to do so will be this Friday, May 13th. </p>
-                                </div>
-                            </div>
+                    <div class="global-announcement color3">
+                        <div class="ga-header"> <img class="" src="../img/task-icons-new/SD-009.png"> Textbook Order Deadline <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span> </a></div>
+                        <div class="ga-body">
+                            <p>If you are placing a textbook order for the Summer 2016 session, the last day to do so will be this Friday, May 13th. sdfg sdfg sdfg sdfg sdfg sdgf sdgfsdfg sdfg sdfg sdfg sdfg sdgf sdgfsdfg sdfg sdfg sdfg sdfg sdgf sdgfsdfg sdfg sdfg sdfg sdfg sdgf sdgfsdfg sdfg sdfg sdfg sdfg sdgf sdgfsdfg sdfg sdfg sdfg sdfg sdgf sdgf</p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <div class="category" style="margin-bottom:-1px; border-bottom: none">
+            <div class="row">
+                <div class="col-xs-10">
+                    <h3>You've Dismissed These</h3>
+                </div>
+                <div class="col-xs-2 text-right"> </div>
+            </div>
+            <div class="row" style="margin-top:20px">  <div class="col-md-4">
+                    <div class="global-announcement color3">
+                        <div class="ga-header"> <img class="" src="../img/task-icons-new/SD-009.png"> Textbook Order Deadline </div>
+                        <div class="ga-body">
+                            <p>If you are placing a textbook order for the Summer 2016 session, the last day to do so will be this Friday, May 13th.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="well well-sm announcement4">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
-                                <div class="row message-header">
-                                    <div class="hidden-xs col-md-2 text-center"> <img src="../img/task-icons-new/icon-classifieds.png"></div>
-                                    <div class="col-xs-12 col-md-10 review-title">
-                                        <h5>Buy it? Sell it? Classifieds!</h5>
-                                    </div>
-                                </div>
-                                <div class="review-content">
-                                    <p> IU Classifies is the place to find what you need, sell what you don't need. Easy browsing of ads, and quick posting of your own ads. Check it out!</p>
-                                </div>
-                            </div>
+                    <div class="global-announcement color5">
+                        <div class="ga-header">
+                            <div class="icon-graphic"><i class="icon-clock-1"></i></div>
+                            Spring Break Campus Hours </div>
+                        <div class="ga-body">
+                            <p>During the week of spring break, general offices of the campus will have restricted hours of operation. Please check your area offices.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="well well-sm announcement5">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
-                                <div class="row message-header">
-                                    <div class="hidden-xs col-md-2 text-center"> <i class="icon-clock-1"></i></div>
-                                    <div class="col-xs-12 col-md-10 review-title">
-                                        <h5>Spring Break Campus Hours</h5>
-                                    </div>
-                                </div>
-                                <div class="review-content">
-                                    <p> During the week of spring break, general offices of the campus will have restricted hours of operation. Please check your area offices.</p>
-                                </div>
-                            </div>
+                    <div class="global-announcement color1">
+                        <div class="ga-header"><img class="img-circle" src="../img/task-icons-new/SD-016.png"> Class Regitsration Begins Today </div>
+                        <div class="ga-body">
+                            <p>Spring term 2016 is open. Check your email for information on your registration appointment. Register early and get the classes you need.</p>
                         </div>
                     </div>
                 </div>
-                
-                
-                
-                
-                
-                
-                            <div class="col-md-4">
-                    <div class="well well-sm announcement2">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
-                                <div class="row message-header">
-                                    <div class="hidden-xs col-md-2 text-center"> <i class="icon-phone-squared"></i></div>
-                                    <div class="col-xs-12 col-md-10 review-title">
-                                        <h5>Telephone Service Disruption</h5>
-                                    </div>
-                                </div>
-                                <div class="review-content">
-                                    <p> Campus telephone services are currently experiencing intermittent disruptions. IT Services is aware of the issue, and are working to resolve it. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              
+              
                 <div class="col-md-4">
-                    <div class="well well-sm announcement1">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
-                                <div class="row message-header">
-                                    <div class="hidden-xs col-md-2 text-center"> <img src="../img/task-icons-new/SD-016.png"></div>
-                                    <div class="col-xs-12 col-md-10 review-title">
-                                        <h5>Class Regitsration Begins Today</h5>
-                                    </div>
-                                </div>
-                                <div class="review-content">
-                                    <p> Spring term 2016 is open. Check your email for information on your registration appointment. Register early and get the classes you need. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="well well-sm announcement3">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
-                                <div class="row message-header">
-                                    <div class="hidden-xs col-md-2 text-center"> <img src="../img/task-icons-new/SD-009.png"></div>
-                                    <div class="col-xs-12 col-md-10 review-title">
-                                        <h5>Textbook Order Deadline</h5>
-                                    </div>
-                                </div>
-                                <div class="review-content">
-                                    <p> If you are placing a textbook order for the Summer 2016 session, the last day to do so will be this Friday, May 13th. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="well well-sm announcement4">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
-                                <div class="row message-header">
-                                    <div class="hidden-xs col-md-2 text-center"> <img src="../img/task-icons-new/icon-classifieds.png"></div>
-                                    <div class="col-xs-12 col-md-10 review-title">
-                                        <h5>Buy it? Sell it? Classifieds!</h5>
-                                    </div>
-                                </div>
-                                <div class="review-content">
-                                    <p> IU Classifies is the place to find what you need, sell what you don't need. Easy browsing of ads, and quick posting of your own ads. Check it out!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="well well-sm announcement5">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
-                                <div class="row message-header">
-                                    <div class="hidden-xs col-md-2 text-center"> <i class="icon-clock-1"></i></div>
-                                    <div class="col-xs-12 col-md-10 review-title">
-                                        <h5>Spring Break Campus Hours</h5>
-                                    </div>
-                                </div>
-                                <div class="review-content">
-                                    <p> During the week of spring break, general offices of the campus will have restricted hours of operation. Please check your area offices.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                
-                
-                
-                
-                
-                            <div class="col-md-4">
-                    <div class="well well-sm announcement2">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
-                                <div class="row message-header">
-                                    <div class="hidden-xs col-md-2 text-center"> <i class="icon-phone-squared"></i></div>
-                                    <div class="col-xs-12 col-md-10 review-title">
-                                        <h5>Telephone Service Disruption</h5>
-                                    </div>
-                                </div>
-                                <div class="review-content">
-                                    <p> Campus telephone services are currently experiencing intermittent disruptions. IT Services is aware of the issue, and are working to resolve it. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="well well-sm announcement1">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
-                                <div class="row message-header">
-                                    <div class="hidden-xs col-md-2 text-center"> <img src="../img/task-icons-new/SD-016.png"></div>
-                                    <div class="col-xs-12 col-md-10 review-title">
-                                        <h5>Class Regitsration Begins Today</h5>
-                                    </div>
-                                </div>
-                                <div class="review-content">
-                                    <p> Spring term 2016 is open. Check your email for information on your registration appointment. Register early and get the classes you need. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="well well-sm announcement3">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
-                                <div class="row message-header">
-                                    <div class="hidden-xs col-md-2 text-center"> <img src="../img/task-icons-new/SD-009.png"></div>
-                                    <div class="col-xs-12 col-md-10 review-title">
-                                        <h5>Textbook Order Deadline</h5>
-                                    </div>
-                                </div>
-                                <div class="review-content">
-                                    <p> If you are placing a textbook order for the Summer 2016 session, the last day to do so will be this Friday, May 13th. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="well well-sm announcement4">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
-                                <div class="row message-header">
-                                    <div class="hidden-xs col-md-2 text-center"> <img src="../img/task-icons-new/icon-classifieds.png"></div>
-                                    <div class="col-xs-12 col-md-10 review-title">
-                                        <h5>Buy it? Sell it? Classifieds!</h5>
-                                    </div>
-                                </div>
-                                <div class="review-content">
-                                    <p> IU Classifies is the place to find what you need, sell what you don't need. Easy browsing of ads, and quick posting of your own ads. Check it out!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="well well-sm announcement5">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
-                                <div class="row message-header">
-                                    <div class="hidden-xs col-md-2 text-center"> <i class="icon-clock-1"></i></div>
-                                    <div class="col-xs-12 col-md-10 review-title">
-                                        <h5>Spring Break Campus Hours</h5>
-                                    </div>
-                                </div>
-                                <div class="review-content">
-                                    <p> During the week of spring break, general offices of the campus will have restricted hours of operation. Please check your area offices.</p>
-                                </div>
-                            </div>
+                    <div class="global-announcement color4">
+                        <div class="ga-header"> <img class="img-circle" src="../img/task-icons-new/icon-classifieds.png"> Buy it? Sell it? Classifieds! </div>
+                        <div class="ga-body">
+                            <p>IU Classifies is the place to find what you need, sell what you don't need. Easy browsing of ads, and quick posting of your own ads. Check it out!</p>
                         </div>
                     </div>
                 </div>
