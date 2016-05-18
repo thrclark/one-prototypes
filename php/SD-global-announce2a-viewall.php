@@ -255,7 +255,7 @@ $page = '';
         <div class="category" style="margin-bottom:-1px; border-bottom: none">
             <div class="row">
                 <div class="col-xs-10">
-                    <h3>You've Dismissed These</h3>
+                    <h3>Dismissed Announcements</h3>
                 </div>
                 <div class="col-xs-2 text-right"> </div>
             </div>

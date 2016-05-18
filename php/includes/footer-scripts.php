@@ -195,27 +195,75 @@ $('.divider').on('hide.bs.dropdown', function () {
 
 </script>
 -->
+<script>
+    $(document).ready(function() {
+        $('.ga-body p').readmore({
+            moreLink: '<a href="#" class="moreless">more...</a>',
+            lessLink: '<a href="#" class="moreless">less...</a>',
+            collapsedHeight: 60,
+            speed: 500,
+        });
+		
+		
+		
+		
+		$('.comment-list .message-content').readmore({
+            moreLink: '<a href="#" class="moreless">more...</a>',
+            lessLink: '<a href="#" class="moreless">less...</a>',
+            collapsedHeight: 80,
+            speed: 500,
+        });
+		
+		
+		
+		
+        $('#myCarousel').on('slid.bs.carousel', function() {
+            $('#myCarousel .ga-body p').readmore({
+                moreLink: '<a href="#" class="moreless">more...</a>',
+                lessLink: '<a href="#" class="moreless">less...</a>',
+                collapsedHeight: 60,
+                speed: 500,
+            });
+        });
+    });
+</script>
+
+
+
+
 
 <script>
-  $(document).ready(function () {
-   $('.ga-body p').readmore({
-            moreLink: '<a href="#" class="moreless">more...</a>',
-            lessLink: '<a href="#" class="moreless">less...</a>',
-            collapsedHeight: 60,
-			speed:500,
+    $(document).ready(function() {
+        $('.dismiss-announcement').click(function() {
+            $(this).closest(".announcement").fadeOut( "fast" );
+			
+
         });
-    $('#myCarousel').on('slid.bs.carousel', function () {
-        $('#myCarousel .ga-body p').readmore({
-            moreLink: '<a href="#" class="moreless">more...</a>',
-            lessLink: '<a href="#" class="moreless">less...</a>',
-            collapsedHeight: 60,
-			speed:500,
+		
+		
+		
+		
+        $('.dismiss-announcement-all').click(function() {
+      
+            $('.announcements-nonew').show('fast');
+
         });
-      });
     });
-
-
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script>
     $(document).ready(function() {
         $('.dismiss-announcement1').click(function() {
@@ -229,6 +277,10 @@ $('.divider').on('hide.bs.dropdown', function () {
         });
     });
 </script>
+
+
+
+
 <script>
     $(document).ready(function() {
 
