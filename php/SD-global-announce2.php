@@ -10,7 +10,7 @@ $page = '';
 <?php include ('includes/scripts.php') ?>
 <style type="text/css">
 .carousel-inner {
-	min-height: 150px
+	min-height: 182px
 }
 .carousel .carousel-control {
 	background: transparent;
