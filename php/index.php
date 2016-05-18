@@ -52,10 +52,19 @@ header .app-header h1 {
             </ul>
             <h4>Global Announcements</h4>
             <ul>
-                <li><a href="SD-global-announce1.php" target="_blank">view</a> version 1 </li>
-                <li><a href="SD-global-announce2.php" target="_blank">view</a> version 2 </li>
-                <li><a href="SD-global-announce3.php" target="_blank">view</a> version 3 </li>
+                <li><a href="SD-global-announce1.php" target="_blank">version 1</a></li>
+                <li><a href="SD-global-announce2.php" target="_blank">version 2</a>
+                    <ul>
+                        <li><a href="SD-global-announce2a.php" target="_blank">v2 with no new announcements</a></li>
+                    </ul>
+                </li>
+                 <li><a href="SD-global-announce3a.php" target="_blank">version 3a</a>
+                 
+                 
+                 
+                <li><a href="SD-global-announce3b.php" target="_blank">version 3b</a>
             </ul>
+            
         </div>
     </div>
 </div>
