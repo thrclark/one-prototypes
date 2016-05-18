@@ -54,7 +54,7 @@ header .app-header h1 {
             <ul>
                 <li><a href="SD-global-announce1.php" target="_blank">view</a> version 1 </li>
                 <li><a href="SD-global-announce2.php" target="_blank">view</a> version 2 </li>
-                <li><a href="SD-global-announce3.php" target="_blank">view</a> version 3 </li>
+                <li><a href="SD-global-announce2a.php" target="_blank">view</a> version 3 </li>
             </ul>
         </div>
     </div>

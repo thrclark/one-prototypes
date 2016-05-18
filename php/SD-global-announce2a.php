@@ -216,7 +216,7 @@ $page = '';
         <?php include ('modal/inbox.php') ?>
     </div>
 </section>
-<?php include ('includes/global-announce-panel-3.php') ?>
+<?php include('includes/global-announce-panel-2a.php') ?>
 <div class="main-content container" role="main">
     <div id="main-content">
         <h2 class="sr-only">Tasks</h2>

@@ -202,7 +202,7 @@ $page = '';
         <nav class="navbar navbar-default"  style="margin-bottom:0px">
             <div class="row">
                 <div class="col-md-6 col-xs-12">
-                    <nav class="btn-group btn-breadcrumb" > <a href="SD-global-announce3.php" class="btn btn-default"><i class="icon-home-2"></i><span class="sr-only">Home</></a>
+                    <nav class="btn-group btn-breadcrumb" > <a href="SD-global-announce2a.php" class="btn btn-default"><i class="icon-home-2"></i><span class="sr-only">Home</></a>
                         <div class="btn btn-default seemore" style="">...</div>
                         <div class="btn">
                             <div>Announcements</div>
