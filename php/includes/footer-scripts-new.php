@@ -1,4 +1,4 @@
-<script>
+<!--<script>
     $(document).ready(function() {
         $(window).load(function() {
             ellipses2 = $(".btn-breadcrumb :nth-child(2)")
@@ -9,7 +9,7 @@
             }
         })
     });
-</script>
+</script>-->
 <script>
 $( ".toggle-global-announcements" ).click(function() {
   $( "#global-announcements" ).slideToggle( "slow" );
