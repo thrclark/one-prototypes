@@ -1,129 +1,123 @@
-.btn-breadcrumb .btn:not(:last-child):after {
-  content: " ";
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 16px solid transparent;
-  border-bottom: 16px solid transparent;
-  border-left: 10px solid white;
-  position: absolute;
-  top: 50%;
-  margin-top: -16px;
-  left: 100%;
-  z-index: 3;
-}
-.btn-breadcrumb .btn:not(:last-child):before {
-  content: " ";
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 16px solid transparent;
-  border-bottom: 16px solid transparent;
-  border-left: 10px solid rgb(173, 173, 173);
-  position: absolute;
-  top: 50%;
-  margin-top: -16px;
-  margin-left: 1px;
-  left: 100%;
-  z-index: 3;
-}
-.btn-breadcrumb .btn {
-  padding: 6px 12px 6px 24px;
-  color: @gray;
+.btn-breadcrumb {
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    
+	.btn {
+		padding: 6px 12px 6px 24px;
+  		color: @gray;
+  		
+	    -webkit-flex: 0 1 auto;
+	    -ms-flex: 0 1 auto;
+	    flex: 0 1 auto;
+    
+  		&:first-child, &.seemore {
+		    -ms-flex-negative: 0;
+		    -webkit-flex-shrink: 0;
+		    flex-shrink: 0;
+  		}
+  
+		&:active {
+			box-shadow: none;
+		}
+		&:first-child {
+			padding: 6px 5px 6px 20px;
+		}
+		&:not(:last-child):before, &:not(:last-child):after {
+			content: " ";
+			display: block;
+			width: 0;
+			height: 0;
+			border-top: 16px solid transparent;
+			border-bottom: 16px solid transparent;
+			position: absolute;
+			top: 50%;
+			margin-top: -16px;
+			left: 100%;
+			z-index: 3;
+		}
+		&:not(:last-child):after {
+			border-left: 10px solid white;
+		}
+		&:not(:last-child):before {
+			border-left: 10px solid rgb(173, 173, 173);
+			margin-left: 1px;
+		}
+		&:last-child {
+			padding: 5px 18px 5px 24px;
+			border-right: none;
+			cursor: default;
+			color: @gray-base;
+			font-weight: bold;
+		}
 
-}
-
-
-.btn-breadcrumb .btn:active {
-  box-shadow: none;
-}
-
-
-
-
-.btn-breadcrumb .btn.btn-default {
-  border-left: none;
-  border-top: none;
-  border-bottom: none;
-}
-.btn-breadcrumb .seemore {
-  padding-left: 20px;
-  padding-right: 5px;
-
-}
-
-.btn-breadcrumb .btn:first-child {
-  padding: 6px 5px 6px 20px;
-
-}
-.btn-breadcrumb .btn:last-child {
-  padding: 5px 18px 5px 24px;
-  border-right: none;
-  cursor: default;
-  color: @gray-base;
-  font-weight: bold;
-}
-/** Default button **/
-.btn-breadcrumb .btn.btn-default:not(:last-child):after {
-  border-left: 10px solid #fff;
-}
-.btn-breadcrumb .btn.btn-default:not(:last-child):before {
-  border-left: 10px solid #ccc;
-}
-.btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {
-  border-left: 10px solid #e6e6e6;
-}
-.btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {
-  border-left: 10px solid #adadad;
-}
-
-
-.btn-breadcrumb > * > div {
-  /* With less: .text-overflow(); */
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.btn-breadcrumb > *:nth-child(n+2) {
-  display: none;
-}
-
-/* === For phones =================================== */
-@media (max-width:@screen-xs-max) {
-  .btn-breadcrumb > *:nth-last-child(-n+2) {
-    display: block;
-  }
-  .btn-breadcrumb > * div {
-    max-width: 90px;
-  }
-}
-
-/* === For tablets ================================== */
-@media (min-width:@screen-sm-min) and (max-width:@screen-sm-max) {
-  .btn-breadcrumb > *:nth-last-child(-n+3) {
-    display: block;
-  }
-  .btn-breadcrumb > * div {
-    max-width: 100px;
-  }
-}
-
-/* === For desktops ================================== */
-@media (min-width:@screen-md-min) {
-  .btn-breadcrumb > *:nth-last-child(-n+4) {
-    display: inline-block;
-  }
-  .btn-breadcrumb > * div {
-    max-width: 170px;
-  }
-}
-
-/* === For big desktops  ================================== */
-@media (min-width:@screen-lg-min) {
-  .btn-breadcrumb > *:nth-last-child(-n+5) {
-    display: block;
-  }
-  .btn-breadcrumb > * div {
-    max-width: 170px;
-  }
+		&.btn-default {
+			border: none;
+			margin-left: 0px;
+			/** Default button **/
+			&:not(:last-child):after {
+				border-left: 10px solid #fff;
+			}
+			&:not(:last-child):before {
+				border-left: 10px solid #ccc;
+			}
+			&:hover:not(:last-child):after {
+				border-left: 10px solid #e6e6e6;
+			}
+			&:hover:not(:last-child):before {
+				border-left: 10px solid #adadad;
+			}
+		}
+	}
+	
+	.seemore {
+		padding-left: 20px;
+		padding-right: 5px;
+	}
+	
+	div[breadcrumb-item] {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	*:nth-child(n+3) {
+		min-width: 60px;
+		display: none;
+	}
+	
+	/* === For phones =================================== */
+	@media (max-width:@screen-xs-max) {
+		.btn:first-child {
+			padding-left: 10px;
+		}
+		
+		> *:nth-last-child(-n+2) {
+			display: block;
+		}
+	}
+	
+	/* === For tablets ================================== */
+	@media (min-width:@screen-sm-min) and (max-width:@screen-sm-max) {
+	  > *:nth-last-child(-n+3) {
+	    display: block;
+	  }
+	}
+	
+	/* === For desktops ================================== */
+	@media (min-width:@screen-md-min) {
+	  > *:nth-last-child(-n+4) {
+	    display: block;
+	  }
+	}
+	
+	/* === For big desktops  ================================== */
+	@media (min-width:@screen-lg-min) {
+	  > *:nth-last-child(-n+5) {
+	    display: block;
+	  }
+	}
 }
