@@ -1,4 +1,4 @@
-<!--<script>
+<script>
     $(document).ready(function() {
         $(window).load(function() {
             ellipses2 = $(".btn-breadcrumb :nth-child(2)")
@@ -9,7 +9,7 @@
             }
         })
     });
-</script>-->
+</script>
 <script>
 $( ".toggle-global-announcements" ).click(function() {
   $( "#global-announcements" ).slideToggle( "slow" );
@@ -197,7 +197,7 @@ $('.divider').on('hide.bs.dropdown', function () {
 -->
 <script>
     $(document).ready(function() {
-        $('.ga-body p').readmore({
+        $('.ga-body div').readmore({
             moreLink: '<a href="#" class="moreless">more...</a>',
             lessLink: '<a href="#" class="moreless">less...</a>',
             collapsedHeight: 60,
@@ -218,7 +218,7 @@ $('.divider').on('hide.bs.dropdown', function () {
 		
 		
         $('#myCarousel').on('slid.bs.carousel', function() {
-            $('#myCarousel .ga-body p').readmore({
+            $('#myCarousel .ga-body div').readmore({
                 moreLink: '<a href="#" class="moreless">more...</a>',
                 lessLink: '<a href="#" class="moreless">less...</a>',
                 collapsedHeight: 60,
