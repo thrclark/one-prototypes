@@ -57,9 +57,9 @@ header .app-header h1 {
                 <li><a href="SD-global-announce2a.php" target="_blank">version 2 (with no new announcements)</a></li>
                 <li><a href="SD-global-announce3a.php" target="_blank">version 3a</a>
                 <li><a href="SD-global-announce3b.php" target="_blank">version 3b</a>
-                 <li><a href="SD-global-announce4.php" target="_blank">version 4</a>
-                  <li><a href="SD-global-announce5.php" target="_blank">version 5</a>
-                  
+                <li><a href="SD-global-announce4.php" target="_blank">version 4</a>
+                <li><a href="../php-gl-ann-5a/SD-global-announce5.php" target="_blank">version 5 (collapsable)</a>
+                <li><a href="../php-gl-ann-5b/SD-global-announce5.php" target="_blank">version 5 (non-collapsable)</a>
             </ul>
         </div>
     </div>
