@@ -54,12 +54,13 @@ $page = '';
 	background: white;
 }
 .global-announcements .global-announcement .ga-header {
-	padding: 10px 10px 5px 10px;
+	    padding: 5px 10px 5px 10px;
 	font-weight: bold;
 	font-size: 16px;
+	border-bottom:solid 1px #EBEBEB;
 }
 .global-announcements .global-announcement .ga-body {
-	padding: 0px 10px 0px 10px;
+	padding: 5px 10px 0px 10px;
 }
 .global-announcements .global-announcement .ga-header .icon-graphic i {
 	font-size: 44px;
@@ -72,7 +73,7 @@ $page = '';
     right: 20px;
     font-size: 14px;
     color: black;
-    top: 15px;
+    top: 20px;
     opacity: .3;
     text-shadow: none;
 }
@@ -111,13 +112,13 @@ $page = '';
 </div>
 <?php include ('includes/mobile-sidebar.php') ?>
 <?php include ('includes/brand-header.php') ?>
-<?php include ('includes/header-gen-announcements5.php') ?>
+<?php include ('includes/header-global-announcements5.php') ?>
 <section class="utilities-bar">
     <div class="container">
         <nav class="navbar navbar-default"  style="margin-bottom:0px">
             <div class="row">
                 <div class="col-md-6 col-xs-12">
-                    <nav class="btn-group btn-breadcrumb" > <a href="SD-global-announce2.php" class="btn btn-default"><i class="icon-home-2"></i><span class="sr-only">Home</></a>
+                    <nav class="btn-group btn-breadcrumb" > <a href="SD-global-announce5.php" class="btn btn-default"><i class="icon-home-2"></i><span class="sr-only">Home</></a>
                         <div class="btn btn-default seemore" style="">...</div>
                         <div class="btn">
                             <div>Announcements</div>
