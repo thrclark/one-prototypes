@@ -175,7 +175,7 @@ li:last-child {
                             <div class="col-xs-12 col-sm-10 ">
                                 <div class="row message-header">
                                     <div class="col-xs-12 col-md-9 review-title">
-                                        <h5>Class Regitsration Begins Today</h5>
+                                        <h5>Class Registration Begins Today</h5>
                                     </div>
                                     <div class="col-xs-12 col-sm-3 review-postinfo"><small class="post-author">Registration</small> <small class="post-date">10/21/15</small></div>
                                 </div>

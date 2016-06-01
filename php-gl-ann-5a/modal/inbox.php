@@ -14,7 +14,7 @@
                <li class="list-group-item new">
                     <div class="message">
                         <div class="row message-header">
-                            <div class="col-xs-12 col-sm-8 message-title"><span class="label">New</span> Class Regitsration Begins Today</div>
+                            <div class="col-xs-12 col-sm-8 message-title"><span class="label">New</span> Class Registration Begins Today</div>
                             <div class="col-xs-12 col-sm-4 message-meta"> <small class="message-date">3 hrs ago</small> </div>
                         </div>
                         <div class="message-content">
