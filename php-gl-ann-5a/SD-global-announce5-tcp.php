@@ -94,7 +94,7 @@ $page = '';
 	opacity: .3;
 	text-shadow: none;
 }
-.toggle-global-announcements.open:before {
+.nav .toggle-global-announcements.open:before {
 	content: '';
 	background: #FFFFFF;
 	position: absolute;
