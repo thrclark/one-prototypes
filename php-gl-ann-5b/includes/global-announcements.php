@@ -23,7 +23,7 @@
                                     <div class="col-md-11">
                                         <div class="row message-header">
                                             <div class="col-xs-12 col-md-6 review-title">
-                                                <h5>Class Regitsration begins today</h5>
+                                                <h5>Class Registration begins today</h5>
                                             </div>
                                             <div class="col-xs-12 col-md-6 review-postinfo"><small class="post-author">Registration</small> <small class="post-date">10/21/15</small></div>
                                         </div>

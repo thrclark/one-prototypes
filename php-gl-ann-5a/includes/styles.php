@@ -188,4 +188,43 @@ h2 a, h2 a:hover {
 	width: 100%;
 }
 
-}</style>
+}
+
+
+
+.global-announcement.color1 .ga-header {
+	background: #786BC5;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.global-announcement.color2 .ga-header {
+	background: #E39A41;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+
+.global-announcement.color3 .ga-header {
+	background: #BC545F;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+
+.global-announcement.color4 .ga-header {
+	background: #00BB9A;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.global-announcement.color5 .ga-header {
+	background: #44AADF;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+
+
+
+</style>

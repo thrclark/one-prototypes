@@ -277,7 +277,7 @@ $page = '';
                     <li class="announcement">
                         <div class="message">
                             <div class="row message-header">
-                                <div class="col-xs-12 message-title"> Class Regitsration Begins Today </div>
+                                <div class="col-xs-12 message-title"> Class Registration Begins Today </div>
                                 <div class="col-xs-12 message-meta"> <small class="message-date">10/21/15</small> </div>
                             </div>
                             <div class="message-content">

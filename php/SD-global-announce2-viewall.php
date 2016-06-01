@@ -250,7 +250,7 @@ $page = '';
             <div class="row" style="margin-top:20px">
                 <div class="col-md-4">
                     <div class="global-announcement color1">
-                        <div class="ga-header"><img class="img-circle" src="../img/task-icons-new/SD-016.png"> Class Regitsration Begins Today <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span> </a> </div>
+                        <div class="ga-header"><img class="img-circle" src="../img/task-icons-new/SD-016.png"> Class Registration Begins Today <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span> </a> </div>
                         <div class="ga-body">
                             <p>Spring term 2016 is open. Check your email for information on your registration appointment. Register early and get the classes you need.</p>
                         </div>
@@ -304,7 +304,7 @@ $page = '';
                 </div>
                 <div class="col-md-4">
                     <div class="global-announcement color1">
-                        <div class="ga-header"><img class="img-circle" src="../img/task-icons-new/SD-016.png"> Class Regitsration Begins Today </div>
+                        <div class="ga-header"><img class="img-circle" src="../img/task-icons-new/SD-016.png"> Class Registration Begins Today </div>
                         <div class="ga-body">
                             <p>Spring term 2016 is open. Check your email for information on your registration appointment. Register early and get the classes you need.</p>
                         </div>
