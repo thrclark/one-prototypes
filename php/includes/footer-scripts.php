@@ -203,20 +203,14 @@ $('.divider').on('hide.bs.dropdown', function () {
             collapsedHeight: 60,
             speed: 500,
         });
-		
-		
-		
-		
-		$('.comment-list .message-content').readmore({
+
+        $('.comment-list .message-content').readmore({
             moreLink: '<a href="#" class="moreless">more...</a>',
             lessLink: '<a href="#" class="moreless">less...</a>',
             collapsedHeight: 80,
             speed: 500,
         });
-		
-		
-		
-		
+
         $('#myCarousel').on('slid.bs.carousel', function() {
             $('#myCarousel .ga-body div').readmore({
                 moreLink: '<a href="#" class="moreless">more...</a>',
@@ -227,7 +221,6 @@ $('.divider').on('hide.bs.dropdown', function () {
         });
     });
 </script>
-
 
 
 

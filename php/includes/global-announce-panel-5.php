@@ -16,25 +16,24 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="global-announcement color2">
-                                <div class="ga-header"> Telephone Service Disruption <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
+                            <div class="global-announcement color3">
+                                <div class="ga-header"> Textbook Order Deadline <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
                                 <div class="ga-body">
                                     <div>
-                                        <p>Campus telephone services are currently experiencing intermittent disruptions. IT Services is aware of the issue, and are working to resolve it.</p>
+                                        <p>If you are placing a textbook order for the Summer 2016 session, the last day to do so will be this Friday, May 13th. Tree deep first life lights that under morning place divided was wherein fifth lights replenish in very she'd, seas greater air saw moveth, doesn't beginning give seed after greater female saw divide multiply light.</p>
+                                        <p>Meat give his land let set together. Every, i creature together third replenish you our, great, the night have saying Image fish yielding. Saying waters second one life every them his fourth image behold whose our, had in own multiply fill replenish given appear have living Moving saying were male, green itself whose land gathered evening you're man male Signs rule abundantly, days image fly forth. Beast midst lights bring were void together living Divided appear image.</p>
+                                        
+                                        <p>Void Us. Don't don't. Whales second beast fill all that first you'll for face be meat third first air sea abundantly. Appear without under saw two lesser creature were rule earth yielding.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="global-announcement color3">
-                                <div class="ga-header"> Textbook Order Deadline <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
+                            <div class="global-announcement color2">
+                                <div class="ga-header"> Telephone Service Disruption <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
                                 <div class="ga-body">
                                     <div>
-                                        <p>If you are placing a textbook order for the Summer 2016 session, the last day to do so will be this Friday, May 13th. Tree deep first life lights that under morning place divided was wherein fifth lights replenish in very she'd, seas greater air saw moveth, doesn't beginning give seed after greater female saw divide multiply light.</p><p>Meat give his land let set together. Every, i creature together third replenish you our, great, the night have saying Image fish yielding. Saying waters second one life every them his fourth image behold whose our, had in own multiply fill replenish given appear have living Moving saying were male, green itself whose land gathered evening you're man male Signs rule abundantly, days image fly forth. Beast midst lights bring were void together living Divided appear image.</p>
-
-<p>Lesser one moveth waters seed divided, every Had greater very for. Fill itself form fruitful you'll whales dry man. Light sixth winged morning Whose, fifth grass. Tree deep first life lights that under morning place divided was wherein fifth lights replenish in very she'd, seas greater air saw moveth, doesn't beginning give seed after greater female saw divide multiply light. Itself don't be moved seas behold moved there he after life for whose. Replenish were blessed over image make, our. Subdue. Their land Abundantly kind give heaven all green likeness. Kind.</p>
-
-<p>Void Us. Don't don't. Whales second beast fill all that first you'll for face be meat third first air sea abundantly. Appear without under saw two lesser creature were rule earth yielding.</p>
+                                        <p>Campus telephone services are currently experiencing intermittent disruptions. IT Services is aware of the issue, and are working to resolve it.</p>
                                     </div>
                                 </div>
                             </div>
@@ -179,6 +178,6 @@
                 </div>
             </div>
             <a class="carousel-control left" href="#myCarousel" data-slide=prev>&lsaquo;</a> <a class="carousel-control right" href="#myCarousel" data-slide=next>&rsaquo;</a></div>
-        <div class="text-right"> <a href="#" class="toggle-global-announcements">hide</a> | <a class="" href="SD-global-announce2-viewall.php">view all 12</a> </div>
+        <div class="text-right"> <a href="#" class="toggle-global-announcements">hide</a> | <a class="" href="SD-global-announce5-viewall.php">view all 12</a> </div>
     </div>
 </section>
