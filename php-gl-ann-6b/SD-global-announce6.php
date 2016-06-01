@@ -106,98 +106,7 @@ $page = '';
 <div class="main-content container" role="main">
     <div class="row">
         
-        <div class="col-md-4 col-lg-3">
-            <div class="category" style="margin-bottom:0px">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h3>Announcements</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="comment-list">
-                <ul class="list-unstyled">
-                    <li class="announcement">
-                        <div class="message">
-                            <div class="row message-header">
-                                <div class="col-xs-12 message-title"> Class Regitsration Begins Today </div>
-                                <div class="col-xs-12 message-meta"> <small class="message-date">10/21/15</small> </div>
-                            </div>
-                            <div class="message-content">
-                                <p>Spring term 2016 is open. Check your email for information on your registration appointment. Register early and get the classes you need.</p>
-                            </div>
-                            <div class="row message-footer">
-                                <div class="message-footer-actions"> <a href="#" class="btn btn-link dismiss-announcement" id=""> <i class="icon-cancel-circled"></i></a> </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="announcement">
-                        <div class="message">
-                            <div class="row message-header">
-                                <div class="col-xs-12 message-title"> Telephone Service Disruption </div>
-                                <div class="col-xs-12 message-meta"> <small class="message-date">10/21/15</small> </div>
-                            </div>
-                            <div class="message-content">
-                                <p>Campus telephone services are currently experiencing intermittent disruptions. IT Services is aware of the issue, and are working to resolve it.</p>
-                            </div>
-                            <div class="row message-footer">
-                                <div class="message-footer-actions"> <a href="#" class="btn btn-link dismiss-announcement" id=""> <i class="icon-cancel-circled"></i></a> </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="announcement">
-                        <div class="message">
-                            <div class="row message-header">
-                                <div class="col-xs-12 message-title"> Textbook Order Deadline </div>
-                                <div class="col-xs-12 message-meta"> <small class="message-date">10/21/15</small> </div>
-                            </div>
-                            <div class="message-content">
-                                <p>If you are placing a textbook order for the Summer 2016 session, the last day to do so will be this Friday, May 13th. sdfg sdfg sdfg sdfg sdfg sdgf sdgfsdfg sdfg sdfg sdfg sdfg sdgf sdgfsdfg sdfg sdfg sdfg sdfg sdgf sdgfsdfg sdfg sdfg sdfg sdfg sdgf sdgfsdfg sdfg sdfg sdfg sdfg sdgf sdgfsdfg sdfg sdfg sdfg sdfg sdgf sdgf</p>
-                            </div>
-                            <div class="row message-footer">
-                                <div class="message-footer-actions"> <a href="#" class="btn btn-link dismiss-announcement" id=""> <i class="icon-cancel-circled"></i></a> </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="announcement">
-                        <div class="message">
-                            <div class="row message-header">
-                                <div class="col-xs-12 message-title"> Buy it? Sell it? Classifieds! </div>
-                                <div class="col-xs-12 message-meta"> <small class="message-date">10/21/15</small> </div>
-                            </div>
-                            <div class="message-content">
-                                <p>IU Classifies is the place to find what you need, sell what you don't need. Easy browsing of ads, and quick posting of your own ads. Check it out!</p>
-                            </div>
-                            <div class="row message-footer">
-                                <div class="message-footer-actions"> <a href="#" class="btn btn-link dismiss-announcement" id=""> <i class="icon-cancel-circled"></i></a> </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="announcement">
-                        <div class="message">
-                            <div class="row message-header">
-                                <div class="col-xs-12 message-title"> Spring Break Campus Hours </div>
-                                <div class="col-xs-12 message-meta"> <small class="message-date">10/21/15</small> </div>
-                            </div>
-                            <div class="message-content">
-                                <p>During the week of spring break, general offices of the campus will have restricted hours of operation. Please check your area offices.</p>
-                            </div>
-                            <div class="row message-footer">
-                                <div class="message-footer-actions"> <a href="#" class="btn btn-link dismiss-announcement dismiss-announcement-all" id=""> <i class="icon-cancel-circled"></i></a> </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li style="display:none" class="announcements-nonew">
-                        <div class="message">
-                            <div class="message-content">
-                                <p class="text-muted message-empty" style="    padding-top: 10px;
-    padding-bottom: 2px;">There are no new announcements.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li style="border:none; padding-top:10px"><a href="#" data-toggle="modal" data-target="#dismissed-ga" class="btn btn-xs btn-default">View Dismissed</a></li>
-                </ul>
-            </div>
-        </div>
+    
         
         <div class="col-md-8 col-lg-9">
             <div id="main-content">
@@ -2138,7 +2047,98 @@ $page = '';
             </div>
         </div>
         
-        
+            <div class="col-md-4 col-lg-3">
+            <div class="category" style="margin-bottom:0px">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Announcements</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-list">
+                <ul class="list-unstyled">
+                    <li class="announcement">
+                        <div class="message">
+                            <div class="row message-header">
+                                <div class="col-xs-12 message-title"> Class Regitsration Begins Today </div>
+                                <div class="col-xs-12 message-meta"> <small class="message-date">10/21/15</small> </div>
+                            </div>
+                            <div class="message-content">
+                                <p>Spring term 2016 is open. Check your email for information on your registration appointment. Register early and get the classes you need.</p>
+                            </div>
+                            <div class="row message-footer">
+                                <div class="message-footer-actions"> <a href="#" class="btn btn-link dismiss-announcement" id=""> <i class="icon-cancel-circled"></i></a> </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="announcement">
+                        <div class="message">
+                            <div class="row message-header">
+                                <div class="col-xs-12 message-title"> Telephone Service Disruption </div>
+                                <div class="col-xs-12 message-meta"> <small class="message-date">10/21/15</small> </div>
+                            </div>
+                            <div class="message-content">
+                                <p>Campus telephone services are currently experiencing intermittent disruptions. IT Services is aware of the issue, and are working to resolve it.</p>
+                            </div>
+                            <div class="row message-footer">
+                                <div class="message-footer-actions"> <a href="#" class="btn btn-link dismiss-announcement" id=""> <i class="icon-cancel-circled"></i></a> </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="announcement">
+                        <div class="message">
+                            <div class="row message-header">
+                                <div class="col-xs-12 message-title"> Textbook Order Deadline </div>
+                                <div class="col-xs-12 message-meta"> <small class="message-date">10/21/15</small> </div>
+                            </div>
+                            <div class="message-content">
+                                <p>If you are placing a textbook order for the Summer 2016 session, the last day to do so will be this Friday, May 13th. sdfg sdfg sdfg sdfg sdfg sdgf sdgfsdfg sdfg sdfg sdfg sdfg sdgf sdgfsdfg sdfg sdfg sdfg sdfg sdgf sdgfsdfg sdfg sdfg sdfg sdfg sdgf sdgfsdfg sdfg sdfg sdfg sdfg sdgf sdgfsdfg sdfg sdfg sdfg sdfg sdgf sdgf</p>
+                            </div>
+                            <div class="row message-footer">
+                                <div class="message-footer-actions"> <a href="#" class="btn btn-link dismiss-announcement" id=""> <i class="icon-cancel-circled"></i></a> </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="announcement">
+                        <div class="message">
+                            <div class="row message-header">
+                                <div class="col-xs-12 message-title"> Buy it? Sell it? Classifieds! </div>
+                                <div class="col-xs-12 message-meta"> <small class="message-date">10/21/15</small> </div>
+                            </div>
+                            <div class="message-content">
+                                <p>IU Classifies is the place to find what you need, sell what you don't need. Easy browsing of ads, and quick posting of your own ads. Check it out!</p>
+                            </div>
+                            <div class="row message-footer">
+                                <div class="message-footer-actions"> <a href="#" class="btn btn-link dismiss-announcement" id=""> <i class="icon-cancel-circled"></i></a> </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="announcement">
+                        <div class="message">
+                            <div class="row message-header">
+                                <div class="col-xs-12 message-title"> Spring Break Campus Hours </div>
+                                <div class="col-xs-12 message-meta"> <small class="message-date">10/21/15</small> </div>
+                            </div>
+                            <div class="message-content">
+                                <p>During the week of spring break, general offices of the campus will have restricted hours of operation. Please check your area offices.</p>
+                            </div>
+                            <div class="row message-footer">
+                                <div class="message-footer-actions"> <a href="#" class="btn btn-link dismiss-announcement dismiss-announcement-all" id=""> <i class="icon-cancel-circled"></i></a> </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="display:none" class="announcements-nonew">
+                        <div class="message">
+                            <div class="message-content">
+                                <p class="text-muted message-empty" style="    padding-top: 10px;
+    padding-bottom: 2px;">There are no new announcements.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="border:none; padding-top:10px"><a href="#" data-toggle="modal" data-target="#dismissed-ga" class="btn btn-xs btn-default">View Dismissed</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 <?php include ('modal/announcement-task.php') ?>
