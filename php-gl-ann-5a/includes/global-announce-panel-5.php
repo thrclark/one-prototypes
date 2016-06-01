@@ -1,4 +1,3 @@
-
 <section id="global-announcements" class="global-announcements" style=" display:; background: #ffffff; min-height:;-webkit-box-shadow: inset 0 20px 15px -20px rgba(0,0,0,0.1);-moz-box-shadow: inset 0 20px 15px -20px rgba(0,0,0,0.1);box-shadow: inset 0 20px 15px -20px rgba(0,0,0,0.1);border-top: solid 1px #ebebeb;">
     <div class="container" style="padding-top: 15px;padding-bottom: 10px;">
         <div id="myCarousel" class="carousel slide">

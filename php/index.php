@@ -60,6 +60,11 @@ header .app-header h1 {
                 <li><a href="SD-global-announce4.php" target="_blank">version 4</a>
                 <li><a href="../php-gl-ann-5a/SD-global-announce5.php" target="_blank">version 5 (collapsable)</a>
                 <li><a href="../php-gl-ann-5b/SD-global-announce5.php" target="_blank">version 5 (non-collapsable)</a>
+                
+                <li><a href="../php-gl-ann-6a/SD-global-announce6.php" target="_blank">version 6 (fixed to left)</a>
+                <li><a href="../php-gl-ann-6b/SD-global-announce6.php" target="_blank">version 6 (fixed to right)</a>
+                
+                
             </ul>
         </div>
     </div>
