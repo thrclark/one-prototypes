@@ -241,6 +241,16 @@ h2 a, h2 a:hover {
 	margin-right: 5px;
 	position: absolute;
 }
+
+.global-announcement.graphic {
+	text-align: center;
+	width: 100%;
+	box-shadow: none;
+	border: none;
+	position: absolute;
+
+}
+
 .global-announcements .global-announcement .ga-header {
 	padding: 5px 10px 5px 10px;
 	font-weight: bold;
