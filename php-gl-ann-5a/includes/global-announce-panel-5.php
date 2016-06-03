@@ -13,7 +13,7 @@
                 </div>
             </li>
             <li class="col-xs-4">
-            <div class="global-announcement color3" >
+                <div class="global-announcement color3" >
                     <div class="ga-header"> Textbook Order Deadline <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
                     <div class="ga-body">
                         <div>
@@ -53,7 +53,8 @@
                         </div>
                     </div>
                 </div>
-            </li> <li class="col-xs-4">
+            </li>
+            <li class="col-xs-4">
                 <div class="global-announcement color1" >
                     <div class="ga-header"> Class Registration Begins Today <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
                     <div class="ga-body">
@@ -64,7 +65,7 @@
                 </div>
             </li>
             <li class="col-xs-4">
-            <div class="global-announcement color3" >
+                <div class="global-announcement color3" >
                     <div class="ga-header"> Textbook Order Deadline <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
                     <div class="ga-body">
                         <div>
@@ -106,21 +107,8 @@
                 </div>
             </li>
         </ul>
-        
-        
-      
-           <div style="position:absolute; right:5px; bottom:5px; font-style:italic"><a href="SD-global-announce5-viewall.php"> view all 12</a></div>
-           
-       
-           
-           
+        <div style="position:absolute; right:5px; bottom:5px; font-style:italic"><a href="SD-global-announce5-viewall.php"> view all 12</a></div>
     </div>
-    
-    
-    
-
-    
-    
 </section>
 
 <!--
