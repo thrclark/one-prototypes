@@ -8,91 +8,7 @@ $page = '';
 <?php include ('includes/head-meta.php') ?>
 <?php include ('includes/styles.php') ?>
 <?php include ('includes/scripts.php') ?>
-<style type="text/css">
-.carousel-inner {
-	min-height: 145px;
-	overflow: visible;
-}
-.carousel {
-	z-index: 20;
-}
-.carousel .carousel-control {
-	background: transparent;
-	width: inherit;
-	color: black;
-	font-size: 60px;
-	text-shadow: 0 1px 2px #999;
-	top: 25px;
-}
-.carousel .carousel-control.right {
-	right: -35px;
-}
-.carousel .carousel-control.left {
-	left: -35px;
-}
-.comment-list .message-header h5 {
-	font-size: 18px;
-}
-.comment-list .message-header .hidden-xs.col-md-2.text-center i[class*='icon-'] {
-	line-height: 0;
-	font-size: 50px;
-}
-.comment-list .message-header .hidden-xs.col-md-2.text-center img {
-	width: 50px;
-}
-.carousel-inner .well.well-sm {
-	margin-bottom: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-}
-.global-announcements .global-announcement {
-	min-height: 125px;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
-	margin-bottom: 10px;
-	margin-top: 10px;
-	border: solid 1px #EBEBEB;
-	position: absolute;
-	background: white;
-	margin-right: 15px;
-}
-.global-announcements .global-announcement .ga-header {
-	    padding: 5px 10px 5px 10px;
-	font-weight: bold;
-	font-size: 16px;
-	border-bottom:solid 1px #EBEBEB;
-}
-.global-announcements .global-announcement .ga-body {
-	padding: 5px 10px 0px 10px;
-}
-.global-announcements .global-announcement .ga-header .icon-graphic i {
-	font-size: 44px;
-	line-height: 52px;
-	text-shadow: none;
-	opacity: .7;
-}
-.global-announcements .global-announcement .ga-header .close {
-	position: absolute;
-	right: 10px;
-	font-size: 14px;
-	color: black;
-	top: 10px;
-	opacity: .3;
-	text-shadow: none;
-}
-.nav .toggle-global-announcements.open:before {
-	content: '';
-	background: #FFFFFF;
-	position: absolute;
-	width: 49px;
-	left: 0px;
-	top: 30px;
-	display: block;
-	height: 15px;
-}
-.moreless {
-	font-style: italic
-}
-</style>
+
 </head>
 <body id="top" >
 <div class="alert alert-application" role="alert" style="display:none">
@@ -115,7 +31,7 @@ $page = '';
 <?php include ('includes/mobile-sidebar.php') ?>
 <?php include ('includes/brand-header.php') ?>
 <?php include ('includes/header-global-announcements5.php') ?>
-<section class="utilities-bar">
+<section class="utilities-bar hidden-xs">
     <div class="container">
         <nav class="navbar navbar-default"  style="margin-bottom:0px">
             <div class="row">
@@ -196,7 +112,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-tdp1.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -236,7 +152,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-tdp1.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart" style="display:; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">

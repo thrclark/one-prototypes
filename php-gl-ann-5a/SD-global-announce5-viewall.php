@@ -7,90 +7,15 @@ $page = '';
 <head>
 <?php include ('includes/head-meta.php') ?>
 <?php include ('includes/styles.php') ?>
-<?php include ('includes/scripts.php') ?>
-<style type="text/css">
-.carousel-inner {
-	min-height: 145px;
-	overflow: visible;
-}
-.carousel {
-	z-index: 20;
-}
-.carousel .carousel-control {
-	background: transparent;
-	width: inherit;
-	color: black;
-	font-size: 60px;
-	text-shadow: 0 1px 2px #999;
-	top: 25px;
-}
-.carousel .carousel-control.right {
-	right: -35px;
-}
-.carousel .carousel-control.left {
-	left: -35px;
-}
-.comment-list .message-header h5 {
-	font-size: 18px;
-}
-.comment-list .message-header .hidden-xs.col-md-2.text-center i[class*='icon-'] {
-	line-height: 0;
-	font-size: 50px;
-}
-.comment-list .message-header .hidden-xs.col-md-2.text-center img {
-	width: 50px;
-}
-.carousel-inner .well.well-sm {
-	margin-bottom: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-}
+
+<style>
 .global-announcements .global-announcement {
-	min-height: 125px;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
-	margin-bottom: 10px;
-	margin-top: 10px;
-	border: solid 1px #EBEBEB;
-	background: white;
-}
-.global-announcements .global-announcement .ga-header {
-	    padding: 5px 10px 5px 10px;
-	font-weight: bold;
-	font-size: 16px;
-	border-bottom:solid 1px #EBEBEB;
-}
-.global-announcements .global-announcement .ga-body {
-	padding: 5px 10px 0px 10px;
-}
-.global-announcements .global-announcement .ga-header .icon-graphic i {
-	font-size: 44px;
-	line-height: 52px;
-	text-shadow: none;
-	opacity: .7;
-}
-.global-announcements .global-announcement .ga-header .close {
-	    position: absolute;
-    right: 20px;
-    font-size: 14px;
-    color: black;
-    top: 20px;
-    opacity: .3;
-    text-shadow: none;
-}
-.nav .toggle-global-announcements.open:before {
-	content: '';
-	background: #FFFFFF;
-	position: absolute;
-	width: 49px;
-	left: 0px;
-	top: 30px;
-	display: block;
-	height: 15px;
-}
-.moreless {
-	font-style: italic
-}
+	position:relative}
+
+
 </style>
+
+<?php include ('includes/scripts.php') ?>
 </head>
 <body id="top" style=" background-color:#FFFFFF" >
 <div class="alert alert-application" role="alert" style="display:none">
@@ -127,7 +52,7 @@ $page = '';
                 </div>
                 <div class="col-md-6 hidden-xs hidden-sm">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" class="sdfgsdfg" ><i class="icon-bell-3"></i> <span class="sr-only">Notifications</span></a> </li>
+                        <li><a href="#" class="sdfgsdfg"  style="color:#CCCCCC"><i class="icon-bell-3"></i> <span class="sr-only">Notifications</span></a> </li>
                         <!-- <li><a href="#" class="launch-notifications"><i class="icon-inbox-alt"></i>
                             <div class="container-badge"><span class="badge">2</span></div>
                             <span class="sr-only">Inbox</span></a> </li>-->
@@ -166,35 +91,34 @@ $page = '';
             <div class="row" style="margin-top:20px">
                 <div class="col-md-4">
                     <div class="global-announcement color1">
-                                <div class="ga-header"> Class Registration Begins Today <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
-                                <div class="ga-body">
-                                    <div>
-                                        <p>Spring term 2016 is open. Check your email for information on your registration appointment. Register early and get the classes you need.</p>
-                                    </div>
-                                </div>
+                        <div class="ga-header"> Class Registration Begins Today <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
+                        <div class="ga-body">
+                            <div>
+                                <p>Spring term 2016 is open. Check your email for information on your registration appointment. Register early and get the classes you need.</p>
                             </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                   <div class="global-announcement color2">
-                                <div class="ga-header"> Telephone Service Disruption <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
-                                <div class="ga-body">
-                                    <div>
-                                        <p>Campus telephone services are currently experiencing intermittent disruptions. IT Services is aware of the issue, and are working to resolve it.</p>
-                                    </div>
-                                </div>
+                    <div class="global-announcement color2">
+                        <div class="ga-header"> Telephone Service Disruption <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
+                        <div class="ga-body">
+                            <div>
+                                <p>Campus telephone services are currently experiencing intermittent disruptions. IT Services is aware of the issue, and are working to resolve it.</p>
                             </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                   <div class="global-announcement color3">
-                                <div class="ga-header"> Textbook Order Deadline <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
-                                <div class="ga-body">
-                                    <div>
-                                        <p>If you are placing a textbook order for the Summer 2016 session, the last day to do so will be this Friday, May 13th.</p>
-                                    </div>
-                                </div>
+                    <div class="global-announcement color3">
+                        <div class="ga-header"> Textbook Order Deadline <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
+                        <div class="ga-body">
+                            <div>
+                                <p>If you are placing a textbook order for the Summer 2016 session, the last day to do so will be this Friday, May 13th.</p>
                             </div>
+                        </div>
+                    </div>
                 </div>
-               
             </div>
         </div>
         <div class="category" style="margin-bottom:-1px; border-bottom: none">
@@ -204,47 +128,46 @@ $page = '';
                 </div>
                 <div class="col-xs-2 text-right"> </div>
             </div>
-            <div class="row" style="margin-top:20px">  <div class="col-md-4">
-                     <div class="global-announcement color3">
-                                <div class="ga-header"> Textbook Order Deadline</div>
-                                <div class="ga-body">
-                                    <div>
-                                        <p>If you are placing a textbook order for the Summer 2016 session, the last day to do so will be this Friday, May 13th.</p>
-                                    </div>
-                                </div>
+            <div class="row" style="margin-top:20px">
+                <div class="col-md-4">
+                    <div class="global-announcement color3">
+                        <div class="ga-header"> Textbook Order Deadline</div>
+                        <div class="ga-body">
+                            <div>
+                                <p>If you are placing a textbook order for the Summer 2016 session, the last day to do so will be this Friday, May 13th.</p>
                             </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                  <div class="global-announcement color5">
-                                <div class="ga-header"> Spring Break Campus Hours </div>
-                                <div class="ga-body">
-                                    <div>
-                                        <p>During the week of spring break, general offices of the campus will have restricted hours of operation. Please check your area offices.</p>
-                                    </div>
-                                </div>
+                    <div class="global-announcement color5">
+                        <div class="ga-header"> Spring Break Campus Hours </div>
+                        <div class="ga-body">
+                            <div>
+                                <p>During the week of spring break, general offices of the campus will have restricted hours of operation. Please check your area offices.</p>
                             </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                 <div class="global-announcement color1">
-                                <div class="ga-header"> Class Registration Begins Today</div>
-                                <div class="ga-body">
-                                    <div>
-                                        <p>Spring term 2016 is open. Check your email for information on your registration appointment. Register early and get the classes you need.</p>
-                                    </div>
-                                </div>
+                    <div class="global-announcement color1">
+                        <div class="ga-header"> Class Registration Begins Today</div>
+                        <div class="ga-body">
+                            <div>
+                                <p>Spring term 2016 is open. Check your email for information on your registration appointment. Register early and get the classes you need.</p>
                             </div>
+                        </div>
+                    </div>
                 </div>
-              
-              
                 <div class="col-md-4">
                     <div class="global-announcement color4">
-                                <div class="ga-header"> Buy it? Sell it? Classifieds!</div>
-                                <div class="ga-body">
-                                    <div>
-                                        <p>IU Classifies is the place to find what you need, sell what you don't need. Easy browsing of ads, and quick posting of your own ads. Check it out!</p>
-                                    </div>
-                                </div>
+                        <div class="ga-header"> Buy it? Sell it? Classifieds!</div>
+                        <div class="ga-body">
+                            <div>
+                                <p>IU Classifies is the place to find what you need, sell what you don't need. Easy browsing of ads, and quick posting of your own ads. Check it out!</p>
                             </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

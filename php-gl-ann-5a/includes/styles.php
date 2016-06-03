@@ -228,3 +228,78 @@ h2 a, h2 a:hover {
 
 
 </style>
+
+
+<style type="text/css">
+.global-announcements .global-announcement {
+	min-height: 125px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+	margin-bottom: 10px;
+	margin-top: 5px;
+	border: solid 1px #EBEBEB;
+	background: white;
+	margin-right: 5px;
+	position: absolute;
+}
+.global-announcements .global-announcement .ga-header {
+	padding: 5px 10px 5px 10px;
+	font-weight: bold;
+	font-size: 16px;
+	border-bottom: solid 1px #EBEBEB;
+}
+.global-announcements .global-announcement .ga-body {
+	padding: 5px 10px 0px 10px;
+}
+.global-announcements .global-announcement .ga-header .icon-graphic i {
+	font-size: 44px;
+	line-height: 52px;
+	text-shadow: none;
+	opacity: .7;
+}
+.global-announcements .global-announcement .ga-header .close {
+	position: absolute;
+	right: 10px;
+	font-size: 14px;
+	color: black;
+	top: 10px;
+	opacity: .3;
+	text-shadow: none;
+}
+.nav .toggle-global-announcements.open:before {
+	content: '';
+	background: #FFFFFF;
+	position: absolute;
+	width: 49px;
+	left: 0px;
+	top: 30px;
+	display: block;
+	height: 15px;
+}
+.moreless {
+	font-style: italic
+}
+.lightSlider {
+	overflow: visible;
+	margin: 0;
+}
+.lSSlideWrapper {
+	z-index: 20;
+	min-height: 140px;
+	overflow: hidden;
+}
+.lSSlideOuter {
+	overflow: hidden;
+}
+.lSSlideOuter li {
+	position: relative;
+}
+.lSSlideOuter .lSPager.lSpg {
+	margin: 10px 0 0;
+	padding: 0;
+	text-align: center;
+	bottom: 5px;
+	position: absolute;
+	width: 100%;
+}
+
+</style>

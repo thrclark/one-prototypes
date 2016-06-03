@@ -192,7 +192,7 @@ $(function() {
             <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 brand"> <a class="logo" href="SD-home.php" id="sidebar_logo" tabindex="0"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo.png" class="hidden-xs hidden-sm"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo-mobile.png" class="hidden-md hidden-lg">
                 <h1><span class="sr-only">One.IU</span></h1></a> </div>
             <div class="col-xs-6 col-sm-6 hidden-md hidden-lg mobile-menu">
-                <div class="pull-right"> <a href="#" class="btn btn-link launch-notifications"> <i class="icon-bell-alt"></i>     <div class="container-badge"><span class="badge">2</span></div><span class="sr-only">Announcements</span></a>
+                <div class="pull-right"> <a href="#" class="btn btn-link toggle-global-announcements" style="color:#FFFFFF"> <i class="icon-bell-3"></i>     <span class="sr-only">Announcements</span></a>
                     <button type="button" id="menu_button" class="btn btn-signin" tabindex="0"><span class="sr-only">Toggle menu</span><i class="icon-menu"></i></button>
                 </div>
             </div>

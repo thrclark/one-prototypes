@@ -3,113 +3,11 @@ $section = '';
 $page = '';
 ?>
 <!DOCTYPE html>
-<html lang=en-us>
+<html lang="en-us">
 <head>
-<?php include('includes/head-meta.php') ?>
-<?php include('includes/styles.php') ?>
-<?php include('includes/scripts.php') ?>
-<style>
-.lSPager.lSGallery li:last-child a:before {
-	position: absolute;
-	content: '\e810';
-	background-color: rgba(0, 0, 0, 0.3);
-	width: 90px;
-	height: 60px;
-	font-family: 'fontello';
-	color: #ffffff;
-	left: 0px;
-	font-size: 36px;
-	padding-left: 26px;
-	padding-top: 4px;
-}
-</style>
-<style type="text/css">
-.carousel-inner {
-	min-height: 145px;
-	overflow: visible;
-}
-.carousel {
-	z-index: 20;
-}
-.carousel .carousel-control {
-	background: transparent;
-	width: inherit;
-	color: black;
-	font-size: 60px;
-	text-shadow: 0 1px 2px #999;
-	top: 25px;
-}
-.carousel .carousel-control.right {
-	right: -35px;
-}
-.carousel .carousel-control.left {
-	left: -35px;
-}
-.comment-list .message-header h5 {
-	font-size: 18px;
-}
-.comment-list .message-header .hidden-xs.col-md-2.text-center i[class*='icon-'] {
-	line-height: 0;
-	font-size: 50px;
-}
-.comment-list .message-header .hidden-xs.col-md-2.text-center img {
-	width: 50px;
-}
-.carousel-inner .well.well-sm {
-	margin-bottom: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-}
-.global-announcements .global-announcement {
-	min-height: 125px;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
-	margin-bottom: 10px;
-	margin-top: 10px;
-	border: solid 1px #EBEBEB;
-	position: absolute;
-	background: white;
-	margin-right: 15px;
-}
-.global-announcements .global-announcement .ga-header {
-	padding: 5px 10px 5px 10px;
-	font-weight: bold;
-	font-size: 16px;
-	border-bottom: solid 1px #EBEBEB;
-}
-.global-announcements .global-announcement .ga-body {
-	padding: 5px 10px 0px 10px;
-}
-.global-announcements .global-announcement .ga-header .icon-graphic i {
-	font-size: 44px;
-	line-height: 52px;
-	text-shadow: none;
-	opacity: .7;
-}
-.global-announcements .global-announcement .ga-header .close {
-	position: absolute;
-	right: 10px;
-	font-size: 14px;
-	color: black;
-	top: 10px;
-	opacity: .3;
-	text-shadow: none;
-}
-.nav .toggle-global-announcements.open:before {
-	content: '';
-	background: #FFFFFF;
-	position: absolute;
-	width: 49px;
-	left: 0px;
-	top: 30px;
-	display: block;
-	height: 15px;
-}
-.moreless {
-	font-style: italic
-}
-
-
-</style>
+<?php include ('includes/head-meta.php') ?>
+<?php include ('includes/styles.php') ?>
+<?php include ('includes/scripts.php') ?>
 </head>
 <body id="top">
 <?php include ('includes/mobile-sidebar.php') ?>
@@ -194,7 +92,7 @@ $page = '';
                     <li><a href="#reviewsratings" data-toggle=tab>Reviews</a></li>
                     <li><a href="#related" data-toggle=tab>Related</a></li>
                     <li><a href="#announcements" data-toggle=tab> Announcements
-                        <div class="container-badge" id="announcement-counter"><span class="badge">20</span></div>
+                        <div class="container-badge" id="announcement-counter"><span class="badge">2</span></div>
                         </a></li>
                 </ul>
                 <div class="tab-content">
@@ -881,20 +779,14 @@ $page = '';
 <?php include('modal/releasenotes.php') ?>
 <?php include('includes/brand-footer.php') ?>
 <?php include('includes/footer-scripts.php') ?>
-
-
-
-
- <script>
+<script>
  
-  $( document ).ready(function() {
+  $( window ).load(function() {
     $( "#global-announcements" ).hide();
 	$( ".toggle-global-announcements" ).removeClass( "open" );
   });
  
-  </script>
-  
-  
+  </script> 
 <script type='text/javascript'>
     $(window).load(function() {
         $("#releasenotes").popover({
