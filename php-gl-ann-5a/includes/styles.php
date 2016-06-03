@@ -11,24 +11,13 @@
 <link href="../less/brand.css" rel="stylesheet" type="text/css">
 <link href="../vendor/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet" type="text/css">
 <link href="../app/vendor/js/colorbox/colorbox.css" rel="stylesheet" type="text/css">
-
 <link href="../app/vendor/js/expandgrid/css/component.css" rel="stylesheet" type="text/css">
-
-
-
-
-
-
 
 <!--<link rel="stylesheet" type="text/css" href="../app/vendor/js/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="../app/vendor/js/slick/slick-theme.css"/>-->
 
 <link rel="stylesheet" type="text/css" href="../app/vendor/js/lightSlider/css/lightslider.css">
-
-
- <link type="text/css" rel="stylesheet" href="../app/vendor/js/lightGallery/css/lightgallery.css" /> 
-
-
+<link type="text/css" rel="stylesheet" href="../app/vendor/js/lightGallery/css/lightgallery.css" />
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,10 +27,6 @@
     <![endif]-->
 
 <style>
-
-
-
-
 .menuslide-out {
 	right: -227px;
 	visibility: hidden;
@@ -50,11 +35,6 @@
 	right: 0px;
 	visibility: visible;
 }
-
-
-
-
-
 .bottom-container-controls i {
 	margin-left: -3px;
 	margin-right: -3px;
@@ -128,108 +108,80 @@ h2 a, h2 a:hover {
 	padding-right: 10px;
 }
 </style>
-
-
 <style type="text/css">
-.twitter-typeahead .tt-dropdown-menu .tt-dataset-task h3,
-.twitter-typeahead .tt-dropdown-menu .tt-dataset-task-center h3 {
+.twitter-typeahead .tt-dropdown-menu .tt-dataset-task h3, .twitter-typeahead .tt-dropdown-menu .tt-dataset-task-center h3 {
 	color: #555;
 	padding: 3px 3px 10px 0;
 	margin: 10px 20px 5px 20px;
 	border-bottom: 1px solid #ccc;
-	font-size:18px;
-	    color: #a94442;
+	font-size: 18px;
+	color: #a94442;
 }
-
 .twitter-typeahead .tt-suggestion:hover {
-    color: #fff;
-    background-color: #337ab7;
+	color: #fff;
+	background-color: #337ab7;
 }
-
-
 .twitter-typeahead .tt-suggestion:hover .text-muted {
 	padding-left: 10px;
 	color: #fff;
 }
 </style>
-
 <style>
-.loadthis { display:none}</style>
-
-
-
-
-
+.loadthis {
+	display: none
+}
+</style>
 <style>
-
 .tab-content .tab-pane .panel-main .task6 {
 	width: 292px;
 }
 .tab-content .tab-pane .panel-main .task6 .tile-content {
 	width: 203px;
 }
-@media (max-width: 992px) {
 
+@media (max-width: 992px) {
 .tab-content .tab-pane .panel-main .task6 {
 	width: 341px;
 }
 .tab-content .tab-pane .panel-main .task6 .tile-content {
 	width: 247px;
 }
-
 }
 
 @media (max-width: 767px) {
-
 .tab-content .tab-pane .panel-main .task6 {
 	width: 100%;
 }
 .tab-content .tab-pane .panel-main .task6 .tile-content {
 	width: 100%;
 }
-
 }
-
-
-
 .global-announcement.color1 .ga-header {
 	background: #786BC5;
-    color: #ffffff;
-    text-shadow: 1px 1px 1px #000;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000;
 }
-
 .global-announcement.color2 .ga-header {
 	background: #E39A41;
-    color: #ffffff;
-    text-shadow: 1px 1px 1px #000;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000;
 }
-
-
 .global-announcement.color3 .ga-header {
 	background: #BC545F;
-    color: #ffffff;
-    text-shadow: 1px 1px 1px #000;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000;
 }
-
-
 .global-announcement.color4 .ga-header {
 	background: #00BB9A;
-    color: #ffffff;
-    text-shadow: 1px 1px 1px #000;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000;
 }
-
 .global-announcement.color5 .ga-header {
 	background: #44AADF;
-    color: #ffffff;
-    text-shadow: 1px 1px 1px #000;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000;
 }
-
-
-
-
 </style>
-
-
 <style type="text/css">
 .global-announcements .global-announcement {
 	min-height: 125px;
@@ -240,6 +192,22 @@ h2 a, h2 a:hover {
 	background: white;
 	margin-right: 5px;
 	position: absolute;
+}
+.global-announcement.graphic {
+	text-align: center;
+	width: 100%;
+	box-shadow: none;
+	border: none;
+	position: absolute;
+}
+.global-announcement.graphic .close {
+	position: absolute;
+	right: 30px;
+	font-size: 14px;
+	color: black;
+	top: 8px;
+	opacity: .3;
+	text-shadow: none;
 }
 .global-announcements .global-announcement .ga-header {
 	padding: 5px 10px 5px 10px;
@@ -261,7 +229,7 @@ h2 a, h2 a:hover {
 	right: 10px;
 	font-size: 14px;
 	color: black;
-	top: 10px;
+	top: 8px;
 	opacity: .3;
 	text-shadow: none;
 }
@@ -301,5 +269,4 @@ h2 a, h2 a:hover {
 	position: absolute;
 	width: 100%;
 }
-
 </style>
