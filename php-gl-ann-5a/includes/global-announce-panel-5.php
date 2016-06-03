@@ -1,5 +1,3 @@
-
-
 <section id="global-announcements" class="global-announcements" style=" display:; background: #ffffff; min-height:;-webkit-box-shadow: inset 0 20px 15px -20px rgba(0,0,0,0.1);-moz-box-shadow: inset 0 20px 15px -20px rgba(0,0,0,0.1);box-shadow: inset 0 20px 15px -20px rgba(0,0,0,0.1);border-top: solid 1px #ebebeb;">
     <div class="container" style="padding-top: 10px;padding-bottom: 10px;min-height: 175px;position: relative;padding-left: 0px;padding-right: 0px;">
         <ul id="ga-slider">
@@ -26,9 +24,7 @@
                 </div>
             </li>
             <li class="col-xs-4">
-                <div class="global-announcement graphic"><img src="../img/global-announcement/ga-classifieds-lg.png"  alt="classifieds global announcement" class="visible-lg"/>
-                										<img src="../img/global-announcement/ga-classifieds-md.png"  alt="classifieds global announcement" class="visible-md visible-xs-inline"/>
-                                                        <img src="../img/global-announcement/ga-classifieds-sm.png"  alt="classifieds global announcement" class="visible-sm"/></div>
+                <div class="global-announcement graphic"> <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a> <img src="../img/global-announcement/ga-classifieds-lg.png"  alt="classifieds global announcement" class="visible-lg"/> <img src="../img/global-announcement/ga-classifieds-md.png"  alt="classifieds global announcement" class="visible-md visible-xs-inline"/> <img src="../img/global-announcement/ga-classifieds-sm.png"  alt="classifieds global announcement" class="visible-sm"/></div>
             </li>
             <li class="col-xs-4">
                 <div class="global-announcement color2" >
@@ -41,9 +37,7 @@
                 </div>
             </li>
             <li class="col-xs-4">
-                <div class="global-announcement graphic"><img src="../img/global-announcement/ga-3party-lg.png"  alt="3party global announcement" class="visible-lg"/>
-                										<img src="../img/global-announcement/ga-3party-md.png"  alt="3party global announcement" class="visible-md visible-xs-inline"/>
-                                                        <img src="../img/global-announcement/ga-3party-sm.png"  alt="3party global announcement" class="visible-sm"/></div>
+                <div class="global-announcement graphic"> <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a> <img src="../img/global-announcement/ga-3party-lg.png"  alt="3party global announcement" class="visible-lg"/> <img src="../img/global-announcement/ga-3party-md.png"  alt="3party global announcement" class="visible-md visible-xs-inline"/> <img src="../img/global-announcement/ga-3party-sm.png"  alt="3party global announcement" class="visible-sm"/></div>
             </li>
             <li class="col-xs-4">
                 <div class="global-announcement color5" >
@@ -77,13 +71,9 @@
                     </div>
                 </div>
             </li>
-            
             <li class="col-xs-4">
-                <div class="global-announcement graphic"><img src="../img/global-announcement/ga-box-lg.png"  alt="box global announcement" class="visible-lg"/>
-                										<img src="../img/global-announcement/ga-box-md.png"  alt="box global announcement" class="visible-md visible-xs-inline"/>
-                                                        <img src="../img/global-announcement/ga-box-sm.png"  alt="box global announcement" class="visible-sm"/></div>
+                <div class="global-announcement graphic"> <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a> <img src="../img/global-announcement/ga-box-lg.png"  alt="box global announcement" class="visible-lg"/> <img src="../img/global-announcement/ga-box-md.png"  alt="box global announcement" class="visible-md visible-xs-inline"/> <img src="../img/global-announcement/ga-box-sm.png"  alt="box global announcement" class="visible-sm"/></div>
             </li>
-            
             <li class="col-xs-4">
                 <div class="global-announcement color2" >
                     <div class="ga-header"> Telephone Service Disruption <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
