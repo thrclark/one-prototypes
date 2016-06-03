@@ -20,7 +20,7 @@ $( ".toggle-global-announcements" ).click(function() {
 </script>
 <script>
 $( ".close" ).click(function() {
-   $(this).closest(".col-md-4").fadeOut( "fast" );
+   $(this).closest('li').fadeOut( "fast" );
   
 });
 </script>
@@ -99,7 +99,6 @@ $(document).ready(function() {
 });
 </script>
 <script>
-  
   $(document).ready(function() {
 	$(".task-title-primary, .task-title-secondary,.tile-description-mobile, .tile-description, .task-activecontent").dotdotdot({
 		/*	The text to add as ellipsis. */
@@ -138,9 +137,6 @@ $(document).ready(function() {
 		}
 	});
 });
-
-
-
 </script>
 <script>
 $('.description').readmore({
@@ -161,102 +157,39 @@ $('.description').readmore({
     });
 </script>
 <script>
-
 $(document).ready(function() {
-
 $('.divider').on('hide.bs.dropdown', function () {
     return false;
 });
-
-
-
 });
-
-
 </script>
-<!--<script>
-  $(document).ready(function () {
-   $('#myCarousel .review-content').readmore({
-            moreLink: '<a href="#" class="moreless">more...</a>',
-            lessLink: '<a href="#" class="moreless">less...</a>',
-            collapsedHeight: 70,
-			speed:500,
-        });
-    $('#myCarousel').on('slid.bs.carousel', function () {
-        $('#myCarousel .review-content').readmore({
-            moreLink: '<a href="#" class="moreless">more...</a>',
-            lessLink: '<a href="#" class="moreless">less...</a>',
-            collapsedHeight: 70,
-			speed:500,
-        });
-      });
-    });
-
-
-</script>
--->
 <script>
     $(document).ready(function() {
-        $('.ga-body div').readmore({
+         $('.ga-body div').readmore({
             moreLink: '<a href="#" class="moreless">more...</a>',
             lessLink: '<a href="#" class="moreless">less...</a>',
             collapsedHeight: 60,
             speed: 500,
-        });
-
-        $('.comment-list .message-content').readmore({
-            moreLink: '<a href="#" class="moreless">more...</a>',
-            lessLink: '<a href="#" class="moreless">less...</a>',
-            collapsedHeight: 80,
-            speed: 500,
-        });
-
-        $('#myCarousel').on('slid.bs.carousel', function() {
-            $('#myCarousel .ga-body div').readmore({
-                moreLink: '<a href="#" class="moreless">more...</a>',
-                lessLink: '<a href="#" class="moreless">less...</a>',
-                collapsedHeight: 60,
-                speed: 500,
-            });
+            afterToggle: function(trigger, element, expanded) {
+                if (!expanded) {
+                    $('.lSSlideWrapper, .lSSlideOuter').css("overflow", "hidden");
+                } else {
+                    $('.lSSlideWrapper, .lSSlideOuter').css("overflow", "visible");
+                }
+            }
         });
     });
 </script>
-
-
-
-
 <script>
     $(document).ready(function() {
         $('.dismiss-announcement').click(function() {
             $(this).closest(".announcement").fadeOut( "fast" );
-			
-
         });
-		
-		
-		
-		
         $('.dismiss-announcement-all').click(function() {
-      
             $('.announcements-nonew').show('fast');
-
         });
     });
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script>
     $(document).ready(function() {
         $('.dismiss-announcement1').click(function() {
@@ -270,18 +203,12 @@ $('.divider').on('hide.bs.dropdown', function () {
         });
     });
 </script>
-
-
-
-
 <script>
     $(document).ready(function() {
-
         $('.nav-tabs-responsive').tabCollapse();
 		$('.nav-tabs-responsive').on('shown-tabs.bs.tabcollapse', function(){
     		$('.nav-tabs-responsive a:first').tab('show')
 });
-
     });
 	
 </script>
@@ -337,4 +264,73 @@ $('.divider').on('hide.bs.dropdown', function () {
             slideMargin: 20
         });
     }); //]]>
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+       $("#ga-slider").lightSlider({
+        item: 3,
+        autoWidth: false,
+        slideMove: 1, // slidemove will be 1 if loop is true
+        slideMargin: 0,
+ 
+        addClass: '',
+        mode: "slide",
+        useCSS: true,
+        cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+        easing: 'linear', //'for jquery animation',////
+ 
+        speed: 400, //ms'
+        auto: false,
+        loop: false,
+        slideEndAnimation: true,
+        pause: 2000,
+ 
+        keyPress: false,
+        controls: true,
+        prevHtml: '',
+        nextHtml: '',
+ 
+        rtl:false,
+        adaptiveHeight:false,
+ 
+        vertical:false,
+        verticalHeight:500,
+        vThumbWidth:100,
+ 
+        thumbItem:10,
+        pager: true,
+        gallery: false,
+        galleryMargin: 5,
+        thumbMargin: 5,
+        currentPagerPosition: 'middle',
+ 
+        enableTouch:true,
+        enableDrag:true,
+        freeMove:true,
+        swipeThreshold: 40,
+ 
+        responsive : [{
+                breakpoint:1299,
+                settings: {
+                    item:2,
+                    slideMove:1,
+                    slideMargin:6,
+                  }
+            },
+            {
+                breakpoint:767,
+                settings: {
+                    item:1,
+                    slideMove:1
+                  }
+            }],
+ 
+        onBeforeStart: function (el) {},
+        onSliderLoad: function (el) {},
+        onBeforeSlide: function (el) {},
+        onAfterSlide: function (el) {},
+        onBeforeNextSlide: function (el) {},
+        onBeforePrevSlide: function (el) {}
+    });
+});
 </script>
