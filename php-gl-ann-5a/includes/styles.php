@@ -269,4 +269,29 @@ h2 a, h2 a:hover {
 	position: absolute;
 	width: 100%;
 }
+.lSAction > .lSPrev, .lSAction > .lSNext {
+	display: block;
+	font-size: 28px;
+	color: black;
+}
+.lSAction > .lSNext {
+	right: -25px;
+}
+.lSAction > .lSPrev {
+	left: -25px;
+}
+.lSAction > a {
+	background-image: none;
+	top: 45%;
+}
+#ga-slider {
+	margin-left: -7px;
+}
+
+
+@media (max-width: 767px) {
+#ga-slider {
+	margin-left: 0px;
+}
+}
 </style>
