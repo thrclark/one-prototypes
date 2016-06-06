@@ -287,8 +287,8 @@ $(document).ready(function() {
  
         keyPress: false,
         controls: true,
-        prevHtml: '',
-        nextHtml: '',
+        prevHtml: '<i class="icon-left-open-big"></i>',
+        nextHtml: '<i class="icon-right-open-big"></i>',
  
         rtl:false,
         adaptiveHeight:false,
@@ -298,10 +298,10 @@ $(document).ready(function() {
         vThumbWidth:100,
  
         thumbItem:10,
-        pager: true,
+        pager: false,
         gallery: false,
         galleryMargin: 5,
-        thumbMargin: 5,
+        thumbMargin: 0,
         currentPagerPosition: 'middle',
  
         enableTouch:true,
@@ -314,14 +314,15 @@ $(document).ready(function() {
                 settings: {
                     item:2,
                     slideMove:1,
-                    slideMargin:6,
+                    slideMargin:20,
                   }
             },
             {
                 breakpoint:767,
                 settings: {
                     item:1,
-                    slideMove:1
+                    slideMove:1,
+					 slideMargin:20,
                   }
             }],
  
@@ -332,5 +333,10 @@ $(document).ready(function() {
         onBeforeNextSlide: function (el) {},
         onBeforePrevSlide: function (el) {}
     });
+	$( ".lSAction" ).insertAfter( ".lSSlideOuter" );
 });
 </script>
+
+
+
+
