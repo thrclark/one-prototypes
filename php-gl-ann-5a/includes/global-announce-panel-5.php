@@ -12,7 +12,7 @@
                 </div>
             </li>
             <li class="col-xs-4">
-                <div class="global-announcement color3" >
+                <div class="global-announcement color2" >
                     <div class="ga-header"> Textbook Order Deadline <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
                     <div class="ga-body">
                         <div>
@@ -23,11 +23,11 @@
                     </div>
                 </div>
             </li>
-            <li class="col-xs-4">
+            <!-- <li class="col-xs-4">
                 <div class="global-announcement graphic"> <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a> <img src="../img/global-announcement/ga-classifieds-lg.png"  alt="classifieds global announcement" class="visible-lg"/> <img src="../img/global-announcement/ga-classifieds-md.png"  alt="classifieds global announcement" class="visible-md visible-xs-inline"/> <img src="../img/global-announcement/ga-classifieds-sm.png"  alt="classifieds global announcement" class="visible-sm"/></div>
-            </li>
+            </li>-->
             <li class="col-xs-4">
-                <div class="global-announcement color2" >
+                <div class="global-announcement color3" >
                     <div class="ga-header"> Telephone Service Disruption <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
                     <div class="ga-body">
                         <div>
@@ -36,11 +36,11 @@
                     </div>
                 </div>
             </li>
-            <li class="col-xs-4">
+            <!-- <li class="col-xs-4">
                 <div class="global-announcement graphic"> <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a> <img src="../img/global-announcement/ga-3party-lg.png"  alt="3party global announcement" class="visible-lg"/> <img src="../img/global-announcement/ga-3party-md.png"  alt="3party global announcement" class="visible-md visible-xs-inline"/> <img src="../img/global-announcement/ga-3party-sm.png"  alt="3party global announcement" class="visible-sm"/></div>
-            </li>
+            </li>-->
             <li class="col-xs-4">
-                <div class="global-announcement color5" >
+                <div class="global-announcement color4" >
                     <div class="ga-header"> Spring Break Campus Hours <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
                     <div class="ga-body">
                         <div>
@@ -50,7 +50,7 @@
                 </div>
             </li>
             <li class="col-xs-4">
-                <div class="global-announcement color1" >
+                <div class="global-announcement color5" >
                     <div class="ga-header"> Class Registration Begins Today <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
                     <div class="ga-body">
                         <div>
@@ -60,7 +60,7 @@
                 </div>
             </li>
             <li class="col-xs-4">
-                <div class="global-announcement color3" >
+                <div class="global-announcement color6" >
                     <div class="ga-header"> Textbook Order Deadline <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
                     <div class="ga-body">
                         <div>
@@ -71,11 +71,11 @@
                     </div>
                 </div>
             </li>
-            <li class="col-xs-4">
+            <!-- <li class="col-xs-4">
                 <div class="global-announcement graphic"> <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a> <img src="../img/global-announcement/ga-box-lg.png"  alt="box global announcement" class="visible-lg"/> <img src="../img/global-announcement/ga-box-md.png"  alt="box global announcement" class="visible-md visible-xs-inline"/> <img src="../img/global-announcement/ga-box-sm.png"  alt="box global announcement" class="visible-sm"/></div>
-            </li>
+            </li>-->
             <li class="col-xs-4">
-                <div class="global-announcement color2" >
+                <div class="global-announcement color1" >
                     <div class="ga-header"> Telephone Service Disruption <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
                     <div class="ga-body">
                         <div>
@@ -85,7 +85,7 @@
                 </div>
             </li>
             <li class="col-xs-4">
-                <div class="global-announcement color4" >
+                <div class="global-announcement color2" >
                     <div class="ga-header"> Buy it? Sell it? Classifieds! <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
                     <div class="ga-body">
                         <div>
@@ -95,7 +95,7 @@
                 </div>
             </li>
             <li class="col-xs-4">
-                <div class="global-announcement color5" >
+                <div class="global-announcement color3" >
                     <div class="ga-header"> Spring Break Campus Hours <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
                     <div class="ga-body">
                         <div>
