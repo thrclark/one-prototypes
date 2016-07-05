@@ -166,8 +166,8 @@ $('.divider').on('hide.bs.dropdown', function () {
 <script>
     $(document).ready(function() {
          $('.ga-body div').readmore({
-            moreLink: '<a href="#" class="moreless">more...</a>',
-            lessLink: '<a href="#" class="moreless">less...</a>',
+            moreLink: '<a href="#" class="moreless">view more...</a>',
+            lessLink: '<a href="#" class="moreless">view less...</a>',
             collapsedHeight: 60,
             speed: 500,
             afterToggle: function(trigger, element, expanded) {

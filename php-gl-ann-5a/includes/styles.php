@@ -181,6 +181,12 @@ h2 a, h2 a:hover {
 	color: #ffffff;
 	text-shadow: 1px 1px 1px #000;
 }
+
+.global-announcement.color6 .ga-header {
+	background: #60574d;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000;
+}
 </style>
 <style type="text/css">
 .global-announcements .global-announcement {

@@ -7,14 +7,11 @@ $page = '';
 <head>
 <?php include ('includes/head-meta.php') ?>
 <?php include ('includes/styles.php') ?>
-
 <style>
 .global-announcements .global-announcement {
-	position:relative}
-
-
+	position: relative
+}
 </style>
-
 <?php include ('includes/scripts.php') ?>
 </head>
 <body id="top" style=" background-color:#FFFFFF" >
@@ -130,11 +127,41 @@ $page = '';
             </div>
             <div class="row" style="margin-top:20px">
                 <div class="col-md-4">
+                    <div class="global-announcement color1">
+                        <div class="ga-header"> Class Registration Begins Today</div>
+                        <div class="ga-body">
+                            <div>
+                                <p>Spring term 2016 is open. Check your email for information on your registration appointment. Register early and get the classes you need.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="global-announcement color2">
+                        <div class="ga-header"> Textbook Order Deadline</div>
+                        <div class="ga-body">
+                            <div>
+                                <p>If you are placing a textbook order for the Summer 2016 session, the last day to do so will be this Friday, May 13th.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
                     <div class="global-announcement color3">
                         <div class="ga-header"> Textbook Order Deadline</div>
                         <div class="ga-body">
                             <div>
                                 <p>If you are placing a textbook order for the Summer 2016 session, the last day to do so will be this Friday, May 13th.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="global-announcement color4">
+                        <div class="ga-header"> Buy it? Sell it? Classifieds!</div>
+                        <div class="ga-body">
+                            <div>
+                                <p>IU Classifies is the place to find what you need, sell what you don't need. Easy browsing of ads, and quick posting of your own ads. Check it out!</p>
                             </div>
                         </div>
                     </div>
@@ -150,21 +177,11 @@ $page = '';
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="global-announcement color1">
-                        <div class="ga-header"> Class Registration Begins Today</div>
+                    <div class="global-announcement color6">
+                        <div class="ga-header"> Spring Break Campus Hours </div>
                         <div class="ga-body">
                             <div>
-                                <p>Spring term 2016 is open. Check your email for information on your registration appointment. Register early and get the classes you need.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="global-announcement color4">
-                        <div class="ga-header"> Buy it? Sell it? Classifieds!</div>
-                        <div class="ga-body">
-                            <div>
-                                <p>IU Classifies is the place to find what you need, sell what you don't need. Easy browsing of ads, and quick posting of your own ads. Check it out!</p>
+                                <p>During the week of spring break, general offices of the campus will have restricted hours of operation. Please check your area offices.</p>
                             </div>
                         </div>
                     </div>
