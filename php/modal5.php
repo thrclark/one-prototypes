@@ -21,7 +21,7 @@ $page = '';
 	padding-top: 5px;
 }
 
-dialog .modal-content .modal-header .modal-title [class*='icon-'] {
+.modal-dialog .modal-content .modal-header .modal-title [class*='icon-'] {
 	padding-right: 5px;
 }
 
