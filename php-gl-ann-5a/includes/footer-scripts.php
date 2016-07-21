@@ -100,7 +100,7 @@ $(document).ready(function() {
 </script>
 <script>
   $(document).ready(function() {
-	$(".task-title-primary, .task-title-secondary,.tile-description-mobile, .tile-description, .task-activecontent").dotdotdot({
+	$(".task-title-primary, .task-title-secondary,.tile-description-mobile, .tile-description, .task-activecontent, .ga-body div").dotdotdot({
 		/*	The text to add as ellipsis. */
 		ellipsis	: '... ',
  
@@ -163,23 +163,7 @@ $('.divider').on('hide.bs.dropdown', function () {
 });
 });
 </script>
-<script>
-    $(document).ready(function() {
-         $('.ga-body div').readmore({
-            moreLink: '<a href="#" class="moreless">view more...</a>',
-            lessLink: '<a href="#" class="moreless">view less...</a>',
-            collapsedHeight: 60,
-            speed: 500,
-            afterToggle: function(trigger, element, expanded) {
-                if (!expanded) {
-                    $('.lSSlideWrapper, .lSSlideOuter').css("overflow", "hidden");
-                } else {
-                    $('.lSSlideWrapper, .lSSlideOuter').css("overflow", "visible");
-                }
-            }
-        });
-    });
-</script>
+
 <script>
     $(document).ready(function() {
         $('.dismiss-announcement').click(function() {
