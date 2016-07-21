@@ -187,7 +187,7 @@ $(function() {
 <header class="">
     <div class="container app-header " id="contain2">
         <div class="row">
-            <div class="col-xs-10 col-sm-11 col-md-3 col-lg-3 brand"> <a class="logo" href="SD-home.php" id="sidebar_logo" tabindex="0"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo.png" class="hidden-xs hidden-sm"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo-mobile.png" class="hidden-md hidden-lg">
+            <div class="col-xs-10 col-sm-11 col-md-3 col-lg-3 brand"> <a class="logo" href="store.php" id="sidebar_logo" tabindex="0"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo.png" class="hidden-xs hidden-sm"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo-mobile.png" class="hidden-md hidden-lg">
                 <h1><span class="sr-only">One.IU</span></h1></a> </div>
             <div class="col-xs-2 col-sm-1 hidden-md hidden-lg mobile-menu">
                 <button type="button" id="menu_button" class="btn btn-signin pull-right" tabindex="0"><span class="sr-only">Toggle menu</span><i class="icon-menu"></i></button>

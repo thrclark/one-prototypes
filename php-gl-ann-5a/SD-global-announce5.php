@@ -8,7 +8,6 @@ $page = '';
 <?php include ('includes/head-meta.php') ?>
 <?php include ('includes/styles.php') ?>
 <?php include ('includes/scripts.php') ?>
-
 </head>
 <body id="top" >
 <div class="alert alert-application" role="alert" style="display:none">
@@ -39,7 +38,6 @@ $page = '';
                 <div class="col-md-6 hidden-xs hidden-sm">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#" class="toggle-global-announcements open"><i class="icon-bell-3"></i> <span class="sr-only">Notifications</span></a> </li>
-                   
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-user-3"></i> Hello, Tom</a>
                             <ul class="dropdown-menu">
                                 <li><a href="#" tabindex="0" class=""><i class="icon-heart"></i> My Favorites</a></li>
@@ -1990,12 +1988,8 @@ $page = '';
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- end ngRepeat: tile in tiles --></div>
+                </div>
             </div>
-            <!-- end ngIf: ::store.tasks.taskCollections.length != 1 || (!editingFavorites && !editingMostRecent) --><!-- /taskList --> 
-            <!-- ngIf: store.tasks.taskCollections.length == 1 && editingFavorites --><!-- /taskList --> 
-            <!-- ngIf: store.tasks.taskCollections.length == 1 && editingMostRecent --><!-- /taskList --> 
         </div>
     </div>
 </div>
@@ -2005,18 +1999,17 @@ $page = '';
 <?php include('includes/brand-footer.php') ?>
 <?php include('includes/footer-scripts.php') ?>
 <script>
-
-$(document).ready(function() {
-
-$('.divider').on('hide.bs.dropdown', function () {
-    return false;
-});
-
-
-
-});
-
-
+    $(window).load(function() {
+        $("#global-announcements").hide();
+        $(".toggle-global-announcements").removeClass("open");
+    });
+</script> 
+<script>
+    $(document).ready(function() {
+        $('.divider').on('hide.bs.dropdown', function() {
+            return false;
+        });
+    });
 </script>
 </body>
 </html>

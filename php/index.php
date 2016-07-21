@@ -29,27 +29,15 @@ header .app-header h1 {
         <div class="" style="margin-top:40px; margin-bottom:40px">
             <h2 class="">One.IU Prototypes</h2>
             <ul>
-                <li><a href="SD-home.php" target="_blank">Store Home</a> </li>
-                <li><a href="SD-searchresults.php" target="_blank">Search Results</a> </li>
-                <li><a href="SD-tcp5.php" target="_blank">TCP</a> </li>
-                <li><a href="SD-tcp6.php" target="_blank">TCP</a> (with 'support' tab)</li>
-                <li><a href="SD-tcp5-empty.php" target="_blank">TCP</a> (empty) </li>
-                <li><a href="SD-tdp1.php" target="_blank">TDP</a> </li>
-                <li><a href="SD-tdp1-noreviews.php" target="_blank">TDP</a> (ratings only) </li>
+                <li><a href="store.php" target="_blank">Store Home</a> </li>
+                <li><a href="searchresults.php" target="_blank">Search Results</a> </li>
+                <li><a href="tcp.php" target="_blank">TCP</a> </li>
+                <li><a href="tcp-withsupport.php" target="_blank">TCP</a> (with 'support' tab)</li>
+                <li><a href="tcp-notasks.php" target="_blank">TCP</a> (empty) </li>
+                <li><a href="tdp.php" target="_blank">TDP</a> </li>
+                <li><a href="tdp-noreviews.php" target="_blank">TDP</a> (ratings only) </li>
             </ul>
-            <h4>Global Announcements</h4>
-            <ul>
-                <li><a href="SD-global-announce1.php" target="_blank">version 1</a></li>
-                <li><a href="SD-global-announce2.php" target="_blank">version 2</a>
-                <li><a href="SD-global-announce2a.php" target="_blank">version 2 (with no new announcements)</a></li>
-                <li><a href="SD-global-announce3a.php" target="_blank">version 3a</a>
-                <li><a href="SD-global-announce3b.php" target="_blank">version 3b</a>
-                <li><a href="SD-global-announce4.php" target="_blank">version 4</a>
-                <li><a href="../php-gl-ann-5a/SD-global-announce5.php" target="_blank">version 5 (collapsable)</a>
-                <li><a href="../php-gl-ann-5b/SD-global-announce5.php" target="_blank">version 5 (non-collapsable)</a>
-                <li><a href="../php-gl-ann-6a/SD-global-announce6.php" target="_blank">version 6 (fixed to left)</a>
-                <li><a href="../php-gl-ann-6b/SD-global-announce6.php" target="_blank">version 6 (fixed to right)</a>
-            </ul>
+           
         </div>
     </div>
 </div>
