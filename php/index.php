@@ -37,15 +37,6 @@ header .app-header h1 {
                 <li><a href="SD-tdp1.php" target="_blank">TDP</a> </li>
                 <li><a href="SD-tdp1-noreviews.php" target="_blank">TDP</a> (ratings only) </li>
             </ul>
-            <h4> Modal Redesign</h4>
-            <ul>
-                <li><a href="modal1.php" target="_blank">example 1</a> (default Bootsrap) </li>
-                <li><a href="modal2.php" target="_blank">example 2</a> (color backgrounds 1 )</li>
-                <li><a href="modal3.php" target="_blank">example 3</a> (color backgrounds 2 )</li>
-                <li><a href="modal4.php" target="_blank">example 4</a> (full color)</li>
-                <li><a href="modal5.php" target="_blank">example 5</a> (color backgrounds + border)</li>
-                <li><a href="modal6.php" target="_blank">example 6</a> (color borders)</li>
-            </ul>
             <h4>Global Announcements</h4>
             <ul>
                 <li><a href="SD-global-announce1.php" target="_blank">version 1</a></li>

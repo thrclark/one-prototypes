@@ -8,91 +8,21 @@ $page = '';
 <?php include ('includes/head-meta.php') ?>
 <?php include ('includes/styles.php') ?>
 <?php include ('includes/scripts.php') ?>
-<style>
-.comment-list .message-header h5 {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: bold;
-	display: inline;
-}
-h5 {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: bold;
-	padding-bottom: 10px;
-	padding-top: 10px;
-	font-size: 16px;
-}
-.comment-list .icon-star, .ratings-overview .icon-star, .ratings .icon-star {
-	color: orange;
-}
-.comment-list .icon-star-empty {
-	color: #cccccc;
-}
-.comment-list li {
-	border-bottom: solid 1px #CCCCCC;
-}
-.comment-list li:last-child {
-	border-bottom: none;
-}
-.comment-list .post-date {
-	font-style: italic;
-}
-.comment-list .post-author {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: bold;
-}
-.comment-list .message-header .review-postinfo {
-	text-align: right;
-}
-.comment-list .review-content {
-	margin-bottommm: 10px;
-}
-.comment-list .message-header {
-	padding-bottom: 10px;
-	padding-top: 10px;
-}
-.comment-list li:last-child {
-	border-bottom: none;
-}
-.carousel-linked-nav, .item img {
-	display: block;
-	margin: 0 auto;
-}
-.carousel-linked-nav {
-	width: 190px;
-	margin-bottom: 20px;
-}
-.pagination>li>a, .pagination>li>span {
-	border-radius: 50% !important;
-	margin: 0 5px;
-}
 
-@media (max-width: 992px) {
-.comment-list .message-header .review-postinfo {
-	text-align: left;
-}
-}
-.carousel-inner {
-	min-heightttt: 150px
-}
-</style>
 </head>
 <body id="top" >
 <?php include ('includes/mobile-sidebar.php') ?>
 <?php include ('includes/brand-header.php') ?>
 <?php include ('includes/header-gen-announcements5.php') ?>
-<section class="utilities-bar">
+<section class="utilities-bar hidden-xs">
     <div class="container">
         <nav class="navbar navbar-default"  style="margin-bottom:0px">
             <div class="row">
-                <div class="col-md-6 col-xs-12">
-                    <nav class="btn-group btn-breadcrumb" > </nav>
-                </div>
+                <div class="col-md-6 col-xs-12"> </div>
                 <div class="col-md-6 hidden-xs hidden-sm">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" class="toggle-global-announcements"><i class="icon-bell-3"></i> <span class="sr-only">Notifications</span></a> </li>
-                        <li><a href="#" class="launch-notifications"><i class="icon-inbox-alt"></i>
-                            <div class="container-badge"><span class="badge">2</span></div>
-                            <span class="sr-only">Inbox</span></a> </li>
+                        <li><a href="#" class="toggle-global-announcements open"><i class="icon-bell-3"></i> <span class="sr-only">Notifications</span></a> </li>
+                   
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-user-3"></i> Hello, Tom</a>
                             <ul class="dropdown-menu">
                                 <li><a href="#" tabindex="0" class=""><i class="icon-heart"></i> My Favorites</a></li>
@@ -112,11 +42,8 @@ h5 {
             </div>
         </nav>
     </div>
-    <div class="container" style="position:relative">
-        <?php include ('modal/inbox.php') ?>
-    </div>
 </section>
-<?php include ('includes/global-announcements.php') ?>
+<?php include ('includes/global-announce-panel-5.php') ?>
 <div class="main-content container" role="main">
     <div id="main-content">
         <h2 class="sr-only">Tasks</h2>

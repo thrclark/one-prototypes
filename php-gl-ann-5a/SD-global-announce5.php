@@ -39,9 +39,7 @@ $page = '';
                 <div class="col-md-6 hidden-xs hidden-sm">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#" class="toggle-global-announcements open"><i class="icon-bell-3"></i> <span class="sr-only">Notifications</span></a> </li>
-                        <!--<li><a href="#" class="launch-notifications"><i class="icon-inbox-alt"></i>
-                            <div class="container-badge"><span class="badge">2</span></div>
-                            <span class="sr-only">Inbox</span></a> </li>-->
+                   
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-user-3"></i> Hello, Tom</a>
                             <ul class="dropdown-menu">
                                 <li><a href="#" tabindex="0" class=""><i class="icon-heart"></i> My Favorites</a></li>
@@ -60,9 +58,6 @@ $page = '';
                 </div>
             </div>
         </nav>
-    </div>
-    <div class="container" style="position:relative">
-        <?php include ('modal/inbox.php') ?>
     </div>
 </section>
 <?php include ('includes/global-announce-panel-5.php') ?>

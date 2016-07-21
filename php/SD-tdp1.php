@@ -1,6 +1,3 @@
-
-
-
 <?php
 $section = '';
 $page = '';
@@ -12,45 +9,56 @@ $page = '';
 <?php include('includes/styles.php') ?>
 <?php include('includes/scripts.php') ?>
 <style>
-.lSPager.lSGallery li:last-child a:before {
-	    position: absolute;
-    content: '\e810';
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 90px;
-    height: 60px;
-    font-family: 'fontello';
-    color: #ffffff;
-    left: 0px;
-    font-size: 36px;
-    padding-left: 26px;
-    padding-top: 4px;
-	
-	}
+.tab-content .tab-pane .panel-main .task6 {
+	width: 292px;
+}
+.tab-content .tab-pane .panel-main .task6 .tile-content {
+	width: 203px;
+}
+
+@media (max-width: 992px) {
+.tab-content .tab-pane .panel-main .task6 {
+	width: 341px;
+}
+.tab-content .tab-pane .panel-main .task6 .tile-content {
+	width: 247px;
+}
+}
+
+@media (max-width: 767px) {
+.tab-content .tab-pane .panel-main .task6 {
+	width: 100%;
+}
+.tab-content .tab-pane .panel-main .task6 .tile-content {
+	width: 100%;
+}
+}
+</style>
 </style>
 </head>
 <body id="top">
 <?php include ('includes/mobile-sidebar.php') ?>
 <?php include ('includes/brand-header.php') ?>
 <?php include ('includes/header-gen-announcements5.php') ?>
-
 <section class="utilities-bar">
     <div class="container">
         <nav class="navbar navbar-default"  style="margin-bottom:0px">
             <div class="row">
                 <div class="col-md-6 col-xs-12">
-                     <nav class="btn-group btn-breadcrumb" > <a href="SD-home.php" class="btn btn-default"><i class="icon-home-2"></i><span class="sr-only">Home</></a>
+                    <nav class="btn-group btn-breadcrumb" > <a href="SD-home.php" class="btn btn-default"><i class="icon-home-2"></i><span class="sr-only">Home</></a>
                         <div class="btn btn-default seemore" style="">...</div>
                         <a href="SD-searchresults.php" class="btn btn-default">
-                        <div>Search Results</div></a> <div class="btn">
-                        <div>Classifieds</div></div> </nav>
-                  
+                        <div>Search Results</div>
+                        </a>
+                        <div class="btn">
+                            <div>Classifieds</div>
+                        </div>
+                    </nav>
                 </div>
                 <div class="col-md-6 hidden-xs hidden-sm">
-                    <ul class="nav navbar-nav navbar-right"> <li><a href="#" class=""><i class="icon-bell-3"></i>
-                       
-                            <span class="sr-only">Notifications</span></a> </li>
-
-<li><a href="#" class="launch-notifications"><i class="icon-inbox-alt"></i>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class=""><i class="icon-bell-3"></i> <span class="sr-only">Notifications</span></a> </li>
+                        <li><a href="#" class="launch-notifications"><i class="icon-inbox-alt"></i>
                             <div class="container-badge"><span class="badge">2</span></div>
                             <span class="sr-only">Inbox</span></a> </li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-user-3"></i> Hello, Tom</a>
@@ -76,7 +84,6 @@ $page = '';
         <?php include ('modal/inbox.php') ?>
     </div>
 </section>
-
 <div class="main-content container" role="main">
     <div id="main-content">
         <div class="tcptdp-header">
@@ -115,7 +122,8 @@ $page = '';
                     <li><a href="#reviewsratings" data-toggle=tab>Reviews</a></li>
                     <li><a href="#related" data-toggle=tab>Related</a></li>
                     <li><a href="#announcements" data-toggle=tab> Announcements
-                        <div class="container-badge" id="announcement-counter"><span class="badge">20</span></div></a></li>
+                        <div class="container-badge" id="announcement-counter"><span class="badge">20</span></div>
+                        </a></li>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane fade in active" id="overview">
@@ -430,7 +438,8 @@ $page = '';
                                     <div class="tile-header">
                                         <h4 class="task-title-primary">IU News Room</h4>
                                         <div class="task-title-secondary"><span class="app-name"></span> <span class="market">(All IU Campuses)</span></div>
-                                    </div></a>
+                                    </div>
+                                    </a>
                                     <div class="task-attributes">
                                         <div class="star-widget">
                                             <ul class="star-background" aria-hidden="true">
@@ -468,7 +477,8 @@ $page = '';
                                     <div class="tile-header">
                                         <h4 class="task-title-primary">IU Classifieds</h4>
                                         <div class="task-title-secondary"><span class="app-name"></span> <span class="market">(All IU Campuses)</span></div>
-                                    </div></a>
+                                    </div>
+                                    </a>
                                     <div class="task-attributes">
                                         <div class="star-widget">
                                             <ul class="star-background" aria-hidden="true">
@@ -506,7 +516,8 @@ $page = '';
                                     <div class="tile-header">
                                         <h4 class="task-title-primary">iBucks Meal Plans</h4>
                                         <div class="task-title-secondary"><span class="app-name">RPS</span> <span class="market">(All IU Campuses)</span></div>
-                                    </div></a>
+                                    </div>
+                                    </a>
                                     <div class="task-attributes">
                                         <div class="star-widget">
                                             <ul class="star-background" aria-hidden="true">
@@ -545,7 +556,8 @@ $page = '';
                                         <h4 class="task-title-primary">Childcare Fees</h4>
                                         <div class="task-title-secondary"><span class="app-name"></span> <span class="market">(All IU Campuses)</span></div>
                                     </div>
-                                    <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                                    <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                                    </a>
                                     <div class="task-attributes">
                                         <div class="star-widget">
                                             <ul class="star-background" aria-hidden="true">
@@ -584,7 +596,8 @@ $page = '';
                                         <h4 class="task-title-primary">Grade Report</h4>
                                         <div class="task-title-secondary"><span class="app-name">SIS</span> <span class="market">(All IU Campuses)</span></div>
                                     </div>
-                                    <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                                    <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                                    </a>
                                     <div class="task-attributes">
                                         <div class="star-widget">
                                             <ul class="star-background" aria-hidden="true">
@@ -623,7 +636,8 @@ $page = '';
                                         <h4 class="task-title-primary">Exchange Email</h4>
                                         <div class="task-title-secondary"><span class="app-name"></span> <span class="market">(All IU Campuses)</span></div>
                                     </div>
-                                    <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                                    <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                                    </a>
                                     <div class="task-attributes">
                                         <div class="star-widget">
                                             <ul class="star-background" aria-hidden="true">
@@ -662,7 +676,8 @@ $page = '';
                                         <h4 class="task-title-primary">IUanyWAre</h4>
                                         <div class="task-title-secondary"><span class="app-name"></span> <span class="market">(All IU Campuses)</span></div>
                                     </div>
-                                    <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div></a>
+                                    <div class="task-activecontent"><span class="activecontent-label"></span> <span class="activecontent-value"></span></div>
+                                    </a>
                                     <div class="task-attributes">
                                         <div class="star-widget">
                                             <ul class="star-background" aria-hidden="true">
@@ -816,7 +831,9 @@ $page = '';
 <?php include('modal/SD-1002-settings.php') ?>
 <?php include('modal/writereview.php') ?>
 <?php include('modal/releasenotes.php') ?>
-<?php include('includes/brand-footer.php') ?><?php include('includes/footer-scripts.php') ?><script type='text/javascript'>
+<?php include('includes/brand-footer.php') ?>
+<?php include('includes/footer-scripts.php') ?>
+<script type='text/javascript'>
     $(window).load(function() {
         $("#releasenotes").popover({
             html: true,
@@ -838,7 +855,6 @@ $page = '';
             });
         });
     });
-</script> 
-
+</script>
 </body>
 </html>

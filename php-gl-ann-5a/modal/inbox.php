@@ -8,10 +8,7 @@
                 <h4 class="modal-title" id="myModalLabel"><i class="icon-inbox-alt"></i> My Inbox </h4>
             </div>
             <ul class="list-group list-unstyled" >
-            
-            
-            
-               <li class="list-group-item new">
+                <li class="list-group-item new">
                     <div class="message">
                         <div class="row message-header">
                             <div class="col-xs-12 col-sm-8 message-title"><span class="label">New</span> Class Registration Begins Today</div>
@@ -25,8 +22,6 @@
                         </div>
                     </div>
                 </li>
-                
-                
                 <li class="list-group-item new">
                     <div class="message">
                         <div class="row message-header">
@@ -41,8 +36,6 @@
                         </div>
                     </div>
                 </li>
-                
-                
                 <li class="list-group-item new">
                     <div class="message">
                         <div class="row message-header">
@@ -102,11 +95,10 @@
                                 <dd>1972</dd>
                                 <dt>Language:</dt>
                                 <dd>English</dd>
-                                
                                 <dt>Copies At:</dt>
                                 <dd>Bloomington</dd>
                             </dl>
-                              <dl class="dl-horizontal">
+                            <dl class="dl-horizontal">
                                 <dt>Title:</dt>
                                 <dd>Baskte Making</dd>
                                 <dt>Author:</dt>
@@ -115,7 +107,6 @@
                                 <dd>1990</dd>
                                 <dt>Language:</dt>
                                 <dd>English</dd>
-                                
                                 <dt>Copies At:</dt>
                                 <dd>Bloomington</dd>
                             </dl>
@@ -125,10 +116,7 @@
                         </div>
                     </div>
                 </li>
-                
-                
-                
-                 <li class="list-group-item">
+                <li class="list-group-item">
                     <div class="message">
                         <div class="row message-header">
                             <div class="col-xs-12 col-sm-8 message-title">Expiring Classified Ads</div>
@@ -142,21 +130,9 @@
                         </div>
                     </div>
                 </li>
-                
-                
-                
-                
-                
-                
-                
                 <li class="list-group-item text-center"> <a href="#" class="btn btn-xs btn-default loadmore"> <i class="icon-down-open-1"></i> More</a> </li>
             </ul>
             <div class="modal-footer" style=""> </div>
         </div>
     </div>
 </div>
-<script>
-$( ".loadmore" ).click(function() {
-  $( ".loadthis" ).show();
-});
-</script> 
