@@ -50,9 +50,7 @@ $page = '';
                 <div class="col-md-6 hidden-xs hidden-sm">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#" class="sdfgsdfg"  style="color:#CCCCCC"><i class="icon-bell-3"></i> <span class="sr-only">Notifications</span></a> </li>
-                        <!-- <li><a href="#" class="launch-notifications"><i class="icon-inbox-alt"></i>
-                            <div class="container-badge"><span class="badge">2</span></div>
-                            <span class="sr-only">Inbox</span></a> </li>-->
+                      
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-user-3"></i> Hello, Tom</a>
                             <ul class="dropdown-menu">
                                 <li><a href="#" tabindex="0" class=""><i class="icon-heart"></i> My Favorites</a></li>
@@ -72,16 +70,14 @@ $page = '';
             </div>
         </nav>
     </div>
-    <div class="container" style="position:relative">
-        <?php include ('modal/inbox.php') ?>
-    </div>
+   
 </section>
 <section id="global-announcements" class="global-announcements" style=" display:; background: #ffffff; min-height:;-webkit-box-shadow: inset 0 20px 15px -20px rgba(0,0,0,0.1);-moz-box-shadow: inset 0 20px 15px -20px rgba(0,0,0,0.1);box-shadow: inset 0 20px 15px -20px rgba(0,0,0,0.1);border-top: solid 1px #ebebeb;">
     <div class="container" style="padding-top: 20px;padding-bottom: 10px;">
         <div class="category" style="margin-bottom:-1px; border-bottom: none">
             <div class="row">
                 <div class="col-xs-10">
-                    <h3>Current Announcements</h3>
+                    <h3>Announcements</h3>
                 </div>
                 <div class="col-xs-2 text-right"> </div>
             </div>
@@ -121,7 +117,7 @@ $page = '';
         <div class="category" style="margin-bottom:-1px; border-bottom: none">
             <div class="row">
                 <div class="col-xs-10">
-                    <h3>You've Dismissed These</h3>
+                    <h3>Dismissed Announcements </h3>
                 </div>
                 <div class="col-xs-2 text-right"> </div>
             </div>
