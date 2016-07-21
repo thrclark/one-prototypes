@@ -1,43 +1,34 @@
-
-
-
 <?php
 $section = '';
 $page = '';
 ?>
 <!DOCTYPE html>
-<html lang=en-us>
+<html lang="en-us">
 <head>
-<?php include('includes/head-meta.php') ?>
-<?php include('includes/styles.php') ?>
-<?php include('includes/scripts.php') ?>
-<style></style>
+<?php include ('includes/head-meta.php') ?>
+<?php include ('includes/styles.php') ?>
+<?php include ('includes/scripts.php') ?>
 </head>
 <body id="top">
 <?php include ('includes/mobile-sidebar.php') ?>
 <?php include ('includes/brand-header.php') ?>
-<?php include ('includes/header-gen-announcements5.php') ?>
-
+<?php include ('includes/header-global-announcements5.php') ?>
 <section class="utilities-bar">
     <div class="container">
         <nav class="navbar navbar-default"  style="margin-bottom:0px">
             <div class="row">
                 <div class="col-md-6 col-xs-12">
-                     <nav class="btn-group btn-breadcrumb" > <a href="SD-home.php" class="btn btn-default"><i class="icon-home-2"></i><span class="sr-only">Home</></a>
-                        <div class="btn btn-default seemore" style="">...</div>
-                        <a href="SD-searchresults.php" class="btn btn-default">
-                        <div>Search Results</div></a> <div class="btn">
-                        <div>New Student Orientation</div></div> </nav>
-                  
+                    <nav class="btn-group btn-breadcrumb" task-title="Travel direct deposit"aria-hidden="false"><a href="store.php" class="btn btn-default" title="Home" tabindex="0"><i class="icon-home-2"></i><span class="sr-only">Home</span></a><a class="btn btn-default seemore" tabindex="0"><span aria-hidden="true">…</span><span class="sr-only"></span></a><a href="searchresults.php" class="btn btn-default entry" tabindex="0">
+                        <div  title="Search Results"><span>Search Results</span></div>
+                        </a>
+                        <div class="btn">
+                            <div title="New Student Orientation"><span>New Student Orientation</span></div>
+                        </div>
+                    </nav>
                 </div>
                 <div class="col-md-6 hidden-xs hidden-sm">
-                    <ul class="nav navbar-nav navbar-right"> <li><a href="#" class=""><i class="icon-bell-3"></i>
-                       
-                            <span class="sr-only">Notifications</span></a> </li>
-
-<li><a href="#" class="launch-notifications"><i class="icon-inbox-alt"></i>
-                            <div class="container-badge"><span class="badge">2</span></div>
-                            <span class="sr-only">Inbox</span></a> </li>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class="toggle-global-announcements open"><i class="icon-bell-3"></i> <span class="sr-only">Notifications</span></a> </li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-user-3"></i> Hello, Tom</a>
                             <ul class="dropdown-menu">
                                 <li><a href="#" tabindex="0" class=""><i class="icon-heart"></i> My Favorites</a></li>
@@ -57,11 +48,8 @@ $page = '';
             </div>
         </nav>
     </div>
-    <div class="container" style="position:relative">
-        <?php include ('modal/inbox.php') ?>
-    </div>
 </section>
-
+<?php include ('includes/global-announce-panel-5.php') ?>
 <div class="main-content container" role="main">
     <div id="main-content">
         <div class="tcptdp-header">
@@ -79,7 +67,8 @@ $page = '';
                 <ul class="nav nav-tabs nav-tabs-headers nav-tabs-responsive">
                     <li class="active"><a href="#tab1" data-toggle=tab>Description</a></li>
                     <li><a href="#tab2" data-toggle=tab> Announcements
-                        <div class="container-badge" id="announcement-counter"><span class="badge">1</span></div></a></li>
+                        <div class="container-badge" id="announcement-counter"><span class="badge">1</span></div>
+                        </a></li>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane in active" id="tab1">
@@ -197,15 +186,14 @@ $page = '';
 <?php include('modal/announcement-tcp.php') ?>
 <?php include('modal/SD-1002-settings.php') ?>
 <?php include('modal/writereview.php') ?>
-<?php include('includes/brand-footer.php') ?><?php include('includes/footer-scripts.php') ?>
+<?php include('includes/brand-footer.php') ?>
+<?php include('includes/footer-scripts.php') ?>
 <script>
-$( "#toggleannouncements" ).click(function() {
-  $( "#tcpannouncements" ).slideToggle();
-  $( "#toggleannouncements i" ).toggleClass("icon-up-open-big");
-  $( "#toggleannouncements" ).toggleClass("open");
-
-});
-</script> 
+    $(window).load(function() {
+        $("#global-announcements").hide();
+        $(".toggle-global-announcements").removeClass("open");
+    });
+</script>
 <script>
 $('#tcp-desc').readmore({
   speed: 200,
@@ -217,7 +205,6 @@ $('#tcp-desc').readmore({
 $( ".dismiss1" ).click(function() {
   $( "#badge1" ).hide( );
 });
-</script> 
-
+</script>
 </body>
 </html>

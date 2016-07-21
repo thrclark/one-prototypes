@@ -189,7 +189,7 @@ $(function() {
 <header class="">
     <div class="container app-header " id="contain2">
         <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 brand"> <a class="logo" href="SD-home.php" id="sidebar_logo" tabindex="0"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo.png" class="hidden-xs hidden-sm"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo-mobile.png" class="hidden-md hidden-lg">
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 brand"> <a class="logo" href="store.php" id="sidebar_logo" tabindex="0"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo.png" class="hidden-xs hidden-sm"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo-mobile.png" class="hidden-md hidden-lg">
                 <h1><span class="sr-only">One.IU</span></h1></a> </div>
             <div class="col-xs-6 col-sm-6 hidden-md hidden-lg mobile-menu">
                 <div class="pull-right"> <a href="#" class="btn btn-link launch-notifications"> <i class="icon-bell-alt"></i>     <div class="container-badge"><span class="badge">2</span></div><span class="sr-only">Announcements</span></a>
@@ -226,7 +226,7 @@ $(function() {
                         <input type="text" class="form-control typeahead2 tt-query" autocomplete="off" spellcheck="false" placeholder="What would you like to do?" id="thesearchbox">
                         <div id="cleartext" style="display:none"> <i class="icon-cancel-squared" ></i></div>
                         <span class="input-group-btn">
-                        <button onclick="location.href = 'SD-searchresults.php';" class="btn-mainsearch" type="button"><i class="icon-search-3"></i></button>
+                        <button onclick="location.href = 'searchresults.php';" class="btn-mainsearch" type="button"><i class="icon-search-3"></i></button>
                         </span>
                     </form>
                     <div class="row hidden-xs hidden-sm">

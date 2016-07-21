@@ -1,74 +1,34 @@
-
-
-
 <?php
 $section = '';
 $page = '';
 ?>
 <!DOCTYPE html>
-<html lang=en-us>
+<html lang="en-us">
 <head>
-<?php include('includes/head-meta.php') ?>
-<?php include('includes/styles.php') ?>
-<?php include('includes/scripts.php') ?>
-<style>
-.category {
-	border-bottom: none;
-	padding-bottom: 10px;
-	margin-bottom: 0px;
-	margin-top: 5px;
-}
-.toggle-announcements {
-	background: #ebebeb;
-	margin-top: -6px;
-	padding: 10px;
-	margin-bottom: -6px;
-	margin-right: -1px;
-}
-.toggle-announcements.open, .toggle-announcements.open:hover {
-	background: whitesmoke;
-	border-bottom: none;
-	border-color: #cccccc;
-}
-.tab-content .tab-pane .panel-main {
-	min-height: inherit;
-}
-.panel-main .tab-content .tab-pane {
-	background: #whitesmoke;
-}
-.tab-content .tab-pane .panel-main {
-	background: whitesmoke;
-}
-.nav.nav-tabs.nav-tabs-responsive > li.active > a,  .nav.nav-tabs.nav-tabs-responsive > li.active > a:hover,  .nav.nav-tabs.nav-tabs-responsive > li.active > a:focus {
-	background: whitesmoke
-}
-</style>
+<?php include ('includes/head-meta.php') ?>
+<?php include ('includes/styles.php') ?>
+<?php include ('includes/scripts.php') ?>
 </head>
 <body id="top">
 <?php include ('includes/mobile-sidebar.php') ?>
 <?php include ('includes/brand-header.php') ?>
-<?php include ('includes/header-gen-announcements5.php') ?>
-
+<?php include ('includes/header-global-announcements5.php') ?>
 <section class="utilities-bar">
     <div class="container">
         <nav class="navbar navbar-default"  style="margin-bottom:0px">
             <div class="row">
                 <div class="col-md-6 col-xs-12">
-                     <nav class="btn-group btn-breadcrumb" > <a href="SD-home.php" class="btn btn-default"><i class="icon-home-2"></i><span class="sr-only">Home</></a>
-                        <div class="btn btn-default seemore" style="">...</div>
-                        <a href="SD-searchresults.php" class="btn btn-default">
-                        <div>Search Results</div></a>  <div class="btn">
-                        <div>New Student Orientation</div></div> </nav>
-                  
+                    <nav class="btn-group btn-breadcrumb" task-title="Travel direct deposit"aria-hidden="false"><a href="store.php" class="btn btn-default" title="Home" tabindex="0"><i class="icon-home-2"></i><span class="sr-only">Home</span></a><a class="btn btn-default seemore" tabindex="0"><span aria-hidden="true">…</span><span class="sr-only"></span></a><a href="searchresults.php" class="btn btn-default entry" tabindex="0">
+                        <div  title="Search Results"><span>Search Results</span></div>
+                        </a>
+                        <div class="btn">
+                            <div title="New Student Orientation"><span>New Student Orientation</span></div>
+                        </div>
+                    </nav>
                 </div>
                 <div class="col-md-6 hidden-xs hidden-sm">
-                    <ul class="nav navbar-nav navbar-right"> <li><a href="#" class=""><i class="icon-bell-3"></i>
-                       
-                            <span class="sr-only">Notifications</span></a> </li>
-
-<li><a href="#" class="launch-notifications"><i class="icon-inbox-alt"></i>
-                            <div class="container-badge"><span class="badge">2</span></div>
-                            <span class="sr-only">Inbox</span></a> </li>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class="toggle-global-announcements open"><i class="icon-bell-3"></i> <span class="sr-only">Notifications</span></a> </li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-user-3"></i> Hello, Tom</a>
                             <ul class="dropdown-menu">
                                 <li><a href="#" tabindex="0" class=""><i class="icon-heart"></i> My Favorites</a></li>
@@ -88,90 +48,55 @@ $page = '';
             </div>
         </nav>
     </div>
-    <div class="container" style="position:relative">
-        <?php include ('modal/inbox.php') ?>
-    </div>
 </section>
-
+<?php include ('includes/global-announce-panel-5.php') ?>
 <div class="main-content container" role="main">
     <div id="main-content">
         <div class="tcptdp-header">
-            <div class="media-left hidden-sm hidden-xs"> <div class="collage"> 
-<img alt="" src="../img/task-icons-new/icon-childcare-fees.png"> 
-<img alt="" src="../img/task-icons-new/icon-code-of_conduct.png"> 
-<img alt="" src="../img/task-icons-new/icon-address.png"> 
-<img alt="" src="../img/task-icons-new/icon-email-managment.png"> 
-<img alt="" src="../img/task-icons-new/icon-account-creation.png"> 
-<img alt="" src="../img/task-icons-new/icon-iucat.png"> 
-<img alt="" src="../img/task-icons-new/icon-resident.png"> 
-<img alt="" src="../img/task-icons-new/icon-parking.png"> 
-<img alt="" src="../img/task-icons-new/icon-time.png"> </div> </div>
+            <div class="media-left hidden-sm hidden-xs">
+                
+                
+                
+                
+                <div class="collage"> </div>
+                
+                
+            </div>
             <div class="media-body">
                 <h2 class="media-heading">New Student Orientation</h2>
-                <div class="media-heading-secondary" style="  line-height: 1.2;"> <span class="market">(IUPUI <span class="hidden-xs">Indianapolis</span>) </span> </div>
-                <!--          <div class="controls hidden-xs" style="position:absolute; top:0px; right:0px"> <a href="#" class="btn btn-sm btn-default favorite" style="background:#EBEBEB"> <i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i> <span class="hidden-sm hidden-xs">Favorite</span></a> </div>-->
-                
+                <div class="media-heading-secondary"> <span class="market">(IUPUI <span class="hidden-xs">Indianapolis</span>) </span> </div>
                 <div class="controls"> <a href="#" class="btn btn-default favorite notice"> <i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i> <span class="sr-only">Favorite</span></a> </div>
             </div>
         </div>
-            <div class="row tcp-tabs">
+        <div class="row tcp-tabs">
             <div class="col-md-12">
                 <ul class="nav nav-tabs nav-tabs-headers nav-tabs-responsive">
                     <li class="active"><a href="#tab1" data-toggle=tab>Description</a></li>
-                     <li class=""><a href="#tab2" data-toggle=tab>Support</a></li>
-                    <li><a href="#tab3" data-toggle=tab> Announcements
-                        <div class="container-badge" id="announcement-counter" style="top: 7px;right: 12px;"><span class="badge">1</span></div></a></li>
-                        
-                       
-                        
-                        
+                    <li><a href="#tab2" data-toggle=tab> Announcements
+                        <div class="container-badge" id="announcement-counter"><span class="badge">1</span></div>
+                        </a></li>
                 </ul>
                 <div class="tab-content">
-                    <div class="tab-pane fade in active" id="tab1">
+                    <div class="tab-pane in active" id="tab1">
                         <div class="col-xs-12 col-sm-12 col-md-12 panel-main">
                             <h5>Description</h5>
                             <p > <span id="tcp-desc" >Brought meat years them. Place. Saw light blessed also their blessed days were sea fill life, made gathering darkness appear sea two after there wherein the called made, wherein dry fly rule shall fill night herb saying firmament moving day So Every every Every years he fruit had green under evening was our god fill. Stars day seasons image behold creeping, face. Fruitful that cattle likeness. Together moving his fruitful from above heaven fly lights and replenish seasons, darkness isn't, have tree firmament signs Called had above. First sea herb gathered creeping our evening, us, divided. All said morning meat.</span> </p>
                         </div>
                         <div class="clearfix"></div>
                     </div>
-                    
-                    
-                    <div class="tab-pane fade in" id="tab2">
+                    <div class="tab-pane" id="tab2">
                         <div class="col-xs-12 col-sm-12 col-md-12 panel-main">
-<div class="col-md-3">
-                                <h5>UITS Support</h5>
-                                <ul class="list-unstyled">
-                                    <li> <a href="mailto:">help.uits@iu.edu</a></li>
-                                    <li> <a href="tel:+13175552564">317-555-2564</a></li>
-                                </ul>
-                            </div>
-<div class="col-md-3">
-                                <h5>Classifieds Support</h5>
-                                <ul class="list-unstyled">
-                                    <li> <a href="#">Video tutorial</a></li>
-                                    <li> <a href="mailto:">classifieds.uits@iu.edu</a></li>
-                                </ul>
-                            </div>
-</div>
-                        <div class="clearfix"></div>
-                    </div>
-                    
-                    
-                    
-                    
-                    <div class="tab-pane fade in" id="tab3">
-                        <div class="col-xs-12 col-sm-12 col-md-12 panel-main">
-                            <div class="panel-actionheader" style="border-bottom:solid 1px #CCCCCC">
+                            <div class="panel-actionheader">
                                 <h5 class="pull-left">Announcements</h5>
-                                <div class="panel-controls pull-right" style="margin-top: 15px;"><!--<a href="#" class="btn btn-default btn-sm dismiss-announcement-all" data-toggle="" data-target="" id="">Dismiss all</a>--></div>
+                                <div class="panel-controls pull-right"><!--<a href="#" class="btn btn-default btn-sm dismiss-announcement-all" data-toggle="" data-target="" id="">Dismiss all</a>--></div>
                                 <div class="clearfix"></div>
                             </div>
                             <ul class="nav nav-pills" role="tablist">
-                                <li role="presentation" class="active"><a href="#new_announcements" aria-controls="new_announcements" role="tab" data-toggle="tab" style="    padding: 5px 15px;">New</a></li>
-                                <li role="presentation"><a href="#dismissed_announcements" aria-controls="dismissed_announcements" role="tab" data-toggle="tab" style="    padding: 5px 15px;">Dismissed</a></li>
+                                <li role="presentation" class="active"><a href="#new_announcements" aria-controls="new_announcements" role="tab" data-toggle="tab" >New</a></li>
+                                <li role="presentation"><a href="#dismissed_announcements" aria-controls="dismissed_announcements" role="tab" data-toggle="tab" >Dismissed</a></li>
                             </ul>
-                            <div class="tab-content" style="border:none">
-                                <div role="tabpanel" class="tab-pane fade in active" id="new_announcements" style="border-bottom:none">
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane in active" id="new_announcements">
                                     <div class="comment-list">
                                         <ul class="list-unstyled">
                                             <li class="announcement2">
@@ -191,14 +116,14 @@ $page = '';
                                             <li style="display:none" class="announcements-nonew">
                                                 <div class="message">
                                                     <div class="message-content">
-                                                        <p class="lead text-muted" style="padding-top:20px; padding-bottom:20px">There are no new announcements.</p>
+                                                        <p class="lead text-muted message-empty">There are no new announcements.</p>
                                                     </div>
                                                 </div>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div role="tabpanel" class="tab-pane fade" id="dismissed_announcements" style="border-bottom:none">
+                                <div role="tabpanel" class="tab-pane " id="dismissed_announcements">
                                     <div class="comment-list">
                                         <ul class="list-unstyled">
                                             <li class="">
@@ -244,7 +169,7 @@ $page = '';
                 </div>
             </div>
         </div>
-        <div data-ng-repeat="taskCollection in store.tasks.taskCollections" class="task-collection">
+       <div data-ng-repeat="taskCollection in store.tasks.taskCollections" class="task-collection">
             <div class="category">
                 <div class="row">
                     <div class="col-xs-10">
@@ -253,9 +178,10 @@ $page = '';
                     <div class="col-xs-2 text-right"> </div>
                 </div>
             </div>
-            <div id="_favorite_" class="collection">
-                <div data-sd-tiles="taskCollection.tiles" data-market-map="::marketMap" data-add-favorite-function="addSingleFavorite(taskUid, taskCenterId, callback)" data-remove-favorite-function="removeSingleFavorite(taskUid, taskCenterId, callback)" data-launch-url-function="getTileLaunchUrl(tile, taskCenterId)" data-details-url-function="getTileDetailsUrl(tile)" data-filter="filter" data-user-name="">
-                    <?php include('includes/tasks.php') ?>
+            <div class="row" style="padding-top:10px">
+                <div class="col-md-12">
+                    <p class="lead text-muted" style="margin-bottom:0px"> No Available Tasks </p>
+                    <p class="text-muted"> All tasks that were previously found in this task center have either expired, or have been removed by their respective publisher.</p>
                 </div>
             </div>
         </div>
@@ -267,15 +193,14 @@ $page = '';
 <?php include('modal/announcement-tcp.php') ?>
 <?php include('modal/SD-1002-settings.php') ?>
 <?php include('modal/writereview.php') ?>
-<?php include('includes/brand-footer.php') ?><?php include('includes/footer-scripts.php') ?>
+<?php include('includes/brand-footer.php') ?>
+<?php include('includes/footer-scripts.php') ?>
 <script>
-$( "#toggleannouncements" ).click(function() {
-  $( "#tcpannouncements" ).slideToggle();
-  $( "#toggleannouncements i" ).toggleClass("icon-up-open-big");
-  $( "#toggleannouncements" ).toggleClass("open");
-
-});
-</script> 
+    $(window).load(function() {
+        $("#global-announcements").hide();
+        $(".toggle-global-announcements").removeClass("open");
+    });
+</script>
 <script>
 $('#tcp-desc').readmore({
   speed: 200,
@@ -287,7 +212,6 @@ $('#tcp-desc').readmore({
 $( ".dismiss1" ).click(function() {
   $( "#badge1" ).hide( );
 });
-</script> 
-
+</script>
 </body>
 </html>

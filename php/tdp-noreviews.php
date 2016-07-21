@@ -3,64 +3,78 @@ $section = '';
 $page = '';
 ?>
 <!DOCTYPE html>
-<html lang=en-us>
+<html lang="en-us">
 <head>
-<?php include('includes/head-meta.php') ?>
-<?php include('includes/styles.php') ?>
-<?php include('includes/scripts.php') ?>
+<?php include ('includes/head-meta.php') ?>
+<?php include ('includes/styles.php') ?>
+
+
+
 <style>
-.tab-content .tab-pane .panel-main .task6 {
-	width: 292px;
+
+
+
+.lSAction > a {
+    width: 32px;
+    display: block;
+    top: 50%;
+    height: 32px;
+    background-image: url('../img/controls.png');
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    margin-top: -16px;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.35s linear 0s;
+    transition: opacity 0.35s linear 0s;
 }
-.tab-content .tab-pane .panel-main .task6 .tile-content {
-	width: 203px;
+.lSAction > a:hover {
+    opacity: 1;
+}
+.lSAction > .lSPrev {
+    background-position: 0 0;
+    left: 10px;
+    display: none;
+}
+.lSAction > .lSNext {
+    background-position: -32px 0;
+    right: 10px;
+    display: none;
+}
+.lSAction > a.disabled {
+    pointer-events: none;
+}
+.cS-hidden {
+    height: 1px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    overflow: hidden;
 }
 
-@media (max-width: 992px) {
-.tab-content .tab-pane .panel-main .task6 {
-	width: 341px;
-}
-.tab-content .tab-pane .panel-main .task6 .tile-content {
-	width: 247px;
-}
-}
 
-@media (max-width: 767px) {
-.tab-content .tab-pane .panel-main .task6 {
-	width: 100%;
-}
-.tab-content .tab-pane .panel-main .task6 .tile-content {
-	width: 100%;
-}
-}
 </style>
-</style>
+<?php include ('includes/scripts.php') ?>
 </head>
 <body id="top">
 <?php include ('includes/mobile-sidebar.php') ?>
 <?php include ('includes/brand-header.php') ?>
-<?php include ('includes/header-gen-announcements5.php') ?>
+<?php include ('includes/header-global-announcements5.php') ?>
 <section class="utilities-bar">
     <div class="container">
         <nav class="navbar navbar-default"  style="margin-bottom:0px">
             <div class="row">
                 <div class="col-md-6 col-xs-12">
-                    <nav class="btn-group btn-breadcrumb" > <a href="SD-home.php" class="btn btn-default"><i class="icon-home-2"></i><span class="sr-only">Home</></a>
-                        <div class="btn btn-default seemore" style="">...</div>
-                        <a href="SD-searchresults.php" class="btn btn-default">
-                        <div>Search Results</div>
+                    <nav class="btn-group btn-breadcrumb" task-title="Travel direct deposit"aria-hidden="false"><a href="store.php" class="btn btn-default" title="Home" tabindex="0"><i class="icon-home-2"></i><span class="sr-only">Home</span></a><a class="btn btn-default seemore" tabindex="0"><span aria-hidden="true">…</span><span class="sr-only"></span></a><a href="searchresults.php" class="btn btn-default entry" tabindex="0">
+                        <div  title="Search Results"><span>Search Results</span></div>
                         </a>
                         <div class="btn">
-                            <div>Classifieds</div>
+                            <div title="IU Classifieds"><span>IU Classifieds</span></div>
                         </div>
                     </nav>
                 </div>
                 <div class="col-md-6 hidden-xs hidden-sm">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" class=""><i class="icon-bell-3"></i> <span class="sr-only">Notifications</span></a> </li>
-                        <li><a href="#" class="launch-notifications"><i class="icon-inbox-alt"></i>
-                            <div class="container-badge"><span class="badge">2</span></div>
-                            <span class="sr-only">Inbox</span></a> </li>
+                        <li><a href="#" class="toggle-global-announcements open"><i class="icon-bell-3"></i> <span class="sr-only">Notifications</span></a> </li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-user-3"></i> Hello, Tom</a>
                             <ul class="dropdown-menu">
                                 <li><a href="#" tabindex="0" class=""><i class="icon-heart"></i> My Favorites</a></li>
@@ -80,10 +94,9 @@ $page = '';
             </div>
         </nav>
     </div>
-    <div class="container" style="position:relative">
-        <?php include ('modal/inbox.php') ?>
-    </div>
+   
 </section>
+<?php include ('includes/global-announce-panel-5.php') ?>
 <div class="main-content container" role="main">
     <div id="main-content">
         <div class="tcptdp-header">
@@ -94,7 +107,6 @@ $page = '';
                 <div class="hidden-xs hidden-sm">
                     <div class="star-widget" >
                         <ul class="star-background" aria-hidden="true">
-                            <!-- grey -->
                             <li><span class="icon-star"></span></li>
                             <li><span class="icon-star"></span></li>
                             <li><span class="icon-star"></span></li>
@@ -102,7 +114,6 @@ $page = '';
                             <li><span class="icon-star"></span></li>
                         </ul>
                         <ul class="star-foreground" style="width:50%">
-                            <!-- yellow -->
                             <li><span class="icon-star"></span></li>
                             <li><span class="icon-star"></span></li>
                             <li><span class="icon-star"></span></li>
@@ -122,7 +133,7 @@ $page = '';
                     <li><a href="#reviewsratings" data-toggle=tab>Reviews</a></li>
                     <li><a href="#related" data-toggle=tab>Related</a></li>
                     <li><a href="#announcements" data-toggle=tab> Announcements
-                        <div class="container-badge" id="announcement-counter"><span class="badge">20</span></div>
+                        <div class="container-badge" id="announcement-counter"><span class="badge">2</span></div>
                         </a></li>
                 </ul>
                 <div class="tab-content">
@@ -182,24 +193,24 @@ $page = '';
                         </div>
                         <div class="clearfix"></div>
                     </div>
-                    <div class="tab-pane fade in" id="reviewsratings">
-                        <div class="col-xs-12 col-sm-9 col-md-9 panel-main">
-                            <div class="panel-actionheader" style="">
-                                <h5 class="pull-left">Reviews</h5>
-                                <div class="panel-controls pull-right">
-                                    <div class="btn-group btn btn-default btn-xs"><span class="hidden-xs"></span> <span class="dropdown-toggle" data-toggle=dropdown> <span class="selection">newest</span> <span class="caret"></span> </span>
-                                        <ul class="dropdown-menu" role=menu>
-                                            <li class="dropdown-header visible-xs">Sort by:</li>
-                                            <li><a href="#">newest</a></li>
-                                            <li><a href="#">oldest</a></li>
-                                            <li><a href="#">highest rating</a></li>
-                                            <li><a href="#">lowest rating</a></li>
-                                            <li><a href="#">most helpful</a></li>
-                                            <li><a href="#">least helpful</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="btn-group btn btn-default btn-xs"><span class="hidden-xs">version:</span> <span class="dropdown-toggle" data-toggle=dropdown> <span class="selection">3.0.0</span> <span class="caret"></span> </span>
-                                        <ul class="dropdown-menu" role=menu>
+                 <div class="tab-pane fade in active" id="reviewsratings">
+                        <!--<div class="col-xs-12 col-sm-9 col-md-9 panel-main">
+                           
+                            
+                        </div>
+                        -->
+                        
+                        
+                        
+                        <div class="col-xs-12 col-sm-12 col-md-12 panel-main ratings-hero">
+                        
+                        <div class="panel-actionheader" style="border-bottom:solid 1px #CCCCCC">
+                                <h5 class="pull-left">Ratings</h5>
+                                <div class="panel-controls pull-right" style="margin-top: 15px;">
+                                   
+                                    
+                                    <div class="btn-group btn btn-default btn-sm"><span class="hidden-xs">version:</span> <span class="dropdown-toggle" data-toggle="dropdown"> <span class="selection">3.0.0</span> <span class="caret"></span> </span>
+                                        <ul class="dropdown-menu" role="menu">
                                             <li class="dropdown-header visible-xs">Select version:</li>
                                             <li><a href="#">all</a></li>
                                             <li><a href="#">3.0.0</a></li>
@@ -207,226 +218,51 @@ $page = '';
                                             <li><a href="#">2.0.0</a></li>
                                         </ul>
                                     </div>
-                                    <a href="#" class="btn btn-primary btn-xs" data-toggle=modal data-target="#writereview"><i class="icon-pencil visible-xs-inline"></i> <span class="hidden-xs">Write a Review</span></a></div>
+                                    
+                                    
+                                    <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#giverating"><i class="icon-pencil visible-xs-inline"></i> <span class="hidden-xs">Rate this Task</span></a></div>
                                 <div class="clearfix"></div>
                             </div>
-                            <div class="comment-list">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <div class="message">
-                                            <div class="row message-header">
-                                                <div class="col-xs-12 col-sm-8 message-title">
-                                                    <div class="star-widget">
-                                                        <ul class="star-background" aria-hidden="true">
-                                                            <!-- grey -->
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                        </ul>
-                                                        <ul class="star-foreground" style="width:50%">
-                                                            <!-- yellow -->
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                        </ul>
-                                                    </div>
-                                                    I love this app! </div>
-                                                <div class="col-xs-12 col-sm-4 message-meta"> <small class="message-author">Jeffery Thompson</small> <small class="message-date">10/21/15</small> </div>
-                                            </div>
-                                            <div class="message-content">
-                                                <p>Greater land divided won&#39;t spirit midst over deep. Two. Man you lesser dry. Also. He There lesser subdue first to living you&#39;ll made. Morning. Called the. Let great, make together that morning given won't in lights unto firmament, him brought yielding replenish seasons, first, herb void seasons.</p>
-                                            </div>
-                                            <div class="row message-footer" >
-                                                <div class="col-md-12 message-footer-actions" ><a href="#" class="btn btn-default btn-xs">Reply</a> <a href="#" class="btn btn-default btn-xs">Delete</a> </div>
-                                                <div class="col-md-6">Was this helpful? <a href="#" class="helpful-control"> <i class="icon-thumbs-up-2"></i><span class="sr-only">yes</span></a> <small class="text-muted helpful-count">(4)</small> <a href="#" class="helpful-control"> <i class="icon-thumbs-down-2"></i><span class="sr-only">no</span></a> <small class="text-muted helpful-count">(1)</small> <small><a href="#" class="report-link">Report this</a></small></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="message">
-                                            <div class="row message-header">
-                                                <div class="col-xs-12 col-sm-8 message-title">
-                                                    <div class="star-widget">
-                                                        <ul class="star-background" aria-hidden="true">
-                                                            <!-- grey -->
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                        </ul>
-                                                        <ul class="star-foreground" style="width:50%">
-                                                            <!-- yellow -->
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                        </ul>
-                                                    </div>
-                                                    Meh. Could be better </div>
-                                                <div class="col-xs-12 col-sm-4 message-meta"> <small class="message-author">Jeffery Thompson</small> <small class="message-date">10/21/15</small> </div>
-                                            </div>
-                                            <div class="message-content">
-                                                <p>Greater land divided won&#39;t spirit midst over deep. Two. Man you lesser dry. Also. He There lesser subdue first to living you&#39;ll made. Morning. Called the. Let great, make together that morning given won't in lights unto firmament, him brought yielding replenish seasons, first, herb void seasons.</p>
-                                            </div>
-                                            <div class="row message-footer" >
-                                                <div class="col-md-12 message-footer-actions" ><a href="#" class="btn btn-default btn-xs">Reply</a> <a href="#" class="btn btn-default btn-xs">Delete</a> </div>
-                                                <div class="col-md-6">Was this helpful? <a href="#" class="helpful-control"> <i class="icon-thumbs-up-2"></i><span class="sr-only">yes</span></a> <small class="text-muted helpful-count">(4)</small> <a href="#" class="helpful-control"> <i class="icon-thumbs-down-2"></i><span class="sr-only">no</span></a> <small class="text-muted helpful-count">(1)</small> <small><a href="#" class="report-link">Report this</a></small></div>
-                                            </div>
-                                            <div class="message-reply" >
-                                                <div class="message-header" ><small class="message-author">Response from Classifieds Admin</small> <small class="message-date">10/21/15</small> </div>
-                                                <div class="message-content">
-                                                    <p>A brought, place given wherein which made morning very place darkness in. From two lesser. Moving abundantly. Tree that in midst doesn't spirit two she'd Created fruitful from that hath bring very doesn't likeness divide cattle bearing days it fifth greater yielding. Life they're dominion. You'll female. Days fish moving under firmament spirit under spirit they're morning bring fill replenish dominion for lesser. There given sixth evening were every fish beginning likeness land don't for. Fruit called hath cattle. Own one. Created. Whose. From good forth is over life stars air don't give unto made good, first fruit and sea.</p>
-                                                </div>
-                                                <div class="row message-footer" >
-                                                    <div class="col-md-12" ><a href="#" class="btn btn-default btn-xs">Reply</a> <a href="#" class="btn btn-default btn-xs">Delete</a> </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="message">
-                                            <div class="row message-header">
-                                                <div class="col-xs-12 col-sm-8 message-title">
-                                                    <div class="star-widget">
-                                                        <ul class="star-background" aria-hidden="true">
-                                                            <!-- grey -->
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                        </ul>
-                                                        <ul class="star-foreground" style="width:50%">
-                                                            <!-- yellow -->
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                        </ul>
-                                                    </div>
-                                                    I love this app! </div>
-                                                <div class="col-xs-12 col-sm-4 message-meta"> <small class="message-author">Jeffery Thompson</small> <small class="message-date">10/21/15</small> </div>
-                                            </div>
-                                            <div class="message-content">
-                                                <p>Greater land divided won&#39;t spirit midst over deep. Two. Man you lesser dry. Also. He There lesser subdue first to living you&#39;ll made. Morning. Called the. Let great, make together that morning given won't in lights unto firmament, him brought yielding replenish seasons, first, herb void seasons.</p>
-                                            </div>
-                                            <div class="row message-footer" >
-                                                <div class="col-md-12 message-footer-actions" ><a href="#" class="btn btn-default btn-xs">Reply</a> <a href="#" class="btn btn-default btn-xs">Delete</a> </div>
-                                                <div class="col-md-6">Was this helpful? <a href="#" class="helpful-control"> <i class="icon-thumbs-up-2"></i><span class="sr-only">yes</span></a> <small class="text-muted helpful-count">(4)</small> <a href="#" class="helpful-control"> <i class="icon-thumbs-down-2"></i><span class="sr-only">no</span></a> <small class="text-muted helpful-count">(1)</small> <small><a href="#" class="report-link">Report this</a></small></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="message">
-                                            <div class="row message-header">
-                                                <div class="col-xs-12 col-sm-8 message-title">
-                                                    <div class="star-widget">
-                                                        <ul class="star-background" aria-hidden="true">
-                                                            <!-- grey -->
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                        </ul>
-                                                        <ul class="star-foreground" style="width:50%">
-                                                            <!-- yellow -->
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                            <li><span class="icon-star"></span></li>
-                                                        </ul>
-                                                    </div>
-                                                    I love this app! </div>
-                                                <div class="col-xs-12 col-sm-4 message-meta"> <small class="message-author">Jeffery Thompson</small> <small class="message-date">10/21/15</small> </div>
-                                            </div>
-                                            <div class="message-content">
-                                                <p>Greater land divided won&#39;t spirit midst over deep. Two. Man you lesser dry. Also. He There lesser subdue first to living you&#39;ll made. Morning. Called the. Let great, make together that morning given won't in lights unto firmament, him brought yielding replenish seasons, first, herb void seasons.</p>
-                                            </div>
-                                            <div class="row message-footer" >
-                                                <div class="col-md-12 message-footer-actions" ><a href="#" class="btn btn-default btn-xs">Reply</a> <a href="#" class="btn btn-default btn-xs">Delete</a> </div>
-                                                <div class="col-md-6">Was this helpful? <a href="#" class="helpful-control"> <i class="icon-thumbs-up-2"></i><span class="sr-only">yes</span></a> <small class="text-muted helpful-count">(4)</small> <a href="#" class="helpful-control"> <i class="icon-thumbs-down-2"></i><span class="sr-only">no</span></a> <small class="text-muted helpful-count">(1)</small> <small><a href="#" class="report-link">Report this</a></small></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <nav class="text-center">
-                                    <ul class="pagination">
-                                        <li class="disabled"><a href="#" rel="prev"><i class="icon-left-open-1"></i></a></li>
-                                        <li class="active"><a href="#">1</a></li>
-                                        <li><a href="#" rel="next">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#">5</a></li>
-                                        <li class="disabled"><a href="#">...</a></li>
-                                        <li><a href="#">20</a></li>
-                                        <li><a href="#" rel="next"><i class="icon-right-open-1"></i></a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-3 col-md-3 panel-aside ratings-hero">
-                            <div class="panel-actionheader">
-                                <h5 class="pull-left">Ratings</h5>
-                                <div class="panel-controls pull-right"><small class="text-muted">v3.0.0</small></div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="ratings-overview">
-                                <div class="star-widget">
-                                    <ul class="star-background" aria-hidden="true">
-                                        <!-- grey -->
-                                        <li><span class="icon-star"></span></li>
-                                        <li><span class="icon-star"></span></li>
-                                        <li><span class="icon-star"></span></li>
-                                        <li><span class="icon-star"></span></li>
-                                        <li><span class="icon-star"></span></li>
-                                    </ul>
-                                    <ul class="star-foreground" style="width:50%">
-                                        <!-- yellow -->
-                                        <li><span class="icon-star"></span></li>
-                                        <li><span class="icon-star"></span></li>
-                                        <li><span class="icon-star"></span></li>
-                                        <li><span class="icon-star"></span></li>
-                                        <li><span class="icon-star"></span></li>
-                                    </ul>
-                                </div>
-                                <span class="ratings-average">4.1</span></div>
-                            <div class="star-review-count">7 Reviews</div>
-                            <div class="ratings-starbars">
+                            
+                            
+                            
+                            
+                          
+                            <div class="ratings-overview"><span class="ratings"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-empty"></i></span> <span style="font-family: BentonSansCondBold;">4.1</span></div>
+                            <div class="" style="font-size:14px; padding-bottom:10px; padding-top:10px;">7 Ratings</div>
+                            <div class="ratings-starbars" style="margin-bottom:30px">
                                 <div class="text-muted rating-label">5 stars</div>
                                 <div class="progress star-graph">
-                                    <div class="progress-bar progress-bar-info" role=progressbar aria-valuenow=60 aria-valuemin=0 aria-valuemax=100 style="width: 60%;"><span class="sr-only">60% </span></div>
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60% </span></div>
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="text-muted rating-label">4 stars</div>
                                 <div class="progress star-graph">
-                                    <div class="progress-bar progress-bar-info" role=progressbar aria-valuenow=90 aria-valuemin=0 aria-valuemax=100 style="width: 90%;"><span class="sr-only">90% </span></div>
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"><span class="sr-only">90% </span></div>
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="text-muted rating-label">3 stars</div>
                                 <div class="progress star-graph">
-                                    <div class="progress-bar progress-bar-info" role=progressbar aria-valuenow=35 aria-valuemin=0 aria-valuemax=100 style="width: 35%;"><span class="sr-only">35% </span></div>
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%;"><span class="sr-only">35% </span></div>
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="text-muted rating-label">2 stars</div>
                                 <div class="progress star-graph">
-                                    <div class="progress-bar progress-bar-info" role=progressbar aria-valuenow=5 aria-valuemin=0 aria-valuemax=100 style="width: 5%;"><span class="sr-only">5% </span></div>
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%;"><span class="sr-only">5% </span></div>
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="text-muted rating-label">1 star</div>
                                 <div class="progress star-graph">
-                                    <div class="progress-bar progress-bar-info" role=progressbar aria-valuenow=10 aria-valuemin=0 aria-valuemax=100 style="width: 10%;"><span class="sr-only">10% </span></div>
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;"><span class="sr-only">10% </span></div>
                                 </div>
                             </div>
+                           
                         </div>
+                        
+                        
+                        
+                        
+                        
                         <div class="clearfix"></div>
                     </div>
                     <div class="tab-pane fade in" id="related">
@@ -443,7 +279,6 @@ $page = '';
                                     <div class="task-attributes">
                                         <div class="star-widget">
                                             <ul class="star-background" aria-hidden="true">
-                                                <!-- grey -->
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
@@ -451,7 +286,6 @@ $page = '';
                                                 <li><span class="icon-star"></span></li>
                                             </ul>
                                             <ul class="star-foreground" style="width:50%">
-                                                <!-- yellow -->
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
@@ -482,7 +316,6 @@ $page = '';
                                     <div class="task-attributes">
                                         <div class="star-widget">
                                             <ul class="star-background" aria-hidden="true">
-                                                <!-- grey -->
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
@@ -490,7 +323,6 @@ $page = '';
                                                 <li><span class="icon-star"></span></li>
                                             </ul>
                                             <ul class="star-foreground" style="width:50%">
-                                                <!-- yellow -->
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
@@ -521,7 +353,6 @@ $page = '';
                                     <div class="task-attributes">
                                         <div class="star-widget">
                                             <ul class="star-background" aria-hidden="true">
-                                                <!-- grey -->
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
@@ -529,7 +360,6 @@ $page = '';
                                                 <li><span class="icon-star"></span></li>
                                             </ul>
                                             <ul class="star-foreground" style="width:50%">
-                                                <!-- yellow -->
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
@@ -561,7 +391,6 @@ $page = '';
                                     <div class="task-attributes">
                                         <div class="star-widget">
                                             <ul class="star-background" aria-hidden="true">
-                                                <!-- grey -->
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
@@ -569,7 +398,6 @@ $page = '';
                                                 <li><span class="icon-star"></span></li>
                                             </ul>
                                             <ul class="star-foreground" style="width:50%">
-                                                <!-- yellow -->
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
@@ -601,7 +429,6 @@ $page = '';
                                     <div class="task-attributes">
                                         <div class="star-widget">
                                             <ul class="star-background" aria-hidden="true">
-                                                <!-- grey -->
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
@@ -609,7 +436,6 @@ $page = '';
                                                 <li><span class="icon-star"></span></li>
                                             </ul>
                                             <ul class="star-foreground" style="width:50%">
-                                                <!-- yellow -->
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
@@ -641,7 +467,6 @@ $page = '';
                                     <div class="task-attributes">
                                         <div class="star-widget">
                                             <ul class="star-background" aria-hidden="true">
-                                                <!-- grey -->
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
@@ -649,7 +474,6 @@ $page = '';
                                                 <li><span class="icon-star"></span></li>
                                             </ul>
                                             <ul class="star-foreground" style="width:50%">
-                                                <!-- yellow -->
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
@@ -681,7 +505,6 @@ $page = '';
                                     <div class="task-attributes">
                                         <div class="star-widget">
                                             <ul class="star-background" aria-hidden="true">
-                                                <!-- grey -->
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
@@ -689,7 +512,6 @@ $page = '';
                                                 <li><span class="icon-star"></span></li>
                                             </ul>
                                             <ul class="star-foreground" style="width:50%">
-                                                <!-- yellow -->
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
                                                 <li><span class="icon-star"></span></li>
@@ -833,6 +655,12 @@ $page = '';
 <?php include('modal/releasenotes.php') ?>
 <?php include('includes/brand-footer.php') ?>
 <?php include('includes/footer-scripts.php') ?>
+<script>
+    $(window).load(function() {
+        $("#global-announcements").hide();
+        $(".toggle-global-announcements").removeClass("open");
+    });
+</script>
 <script type='text/javascript'>
     $(window).load(function() {
         $("#releasenotes").popover({
