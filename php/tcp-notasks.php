@@ -11,8 +11,8 @@ $page = '';
 </head>
 <body id="top">
 <?php include ('includes/mobile-sidebar.php') ?>
-<?php include ('includes/brand-header.php') ?>
-<?php include ('includes/header-global-announcements5.php') ?>
+<?php include ('includes/header-brand.php') ?>
+<?php include ('includes/header-main.php') ?>
 <section class="utilities-bar">
     <div class="container">
         <nav class="navbar navbar-default"  style="margin-bottom:0px">
@@ -49,7 +49,7 @@ $page = '';
         </nav>
     </div>
 </section>
-<?php include ('includes/global-announce-panel-5.php') ?>
+<?php include ('includes/global-announcements.php') ?>
 <div class="main-content container" role="main">
     <div id="main-content">
         <div class="tcptdp-header">

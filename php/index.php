@@ -37,7 +37,13 @@ header .app-header h1 {
                 <li><a href="tdp.php" target="_blank">TDP</a> </li>
                 <li><a href="tdp-noreviews.php" target="_blank">TDP</a> (ratings only) </li>
             </ul>
-           
+            <h3 class="">Alerts</h3>
+            <ul>
+                <li><a href="store-alerts1a.php" target="_blank">top banner, small modal</a> </li>
+                <li><a href="store-alerts1b.php" target="_blank">top banner, standard modal</a> </li>
+                <li><a href="store-alerts2a.php" target="_blank">middle banner, small modal</a> </li>
+                <li><a href="store-alerts2b.php" target="_blank">middle banner, standard modal</a> </li>
+            </ul>
         </div>
     </div>
 </div>

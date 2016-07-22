@@ -10,23 +10,7 @@ $page = '';
 <?php include ('includes/scripts.php') ?>
 </head>
 <body id="top" >
-<div class="alert alert-application" role="alert" style="display:none">
-    <div class="container">
-        <div class="row">
-            <div class="hidden-xs col-sm-2 col-md-1 col-lg-1 text-center"> <i class="icon-attention-circled"></i></div>
-            <div class="col-xs-12 col-sm-10 col-md-11 col-lg-11">
-                <div class="row message-header">
-                    <div class="col-xs-12 col-md-9 message-title">
-                        <h5>Tornado Watch</h5>
-                    </div>
-                </div>
-                <div class="message-content">
-                    <p> The National Weather Service is reporting a tornado sighting in Monroe County. Please seek shelter immediately. </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?php include ('includes/alert.php') ?>
 <?php include ('includes/mobile-sidebar.php') ?>
 <?php include ('includes/header-brand.php') ?>
 <?php include ('includes/header-main.php') ?>
@@ -1995,9 +1979,18 @@ $page = '';
 </div>
 <?php include ('modal/announcement-task.php') ?>
 <?php include ('modal/announcement-taskcenter.php') ?>
+<?php include ('modal/alert-standard.php') ?>
 <?php include ('modal/SD-1002-settings.php') ?>
 <?php include('includes/brand-footer.php') ?>
 <?php include('includes/footer-scripts.php') ?>
+
+<script type="text/javascript">
+    $(window).load(function(){
+        $('#alert').modal('show');
+    });
+</script>
+
+
 <script>
     $(window).load(function() {
         $("#global-announcements").hide();
