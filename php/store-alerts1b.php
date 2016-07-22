@@ -1979,9 +1979,18 @@ $page = '';
 </div>
 <?php include ('modal/announcement-task.php') ?>
 <?php include ('modal/announcement-taskcenter.php') ?>
+<?php include ('modal/alert-standard.php') ?>
 <?php include ('modal/SD-1002-settings.php') ?>
 <?php include('includes/brand-footer.php') ?>
 <?php include('includes/footer-scripts.php') ?>
+
+<script type="text/javascript">
+    $(window).load(function(){
+        $('#alert').modal('show');
+    });
+</script>
+
+
 <script>
     $(window).load(function() {
         $("#global-announcements").hide();
