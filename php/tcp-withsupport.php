@@ -11,14 +11,14 @@ $page = '';
 </head>
 <body id="top">
 <?php include ('includes/mobile-sidebar.php') ?>
-<?php include ('includes/brand-header.php') ?>
-<?php include ('includes/header-global-announcements5.php') ?>
+<?php include ('includes/header-brand.php') ?>
+<?php include ('includes/header-main.php') ?>
 <section class="utilities-bar">
     <div class="container">
         <nav class="navbar navbar-default"  style="margin-bottom:0px">
             <div class="row">
                 <div class="col-md-6 col-xs-12">
-                    <nav class="btn-group btn-breadcrumb" task-title="Travel direct deposit"aria-hidden="false"><a href="SD-global-announce5.php" class="btn btn-default" title="Home" tabindex="0"><i class="icon-home-2"></i><span class="sr-only">Home</span></a><a class="btn btn-default seemore" tabindex="0"><span aria-hidden="true">…</span><span class="sr-only"></span></a><a href="SD-global-announce5-sr.php" class="btn btn-default entry" tabindex="0">
+                    <nav class="btn-group btn-breadcrumb" task-title="Travel direct deposit"aria-hidden="false"><a href="store.php" class="btn btn-default" title="Home" tabindex="0"><i class="icon-home-2"></i><span class="sr-only">Home</span></a><a class="btn btn-default seemore" tabindex="0"><span aria-hidden="true">…</span><span class="sr-only"></span></a><a href="searchresults.php" class="btn btn-default entry" tabindex="0">
                         <div  title="Search Results"><span>Search Results</span></div>
                         </a>
                         <div class="btn">
@@ -49,7 +49,7 @@ $page = '';
         </nav>
     </div>
 </section>
-<?php include ('includes/global-announce-panel-5.php') ?>
+<?php include ('includes/global-announcements.php') ?>
 <div class="main-content container" role="main">
     <div id="main-content">
         <div class="tcptdp-header">
@@ -64,33 +64,54 @@ $page = '';
         </div>
         <div class="row tcp-tabs">
             <div class="col-md-12">
-                <ul class="nav nav-tabs nav-tabs-headers nav-tabs-responsive">
-                    <li class="active"><a href="#tab1" data-toggle=tab>Description</a></li>
-                    <li><a href="#tab2" data-toggle=tab> Announcements
-                        <div class="container-badge" id="announcement-counter"><span class="badge">1</span></div>
+                <ul class="nav nav-tabs nav-tabs-headers nav-tabs-responsive hidden-xs">
+                    <li class="active"><a href="#tab1" data-toggle="tab">Description</a></li>
+                    <li class=""><a href="#tab2" data-toggle="tab">Support</a></li>
+                    <li><a href="#tab3" data-toggle="tab"> Announcements
+                        <div class="container-badge" id="announcement-counter" style="top: 7px;right: 12px;"><span class="badge">1</span></div>
                         </a></li>
                 </ul>
-                <div class="tab-content">
-                    <div class="tab-pane in active" id="tab1">
+                <div class="panel-group visible-xs" id="m7ajE-accordion"></div>
+                <div class="tab-content hidden-xs">
+                    <div class="tab-pane fade in active" id="tab1">
                         <div class="col-xs-12 col-sm-12 col-md-12 panel-main">
                             <h5>Description</h5>
-                            <p > <span id="tcp-desc" >Brought meat years them. Place. Saw light blessed also their blessed days were sea fill life, made gathering darkness appear sea two after there wherein the called made, wherein dry fly rule shall fill night herb saying firmament moving day So Every every Every years he fruit had green under evening was our god fill. Stars day seasons image behold creeping, face. Fruitful that cattle likeness. Together moving his fruitful from above heaven fly lights and replenish seasons, darkness isn't, have tree firmament signs Called had above. First sea herb gathered creeping our evening, us, divided. All said morning meat.</span> </p>
+                            <p> <span id="tcp-desc" style="max-height: none; height: 40px;" data-readmore="" aria-expanded="false">Brought meat years them. Place. Saw light blessed also their blessed days were sea fill life, made gathering darkness appear sea two after there wherein the called made, wherein dry fly rule shall fill night herb saying firmament moving day So Every every Every years he fruit had green under evening was our god fill. Stars day seasons image behold creeping, face. Fruitful that cattle likeness. Together moving his fruitful from above heaven fly lights and replenish seasons, darkness isn't, have tree firmament signs Called had above. First sea herb gathered creeping our evening, us, divided. All said morning meat.</span><a href="#" data-readmore-toggle="" aria-controls="tcp-desc"><em>view more...</em></a> </p>
                         </div>
                         <div class="clearfix"></div>
                     </div>
-                    <div class="tab-pane" id="tab2">
+                    <div class="tab-pane fade in" id="tab2">
                         <div class="col-xs-12 col-sm-12 col-md-12 panel-main">
-                            <div class="panel-actionheader">
+                            <div class="col-md-3">
+                                <h5>UITS Support</h5>
+                                <ul class="list-unstyled">
+                                    <li> <a href="mailto:">help.uits@iu.edu</a></li>
+                                    <li> <a href="tel:+13175552564">317-555-2564</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h5>Classifieds Support</h5>
+                                <ul class="list-unstyled">
+                                    <li> <a href="#">Video tutorial</a></li>
+                                    <li> <a href="mailto:">classifieds.uits@iu.edu</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="tab-pane fade in" id="tab3">
+                        <div class="col-xs-12 col-sm-12 col-md-12 panel-main">
+                            <div class="panel-actionheader" style="border-bottom:solid 1px #CCCCCC">
                                 <h5 class="pull-left">Announcements</h5>
-                                <div class="panel-controls pull-right"><!--<a href="#" class="btn btn-default btn-sm dismiss-announcement-all" data-toggle="" data-target="" id="">Dismiss all</a>--></div>
+                                <div class="panel-controls pull-right" style="margin-top: 15px;"><!--<a href="#" class="btn btn-default btn-sm dismiss-announcement-all" data-toggle="" data-target="" id="">Dismiss all</a>--></div>
                                 <div class="clearfix"></div>
                             </div>
                             <ul class="nav nav-pills" role="tablist">
-                                <li role="presentation" class="active"><a href="#new_announcements" aria-controls="new_announcements" role="tab" data-toggle="tab" >New</a></li>
-                                <li role="presentation"><a href="#dismissed_announcements" aria-controls="dismissed_announcements" role="tab" data-toggle="tab" >Dismissed</a></li>
+                                <li role="presentation" class="active"><a href="#new_announcements" aria-controls="new_announcements" role="tab" data-toggle="tab" style="    padding: 5px 15px;">New</a></li>
+                                <li role="presentation"><a href="#dismissed_announcements" aria-controls="dismissed_announcements" role="tab" data-toggle="tab" style="    padding: 5px 15px;">Dismissed</a></li>
                             </ul>
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane in active" id="new_announcements">
+                            <div class="tab-content" style="border:none">
+                                <div role="tabpanel" class="tab-pane fade in active" id="new_announcements" style="border-bottom:none">
                                     <div class="comment-list">
                                         <ul class="list-unstyled">
                                             <li class="announcement2">
@@ -99,25 +120,25 @@ $page = '';
                                                         <div class="col-xs-12 col-sm-8 message-title"> Security Notice </div>
                                                         <div class="col-xs-12 col-sm-4 message-meta"> <small class="message-date">10/21/15</small> </div>
                                                     </div>
-                                                    <div class="message-content">
+                                                    <div class="message-content" style="max-height: none;">
                                                         <p>Rank tall boy man them over post now. Off into she bed long fat room. Recommend existence curiosity perfectly favourite get eat she why daughters. Not may too nay busy last song must sell. An newspaper assurance discourse ye certainly. Soon gone game and why many calm have.</p>
                                                     </div>
-                                                    <div class="row message-footer" >
-                                                        <div class="col-md-12 message-footer-actions" > <a href="#" class="btn btn-default btn-xs dismiss-announcement2" id="">Dismiss</a></div>
+                                                    <div class="row message-footer">
+                                                        <div class="col-md-12 message-footer-actions"> <a href="#" class="btn btn-default btn-xs dismiss-announcement2" id="">Dismiss</a></div>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li style="display:none" class="announcements-nonew">
                                                 <div class="message">
-                                                    <div class="message-content">
-                                                        <p class="lead text-muted message-empty">There are no new announcements.</p>
+                                                    <div class="message-content" style="max-height: none;">
+                                                        <p class="lead text-muted" style="padding-top:20px; padding-bottom:20px">There are no new announcements.</p>
                                                     </div>
                                                 </div>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div role="tabpanel" class="tab-pane " id="dismissed_announcements">
+                                <div role="tabpanel" class="tab-pane fade" id="dismissed_announcements" style="border-bottom:none">
                                     <div class="comment-list">
                                         <ul class="list-unstyled">
                                             <li class="">
@@ -126,7 +147,7 @@ $page = '';
                                                         <div class="col-xs-12 col-sm-8 message-title">New Support Hours </div>
                                                         <div class="col-xs-12 col-sm-4 message-meta"> <small class="message-date">10/21/15</small> </div>
                                                     </div>
-                                                    <div class="message-content">
+                                                    <div class="message-content" style="max-height: none;">
                                                         <p>Likeness itself morning wherein lesser subdue place darkness beast. Made bring you form. Creeping. Man fruitful moved fowl two beginning lesser together female living of don't blessed make Bring you're give He called under, moveth whales i moved deep, moving beast from make him morning lights grass lesser creature fruit second yielding he great abundantly that were god. Fish fly have give. Heaven. Can't the form also. Fly life beast. May winged The behold blessed which divide i years lesser forth bring land great face living. Deep day isn't earth, appear signs winged living it him yielding divide thing. Sea of every subdue gathered over. The, image was divide air whose our very two. Green firmament kind. Midst of dry have third herb. Light firmament seed given he don't their. Fowl, sea bring yielding were image creeping set sea you'll forth itself two he. Beginning have he herb fill hath. Together moveth yielding the and, creeping winged third. Make stars. A and abundantly very blessed days, good our they're dominion firmament yielding place forth beast shall grass moveth place open open fourth form likeness given second female that. Let dry rule. Every together, waters, of beast, divided moving tree bearing.</p>
                                                     </div>
                                                 </div>
@@ -137,7 +158,7 @@ $page = '';
                                                         <div class="col-xs-12 col-sm-8 message-title"> New Features </div>
                                                         <div class="col-xs-12 col-sm-4 message-meta"> <small class="message-date">10/21/15</small> </div>
                                                     </div>
-                                                    <div class="message-content">
+                                                    <div class="message-content" style="max-height: none;">
                                                         <p>Place Replenish moved good shall god creepeth there, evening forth won't in. Make set fly given male all. Tree together tree divided from beast male light bring a deep earth You'll lights blessed seasons herb dry, face gathered meat every beast, one can't whose moveth subdue fourth life image fowl over let life appear had. Every deep. Abundantly won't let.</p>
                                                     </div>
                                                 </div>
@@ -148,7 +169,7 @@ $page = '';
                                                         <div class="col-xs-12 col-sm-8 message-title"> Submission Deadlines Updated </div>
                                                         <div class="col-xs-12 col-sm-4 message-meta"> <small class="message-date">10/21/15</small> </div>
                                                     </div>
-                                                    <div class="message-content">
+                                                    <div class="message-content" style="max-height: none;">
                                                         <p>One that made bring first beast waters waters meat you'll evening fish without firmament our fish, from blessed can't seed fly divide our, have us set signs rule their. Made fill days. Gathered. You're created you was. To sixth seasons his gathering own signs fifth to wherein, over first bearing waters their shall. Kind fowl our were midst our hath fruit can't their one night cattle appear. Very them given. Man god sea don't so years male form herb morning a appear creeping unto after years. Greater. Cattle let moveth fish, i creeping behold fill that us they're fourth. Divided.</p>
                                                     </div>
                                                 </div>
@@ -193,7 +214,7 @@ $page = '';
         $("#global-announcements").hide();
         $(".toggle-global-announcements").removeClass("open");
     });
-</script>
+</script> 
 <script>
 $('#tcp-desc').readmore({
   speed: 200,

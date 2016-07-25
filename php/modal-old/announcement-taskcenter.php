@@ -41,7 +41,7 @@
                             <div class="col-md-6"> </div>
                             <div class="col-md-6 text-right">
                                 <button type="button" class="btn btn-default btn-sm dismiss1" data-dismiss="modal">Close</button>
-                                <a href="tcp.php" class="btn btn-primary btn-sm dismiss1" data-dismiss=""><i class="icon-play-circled2"></i> <span class="">Open Task Center</span></a> </div>
+                                <a href="SD-tcp5.php" class="btn btn-primary btn-sm dismiss1" data-dismiss=""><i class="icon-play-circled2"></i> <span class="">Open Task Center</span></a> </div>
                         </div>
                     </div>
                 </div>

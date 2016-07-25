@@ -11,14 +11,14 @@ $page = '';
 </head>
 <body id="top">
 <?php include ('includes/mobile-sidebar.php') ?>
-<?php include ('includes/brand-header.php') ?>
-<?php include ('includes/header-global-announcements5.php') ?>
+<?php include ('includes/header-brand.php') ?>
+<?php include ('includes/header-main.php') ?>
 <section class="utilities-bar">
     <div class="container">
         <nav class="navbar navbar-default"  style="margin-bottom:0px">
             <div class="row">
                 <div class="col-md-6 col-xs-12">
-                    <nav class="btn-group btn-breadcrumb" task-title="Travel direct deposit"aria-hidden="false"><a href="SD-global-announce5.php" class="btn btn-default" title="Home" tabindex="0"><i class="icon-home-2"></i><span class="sr-only">Home</span></a><a class="btn btn-default seemore" tabindex="0"><span aria-hidden="true">…</span><span class="sr-only"></span></a><a href="SD-global-announce5-sr.php" class="btn btn-default entry" tabindex="0">
+                    <nav class="btn-group btn-breadcrumb" task-title="Travel direct deposit"aria-hidden="false"><a href="store.php" class="btn btn-default" title="Home" tabindex="0"><i class="icon-home-2"></i><span class="sr-only">Home</span></a><a class="btn btn-default seemore" tabindex="0"><span aria-hidden="true">…</span><span class="sr-only"></span></a><a href="searchresults.php" class="btn btn-default entry" tabindex="0">
                         <div  title="Search Results"><span>Search Results</span></div>
                         </a>
                         <div class="btn">
@@ -49,7 +49,7 @@ $page = '';
         </nav>
     </div>
 </section>
-<?php include ('includes/global-announce-panel-5.php') ?>
+<?php include ('includes/global-announcements.php') ?>
 <div class="main-content container" role="main">
     <div id="main-content">
         <div class="tcptdp-header">

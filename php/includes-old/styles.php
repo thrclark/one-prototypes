@@ -27,52 +27,70 @@
     <![endif]-->
 
 <style>
-
-.lightSlider {
-	overflow: visible;
-	margin: 0;
+.menuslide-out {
+	right: -227px;
+	visibility: hidden;
 }
-.lSSlideWrapper {
-	z-index: 20;
-	min-height: 140px;
-	overflow: hidden;
-}
-.lSSlideOuter {
-	overflow: hidden;
-}
-.lSSlideOuter li {
-	position: relative;
-}
-.lSSlideOuter .lSPager.lSpg {
-	margin: 10px 0 0;
-	padding: 0;
-	text-align: center;
-	bottom: 5px;
-	position: absolute;
-	width: 100%;
-}
-.lSAction > .lSPrev, .lSAction > .lSNext {
-	display: block;
-	font-size: 28px;
-	color: black;
-}
-.lSAction > .lSNext {
-	right: -25px;
-}
-.lSAction > .lSPrev {
-	left: -25px;
-}
-.lSAction > a {
-	background-image: none;
-	top: 45%;
-}
-#ga-slider {
-	margin-left: -7px;
-}
-
-@media (max-width: 767px) {
-#ga-slider {
-	margin-left: 0px;
-}
+.menuslide-in {
+	right: 0px;
+	visibility: visible;
 }
 </style>
+<style type="text/css">
+.twitter-typeahead .tt-dropdown-menu .tt-dataset-task h3, .twitter-typeahead .tt-dropdown-menu .tt-dataset-task-center h3 {
+	color: #555;
+	padding: 3px 3px 10px 0;
+	margin: 10px 20px 5px 20px;
+	border-bottom: 1px solid #ccc;
+	font-size: 18px;
+	color: #a94442;
+}
+.twitter-typeahead .tt-suggestion:hover {
+	color: #fff;
+	background-color: #337ab7;
+}
+.twitter-typeahead .tt-suggestion:hover .text-muted {
+	padding-left: 10px;
+	color: #fff;
+}
+</style>
+
+
+<style>
+
+	.global-announcement.color1 .ga-header {
+		background: #786BC5;
+		color: #ffffff;
+		text-shadow: 1px 1px 1px #000;
+	}
+	.global-announcement.color2 .ga-header {
+		background: #E39A41;
+		color: #ffffff;
+		text-shadow: 1px 1px 1px #000;
+	}
+	.global-announcement.color3 .ga-header {
+		background: #BC545F;
+		color: #ffffff;
+		text-shadow: 1px 1px 1px #000;
+	}
+	.global-announcement.color4 .ga-header {
+		background: #00BB9A;
+		color: #ffffff;
+		text-shadow: 1px 1px 1px #000;
+	}
+	.global-announcement.color5 .ga-header {
+		background: #44AADF;
+		color: #ffffff;
+		text-shadow: 1px 1px 1px #000;
+	}
+	
+	.global-announcement.color6 .ga-header {
+		background: #60574d;
+		color: #ffffff;
+		text-shadow: 1px 1px 1px #000;
+	}
+    
+    
+    
+    </style>
+    

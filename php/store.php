@@ -28,8 +28,8 @@ $page = '';
     </div>
 </div>
 <?php include ('includes/mobile-sidebar.php') ?>
-<?php include ('includes/brand-header.php') ?>
-<?php include ('includes/header-global-announcements5.php') ?>
+<?php include ('includes/header-brand.php') ?>
+<?php include ('includes/header-main.php') ?>
 <section class="utilities-bar hidden-xs">
     <div class="container">
         <nav class="navbar navbar-default"  style="margin-bottom:0px">
@@ -58,7 +58,7 @@ $page = '';
         </nav>
     </div>
 </section>
-<?php include ('includes/global-announce-panel-5.php') ?>
+<?php include ('includes/global-announcements.php') ?>
 <div class="main-content container" role="main">
     <div id="main-content">
         <h2 class="sr-only">Tasks</h2>
@@ -68,7 +68,7 @@ $page = '';
                     <div class="col-xs-10">
                         <h3>My Favorites</h3>
                     </div>
-                    <div class="col-xs-2 text-right"> <a href="SD-edit-favs.php" class="btn btn-default btn-xs" tabindex="0" title="edit my favorites"><i class="icon-pencil"></i><span class="visible-md-inline visible-lg-inline">Edit</span><span class="sr-only"> Favorites</span></a> </div>
+                    <div class="col-xs-2 text-right"> <a href="editfavs.php" class="btn btn-default btn-xs" tabindex="0" title="edit my favorites"><i class="icon-pencil"></i><span class="visible-md-inline visible-lg-inline">Edit</span><span class="sr-only"> Favorites</span></a> </div>
                 </div>
             </div>
             <div id="_favorite_" class="collection">
@@ -105,7 +105,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -145,7 +145,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart" style="display:; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -185,7 +185,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart" style="display:; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -225,7 +225,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart" style="display:; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -265,7 +265,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart" style="display:; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -305,7 +305,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart" style="display:; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -360,7 +360,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart" style="display:; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -400,7 +400,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart" style="display:; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -455,7 +455,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart" style="display:; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -495,7 +495,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart" style="display:; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -549,7 +549,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -589,7 +589,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -629,7 +629,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -669,7 +669,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -709,7 +709,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -749,7 +749,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -789,7 +789,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -829,7 +829,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -869,7 +869,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -909,7 +909,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -949,7 +949,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -989,7 +989,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1039,7 +1039,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1079,7 +1079,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1119,7 +1119,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1159,7 +1159,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1199,7 +1199,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1239,7 +1239,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1279,7 +1279,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1319,7 +1319,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1359,7 +1359,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1399,7 +1399,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1439,7 +1439,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1479,7 +1479,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1540,7 +1540,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1580,7 +1580,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1620,7 +1620,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1660,7 +1660,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1700,7 +1700,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1740,7 +1740,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1780,7 +1780,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1820,7 +1820,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1860,7 +1860,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1900,7 +1900,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1940,7 +1940,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">
@@ -1980,7 +1980,7 @@ $page = '';
                                 <div class="mobileview visible-xs"><i class="icon-mobile-1"></i><span>Mobile Friendly</span></div>
                             </div>
                             <div class="tile-actions btn-group" style=" ">
-                                <button title="View Task Details" onclick="location.href='SD-global-announce5-tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
+                                <button title="View Task Details" onclick="location.href='tdp.php'" class="btn btn-default"><i class="icon-info-circled-1"></i><span class="sr-only">View Task Details</span></button>
                                 <button title="Mark as Favorite" class="btn btn-default favorite notice"><i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i><span class="sr-only">Add Task to Favorites</span></button>
                             </div>
                             <div class="mobile-slide visible-xs">

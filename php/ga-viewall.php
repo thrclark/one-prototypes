@@ -33,14 +33,14 @@ $page = '';
     </div>
 </div>
 <?php include ('includes/mobile-sidebar.php') ?>
-<?php include ('includes/brand-header.php') ?>
-<?php include ('includes/header-global-announcements5.php') ?>
+<?php include ('includes/header-brand.php') ?>
+<?php include ('includes/header-main.php') ?>
 <section class="utilities-bar">
     <div class="container">
         <nav class="navbar navbar-default"  style="margin-bottom:0px">
             <div class="row">
                 <div class="col-md-6 col-xs-12">
-                    <nav class="btn-group btn-breadcrumb" > <a href="SD-global-announce5.php" class="btn btn-default"><i class="icon-home-2"></i><span class="sr-only">Home</></a>
+                    <nav class="btn-group btn-breadcrumb" > <a href="store.php" class="btn btn-default"><i class="icon-home-2"></i><span class="sr-only">Home</></a>
                         <div class="btn btn-default seemore" style="">...</div>
                         <div class="btn">
                             <div>Announcements</div>

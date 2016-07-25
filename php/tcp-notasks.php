@@ -11,14 +11,14 @@ $page = '';
 </head>
 <body id="top">
 <?php include ('includes/mobile-sidebar.php') ?>
-<?php include ('includes/brand-header.php') ?>
-<?php include ('includes/header-global-announcements5.php') ?>
+<?php include ('includes/header-brand.php') ?>
+<?php include ('includes/header-main.php') ?>
 <section class="utilities-bar">
     <div class="container">
         <nav class="navbar navbar-default"  style="margin-bottom:0px">
             <div class="row">
                 <div class="col-md-6 col-xs-12">
-                    <nav class="btn-group btn-breadcrumb" task-title="Travel direct deposit"aria-hidden="false"><a href="SD-global-announce5.php" class="btn btn-default" title="Home" tabindex="0"><i class="icon-home-2"></i><span class="sr-only">Home</span></a><a class="btn btn-default seemore" tabindex="0"><span aria-hidden="true">…</span><span class="sr-only"></span></a><a href="SD-global-announce5-sr.php" class="btn btn-default entry" tabindex="0">
+                    <nav class="btn-group btn-breadcrumb" task-title="Travel direct deposit"aria-hidden="false"><a href="store.php" class="btn btn-default" title="Home" tabindex="0"><i class="icon-home-2"></i><span class="sr-only">Home</span></a><a class="btn btn-default seemore" tabindex="0"><span aria-hidden="true">…</span><span class="sr-only"></span></a><a href="searchresults.php" class="btn btn-default entry" tabindex="0">
                         <div  title="Search Results"><span>Search Results</span></div>
                         </a>
                         <div class="btn">
@@ -49,12 +49,18 @@ $page = '';
         </nav>
     </div>
 </section>
-<?php include ('includes/global-announce-panel-5.php') ?>
+<?php include ('includes/global-announcements.php') ?>
 <div class="main-content container" role="main">
     <div id="main-content">
         <div class="tcptdp-header">
             <div class="media-left hidden-sm hidden-xs">
-                <div class="collage"> <img alt="" src="../img/task-icons-new/icon-childcare-fees.png"> <img alt="" src="../img/task-icons-new/icon-code-of_conduct.png"> <img alt="" src="../img/task-icons-new/icon-address.png"> <img alt="" src="../img/task-icons-new/icon-email-managment.png"> <img alt="" src="../img/task-icons-new/icon-account-creation.png"> <img alt="" src="../img/task-icons-new/icon-iucat.png"> <img alt="" src="../img/task-icons-new/icon-resident.png"> <img alt="" src="../img/task-icons-new/icon-parking.png"> <img alt="" src="../img/task-icons-new/icon-time.png"> </div>
+                
+                
+                
+                
+                <div class="collage"> </div>
+                
+                
             </div>
             <div class="media-body">
                 <h2 class="media-heading">New Student Orientation</h2>
@@ -163,7 +169,7 @@ $page = '';
                 </div>
             </div>
         </div>
-        <div data-ng-repeat="taskCollection in store.tasks.taskCollections" class="task-collection">
+       <div data-ng-repeat="taskCollection in store.tasks.taskCollections" class="task-collection">
             <div class="category">
                 <div class="row">
                     <div class="col-xs-10">
@@ -172,9 +178,10 @@ $page = '';
                     <div class="col-xs-2 text-right"> </div>
                 </div>
             </div>
-            <div id="_favorite_" class="collection">
-                <div data-sd-tiles="taskCollection.tiles" data-market-map="::marketMap" data-add-favorite-function="addSingleFavorite(taskUid, taskCenterId, callback)" data-remove-favorite-function="removeSingleFavorite(taskUid, taskCenterId, callback)" data-launch-url-function="getTileLaunchUrl(tile, taskCenterId)" data-details-url-function="getTileDetailsUrl(tile)" data-filter="filter" data-user-name="">
-                    <?php include('includes/tasks.php') ?>
+            <div class="row" style="padding-top:10px">
+                <div class="col-md-12">
+                    <p class="lead text-muted" style="margin-bottom:0px"> No Available Tasks </p>
+                    <p class="text-muted"> All tasks that were previously found in this task center have either expired, or have been removed by their respective publisher.</p>
                 </div>
             </div>
         </div>
