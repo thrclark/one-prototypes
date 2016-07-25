@@ -1,96 +1,211 @@
-.global-announcement.color1 .ga-header {
-  background: #786BC5;
-  color: #ffffff;
-  text-shadow: 1px 1px 1px #000;
-}
-.global-announcement.color2 .ga-header {
-  background: #E39A41;
-  color: #ffffff;
-  text-shadow: 1px 1px 1px #000;
-}
-.global-announcement.color3 .ga-header {
-  background: #BC545F;
-  color: #ffffff;
-  text-shadow: 1px 1px 1px #000;
-}
-.global-announcement.color4 .ga-header {
-  background: #00BB9A;
-  color: #ffffff;
-  text-shadow: 1px 1px 1px #000;
-}
-.global-announcement.color5 .ga-header {
-  background: #44AADF;
-  color: #ffffff;
-  text-shadow: 1px 1px 1px #000;
+/* Global Announcements */
+
+.lSAction {
+  > .lSPrev, > .lSNext {
+    display: block;
+    font-size: 28px;
+    color: black;
+  }
+  > .lSPrev {
+    left: -25px;
+  }
+  > .lSNext {
+    right: -25px;
+  }
+
+  > a {
+    background-image: none;
+    top: 45%;
+  }
 }
 
-.global-announcement.color6 .ga-header {
-  background: #60574d;
-  color: #ffffff;
-  text-shadow: 1px 1px 1px #000;
+.global-announcements {
+  box-shadow: rgba(0, 0, 0, 0.098) 0px 20px 15px -20px inset;
+  border-top: 1px solid #EBEBEB;
+  background-color: #fff;
+
+  .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 175px;
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+    white-space: nowrap;
+
+    ul {
+      margin: 0px auto;
+      height: 140px;
+      overflow: hidden;
+
+      &.single {
+        padding-left: 0;
+
+        li {
+          width: 100%;
+          float: none;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+
+          @media (min-width: @screen-lg-min) {
+            width: 65%;
+          }
+          @media (min-width: @screen-md-min) {
+            width: 75%;
+          }
+          @media (min-width: @screen-sm-min) {
+            width: 80%;
+          }
+        }
+      }
+
+      li {
+        list-style: none;
+      }
+    }
+
+    .view-all {
+      position:absolute;
+      right:5px;
+      bottom:5px;
+      font-style:italic;
+    }
+
+    .message-empty {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
 
-
-
-
-
-.global-announcements .global-announcement {
-  min-height: 125px;
+.global-announcement {
+  height: 125px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
   margin-bottom: 10px;
   margin-top: 5px;
-  border: solid 1px #EBEBEB;
+  border: 1px solid #EBEBEB;
   background: white;
-  //margin-right: 5px;
-  position: absolute;
+  margin-right: 5px;
+  white-space: normal;
+
+  .ga-header {
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+    padding: 5px 30px 5px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: solid 1px #EBEBEB;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+
+    .close {
+      position: absolute;
+      right: 10px;
+      font-size: 14px;
+      top: 8px;
+      color: #ffffff;
+      text-shadow: 1px 1px 1px #000;
+      opacity: 1.0;
+    }
+
+    &.ga-color-0 {
+      background-color: @announcement-header-background-color-1;
+    }
+    &.ga-color-1 {
+      background-color: @announcement-header-background-color-2;
+    }
+    &.ga-color-2 {
+      background-color: @announcement-header-background-color-3;
+    }
+    &.ga-color-3 {
+      background-color: @announcement-header-background-color-4;
+    }
+    &.ga-color-4 {
+      background-color: @announcement-header-background-color-5;
+    }
+    &.ga-color-5 {
+      background-color: @announcement-header-background-color-6;
+    }
+  }
+
+  .ga-body {
+    line-height: 21px;
+    max-height: 92px;
+    overflow: hidden;
+    padding: 5px 10px 0px 10px;
+
+    > div {
+      max-height: 64px;
+      overflow: hidden;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .btn {
+      padding: 0;
+    }
+  }
 }
-.global-announcement.graphic {
-  text-align: center;
-  width: 100%;
-  box-shadow: none;
+
+.global-announcement-modal .modal-content {
+
   border: none;
-  position: absolute;
+
+  .modal-header {
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: bold;
+    /*font-size: 16px;*/
+
+    &.ga-color-0 {
+      background-color: @announcement-header-background-color-1;
+    }
+    &.ga-color-1 {
+      background-color: @announcement-header-background-color-2;
+    }
+    &.ga-color-2 {
+      background-color: @announcement-header-background-color-3;
+    }
+    &.ga-color-3 {
+      background-color: @announcement-header-background-color-4;
+    }
+    &.ga-color-4 {
+      background-color: @announcement-header-background-color-5;
+    }
+    &.ga-color-5 {
+      background-color: @announcement-header-background-color-6;
+    }
+  }
 }
-.global-announcement.graphic .close {
-  position: absolute;
-  right: 30px;
-  font-size: 14px;
-  color: black;
-  top: 8px;
-  opacity: .3;
-  text-shadow: none;
-}
-.global-announcements .global-announcement .ga-header {
-  padding: 5px 10px 5px 10px;
-  font-weight: bold;
-  font-size: 16px;
-  border-bottom: solid 1px #EBEBEB;
-}
-.global-announcements .global-announcement .ga-body {
-  padding: 5px 10px 0px 10px;
-}
-.global-announcements .global-announcement .ga-header .icon-graphic i {
-  font-size: 44px;
-  line-height: 52px;
-  text-shadow: none;
-  opacity: .7;
-}
-.global-announcements .global-announcement .ga-header .close {
-  position: absolute;
-  right: 10px;
-  font-size: 14px;
-  color: black;
-  top: 8px;
-  opacity: .3;
-  text-shadow: none;
-}
-.nav .toggle-global-announcements.open:before {
-  content: '';
-  background: #FFFFFF;
-  position: absolute;
-  width: 49px;
-  left: 0px;
-  top: 30px;
-  display: block;
-  height: 15px;
+
+.ga-color-box {
+  width: 50px;
+  height: 20px;
+
+  &.ga-color-0 {
+    background-color: @announcement-header-background-color-1;
+  }
+  &.ga-color-1 {
+    background-color: @announcement-header-background-color-2;
+  }
+  &.ga-color-2 {
+    background-color: @announcement-header-background-color-3;
+  }
+  &.ga-color-3 {
+    background-color: @announcement-header-background-color-4;
+  }
+  &.ga-color-4 {
+    background-color: @announcement-header-background-color-5;
+  }
+  &.ga-color-5 {
+    background-color: @announcement-header-background-color-6;
+  }
 }
