@@ -56,12 +56,8 @@
 	font-size: 28px;
 	color: black;
 }
-.lSAction > .lSNext {
-	right: -25px;
-}
-.lSAction > .lSPrev {
-	left: -25px;
-}
+
+
 .lSAction > a {
 	background-image: none;
 	top: 45%;
