@@ -39,10 +39,10 @@ header .app-header h1 {
             </ul>
             <h3 class="">Alerts</h3>
             <ul>
-                <li><a href="store-alerts1a.php" target="_blank">top banner, small modal</a> </li>
-                <li><a href="store-alerts1b.php" target="_blank">top banner, standard modal</a> </li>
-                <li><a href="store-alerts2a.php" target="_blank">middle banner, small modal</a> </li>
-                <li><a href="store-alerts2b.php" target="_blank">middle banner, standard modal</a> </li>
+                <li><a href="store-alerts1b.php" target="_blank">top banner</a> </li>
+                <li><a href="store-alerts1b-multiple.php" target="_blank">top banner, multiple alerts</a> </li>
+                <li><a href="store-alerts2b.php" target="_blank">middle banner</a> </li>
+                <li><a href="store-alerts2b-multiple.php" target="_blank">middle banner, multiple alerts</a> </li>
             </ul>
         </div>
     </div>
