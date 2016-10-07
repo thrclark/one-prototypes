@@ -45,6 +45,10 @@ header .app-header h1 {
                 <li><a href="store-alerts2b.php" target="_blank">middle banner, standard modal</a> </li>
             </ul>
         </div>
+        <h3 class="">Misc</h3>
+        <ul>
+            <li><a href="test-stickyfooter.php" target="_blank">Sticky Footer Test Page</a> </li>
+        </ul>
     </div>
 </div>
 </body>

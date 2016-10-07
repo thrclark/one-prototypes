@@ -1,11 +1,15 @@
 html {
   overflow-x:hidden;
+  height: 100%;
 }
 body {
   color: @text-color;
   overflow: hidden;
   position: relative;
   background-color:@bodybackground;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 [ng\:cloak], [ng-cloak], .ng-cloak {
   display: none !important;
