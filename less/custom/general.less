@@ -4,10 +4,11 @@ html {
 }
 body {
   color: @text-color;
-  overflow: hidden;
   position: relative;
   background-color:@bodybackground;
   display: flex;
+  min-height: 100vh;
+  height: 100vh;
   flex-direction: column;
 }
 
@@ -16,7 +17,6 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-
 }
 
 [ng\:cloak], [ng-cloak], .ng-cloak {
