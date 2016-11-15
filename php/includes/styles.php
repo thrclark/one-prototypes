@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="../app/vendor/js/lightSlider/css/lightslider.css">
-<link type="text/css" rel="stylesheet" href="../app/vendor/js/lightGallery/css/lightgallery.css" />
+<link type="text/css" rel="stylesheet" href="../app/vendor/js/lightGallery/css/lightgallery.css"/>
 
 <!-- Base CSS -->
 <link href="../less/styles.css" rel="stylesheet" type="text/css">
@@ -29,14 +29,24 @@
     <![endif]-->
 
 <style>
-
-#ga-slider {
-	margin-left: -7px;
-}
-
-@media (max-width: 767px) {
-#ga-slider {
-	margin-left: 0px;
-}
-}
+	#ga-slider {
+		margin-left: -7px;
+	}
+	
+	@media (max-width: 767px) {
+		#ga-slider {
+			margin-left: 0px;
+		}
+	}
+</style>
+<style>
+	.menuslide-out {
+		right: -227px;
+		visibility: hidden;
+	}
+	
+	.menuslide-in {
+		right: 0px;
+		visibility: visible;
+	}
 </style>
