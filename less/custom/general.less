@@ -4,13 +4,21 @@ html {
 }
 body {
   color: @text-color;
-  overflow: hidden;
   position: relative;
   background-color:@bodybackground;
-  min-height: 100%;
   display: flex;
+  min-height: 100vh;
+  height: 100vh;
   flex-direction: column;
 }
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+}
+
 [ng\:cloak], [ng-cloak], .ng-cloak {
   display: none !important;
 }
