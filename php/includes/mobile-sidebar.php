@@ -1,4 +1,20 @@
-<div class="menu visible-xs visible-sm container" id="sidebar_menu">
+
+
+
+<style>
+
+#collapseRole .panel-body .list-unstyled li:last-child .btn.btn-primary.btn-xs {
+	display: inline;
+}
+#collapseRole .panel-body .list-unstyled li:last-child:hover {
+	background: inherit;
+}
+#collapseRole .panel-body .list-unstyled {
+	margin-bottom: 20px;
+}
+</style>
+   
+   <div class="menu visible-xs visible-sm container" id="sidebar_menu">
     <div class="row menu-actions">
         <div class="col-xs-9 ng-scope" style="  padding-top: 5px;padding-left: 10px;"> Hello, Tom </div>
         <div class="col-xs-3" style="height: 40px;">
@@ -47,6 +63,11 @@
                         <li><a href="#" class=""><span >Faculty</span><i role="presentation" class="pull-right icon-check-1"></i></a></li>
                         <li><a href="#" class=""><span >Staff</span><i role="presentation" class="pull-right icon-check-1"></i></a></li>
                         <li><a href="#" class=""><span >Student</span><i role="presentation" class="pull-right icon-check-1"></i></a></li>
+                        
+                        <li class="text-center"><a href="asdf" class="btn btn-primary btn-xs disabled">Apply Changes</a></li>
+                        
+                        
+                        
                     </ul>
                 </div>
             </div>
