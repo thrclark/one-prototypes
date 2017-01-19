@@ -184,15 +184,14 @@ $(function() {
 
 </script>
 
-
-
 <header class="">
     <div class="container app-header " id="contain2">
         <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 brand"> <a class="logo" href="store.php" id="sidebar_logo" tabindex="0"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo.png" class="hidden-xs hidden-sm"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo-mobile.png" class="hidden-md hidden-lg">
-                <h1><span class="sr-only">One.IU</span></h1></a> </div>
+                <h1><span class="sr-only">One.IU</span></h1>
+                </a> </div>
             <div class="col-xs-6 col-sm-6 hidden-md hidden-lg mobile-menu">
-                <div class="pull-right"> <a href="#" class="btn btn-link toggle-global-announcements" style="color:#FFFFFF"> <i class="icon-bell-3"></i>     <span class="sr-only">Announcements</span></a>
+                <div class="pull-right"> <a href="#" class="btn btn-link toggle-global-announcements" style="color:#FFFFFF"> <i class="icon-bell-3"></i> <span class="sr-only">Announcements</span></a>
                     <button type="button" id="menu_button" class="btn btn-signin" tabindex="0"><span class="sr-only">Toggle menu</span><i class="icon-menu"></i></button>
                 </div>
             </div>
@@ -273,11 +272,13 @@ $(function() {
                                     <li role="menuitem" class=""><a tabindex="-1" href="#">IUPUI</a></li>
                                 </ul>
                             </div>
-                            <div class="dropdown" id="role_select" aria-hidden="false"> <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"> <span class="">All Roles</span><span class="caret"></span> </a>
-                                <ul class="dropdown-menu dropdown-menu-right checked-list" role="menu">
-                                    <li role="menuitem" class=""> <a href="#" tabindex="0"> <i role="presentation" class="pull-right icon-ok ng-hide" aria-hidden="true"></i> <span>Faculty</span> </a> </li>
-                                    <li role="menuitem" class=""> <a href="#" tabindex="0"> <i role="presentation" class="pull-right icon-ok ng-hide" aria-hidden="true"></i> <span>Staff</span> </a> </li>
-                                    <li role="menuitem" class=""> <a href="#" tabindex="0"> <i role="presentation" class="pull-right icon-ok ng-hide" aria-hidden="true"></i> <span>Student</span> </a> </li>
+                            <div class="dropdown inline-dropdown-menu"> <a href=""><span id="writetext">All Roles</span><span class="caret"></span></a>
+                                <ul class="dropdown-menu dropdown-menu-right checked-list inline-dropdown-menu-list">
+                                    <li> <a href="" tabindex="-1" id="role_faculty"><i role="presentation" class="pull-right " aria-hidden="true"></i><span>Faculty</span></a> </li>
+                                    <li> <a href="" tabindex="-1" id="role_staff"><i role="presentation" class="pull-right" aria-hidden="true"></i><span>Staff</span></a> </li>
+                                    <li> <a href="" tabindex="-1" id="role_student"><i role="presentation" class="pull-right" aria-hidden="true"></i><span>Student</span></a> </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li> <a href="#" tabindex="0" id="role_allroles"> <i role="presentation" aria-hidden="true"></i> <span>All Roles </span> </a> </li>
                                 </ul>
                             </div>
                         </div>
@@ -287,3 +288,68 @@ $(function() {
         </div>
     </div>
 </header>
+<script type='text/javascript'>
+    $(window).load(function() {
+        $('.checked-list a').click(function() {
+            //$(this).find('i').toggleClass('icon-ok')
+        });
+    });
+
+     $(document).ready(function() {
+        $("#role_allroles").click(function() {
+            $('#role_faculty i, #role_staff i, #role_student i').addClass("icon-ok");
+            $(this).find('i').addClass('icon-ok')
+        });
+      
+    });
+</script>
+
+
+
+
+
+<script>
+$(function() {                      
+  $("#role_allroles").click(function() {  
+    //$("#role_allroles i").addClass("icon-ok");      
+  });
+});
+</script>
+<script>
+
+    $(document).ready(function() {
+        
+		
+		
+		if ( $( "#role_staff i" ).hasClass( "icon-ok" ) ) {
+ 
+   $("#writetext").text("asdf");
+ 
+}
+
+    });
+	
+	
+	
+	
+</script>
+
+<script>
+$(function () {
+    $(".inline-dropdown-menu").click(function (e) {
+        $(".inline-dropdown-menu-list").hide();
+        $(this).find(".inline-dropdown-menu-list:first").toggle();
+
+        e.preventDefault(); // Stop navigation
+    });
+});
+
+$(document).click(function (e) {
+    var container = $(".inline-dropdown-menu");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+        $(".inline-dropdown-menu-list").hide();
+    }
+});
+
+
+</script>
