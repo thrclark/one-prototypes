@@ -274,11 +274,11 @@ $(function() {
                             </div>
                             <div class="dropdown inline-dropdown-menu"> <a href=""><span id="writetext">All Roles</span><span class="caret"></span></a>
                                 <ul class="dropdown-menu dropdown-menu-right checked-list inline-dropdown-menu-list">
-                                    <li> <a href="" tabindex="-1" id="role_faculty"><i role="presentation" class="pull-right " aria-hidden="true"></i><span>Faculty</span></a> </li>
-                                    <li> <a href="" tabindex="-1" id="role_staff"><i role="presentation" class="pull-right" aria-hidden="true"></i><span>Staff</span></a> </li>
-                                    <li> <a href="" tabindex="-1" id="role_student"><i role="presentation" class="pull-right" aria-hidden="true"></i><span>Student</span></a> </li>
-                                    <li role="separator" class="divider"></li>
-                                    <li> <a href="#" tabindex="0" id="role_allroles"> <i role="presentation" aria-hidden="true"></i> <span>All Roles </span> </a> </li>
+                                    <li> <a href="" tabindex="-1" id="role_faculty"><i role="presentation" class="pull-right icon-ok" aria-hidden="true"></i><span>Faculty</span></a> </li>
+                                    <li> <a href="" tabindex="-1" id="role_staff"><i role="presentation" class="pull-right icon-ok" aria-hidden="true"></i><span>Staff</span></a> </li>
+                                    <li> <a href="" tabindex="-1" id="role_student"><i role="presentation" class="pull-right icon-ok" aria-hidden="true"></i><span>Student</span></a> </li>
+                                  <li role="separator" class="divider"></li>
+                                    <li> <a href="#" tabindex="0" id="role_allroles"> <i role="presentation" aria-hidden="true" class="pull-right icon-ok"></i> <span>All Roles </span> </a> </li>
                                 </ul>
                             </div>
                         </div>
@@ -291,14 +291,14 @@ $(function() {
 <script type='text/javascript'>
     $(window).load(function() {
         $('.checked-list a').click(function() {
-            //$(this).find('i').toggleClass('icon-ok')
+            $(this).find('i').toggleClass('icon-ok')
         });
     });
 
      $(document).ready(function() {
         $("#role_allroles").click(function() {
             $('#role_faculty i, #role_staff i, #role_student i').addClass("icon-ok");
-            $(this).find('i').addClass('icon-ok')
+            //$(this).find('i').addClass('icon-ok')
         });
       
     });
@@ -311,7 +311,7 @@ $(function() {
 <script>
 $(function() {                      
   $("#role_allroles").click(function() {  
-    //$("#role_allroles i").addClass("icon-ok");      
+    $("#role_allroles i").addClass("icon-ok");      
   });
 });
 </script>
@@ -323,7 +323,7 @@ $(function() {
 		
 		if ( $( "#role_staff i" ).hasClass( "icon-ok" ) ) {
  
-   $("#writetext").text("asdf");
+   //$("#writetext").text("asdf");
  
 }
 
