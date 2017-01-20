@@ -58,7 +58,7 @@ $page = '';
                 </div>
             </nav>
         </div>
-    </section>
+    </section><br><br><br><br><br><br><br><br><br><br>
     <?php include ('includes/global-announcements.php') ?>
     <div class="main-content container" role="main">
         <div id="main-content">

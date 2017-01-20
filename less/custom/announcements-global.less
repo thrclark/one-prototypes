@@ -19,6 +19,32 @@
   }
 }
 
+
+@media (max-width:@screen-xs-max) {
+
+  .lSAction {
+    > .lSPrev, > .lSNext {
+      display: block;
+      font-size: 28px;
+      color: black;
+      position: absolute;
+      margin-top: 58px;
+    }
+    > .lSPrev {
+       left: 0px;
+    }
+    > .lSNext {
+      left: 40px;
+    }
+
+    > a {
+      background-image: none;
+      top: 45%;
+    }
+  }
+
+}
+
 .global-announcements {
   box-shadow: rgba(0, 0, 0, 0.098) 0px 20px 15px -20px inset;
   border-top: 1px solid #EBEBEB;
