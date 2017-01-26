@@ -74,9 +74,9 @@ $page = '';
                                                 <div class="form-group col-md-3">
                                                     <label for="authenticated">Authentication Type</label>
                                                     <select class="form-control   " tabindex="0" aria-invalid="false">
-                                                        <option value="E" selected="selected" label="External">External</option>
-                                                        <option value="F" selected="selected" label="None">None</option>
-                                                        <option value="T" label="Internal">Internal</option>
+                                                        <option value="1" selected="selected" label="External">External</option>
+                                                        <option value="2" selected="selected" label="None">None</option>
+                                                        <option value="3" label="Internal">Internal</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group col-md-3">
@@ -102,59 +102,59 @@ $page = '';
                                                     </div>
                                                     <select id="contactId1" class="form-control   -required" required tabindex="0" aria-required="false" aria-invalid="false">
                                                         <option value="">Select Contact</option>
-                                                        <option value="10" label="CyberDH Group">CyberDH Group</option>
-                                                        <option value="11" label="David's Contact name">David's Contact name</option>
+                                                        <option value="duo" label="CyberDH Group">CyberDH Group</option>
+                                                        <option value="duo" label="David's Contact name">David's Contact name</option>
                                                         <option value="duo" label="Duo Support Team">Duo Support Team</option>
-                                                        <option value="13" label="eApp Instructions">eApp Instructions</option>
-                                                        <option value="14" label="eDossier Administrator">eDossier Administrator</option>
-                                                        <option value="15" label="eText Administrator">eText Administrator</option>
-                                                        <option value="16" label="Financial Aid &amp; Scholarships (IU East)">Financial Aid &amp; Scholarships (IU East)</option>
-                                                        <option value="17" label="Financial Aid and Scholarships (IUPUC)">Financial Aid and Scholarships (IUPUC)</option>
-                                                        <option value="18" label="Financial Management Services">Financial Management Services</option>
-                                                        <option value="19" label="Frances Adjorlolo">Frances Adjorlolo</option>
-                                                        <option value="20" label="High Performance File Systems Group">High Performance File Systems Group</option>
-                                                        <option value="21" label="Indiana University Department of Intercollegiate Athletics">Indiana University Department of Intercollegiate Athletics</option>
-                                                        <option value="22" label="Indiana University Foundation - Scholarships and Awards">Indiana University Foundation - Scholarships and Awards</option>
-                                                        <option value="23" label="IT Customer Support">IT Customer Support</option>
-                                                        <option value="24" label="IU Advancement IQ e-docs">IU Advancement IQ e-docs</option>
-                                                        <option value="25" label="IU Southeast Bookstore">IU Southeast Bookstore</option>
-                                                        <option value="26" label="IUB Libraries">IUB Libraries</option>
-                                                        <option value="27" label="IUPUI Athletics">IUPUI Athletics</option>
-                                                        <option value="28" label="IUPUI Libraries">IUPUI Libraries</option>
-                                                        <option value="29" label="KFS Resources &amp; Support">KFS Resources &amp; Support</option>
-                                                        <option value="30" label="OCSS">OCSS</option>
-                                                        <option value="31" label="Office of Admissions - IU Northwest">Office of Admissions - IU Northwest</option>
-                                                        <option value="32" label="Office of Financial Aid (IU Southeast)">Office of Financial Aid (IU Southeast)</option>
-                                                        <option value="33" label="Office of Financial Aid and Scholarship (IU South Bend)">Office of Financial Aid and Scholarship (IU South Bend)</option>
-                                                        <option value="34" label="Office of Financial Aid and Scholarships (IU Northwest)">Office of Financial Aid and Scholarships (IU Northwest)</option>
-                                                        <option value="35" label="Office of International Services">Office of International Services</option>
-                                                        <option value="36" label="Office of Research Administration">Office of Research Administration</option>
-                                                        <option value="37" label="Office of Residence Life and Housing">Office of Residence Life and Housing</option>
-                                                        <option value="38" label="Office of Scholarships (IU Bloomington)">Office of Scholarships (IU Bloomington)</option>
-                                                        <option value="39" label="Office of Scholarships and Financial Aid (IU Kokomo)">Office of Scholarships and Financial Aid (IU Kokomo)</option>
-                                                        <option value="40" label="Office of Student Scholarships (IUPUI)">Office of Student Scholarships (IUPUI)</option>
-                                                        <option value="41" label="Office of the Registrar - Bloomington">Office of the Registrar - Bloomington</option>
-                                                        <option value="44" label="Parking and Transportation Services - IUPUI">Parking and Transportation Services - IUPUI</option>
-                                                        <option value="45" label="Parking Operations - Bloomington">Parking Operations - Bloomington</option>
-                                                        <option value="46" label="Parking Services - Kokomo">Parking Services - Kokomo</option>
-                                                        <option value="47" label="Physical Plant">Physical Plant</option>
-                                                        <option value="48" label="Redhawk Review">Redhawk Review</option>
-                                                        <option value="49" label="Research Storage">Research Storage</option>
-                                                        <option value="50" label="Residential Programs and Services (RPS)">Residential Programs and Services (RPS)</option>
-                                                        <option value="51" label="Ruth Lilly Law Library">Ruth Lilly Law Library</option>
-                                                        <option value="52" label="School of Education (Bloomington) Career Connections">School of Education (Bloomington) Career Connections</option>
-                                                        <option value="53" label="Science Gateway">Science Gateway</option>
-                                                        <option value="54" label="Scott test">Scott test</option>
-                                                        <option value="55" label="Student Aid offices">Student Aid offices</option>
-                                                        <option value="56" label="Super David">Super David</option>
-                                                        <option value="57" label="test contact">test contact</option>
-                                                        <option value="58" label="test contact types">test contact types</option>
-                                                        <option value="59" label="The Horizon">The Horizon</option>
-                                                        <option value="60" label="UITS Research Technologies">UITS Research Technologies</option>
-                                                        <option value="61" label="UITS Support Center">UITS Support Center</option>
-                                                        <option value="62" label="University Human Resources">University Human Resources</option>
-                                                        <option value="63" label="University Student Services &amp; Systems">University Student Services &amp; Systems</option>
-                                                        <option value="64" label="Veteran Support Services">Veteran Support Services</option>
+                                                        <option value="duo" label="eApp Instructions">eApp Instructions</option>
+                                                        <option value="duo" label="eDossier Administrator">eDossier Administrator</option>
+                                                        <option value="duo" label="eText Administrator">eText Administrator</option>
+                                                        <option value="duo" label="Financial Aid &amp; Scholarships (IU East)">Financial Aid &amp; Scholarships (IU East)</option>
+                                                        <option value="duo" label="Financial Aid and Scholarships (IUPUC)">Financial Aid and Scholarships (IUPUC)</option>
+                                                        <option value="duo" label="Financial Management Services">Financial Management Services</option>
+                                                        <option value="duo" label="Frances Adjorlolo">Frances Adjorlolo</option>
+                                                        <option value="duo" label="High Performance File Systems Group">High Performance File Systems Group</option>
+                                                        <option value="duo" label="Indiana University Department of Intercollegiate Athletics">Indiana University Department of Intercollegiate Athletics</option>
+                                                        <option value="duo" label="Indiana University Foundation - Scholarships and Awards">Indiana University Foundation - Scholarships and Awards</option>
+                                                        <option value="duo" label="IT Customer Support">IT Customer Support</option>
+                                                        <option value="duo" label="IU Advancement IQ e-docs">IU Advancement IQ e-docs</option>
+                                                        <option value="duo" label="IU Southeast Bookstore">IU Southeast Bookstore</option>
+                                                        <option value="duo" label="IUB Libraries">IUB Libraries</option>
+                                                        <option value="duo" label="IUPUI Athletics">IUPUI Athletics</option>
+                                                        <option value="duo" label="IUPUI Libraries">IUPUI Libraries</option>
+                                                        <option value="duo" label="KFS Resources &amp; Support">KFS Resources &amp; Support</option>
+                                                        <option value="duo" label="OCSS">OCSS</option>
+                                                        <option value="duo" label="Office of Admissions - IU Northwest">Office of Admissions - IU Northwest</option>
+                                                        <option value="duo" label="Office of Financial Aid (IU Southeast)">Office of Financial Aid (IU Southeast)</option>
+                                                        <option value="duo" label="Office of Financial Aid and Scholarship (IU South Bend)">Office of Financial Aid and Scholarship (IU South Bend)</option>
+                                                        <option value="duo" label="Office of Financial Aid and Scholarships (IU Northwest)">Office of Financial Aid and Scholarships (IU Northwest)</option>
+                                                        <option value="duo" label="Office of International Services">Office of International Services</option>
+                                                        <option value="duo" label="Office of Research Administration">Office of Research Administration</option>
+                                                        <option value="duo" label="Office of Residence Life and Housing">Office of Residence Life and Housing</option>
+                                                        <option value="duo" label="Office of Scholarships (IU Bloomington)">Office of Scholarships (IU Bloomington)</option>
+                                                        <option value="duo" label="Office of Scholarships and Financial Aid (IU Kokomo)">Office of Scholarships and Financial Aid (IU Kokomo)</option>
+                                                        <option value="duo" label="Office of Student Scholarships (IUPUI)">Office of Student Scholarships (IUPUI)</option>
+                                                        <option value="duo" label="Office of the Registrar - Bloomington">Office of the Registrar - Bloomington</option>
+                                                        <option value="duo" label="Parking and Transportation Services - IUPUI">Parking and Transportation Services - IUPUI</option>
+                                                        <option value="duo" label="Parking Operations - Bloomington">Parking Operations - Bloomington</option>
+                                                        <option value="duo" label="Parking Services - Kokomo">Parking Services - Kokomo</option>
+                                                        <option value="duo" label="Physical Plant">Physical Plant</option>
+                                                        <option value="duo" label="Redhawk Review">Redhawk Review</option>
+                                                        <option value="duo" label="Research Storage">Research Storage</option>
+                                                        <option value="duo" label="Residential Programs and Services (RPS)">Residential Programs and Services (RPS)</option>
+                                                        <option value="duo" label="Ruth Lilly Law Library">Ruth Lilly Law Library</option>
+                                                        <option value="duo" label="School of Education (Bloomington) Career Connections">School of Education (Bloomington) Career Connections</option>
+                                                        <option value="duo" label="Science Gateway">Science Gateway</option>
+                                                        <option value="duo" label="Scott test">Scott test</option>
+                                                        <option value="duo" label="Student Aid offices">Student Aid offices</option>
+                                                        <option value="duo" label="Super David">Super David</option>
+                                                        <option value="duo" label="test contact">test contact</option>
+                                                        <option value="duo" label="test contact types">test contact types</option>
+                                                        <option value="duo" label="The Horizon">The Horizon</option>
+                                                        <option value="duo" label="UITS Research Technologies">UITS Research Technologies</option>
+                                                        <option value="duo" label="UITS Support Center">UITS Support Center</option>
+                                                        <option value="duo" label="University Human Resources">University Human Resources</option>
+                                                        <option value="duo" label="University Student Services &amp; Systems">University Student Services &amp; Systems</option>
+                                                        <option value="duo" label="Veteran Support Services">Veteran Support Services</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group col-md-3">
@@ -180,60 +180,60 @@ $page = '';
                                                     </div>
                                                     <select id="contactId2"  class="form-control   " tabindex="0" aria-invalid="false">
                                                         <option value="">Select Contact</option>
-                                                        <option value="">None </option>
-                                                        <option value="10" label="CyberDH Group">CyberDH Group</option>
-                                                        <option value="11" label="David's Contact name">David's Contact name</option>
+                                                        <option value="duo">None </option>
+                                                        <option value="duo" label="CyberDH Group">CyberDH Group</option>
+                                                        <option value="duo" label="David's Contact name">David's Contact name</option>
                                                         <option value="duo" label="Duo Support Team">Duo Support Team</option>
-                                                        <option value="13" label="eApp Instructions">eApp Instructions</option>
-                                                        <option value="14" label="eDossier Administrator">eDossier Administrator</option>
-                                                        <option value="15" label="eText Administrator">eText Administrator</option>
-                                                        <option value="16" label="Financial Aid &amp; Scholarships (IU East)">Financial Aid &amp; Scholarships (IU East)</option>
-                                                        <option value="17" label="Financial Aid and Scholarships (IUPUC)">Financial Aid and Scholarships (IUPUC)</option>
-                                                        <option value="18" label="Financial Management Services">Financial Management Services</option>
-                                                        <option value="19" label="Frances Adjorlolo">Frances Adjorlolo</option>
-                                                        <option value="20" label="High Performance File Systems Group">High Performance File Systems Group</option>
-                                                        <option value="21" label="Indiana University Department of Intercollegiate Athletics">Indiana University Department of Intercollegiate Athletics</option>
-                                                        <option value="22" label="Indiana University Foundation - Scholarships and Awards">Indiana University Foundation - Scholarships and Awards</option>
-                                                        <option value="23" label="IT Customer Support">IT Customer Support</option>
-                                                        <option value="24" label="IU Advancement IQ e-docs">IU Advancement IQ e-docs</option>
-                                                        <option value="25" label="IU Southeast Bookstore">IU Southeast Bookstore</option>
-                                                        <option value="26" label="IUB Libraries">IUB Libraries</option>
-                                                        <option value="27" label="IUPUI Athletics">IUPUI Athletics</option>
-                                                        <option value="28" label="IUPUI Libraries">IUPUI Libraries</option>
-                                                        <option value="29" label="KFS Resources &amp; Support">KFS Resources &amp; Support</option>
-                                                        <option value="30" label="OCSS">OCSS</option>
-                                                        <option value="31" label="Office of Admissions - IU Northwest">Office of Admissions - IU Northwest</option>
-                                                        <option value="32" label="Office of Financial Aid (IU Southeast)">Office of Financial Aid (IU Southeast)</option>
-                                                        <option value="33" label="Office of Financial Aid and Scholarship (IU South Bend)">Office of Financial Aid and Scholarship (IU South Bend)</option>
-                                                        <option value="34" label="Office of Financial Aid and Scholarships (IU Northwest)">Office of Financial Aid and Scholarships (IU Northwest)</option>
-                                                        <option value="35" label="Office of International Services">Office of International Services</option>
-                                                        <option value="36" label="Office of Research Administration">Office of Research Administration</option>
-                                                        <option value="37" label="Office of Residence Life and Housing">Office of Residence Life and Housing</option>
-                                                        <option value="38" label="Office of Scholarships (IU Bloomington)">Office of Scholarships (IU Bloomington)</option>
-                                                        <option value="39" label="Office of Scholarships and Financial Aid (IU Kokomo)">Office of Scholarships and Financial Aid (IU Kokomo)</option>
-                                                        <option value="40" label="Office of Student Scholarships (IUPUI)">Office of Student Scholarships (IUPUI)</option>
-                                                        <option value="41" label="Office of the Registrar - Bloomington">Office of the Registrar - Bloomington</option>
-                                                        <option value="44" label="Parking and Transportation Services - IUPUI">Parking and Transportation Services - IUPUI</option>
-                                                        <option value="45" label="Parking Operations - Bloomington">Parking Operations - Bloomington</option>
-                                                        <option value="46" label="Parking Services - Kokomo">Parking Services - Kokomo</option>
-                                                        <option value="47" label="Physical Plant">Physical Plant</option>
-                                                        <option value="48" label="Redhawk Review">Redhawk Review</option>
-                                                        <option value="49" label="Research Storage">Research Storage</option>
-                                                        <option value="50" label="Residential Programs and Services (RPS)">Residential Programs and Services (RPS)</option>
-                                                        <option value="51" label="Ruth Lilly Law Library">Ruth Lilly Law Library</option>
-                                                        <option value="52" label="School of Education (Bloomington) Career Connections">School of Education (Bloomington) Career Connections</option>
-                                                        <option value="53" label="Science Gateway">Science Gateway</option>
-                                                        <option value="54" label="Scott test">Scott test</option>
-                                                        <option value="55" label="Student Aid offices">Student Aid offices</option>
-                                                        <option value="56" label="Super David">Super David</option>
-                                                        <option value="57" label="test contact">test contact</option>
-                                                        <option value="58" label="test contact types">test contact types</option>
-                                                        <option value="59" label="The Horizon">The Horizon</option>
-                                                        <option value="60" label="UITS Research Technologies">UITS Research Technologies</option>
-                                                        <option value="61" label="UITS Support Center">UITS Support Center</option>
-                                                        <option value="62" label="University Human Resources">University Human Resources</option>
-                                                        <option value="63" label="University Student Services &amp; Systems">University Student Services &amp; Systems</option>
-                                                        <option value="64" label="Veteran Support Services">Veteran Support Services</option>
+                                                        <option value="duo" label="eApp Instructions">eApp Instructions</option>
+                                                        <option value="duo" label="eDossier Administrator">eDossier Administrator</option>
+                                                        <option value="duo" label="eText Administrator">eText Administrator</option>
+                                                        <option value="duo" label="Financial Aid &amp; Scholarships (IU East)">Financial Aid &amp; Scholarships (IU East)</option>
+                                                        <option value="duo" label="Financial Aid and Scholarships (IUPUC)">Financial Aid and Scholarships (IUPUC)</option>
+                                                        <option value="duo" label="Financial Management Services">Financial Management Services</option>
+                                                        <option value="duo" label="Frances Adjorlolo">Frances Adjorlolo</option>
+                                                        <option value="duo" label="High Performance File Systems Group">High Performance File Systems Group</option>
+                                                        <option value="duo" label="Indiana University Department of Intercollegiate Athletics">Indiana University Department of Intercollegiate Athletics</option>
+                                                        <option value="duo" label="Indiana University Foundation - Scholarships and Awards">Indiana University Foundation - Scholarships and Awards</option>
+                                                        <option value="duo" label="IT Customer Support">IT Customer Support</option>
+                                                        <option value="duo" label="IU Advancement IQ e-docs">IU Advancement IQ e-docs</option>
+                                                        <option value="duo" label="IU Southeast Bookstore">IU Southeast Bookstore</option>
+                                                        <option value="duo" label="IUB Libraries">IUB Libraries</option>
+                                                        <option value="duo" label="IUPUI Athletics">IUPUI Athletics</option>
+                                                        <option value="duo" label="IUPUI Libraries">IUPUI Libraries</option>
+                                                        <option value="duo" label="KFS Resources &amp; Support">KFS Resources &amp; Support</option>
+                                                        <option value="duo" label="OCSS">OCSS</option>
+                                                        <option value="duo" label="Office of Admissions - IU Northwest">Office of Admissions - IU Northwest</option>
+                                                        <option value="duo" label="Office of Financial Aid (IU Southeast)">Office of Financial Aid (IU Southeast)</option>
+                                                        <option value="duo" label="Office of Financial Aid and Scholarship (IU South Bend)">Office of Financial Aid and Scholarship (IU South Bend)</option>
+                                                        <option value="duo" label="Office of Financial Aid and Scholarships (IU Northwest)">Office of Financial Aid and Scholarships (IU Northwest)</option>
+                                                        <option value="duo" label="Office of International Services">Office of International Services</option>
+                                                        <option value="duo" label="Office of Research Administration">Office of Research Administration</option>
+                                                        <option value="duo" label="Office of Residence Life and Housing">Office of Residence Life and Housing</option>
+                                                        <option value="duo" label="Office of Scholarships (IU Bloomington)">Office of Scholarships (IU Bloomington)</option>
+                                                        <option value="duo" label="Office of Scholarships and Financial Aid (IU Kokomo)">Office of Scholarships and Financial Aid (IU Kokomo)</option>
+                                                        <option value="duo" label="Office of Student Scholarships (IUPUI)">Office of Student Scholarships (IUPUI)</option>
+                                                        <option value="duo" label="Office of the Registrar - Bloomington">Office of the Registrar - Bloomington</option>
+                                                        <option value="duo" label="Parking and Transportation Services - IUPUI">Parking and Transportation Services - IUPUI</option>
+                                                        <option value="duo" label="Parking Operations - Bloomington">Parking Operations - Bloomington</option>
+                                                        <option value="duo" label="Parking Services - Kokomo">Parking Services - Kokomo</option>
+                                                        <option value="duo" label="Physical Plant">Physical Plant</option>
+                                                        <option value="duo" label="Redhawk Review">Redhawk Review</option>
+                                                        <option value="duo" label="Research Storage">Research Storage</option>
+                                                        <option value="duo" label="Residential Programs and Services (RPS)">Residential Programs and Services (RPS)</option>
+                                                        <option value="duo" label="Ruth Lilly Law Library">Ruth Lilly Law Library</option>
+                                                        <option value="duo" label="School of Education (Bloomington) Career Connections">School of Education (Bloomington) Career Connections</option>
+                                                        <option value="duo" label="Science Gateway">Science Gateway</option>
+                                                        <option value="duo" label="Scott test">Scott test</option>
+                                                        <option value="duo" label="Student Aid offices">Student Aid offices</option>
+                                                        <option value="duo" label="Super David">Super David</option>
+                                                        <option value="duo" label="test contact">test contact</option>
+                                                        <option value="duo" label="test contact types">test contact types</option>
+                                                        <option value="duo" label="The Horizon">The Horizon</option>
+                                                        <option value="duo" label="UITS Research Technologies">UITS Research Technologies</option>
+                                                        <option value="duo" label="UITS Support Center">UITS Support Center</option>
+                                                        <option value="duo" label="University Human Resources">University Human Resources</option>
+                                                        <option value="duo" label="University Student Services &amp; Systems">University Student Services &amp; Systems</option>
+                                                        <option value="duo" label="Veteran Support Services">Veteran Support Services</option>
                                                     </select>
                                                 </div>
                                                 <div ng-if="pageData.mobileFriendlyEnabled" class="form-group col-md-3">
