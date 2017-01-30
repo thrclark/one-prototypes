@@ -14,6 +14,7 @@ $page = '';
 .popovertable tbody tr td:first-child {
 	padding-right: 10px;
 }
+
 </style>
 <?php include('includes/scripts.php') ?>
 </head>
@@ -171,25 +172,35 @@ s
                                                             <option value="duo" label="University Student Services &amp; Systems">University Student Services &amp; Systems</option>
                                                             <option value="duo" label="Veteran Support Services">Veteran Support Services</option>
                                                         </select>
-                                                        <div class="well well-sm" id="selectcontact1">
-                                                            <table class="popovertable">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>Name</td>
-                                                                        <td>Duo Support Team</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Phone</td>
-                                                                        <td>123 123 1234</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Email</td>
-                                                                        <td><a href="#">duo@iu.edu</a></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                        
+                                                         <div class="well well-sm" id="selectcontact1">
+                                                            <table class="table table-condensed">
+                        <thead class="sr-only">
+                            <tr>
+                                <th>Label</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Duo Support Documentation</td>
+                                <td class="forcewrap"><a href="https://kb.iu.edu/d/bfgm" target="_blank">https://kb.iu.edu/d/bfgmsdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf</a></td>
+                            </tr>
+                            <tr>
+                                <td>Email Support</td>
+                                <td><a href="#">duo@iu.edu</a></td>
+                            </tr>
+                            <tr>
+                                <td>Phone Support</td>
+                                <td>123 123 1234</td>
+                            </tr>
+                        </tbody>
+                    </table>
                                                         </div>
+                                                        
+                                                        
                                                     </div>
+                                                    
                                                 </div>
                                             </div>
                                             <div class="form-group ">
@@ -253,25 +264,37 @@ s
                                                             <option value="duo" label="University Student Services &amp; Systems">University Student Services &amp; Systems</option>
                                                             <option value="duo" label="Veteran Support Services">Veteran Support Services</option>
                                                         </select>
-                                                        <div class="well well-sm" id="selectcontact2">
-                                                            <table class="popovertable">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>Name</td>
-                                                                        <td>Duo Support Team</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Phone</td>
-                                                                        <td>123 123 1234</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Email</td>
-                                                                        <td><a href="#">duo@iu.edu</a></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                        
+                                                             <div class="well well-sm" id="selectcontact2">
+                                                           <table class="table table-condensed">
+                        <thead class="sr-only">
+                            <tr>
+                                <th>Label</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Duo Support Documentation</td>
+                                <td class="forcewrap"><a href="https://kb.iu.edu/d/bfgm" target="_blank">https://kb.iu.edu/d/bfgmsdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf</a></td>
+                            </tr>
+                            <tr>
+                                <td>Email Support</td>
+                                <td><a href="#">duo@iu.edu</a></td>
+                            </tr>
+                            <tr>
+                                <td>Phone Support</td>
+                                <td>123 123 1234</td>
+                            </tr>
+                        </tbody>
+                    </table>
                                                         </div>
+                                                        
+                                                       
                                                     </div>
+                                                    
+                                                     
+                                                    
                                                 </div>
                                             </div>
                                         </fieldset>
@@ -291,9 +314,9 @@ s
         $('#selectcontact1').hide();
         $('#contactId1').change(function() {
             if ($('#contactId1').val() == 'duo') {
-                $('#selectcontact1').slideDown();
+                $('#selectcontact1').show();
             } else {
-                $('#selectcontact1').slideUp();
+                $('#selectcontact1').hide();
             }
         });
     });
@@ -301,9 +324,9 @@ s
         $('#selectcontact2').hide();
         $('#contactId2').change(function() {
             if ($('#contactId2').val() == 'duo') {
-                $('#selectcontact2').slideDown();
+                $('#selectcontact2').show();
             } else {
-                $('#selectcontact2').slideUp();
+                $('#selectcontact2').hide();
             }
         });
     });
