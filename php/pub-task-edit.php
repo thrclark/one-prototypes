@@ -44,21 +44,21 @@ $page = '';
                                             <legend>General</legend>
                                             <div class="row">
                                                 <div class="form-group col-md-3">
-                                                    <label for="title" class="control-label">Widget title</label>
+                                                    <label for="title" class="control-label">Task  title</label>
                                                     <div class="counter-container">
-                                                        <input type="text" name="title" required="" countdown="" class="form-control   -maxlength -required" popover="The Widget title is how the Widget will be referred to throughout the system." data-original-title="" title="" tabindex="0" aria-required="false" aria-invalid="false">
+                                                        <input type="text" name="title" required="" countdown="" class="form-control   -maxlength -required" popover="The Task  title is how the Task  will be referred to throughout the system." data-original-title="" title="" tabindex="0" aria-required="false" aria-invalid="false">
                                                         <span class="label pull-right label-info"><span class="counter">91</span><span class="sr-only"> characters remaining</span></span> </div>
                                                 </div>
                                                 <div class="form-group col-md-3">
-                                                    <label for="taskUrl" class="control-label">Widget URL</label>
+                                                    <label for="taskUrl" class="control-label">Task  URL</label>
                                                     <div class="counter-container">
-                                                        <input type="url" name="taskUrl" class="form-control   -url -maxlength -required" required="" countdown="" popover="The URL will take users to the location where they can perform this Widget." data-original-title="" title="" tabindex="0" aria-required="false" aria-invalid="false">
+                                                        <input type="url" name="taskUrl" class="form-control   -url -maxlength -required" required="" countdown="" popover="The URL will take users to the location where they can perform this Task ." data-original-title="" title="" tabindex="0" aria-required="false" aria-invalid="false">
                                                         <span class="label pull-right label-info"><span class="counter">1976</span><span class="sr-only"> characters remaining</span></span> </div>
                                                 </div>
                                                 <div class="form-group col-md-3">
                                                     <label for="applicationName" class="control-label">Application Name</label>
                                                     <div class="counter-container">
-                                                        <input type="text" name="applicationName" countdown="" class="form-control   -maxlength" popover="The name of the application that provides this Widget. If two Widgettes have the same title, the application can be used to differentiate between them." data-original-title="" title="" tabindex="0" aria-invalid="false">
+                                                        <input type="text" name="applicationName" countdown="" class="form-control   -maxlength" popover="The name of the application that provides this Task . If two tasks have the same title, the application can be used to differentiate between them." data-original-title="" title="" tabindex="0" aria-invalid="false">
                                                         <span class="label pull-right"><span class="counter"></span><span class="sr-only"> characters remaining</span></span> </div>
                                                 </div>
                                                 <div class="form-group col-md-3">
@@ -66,7 +66,7 @@ $page = '';
                                                     <div class="checkbox">
                                                         <label>
                                                             <input type="checkbox" name="openInNewWindow" class="  " tabindex="0" aria-checked="true" aria-invalid="false">
-                                                            Open Widget in a new tab/window </label>
+                                                            Open Task  in a new tab/window </label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -81,25 +81,7 @@ $page = '';
                                                 </div>
                                                 <div class="form-group col-md-3">
                                                     <label for="contactId1" class="control-label">Primary Contact</label>
-                                                    <i class="icon-info-circled pull-right" data-toggle="popover" id="selectcontact1" title="Currently Selected" data-placement="top"></i>
-                                                    <div id="popover-content" class="hide">
-                                                        <table class="popovertable">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>Name</td>
-                                                                    <td>Duo Support Team</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Phone</td>
-                                                                    <td>123 123 1234</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Email</td>
-                                                                    <td><a href="#">duo@iu.edu</a></td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
+                                                    <i class="icon-info-circled pull-right"  id="selectcontact1" data-toggle="modal" data-target="#modal_contactinfo"></i>
                                                     <select id="contactId1" class="form-control   -required" required tabindex="0" aria-required="false" aria-invalid="false">
                                                         <option value="">Select Contact</option>
                                                         <option value="duo" label="CyberDH Group">CyberDH Group</option>
@@ -159,25 +141,7 @@ $page = '';
                                                 </div>
                                                 <div class="form-group col-md-3">
                                                     <label for="contactId2" class="control-label">Secondary Contact</label>
-                                                    <i class="icon-info-circled pull-right" data-toggle="popover" id="selectcontact2" title="Currently Selected" data-placement="top"></i>
-                                                    <div id="popover-content2" class="hide">
-                                                        <table class="popovertable">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>Name</td>
-                                                                    <td>Duo Support Team</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Phone</td>
-                                                                    <td>123 123 1234</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Email</td>
-                                                                    <td><a href="#">duo@iu.edu</a></td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
+                                                    <i class="icon-info-circled pull-right"  id="selectcontact2" data-toggle="modal" data-target="#modal_contactinfo"></i>
                                                     <select id="contactId2"  class="form-control   " tabindex="0" aria-invalid="false">
                                                         <option value="">Select Contact</option>
                                                         <option value="duo">None </option>
@@ -239,9 +203,9 @@ $page = '';
                                                 <div ng-if="pageData.mobileFriendlyEnabled" class="form-group col-md-3">
                                                     <label for="mobileFriendly" class="control-label">Mobile</label>
                                                     <div class="checkbox">
-                                                        <label popover="This Widget is mobile-friendly and is usable on mobile devices such as phones and tablets." trigger="hover" data-original-title="" title="">
+                                                        <label popover="This Task  is mobile-friendly and is usable on mobile devices such as phones and tablets." trigger="hover" data-original-title="" title="">
                                                             <input type="checkbox" name="mobileFriendly" class="  " tabindex="0" aria-checked="false" aria-invalid="false">
-                                                            This Widget is mobile-friendly. </label>
+                                                            This Task  is mobile-friendly. </label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -284,6 +248,43 @@ $page = '';
                             </div>
                         </section>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_contactinfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-default" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Duo Support Team</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-condensed">
+                        <thead class="sr-only">
+                            <tr>
+                                <th>Label</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Duo Support Documentation</td>
+                                <td class="forcewrap"><a href="https://kb.iu.edu/d/bfgm" target="_blank" >https://kb.iu.edu/d/bfgmsdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf</a></td>
+                            </tr>
+                            <tr>
+                                <td>Email Support</td>
+                                <td><a href="#">duo@iu.edu</a></td>
+                            </tr>
+                            <tr>
+                                <td>Phone Support</td>
+                                <td>123 123 1234</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
