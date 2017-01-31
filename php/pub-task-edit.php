@@ -243,6 +243,154 @@ $page = '';
                                                 </div>
                                             </div>
                                         </fieldset>
+                                        <fieldset>
+                                            <legend>Icon Images</legend>
+                                            <div class="form-group ">
+                                                <label class="control-label " for="api_account_type">Select the source of the icon image </label>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="cars" value="1" id="show_custom">
+                                                        Custom image upload </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="cars" value="2" id="show_library">
+                                                        Selected from current library </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="custom_upload" style="display:none">
+                                                <div class="" id="uploadImages">
+                                                    <label class="control-label " for="api_account_type">Select the source of the icon image </label>
+                                                    <div class="row">
+                                                        <div class="form-group col-sm-12">
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" ng-model="task.generateSmallerImageSizes" class="ng-valid ng-dirty ng-valid-parse ng-touched" tabindex="0" aria-checked="true" aria-invalid="false">
+                                                                    Automatically generate smaller image sizes. </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="form-group col-md-3">
+                                                            <label class="control-label">Large Image (153×153)</label>
+                                                            <div data-size="5"> <span class="btn btn-default btn-xs fileinput-button"> <i class="icon-plus"></i> <span>Upload image…</span>
+                                                                <input type="file" fileupload="" name="files[]">
+                                                                </span>
+                                                                <button type="button" class="btn btn-default btn-xs" tabindex="0" aria-hidden="false"> <i class="icon-trash"></i> </button>
+                                                                <div class="panel"> <img alt="your uploaded image" src="../img/task-icons-new/publishing/153x153.jpg" aria-hidden="false" class=""> </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-md-3 ng-hide" aria-hidden="true">
+                                                            <label class="control-label">Small Retina Image (144×144)</label>
+                                                            <div data-size="4"> <span class="btn btn-default btn-xs fileinput-button"> <i class="icon-plus"></i> <span>Upload image…</span>
+                                                                <input type="file" fileupload="" name="files[]">
+                                                                </span>
+                                                                <button type="button" class="btn btn-default btn-xs" tabindex="0" aria-hidden="false"> <i class="icon-trash"></i> </button>
+                                                                <div class="panel"> <img alt="your uploaded image" src="../img/task-icons-new/publishing/144x144.jpg" aria-hidden="false" class=""> </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-md-3 ng-hide" aria-hidden="true">
+                                                            <label class="control-label">Medium Image (90×90)</label>
+                                                            <div data-size="2"> <span class="btn btn-default btn-xs fileinput-button"> <i class="icon-plus"></i> <span>Upload image…</span>
+                                                                <input type="file" fileupload="" name="files[]">
+                                                                </span>
+                                                                <button type="button" class="btn btn-default btn-xs" tabindex="0" aria-hidden="false"> <i class="icon-trash"></i> </button>
+                                                                <div class="panel"> <img alt="your uploaded image" src="../img/task-icons-new/publishing/90x90.jpg" aria-hidden="false" class=""> </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="form-group col-md-3 ng-hide" aria-hidden="true">
+                                                            <label class="control-label">Small Image (72×72)</label>
+                                                            <div data-size="3"> <span class="btn btn-default btn-xs fileinput-button"> <i class="icon-plus"></i> <span>Upload image…</span>
+                                                                <input type="file" fileupload="" name="files[]">
+                                                                </span>
+                                                                <button type="button" class="btn btn-default btn-xs" tabindex="0" aria-hidden="false"> <i class="icon-trash"></i> </button>
+                                                                <div class="panel"> <img alt="your uploaded image" src="../img/task-icons-new/publishing/72x72.jpg" aria-hidden="false" class=""> </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-md-3 ng-hide" aria-hidden="true">
+                                                            <label class="control-label">Very Small Image (31×31)</label>
+                                                            <div data-size="1"> <span class="btn btn-default btn-xs fileinput-button"> <i class="icon-plus"></i> <span>Upload image…</span>
+                                                                <input type="file" fileupload="" name="files[]">
+                                                                </span>
+                                                                <button type="button" class="btn btn-default btn-xs" tabindex="0" aria-hidden="false"> <i class="icon-trash"></i> </button>
+                                                                <div class="panel"> <img alt="your uploaded image" src="../img/task-icons-new/publishing/31x31.jpg" aria-hidden="false" class=""> </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="image_library" style="display:none">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <label for="imageSetId" class="control-label">Choose an Image</label>
+                                                        <select name="imageSetId" class="form-control" tabindex="0" aria-invalid="false">
+                                                    
+                                                            <option value="0" label="A Example">A Example</option>
+                                                            <option value="1" label="A Test">A Test</option>
+                                                            <option value="2" label="Admissions">Admissions</option>
+                                                            <option value="3" label="Alert">Alert</option>
+                                                            <option value="4" label="Approved">Approved</option>
+                                                            <option value="5" label="Blocked">Blocked</option>
+                                                            <option value="6" label="Box test">Box test</option>
+                                                            <option value="7" label="Bus">Bus</option>
+                                                            <option value="8" label="Calendar">Calendar</option>
+                                                            <option value="9" label="Calendar - IU Mobile">Calendar - IU Mobile</option>
+                                                            <option value="10" label="Calendar - old">Calendar - old</option>
+                                                            <option value="11" label="Canvas">Canvas</option>
+                                                            <option value="12" label="Cap">Cap</option>
+                                                            <option value="13" label="Car">Car</option>
+                                                            <option value="14" label="Checkbox">Checkbox</option>
+                                                            <option value="15" label="Clipboard">Clipboard</option>
+                                                            <option value="16" label="Cloud">Cloud</option>
+                                                            <option value="17" label="Computer">Computer</option>
+                                                            <option value="18" label="Document">Document</option>
+                                                            <option value="19" label="Down arrow">Down arrow</option>
+                                                            <option value="20" label="Emergency">Emergency</option>
+                                                            <option value="21" label="Gear">Gear</option>
+                                                            <option value="22" label="Globe">Globe</option>
+                                                            <option value="23" label="Google">Google</option>
+                                                            <option value="24" label="Grades">Grades</option>
+                                                            <option value="25" label="Graduation">Graduation</option>
+                                                            <option value="26" label="Guest">Guest</option>
+                                                            <option value="27" label="Hard Drive">Hard Drive</option>
+                                                            <option value="28" label="Holds">Holds</option>
+                                                            <option value="29" label="House">House</option>
+                                                            <option value="30" label="IUPUI">IUPUI</option>
+                                                            <option value="31" label="Key">Key</option>
+                                                            <option value="32" label="Link">Link</option>
+                                                            <option value="33" label="Lock">Lock</option>
+                                                            <option value="34" label="Mail">Mail</option>
+                                                            <option value="35" selected="selected" label="Money">Money</option>
+                                                            <option value="36" label="Nametag">Nametag</option>
+                                                            <option value="37" label="Nodes">Nodes</option>
+                                                            <option value="38" label="OneStart Running Man plus eighty more characters to fill up this space here and another twenty five!">OneStart Running Man plus eighty more characters to fill up this space here and another twenty five!</option>
+                                                            <option value="39" label="Outlink">Outlink</option>
+                                                            <option value="40" label="Papers">Papers</option>
+                                                            <option value="41" label="Password">Password</option>
+                                                            <option value="42" label="People">People</option>
+                                                            <option value="43" label="Question">Question</option>
+                                                            <option value="44" label="Rewind">Rewind</option>
+                                                            <option value="45" label="Rolodex">Rolodex</option>
+                                                            <option value="46" label="Scholarships">Scholarships</option>
+                                                            <option value="47" label="Search">Search</option>
+                                                            <option value="48" label="Star">Star</option>
+                                                            <option value="49" label="Talisma">Talisma</option>
+                                                            <option value="50" label="Tenant Admin test">Tenant Admin test</option>
+                                                            <option value="51" label="test">test</option>
+                                                            <option value="52" label="Test only GLOBE">Test only GLOBE</option>
+                                                            <option value="53" label="Test only MONEY">Test only MONEY</option>
+                                                            <option value="54" label="Textbooks">Textbooks</option>
+                                                            <option value="55" label="Textbooks - old">Textbooks - old</option>
+                                                            <option value="56" label="Urgent">Urgent</option>
+                                                            <option value="57" label="User">User</option>
+                                                            <option value="58" label="Wrench">Wrench</option>
+                                                        </select>
+                                                        <img src="../img/task-icons-new/icon-bill-pay.png" alt="" style="width:100%"/> </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
                                     </form>
                                 </div>
                             </div>
@@ -291,6 +439,24 @@ $page = '';
     </div>
     <?php include('includes/brand-footer.php') ?>
     <?php include('includes/footer-scripts.php') ?>
+    <script>
+    $(document).ready(function() {
+        $('input[type="radio"]').click(function() {
+            if ($(this).attr('id') == 'show_custom') {
+                $('#custom_upload').slideDown();
+            } else {
+                $('#custom_upload').slideUp();
+            }
+        });
+		$('input[type="radio"]').click(function() {
+            if ($(this).attr('id') == 'show_library') {
+                $('#image_library').slideDown();
+            } else {
+                $('#image_library').slideUp();
+            }
+        });
+    });
+	</script> 
     <script>
     $(function() {
         $('#selectcontact1').hide();
