@@ -37,18 +37,14 @@ header .app-header h1 {
                 <li><a href="tdp.php" target="_blank">TDP</a> </li>
                 <li><a href="tdp-noreviews.php" target="_blank">TDP</a> (ratings only) </li>
             </ul>
-            <h3 class="">Alerts</h3>
+            <h3 class="">Publishing</h3>
             <ul>
-                <li><a href="store-alerts1b.php" target="_blank">top banner</a> </li>
-                <li><a href="store-alerts1b-multiple.php" target="_blank">top banner, multiple alerts</a> </li>
-                <li><a href="store-alerts2b.php" target="_blank">middle banner</a> </li>
-                <li><a href="store-alerts2b-multiple.php" target="_blank">middle banner, multiple alerts</a> </li>
+                <li><a href="pub-taskmaint-home.php" target="_blank">Edit Task - Home</a></li>
+                <li><a href="pub-taskmaint-edit.php" target="_blank">Edit Task</a></li>
+                <li><a href="pub-taskmaint-edit1.php" target="_blank">Edit Task (alt)</a></li>
+                <li><a href="pub-tasksubmitted-home.php" target="_blank">Submitted Tasks</a></li>
             </ul>
         </div>
-        <h3 class="">Misc</h3>
-        <ul>
-            <li><a href="test-stickyfooter.php" target="_blank">Sticky Footer Test Page</a> </li>
-        </ul>
     </div>
 </div>
 </body>

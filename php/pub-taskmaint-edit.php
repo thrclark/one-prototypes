@@ -1129,8 +1129,8 @@ $page = '';
                                             </div>
                                         </fieldset>
                                         <hr>
-                                        <button class="btn btn-success" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Approve</button>
-                                        <button class="btn btn-default" type="button" tabindex="0" data-toggle="modal" data-target="#modal_compare">Preview Differences</button>
+                                        <button class="btn btn-success" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Save</button>
+                                       
                                         <button class="btn btn-default" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Cancel</button>
                                     </form>
                                 </div>
