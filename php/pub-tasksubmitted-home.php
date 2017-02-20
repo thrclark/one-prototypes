@@ -129,13 +129,6 @@ x width: 1%;
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Details</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages">Read Notes</a></li>
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -382,65 +375,54 @@ x width: 1%;
                             </tbody>
                         </table>
                     </fieldset>
-              
                 </div>
-                <div class="modal-footer">
-                   
-                    <a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-sm">Edit Task</a>
+                <div class="modal-footer"> <a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-sm">Edit Task</a>
                     <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
-    
-    
-    
-    
-    
     <div class="modal fade" id="standardmodal_messages" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-default modal-multimessage">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                <h4 class="modal-title"><i class="icon-doc"></i> Task Notes</h4>
-            </div>
-            <div class="modal-body">
-                <div class="comment-list">
-                    <ul class="list-unstyled">
-                        <li>
-                            <div class="message">
-                                <div class="row message-header">
-                                    <div class="col-xs-12 col-sm-8 message-title">Task Declined <small>(rvallow)</small></div>
-                                    <div class="col-xs-12 col-sm-4 message-meta"> <small class="message-date">6/3/16 2:16 PM</small> </div>
-                                </div>
-                                <div class="message-content">
-                                 <p> We strongly recommend looking at your icon. We are moving away from small text due to users not being able to read it and it appearing blurry. We can submit a redesign for your icon to our designers. *if so please change to universal icon requesting the redesign or email one@iu.edu requesting this.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="message">
-                                <div class="row message-header">
-                                    <div class="col-xs-12 col-sm-8 message-title"> Task Submitted  <small>(abretts)</small></div>
-                                    <div class="col-xs-12 col-sm-4 message-meta"> <small class="message-date">6/3/16 1:08 PM</small> </div>
-                                </div>
-                                <div class="message-content">
-                                    <p>(No note entered)</p>
-                                </div>
-                            </div>
-                        </li>
-                       
-                    </ul>
+        <div class="modal-dialog modal-default modal-multimessage">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title"><i class="icon-doc"></i> Task Notes</h4>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <div class="modal-body">
+                    <div class="comment-list">
+                        <ul class="list-unstyled">
+                            <li>
+                                <div class="message">
+                                    <div class="row message-header">
+                                        <div class="col-xs-12 col-sm-8 message-title">Task Declined <small>(rvallow)</small></div>
+                                        <div class="col-xs-12 col-sm-4 message-meta"> <small class="message-date">6/3/16 2:16 PM</small> </div>
+                                    </div>
+                                    <div class="message-content">
+                                        <p> We strongly recommend looking at your icon. We are moving away from small text due to users not being able to read it and it appearing blurry. We can submit a redesign for your icon to our designers. *if so please change to universal icon requesting the redesign or email one@iu.edu requesting this.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="message">
+                                    <div class="row message-header">
+                                        <div class="col-xs-12 col-sm-8 message-title"> Task Submitted <small>(abretts)</small></div>
+                                        <div class="col-xs-12 col-sm-4 message-meta"> <small class="message-date">6/3/16 1:08 PM</small> </div>
+                                    </div>
+                                    <div class="message-content">
+                                        <p>(No note entered)</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-
     <?php include('includes/brand-footer.php') ?>
     <?php include('includes/footer-scripts.php') ?>
     <script>
