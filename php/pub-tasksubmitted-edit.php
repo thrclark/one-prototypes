@@ -421,12 +421,7 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </fieldset>
-                                        
-                                        
-                                        
-                                        
-                                        
-                                                   <fieldset>
+                                        <fieldset>
                                             <legend>Scheduled Update </legend>
                                             <div class="row">
                                                 <div class="form-group col-md-12">
@@ -437,28 +432,16 @@ background-color: #FFFFFF;
                                                     </div>
                                                     <div class="radio">
                                                         <label>
-                                                        <input type="radio" value="1" name="optionsRadios">
-                                                            Publsh updates to this task at a specified date and time (and after they have been approved).  </label>
+                                                            <input type="radio" value="1" name="optionsRadios">
+                                                            Publsh updates to this task at a specified date and time (and after they have been approved). </label>
                                                     </div>
                                                 </div>
-                                                
-                                                
                                                 <div class="form-group col-md-3" id="scheduledupdatedate1" style="display:none">
-                                                    <label for="displayVersion" class="control-label">Scheduled Update</label>
-                                                  <input type='text' class="form-control" id='datetimepicker4' />
-                                                    
-                                                    
+                                                    <label for="displayVersion" class="control-label">Specify Date</label>
+                                                    <input type='text' class="form-control" id='datetimepicker4' />
                                                 </div>
-                                                
-                                                
-                                                
-                                                
-                                               
                                             </div>
                                         </fieldset>
-                                        
-                                        
-                                        
                                         <fieldset>
                                             <legend>Versioning</legend>
                                             <div class="row">
@@ -1489,9 +1472,7 @@ background-color: #FFFFFF;
 		
     });
 </script> 
-
-
-<script type='text/javascript'>
+    <script type='text/javascript'>
     $(document).ready(function() {
         $("input[name$='optionsRadios']").click(function() {
             var test = $(this).val();
@@ -1500,20 +1481,13 @@ background-color: #FFFFFF;
             $("#scheduledupdatedate" + test).slideDown();
         });
     });
-</script>
-
-
-
-<script type='text/javascript'>
+</script> 
+    <script type='text/javascript'>
      $(function() {
                 $('#datetimepicker4').datetimepicker();
             });
             
-     </script>    
-            
-            
-            
-
+     </script> 
 </div>
 </body>
 </html>

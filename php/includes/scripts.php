@@ -50,9 +50,8 @@
 <script type="text/javascript" src="../app/vendor/js/colorbox/jquery.colorbox-min.js"></script>
 <script type="text/javascript" src="../app/vendor/js/jquery.growl/js/jquery.growl.js"></script>
 <script type="text/javascript" src="../js/typehead-sectioned.js"></script>
-
-
-
+<script type="text/javascript" src="../bower_components/moment/moment.js"></script>
+<script type="text/javascript" src="../bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
 
 
 <script>localStorage.clear(); </script>
