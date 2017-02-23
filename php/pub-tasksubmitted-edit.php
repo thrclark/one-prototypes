@@ -143,7 +143,7 @@ background-color: #FFFFFF;
                         <section style="display:;" id="all_verifications">
                             <div class="row section-head">
                                 <div class="col-xs-12 col-sm-9 section-header">
-                                    <h2 class="h3">Submitted Task Approval</h2>
+                                    <h2 class="h3">Approve Task </h2>
                                 </div>
                                 <div class="col-xs-12  col-sm-3 section-controls"></div>
                             </div>
@@ -157,7 +157,7 @@ background-color: #FFFFFF;
                                                     <tr>
                                                         <th scope="column">Item</th>
                                                         <th scope="column">Current Value<span class="small text-muted"></span></th>
-                                                        <th scope="column">New Value</th>
+                                                        <th scope="column">Submitted Value</th>
                                                         <th scope="column">&nbsp;</th>
                                                     </tr>
                                                 </thead>
@@ -421,6 +421,44 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </fieldset>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                                   <fieldset>
+                                            <legend>Scheduled Update </legend>
+                                            <div class="row">
+                                                <div class="form-group col-md-12">
+                                                    <div class="radio">
+                                                        <label class="control-label">
+                                                            <input type="radio" value="status" name="optionsRadios" >
+                                                            Publish updates to this task immediately after they are approved. </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                        <input type="radio" value="1" name="optionsRadios">
+                                                            Publsh updates to this task at a specified date and time (and after they have been approved).  </label>
+                                                    </div>
+                                                </div>
+                                                
+                                                
+                                                <div class="form-group col-md-3" id="scheduledupdatedate1" style="display:none">
+                                                    <label for="displayVersion" class="control-label">Scheduled Update</label>
+                                                  <input type='text' class="form-control" id='datetimepicker4' />
+                                                    
+                                                    
+                                                </div>
+                                                
+                                                
+                                                
+                                                
+                                               
+                                            </div>
+                                        </fieldset>
+                                        
+                                        
+                                        
                                         <fieldset>
                                             <legend>Versioning</legend>
                                             <div class="row">
@@ -1451,6 +1489,31 @@ background-color: #FFFFFF;
 		
     });
 </script> 
+
+
+<script type='text/javascript'>
+    $(document).ready(function() {
+        $("input[name$='optionsRadios']").click(function() {
+            var test = $(this).val();
+
+            $("#scheduledupdatedate1").slideUp();
+            $("#scheduledupdatedate" + test).slideDown();
+        });
+    });
+</script>
+
+
+
+<script type='text/javascript'>
+     $(function() {
+                $('#datetimepicker4').datetimepicker();
+            });
+            
+     </script>    
+            
+            
+            
+
 </div>
 </body>
 </html>

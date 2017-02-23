@@ -84,13 +84,13 @@ x width: 1%;
                         <section style="display:;" id="all_verifications">
                             <div class="row section-head">
                                 <div class="col-xs-12 col-sm-9 section-header">
-                                    <h2 class="h3">Submitted Tasks</h2>
+                                    <h2 class="h3">Approve Submitted Tasks</h2>
                                 </div>
                                 <div class="col-xs-12  col-sm-3 section-controls"></div>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox">
+                                    <input type="checkbox" id="toggledeclined">
                                     Show declined tasks </label>
                             </div>
                             <table class="table table-condensed table-actions tablesaw tablesaw-stack table-collection" data-tablesaw-mode="stack" id="">
@@ -98,68 +98,215 @@ x width: 1%;
                                     <tr>
                                         <th scope="row">Title (Application)</th>
                                         <th scope="row">Status</th>
+                                        <th scope="row">Scheduled</th>
                                         <th scope="row">Submitted By</th>
                                         <th scope="row"><span class="sr-only">Actions</span></th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr >
-                                        <td><div class="asdf"><i class="icon-angle-right"></i> Asset Retirement Global (ARG)<span aria-hidden="false"> (KFS)</span></div>
+                                    <tr class="declined">
+                                        <td><div class="asdf"><i class="icon-angle-right"></i>Explore Programs</div>
                                             <table class="small taskmeta">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
-                                                        <td><span >Finances<span aria-hidden="false">, </span></span><span >Administrative</span></td>
+                                                        <td>Admissions, Academics, Campus Life, Careers, Orientation</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Roles:</td>
-                                                        <td><span >Staff<span aria-hidden="false">, </span></span><span >Faculty</span></td>
+                                                        <td><span >All</span></td>
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses</span></td>
+                                                        <td><span aria-hidden="true" >All IU Campuses</span></td>
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active <span >(Pending Approval)</span></td>
-                                        <td > tcain </td>
-                                        <td><a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Approve/Decline</a>
+                                        <td>Updated <span class="small text-danger" > (Declined) </span> </td>
+                                        <td>&nbsp;</td>
+                                        <td > thrclark </td>
+                                        <td><a href="#" data-toggle="modal" data-target="#standardmodal_messages-declined"class="btn btn-default btn-xs">Notes</a>
                                             <div class="dropdown" style="display:inline">
-                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                    <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Details</a></li>
-                                                    <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages">Read Notes</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Submission Details</a></li>
+                                                    <li><a href="#">Remove</a></li>
                                                 </ul>
-                                            </div></td>
-                                    </tr>
-                                    <tr >
-                                        <td><div class="asdf"><i class="icon-angle-right"></i> Capital Asset Management<span aria-hidden="false"> (Asset Fabrication (FR)</span></div>
-                                            <table class="small taskmeta">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Categories:</td>
-                                                        <td><span >Finances<span aria-hidden="false">, </span></span><span >Administrative</span></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Roles:</td>
-                                                        <td><span >Staff<span aria-hidden="false">, </span></span><span >Faculty</span></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>IU Campuses:</td>
-                                                        <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active <span >(Pending Approval)</span></td>
-                                        <td > tozogar </td>
-                                        <td><a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Approve/Decline</a>
-                                            <div class="dropdown" style="display:inline">
+                                            </div>
+                                            <!-- <div class="dropdown" style="display:inline">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Details</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages">Read Notes</a></li>
                                                 </ul>
-                                            </div></td>
+                                            </div>--></td>
+                                    </tr>
+                                     <tr class="declined">
+                                        <td><div class="asdf"><i class="icon-angle-right"></i>Motor Vehicle Records Check</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Transportation</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td><span >All</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>UB, All IU Campuses,
+                                                            IUPUI </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td>New <span class="small text-danger" > (Declined) </span></td>
+                                        <td>&nbsp;</td>
+                                        <td > hesenthal </td>
+                                        <td><a href="#" data-toggle="modal" data-target="#standardmodal_messages-declined"class="btn btn-default btn-xs">Notes</a>
+                                            <div class="dropdown" style="display:inline">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Submission Details</a></li>
+                                                    <li><a href="#">Remove</a></li>
+                                                </ul>
+                                            </div>
+                                            <!-- <div class="dropdown" style="display:inline">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Details</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages">Read Notes</a></li>
+                                                </ul>
+                                            </div>--></td>
+                                    </tr>
+                                       <tr class="declined">
+                                        <td><div class="asdf"><i class="icon-angle-right"></i>Waiver Request</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Training</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td><span >All</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>UB, All IU Campuses,
+IUPUI </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td>Updated <span class="small text-danger" > (Declined) </span> </td>
+                                        <td>&nbsp;</td>
+                                        <td > seenyj </td>
+                                        <td><a href="#" data-toggle="modal" data-target="#standardmodal_messages-declined"class="btn btn-default btn-xs">Notes</a>
+                                            <div class="dropdown" style="display:inline">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Submission Details</a></li>
+                                                    <li><a href="#">Remove</a></li>
+                                                </ul>
+                                            </div>
+                                            <!-- <div class="dropdown" style="display:inline">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Details</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages">Read Notes</a></li>
+                                                </ul>
+                                            </div>--></td>
+                                    </tr>
+                                    <tr >
+                                        <td><div class="asdf"><i class="icon-angle-right"></i>New Employee HIPAA Training</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Training</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td><span >All</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses<br>
+                                                            IUPUI
+                                                        </span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td>New </td>
+                                        <td>Upon Approval</td>
+                                        <td > breckerm </td>
+                                        <td><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted"class="btn btn-default btn-xs">Notes</a> <a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Approve...</a>
+                                            <!-- <div class="dropdown" style="display:inline">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Details</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages">Read Notes</a></li>
+                                                </ul>
+                                            </div>--></td>
+                                    </tr>
+                                    <tr >
+                                        <td><div class="asdf"><i class="icon-angle-right"></i> Asset Retirement Global <span aria-hidden="false"> (KFS)</span></div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td><span >Finances<span aria-hidden="false">, </span></span><span >Administrative</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td><span >Staff<span aria-hidden="false">, </span></span><span >Faculty</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td> Updated </td>
+                                        <td>Upon Approval</td>
+                                        <td > tcain </td>
+                                        <td><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted"class="btn btn-default btn-xs">Notes</a> <a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Approve...</a>
+                                            <!-- <div class="dropdown" style="display:inline">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Details</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages">Read Notes</a></li>
+                                                </ul>
+                                            </div>--></td>
+                                    </tr>
+                                    <tr >
+                                        <td><div class="asdf"><i class="icon-angle-right"></i> Capital Asset Management<span aria-hidden="false">  (FR)</span></div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td><span >Finances<span aria-hidden="false">, </span></span><span >Administrative</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td><span >Staff<span aria-hidden="false">, </span></span><span >Faculty</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td> Updated</td>
+                                        <td>3/21/17 8:00am</td>
+                                        <td > tozogar </td>
+                                        <td><a href="#" class="btn btn-default btn-xs disabled">Notes</a> <a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Approve...</a> <!-- <div class="dropdown" style="display:inline">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Details</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages">Read Notes</a></li>
+                                                </ul>
+                                            </div>--></td>
                                     </tr>
                                     <tr >
                                         <td><div class="asdf"><i class="icon-angle-right"></i> IU Peer Coaches<span aria-hidden="false"> (University Division)</span></div>
@@ -179,16 +326,17 @@ x width: 1%;
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active <span >(Pending Approval)</span></td>
+                                        <td> New </td>
+                                        <td>4/09/17 5:00pm</td>
                                         <td > adobiega </td>
-                                        <td><a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Approve/Decline</a>
-                                            <div class="dropdown" style="display:inline">
+                                        <td><a href="#" class="btn btn-default btn-xs disabled">Notes</a> <a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Approve...</a>
+                                            <!-- <div class="dropdown" style="display:inline">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Details</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages">Read Notes</a></li>
                                                 </ul>
-                                            </div></td>
+                                            </div>--></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -217,8 +365,8 @@ x width: 1%;
                             <thead class="">
                                 <tr>
                                     <th scope="column">Item</th>
-                                    <th scope="column">Current Value<span class="small text-muted"></span></th>
-                                    <th scope="column">New Value</th>
+                                    <th scope="column">Current Value</th>
+                                    <th scope="column">Submitted Value</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -382,7 +530,47 @@ x width: 1%;
             </div>
         </div>
     </div>
-    <div class="modal fade" id="standardmodal_messages" tabindex="-1" role="dialog" aria-hidden="true">
+    
+    
+    
+    <div class="modal fade" id="standardmodal_messages-submitted" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-default modal-multimessage">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title"><i class="icon-doc"></i> Task Notes</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="comment-list">
+                        <ul class="list-unstyled">
+                           
+                            <li>
+                                <div class="message">
+                                    <div class="row message-header">
+                                        <div class="col-xs-12 col-sm-8 message-title"> Task Submitted <small>(abretts)</small></div>
+                                        <div class="col-xs-12 col-sm-4 message-meta"> <small class="message-date">6/3/16 1:08 PM</small> </div>
+                                    </div>
+                                    <div class="message-content">
+                                        <p>This is a task submission note Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large.
+
+</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+        <div class="modal fade" id="standardmodal_messages-declined" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-default modal-multimessage">
             <div class="modal-content">
                 <div class="modal-header">
@@ -410,7 +598,9 @@ x width: 1%;
                                         <div class="col-xs-12 col-sm-4 message-meta"> <small class="message-date">6/3/16 1:08 PM</small> </div>
                                     </div>
                                     <div class="message-content">
-                                        <p>(No note entered)</p>
+                                        <p>This is a task submission note Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large.
+
+</p>
                                     </div>
                                 </div>
                             </li>
@@ -423,6 +613,11 @@ x width: 1%;
             </div>
         </div>
     </div>
+    
+    
+    
+    
+    
     <?php include('includes/brand-footer.php') ?>
     <?php include('includes/footer-scripts.php') ?>
     <script>
@@ -452,6 +647,26 @@ $(document).ready(function(){
     });
 });
 </script> 
+
+
+
+  <script>
+    $(document).ready(function() {
+		$(".declined").hide();
+        $('#toggledeclined').click(function() {
+            if ($(this).is(':checked')) {
+                $(".declined").show();
+            } else {
+                $(".declined").hide();
+            }
+        });
+    });
+</script>
+
+
+
+
+
 </div>
 </body>
 </html>

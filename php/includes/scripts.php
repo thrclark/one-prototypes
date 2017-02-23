@@ -55,10 +55,6 @@
 
 
 
-
-
-
-
 <script>localStorage.clear(); </script>
 <script>
 $(document).ready(function(){
