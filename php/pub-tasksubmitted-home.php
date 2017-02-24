@@ -240,7 +240,7 @@ IUPUI </td>
                                         <td>New </td>
                                         <td>Upon Approval</td>
                                         <td > breckerm </td>
-                                        <td><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted"class="btn btn-default btn-xs">Notes</a> <a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Approve...</a>
+                                        <td><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted"class="btn btn-default btn-xs">Notes</a> <a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Review</a>
                                             <!-- <div class="dropdown" style="display:inline">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
@@ -270,7 +270,7 @@ IUPUI </td>
                                         <td> Updated </td>
                                         <td>Upon Approval</td>
                                         <td > tcain </td>
-                                        <td><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted"class="btn btn-default btn-xs">Notes</a> <a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Approve...</a>
+                                        <td><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted"class="btn btn-default btn-xs">Notes</a> <a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Review</a>
                                             <!-- <div class="dropdown" style="display:inline">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
@@ -300,7 +300,7 @@ IUPUI </td>
                                         <td> Updated</td>
                                         <td>3/21/17 8:00am</td>
                                         <td > tozogar </td>
-                                        <td><a href="#" class="btn btn-default btn-xs disabled">Notes</a> <a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Approve...</a> <!-- <div class="dropdown" style="display:inline">
+                                        <td><a href="#" class="btn btn-default btn-xs disabled">Notes</a> <a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Review</a> <!-- <div class="dropdown" style="display:inline">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Details</a></li>
@@ -329,7 +329,7 @@ IUPUI </td>
                                         <td> New </td>
                                         <td>4/09/17 5:00pm</td>
                                         <td > adobiega </td>
-                                        <td><a href="#" class="btn btn-default btn-xs disabled">Notes</a> <a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Approve...</a>
+                                        <td><a href="#" class="btn btn-default btn-xs disabled">Notes</a> <a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Review</a>
                                             <!-- <div class="dropdown" style="display:inline">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
