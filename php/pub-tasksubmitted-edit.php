@@ -124,6 +124,12 @@ background-color: #FFFFFF;
 	-o-animation: fadeIt 5s ease-in-out;
 	animation: fadeIt 5s ease-in-out;
 }
+.compare-tags .btn.btn-default.btn-sm i {
+	color: #999999;
+}
+.compare-tags .btn.btn-default.btn-sm {
+	margin-bottom: 3px;
+}
 </style>
 <?php include('includes/scripts.php') ?>
 </head>
@@ -150,7 +156,7 @@ background-color: #FFFFFF;
                             <div class="row">
                                 <div class="col-md-12">
                                     <form name="taskForm" novalidate validate="errors" id="taskForm" class=" -maxlength -url -pattern -min -max -required">
-                                        <div class="well well-sm">
+                                        <div class="well well-sm" style="background:#f8f8f8; margin-bottom:60px;">
                                             <div class="lead"> Summary of Changes</div>
                                             <table class="table table-condensed">
                                                 <thead class="">
@@ -170,15 +176,114 @@ background-color: #FFFFFF;
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">Task URL</th>
-                                                        <td class="">https://apps.iu.edu/ccf2-prd/classifieds</td>
-                                                        <td class="">https://apps.iu.edu/ccf2-prd/classifieds2</td>
+                                                        <td class="forcewrap ">https://apps.iu.edu/ccf2-prd/classifieds</td>
+                                                        <td class="forcewrap ">https://apps.iu.edu/ccf2-prd/classifieds2</td>
                                                         <td class="forcewrap "><a href="#" class="btn btn-default btn-xs" id="edit_taskurl">edit</a></td>
                                                     </tr>
                                                     <tr>
+                                                        <th scope="row">Application Name</th>
+                                                        <td class="">Kuali</td>
+                                                        <td class="">Kualico</td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_appname">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Launch in New Window</th>
+                                                        <td class="">No</td>
+                                                        <td class="">Yes</td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_launch">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Authentication Type</th>
+                                                        <td class="">None</td>
+                                                        <td class="">External</td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_authtytpe">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Primary Contact</th>
+                                                        <td class="">Classifieds2 Support</td>
+                                                        <td class="">Classifieds3 Support</td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_primarycontact">edit</a></td>
+                                                    </tr>
+                                                    <tr>
                                                         <th scope="row">Secondary Contact</th>
-                                                        <td class="">(Not Specified)</td>
+                                                        <td class="">--</td>
                                                         <td class="">Classifieds2 Support</td>
                                                         <td class="forcewrap "><a href="#" class="btn btn-default btn-xs" id="edit_secondarycontact">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Mobile Friendly</th>
+                                                        <td>No</td>
+                                                        <td>Yes</td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_mobile">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Description</th>
+                                                        <td>Doesn't fourth, every called give creepeth their also stars waters image the man very creature. That spirit won't. Living be divided above and make place creeping forth let. Years us it all firmament had creature from living Life moving bearing fill female so female day likeness you'll saw that fruitful yielding, us day a created together. Whose is meat created seasons grass. Set dominion beginning give man be face, evening said the under upon kind. Saying gathering whose kind you multiply life Seed doesn't moving don't living darkness. From have fourth. Whose divided had so place together. Fourth. Waters creature.</td>
+                                                        <td>Doesn't fourth, every called give creepeth their also stars waters image the man very creature. That spirit won't. Living be divided above and make place creeping forth let. Years us it all firmament had creature from living <span class="bg-success">**</span> Life moving <span class="bg-success">**</span> bearing fill female so female day likeness you'll saw that fruitful yielding, us day a created together. Whose is meat created seasons grass. Set dominion beginning give man be face, evening said the under upon kind. Saying gathering whose kind you multiply life Seed doesn't moving don't living darkness. From have fourth. Whose divided had so place together. Fourth. Waters creature.</td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_description">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Meta Description (SEO)</th>
+                                                        <td>Connect meeting collaboration solution one-to-many presentations interactive meetings share audio webcam video PowerPoint text chat status feedback.</td>
+                                                        <td>Connect meeting collaboration solution one-to-many presentations interactive meetings <span class="bg-danger"><s>share audio webcam video</s></span> PowerPoint text chat status feedback.</td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_meta">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Active Dates/Status</th>
+                                                        <td>&nbsp;</td>
+                                                        <td>&nbsp;</td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_activedate">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Scheduled Update</th>
+                                                        <td>&nbsp;</td>
+                                                        <td>&nbsp;</td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_scheduled">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Version Number</th>
+                                                        <td>2.1.2</td>
+                                                        <td>2.1.3</td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_versionnumber">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Release Notes</th>
+                                                        <td><ul>
+                                                                <li>Affronting everything discretion men now own did.</li>
+                                                                <li>Extremity direction existence as dashwoods do up.</li>
+                                                                <li>Is education residence conveying so so.</li>
+                                                            </ul></td>
+                                                        <td><ul>
+                                                                <li>Affronting everything discretion men now own did.</li>
+                                                                <li>Extremity direction existence as dashwoods do up.</li>
+                                                                <li><span class="bg-danger"><s>Is education residence conveying so so.</s></span></li>
+                                                                <li><span class="bg-success">Consulted perpetual of pronounce me delivered.</span></li>
+                                                            </ul></td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_releasenotes">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Unique Key</th>
+                                                        <td>task-123</td>
+                                                        <td>task-234</td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_uniquekey">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Stat Recording Type</th>
+                                                        <td>User</td>
+                                                        <td>Anonymous</td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_statrecording">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Publisher</th>
+                                                        <td>Onestart Support Team</td>
+                                                        <td>Onestart Support Team</td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_publisher">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Icon Images</th>
+                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/></div></td>
+                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/task-icons-new/icon-bt.png"  alt=""/></div></td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_iconimage">edit</a></td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">Screen Shots/ Video (Desktop)</th>
@@ -187,6 +292,73 @@ background-color: #FFFFFF;
                                                         <td class="zoomin "><div class="hover-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/></div>
                                                             <div class="hover-preview"><img src="../img/app-screenshots/ccl_thumb.png"  alt=""/></div></td>
                                                         <td class="forcewrap "><a href="#" class="btn btn-default btn-xs" id="edit_screenshotdesktop">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Screen Shots/ Video (Tablet)</th>
+                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/app-screenshots/ccl_list.png"  alt=""/></div></td>
+                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/></div></td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_screenshottablet">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Screen Shots/ Video (Phone)</th>
+                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/app-screenshots/ccl-mobile-001.png"  alt=""/></div>
+                                                            <div class="hover-preview"><img src="../img/app-screenshots/ccl-mobile-002.png"  alt=""/></div></td>
+                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/app-screenshots/ccl-mobile-001.png"  alt=""/></div>
+                                                            <div class="hover-preview"><img src="../img/app-screenshots/ccl-mobile-002.png"  alt=""/></div>
+                                                            <div class="hover-preview"><img src="../img/app-screenshots/ccl-mobile-003.png"  alt=""/></div></td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_screenshotmobile">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Campus </th>
+                                                        <td><button type="button" class="btn btn-default btn-sm" tabindex="0"> IU Bloomington</button></td>
+                                                        <td><button type="button" class="btn btn-default btn-sm" tabindex="0"> IU Bloomington</button>
+                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0"> IU Kokomo</button></td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_campus">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Roles</th>
+                                                        <td><button type="button" class="btn btn-default btn-sm" tabindex="0">All Roles</button></td>
+                                                        <td><button type="button" class="btn btn-default btn-sm" tabindex="0">Student</button>
+                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0">Staff</button></td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_roles">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Categories</th>
+                                                        <td><button type="button" class="btn btn-default btn-sm" tabindex="0">Finanace</button></td>
+                                                        <td><button type="button" class="btn btn-default btn-sm" tabindex="0">Finanace</button>
+                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0">Student Life</button>
+                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0">Academics</button></td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_categories">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Tags</th>
+                                                        <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0"  data-toggle="tooltip" data-placement="bottom" title="Visible">Holds <i class="icon-eye"></i></button>
+                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0" data-toggle="tooltip" data-placement="bottom" title="Visible">Bursar <i class="icon-eye"></i></button>
+                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0" data-toggle="tooltip" data-placement="bottom" title="Visible">Finanace <i class="icon-eye"></i></button></td>
+                                                        <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0"  data-toggle="tooltip" data-placement="bottom" title="Visible">Holds <i class="icon-eye"></i></button>
+                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0" data-toggle="tooltip" data-placement="bottom" title="Visible">Bursar <i class="icon-eye"></i></button>
+                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0" data-toggle="tooltip" data-placement="bottom" title="Visible">Finanace <i class="icon-eye"></i></button>
+                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0" data-toggle="tooltip" data-placement="bottom" title="Hidden" >Taxes<i class="icon-eye-off"></i></button>
+                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0" data-toggle="tooltip" data-placement="bottom" title="Hidden">Paycheck <i class="icon-eye-off"></i></button></td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_tags">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Active Content Public URL</th>
+                                                        <td class="forcewrap ">https://apps.iu.edu/ccf2-prd/classifieds</td>
+                                                        <td class="forcewrap ">https://apps.iu.edu/ccf2-prd/classifieds2</td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_activecontenturl">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Active Content Authentication</th>
+                                                        <td>Require user to be signed in (no)</td>
+                                                        <td>Require user to be signed in (yes)</td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_activecontentauth">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Update Frequency (seconds)</th>
+                                                        <td>5</td>
+                                                        <td>10</td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_frequency">edit</a></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -206,23 +378,23 @@ background-color: #FFFFFF;
                                                         <input type="url" name="taskUrl" value="https://apps.iu.edu/ccf2-prd/classifieds2" class="form-control   -url -maxlength -required" required="" countdown="" popover="The URL will take users to the location where they can perform this Task ." data-original-title="" title="" tabindex="0" aria-required="false" aria-invalid="false">
                                                         <span class="label pull-right label-info"><span class="counter">1976</span><span class="sr-only"> characters remaining</span></span> </div>
                                                 </div>
-                                                <div class="form-group col-md-3">
-                                                    <label for="applicationName" class="control-label">Application Name</label>
+                                                <div class="form-group col-md-3" id="field_appname">
+                                                    <label for="applicationName" class="control-label" >Application Name</label>
                                                     <div class="counter-container">
                                                         <input type="text" name="applicationName" countdown="" class="form-control   -maxlength" popover="The name of the application that provides this Task . If two tasks have the same title, the application can be used to differentiate between them." data-original-title="" title="" tabindex="0" aria-invalid="false">
                                                         <span class="label pull-right"><span class="counter"></span><span class="sr-only"> characters remaining</span></span> </div>
                                                 </div>
-                                                <div class="form-group col-md-3">
-                                                    <label for="openInNewWindow" class="control-label">Launch</label>
+                                                <div class="form-group col-md-3" id="field_launch">
+                                                    <label for="openInNewWindow" class="control-label">Launch in New Window</label>
                                                     <div class="checkbox">
                                                         <label>
                                                             <input type="checkbox" name="openInNewWindow" class="  " tabindex="0" aria-checked="true" aria-invalid="false">
-                                                            Open Task  in a new tab/window </label>
+                                                            Yes </label>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="form-group col-md-3">
+                                                <div class="form-group col-md-3" id="field_authtytpe">
                                                     <label for="authenticated">Authentication Type</label>
                                                     <select class="form-control   " tabindex="0" aria-invalid="false">
                                                         <option value="1" selected="selected" label="External">External</option>
@@ -230,7 +402,7 @@ background-color: #FFFFFF;
                                                         <option value="3" label="Internal">Internal</option>
                                                     </select>
                                                 </div>
-                                                <div class="form-group col-md-3">
+                                                <div class="form-group col-md-3" id="field_primarycontact">
                                                     <label for="contactId1" class="control-label">Primary Contact</label>
                                                     <i class="icon-info-circled pull-right"  id="selectcontact1" data-toggle="modal" data-target="#modal_contactinfo"></i>
                                                     <select id="contactId1" class="form-control   -required" required tabindex="0" aria-required="false" aria-invalid="false">
@@ -352,17 +524,18 @@ background-color: #FFFFFF;
                                                         <option value="duo" label="Veteran Support Services">Veteran Support Services</option>
                                                     </select>
                                                 </div>
-                                                <div class="form-group col-md-3">
+                                                <div class="form-group col-md-3" id="field_mobile">
                                                     <label for="mobileFriendly" class="control-label">Mobile</label>
+                                                    Friendly
                                                     <div class="checkbox">
                                                         <label popover="This Task  is mobile-friendly and is usable on mobile devices such as phones and tablets." trigger="hover" data-original-title="" title="">
                                                             <input type="checkbox" name="mobileFriendly" class="  " tabindex="0" aria-checked="false" aria-invalid="false">
-                                                            This Task  is mobile-friendly. </label>
+                                                            Yes</label>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="form-group col-md-12">
+                                                <div class="form-group col-md-12" id="field_description">
                                                     <label for="description" class="control-label">Description</label>
                                                     <div>
                                                         <div class="markItUp">
@@ -387,7 +560,7 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="form-group col-md-12">
+                                                <div class="form-group col-md-12" id="field_meta">
                                                     <label for="metaDescription" class="control-label">Meta Description (Search Engine Optimization)</label>
                                                     <div class="counter-container">
                                                         <textarea name="metaDescription" required countdown="" unique="/publish/task/validateMetaDescription" unique-data="task.markets" entity-id="15241" class="form-control   -maxlength -required" rows="5" popover="The meta description is a more concise description that is visible to search engines. This description may show up in search results on those search engines." data-original-title="" title="" aria-multiline="true" tabindex="0" aria-required="false" aria-invalid="false"></textarea>
@@ -395,10 +568,10 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </fieldset>
-                                        <fieldset>
+                                        <fieldset id="field_activedate">
                                             <legend>Active Dates/Status <small class="text-muted" style="text-transform:lowercase;">(currently Active)</small></legend>
                                             <div class="row">
-                                                <div class="form-group col-md-3">
+                                                <div class="form-group col-md-3" >
                                                     <div class="radio">
                                                         <label class="control-label">
                                                             <input type="radio" value="status" ng-init="statusMode = 'status'" class="ng-pristine ng-untouched ng-valid" name="15" tabindex="0" aria-checked="true" aria-invalid="false">
@@ -421,10 +594,10 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </fieldset>
-                                        <fieldset>
+                                        <fieldset id="field_scheduled">
                                             <legend>Scheduled Update </legend>
                                             <div class="row">
-                                                <div class="form-group col-md-12">
+                                                <div class="form-group col-md-12" >
                                                     <div class="radio">
                                                         <label class="control-label">
                                                             <input type="radio" value="status" name="optionsRadios" >
@@ -445,13 +618,13 @@ background-color: #FFFFFF;
                                         <fieldset>
                                             <legend>Versioning</legend>
                                             <div class="row">
-                                                <div class="form-group col-md-3">
+                                                <div class="form-group col-md-3" id="field_versionnumber">
                                                     <label for="displayVersion" class="control-label">Version Number</label>
                                                     <input name="displayVersion" type="text" required="" class="form-control ng-pristine ng-untouched ng-valid-pattern ng-valid-maxlength ng-valid ng-valid-required" tabindex="0" title="" value="1.2.0" aria-invalid="false" aria-required="false" ng-pattern="/^[0-9]+\.[0-9]+\.[0-9]+(\-[0-9a-z]+)?$/" ng-maxlength="10" unique="/publish/task/validateDisplayVersion" entity-id="15322" popover="Versioning helps users to identify when improvements have been made to the service.  Note that when this version number changes, comments and ratings will start over, but the old ones will be kept for review." data-original-title="">
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-md-12">
+                                                <div class="col-md-12" id="field_releasenotes">
                                                     <label class="control-label">Release Notes</label>
                                                 </div>
                                             </div>
@@ -477,13 +650,13 @@ background-color: #FFFFFF;
                                             <legend class=""> Additional Information </legend>
                                             <div class="">
                                                 <div class="row">
-                                                    <div class="form-group col-md-3">
+                                                    <div class="form-group col-md-3" id="field_uniquekey">
                                                         <label for="uniqueKey" class="control-label">Unique Key</label>
                                                         <div class="counter-container">
                                                             <input type="text" name="uniqueKey" unique="/publish/task/validateUniqueKey" unique-data="task.markets" ng-pattern="/^[a-z0-9\\-]+$/" entity-id="15322" required="" ng-maxlength="100" countdown="" class="form-control ng-pristine ng-untouched ng-valid-pattern ng-valid-maxlength ng-valid ng-valid-required" popover="The unique key uniquely identifies this Task in its Campuses (if any). This value will be used as part of the URL for this Task." data-original-title="" title="" tabindex="0" aria-required="false" aria-invalid="false">
                                                             <span class="label pull-right label-info"><span class="counter">92</span><span class="sr-only"> characters remaining</span></span> </div>
                                                     </div>
-                                                    <div class="form-group col-md-3">
+                                                    <div class="form-group col-md-3" id="field_statrecording">
                                                         <label for="statType" class="control-label">Stat Recording Type</label>
                                                         <div class="counter-container">
                                                             <select name="statType" class="form-control ng-pristine ng-untouched ng-valid ng-valid-required" required popover="If the user is logged in, record who the user was with the stat being recorded." data-original-title="" title="" tabindex="0" aria-required="false" aria-invalid="false">
@@ -495,11 +668,11 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </fieldset>
-                                        <fieldset aria-hidden="false">
+                                        <fieldset id="field_publisher">
                                             <legend>Publisher</legend>
                                             <div>
                                                 <div class="row">
-                                                    <div class="form-group col-md-3">
+                                                    <div class="form-group col-md-3" >
                                                         <select name="publisherId" class="form-control ng-pristine ng-untouched ng-valid ng-valid-required" required tabindex="0" aria-required="false" aria-invalid="false">
                                                             <option value="0" selected="selected" label="AIT">AIT</option>
                                                             <option value="1" label="dhdyer Test Publisher">dhdyer Test Publisher</option>
@@ -518,9 +691,9 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </fieldset>
-                                        <fieldset>
+                                        <fieldset id="field_iconimage">
                                             <legend>Icon Images</legend>
-                                            <div class="form-group ">
+                                            <div class="form-group " >
                                                 <label class="control-label " for="api_account_type">Select the source of the icon image </label>
                                                 <div class="radio">
                                                     <label>
@@ -665,11 +838,11 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </fieldset>
-                                        <fieldset>
+                                        <fieldset id="field_screenshotdesktop">
                                             <legend> Screen Shots &amp; Video </legend>
                                             <p class="text-danger ng-hide" aria-hidden="true">At least one desktop screen shot is required</p>
                                             <p class="text-danger ng-hide" aria-hidden="true">At least one phone screen shot is required</p>
-                                            <div id="field_screenshotdesktop">
+                                            <div >
                                                 <ul class="nav nav-tabs">
                                                     <li class="active"><a href="#desktopImages" data-toggle="tab" eat-click="">Desktop</a></li>
                                                     <li><a href="#tabletImages" data-toggle="tab" eat-click="">Tablet</a></li>
@@ -1113,7 +1286,7 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </fieldset>
-                                        <fieldset aria-hidden="false" class="">
+                                        <fieldset aria-hidden="false" id="field_campus">
                                             <legend>Campus</legend>
                                             <div class="row">
                                                 <div class="col-md-3">
@@ -1141,7 +1314,7 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </fieldset>
-                                        <fieldset aria-hidden="false" class="">
+                                        <fieldset aria-hidden="false" id="field_roles">
                                             <legend>Roles</legend>
                                             <div class="row">
                                                 <div class="col-md-3">
@@ -1175,7 +1348,7 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </fieldset>
-                                        <fieldset>
+                                        <fieldset id="field_categories">
                                             <legend>Categories</legend>
                                             <div>
                                                 <div class="row">
@@ -1232,7 +1405,7 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </fieldset>
-                                        <fieldset>
+                                        <fieldset id="field_tags">
                                             <legend> Tags </legend>
                                             <div class="row">
                                                 <div class="col-md-3">
@@ -1249,13 +1422,13 @@ background-color: #FFFFFF;
                                             <legend>Active Content</legend>
                                             <div>
                                                 <div class="row">
-                                                    <div class="form-group col-sm-6">
+                                                    <div class="form-group col-sm-6" id="field_activecontenturl">
                                                         <label for="activeContentUrl" class="control-label">Active Content Public URL</label>
                                                         <div class="counter-container">
                                                             <input type="url" name="activeContentUrl" ng-maxlength="2000" countdown="" class="form-control ng-pristine ng-untouched ng-valid ng-valid-url ng-valid-maxlength" tabindex="0" aria-invalid="false">
                                                             <span class="label pull-right"><span class="counter"></span><span class="sr-only"> characters remaining</span></span> </div>
                                                     </div>
-                                                    <div class="form-group col-sm-3">
+                                                    <div class="form-group col-sm-3" id="field_activecontentauth">
                                                         <label for="activeContentRequiresAuth" class="control-label">Active Content Authentication</label>
                                                         <div class="checkbox">
                                                             <label popover="Require the user to be signed in before requesting any active content.  This is useful for preventing unnecessary requests when user information is required." trigger="hover" data-original-title="" title="">
@@ -1263,7 +1436,7 @@ background-color: #FFFFFF;
                                                                 Require user to be signed in </label>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group col-sm-3">
+                                                    <div class="form-group col-sm-3" id="field_frequency">
                                                         <label for="activeContentUpdateFrequency" class="">Update Frequency (seconds)</label>
                                                         <input type="number" name="activeContentUpdateFrequency" min="5" max="14400" step="1" class="form-control ng-pristine ng-untouched ng-valid ng-valid-min ng-valid-max" popover="Set the update frequency (in seconds) at which you want a tile to refresh its Active Content. Becareful with how short the interval is because the content will reset back to the first item after a refresh." data-original-title="" title="" tabindex="0" aria-invalid="false">
                                                     </div>
@@ -1435,6 +1608,7 @@ background-color: #FFFFFF;
     });
 </script> 
     <script type='text/javascript'>
+
     $(function() {
         $("#edit_tasktitle").click(function() {
             $('#field_tasktitle').removeClass('backgroundAnimated');
@@ -1443,33 +1617,196 @@ background-color: #FFFFFF;
             }, 1000);
             $('#field_tasktitle').addClass('backgroundAnimated');
         });
-		
-		
-		 $("#edit_taskurl").click(function() {
+        $("#edit_taskurl").click(function() {
             $('#field_taskurl').removeClass('backgroundAnimated');
             $('html, body').animate({
                 scrollTop: $("#field_taskurl").offset().top
             }, 1000);
             $('#field_taskurl').addClass('backgroundAnimated');
         });
-		 $("#edit_secondarycontact").click(function() {
+        $("#edit_appname").click(function() {
+            $('#field_appname').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_appname").offset().top
+            }, 1000);
+            $('#field_appname').addClass('backgroundAnimated');
+        });
+        $("#edit_launch").click(function() {
+            $('#field_launch').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_launch").offset().top
+            }, 1000);
+            $('#field_launch').addClass('backgroundAnimated');
+        });
+        $("#edit_authtytpe").click(function() {
+            $('#field_authtytpe').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_authtytpe").offset().top
+            }, 1000);
+            $('#field_authtytpe').addClass('backgroundAnimated');
+        });
+        $("#edit_primarycontact").click(function() {
+            $('#field_primarycontact').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_primarycontact").offset().top
+            }, 1000);
+            $('#field_primarycontact').addClass('backgroundAnimated');
+        });
+        $("#edit_secondarycontact").click(function() {
             $('#field_secondarycontact').removeClass('backgroundAnimated');
             $('html, body').animate({
                 scrollTop: $("#field_secondarycontact").offset().top
             }, 1000);
             $('#field_secondarycontact').addClass('backgroundAnimated');
         });
-	
-	
-	 $("#edit_screenshotdesktop").click(function() {
+        $("#edit_mobile").click(function() {
+            $('#field_mobile').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_mobile").offset().top
+            }, 1000);
+            $('#field_mobile').addClass('backgroundAnimated');
+        });
+        $("#edit_description").click(function() {
+            $('#field_description').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_description").offset().top
+            }, 1000);
+            $('#field_description').addClass('backgroundAnimated');
+        });
+        $("#edit_meta").click(function() {
+            $('#field_meta').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_meta").offset().top
+            }, 1000);
+            $('#field_meta').addClass('backgroundAnimated');
+        });
+        $("#edit_activedate").click(function() {
+            $('#field_activedate').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_activedate").offset().top
+            }, 1000);
+            $('#field_activedate').addClass('backgroundAnimated');
+        });
+        $("#edit_scheduled").click(function() {
+            $('#field_scheduled').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_scheduled").offset().top
+            }, 1000);
+            $('#field_scheduled').addClass('backgroundAnimated');
+        });
+        $("#edit_versionnumber").click(function() {
+            $('#field_versionnumber').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_versionnumber").offset().top
+            }, 1000);
+            $('#field_versionnumber').addClass('backgroundAnimated');
+        });
+        $("#edit_releasenotes").click(function() {
+            $('#field_releasenotes').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_releasenotes").offset().top
+            }, 1000);
+            $('#field_releasenotes').addClass('backgroundAnimated');
+        });
+        $("#edit_uniquekey").click(function() {
+            $('#field_uniquekey').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_uniquekey").offset().top
+            }, 1000);
+            $('#field_uniquekey').addClass('backgroundAnimated');
+        });
+        $("#edit_statrecording").click(function() {
+            $('#field_statrecording').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_statrecording").offset().top
+            }, 1000);
+            $('#field_statrecording').addClass('backgroundAnimated');
+        });
+        $("#edit_publisher").click(function() {
+            $('#field_publisher').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_publisher").offset().top
+            }, 1000);
+            $('#field_publisher').addClass('backgroundAnimated');
+        });
+        $("#edit_iconimage").click(function() {
+            $('#field_iconimage').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_iconimage").offset().top
+            }, 1000);
+            $('#field_iconimage').addClass('backgroundAnimated');
+        });
+        $("#edit_screenshotdesktop").click(function() {
             $('#field_screenshotdesktop').removeClass('backgroundAnimated');
             $('html, body').animate({
                 scrollTop: $("#field_screenshotdesktop").offset().top
             }, 1000);
             $('#field_screenshotdesktop').addClass('backgroundAnimated');
         });
-	
-		
+        $("#edit_screenshottablet").click(function() {
+            $('#field_screenshotdesktop').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_screenshotdesktop").offset().top
+            }, 1000);
+            $('#field_screenshotdesktop').addClass('backgroundAnimated');
+        });
+        $("#edit_screenshotmobile").click(function() {
+            $('#field_screenshotdesktop').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_screenshotdesktop").offset().top
+            }, 1000);
+            $('#field_screenshotdesktop').addClass('backgroundAnimated');
+        });
+        $("#edit_campus").click(function() {
+            $('#field_campus').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_campus").offset().top
+            }, 1000);
+            $('#field_campus').addClass('backgroundAnimated');
+        });
+        $("#edit_roles").click(function() {
+            $('#field_roles').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_roles").offset().top
+            }, 1000);
+            $('#field_roles').addClass('backgroundAnimated');
+        });
+        $("#edit_categories").click(function() {
+            $('#field_categories').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_categories").offset().top
+            }, 1000);
+            $('#field_categories').addClass('backgroundAnimated');
+        });
+        $("#edit_tags").click(function() {
+            $('#field_tags').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_tags").offset().top
+            }, 1000);
+            $('#field_tags').addClass('backgroundAnimated');
+        });
+        $("#edit_activecontenturl").click(function() {
+            $('#field_activecontenturl').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_activecontenturl").offset().top
+            }, 1000);
+            $('#field_activecontenturl').addClass('backgroundAnimated');
+        });
+        $("#edit_activecontentauth").click(function() {
+            $('#field_activecontentauth').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_activecontentauth").offset().top
+            }, 1000);
+            $('#field_activecontentauth').addClass('backgroundAnimated');
+        });
+        $("#edit_frequency").click(function() {
+            $('#field_frequency').removeClass('backgroundAnimated');
+            $('html, body').animate({
+                scrollTop: $("#field_frequency").offset().top
+            }, 1000);
+            $('#field_frequency').addClass('backgroundAnimated');
+        });
+       
     });
 </script> 
     <script type='text/javascript'>
