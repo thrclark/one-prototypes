@@ -16,6 +16,10 @@
 <link href="../app/vendor/js/colorbox/colorbox.css" rel="stylesheet" type="text/css">
 <link href="../app/vendor/js/expandgrid/css/component.css" rel="stylesheet" type="text/css">
 
+
+<link href="../bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css">
+
+
 <!--<link rel="stylesheet" type="text/css" href="../app/vendor/js/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="../app/vendor/js/slick/slick-theme.css"/>-->
 

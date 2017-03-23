@@ -324,3 +324,7 @@ $(document).ready(function() {
 
 
 
+
+
+<script type="text/javascript" src="../bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
