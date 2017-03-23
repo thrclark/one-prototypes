@@ -1613,196 +1613,196 @@ background-color: #FFFFFF;
         $("#edit_tasktitle").click(function() {
             $('#field_tasktitle').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_tasktitle").offset().top
+                scrollTop: $("#field_tasktitle").offset().top-10
             }, 1000);
             $('#field_tasktitle').addClass('backgroundAnimated');
         });
         $("#edit_taskurl").click(function() {
             $('#field_taskurl').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_taskurl").offset().top
+                scrollTop: $("#field_taskurl").offset().top-10
             }, 1000);
             $('#field_taskurl').addClass('backgroundAnimated');
         });
         $("#edit_appname").click(function() {
             $('#field_appname').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_appname").offset().top
+                scrollTop: $("#field_appname").offset().top-10
             }, 1000);
             $('#field_appname').addClass('backgroundAnimated');
         });
         $("#edit_launch").click(function() {
             $('#field_launch').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_launch").offset().top
+                scrollTop: $("#field_launch").offset().top-10
             }, 1000);
             $('#field_launch').addClass('backgroundAnimated');
         });
         $("#edit_authtytpe").click(function() {
             $('#field_authtytpe').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_authtytpe").offset().top
+                scrollTop: $("#field_authtytpe").offset().top-10
             }, 1000);
             $('#field_authtytpe').addClass('backgroundAnimated');
         });
         $("#edit_primarycontact").click(function() {
             $('#field_primarycontact').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_primarycontact").offset().top
+                scrollTop: $("#field_primarycontact").offset().top-10
             }, 1000);
             $('#field_primarycontact').addClass('backgroundAnimated');
         });
         $("#edit_secondarycontact").click(function() {
             $('#field_secondarycontact').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_secondarycontact").offset().top
+                scrollTop: $("#field_secondarycontact").offset().top-10
             }, 1000);
             $('#field_secondarycontact').addClass('backgroundAnimated');
         });
         $("#edit_mobile").click(function() {
             $('#field_mobile').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_mobile").offset().top
+                scrollTop: $("#field_mobile").offset().top-10
             }, 1000);
             $('#field_mobile').addClass('backgroundAnimated');
         });
         $("#edit_description").click(function() {
             $('#field_description').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_description").offset().top
+                scrollTop: $("#field_description").offset().top-10
             }, 1000);
             $('#field_description').addClass('backgroundAnimated');
         });
         $("#edit_meta").click(function() {
             $('#field_meta').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_meta").offset().top
+                scrollTop: $("#field_meta").offset().top-10
             }, 1000);
             $('#field_meta').addClass('backgroundAnimated');
         });
         $("#edit_activedate").click(function() {
             $('#field_activedate').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_activedate").offset().top
+                scrollTop: $("#field_activedate").offset().top-10
             }, 1000);
             $('#field_activedate').addClass('backgroundAnimated');
         });
         $("#edit_scheduled").click(function() {
             $('#field_scheduled').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_scheduled").offset().top
+                scrollTop: $("#field_scheduled").offset().top-10
             }, 1000);
             $('#field_scheduled').addClass('backgroundAnimated');
         });
         $("#edit_versionnumber").click(function() {
             $('#field_versionnumber').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_versionnumber").offset().top
+                scrollTop: $("#field_versionnumber").offset().top-10
             }, 1000);
             $('#field_versionnumber').addClass('backgroundAnimated');
         });
         $("#edit_releasenotes").click(function() {
             $('#field_releasenotes').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_releasenotes").offset().top
+                scrollTop: $("#field_releasenotes").offset().top-10
             }, 1000);
             $('#field_releasenotes').addClass('backgroundAnimated');
         });
         $("#edit_uniquekey").click(function() {
             $('#field_uniquekey').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_uniquekey").offset().top
+                scrollTop: $("#field_uniquekey").offset().top-10
             }, 1000);
             $('#field_uniquekey').addClass('backgroundAnimated');
         });
         $("#edit_statrecording").click(function() {
             $('#field_statrecording').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_statrecording").offset().top
+                scrollTop: $("#field_statrecording").offset().top-10
             }, 1000);
             $('#field_statrecording').addClass('backgroundAnimated');
         });
         $("#edit_publisher").click(function() {
             $('#field_publisher').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_publisher").offset().top
+                scrollTop: $("#field_publisher").offset().top-10
             }, 1000);
             $('#field_publisher').addClass('backgroundAnimated');
         });
         $("#edit_iconimage").click(function() {
             $('#field_iconimage').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_iconimage").offset().top
+                scrollTop: $("#field_iconimage").offset().top-10
             }, 1000);
             $('#field_iconimage').addClass('backgroundAnimated');
         });
         $("#edit_screenshotdesktop").click(function() {
             $('#field_screenshotdesktop').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_screenshotdesktop").offset().top
+                scrollTop: $("#field_screenshotdesktop").offset().top-10
             }, 1000);
             $('#field_screenshotdesktop').addClass('backgroundAnimated');
         });
         $("#edit_screenshottablet").click(function() {
             $('#field_screenshotdesktop').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_screenshotdesktop").offset().top
+                scrollTop: $("#field_screenshotdesktop").offset().top-10
             }, 1000);
             $('#field_screenshotdesktop').addClass('backgroundAnimated');
         });
         $("#edit_screenshotmobile").click(function() {
             $('#field_screenshotdesktop').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_screenshotdesktop").offset().top
+                scrollTop: $("#field_screenshotdesktop").offset().top-10
             }, 1000);
             $('#field_screenshotdesktop').addClass('backgroundAnimated');
         });
         $("#edit_campus").click(function() {
             $('#field_campus').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_campus").offset().top
+                scrollTop: $("#field_campus").offset().top-10
             }, 1000);
             $('#field_campus').addClass('backgroundAnimated');
         });
         $("#edit_roles").click(function() {
             $('#field_roles').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_roles").offset().top
+                scrollTop: $("#field_roles").offset().top-10
             }, 1000);
             $('#field_roles').addClass('backgroundAnimated');
         });
         $("#edit_categories").click(function() {
             $('#field_categories').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_categories").offset().top
+                scrollTop: $("#field_categories").offset().top-10
             }, 1000);
             $('#field_categories').addClass('backgroundAnimated');
         });
         $("#edit_tags").click(function() {
             $('#field_tags').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_tags").offset().top
+                scrollTop: $("#field_tags").offset().top-10
             }, 1000);
             $('#field_tags').addClass('backgroundAnimated');
         });
         $("#edit_activecontenturl").click(function() {
             $('#field_activecontenturl').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_activecontenturl").offset().top
+                scrollTop: $("#field_activecontenturl").offset().top-10
             }, 1000);
             $('#field_activecontenturl').addClass('backgroundAnimated');
         });
         $("#edit_activecontentauth").click(function() {
             $('#field_activecontentauth').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_activecontentauth").offset().top
+                scrollTop: $("#field_activecontentauth").offset().top-10
             }, 1000);
             $('#field_activecontentauth').addClass('backgroundAnimated');
         });
         $("#edit_frequency").click(function() {
             $('#field_frequency').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_frequency").offset().top
+                scrollTop: $("#field_frequency").offset().top-10
             }, 1000);
             $('#field_frequency').addClass('backgroundAnimated');
         });
