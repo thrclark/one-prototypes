@@ -247,37 +247,37 @@ $page = '';
                                             </div>
                                         </fieldset>
                                         <fieldset>
-                                            <legend>Active Dates/Status <small class="text-muted" style="text-transform:lowercase;">(currently Active)</small></legend>
+                                            <legend>Active Dates/Status <small class="text-muted" style="text-transform:lowercase;">(currently inactive)</small></legend>
                                             <div class="row">
-                                                <div class="form-group col-md-3">
+                                                <div class="form-group col-md-4">
                                                     <div class="radio">
                                                         <label class="control-label">
-                                                            <input type="radio" value="status" ng-init="statusMode = 'status'" class="ng-pristine ng-untouched ng-valid" name="15" tabindex="0" aria-checked="true" aria-invalid="false">
+                                                            <input type="radio" value="status" name="15" tabindex="0" aria-checked="true" aria-invalid="false" id="show_status">
                                                             Specify by Status </label>
                                                     </div>
                                                     <div class="radio">
                                                         <label>
-                                                            <input type="radio" value="range" class="ng-pristine ng-untouched ng-valid" name="16" tabindex="0" aria-checked="false" aria-invalid="false">
+                                                            <input type="radio" value="range" name="15" tabindex="0" aria-checked="false" aria-invalid="false" id="show_range">
                                                             Specify by Date Range </label>
                                                     </div>
                                                 </div>
-                                                <div style="display: inline" aria-hidden="false">
-                                                    <div class="form-group col-md-3">
+                                                <div style="display:block" aria-hidden="false" id="choose_status">
+                                                    <div class="form-group col-md-4">
                                                         <label for="status" class="control-label">Status</label>
-                                                        <select class="form-control ng-pristine ng-untouched ng-valid ng-valid-required" required tabindex="0" aria-required="false" aria-invalid="false">
+                                                        <select class="form-control " required tabindex="0" aria-required="false" aria-invalid="false">
                                                             <option value="A" selected="selected" label="Active">Active</option>
                                                             <option value="I" label="Inactive">Inactive</option>
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div style="display:inline" aria-hidden="true" class="ng-hide">
-                                                    <div class="form-group col-md-3">
+                                                <div style="display:none" aria-hidden="true" id="choose_range">
+                                                    <div class="form-group col-md-4">
                                                         <label for="beginDate" class="control-label">Begin Date</label>
-                                                        <input type="text" name="beginDate" datepicker="body" time="" class="form-control ng-pristine ng-untouched ng-valid" popover="The date that this Task will become available. If left blank, Task will be available immediately if status is active." popover-placement="auto top" data-original-title="" title="" tabindex="0" aria-invalid="false">
+                                                        <input type="text" name="beginDate" datepicker="body" time="" class="form-control picktime" title="" tabindex="0" aria-invalid="false">
                                                     </div>
-                                                    <div class="form-group col-md-3">
-                                                        <label for="endDate" class="control-label">End Date</label>
-                                                        <input type="text" name="endDate" datepicker="body" time="" class="form-control ng-pristine ng-untouched ng-valid" popover="The date that this Task will become unavailable. If left blank, Task will always be available." popover-placement="auto top" data-original-title="" title="" tabindex="0" aria-invalid="false">
+                                                    <div class="form-group col-md-4">
+                                                        <label for="endDate" class="control-label">End Date <span class="text-muted small">(optional)</span></label>
+                                                        <input type="text" name="endDate" datepicker="body" time="" class="form-control picktime" title="" tabindex="0" aria-invalid="false">
                                                     </div>
                                                 </div>
                                             </div>
@@ -326,7 +326,7 @@ $page = '';
                                                     <div class="form-group col-md-3">
                                                         <label for="statType" class="control-label">Stat Recording Type</label>
                                                         <div class="counter-container">
-                                                            <select name="statType" class="form-control ng-pristine ng-untouched ng-valid ng-valid-required" required popover="If the user is logged in, record who the user was with the stat being recorded." data-original-title="" title="" tabindex="0" aria-required="false" aria-invalid="false">
+                                                            <select name="statType" class="form-control " required popover="If the user is logged in, record who the user was with the stat being recorded." data-original-title="" title="" tabindex="0" aria-required="false" aria-invalid="false">
                                                                 <option value="A" selected="selected" label="Anonymous">Anonymous</option>
                                                                 <option value="U" label="User">User</option>
                                                             </select>
@@ -340,7 +340,7 @@ $page = '';
                                             <div>
                                                 <div class="row">
                                                     <div class="form-group col-md-3">
-                                                        <select name="publisherId" class="form-control ng-pristine ng-untouched ng-valid ng-valid-required" required tabindex="0" aria-required="false" aria-invalid="false">
+                                                        <select name="publisherId" class="form-control " required tabindex="0" aria-required="false" aria-invalid="false">
                                                             <option value="0" selected="selected" label="AIT">AIT</option>
                                                             <option value="1" label="dhdyer Test Publisher">dhdyer Test Publisher</option>
                                                             <option value="2" label="Jeremy Walker">Jeremy Walker</option>
@@ -542,7 +542,7 @@ $page = '';
                                                                                                 <button type="button" class="btn btn-danger destroy btn-xs" data-ng-click="deleteMedia(file)" tabindex="0"> <i class="icon-minus-circled"></i> Delete </button>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div aria-hidden="true" class="ng-hide">
+                                                                                        <div aria-hidden="true" >
                                                                                             <video width="320" height="240" controls> Your browser does not support the video tag. </video>
                                                                                             <div>
                                                                                                 <button type="button" class="btn btn-danger destroy btn-xs" data-ng-click="deleteMedia(file)" tabindex="0"> <i class="icon-minus-circled"></i> Delete </button>
@@ -573,7 +573,7 @@ $page = '';
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <label aria-hidden="true" class="ng-hide">Upload Files Queue</label>
+                                                                    <label aria-hidden="true" >Upload Files Queue</label>
                                                                     <div class="well media-list ng-hide" aria-hidden="true">
                                                                         <div style="clear: both"></div>
                                                                     </div>
@@ -671,7 +671,7 @@ $page = '';
                                                                                             <input type="file" fileupload="" name="files[]" customdata="customData" uploadurl="/publish/image/media" done="uploadDone(e, data)" fail="uploadFail(e, data)" progress="uploadProgress(e, data)">
                                                                                             </span>
                                                                                             <button type="button" class="btn btn-danger ng-hide" tabindex="0" aria-hidden="true"> <i class="icon-trash"></i> </button>
-                                                                                            <div class="panel"> <span data-ng-show="errorMessage" class="file-error ng-hide" aria-hidden="true"> <span class="label label-danger">Error</span> </span> <img alt="your uploaded image" src="" aria-hidden="true" class="ng-hide"> </div>
+                                                                                            <div class="panel"> <span data-ng-show="errorMessage" class="file-error ng-hide" aria-hidden="true"> <span class="label label-danger">Error</span> </span> <img alt="your uploaded image" src="" aria-hidden="true" > </div>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -714,7 +714,7 @@ $page = '';
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <label aria-hidden="true" class="ng-hide">Upload Files Queue</label>
+                                                                    <label aria-hidden="true" >Upload Files Queue</label>
                                                                     <div class="well media-list ng-hide" aria-hidden="true">
                                                                         <div style="clear: both"></div>
                                                                     </div>
@@ -812,7 +812,7 @@ $page = '';
                                                                                             <input type="file" fileupload="" name="files[]" customdata="customData" uploadurl="/publish/image/media" done="uploadDone(e, data)" fail="uploadFail(e, data)" progress="uploadProgress(e, data)">
                                                                                             </span>
                                                                                             <button type="button" class="btn btn-danger ng-hide" tabindex="0" aria-hidden="true"> <i class="icon-trash"></i> </button>
-                                                                                            <div class="panel"> <span data-ng-show="errorMessage" class="file-error ng-hide" aria-hidden="true"> <span class="label label-danger">Error</span> </span> <img alt="your uploaded image" src="" aria-hidden="true" class="ng-hide"> </div>
+                                                                                            <div class="panel"> <span data-ng-show="errorMessage" class="file-error ng-hide" aria-hidden="true"> <span class="label label-danger">Error</span> </span> <img alt="your uploaded image" src="" aria-hidden="true" > </div>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -855,7 +855,7 @@ $page = '';
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <label aria-hidden="true" class="ng-hide">Upload Files Queue</label>
+                                                                    <label aria-hidden="true" >Upload Files Queue</label>
                                                                     <div class="well media-list ng-hide" aria-hidden="true">
                                                                         <div style="clear: both"></div>
                                                                     </div>
@@ -953,7 +953,7 @@ $page = '';
                                                                                             <input type="file" fileupload="" name="files[]" customdata="customData" uploadurl="/publish/image/media" done="uploadDone(e, data)" fail="uploadFail(e, data)" progress="uploadProgress(e, data)">
                                                                                             </span>
                                                                                             <button type="button" class="btn btn-danger ng-hide" tabindex="0" aria-hidden="true"> <i class="icon-trash"></i> </button>
-                                                                                            <div class="panel"> <span data-ng-show="errorMessage" class="file-error ng-hide" aria-hidden="true"> <span class="label label-danger">Error</span> </span> <img alt="your uploaded image" src="" aria-hidden="true" class="ng-hide"> </div>
+                                                                                            <div class="panel"> <span data-ng-show="errorMessage" class="file-error ng-hide" aria-hidden="true"> <span class="label label-danger">Error</span> </span> <img alt="your uploaded image" src="" aria-hidden="true" > </div>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1117,7 +1117,7 @@ $page = '';
                                                         <label for="activeContentRequiresAuth" class="control-label">Active Content Authentication</label>
                                                         <div class="checkbox">
                                                             <label popover="Require the user to be signed in before requesting any active content.  This is useful for preventing unnecessary requests when user information is required." trigger="hover" data-original-title="" title="">
-                                                                <input type="checkbox" name="activeContentRequiresAuth" ng-true-value="'T'" ng-false-value="'F'" class="ng-pristine ng-untouched ng-valid" tabindex="0" aria-checked="false" aria-invalid="false">
+                                                                <input type="checkbox" name="activeContentRequiresAuth" ng-true-value="'T'" ng-false-value="'F'" tabindex="0" aria-checked="false" aria-invalid="false">
                                                                 Require user to be signed in </label>
                                                         </div>
                                                     </div>
@@ -1129,14 +1129,43 @@ $page = '';
                                             </div>
                                         </fieldset>
                                         <hr>
-                                        <button class="btn btn-success" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Save</button>
-                                       
+                                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Save <span class="caret"></span> </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Publish Immediately (Upon Approval)</a></li>
+                                            <li><a href="#"  data-toggle="modal" data-target="#modal_publishdate">Specify Publish Date</a></li>
+                                        </ul>
                                         <button class="btn btn-default" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Cancel</button>
                                     </form>
                                 </div>
                             </div>
                         </section>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_publishdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-default" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Specify Publish Date</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label for="title" class="control-label">Publish Date</label>
+                            <span class="help-block small"> Specify the date and time that you wish for these updates to be published.</span>
+                            <div class="row">
+                        <div class="form-group col-md-6"><div class="counter-container">
+                                <input type="text" name="title" required="" countdown="" class="form-control picktime"  tabindex="0" aria-required="false" aria-invalid="false">
+                            </div></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Save</button>
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -1234,6 +1263,24 @@ $page = '';
     <script>
     $(document).ready(function() {
         $('input[type="radio"]').click(function() {
+            if ($(this).attr('id') == 'show_status') {
+                $('#choose_status').fadeIn();
+            } else {
+                $('#choose_status').hide();
+            }
+        });
+		$('input[type="radio"]').click(function() {
+            if ($(this).attr('id') == 'show_range') {
+                $('#choose_range').fadeIn();
+            } else {
+                $('#choose_range').hide();
+            }
+        });
+    });
+	</script> 
+    <script>
+    $(document).ready(function() {
+        $('input[type="radio"]').click(function() {
             if ($(this).attr('id') == 'show_custom') {
                 $('#custom_upload').slideDown();
             } else {
@@ -1285,6 +1332,12 @@ $page = '';
         }
     });
 </script> 
+    <script type='text/javascript'>
+     $(function() {
+                $('.picktime').datetimepicker();
+            });
+            
+     </script> 
 </div>
 </body>
 </html>
