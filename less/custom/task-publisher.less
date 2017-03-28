@@ -1,67 +1,68 @@
-
-.task {
-  display: inline-block;
-  width: 170px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  background-color: #ccc;
-  position: relative;
+.publishing > div {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+	
+	.task {
+		display: inline-block;
+  		margin-right: 10px;
+  		margin-bottom: 10px;
+  		position: relative;
+	
+		white-space: normal;
+		width: 300px;
+		background-color: #fff;
+		padding: 8px;
+		border: 1px solid #ccc;
+		color: #000;
+		text-decoration: none;
+	  
+	    -webkit-flex: 0 0 300px;
+		flex: 0 0 300px;
+	
+	    &:hover {
+  			background-color: #eee;
+		}
+		
+		h4 {
+  			display: block;
+  			font-weight: bold;
+  			margin-top: 0;
+  			margin-bottom: 5px;
+  			color: @text-color;
+		}
+		
+		i {
+			vertical-align: top;
+			margin-right: 8px;
+			font-size: 2.5em;
+		}
+		
+		.badge {
+			position: absolute;
+			top: -5px;
+			right: -8px;
+			background-color: #dc0031;
+		}
+	}
 }
 
-.publishing .task {
-  background-color: #fff;
-  padding: 8px;
-  border: 1px solid #ccc;
-  color: #000;
-  text-decoration: none;
+#taskForm .contactInfo {
+	border: none;
+	position: absolute;
+	top: 0;
+	right: 8px;
+	background-color: transparent;
+	display: block;
 }
-
-.publishing .task:hover {
-  background-color: #eee;
+@media (max-width: @screen-sm-max) {
+	#taskForm .contactInfo {
+		right: 0;
+	}
 }
-
-.task.wrap {
-  white-space: normal;
-  float: left;
-  width: 300px;
-}
-
-.task.wrap h4 {
-  display: block;
-}
-
-.task .badge {
-  position: absolute;
-  top: -5px;
-  right: -8px;
-  background-color: #dc0031;
-}
-
-.task .image {
-  height: auto;
-  width: 100%;
-  margin-bottom: 8px;
-}
-
-.task img {
-  width: 100%;
-  height: auto;
-}
-
-.task h4 {
-  display: block;
-  font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 5px;
-  color: @text-color;
-}
-
-.task i {  /*used in publishing*/
-  vertical-align: top;
-  margin-right: 8px;
-  font-size: 2.5em;
-}
-
 
 //used in task centers
 .task6 div.task-unavailable {

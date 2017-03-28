@@ -4,21 +4,17 @@ html {
 }
 body {
   color: @text-color;
+  // overflow: hidden; //this hides scroll bar in IE11
   position: relative;
-  background-color:@bodybackground;
   display: flex;
-  min-height: 100vh;
-  height: 100vh;
   flex-direction: column;
 }
-
 .wrapper {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   flex: 0 0 auto;
 }
-
 [ng\:cloak], [ng-cloak], .ng-cloak {
   display: none !important;
 }
@@ -94,7 +90,6 @@ span.gripper {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .file-error {
   margin-bottom: 5px;
 }
@@ -138,7 +133,6 @@ span.gripper {
 	border: 1px solid #f00;
 	padding: 3px;
 }
-
 
 .label {
   border-radius: 0;

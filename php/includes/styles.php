@@ -2,7 +2,7 @@
 <link type="text/css" rel="stylesheet" href="../app/vendor/js/lightGallery/css/lightgallery.css"/>
 
 <!-- Base CSS -->
-<link href="../less/styles.css" rel="stylesheet" type="text/css">
+<link href="../less/main.css" rel="stylesheet" type="text/css">
 <!-- MetisMenu CSS -->
 <link href="../vendor/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
 <!-- Timeline CSS -->

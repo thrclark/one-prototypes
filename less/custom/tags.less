@@ -4,7 +4,7 @@
 }
 
 .tag {
-  color: @tag-color;
+  color: #333;
   background-color: @tag-background-color;
   font-size: 12pt;
   font-weight: normal;
@@ -13,12 +13,9 @@
 }
 
 .tag:hover, .tag:focus {
-  background-color: @tag-bg-color-active !important;
+  background-color: #e6e6e6 !important;
+  border-color: #adadad;
 }
-
-
-// new tags design
-
 
 .tags-container {
   display: flex;
@@ -85,7 +82,6 @@
       &:hover {
         background: #555555;
         &:before {
-
           border: 10px solid transparent;
           border-left: 10px solid #555555;
         }

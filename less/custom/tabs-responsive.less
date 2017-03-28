@@ -19,7 +19,7 @@
     background-color: #ffffff;
   }
 }
-.tab-content {
+.nav-tabs ~ .tab-content {
   background: white;
   border-bottom: none;
   border-top: none;
@@ -49,7 +49,7 @@
       .panel-actionheader {
         border-bottom: solid 1px #CCCCCC;
         .panel-controls {
-          margin-top: 15px;
+          margin-top: 18px;
         }
       }
     }
@@ -60,11 +60,21 @@
   }
 }
 
+.panel-collapse .tab-content {
+	border: none;
+}
 
-
-
-
-
+body[ng-app="publishing"], body[ng-app="admin"] {
+	.nav-tabs ~ .tab-content {
+  		border-bottom: solid 1px @nav-tabs-active-link-hover-border-color;
+  		padding:10px;
+  		margin-bottom: 15px;
+  		
+		.tab-pane {
+		    border-bottom: none;
+		}
+    }
+}
 
 .panel-group {
   .panel {
@@ -92,7 +102,7 @@
           border-bottom: solid 1px #CCCCCC;
           margin-bottom: 15px;
           .panel-controls {
-            margin-top: 15px;
+            margin-top: 18px;
           }
         }
       }
@@ -100,8 +110,8 @@
   }
 }
 
-.panel-group .panel .panel-body h5,
-.tab-content .tab-pane h5,
+.panel-group .panel .panel-body h3,
+.tab-content .tab-pane h3
  {
   font-family: @font-family;
   font-size: 16px;
@@ -118,9 +128,13 @@
         border-top: solid 1px #ffffff;
         margin-left: 0px;
         margin-right: 0px;
-        padding: 10px 8px;
+        padding: 0;
         .panel-title {
           font-size: 18px;
+          
+           a {
+           	padding: 10px 8px;
+           }
         }
       }
       .panel-body {
@@ -138,6 +152,8 @@
       margin-left: -5px;
       margin-right: -5px;
       .panel-body {
+      	padding: 0;
+      	
         .panel-main {
           border-right: none;
           min-height: inherit;
@@ -149,6 +165,11 @@
           padding-left: 15px;
           padding-right: 15px;
         }
+      }
+      
+      ul.dropdown-menu {
+      	right:0;
+      	left: auto;
       }
     }
   }
@@ -181,4 +202,3 @@
     }
   }
 }
-

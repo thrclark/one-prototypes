@@ -83,6 +83,26 @@
     
     overflow: hidden;
 } 
+
+.collapse-animation.browsecat-panel.ng-enter, .collapse-animation.browsecat-panel.ng-hide-remove,
+.collapse-animation.browsecat-panel.ng-leave, .collapse-animation.browsecat-panel.ng-hide-add
+{ 
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+} 
+
+.collapse-animation.global-announcements.ng-enter, .collapse-animation.global-announcements.ng-hide-remove,
+.collapse-animation.global-announcements.ng-leave, .collapse-animation.global-announcements.ng-hide-add
+{ 
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+} 
  
 .collapse-animation.ng-leave.ng-leave-active, 
 .collapse-animation.ng-hide-add.ng-hide-add-active, 
@@ -92,7 +112,12 @@
 .collapse-animation.browsecat-panel.ng-leave.ng-leave-active, 
 .collapse-animation.browsecat-panel.ng-hide-add.ng-hide-add-active, 
 .collapse-animation.browsecat-panel.ng-enter, 
-.collapse-animation.browsecat-panel.ng-hide-remove {
+.collapse-animation.browsecat-panel.ng-hide-remove,
+
+.collapse-animation.global-announcements.ng-leave.ng-leave-active, 
+.collapse-animation.global-announcements.ng-hide-add.ng-hide-add-active, 
+.collapse-animation.global-announcements.ng-enter, 
+.collapse-animation.global-announcements.ng-hide-remove {
     max-height: 0px;
 }
 .collapse-animation.ng-leave, 
@@ -106,4 +131,10 @@
 .collapse-animation.browsecat-panel.ng-enter.ng-enter-active, 
 .collapse-animation.browsecat-panel.ng-hide-remove.ng-hide-remove-active {
     max-height: 400px;
+}
+.collapse-animation.global-announcements.ng-leave, 
+.collapse-animation.global-announcements.ng-hide-add, 
+.collapse-animation.global-announcements.ng-enter.ng-enter-active, 
+.collapse-animation.global-announcements.ng-hide-remove.ng-hide-remove-active {
+    max-height: 180px;
 }

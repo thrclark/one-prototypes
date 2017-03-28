@@ -2,25 +2,19 @@
  * Copyright 2014 Indiana University Research and Technology Corporation
  */
  
-.sidebar-container {
-	float: left;
-	padding-left: 20px;
-	padding-right: 0;
-	width: 275px;
-	.logo.short {
-		margin-top: 0;
-	}
-}
-
 .collection {
   	font-size:0;
-    margin-right: -5px;
-    margin-left: -5px;
+	margin-right: -4px;
+    margin-left: -4px;
   	
   	p {
   		font-size: 14px;
   	}
   }
+
+.html-description p {
+  margin-bottom: 20px;
+}
 
 @media (max-width: @screen-sm-max) {
   .container {
@@ -28,8 +22,6 @@
     padding-right: 5px;
     max-width: none;
   }
-
-
 
   .row {
     margin-left: -5px;
@@ -43,11 +35,6 @@
 }
 
 @media (max-width: @screen-xs-max) {
-
-  .collection {
-    margin-right:5px;
-  }
-
 
   .hidden-inline-xs, .hidden-table-cell-xs, .hidden-inline-block-xs {
     display: none !important;
@@ -69,6 +56,10 @@
   .sidebar-container {
     padding-left: 5px;
   }
+  
+  .collection {
+		margin-right: 0px;
+	}
 
   .task {
     display: block;
@@ -118,38 +109,8 @@
     padding-top: 5px;
   }
 
-  .carousel .featured-image-small, .ah-carousel .carousel-item .featured-image-small {
-    margin-right: 15px;
-  }
-
-  .ah-carousel .carousel-item .featured-text {
-    padding: 5px;
-  }
-
   .main-content ul.breadcrumb {
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
-  }
-
-  .sidebar-container-pub a {
-    font-size: 1em;
-    padding: 8px;
-  }
-
-  .sidebar-container-pub .active  {
-    border-color: #ccc;
-    font-weight: bold;
-  }
-
-  .sidebar-container-pub a.active + a {
-    border-top: none;
-  }
-
-  .ah-carousel .carousel-item h3 {
-    font-size: 1em;
-  }
-
-  .ah-carousel .carousel-item .featured-text p {
-    font-size: 0.8em;
   }
 }

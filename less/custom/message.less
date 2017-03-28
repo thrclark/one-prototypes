@@ -1,20 +1,21 @@
 .message {
-  //border-bottom: solid 1px #cccccc;
+  border-bottom: solid 1px #cccccc;
+  
   .message-header {
     padding-bottom: 10px;
     padding-top: 10px;
-    .message-title {
-
+    
+    .message-title, .message-title h4 {
         display: inline;
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family: @font-family;
         font-weight: bold;
         font-size: 16px;
-
     }
     .message-meta {
       text-align:right;
+      
       .message-author {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family: @font-family;
         font-weight: bold;
       }
       .message-date {
@@ -22,14 +23,31 @@
       }
     }
   }
-  .message-content{
-    margin-bottom: 10px;}
-  .message-footer {
-    padding-bottom: 10px;
-    .message-footer-actions {
-      padding-bottom: 10px;
+  
+	&.new {
+  		background-color: @comment-backgroundnew;
+  		
+  		&.active {
+		  -moz-transition:background-color 2s;
+		  -o-transition:background-color 2s;
+		  -webkit-transition:background-color 2s;
+		  background-color: transparent;
+		  transition:background-color 2s;
+		}
+	}
+	.message-content {
+    	margin-bottom: 10px;
+    	
+    	p > p {
+    		margin-bottom: 0;
+    	}
     }
-  }
+  	.message-footer {
+    	padding-bottom: 10px;
+    	.message-footer-actions {
+      	padding-bottom: 10px;
+    	}
+  	}
   .message-reply {
     margin-left: 30px;
     border-left: solid 3px #cccccc;
@@ -39,7 +57,7 @@
     .message-header {
       padding-top: 0px;
       .message-author {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family: @font-family;
         font-weight: bold;
       }
       .message-date {
@@ -48,14 +66,13 @@
     }
     .message-footer {
       padding-bottom:0px;
-
     }
   }
-
-
 }
 
-
+ul li:last-child .message {
+	border-bottom: none;
+}
 
 @media (max-width: @screen-xs-max) {
 
@@ -67,14 +84,3 @@
     }
   }
 }
-
-
-
-
-.comment-list > ul > li {
-  border-bottom: solid 1px #cccccc;
-  padding-bottom:10px;
-  padding-top:10px;
-}
-
-

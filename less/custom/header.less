@@ -17,12 +17,15 @@ header {
 			min-height: 45px;
 		}
 		
+		.dropdown-toggle:focus {
+	    	outline: 5px auto -webkit-focus-ring-color;
+		}
+		
 		.dropdown-menu {
 			i[class *= 'icon-'] {
 				margin-right: 10px;
 			}
 		}
-
 		.logo {
 			display: block;
 			margin-top: 9px;
@@ -39,6 +42,10 @@ header {
 				}
 			}
 		}
+		
+		.bell {
+			color: @btn-signin-color;
+		}
 
 		.well {
 			background: @header-background;
@@ -50,9 +57,6 @@ header {
 			margin-bottom: 0;
 			.mainsearch {
 				padding: 0;
-                .form-control {
-                  padding: 0px;
-                }
 				.catfilter {
 					background: #ffffff;
 					background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
@@ -67,6 +71,32 @@ header {
 					box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.22);
 					z-index: 1111;
 					padding: 5px 10px;
+					
+					> span:first-child {
+						text-overflow: ellipsis;
+					    max-width: 150px;
+					    display: inline-block;
+					    overflow: hidden;
+					    vertical-align: bottom;
+					}
+				}
+				
+				.catfilter-menu {
+					li {
+						&.active, &.active:hover, &.active:focus {
+   							background-color: #2879b8;
+						}
+						
+						a {
+							white-space: normal;
+						}
+					}
+					
+					i[class *= 'icon-'] {
+						position: absolute;
+    					top: 3px;
+    					left: -25px;
+					}
 				}
 
 				#cleartext {
@@ -78,16 +108,17 @@ header {
 					font-size: 27px;
 					cursor: pointer;
 				}
-
-              .form-control, .tt-hint  {
-                .input-lg;
-                padding: 0 0 0 10px;
-                height: 35px;
-              }
+				
+				.form-control, .tt-hint  {
+                	.input-lg;
+                	padding: 0 0 0 10px;
+                	height: 35px;
+				}
 
 				.btn-mainsearch {
 					.btn;
 					.btn-lg;
+					.button-variant (@header-text; @searchbutton-background; darken(@searchbutton-background, 5%));
 					padding: 5px 16px;
 				}
 
@@ -97,6 +128,9 @@ header {
 					> li > a {
 						padding-left: 0px;
 						padding-right: 0px;
+						margin-left: 25px;
+    					position: relative;
+    					display: block;
 					}
 				}
 			}
@@ -108,6 +142,11 @@ header {
 			.browsecat {
 				vertical-align: inherit;
 				display: inline-block;
+				
+				> a {
+					white-space: nowrap;
+				}
+				
 				.browsecat-panel {
 					overflow: hidden;
 
@@ -132,7 +171,15 @@ header {
 							a {
 								color: @header-text;
 								text-decoration: none;
+								margin-left: 30px;
+								position: relative;
+								display: block;
+    
 								i {
+									position: absolute;
+    								top: -5px;
+    								left: -30px;
+    
 									& when (lightness(@header-background) < 50) {
 										color: lighten(@header-background, 20%);
 									}
@@ -140,7 +187,6 @@ header {
 										color: darken(@header-background, 20%);
 									}
 									font-size: 20px;
-									margin-right: 5px;
 								}
 							}
 						}
@@ -175,20 +221,20 @@ header {
 	}
 }
 
-@media (max-width: @screen-lg-min) {
+@media (max-width: @screen-md-max) {
 	header .app-header .well {
 		.browsecat .browsecat-panel ul {
-			min-width: 692px;
+			min-width: 602px;
 		}
 
 		.mainsearch .dropdown-menu {
-			min-width: 692px;
+			min-width: 602px;
 			padding-top: 10px;
 		}
 	}
 }
 
-@media (max-width: @screen-md-min) {
+@media (max-width: @screen-sm-max) {
 	header {
 		.app-header {
 
@@ -228,9 +274,8 @@ header {
 
 					.btn-mainsearch {
 						.btn;
-						padding: 0px 12px;
-						padding-bottom: 7px;
-						padding-top: 6px;
+						.button-variant (@header-text; @searchbutton-background; darken(@searchbutton-background, 5%));
+						padding: 6px 12px 7px 12px;
 					}
 				}
 			}
@@ -238,7 +283,7 @@ header {
 	}
 }
 
-@media (max-width: @screen-sm-min) {
+@media (max-width: @screen-xs-max) {
 	header .app-header .well .input-group.mainsearch .dropdown-menu {
 		min-width: 305px;
 	}

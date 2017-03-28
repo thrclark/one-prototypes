@@ -18,8 +18,16 @@
 	}
 	
 	.greeting {
-		padding-top: 5px;
+		> div {
+			padding-top: 5px;
+		}
 		padding-left: 10px;
+	}
+	
+	.greetingname {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: block;
 	}
 
 	.menu-actions {
@@ -49,7 +57,7 @@
 	.menu-row {
 		button, a.btn {
 			text-align: left;
-            padding-left: 0px;//////////
+			padding-left: 0px;
 		}
 		.panel {
 			background-color: transparent;
@@ -61,7 +69,7 @@
 				color: #ffffff;
 				display: block;
 				text-decoration: none;
-                padding-left: 10px;  //////////
+				padding-left: 10px;
 			}
 
 			.panel-heading {
@@ -75,7 +83,7 @@
 					margin-bottom: 0px;
 					padding-top: 10px;
 					padding-bottom: 10px;
-					padding-left: 5px;  //////////
+					padding-left: 5px;
 				}
 
 				h3 {
@@ -99,7 +107,7 @@
 				padding: 10px 0 0 0;
 				ul {
 					background-color: transparent;
-					margin-bottom: 0;
+					
 					li {
 						border-top: 1px solid #666666;
 						padding-top: 5px;
@@ -111,7 +119,7 @@
 
 		i[class *= 'icon-'] {
 			margin-right: 10px;
-			margin-left: 4px; /////////
+			margin-left: 4px;
 		}
 	}
 }
@@ -120,13 +128,20 @@
 	.button-variant (@btn-signin-color; @btn-signin-bg; @btn-signin-border);
 }
 
-@media (max-width: @screen-md-min) {
-	.fade-blur {
-		-webkit-filter: blur(2px);
-		-moz-filter: blur(2px);
-		-o-filter: blur(2px);
-		-ms-filter: blur(2px);
-		filter: blur(2px);
-		opacity: .3;
+.menu-overlay {
+	opacity: 0.8;
+    background: #fff;
+	width: 100%;
+	height: 100%;
+	z-index: 1029;
+	top: 0;
+	left: 0; 
+	position: fixed;
+	display: none !important;
+	
+	@media (max-width: @screen-sm-max) {
+		&.in {
+			display: block !important;
+		}
 	}
 }

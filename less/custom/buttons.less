@@ -1,8 +1,14 @@
-.btn-mainsearch {
-  .button-variant (@header-text; @searchbutton-background; #ccc);
-}
 .btn-signon {
+	padding:6px 12px; 
+	color:#FFF;
+	border-radius: 0px;
   .btn-success;
+}
+.btn-signon:hover,
+.btn-signon:visited,
+.btn-signon:focus{
+	color:#FFF;
+	.btn-success;
 }
 .btn-usercontrols {
  .btn;
@@ -48,3 +54,15 @@
     text-align:left;
   }
 }
+
+.btn-responsive {
+
+	@media (max-width: @screen-sm-max) {
+		.btn-sm;
+	}
+
+	@media (max-width: @screen-xs-max) {
+		.btn-xs;
+	}
+}
+
