@@ -184,46 +184,46 @@ $(function() {
 
 </script>
 
-<header class="">
-    <div class="container app-header " id="contain2">
+<header>
+    <div class="container app-header" id="contain2">
         <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 brand"> <a class="logo" href="store.php" id="sidebar_logo" tabindex="0"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo.png" class="hidden-xs hidden-sm"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo-mobile.png" class="hidden-md hidden-lg">
+            <div class="col-xs-8 col-sm-10 col-md-4 col-lg-3 brand"><a class="logo" href="store.php" id="sidebar_logo" tabindex="0"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo.png" class="hidden-xs hidden-sm"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo-mobile.png" class="hidden-md hidden-lg">
                 <h1><span class="sr-only">One.IU</span></h1>
-                </a> </div>
-            <div class="col-xs-6 col-sm-6 hidden-md hidden-lg mobile-menu">
-                <div class="pull-right"> <a href="#" class="btn btn-link toggle-global-announcements" style="color:#FFFFFF"> <i class="icon-bell-3"></i> <span class="sr-only">Announcements</span></a>
-                    <button type="button" id="menu_button" class="btn btn-signin" tabindex="0"><span class="sr-only">Toggle menu</span><i class="icon-menu"></i></button>
+                </a></div>
+            <div class="col-xs-4 col-sm-2 hidden-md hidden-lg">
+                <div class="pull-right"> <a href="#" class="btn btn-link bell" ng-click="toggleGlobalAnnouncements()" tabindex="0"> <i class="icon-bell-3"></i> <span class="sr-only">View Announcements</span> </a>
+                    <button type="button" id="menu_button" data-ng-click="toggleMenu()" class="btn btn-signin pull-right" tabindex="0"><span class="sr-only">Toggle menu</span><i class="icon-menu"></i></button>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-9 col-lg-9 search">
-                <div class="well well-sm">
+            <div class="col-xs-12 col-md-8 col-lg-9 search">
+<div class="well well-sm">
                     <form class="input-group mainsearch">
                         <div class="input-group-btn" style="display:" id="categoryfilter"> <a href="#" style="  margin-right: -2px;" class="btn btn-lg btn-default dropdown-toggle catfilter" data-toggle="dropdown" aria-expanded="false"> <span style="font-size:14px" id="asdf" class="hidden-xs hidden-sm">All Categories</span> <span class="caret"></span> </a>
                             <ul class="dropdown-menu catfilter-menu" role="menu" style="">
                                 <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getAll" href="#"><i class="icon-globe"></i>All Categories</a> </li>
-                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getAcademics"  href="#"><i class="icon-graduation-cap"></i>Academics</a> </li>
-                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getAccounts"  href="#"><i class="icon-lock-2"></i>Accounts</a> </li>
-                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getAdministrative"  href="#"><i class="icon-cog"></i>Administrative</a> </li>
-                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getAdmissions"  href="#"><i class="icon-login"></i>Admissions</a> </li>
-                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getCampus"  href="#"><i class="icon-leaf"></i>Campus Life</a> </li>
-                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getCareers"  href="#"><i class="icon-briefcase"></i>Careers</a> </li>
-                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getEmployee"  href="#"><i class="icon-stethoscope"></i>Employee Benefits</a> </li>
-                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getEnrollment"  href="#"><i class="icon-puzzle"></i>Enrollment</a> </li>
-                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getFaculty"  href="#"><i class="icon-users"></i>Faculty Services</a> </li>
-                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getFinances"  href="#"><i class="icon-money-1"></i>Finances</a> </li>
-                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getHousing"  href="#"><i class="icon-food"></i>Housing &amp; Dining</a> </li>
-                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getIT"  href="#"><i class="icon-monitor"></i>IT Services</a> </li>
-                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getLibraries"  href="#"><i class="icon-book"></i>Libraries</a> </li>
-                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getOrientation"  href="#"><i class="icon-compass-2"></i>Orientation</a> </li>
-                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getPayroll"  href="#"><i class="icon-money"></i>Payroll &amp; Taxes</a> </li>
-                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getPersonal"  href="#"><i class="icon-info-circled-1"></i>Personal Information</a> </li>
-                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getResearch"  href="#"><i class="icon-cubes"></i>Research</a> </li>
-                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getTraining"  href="#"><i class="icon-empire"></i>Training</a> </li>
-                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getTransportation"  href="#"><i class="icon-bus"></i>Transportation</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getAcademics" href="#"><i class="icon-graduation-cap"></i>Academics</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getAccounts" href="#"><i class="icon-lock-2"></i>Accounts</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getAdministrative" href="#"><i class="icon-cog"></i>Administrative</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getAdmissions" href="#"><i class="icon-login"></i>Admissions</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getCampus" href="#"><i class="icon-leaf"></i>Campus Life</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getCareers" href="#"><i class="icon-briefcase"></i>Careers</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getEmployee" href="#"><i class="icon-stethoscope"></i>Employee Benefits</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getEnrollment" href="#"><i class="icon-puzzle"></i>Enrollment</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getFaculty" href="#"><i class="icon-users"></i>Faculty Services</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getFinances" href="#"><i class="icon-money-1"></i>Finances</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getHousing" href="#"><i class="icon-food"></i>Housing &amp; Dining</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getIT" href="#"><i class="icon-monitor"></i>IT Services</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getLibraries" href="#"><i class="icon-book"></i>Libraries</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getOrientation" href="#"><i class="icon-compass-2"></i>Orientation</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getPayroll" href="#"><i class="icon-money"></i>Payroll &amp; Taxes</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getPersonal" href="#"><i class="icon-info-circled-1"></i>Personal Information</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getResearch" href="#"><i class="icon-cubes"></i>Research</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getTraining" href="#"><i class="icon-empire"></i>Training</a> </li>
+                                <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="getTransportation" href="#"><i class="icon-bus"></i>Transportation</a> </li>
                             </ul>
                         </div>
-                        <input type="text" class="form-control typeahead2 tt-query" autocomplete="off" spellcheck="false" placeholder="What would you like to do?" id="thesearchbox">
-                        <div id="cleartext" style="display:none"> <i class="icon-cancel-squared" ></i></div>
+                        <span class="twitter-typeahead" style="position: relative; display: inherit; direction: ltr;"><input type="text" class="form-control typeahead2 tt-query tt-hint" autocomplete="off" spellcheck="false" readonly="" tabindex="-1" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: BentonSansRegular; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;"> <div style="padding-left:20px; padding-right:20px"> Filtered by: <span class="label label-default">All Campuses </span> <span class="label label-default" style="margin-left: 5px;"> All Roles</span></div><div class="tt-dataset-task"></div><div class="tt-dataset-task-center"></div></span></span>
+                        <div id="cleartext" style="display:none"> <i class="icon-cancel-squared"></i></div>
                         <span class="input-group-btn">
                         <button onclick="location.href = 'searchresults.php';" class="btn-mainsearch" type="button"><i class="icon-search-3"></i></button>
                         </span>
@@ -231,29 +231,29 @@ $(function() {
                     <div class="row hidden-xs hidden-sm">
                         <div class="col-xs-4">
                             <div class="browsecat"> <a href="#" class="togglebrowse"> <span>Browse Categories</span> <span class="caret"></span> </a>
-                                <div class="browsecat-panel" style="display:none">
+                                <div class="browsecat-panel" style="display: none;">
                                     <ul class="list-unstyled" role="menu">
                                         <li class="divider"></li>
-                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-globe"></i> All Categories</a> </li>
-                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-graduation-cap"></i> Academics</a> </li>
-                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-lock-2"></i> Accounts</a> </li>
-                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-cog"></i> Administrative</a> </li>
-                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-login"></i> Admissions</a> </li>
-                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-leaf"></i> Campus Life</a> </li>
-                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-briefcase"></i> Careers</a> </li>
-                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-stethoscope"></i> Employee Benefits</a> </li>
-                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-puzzle"></i> Enrollment</a> </li>
-                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-users"></i> Faculty Services</a> </li>
-                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-money-1"></i> Finances</a> </li>
-                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-food"></i> Housing &amp; Dining</a> </li>
-                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-monitor"></i> IT Services</a> </li>
-                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-book"></i> Libraries</a> </li>
-                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-compass-2"></i> Orientation</a> </li>
-                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-money"></i> Payroll &amp; Taxes</a> </li>
-                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-info-circled-1"></i> Personal Information</a> </li>
-                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-cubes"></i> Research</a> </li>
-                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-empire"></i> Training</a> </li>
-                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class=""  href="#"><i class="icon-bus"></i> Transportation</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="" href="#"><i class="icon-globe"></i> All Categories</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="" href="#"><i class="icon-graduation-cap"></i> Academics</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="" href="#"><i class="icon-lock-2"></i> Accounts</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="" href="#"><i class="icon-cog"></i> Administrative</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="" href="#"><i class="icon-login"></i> Admissions</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="" href="#"><i class="icon-leaf"></i> Campus Life</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="" href="#"><i class="icon-briefcase"></i> Careers</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="" href="#"><i class="icon-stethoscope"></i> Employee Benefits</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="" href="#"><i class="icon-puzzle"></i> Enrollment</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="" href="#"><i class="icon-users"></i> Faculty Services</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="" href="#"><i class="icon-money-1"></i> Finances</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="" href="#"><i class="icon-food"></i> Housing &amp; Dining</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="" href="#"><i class="icon-monitor"></i> IT Services</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="" href="#"><i class="icon-book"></i> Libraries</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="" href="#"><i class="icon-compass-2"></i> Orientation</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="" href="#"><i class="icon-money"></i> Payroll &amp; Taxes</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="" href="#"><i class="icon-info-circled-1"></i> Personal Information</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="" href="#"><i class="icon-cubes"></i> Research</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="" href="#"><i class="icon-empire"></i> Training</a> </li>
+                                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 clickable"><a role="menuitem" class="" href="#"><i class="icon-bus"></i> Transportation</a> </li>
                                     </ul>
                                 </div>
                             </div>
@@ -273,7 +273,7 @@ $(function() {
                                 </ul>
                             </div>
                             <div class="dropdown inline-dropdown-menu"> <a href=""><span id="writetext">All Roles</span><span class="caret"></span></a>
-                                <ul class="dropdown-menu dropdown-menu-right checked-list inline-dropdown-menu-list">
+                                <ul class="dropdown-menu dropdown-menu-right checked-list inline-dropdown-menu-list" style="display: none;">
                                     <li> <a href="" tabindex="-1" id="role_faculty"><i role="presentation" class="pull-right icon-ok" aria-hidden="true"></i><span>Faculty</span></a> </li>
                                     <li> <a href="" tabindex="-1" id="role_staff"><i role="presentation" class="pull-right icon-ok" aria-hidden="true"></i><span>Staff</span></a> </li>
                                     <li> <a href="" tabindex="-1" id="role_student"><i role="presentation" class="pull-right icon-ok" aria-hidden="true"></i><span>Student</span></a> </li>
@@ -283,8 +283,7 @@ $(function() {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div>            </div>
         </div>
     </div>
 </header>
@@ -302,19 +301,14 @@ $(function() {
         });
       
     });
-</script>
-
-
-
-
-
+</script> 
 <script>
 $(function() {                      
   $("#role_allroles").click(function() {  
     $("#role_allroles i").addClass("icon-ok");      
   });
 });
-</script>
+</script> 
 <script>
 
     $(document).ready(function() {
@@ -332,8 +326,7 @@ $(function() {
 	
 	
 	
-</script>
-
+</script> 
 <script>
 $(function () {
     $(".inline-dropdown-menu").click(function (e) {
