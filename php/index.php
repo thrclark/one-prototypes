@@ -14,7 +14,7 @@ header .app-header h1 {
 }
 </style>
 </head>
-<body style="background:#FFFFFF" data-market-key="" data-market-name="All Markets" data-all-markets-key="all" data-task-collection="" ondragstart="return false;" ondrop="return false;" id="top" >
+<body class="gray-bg" id="top" style="background:#FFFFFF" data-market-key="" data-market-name="All Markets" data-all-markets-key="all" data-task-collection="" ondragstart="return false;" ondrop="return false;" >
 <header >
     <div class="container  app-header" style="padding-top:15px">
         <div class="row">

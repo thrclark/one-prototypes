@@ -14,7 +14,7 @@ $page = '';
 </style>
 <?php include ('includes/scripts.php') ?>
 </head>
-<body id="top" style=" background-color:#FFFFFF" >
+<body class="gray-bg" id="top" style=" background-color:#FFFFFF" >
 <div class="wrapper">
     <div class="alert alert-application" role="alert" style="display:none">
         <div class="container">

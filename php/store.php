@@ -9,7 +9,7 @@ $page = '';
 <?php include ('includes/styles.php') ?>
 <?php include ('includes/scripts.php') ?>
 </head>
-<body id="top" >
+<body id="top" class="gray-bg">
 <div class="wrapper">
     <div class="alert alert-application" role="alert" style="display:none">
         <div class="container">

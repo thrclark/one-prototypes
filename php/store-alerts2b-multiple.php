@@ -20,7 +20,7 @@ $page = '';
 
 <?php include ('includes/scripts.php') ?>
 </head>
-<body id="top" >
+<body class="gray-bg" id="top" >
 <?php include ('includes/mobile-sidebar.php') ?>
 <?php include ('includes/header-brand.php') ?>
 <?php include ('includes/header-main.php') ?>

@@ -9,7 +9,7 @@ $page = '';
     <?php include('includes/styles.php') ?>
     <?php include('includes/scripts.php') ?>
 </head>
-<body id="top" class="view-admin">
+<body id="top" class="gray-bg view-adim">
 <div class="wrapper">
     <?php include('includes/mobile-sidebar.php') ?>
     <?php include('includes/header-brand.php') ?>

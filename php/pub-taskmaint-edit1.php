@@ -17,7 +17,7 @@ $page = '';
 </style>
 <?php include('includes/scripts.php') ?>
 </head>
-<body id="top" class="view-admin">
+<body id="top" class="gray-bg view-adim">
 s
 <div class="wrapper">
     <?php include('includes/mobile-sidebar.php') ?>

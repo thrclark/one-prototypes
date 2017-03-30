@@ -85,7 +85,7 @@ footer {
 </style>
 <?php include ('includes/scripts.php') ?>
 </head>
-<body id="top" >
+<body class="gray-bg" id="top" >
 <div class="wrapper">
     <div class="alert alert-application" role="alert" style="display:none">
         <div class="container">

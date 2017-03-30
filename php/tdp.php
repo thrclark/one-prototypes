@@ -47,7 +47,7 @@ $page = '';
 </style>
 <?php include ('includes/scripts.php') ?>
 </head>
-<body id="top" >
+<body class="gray-bg" id="top" >
 <div class="wrapper">
     <?php include ('includes/mobile-sidebar.php') ?>
     <?php include ('includes/header-brand.php') ?>
