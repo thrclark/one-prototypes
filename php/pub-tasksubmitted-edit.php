@@ -63,6 +63,9 @@ x width: 1%;
 	-moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
 	box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
 }
+.table-summmary td.zoomin:first-of-type .object-preview.expanded {
+	left: 0px;
+}
 .zoomin .object-preview img:hover {
 	filter: brightness(80%);
 }
@@ -214,7 +217,7 @@ background-color: #FFFFFF;
                                     <form name="taskForm" novalidate validate="errors" id="taskForm" class=" -maxlength -url -pattern -min -max -required">
                                         <div class="well well-sm" style="background:#f8f8f8; margin-bottom:60px;">
                                             <div class="lead"> Summary of Changes</div>
-                                            <table class="table table-condensed">
+                                            <table class="table table-condensed table-summmary">
                                                 <thead class="">
                                                     <tr>
                                                         <th scope="column">Item</th>
@@ -468,7 +471,7 @@ background-color: #FFFFFF;
                                                     
                                                     <tr>
                                                         <th scope="row">Screen Shots/ Video (Desktop)</th>
-                                                        <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/>
+                                                        <td class="zoomin"><div class="object-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/>
                                                                 <div class="preview-close"><i class="icon-cancel-circled"></i></div>
                                                                 <div class="object-info">
                                                                     <div class="object-info-title"> Image Info</div>
