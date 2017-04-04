@@ -41,37 +41,93 @@ x width: 1%;
 }
 </style>
 <style type="text/css">
-.zoomin .hover-preview {
+.zoomin .object-preview {
 	height: 50px;
 	display: inline-block;
 	position: relative;
+	max-width: 400px;
 }
-.zoomin .hover-preview:hover {
-	position: absolute;
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	transition: all .5s ease;
-	width: auto;
-	height: 300px;
-}
-.zoomin .hover-preview img {
-	height: 50px;
-	width: auto;
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	transition: all .5s ease;
-}
-.zoomin .hover-preview img:hover {
-	width: auto;
-	height: 300px;
+.zoomin .object-preview.expanded {
 	position: absolute;
 	z-index: 9999999999;
+}
+.zoomin .object-preview img {
+	height: 50px;
+	width: auto;
+}
+.zoomin .object-preview.expanded img {
+	width: 400px;
+	height: auto;
 	border: solid 15px #ffffff;
 	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
 	-moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
 	box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
+}
+.zoomin .object-preview img:hover {
+	filter: brightness(80%);
+}
+.zoomin .object-preview.expanded img:hover {
+	filter: brightness(100%);
+}
+.zoomin .object-preview.expanded .video-thumb-overlay {
+	display: none
+}
+.zoomin .object-preview .object-info {
+	display: none;
+}
+.zoomin .object-preview.expanded .object-info {
+	display: block;
+	border: solid 15px #ffffff;
+	background: #ffffff;
+	padding: 0px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
+	box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
+}
+.zoomin .object-preview .object-info .object-info-title {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.zoomin .object-preview .object-info img {
+	width: 72px;
+	height: 72px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: 1px solid #cccccc;
+	vertical-align: top;
+}
+.video-thumb-overlay {
+	position: absolute;
+	font-family: 'fontello';
+	background-color: rgba(0,0,0,0.3);
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-size: 36px;
+	text-align: center;
+	left: 0px;
+}
+.video-thumb-overlay:before {
+	content: '\e810'
+}
+.zoomin .object-preview .preview-close {
+	display: none;
+}
+.zoomin .object-preview.expanded .preview-close {
+	display: block;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	font-size: 21px;
+	padding: 3px;
+	padding-bottom: 0px;
+	padding-top: 1px;
+	border-radius: 50%;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
+	box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
+	background: white;
 }
  @-webkit-keyframes fadeIt {
  0% {
@@ -281,31 +337,236 @@ background-color: #FFFFFF;
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">Icon Images</th>
-                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/></div></td>
-                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/task-icons-new/icon-bt.png"  alt=""/></div></td>
+                                                        <td class="zoomin"><div class="object-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
+                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Custom Upload </li>
+                                                                        <li> Large Image (153×153) </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="object-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
+                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Custom Upload </li>
+                                                                        <li> Small Retina Image (144×144) </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="object-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
+                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Custom Upload </li>
+                                                                        <li> Medium Image (90×90) </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="object-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
+                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Custom Upload </li>
+                                                                        <li> Small Image (72×72) </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="object-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
+                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Custom Upload </li>
+                                                                        <li> Very Small Image (31×31) </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div></td>
+                                                        <td class="zoomin "><div class="object-preview"><img src="../img/task-icons-new/icon-bt.png"  alt=""/>
+                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Chosen from library </li>
+                                                                        <li>Image name: Bloomington Transit </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div></td>
                                                         <td><a href="#" class="btn btn-default btn-xs" id="edit_iconimage">edit</a></td>
                                                     </tr>
+                                                    
+                                                    <!--
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    -->
+                                                    
                                                     <tr>
                                                         <th scope="row">Screen Shots/ Video (Desktop)</th>
-                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/></div>
-                                                            <div class="hover-preview"><img src="../img/app-screenshots/ccl_list.png"  alt=""/></div></td>
-                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/></div>
-                                                            <div class="hover-preview"><img src="../img/app-screenshots/ccl_thumb.png"  alt=""/></div></td>
+                                                        <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/>
+                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source: Custom Upload</li>
+                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="object-preview"><img src="../img/app-screenshots/ccl_list.png"  alt=""/>
+                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source: <a href="http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg" target="_blank">http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg</a></li>
+                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div></td>
+                                                        <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/>
+                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source: Custom Upload</li>
+                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="object-preview"><img src="../img/app-screenshots/ccl_list.png"  alt=""/>
+                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source: <a href="http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg" target="_blank">http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg</a></li>
+                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="object-preview"><img src="https://i.vimeocdn.com/video/626824852_100x75.jpg"  alt=""/><span class="video-thumb-overlay"></span>
+                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Video Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source (Vimeo): <a href="https://vimeo.com/210910471" target="_blank">https://vimeo.com/210910471</a></li>
+                                                                        <li>Thumbnail: <br>
+                                                                            <img src="../img/app-screenshots/vidthumb.jpg" alt=""/></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div></td>
                                                         <td class="forcewrap "><a href="#" class="btn btn-default btn-xs" id="edit_screenshotdesktop">edit</a></td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">Screen Shots/ Video (Tablet)</th>
-                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/app-screenshots/ccl_list.png"  alt=""/></div></td>
-                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/></div></td>
+                                                        <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl_list.png"  alt=""/>
+                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source: <a href="http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg" target="_blank">http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg</a></li>
+                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div></td>
+                                                        <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/>
+                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source: Custom Upload</li>
+                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="object-preview"><img src="https://i.vimeocdn.com/video/626824852_100x75.jpg"  alt=""/><span class="video-thumb-overlay"></span>
+                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Video Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source (WebM URL): <a href="https://vimeo.com/210910471" target="_blank">https://vimeo.com/210910471</a></li>
+                                                                        <li> Source (Ogg URL): <a href="https://vimeo.com/210910471" target="_blank">https://vimeo.com/210910471</a></li>
+                                                                        <li> Source (MP4 URL): <a href="https://vimeo.com/210910471" target="_blank">https://vimeo.com/210910471</a></li>
+                                                                        <li>Thumbnail:<br>
+                                                                            <img src="../img/app-screenshots/vidthumb.jpg" alt=""/></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div></td>
                                                         <td><a href="#" class="btn btn-default btn-xs" id="edit_screenshottablet">edit</a></td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">Screen Shots/ Video (Phone)</th>
-                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/app-screenshots/ccl-mobile-001.png"  alt=""/></div>
-                                                            <div class="hover-preview"><img src="../img/app-screenshots/ccl-mobile-002.png"  alt=""/></div></td>
-                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/app-screenshots/ccl-mobile-001.png"  alt=""/></div>
-                                                            <div class="hover-preview"><img src="../img/app-screenshots/ccl-mobile-002.png"  alt=""/></div>
-                                                            <div class="hover-preview"><img src="../img/app-screenshots/ccl-mobile-003.png"  alt=""/></div></td>
+                                                        <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl-mobile-001.png"  alt=""/>
+                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source: Custom Upload</li>
+                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="object-preview"><img src="../img/app-screenshots/ccl-mobile-002.png"  alt=""/>
+                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source: Custom Upload</li>
+                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div></td>
+                                                        <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl-mobile-001.png"  alt=""/>
+                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source: Custom Upload</li>
+                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="object-preview"><img src="../img/app-screenshots/ccl-mobile-002.png"  alt=""/>
+                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source: Custom Upload</li>
+                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="object-preview"><img src="../img/app-screenshots/ccl-mobile-003.png"  alt=""/>
+                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source: Custom Upload</li>
+                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div></td>
                                                         <td><a href="#" class="btn btn-default btn-xs" id="edit_screenshotmobile">edit</a></td>
                                                     </tr>
                                                     <tr>
@@ -1562,7 +1823,7 @@ background-color: #FFFFFF;
                 $('#custom_upload').slideUp();
             }
         });
-		$('input[type="radio"]').click(function() {
+        $('input[type="radio"]').click(function() {
             if ($(this).attr('id') == 'show_library') {
                 $('#image_library').slideDown();
             } else {
@@ -1570,7 +1831,7 @@ background-color: #FFFFFF;
             }
         });
     });
-	</script> 
+</script> 
     <script>
     $(function() {
         $('#selectcontact1').hide();
@@ -1582,7 +1843,7 @@ background-color: #FFFFFF;
             }
         });
     });
-	$(function() {
+    $(function() {
         $('#selectcontact2').hide();
         $('#contactId2').change(function() {
             if ($('#contactId2').val() == 'duo') {
@@ -1600,7 +1861,7 @@ background-color: #FFFFFF;
             return $('#popover-content').html();
         }
     });
-	$("#selectcontact2").popover({
+    $("#selectcontact2").popover({
         html: true,
         content: function() {
             return $('#popover-content2').html();
@@ -1608,205 +1869,204 @@ background-color: #FFFFFF;
     });
 </script> 
     <script type='text/javascript'>
-
     $(function() {
         $("#edit_tasktitle").click(function() {
             $('#field_tasktitle').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_tasktitle").offset().top-10
+                scrollTop: $("#field_tasktitle").offset().top - 10
             }, 1000);
             $('#field_tasktitle').addClass('backgroundAnimated');
         });
         $("#edit_taskurl").click(function() {
             $('#field_taskurl').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_taskurl").offset().top-10
+                scrollTop: $("#field_taskurl").offset().top - 10
             }, 1000);
             $('#field_taskurl').addClass('backgroundAnimated');
         });
         $("#edit_appname").click(function() {
             $('#field_appname').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_appname").offset().top-10
+                scrollTop: $("#field_appname").offset().top - 10
             }, 1000);
             $('#field_appname').addClass('backgroundAnimated');
         });
         $("#edit_launch").click(function() {
             $('#field_launch').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_launch").offset().top-10
+                scrollTop: $("#field_launch").offset().top - 10
             }, 1000);
             $('#field_launch').addClass('backgroundAnimated');
         });
         $("#edit_authtytpe").click(function() {
             $('#field_authtytpe').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_authtytpe").offset().top-10
+                scrollTop: $("#field_authtytpe").offset().top - 10
             }, 1000);
             $('#field_authtytpe').addClass('backgroundAnimated');
         });
         $("#edit_primarycontact").click(function() {
             $('#field_primarycontact').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_primarycontact").offset().top-10
+                scrollTop: $("#field_primarycontact").offset().top - 10
             }, 1000);
             $('#field_primarycontact').addClass('backgroundAnimated');
         });
         $("#edit_secondarycontact").click(function() {
             $('#field_secondarycontact').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_secondarycontact").offset().top-10
+                scrollTop: $("#field_secondarycontact").offset().top - 10
             }, 1000);
             $('#field_secondarycontact').addClass('backgroundAnimated');
         });
         $("#edit_mobile").click(function() {
             $('#field_mobile').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_mobile").offset().top-10
+                scrollTop: $("#field_mobile").offset().top - 10
             }, 1000);
             $('#field_mobile').addClass('backgroundAnimated');
         });
         $("#edit_description").click(function() {
             $('#field_description').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_description").offset().top-10
+                scrollTop: $("#field_description").offset().top - 10
             }, 1000);
             $('#field_description').addClass('backgroundAnimated');
         });
         $("#edit_meta").click(function() {
             $('#field_meta').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_meta").offset().top-10
+                scrollTop: $("#field_meta").offset().top - 10
             }, 1000);
             $('#field_meta').addClass('backgroundAnimated');
         });
         $("#edit_activedate").click(function() {
             $('#field_activedate').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_activedate").offset().top-10
+                scrollTop: $("#field_activedate").offset().top - 10
             }, 1000);
             $('#field_activedate').addClass('backgroundAnimated');
         });
         $("#edit_scheduled").click(function() {
             $('#field_scheduled').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_scheduled").offset().top-10
+                scrollTop: $("#field_scheduled").offset().top - 10
             }, 1000);
             $('#field_scheduled').addClass('backgroundAnimated');
         });
         $("#edit_versionnumber").click(function() {
             $('#field_versionnumber').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_versionnumber").offset().top-10
+                scrollTop: $("#field_versionnumber").offset().top - 10
             }, 1000);
             $('#field_versionnumber').addClass('backgroundAnimated');
         });
         $("#edit_releasenotes").click(function() {
             $('#field_releasenotes').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_releasenotes").offset().top-10
+                scrollTop: $("#field_releasenotes").offset().top - 10
             }, 1000);
             $('#field_releasenotes').addClass('backgroundAnimated');
         });
         $("#edit_uniquekey").click(function() {
             $('#field_uniquekey').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_uniquekey").offset().top-10
+                scrollTop: $("#field_uniquekey").offset().top - 10
             }, 1000);
             $('#field_uniquekey').addClass('backgroundAnimated');
         });
         $("#edit_statrecording").click(function() {
             $('#field_statrecording').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_statrecording").offset().top-10
+                scrollTop: $("#field_statrecording").offset().top - 10
             }, 1000);
             $('#field_statrecording').addClass('backgroundAnimated');
         });
         $("#edit_publisher").click(function() {
             $('#field_publisher').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_publisher").offset().top-10
+                scrollTop: $("#field_publisher").offset().top - 10
             }, 1000);
             $('#field_publisher').addClass('backgroundAnimated');
         });
         $("#edit_iconimage").click(function() {
             $('#field_iconimage').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_iconimage").offset().top-10
+                scrollTop: $("#field_iconimage").offset().top - 10
             }, 1000);
             $('#field_iconimage').addClass('backgroundAnimated');
         });
         $("#edit_screenshotdesktop").click(function() {
             $('#field_screenshotdesktop').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_screenshotdesktop").offset().top-10
+                scrollTop: $("#field_screenshotdesktop").offset().top - 10
             }, 1000);
             $('#field_screenshotdesktop').addClass('backgroundAnimated');
         });
         $("#edit_screenshottablet").click(function() {
             $('#field_screenshotdesktop').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_screenshotdesktop").offset().top-10
+                scrollTop: $("#field_screenshotdesktop").offset().top - 10
             }, 1000);
             $('#field_screenshotdesktop').addClass('backgroundAnimated');
         });
         $("#edit_screenshotmobile").click(function() {
             $('#field_screenshotdesktop').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_screenshotdesktop").offset().top-10
+                scrollTop: $("#field_screenshotdesktop").offset().top - 10
             }, 1000);
             $('#field_screenshotdesktop').addClass('backgroundAnimated');
         });
         $("#edit_campus").click(function() {
             $('#field_campus').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_campus").offset().top-10
+                scrollTop: $("#field_campus").offset().top - 10
             }, 1000);
             $('#field_campus').addClass('backgroundAnimated');
         });
         $("#edit_roles").click(function() {
             $('#field_roles').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_roles").offset().top-10
+                scrollTop: $("#field_roles").offset().top - 10
             }, 1000);
             $('#field_roles').addClass('backgroundAnimated');
         });
         $("#edit_categories").click(function() {
             $('#field_categories').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_categories").offset().top-10
+                scrollTop: $("#field_categories").offset().top - 10
             }, 1000);
             $('#field_categories').addClass('backgroundAnimated');
         });
         $("#edit_tags").click(function() {
             $('#field_tags').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_tags").offset().top-10
+                scrollTop: $("#field_tags").offset().top - 10
             }, 1000);
             $('#field_tags').addClass('backgroundAnimated');
         });
         $("#edit_activecontenturl").click(function() {
             $('#field_activecontenturl').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_activecontenturl").offset().top-10
+                scrollTop: $("#field_activecontenturl").offset().top - 10
             }, 1000);
             $('#field_activecontenturl').addClass('backgroundAnimated');
         });
         $("#edit_activecontentauth").click(function() {
             $('#field_activecontentauth').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_activecontentauth").offset().top-10
+                scrollTop: $("#field_activecontentauth").offset().top - 10
             }, 1000);
             $('#field_activecontentauth').addClass('backgroundAnimated');
         });
         $("#edit_frequency").click(function() {
             $('#field_frequency').removeClass('backgroundAnimated');
             $('html, body').animate({
-                scrollTop: $("#field_frequency").offset().top-10
+                scrollTop: $("#field_frequency").offset().top - 10
             }, 1000);
             $('#field_frequency').addClass('backgroundAnimated');
         });
-       
+
     });
 </script> 
     <script type='text/javascript'>
@@ -1820,11 +2080,18 @@ background-color: #FFFFFF;
     });
 </script> 
     <script type='text/javascript'>
-     $(function() {
-                $('#datetimepicker4').datetimepicker();
-            });
-            
-     </script> 
+    $(function() {
+        $('#datetimepicker4').datetimepicker();
+    });
+</script> 
+    <script>
+    $(document).ready(function() {
+        $(".object-preview").click(function() {
+            $(this).toggleClass("expanded");
+        });
+
+    });
+</script> 
 </div>
 </body>
 </html>
