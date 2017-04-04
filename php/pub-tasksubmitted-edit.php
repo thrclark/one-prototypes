@@ -286,16 +286,59 @@ background-color: #FFFFFF;
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">Active Dates/Status</th>
-                                                        <td>&nbsp;</td>
-                                                        <td>&nbsp;</td>
+                                                        <td>Specified by Status: 'Inactive'</td>
+                                                        <td>Specified by Status: 'Active'</td>
                                                         <td><a href="#" class="btn btn-default btn-xs" id="edit_activedate">edit</a></td>
                                                     </tr>
                                                     <tr>
+                                                        <th scope="row">Active Dates/Status</th>
+                                                        <td><p>Specified by Date Range:</p>
+                                                            <ul>
+                                                                <li>Start: 10/27/2016 12:01pm</li>
+                                                                <li>End: 10/27/2018 12:01pm</li>
+                                                            </ul></td>
+                                                        <td>Specified by Status: 'Inactive'</td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_activedate">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Active Dates/Status</th>
+                                                        <td><p>Specified by Status: 'Active'</p></td>
+                                                        <td><p>Specified by Date Range:</p>
+                                                            <ul>
+                                                                <li>End: 10/27/2018 12:01pm</li>
+                                                            </ul></td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_activedate">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Active Dates/Status</th>
+                                                        <td>Specified by Status: 'Inactive'</td>
+                                                        <td><p>Specified by Date Range:</p>
+                                                            <ul>
+                                                                <li>Start: 10/27/2018 12:01pm</li>
+                                                                <li>End: 10/27/2019 12:01pm</li>
+                                                            </ul></td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_activedate">edit</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Active Dates/Status</th>
+                                                        <td><p>Specified by Date Range:</p>
+                                                            <ul>
+                                                                <li>Start: 10/27/2017 12:01pm</li>
+                                                                <li>End: 10/27/2018 12:01pm</li>
+                                                            </ul></td>
+                                                        <td><p>Specified by Date Range:</p>
+                                                            <ul>
+                                                                <li>Start: 10/27/2018 12:01pm</li>
+                                                                <li>End: 10/27/2019 12:01pm</li>
+                                                            </ul></td>
+                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_activedate">edit</a></td>
+                                                    </tr>
+                                                    <!--  <tr>
                                                         <th scope="row">Scheduled Update</th>
                                                         <td>&nbsp;</td>
                                                         <td>&nbsp;</td>
                                                         <td><a href="#" class="btn btn-default btn-xs" id="edit_scheduled">edit</a></td>
-                                                    </tr>
+                                                    </tr>-->
                                                     <tr>
                                                         <th scope="row">Version Number</th>
                                                         <td>2.1.2</td>
