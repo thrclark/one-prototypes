@@ -45,33 +45,65 @@ x width: 1%;
 	height: 50px;
 	display: inline-block;
 	position: relative;
+	max-width: 400px;
 }
 .zoomin .hover-preview:hover {
 	position: absolute;
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	transition: all .5s ease;
-	width: auto;
-	height: 300px;
+	z-index: 9999999999;
 }
 .zoomin .hover-preview img {
 	height: 50px;
 	width: auto;
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	transition: all .5s ease;
 }
-.zoomin .hover-preview img:hover {
-	width: auto;
-	height: 300px;
-	position: absolute;
-	z-index: 9999999999;
+.zoomin .hover-preview:hover img {
+	width: 400px;
+	height: auto;
 	border: solid 15px #ffffff;
 	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
 	-moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
 	box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
+}
+.zoomin .hover-preview:hover .video-thumb-overlay {
+	display: none
+}
+.zoomin .hover-preview .object-info {
+	display: none;
+}
+.zoomin .hover-preview:hover .object-info {
+	display: block;
+	border: solid 15px #ffffff;
+	background: #ffffff;
+	padding: 0px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
+	box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
+}
+.zoomin .hover-preview .object-info .object-info-title {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.zoomin .hover-preview .object-info img {
+	width: 72px;
+	height: 72px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: 1px solid #cccccc;
+	vertical-align: top;
+}
+.video-thumb-overlay {
+	position: absolute;
+	font-family: 'fontello';
+	background-color: rgba(0,0,0,0.3);
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-size: 36px;
+	text-align: center;
+	left: 0px;
+}
+.video-thumb-overlay:before {
+	content: '\e810'
 }
  @-webkit-keyframes fadeIt {
  0% {
@@ -279,24 +311,188 @@ background-color: #FFFFFF;
                                                         <td>Onestart Support Team</td>
                                                         <td><a href="#" class="btn btn-default btn-xs" id="edit_publisher">edit</a></td>
                                                     </tr>
+                                                    
+                                                    <!--
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    -->
+                                                    
                                                     <tr>
                                                         <th scope="row">Icon Images</th>
-                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/></div></td>
-                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/task-icons-new/icon-bt.png"  alt=""/></div></td>
+                                                        <td class="zoomin"><div class="hover-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Custom Upload </li>
+                                                                        <li> Large Image (153×153) </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Custom Upload </li>
+                                                                        <li> Small Retina Image (144×144) </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Custom Upload </li>
+                                                                        <li> Medium Image (90×90) </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Custom Upload </li>
+                                                                        <li> Small Image (72×72) </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Custom Upload </li>
+                                                                        <li> Very Small Image (31×31) </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div></td>
+                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/task-icons-new/icon-bt.png"  alt=""/>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Chosen from library </li>
+                                                                        <li>Image name: Bloomington Transit </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div></td>
                                                         <td><a href="#" class="btn btn-default btn-xs" id="edit_iconimage">edit</a></td>
                                                     </tr>
+                                                    
+                                                    <!--
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    -->
+                                                    
                                                     <tr>
                                                         <th scope="row">Screen Shots/ Video (Desktop)</th>
-                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/></div>
-                                                            <div class="hover-preview"><img src="../img/app-screenshots/ccl_list.png"  alt=""/></div></td>
-                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/></div>
-                                                            <div class="hover-preview"><img src="../img/app-screenshots/ccl_thumb.png"  alt=""/></div></td>
+                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source: Custom Upload</li>
+                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-preview"><img src="../img/app-screenshots/ccl_list.png"  alt=""/>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source: <a href="http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg" target="_blank">http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg</a></li>
+                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div></td>
+                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source: Custom Upload</li>
+                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-preview"><img src="../img/app-screenshots/ccl_list.png"  alt=""/>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source: <a href="http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg" target="_blank">http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg</a></li>
+                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-preview"><img src="https://i.vimeocdn.com/video/626824852_100x75.jpg"  alt=""/><span class="video-thumb-overlay"></span>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Video Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source (Vimeo): <a href="https://vimeo.com/210910471" target="_blank">https://vimeo.com/210910471</a></li>
+                                                                        <li>Thumbnail: <img src="../img/app-screenshots/vidthumb.jpg" alt=""/></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div></td>
                                                         <td class="forcewrap "><a href="#" class="btn btn-default btn-xs" id="edit_screenshotdesktop">edit</a></td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">Screen Shots/ Video (Tablet)</th>
-                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/app-screenshots/ccl_list.png"  alt=""/></div></td>
-                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/></div></td>
+                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/app-screenshots/ccl_list.png"  alt=""/>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source: <a href="http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg" target="_blank">http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg</a></li>
+                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div></td>
+                                                        <td class="zoomin "><div class="hover-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Image Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source: Custom Upload</li>
+                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-preview"><img src="https://i.vimeocdn.com/video/626824852_100x75.jpg"  alt=""/><span class="video-thumb-overlay"></span>
+                                                                <div class="object-info">
+                                                                    <div class="object-info-title"> Video Info</div>
+                                                                    <ul class="small">
+                                                                        <li> Source (WebM URL): <a href="https://vimeo.com/210910471" target="_blank">https://vimeo.com/210910471</a></li>
+                                                                        <li> Source (Ogg URL): <a href="https://vimeo.com/210910471" target="_blank">https://vimeo.com/210910471</a></li>
+                                                                        <li> Source (MP4 URL): <a href="https://vimeo.com/210910471" target="_blank">https://vimeo.com/210910471</a></li>
+                                                                        <li>Thumbnail: <img src="../img/app-screenshots/vidthumb.jpg" alt=""/></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div></td>
                                                         <td><a href="#" class="btn btn-default btn-xs" id="edit_screenshottablet">edit</a></td>
                                                     </tr>
                                                     <tr>
