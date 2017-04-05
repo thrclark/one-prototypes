@@ -8,131 +8,12 @@ $page = '';
 <?php include('includes/head-meta.php') ?>
 <?php include('includes/styles.php') ?>
 <style type="text/css">
-.popovertable tbody tr td {
-	white-space: nowrap;
-}
-.popovertable tbody tr td:first-child {
-	padding-right: 10px;
-}
 .ng-hide {
 	display: none
 }
 </style>
 <style type="text/css">
-.taskmeta {
-	margin-left: 20px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-.taskmeta tbody tr td {
-	padding: 0px
-}
-.taskmeta tbody tr td:first-child {
-x width: 1%;
-	white-space: nowrap;
-	text-align: right
-}
-.taskmeta tbody tr td:last-child {
-	width: 99%;
-	padding-left: 20px
-}
-.table th[scope="row"] {
-	background-color: #eeeeee;
-}
-</style>
-<style type="text/css">
-.zoomin .object-preview {
-	height: 50px;
-	display: inline-block;
-	position: relative;
-	max-width: 400px;
-}
-.zoomin .object-preview.expanded {
-	position: absolute;
-	z-index: 9999999999;
-}
-.zoomin .object-preview img {
-	height: 50px;
-	width: auto;
-}
-.zoomin .object-preview.expanded img {
-	width: 400px;
-	height: auto;
-	border: solid 15px #ffffff;
-	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
-	-moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
-	box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
-}
-.table-summmary td.zoomin:first-of-type .object-preview.expanded {
-	left: 0px;
-}
-.zoomin .object-preview img:hover {
-	filter: brightness(80%);
-}
-.zoomin .object-preview.expanded img:hover {
-	filter: brightness(100%);
-}
-.zoomin .object-preview.expanded .video-thumb-overlay {
-	display: none
-}
-.zoomin .object-preview .object-info {
-	display: none;
-}
-.zoomin .object-preview.expanded .object-info {
-	display: block;
-	border: solid 15px #ffffff;
-	background: #ffffff;
-	padding: 0px;
-	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
-	-moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
-	box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
-}
-.zoomin .object-preview .object-info .object-info-title {
-	font-weight: bold;
-	margin-bottom: 10px;
-}
-.zoomin .object-preview .object-info img {
-	width: 72px;
-	height: 72px;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	border: 1px solid #cccccc;
-	vertical-align: top;
-}
-.video-thumb-overlay {
-	position: absolute;
-	font-family: 'fontello';
-	background-color: rgba(0,0,0,0.3);
-	width: 100%;
-	height: 100%;
-	color: #fff;
-	font-size: 36px;
-	text-align: center;
-	left: 0px;
-}
-.video-thumb-overlay:before {
-	content: '\e810'
-}
-.zoomin .object-preview .preview-close {
-	display: none;
-}
-.zoomin .object-preview.expanded .preview-close {
-	display: block;
-	position: absolute;
-	top: -15px;
-	right: -15px;
-	font-size: 21px;
-	padding: 3px;
-	padding-bottom: 0px;
-	padding-top: 1px;
-	border-radius: 50%;
-	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
-	-moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
-	box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.67);
-	background: white;
-}
- @-webkit-keyframes fadeIt {
+@-webkit-keyframes fadeIt {
  0% {
 background-color: #FFFFFF;
 }
@@ -189,6 +70,9 @@ background-color: #FFFFFF;
 .compare-tags .btn.btn-default.btn-sm {
 	margin-bottom: 3px;
 }
+.table-comparison tbody tr .compare-tags .btn.btn-default.btn-sm {
+	margin-right: 3px;
+}
 </style>
 <?php include('includes/scripts.php') ?>
 </head>
@@ -217,7 +101,7 @@ background-color: #FFFFFF;
                                     <form name="taskForm" novalidate validate="errors" id="taskForm" class=" -maxlength -url -pattern -min -max -required">
                                         <div class="well well-sm" style="background:#f8f8f8; margin-bottom:60px;">
                                             <div class="lead"> Summary of Changes</div>
-                                            <table class="table table-condensed table-summmary">
+                                            <table class="table table-condensed table-comparison">
                                                 <thead class="">
                                                     <tr>
                                                         <th scope="column">Item</th>
@@ -384,7 +268,7 @@ background-color: #FFFFFF;
                                                     <tr>
                                                         <th scope="row">Icon Images</th>
                                                         <td class="zoomin"><div class="object-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
                                                                 <div class="object-info">
                                                                     <div class="object-info-title"> Image Info</div>
                                                                     <ul class="small">
@@ -394,7 +278,7 @@ background-color: #FFFFFF;
                                                                 </div>
                                                             </div>
                                                             <div class="object-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
                                                                 <div class="object-info">
                                                                     <div class="object-info-title"> Image Info</div>
                                                                     <ul class="small">
@@ -404,7 +288,7 @@ background-color: #FFFFFF;
                                                                 </div>
                                                             </div>
                                                             <div class="object-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
                                                                 <div class="object-info">
                                                                     <div class="object-info-title"> Image Info</div>
                                                                     <ul class="small">
@@ -414,7 +298,7 @@ background-color: #FFFFFF;
                                                                 </div>
                                                             </div>
                                                             <div class="object-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
                                                                 <div class="object-info">
                                                                     <div class="object-info-title"> Image Info</div>
                                                                     <ul class="small">
@@ -424,7 +308,7 @@ background-color: #FFFFFF;
                                                                 </div>
                                                             </div>
                                                             <div class="object-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
                                                                 <div class="object-info">
                                                                     <div class="object-info-title"> Image Info</div>
                                                                     <ul class="small">
@@ -434,7 +318,7 @@ background-color: #FFFFFF;
                                                                 </div>
                                                             </div></td>
                                                         <td class="zoomin "><div class="object-preview"><img src="../img/task-icons-new/icon-bt.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
                                                                 <div class="object-info">
                                                                     <div class="object-info-title"> Image Info</div>
                                                                     <ul class="small">
@@ -472,7 +356,7 @@ background-color: #FFFFFF;
                                                     <tr>
                                                         <th scope="row">Screen Shots/ Video (Desktop)</th>
                                                         <td class="zoomin"><div class="object-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
                                                                 <div class="object-info">
                                                                     <div class="object-info-title"> Image Info</div>
                                                                     <ul class="small">
@@ -482,7 +366,7 @@ background-color: #FFFFFF;
                                                                 </div>
                                                             </div>
                                                             <div class="object-preview"><img src="../img/app-screenshots/ccl_list.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
                                                                 <div class="object-info">
                                                                     <div class="object-info-title"> Image Info</div>
                                                                     <ul class="small">
@@ -492,7 +376,7 @@ background-color: #FFFFFF;
                                                                 </div>
                                                             </div></td>
                                                         <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
                                                                 <div class="object-info">
                                                                     <div class="object-info-title"> Image Info</div>
                                                                     <ul class="small">
@@ -502,7 +386,7 @@ background-color: #FFFFFF;
                                                                 </div>
                                                             </div>
                                                             <div class="object-preview"><img src="../img/app-screenshots/ccl_list.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
                                                                 <div class="object-info">
                                                                     <div class="object-info-title"> Image Info</div>
                                                                     <ul class="small">
@@ -512,7 +396,7 @@ background-color: #FFFFFF;
                                                                 </div>
                                                             </div>
                                                             <div class="object-preview"><img src="https://i.vimeocdn.com/video/626824852_100x75.jpg"  alt=""/><span class="video-thumb-overlay"></span>
-                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
                                                                 <div class="object-info">
                                                                     <div class="object-info-title"> Video Info</div>
                                                                     <ul class="small">
@@ -527,7 +411,7 @@ background-color: #FFFFFF;
                                                     <tr>
                                                         <th scope="row">Screen Shots/ Video (Tablet)</th>
                                                         <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl_list.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
                                                                 <div class="object-info">
                                                                     <div class="object-info-title"> Image Info</div>
                                                                     <ul class="small">
@@ -537,7 +421,7 @@ background-color: #FFFFFF;
                                                                 </div>
                                                             </div></td>
                                                         <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
                                                                 <div class="object-info">
                                                                     <div class="object-info-title"> Image Info</div>
                                                                     <ul class="small">
@@ -547,7 +431,7 @@ background-color: #FFFFFF;
                                                                 </div>
                                                             </div>
                                                             <div class="object-preview"><img src="https://i.vimeocdn.com/video/626824852_100x75.jpg"  alt=""/><span class="video-thumb-overlay"></span>
-                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
                                                                 <div class="object-info">
                                                                     <div class="object-info-title"> Video Info</div>
                                                                     <ul class="small">
@@ -564,7 +448,7 @@ background-color: #FFFFFF;
                                                     <tr>
                                                         <th scope="row">Screen Shots/ Video (Phone)</th>
                                                         <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl-mobile-001.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
                                                                 <div class="object-info">
                                                                     <div class="object-info-title"> Image Info</div>
                                                                     <ul class="small">
@@ -574,7 +458,7 @@ background-color: #FFFFFF;
                                                                 </div>
                                                             </div>
                                                             <div class="object-preview"><img src="../img/app-screenshots/ccl-mobile-002.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
                                                                 <div class="object-info">
                                                                     <div class="object-info-title"> Image Info</div>
                                                                     <ul class="small">
@@ -584,7 +468,7 @@ background-color: #FFFFFF;
                                                                 </div>
                                                             </div></td>
                                                         <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl-mobile-001.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
                                                                 <div class="object-info">
                                                                     <div class="object-info-title"> Image Info</div>
                                                                     <ul class="small">
@@ -594,7 +478,7 @@ background-color: #FFFFFF;
                                                                 </div>
                                                             </div>
                                                             <div class="object-preview"><img src="../img/app-screenshots/ccl-mobile-002.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
                                                                 <div class="object-info">
                                                                     <div class="object-info-title"> Image Info</div>
                                                                     <ul class="small">
@@ -604,7 +488,7 @@ background-color: #FFFFFF;
                                                                 </div>
                                                             </div>
                                                             <div class="object-preview"><img src="../img/app-screenshots/ccl-mobile-003.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-circled"></i></div>
+                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
                                                                 <div class="object-info">
                                                                     <div class="object-info-title"> Image Info</div>
                                                                     <ul class="small">
@@ -617,36 +501,26 @@ background-color: #FFFFFF;
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">Campus </th>
-                                                        <td><button type="button" class="btn btn-default btn-sm" tabindex="0"> IU Bloomington</button></td>
-                                                        <td><button type="button" class="btn btn-default btn-sm" tabindex="0"> IU Bloomington</button>
-                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0"> IU Kokomo</button></td>
+                                                        <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0"> IU Bloomington</button></td>
+                                                        <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0"> IU Bloomington</button><button type="button" class="btn btn-default btn-sm" tabindex="0"> IU Kokomo</button></td>
                                                         <td><a href="#" class="btn btn-default btn-xs" id="edit_campus">edit</a></td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">Roles</th>
-                                                        <td><button type="button" class="btn btn-default btn-sm" tabindex="0">All Roles</button></td>
-                                                        <td><button type="button" class="btn btn-default btn-sm" tabindex="0">Student</button>
-                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0">Staff</button></td>
+                                                        <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0">All Roles</button></td>
+                                                        <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0">Student</button><button type="button" class="btn btn-default btn-sm" tabindex="0">Staff</button></td>
                                                         <td><a href="#" class="btn btn-default btn-xs" id="edit_roles">edit</a></td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">Categories</th>
-                                                        <td><button type="button" class="btn btn-default btn-sm" tabindex="0">Finanace</button></td>
-                                                        <td><button type="button" class="btn btn-default btn-sm" tabindex="0">Finanace</button>
-                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0">Student Life</button>
-                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0">Academics</button></td>
+                                                        <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0">Finanace</button></td>
+                                                        <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0">Finanace</button><button type="button" class="btn btn-default btn-sm" tabindex="0">Student Life</button><button type="button" class="btn btn-default btn-sm" tabindex="0">Academics</button></td>
                                                         <td><a href="#" class="btn btn-default btn-xs" id="edit_categories">edit</a></td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">Tags</th>
-                                                        <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0"  data-toggle="tooltip" data-placement="bottom" title="Visible">Holds <i class="icon-eye"></i></button>
-                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0" data-toggle="tooltip" data-placement="bottom" title="Visible">Bursar <i class="icon-eye"></i></button>
-                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0" data-toggle="tooltip" data-placement="bottom" title="Visible">Finanace <i class="icon-eye"></i></button></td>
-                                                        <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0"  data-toggle="tooltip" data-placement="bottom" title="Visible">Holds <i class="icon-eye"></i></button>
-                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0" data-toggle="tooltip" data-placement="bottom" title="Visible">Bursar <i class="icon-eye"></i></button>
-                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0" data-toggle="tooltip" data-placement="bottom" title="Visible">Finanace <i class="icon-eye"></i></button>
-                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0" data-toggle="tooltip" data-placement="bottom" title="Hidden" >Taxes<i class="icon-eye-off"></i></button>
-                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0" data-toggle="tooltip" data-placement="bottom" title="Hidden">Paycheck <i class="icon-eye-off"></i></button></td>
+                                                        <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0"  data-content="Visible" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Holds <i class="icon-eye"></i></button><button type="button" class="btn btn-default btn-sm" tabindex="0"  data-content="Visible" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Bursar <i class="icon-eye"></i></button><button type="button" class="btn btn-default btn-sm" tabindex="0"  data-content="Visible" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Finanace <i class="icon-eye"></i></button></td>
+                                                        <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0"  data-content="Visible" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Holds <i class="icon-eye"></i></button><button type="button" class="btn btn-default btn-sm" tabindex="0"  data-content="Visible" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Bursar <i class="icon-eye"></i></button><button type="button" class="btn btn-default btn-sm" tabindex="0"  data-content="Visible" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Finanace <i class="icon-eye"></i></button><button type="button" class="btn btn-default btn-sm" tabindex="0" data-content="Hidden" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover" >Taxes<i class="icon-eye-off"></i></button><button type="button" class="btn btn-default btn-sm" tabindex="0" data-content="Hidden" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Paycheck <i class="icon-eye-off"></i></button></td>
                                                         <td><a href="#" class="btn btn-default btn-xs" id="edit_tags">edit</a></td>
                                                     </tr>
                                                     <tr>
@@ -1166,9 +1040,7 @@ background-color: #FFFFFF;
                                                                                 <div data-ng-switch="" data-on="::file.mediaType">
                                                                                     <div data-ng-switch-default="" class=""> <img ng-src="/publish/media/22271" title="" src="/one-prototypes/img/app-screenshots/ccl_grid.png" class="" style="width:inherit">
                                                                                         <div>
-                                                                                            <button type="button" class="btn btn-warning btn-xs" tabindex="0"> <i class="icon-edit"></i> <span class="">Add</span> Alt Text </button>
-                                                                                            <button type="button" class="btn btn-danger btn-xs" tabindex="0" aria-hidden="false"> <i class="icon-minus-circled"></i> Delete </button>
-                                                                                            <button ng-controller="FileDestroyController" type="button" class="btn btn-danger destroy btn-xs ng-hide" tabindex="0" aria-hidden="true"> <i class="icon-minus-circled"></i> Delete </button>
+                                                                                            <button type="button" class="btn btn-warning btn-xs" tabindex="0"> <i class="icon-edit"></i> <span class="">Add</span> Alt Text </button><button type="button" class="btn btn-danger btn-xs" tabindex="0" aria-hidden="false"> <i class="icon-minus-circled"></i> Delete </button><button ng-controller="FileDestroyController" type="button" class="btn btn-danger destroy btn-xs ng-hide" tabindex="0" aria-hidden="true"> <i class="icon-minus-circled"></i> Delete </button>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1183,8 +1055,7 @@ background-color: #FFFFFF;
                                                                                 <div> <span class="btn btn-success fileinput-button"> <i class="icon-plus"></i> <span>Upload images…</span>
                                                                                     <input type="file" name="files[]" multiple>
                                                                                     </span>
-                                                                                    <button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link an image… </button>
-                                                                                    <button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link a video… </button>
+                                                                                    <button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link an image… </button><button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link a video… </button>
                                                                                     <div class="fileupload-loading"></div>
                                                                                 </div>
                                                                                 <div class="fade" data-ng-class="{true: 'in'}[!!active()]">
@@ -1215,8 +1086,7 @@ background-color: #FFFFFF;
                                                                                 </div>
                                                                             </div>
                                                                             <div class="modal-footer">
-                                                                                <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                                                                                <button class="btn btn-success" ng-disabled="imageLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
+                                                                                <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button><button class="btn btn-success" ng-disabled="imageLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1240,8 +1110,7 @@ background-color: #FFFFFF;
                                                                                 </div>
                                                                             </div>
                                                                             <div class="modal-footer">
-                                                                                <button class="btn btn-default" tabindex="0">Cancel</button>
-                                                                                <button class="btn btn-primary" ng-disabled="captionToEdit.length > 200 || captionToEdit == null" tabindex="0" aria-disabled="true" disabled="disabled">Save</button>
+                                                                                <button class="btn btn-default" tabindex="0">Cancel</button><button class="btn btn-primary" ng-disabled="captionToEdit.length > 200 || captionToEdit == null" tabindex="0" aria-disabled="true" disabled="disabled">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1299,8 +1168,7 @@ background-color: #FFFFFF;
                                                                                 </div>
                                                                             </div>
                                                                             <div class="modal-footer">
-                                                                                <button class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                                                                <button class="btn btn-primary" ng-disabled="videoLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
+                                                                                <button class="btn btn-default" data-dismiss="modal">Cancel</button><button class="btn btn-primary" ng-disabled="videoLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1324,8 +1192,7 @@ background-color: #FFFFFF;
                                                                                 <div> <span class="btn btn-success fileinput-button"> <i class="icon-plus"></i> <span>Upload images…</span>
                                                                                     <input type="file" name="files[]" multiple>
                                                                                     </span>
-                                                                                    <button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link an image… </button>
-                                                                                    <button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link a video… </button>
+                                                                                    <button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link an image… </button><button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link a video… </button>
                                                                                     <div class="fileupload-loading"></div>
                                                                                 </div>
                                                                                 <div class="fade" data-ng-class="{true: 'in'}[!!active()]">
@@ -1356,8 +1223,7 @@ background-color: #FFFFFF;
                                                                                 </div>
                                                                             </div>
                                                                             <div class="modal-footer">
-                                                                                <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                                                                                <button class="btn btn-success" ng-disabled="imageLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
+                                                                                <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button><button class="btn btn-success" ng-disabled="imageLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1381,8 +1247,7 @@ background-color: #FFFFFF;
                                                                                 </div>
                                                                             </div>
                                                                             <div class="modal-footer">
-                                                                                <button class="btn btn-default" tabindex="0">Cancel</button>
-                                                                                <button class="btn btn-primary" ng-disabled="captionToEdit.length > 200 || captionToEdit == null" tabindex="0" aria-disabled="true" disabled="disabled">Save</button>
+                                                                                <button class="btn btn-default" tabindex="0">Cancel</button><button class="btn btn-primary" ng-disabled="captionToEdit.length > 200 || captionToEdit == null" tabindex="0" aria-disabled="true" disabled="disabled">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1440,8 +1305,7 @@ background-color: #FFFFFF;
                                                                                 </div>
                                                                             </div>
                                                                             <div class="modal-footer">
-                                                                                <button class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                                                                <button class="btn btn-primary" ng-disabled="videoLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
+                                                                                <button class="btn btn-default" data-dismiss="modal">Cancel</button><button class="btn btn-primary" ng-disabled="videoLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1465,8 +1329,7 @@ background-color: #FFFFFF;
                                                                                 <div> <span class="btn btn-success fileinput-button"> <i class="icon-plus"></i> <span>Upload images…</span>
                                                                                     <input type="file" name="files[]" multiple>
                                                                                     </span>
-                                                                                    <button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link an image… </button>
-                                                                                    <button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link a video… </button>
+                                                                                    <button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link an image… </button><button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link a video… </button>
                                                                                     <div class="fileupload-loading"></div>
                                                                                 </div>
                                                                                 <div class="fade" data-ng-class="{true: 'in'}[!!active()]">
@@ -1497,8 +1360,7 @@ background-color: #FFFFFF;
                                                                                 </div>
                                                                             </div>
                                                                             <div class="modal-footer">
-                                                                                <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                                                                                <button class="btn btn-success" ng-disabled="imageLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
+                                                                                <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button><button class="btn btn-success" ng-disabled="imageLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1522,8 +1384,7 @@ background-color: #FFFFFF;
                                                                                 </div>
                                                                             </div>
                                                                             <div class="modal-footer">
-                                                                                <button class="btn btn-default" tabindex="0">Cancel</button>
-                                                                                <button class="btn btn-primary" ng-disabled="captionToEdit.length > 200 || captionToEdit == null" tabindex="0" aria-disabled="true" disabled="disabled">Save</button>
+                                                                                <button class="btn btn-default" tabindex="0">Cancel</button><button class="btn btn-primary" ng-disabled="captionToEdit.length > 200 || captionToEdit == null" tabindex="0" aria-disabled="true" disabled="disabled">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1581,8 +1442,7 @@ background-color: #FFFFFF;
                                                                                 </div>
                                                                             </div>
                                                                             <div class="modal-footer">
-                                                                                <button class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                                                                <button class="btn btn-primary" ng-disabled="videoLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
+                                                                                <button class="btn btn-default" data-dismiss="modal">Cancel</button><button class="btn btn-primary" ng-disabled="videoLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1703,10 +1563,7 @@ background-color: #FFFFFF;
                                                     </div>
                                                     <div class="col-md-9">
                                                         <div class="button-list well">
-                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0"> Admissions&nbsp;<i class="icon-cancel"></i> </button>
-                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0"> Administrative&nbsp;<i class="icon-cancel"></i> </button>
-                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0"> Faculty Services&nbsp;<i class="icon-cancel"></i> </button>
-                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0"> Category 3&nbsp;<i class="icon-cancel"></i> </button>
+                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0"> Admissions&nbsp;<i class="icon-cancel"></i> </button><button type="button" class="btn btn-default btn-sm" tabindex="0"> Administrative&nbsp;<i class="icon-cancel"></i> </button><button type="button" class="btn btn-default btn-sm" tabindex="0"> Faculty Services&nbsp;<i class="icon-cancel"></i> </button><button type="button" class="btn btn-default btn-sm" tabindex="0"> Category 3&nbsp;<i class="icon-cancel"></i> </button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1758,9 +1615,7 @@ background-color: #FFFFFF;
                                             </div>
                                         </fieldset>
                                         <hr>
-                                        <button class="btn btn-success" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Approve</button>
-                                        <button class="btn btn-default" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Decline</button>
-                                        <button class="btn btn-default" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Cancel</button>
+                                        <button class="btn btn-success" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Approve</button><button class="btn btn-default" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Decline</button><button class="btn btn-default" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Cancel</button>
                                     </form>
                                 </div>
                             </div>
@@ -2132,11 +1987,21 @@ background-color: #FFFFFF;
 </script> 
     <script>
     $(document).ready(function() {
-        $(".object-preview").click(function() {
-            $(this).toggleClass("expanded");
+        $(".object-preview img, .video-thumb-overlay").click(function() {
+			$(this).parent().addClass("expanded");
+        });
+		$(".preview-close").click(function() {
+			$(this).parent().removeClass("expanded");
         });
 
     });
+</script> 
+    <script type='text/javascript'>//<![CDATA[
+$(window).load(function(){
+$('button').popover();
+
+});//]]> 
+
 </script> 
 </div>
 </body>
