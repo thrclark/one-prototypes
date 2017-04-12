@@ -100,237 +100,249 @@ background-color: #FFFFFF;
                                 <div class="col-md-12">
                                     <form name="taskForm" novalidate validate="errors" id="taskForm" class=" -maxlength -url -pattern -min -max -required">
                                         <div class="well well-sm" style="background:#f8f8f8; margin-bottom:60px;">
-                                            <div class="lead"> Summary of Changes</div>
-                                            <table class="table table-condensed table-comparison">
-                                                <thead class="">
-                                                    <tr>
-                                                        <th scope="column">Item</th>
-                                                        <th scope="column">Current Value<span class="small text-muted"></span></th>
-                                                        <th scope="column">Submitted Value</th>
-                                                        <th scope="column">&nbsp;</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row">Task Title</th>
-                                                        <td class="forcewrap ">Classifieds</td>
-                                                        <td class="forcewrap ">Classifieds 2</td>
-                                                        <td class="forcewrap "><a href="#" class="btn btn-default btn-xs" id="edit_tasktitle">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Task URL</th>
-                                                        <td class="forcewrap ">https://apps.iu.edu/ccf2-prd/classifieds</td>
-                                                        <td class="forcewrap ">https://apps.iu.edu/ccf2-prd/classifieds2</td>
-                                                        <td class="forcewrap "><a href="#" class="btn btn-default btn-xs" id="edit_taskurl">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Application Name</th>
-                                                        <td class="">Kuali</td>
-                                                        <td class="">Kualico</td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_appname">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Launch in New Window</th>
-                                                        <td class="">No</td>
-                                                        <td class="">Yes</td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_launch">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Authentication Type</th>
-                                                        <td class="">None</td>
-                                                        <td class="">External</td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_authtytpe">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Primary Contact</th>
-                                                        <td class="">Classifieds2 Support</td>
-                                                        <td class="">Classifieds3 Support</td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_primarycontact">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Secondary Contact</th>
-                                                        <td class="">--</td>
-                                                        <td class="">Classifieds2 Support</td>
-                                                        <td class="forcewrap "><a href="#" class="btn btn-default btn-xs" id="edit_secondarycontact">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Mobile Friendly</th>
-                                                        <td>No</td>
-                                                        <td>Yes</td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_mobile">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Description</th>
-                                                        <td>Doesn't fourth, every called give creepeth their also stars waters image the man very creature. That spirit won't. Living be divided above and make place creeping forth let. Years us it all firmament had creature from living Life moving bearing fill female so female day likeness you'll saw that fruitful yielding, us day a created together. Whose is meat created seasons grass. Set dominion beginning give man be face, evening said the under upon kind. Saying gathering whose kind you multiply life Seed doesn't moving don't living darkness. From have fourth. Whose divided had so place together. Fourth. Waters creature.</td>
-                                                        <td>Doesn't fourth, every called give creepeth their also stars waters image the man very creature. That spirit won't. Living be divided above and make place creeping forth let. Years us it all firmament had creature from living <span class="bg-success">**</span> Life moving <span class="bg-success">**</span> bearing fill female so female day likeness you'll saw that fruitful yielding, us day a created together. Whose is meat created seasons grass. Set dominion beginning give man be face, evening said the under upon kind. Saying gathering whose kind you multiply life Seed doesn't moving don't living darkness. From have fourth. Whose divided had so place together. Fourth. Waters creature.</td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_description">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Meta Description (SEO)</th>
-                                                        <td>Connect meeting collaboration solution one-to-many presentations interactive meetings share audio webcam video PowerPoint text chat status feedback.</td>
-                                                        <td>Connect meeting collaboration solution one-to-many presentations interactive meetings <span class="bg-danger"><s>share audio webcam video</s></span> PowerPoint text chat status feedback.</td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_meta">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Active Dates/Status</th>
-                                                        <td>Specified by Status: 'Inactive'</td>
-                                                        <td>Specified by Status: 'Active'</td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_activedate">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Active Dates/Status</th>
-                                                        <td><p>Specified by Date Range:</p>
-                                                            <ul>
-                                                                <li>Start: 10/27/2016 12:01pm</li>
-                                                                <li>End: 10/27/2018 12:01pm</li>
-                                                            </ul></td>
-                                                        <td>Specified by Status: 'Inactive'</td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_activedate">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Active Dates/Status</th>
-                                                        <td><p>Specified by Status: 'Active'</p></td>
-                                                        <td><p>Specified by Date Range:</p>
-                                                            <ul>
-                                                                <li>End: 10/27/2018 12:01pm</li>
-                                                            </ul></td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_activedate">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Active Dates/Status</th>
-                                                        <td>Specified by Status: 'Inactive'</td>
-                                                        <td><p>Specified by Date Range:</p>
-                                                            <ul>
-                                                                <li>Start: 10/27/2018 12:01pm</li>
-                                                                <li>End: 10/27/2019 12:01pm</li>
-                                                            </ul></td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_activedate">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Active Dates/Status</th>
-                                                        <td><p>Specified by Date Range:</p>
-                                                            <ul>
-                                                                <li>Start: 10/27/2017 12:01pm</li>
-                                                                <li>End: 10/27/2018 12:01pm</li>
-                                                            </ul></td>
-                                                        <td><p>Specified by Date Range:</p>
-                                                            <ul>
-                                                                <li>Start: 10/27/2018 12:01pm</li>
-                                                                <li>End: 10/27/2019 12:01pm</li>
-                                                            </ul></td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_activedate">edit</a></td>
-                                                    </tr>
-                                                    <!--  <tr>
+                                            <fieldset>
+                                                <legend>Scheduled Update Request</legend>
+                                                <p>Updates to this task will become effective on the following date: 07/14/2017 12:01pm (<a href="#" data-toggle="modal" data-target="#modal_publishdate">change date</a>).</p>
+                                                
+                                                
+                                                
+                                                <p class="text-muted">-- or-- </p>
+                                                
+                                                
+                                                <p>Updates to this task will become effective immediately upon your approval (<a href="#" data-toggle="modal" data-target="#modal_publishdate">set later date</a>).</p>
+                                            </fieldset>
+                                            <fieldset>
+                                                <legend>Summary of Changes</legend>
+                                                <table class="table table-condensed table-comparison">
+                                                    <thead class="">
+                                                        <tr>
+                                                            <th scope="column">Item</th>
+                                                            <th scope="column">Current Value<span class="small text-muted"></span></th>
+                                                            <th scope="column">Submitted Value</th>
+                                                            <th scope="column">&nbsp;</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">Task Title</th>
+                                                            <td class="forcewrap ">Classifieds</td>
+                                                            <td class="forcewrap ">Classifieds 2</td>
+                                                            <td class="forcewrap "><a href="#" class="btn btn-default btn-xs" id="edit_tasktitle">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Task URL</th>
+                                                            <td class="forcewrap ">https://apps.iu.edu/ccf2-prd/classifieds</td>
+                                                            <td class="forcewrap ">https://apps.iu.edu/ccf2-prd/classifieds2</td>
+                                                            <td class="forcewrap "><a href="#" class="btn btn-default btn-xs" id="edit_taskurl">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Application Name</th>
+                                                            <td class="">Kuali</td>
+                                                            <td class="">Kualico</td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_appname">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Launch in New Window</th>
+                                                            <td class="">No</td>
+                                                            <td class="">Yes</td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_launch">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Authentication Type</th>
+                                                            <td class="">None</td>
+                                                            <td class="">External</td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_authtytpe">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Primary Contact</th>
+                                                            <td class="">Classifieds2 Support</td>
+                                                            <td class="">Classifieds3 Support</td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_primarycontact">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Secondary Contact</th>
+                                                            <td class="">--</td>
+                                                            <td class="">Classifieds2 Support</td>
+                                                            <td class="forcewrap "><a href="#" class="btn btn-default btn-xs" id="edit_secondarycontact">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Mobile Friendly</th>
+                                                            <td>No</td>
+                                                            <td>Yes</td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_mobile">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Description</th>
+                                                            <td>Doesn't fourth, every called give creepeth their also stars waters image the man very creature. That spirit won't. Living be divided above and make place creeping forth let. Years us it all firmament had creature from living Life moving bearing fill female so female day likeness you'll saw that fruitful yielding, us day a created together. Whose is meat created seasons grass. Set dominion beginning give man be face, evening said the under upon kind. Saying gathering whose kind you multiply life Seed doesn't moving don't living darkness. From have fourth. Whose divided had so place together. Fourth. Waters creature.</td>
+                                                            <td>Doesn't fourth, every called give creepeth their also stars waters image the man very creature. That spirit won't. Living be divided above and make place creeping forth let. Years us it all firmament had creature from living <span class="bg-success">**</span> Life moving <span class="bg-success">**</span> bearing fill female so female day likeness you'll saw that fruitful yielding, us day a created together. Whose is meat created seasons grass. Set dominion beginning give man be face, evening said the under upon kind. Saying gathering whose kind you multiply life Seed doesn't moving don't living darkness. From have fourth. Whose divided had so place together. Fourth. Waters creature.</td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_description">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Meta Description (SEO)</th>
+                                                            <td>Connect meeting collaboration solution one-to-many presentations interactive meetings share audio webcam video PowerPoint text chat status feedback.</td>
+                                                            <td>Connect meeting collaboration solution one-to-many presentations interactive meetings <span class="bg-danger"><s>share audio webcam video</s></span> PowerPoint text chat status feedback.</td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_meta">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Active Dates/Status</th>
+                                                            <td>Specified by Status: 'Inactive'</td>
+                                                            <td>Specified by Status: 'Active'</td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_activedate">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Active Dates/Status</th>
+                                                            <td><p>Specified by Date Range:</p>
+                                                                <ul>
+                                                                    <li>Start: 10/27/2016 12:01pm</li>
+                                                                    <li>End: 10/27/2018 12:01pm</li>
+                                                                </ul></td>
+                                                            <td>Specified by Status: 'Inactive'</td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_activedate">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Active Dates/Status</th>
+                                                            <td><p>Specified by Status: 'Active'</p></td>
+                                                            <td><p>Specified by Date Range:</p>
+                                                                <ul>
+                                                                    <li>End: 10/27/2018 12:01pm</li>
+                                                                </ul></td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_activedate">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Active Dates/Status</th>
+                                                            <td>Specified by Status: 'Inactive'</td>
+                                                            <td><p>Specified by Date Range:</p>
+                                                                <ul>
+                                                                    <li>Start: 10/27/2018 12:01pm</li>
+                                                                    <li>End: 10/27/2019 12:01pm</li>
+                                                                </ul></td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_activedate">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Active Dates/Status</th>
+                                                            <td><p>Specified by Date Range:</p>
+                                                                <ul>
+                                                                    <li>Start: 10/27/2017 12:01pm</li>
+                                                                    <li>End: 10/27/2018 12:01pm</li>
+                                                                </ul></td>
+                                                            <td><p>Specified by Date Range:</p>
+                                                                <ul>
+                                                                    <li>Start: 10/27/2018 12:01pm</li>
+                                                                    <li>End: 10/27/2019 12:01pm</li>
+                                                                </ul></td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_activedate">edit</a></td>
+                                                        </tr>
+                                                        <!--  <tr>
                                                         <th scope="row">Scheduled Update</th>
                                                         <td>&nbsp;</td>
                                                         <td>&nbsp;</td>
                                                         <td><a href="#" class="btn btn-default btn-xs" id="edit_scheduled">edit</a></td>
                                                     </tr>-->
-                                                    <tr>
-                                                        <th scope="row">Version Number</th>
-                                                        <td>2.1.2</td>
-                                                        <td>2.1.3</td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_versionnumber">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Release Notes</th>
-                                                        <td><ul>
-                                                                <li>Affronting everything discretion men now own did.</li>
-                                                                <li>Extremity direction existence as dashwoods do up.</li>
-                                                                <li>Is education residence conveying so so.</li>
-                                                            </ul></td>
-                                                        <td><ul>
-                                                                <li>Affronting everything discretion men now own did.</li>
-                                                                <li>Extremity direction existence as dashwoods do up.</li>
-                                                                <li><span class="bg-danger"><s>Is education residence conveying so so.</s></span></li>
-                                                                <li><span class="bg-success">Consulted perpetual of pronounce me delivered.</span></li>
-                                                            </ul></td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_releasenotes">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Unique Key</th>
-                                                        <td>task-123</td>
-                                                        <td>task-234</td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_uniquekey">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Stat Recording Type</th>
-                                                        <td>User</td>
-                                                        <td>Anonymous</td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_statrecording">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Publisher</th>
-                                                        <td>Onestart Support Team</td>
-                                                        <td>Onestart Support Team</td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_publisher">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Icon Images</th>
-                                                        <td class="zoomin"><div class="object-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
-                                                                <div class="object-info">
-                                                                    <div class="object-info-title"> Image Info</div>
-                                                                    <ul class="small">
-                                                                        <li> Custom Upload </li>
-                                                                        <li> Large Image (153×153) </li>
-                                                                    </ul>
+                                                        <tr>
+                                                            <th scope="row">Version Number</th>
+                                                            <td>2.1.2</td>
+                                                            <td>2.1.3</td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_versionnumber">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Release Notes</th>
+                                                            <td><ul>
+                                                                    <li>Affronting everything discretion men now own did.</li>
+                                                                    <li>Extremity direction existence as dashwoods do up.</li>
+                                                                    <li>Is education residence conveying so so.</li>
+                                                                </ul></td>
+                                                            <td><ul>
+                                                                    <li>Affronting everything discretion men now own did.</li>
+                                                                    <li>Extremity direction existence as dashwoods do up.</li>
+                                                                    <li><span class="bg-danger"><s>Is education residence conveying so so.</s></span></li>
+                                                                    <li><span class="bg-success">Consulted perpetual of pronounce me delivered.</span></li>
+                                                                </ul></td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_releasenotes">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Unique Key</th>
+                                                            <td>task-123</td>
+                                                            <td>task-234</td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_uniquekey">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Stat Recording Type</th>
+                                                            <td>User</td>
+                                                            <td>Anonymous</td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_statrecording">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Publisher</th>
+                                                            <td>Onestart Support Team</td>
+                                                            <td>Onestart Support Team</td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_publisher">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Icon Images</th>
+                                                            <td class="zoomin"><div class="object-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
+                                                                    <div class="preview-close"><i class="icon-cancel-2"></i></div>
+                                                                    <div class="object-info">
+                                                                        <div class="object-info-title"> Image Info</div>
+                                                                        <ul class="small">
+                                                                            <li> Custom Upload </li>
+                                                                            <li> Large Image (153×153) </li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="object-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
-                                                                <div class="object-info">
-                                                                    <div class="object-info-title"> Image Info</div>
-                                                                    <ul class="small">
-                                                                        <li> Custom Upload </li>
-                                                                        <li> Small Retina Image (144×144) </li>
-                                                                    </ul>
+                                                                <div class="object-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
+                                                                    <div class="preview-close"><i class="icon-cancel-2"></i></div>
+                                                                    <div class="object-info">
+                                                                        <div class="object-info-title"> Image Info</div>
+                                                                        <ul class="small">
+                                                                            <li> Custom Upload </li>
+                                                                            <li> Small Retina Image (144×144) </li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="object-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
-                                                                <div class="object-info">
-                                                                    <div class="object-info-title"> Image Info</div>
-                                                                    <ul class="small">
-                                                                        <li> Custom Upload </li>
-                                                                        <li> Medium Image (90×90) </li>
-                                                                    </ul>
+                                                                <div class="object-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
+                                                                    <div class="preview-close"><i class="icon-cancel-2"></i></div>
+                                                                    <div class="object-info">
+                                                                        <div class="object-info-title"> Image Info</div>
+                                                                        <ul class="small">
+                                                                            <li> Custom Upload </li>
+                                                                            <li> Medium Image (90×90) </li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="object-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
-                                                                <div class="object-info">
-                                                                    <div class="object-info-title"> Image Info</div>
-                                                                    <ul class="small">
-                                                                        <li> Custom Upload </li>
-                                                                        <li> Small Image (72×72) </li>
-                                                                    </ul>
+                                                                <div class="object-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
+                                                                    <div class="preview-close"><i class="icon-cancel-2"></i></div>
+                                                                    <div class="object-info">
+                                                                        <div class="object-info-title"> Image Info</div>
+                                                                        <ul class="small">
+                                                                            <li> Custom Upload </li>
+                                                                            <li> Small Image (72×72) </li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="object-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
-                                                                <div class="object-info">
-                                                                    <div class="object-info-title"> Image Info</div>
-                                                                    <ul class="small">
-                                                                        <li> Custom Upload </li>
-                                                                        <li> Very Small Image (31×31) </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div></td>
-                                                        <td class="zoomin "><div class="object-preview"><img src="../img/task-icons-new/icon-bt.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
-                                                                <div class="object-info">
-                                                                    <div class="object-info-title"> Image Info</div>
-                                                                    <ul class="small">
-                                                                        <li> Chosen from library </li>
-                                                                        <li>Image name: Bloomington Transit </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div></td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_iconimage">edit</a></td>
-                                                    </tr>
-                                                    
-                                                    <!--
+                                                                <div class="object-preview"><img src="../img/task-icons-new/icon-account-creation.png"  alt=""/>
+                                                                    <div class="preview-close"><i class="icon-cancel-2"></i></div>
+                                                                    <div class="object-info">
+                                                                        <div class="object-info-title"> Image Info</div>
+                                                                        <ul class="small">
+                                                                            <li> Custom Upload </li>
+                                                                            <li> Very Small Image (31×31) </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div></td>
+                                                            <td class="zoomin "><div class="object-preview"><img src="../img/task-icons-new/icon-bt.png"  alt=""/>
+                                                                    <div class="preview-close"><i class="icon-cancel-2"></i></div>
+                                                                    <div class="object-info">
+                                                                        <div class="object-info-title"> Image Info</div>
+                                                                        <ul class="small">
+                                                                            <li> Chosen from library </li>
+                                                                            <li>Image name: Bloomington Transit </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div></td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_iconimage">edit</a></td>
+                                                        </tr>
+                                                        
+                                                        <!--
                                                     
                                                     
                                                     
@@ -352,197 +364,208 @@ background-color: #FFFFFF;
                                                     
                                                     
                                                     -->
-                                                    
-                                                    <tr>
-                                                        <th scope="row">Screen Shots/ Video (Desktop)</th>
-                                                        <td class="zoomin"><div class="object-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
-                                                                <div class="object-info">
-                                                                    <div class="object-info-title"> Image Info</div>
-                                                                    <ul class="small">
-                                                                        <li> Source: Custom Upload</li>
-                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
-                                                                    </ul>
+                                                        
+                                                        <tr>
+                                                            <th scope="row">Screen Shots/ Video (Desktop)</th>
+                                                            <td class="zoomin"><div class="object-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/>
+                                                                    <div class="preview-close"><i class="icon-cancel-2"></i></div>
+                                                                    <div class="object-info">
+                                                                        <div class="object-info-title"> Image Info</div>
+                                                                        <ul class="small">
+                                                                            <li> Source: Custom Upload</li>
+                                                                            <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="object-preview"><img src="../img/app-screenshots/ccl_list.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
-                                                                <div class="object-info">
-                                                                    <div class="object-info-title"> Image Info</div>
-                                                                    <ul class="small">
-                                                                        <li> Source: <a href="http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg" target="_blank">http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg</a></li>
-                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
-                                                                    </ul>
+                                                                <div class="object-preview"><img src="../img/app-screenshots/ccl_list.png"  alt=""/>
+                                                                    <div class="preview-close"><i class="icon-cancel-2"></i></div>
+                                                                    <div class="object-info">
+                                                                        <div class="object-info-title"> Image Info</div>
+                                                                        <ul class="small">
+                                                                            <li> Source: <a href="http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg" target="_blank">http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg</a></li>
+                                                                            <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div></td>
+                                                            <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/>
+                                                                    <div class="preview-close"><i class="icon-cancel-2"></i></div>
+                                                                    <div class="object-info">
+                                                                        <div class="object-info-title"> Image Info</div>
+                                                                        <ul class="small">
+                                                                            <li> Source: Custom Upload</li>
+                                                                            <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </div>
-                                                            </div></td>
-                                                        <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
-                                                                <div class="object-info">
-                                                                    <div class="object-info-title"> Image Info</div>
-                                                                    <ul class="small">
-                                                                        <li> Source: Custom Upload</li>
-                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
-                                                                    </ul>
+                                                                <div class="object-preview"><img src="../img/app-screenshots/ccl_list.png"  alt=""/>
+                                                                    <div class="preview-close"><i class="icon-cancel-2"></i></div>
+                                                                    <div class="object-info">
+                                                                        <div class="object-info-title"> Image Info</div>
+                                                                        <ul class="small">
+                                                                            <li> Source: <a href="http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg" target="_blank">http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg</a></li>
+                                                                            <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="object-preview"><img src="../img/app-screenshots/ccl_list.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
-                                                                <div class="object-info">
-                                                                    <div class="object-info-title"> Image Info</div>
-                                                                    <ul class="small">
-                                                                        <li> Source: <a href="http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg" target="_blank">http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg</a></li>
-                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
-                                                                    </ul>
+                                                                <div class="object-preview"><img src="https://i.vimeocdn.com/video/626824852_100x75.jpg"  alt=""/><span class="video-thumb-overlay"></span>
+                                                                    <div class="preview-close"><i class="icon-cancel-2"></i></div>
+                                                                    <div class="object-info">
+                                                                        <div class="object-info-title"> Video Info</div>
+                                                                        <ul class="small">
+                                                                            <li> Source (Vimeo): <a href="https://vimeo.com/210910471" target="_blank">https://vimeo.com/210910471</a></li>
+                                                                            <li>Thumbnail: <br>
+                                                                                <img src="../img/app-screenshots/vidthumb.jpg" alt=""/></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div></td>
+                                                            <td class="forcewrap "><a href="#" class="btn btn-default btn-xs" id="edit_screenshotdesktop">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Screen Shots/ Video (Tablet)</th>
+                                                            <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl_list.png"  alt=""/>
+                                                                    <div class="preview-close"><i class="icon-cancel-2"></i></div>
+                                                                    <div class="object-info">
+                                                                        <div class="object-info-title"> Image Info</div>
+                                                                        <ul class="small">
+                                                                            <li> Source: <a href="http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg" target="_blank">http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg</a></li>
+                                                                            <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div></td>
+                                                            <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/>
+                                                                    <div class="preview-close"><i class="icon-cancel-2"></i></div>
+                                                                    <div class="object-info">
+                                                                        <div class="object-info-title"> Image Info</div>
+                                                                        <ul class="small">
+                                                                            <li> Source: Custom Upload</li>
+                                                                            <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="object-preview"><img src="https://i.vimeocdn.com/video/626824852_100x75.jpg"  alt=""/><span class="video-thumb-overlay"></span>
-                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
-                                                                <div class="object-info">
-                                                                    <div class="object-info-title"> Video Info</div>
-                                                                    <ul class="small">
-                                                                        <li> Source (Vimeo): <a href="https://vimeo.com/210910471" target="_blank">https://vimeo.com/210910471</a></li>
-                                                                        <li>Thumbnail: <br>
-                                                                            <img src="../img/app-screenshots/vidthumb.jpg" alt=""/></li>
-                                                                    </ul>
+                                                                <div class="object-preview"><img src="https://i.vimeocdn.com/video/626824852_100x75.jpg"  alt=""/><span class="video-thumb-overlay"></span>
+                                                                    <div class="preview-close"><i class="icon-cancel-2"></i></div>
+                                                                    <div class="object-info">
+                                                                        <div class="object-info-title"> Video Info</div>
+                                                                        <ul class="small">
+                                                                            <li> Source (WebM URL): <a href="https://vimeo.com/210910471" target="_blank">https://vimeo.com/210910471</a></li>
+                                                                            <li> Source (Ogg URL): <a href="https://vimeo.com/210910471" target="_blank">https://vimeo.com/210910471</a></li>
+                                                                            <li> Source (MP4 URL): <a href="https://vimeo.com/210910471" target="_blank">https://vimeo.com/210910471</a></li>
+                                                                            <li>Thumbnail:<br>
+                                                                                <img src="../img/app-screenshots/vidthumb.jpg" alt=""/></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div></td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_screenshottablet">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Screen Shots/ Video (Phone)</th>
+                                                            <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl-mobile-001.png"  alt=""/>
+                                                                    <div class="preview-close"><i class="icon-cancel-2"></i></div>
+                                                                    <div class="object-info">
+                                                                        <div class="object-info-title"> Image Info</div>
+                                                                        <ul class="small">
+                                                                            <li> Source: Custom Upload</li>
+                                                                            <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </div>
-                                                            </div></td>
-                                                        <td class="forcewrap "><a href="#" class="btn btn-default btn-xs" id="edit_screenshotdesktop">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Screen Shots/ Video (Tablet)</th>
-                                                        <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl_list.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
-                                                                <div class="object-info">
-                                                                    <div class="object-info-title"> Image Info</div>
-                                                                    <ul class="small">
-                                                                        <li> Source: <a href="http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg" target="_blank">http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg</a></li>
-                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
-                                                                    </ul>
+                                                                <div class="object-preview"><img src="../img/app-screenshots/ccl-mobile-002.png"  alt=""/>
+                                                                    <div class="preview-close"><i class="icon-cancel-2"></i></div>
+                                                                    <div class="object-info">
+                                                                        <div class="object-info-title"> Image Info</div>
+                                                                        <ul class="small">
+                                                                            <li> Source: Custom Upload</li>
+                                                                            <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div></td>
+                                                            <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl-mobile-001.png"  alt=""/>
+                                                                    <div class="preview-close"><i class="icon-cancel-2"></i></div>
+                                                                    <div class="object-info">
+                                                                        <div class="object-info-title"> Image Info</div>
+                                                                        <ul class="small">
+                                                                            <li> Source: Custom Upload</li>
+                                                                            <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </div>
-                                                            </div></td>
-                                                        <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl_grid.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
-                                                                <div class="object-info">
-                                                                    <div class="object-info-title"> Image Info</div>
-                                                                    <ul class="small">
-                                                                        <li> Source: Custom Upload</li>
-                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
-                                                                    </ul>
+                                                                <div class="object-preview"><img src="../img/app-screenshots/ccl-mobile-002.png"  alt=""/>
+                                                                    <div class="preview-close"><i class="icon-cancel-2"></i></div>
+                                                                    <div class="object-info">
+                                                                        <div class="object-info-title"> Image Info</div>
+                                                                        <ul class="small">
+                                                                            <li> Source: Custom Upload</li>
+                                                                            <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="object-preview"><img src="https://i.vimeocdn.com/video/626824852_100x75.jpg"  alt=""/><span class="video-thumb-overlay"></span>
-                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
-                                                                <div class="object-info">
-                                                                    <div class="object-info-title"> Video Info</div>
-                                                                    <ul class="small">
-                                                                        <li> Source (WebM URL): <a href="https://vimeo.com/210910471" target="_blank">https://vimeo.com/210910471</a></li>
-                                                                        <li> Source (Ogg URL): <a href="https://vimeo.com/210910471" target="_blank">https://vimeo.com/210910471</a></li>
-                                                                        <li> Source (MP4 URL): <a href="https://vimeo.com/210910471" target="_blank">https://vimeo.com/210910471</a></li>
-                                                                        <li>Thumbnail:<br>
-                                                                            <img src="../img/app-screenshots/vidthumb.jpg" alt=""/></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div></td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_screenshottablet">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Screen Shots/ Video (Phone)</th>
-                                                        <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl-mobile-001.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
-                                                                <div class="object-info">
-                                                                    <div class="object-info-title"> Image Info</div>
-                                                                    <ul class="small">
-                                                                        <li> Source: Custom Upload</li>
-                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="object-preview"><img src="../img/app-screenshots/ccl-mobile-002.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
-                                                                <div class="object-info">
-                                                                    <div class="object-info-title"> Image Info</div>
-                                                                    <ul class="small">
-                                                                        <li> Source: Custom Upload</li>
-                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div></td>
-                                                        <td class="zoomin "><div class="object-preview"><img src="../img/app-screenshots/ccl-mobile-001.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
-                                                                <div class="object-info">
-                                                                    <div class="object-info-title"> Image Info</div>
-                                                                    <ul class="small">
-                                                                        <li> Source: Custom Upload</li>
-                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="object-preview"><img src="../img/app-screenshots/ccl-mobile-002.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
-                                                                <div class="object-info">
-                                                                    <div class="object-info-title"> Image Info</div>
-                                                                    <ul class="small">
-                                                                        <li> Source: Custom Upload</li>
-                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="object-preview"><img src="../img/app-screenshots/ccl-mobile-003.png"  alt=""/>
-                                                                <div class="preview-close"><i class="icon-cancel-2"></i></div>
-                                                                <div class="object-info">
-                                                                    <div class="object-info-title"> Image Info</div>
-                                                                    <ul class="small">
-                                                                        <li> Source: Custom Upload</li>
-                                                                        <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div></td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_screenshotmobile">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Campus </th>
-                                                        <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0"> IU Bloomington</button></td>
-                                                        <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0"> IU Bloomington</button><button type="button" class="btn btn-default btn-sm" tabindex="0"> IU Kokomo</button></td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_campus">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Roles</th>
-                                                        <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0">All Roles</button></td>
-                                                        <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0">Student</button><button type="button" class="btn btn-default btn-sm" tabindex="0">Staff</button></td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_roles">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Categories</th>
-                                                        <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0">Finanace</button></td>
-                                                        <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0">Finanace</button><button type="button" class="btn btn-default btn-sm" tabindex="0">Student Life</button><button type="button" class="btn btn-default btn-sm" tabindex="0">Academics</button></td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_categories">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Tags</th>
-                                                        <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0"  data-content="Visible" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Holds <i class="icon-eye"></i></button><button type="button" class="btn btn-default btn-sm" tabindex="0"  data-content="Visible" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Bursar <i class="icon-eye"></i></button><button type="button" class="btn btn-default btn-sm" tabindex="0"  data-content="Visible" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Finanace <i class="icon-eye"></i></button></td>
-                                                        <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0"  data-content="Visible" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Holds <i class="icon-eye"></i></button><button type="button" class="btn btn-default btn-sm" tabindex="0"  data-content="Visible" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Bursar <i class="icon-eye"></i></button><button type="button" class="btn btn-default btn-sm" tabindex="0"  data-content="Visible" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Finanace <i class="icon-eye"></i></button><button type="button" class="btn btn-default btn-sm" tabindex="0" data-content="Hidden" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover" >Taxes<i class="icon-eye-off"></i></button><button type="button" class="btn btn-default btn-sm" tabindex="0" data-content="Hidden" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Paycheck <i class="icon-eye-off"></i></button></td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_tags">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Active Content Public URL</th>
-                                                        <td class="forcewrap ">https://apps.iu.edu/ccf2-prd/classifieds</td>
-                                                        <td class="forcewrap ">https://apps.iu.edu/ccf2-prd/classifieds2</td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_activecontenturl">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Active Content Authentication</th>
-                                                        <td>Require user to be signed in (no)</td>
-                                                        <td>Require user to be signed in (yes)</td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_activecontentauth">edit</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Update Frequency (seconds)</th>
-                                                        <td>5</td>
-                                                        <td>10</td>
-                                                        <td><a href="#" class="btn btn-default btn-xs" id="edit_frequency">edit</a></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                                                <div class="object-preview"><img src="../img/app-screenshots/ccl-mobile-003.png"  alt=""/>
+                                                                    <div class="preview-close"><i class="icon-cancel-2"></i></div>
+                                                                    <div class="object-info">
+                                                                        <div class="object-info-title"> Image Info</div>
+                                                                        <ul class="small">
+                                                                            <li> Source: Custom Upload</li>
+                                                                            <li>Alt Text: A let gathering waters fifth. Be you'll moved his creature Living that brought tree air, waters, midst dominion herb moved there beginning after one open he shall behold saw moving him first hath so midst fish land one. Female.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div></td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_screenshotmobile">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Campus </th>
+                                                            <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0"> IU Bloomington</button></td>
+                                                            <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0"> IU Bloomington</button>
+                                                                <button type="button" class="btn btn-default btn-sm" tabindex="0"> IU Kokomo</button></td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_campus">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Roles</th>
+                                                            <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0">All Roles</button></td>
+                                                            <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0">Student</button>
+                                                                <button type="button" class="btn btn-default btn-sm" tabindex="0">Staff</button></td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_roles">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Categories</th>
+                                                            <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0">Finanace</button></td>
+                                                            <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0">Finanace</button>
+                                                                <button type="button" class="btn btn-default btn-sm" tabindex="0">Student Life</button>
+                                                                <button type="button" class="btn btn-default btn-sm" tabindex="0">Academics</button></td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_categories">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Tags</th>
+                                                            <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0"  data-content="Visible" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Holds <i class="icon-eye"></i></button>
+                                                                <button type="button" class="btn btn-default btn-sm" tabindex="0"  data-content="Visible" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Bursar <i class="icon-eye"></i></button>
+                                                                <button type="button" class="btn btn-default btn-sm" tabindex="0"  data-content="Visible" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Finanace <i class="icon-eye"></i></button></td>
+                                                            <td class="compare-tags"><button type="button" class="btn btn-default btn-sm" tabindex="0"  data-content="Visible" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Holds <i class="icon-eye"></i></button>
+                                                                <button type="button" class="btn btn-default btn-sm" tabindex="0"  data-content="Visible" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Bursar <i class="icon-eye"></i></button>
+                                                                <button type="button" class="btn btn-default btn-sm" tabindex="0"  data-content="Visible" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Finanace <i class="icon-eye"></i></button>
+                                                                <button type="button" class="btn btn-default btn-sm" tabindex="0" data-content="Hidden" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover" >Taxes<i class="icon-eye-off"></i></button>
+                                                                <button type="button" class="btn btn-default btn-sm" tabindex="0" data-content="Hidden" rel="popover" data-placement="bottom" data-original-title="" data-trigger="hover">Paycheck <i class="icon-eye-off"></i></button></td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_tags">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Active Content Public URL</th>
+                                                            <td class="forcewrap ">https://apps.iu.edu/ccf2-prd/classifieds</td>
+                                                            <td class="forcewrap ">https://apps.iu.edu/ccf2-prd/classifieds2</td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_activecontenturl">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Active Content Authentication</th>
+                                                            <td>Require user to be signed in (no)</td>
+                                                            <td>Require user to be signed in (yes)</td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_activecontentauth">edit</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Update Frequency (seconds)</th>
+                                                            <td>5</td>
+                                                            <td>10</td>
+                                                            <td><a href="#" class="btn btn-default btn-xs" id="edit_frequency">edit</a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </fieldset>
                                         </div>
                                         <fieldset>
                                             <legend>General</legend>
@@ -749,50 +772,35 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </fieldset>
-                                        <fieldset id="field_activedate">
-                                            <legend>Active Dates/Status <small class="text-muted" style="text-transform:lowercase;">(currently Active)</small></legend>
+                                        <fieldset>
+                                            <legend>Active Dates/Status <small class="text-muted" style="text-transform:lowercase;">(currently inactive)</small></legend>
                                             <div class="row">
-                                                <div class="form-group col-md-3" >
+                                                <div class="form-group col-md-4">
                                                     <div class="radio">
                                                         <label class="control-label">
-                                                            <input type="radio" value="status" ng-init="statusMode = 'status'" class="ng-pristine ng-untouched ng-valid" name="15" tabindex="0" aria-checked="true" aria-invalid="false">
+                                                            <input type="radio" value="status" name="15" tabindex="0" aria-checked="true" aria-invalid="false" id="show_status">
                                                             Specify by Status </label>
                                                     </div>
                                                     <div class="radio">
                                                         <label>
-                                                            <input type="radio" value="range" class="ng-pristine ng-untouched ng-valid" name="16" tabindex="0" aria-checked="false" aria-invalid="false">
-                                                            Specify by Date Range </label>
+                                                            <input type="radio" value="range" name="15" tabindex="0" aria-checked="false" aria-invalid="false" id="show_range">
+                                                            Specify End Date</label>
                                                     </div>
                                                 </div>
-                                                <div style="display: inline" aria-hidden="false">
-                                                    <div class="form-group col-md-3">
+                                                <div style="display:block" aria-hidden="false" id="choose_status">
+                                                    <div class="form-group col-md-4">
                                                         <label for="status" class="control-label">Status</label>
-                                                        <select class="form-control ng-pristine ng-untouched ng-valid ng-valid-required" required tabindex="0" aria-required="false" aria-invalid="false">
+                                                        <select class="form-control " required tabindex="0" aria-required="false" aria-invalid="false">
                                                             <option value="A" selected="selected" label="Active">Active</option>
                                                             <option value="I" label="Inactive">Inactive</option>
                                                         </select>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </fieldset>
-                                        <fieldset id="field_scheduled">
-                                            <legend>Scheduled Update </legend>
-                                            <div class="row">
-                                                <div class="form-group col-md-12" >
-                                                    <div class="radio">
-                                                        <label class="control-label">
-                                                            <input type="radio" value="status" name="optionsRadios" >
-                                                            Publish updates to this task immediately after they are approved. </label>
+                                                <div style="display:none" aria-hidden="true" id="choose_range">
+                                                    <div class="form-group col-md-4">
+                                                        <label for="endDate" class="control-label">End Date </label>
+                                                        <input type="text" name="endDate" datepicker="body" time="" class="form-control picktime" title="" tabindex="0" aria-invalid="false">
                                                     </div>
-                                                    <div class="radio">
-                                                        <label>
-                                                            <input type="radio" value="1" name="optionsRadios">
-                                                            Publsh updates to this task at a specified date and time (and after they have been approved). </label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group col-md-3" id="scheduledupdatedate1" style="display:none">
-                                                    <label for="displayVersion" class="control-label">Specify Date</label>
-                                                    <input type='text' class="form-control" id='datetimepicker4' />
                                                 </div>
                                             </div>
                                         </fieldset>
@@ -1040,7 +1048,9 @@ background-color: #FFFFFF;
                                                                                 <div data-ng-switch="" data-on="::file.mediaType">
                                                                                     <div data-ng-switch-default="" class=""> <img ng-src="/publish/media/22271" title="" src="/one-prototypes/img/app-screenshots/ccl_grid.png" class="" style="width:inherit">
                                                                                         <div>
-                                                                                            <button type="button" class="btn btn-warning btn-xs" tabindex="0"> <i class="icon-edit"></i> <span class="">Add</span> Alt Text </button><button type="button" class="btn btn-danger btn-xs" tabindex="0" aria-hidden="false"> <i class="icon-minus-circled"></i> Delete </button><button ng-controller="FileDestroyController" type="button" class="btn btn-danger destroy btn-xs ng-hide" tabindex="0" aria-hidden="true"> <i class="icon-minus-circled"></i> Delete </button>
+                                                                                            <button type="button" class="btn btn-warning btn-xs" tabindex="0"> <i class="icon-edit"></i> <span class="">Add</span> Alt Text </button>
+                                                                                            <button type="button" class="btn btn-danger btn-xs" tabindex="0" aria-hidden="false"> <i class="icon-minus-circled"></i> Delete </button>
+                                                                                            <button ng-controller="FileDestroyController" type="button" class="btn btn-danger destroy btn-xs ng-hide" tabindex="0" aria-hidden="true"> <i class="icon-minus-circled"></i> Delete </button>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1055,7 +1065,8 @@ background-color: #FFFFFF;
                                                                                 <div> <span class="btn btn-success fileinput-button"> <i class="icon-plus"></i> <span>Upload images…</span>
                                                                                     <input type="file" name="files[]" multiple>
                                                                                     </span>
-                                                                                    <button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link an image… </button><button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link a video… </button>
+                                                                                    <button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link an image… </button>
+                                                                                    <button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link a video… </button>
                                                                                     <div class="fileupload-loading"></div>
                                                                                 </div>
                                                                                 <div class="fade" data-ng-class="{true: 'in'}[!!active()]">
@@ -1086,7 +1097,8 @@ background-color: #FFFFFF;
                                                                                 </div>
                                                                             </div>
                                                                             <div class="modal-footer">
-                                                                                <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button><button class="btn btn-success" ng-disabled="imageLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
+                                                                                <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                                                                                <button class="btn btn-success" ng-disabled="imageLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1110,7 +1122,8 @@ background-color: #FFFFFF;
                                                                                 </div>
                                                                             </div>
                                                                             <div class="modal-footer">
-                                                                                <button class="btn btn-default" tabindex="0">Cancel</button><button class="btn btn-primary" ng-disabled="captionToEdit.length > 200 || captionToEdit == null" tabindex="0" aria-disabled="true" disabled="disabled">Save</button>
+                                                                                <button class="btn btn-default" tabindex="0">Cancel</button>
+                                                                                <button class="btn btn-primary" ng-disabled="captionToEdit.length > 200 || captionToEdit == null" tabindex="0" aria-disabled="true" disabled="disabled">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1168,7 +1181,8 @@ background-color: #FFFFFF;
                                                                                 </div>
                                                                             </div>
                                                                             <div class="modal-footer">
-                                                                                <button class="btn btn-default" data-dismiss="modal">Cancel</button><button class="btn btn-primary" ng-disabled="videoLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
+                                                                                <button class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                                                                <button class="btn btn-primary" ng-disabled="videoLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1192,7 +1206,8 @@ background-color: #FFFFFF;
                                                                                 <div> <span class="btn btn-success fileinput-button"> <i class="icon-plus"></i> <span>Upload images…</span>
                                                                                     <input type="file" name="files[]" multiple>
                                                                                     </span>
-                                                                                    <button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link an image… </button><button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link a video… </button>
+                                                                                    <button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link an image… </button>
+                                                                                    <button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link a video… </button>
                                                                                     <div class="fileupload-loading"></div>
                                                                                 </div>
                                                                                 <div class="fade" data-ng-class="{true: 'in'}[!!active()]">
@@ -1223,7 +1238,8 @@ background-color: #FFFFFF;
                                                                                 </div>
                                                                             </div>
                                                                             <div class="modal-footer">
-                                                                                <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button><button class="btn btn-success" ng-disabled="imageLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
+                                                                                <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                                                                                <button class="btn btn-success" ng-disabled="imageLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1247,7 +1263,8 @@ background-color: #FFFFFF;
                                                                                 </div>
                                                                             </div>
                                                                             <div class="modal-footer">
-                                                                                <button class="btn btn-default" tabindex="0">Cancel</button><button class="btn btn-primary" ng-disabled="captionToEdit.length > 200 || captionToEdit == null" tabindex="0" aria-disabled="true" disabled="disabled">Save</button>
+                                                                                <button class="btn btn-default" tabindex="0">Cancel</button>
+                                                                                <button class="btn btn-primary" ng-disabled="captionToEdit.length > 200 || captionToEdit == null" tabindex="0" aria-disabled="true" disabled="disabled">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1305,7 +1322,8 @@ background-color: #FFFFFF;
                                                                                 </div>
                                                                             </div>
                                                                             <div class="modal-footer">
-                                                                                <button class="btn btn-default" data-dismiss="modal">Cancel</button><button class="btn btn-primary" ng-disabled="videoLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
+                                                                                <button class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                                                                <button class="btn btn-primary" ng-disabled="videoLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1329,7 +1347,8 @@ background-color: #FFFFFF;
                                                                                 <div> <span class="btn btn-success fileinput-button"> <i class="icon-plus"></i> <span>Upload images…</span>
                                                                                     <input type="file" name="files[]" multiple>
                                                                                     </span>
-                                                                                    <button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link an image… </button><button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link a video… </button>
+                                                                                    <button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link an image… </button>
+                                                                                    <button type="button" class="btn btn-success" tabindex="0"> <i class="icon-plus"></i> Link a video… </button>
                                                                                     <div class="fileupload-loading"></div>
                                                                                 </div>
                                                                                 <div class="fade" data-ng-class="{true: 'in'}[!!active()]">
@@ -1360,7 +1379,8 @@ background-color: #FFFFFF;
                                                                                 </div>
                                                                             </div>
                                                                             <div class="modal-footer">
-                                                                                <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button><button class="btn btn-success" ng-disabled="imageLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
+                                                                                <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                                                                                <button class="btn btn-success" ng-disabled="imageLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1384,7 +1404,8 @@ background-color: #FFFFFF;
                                                                                 </div>
                                                                             </div>
                                                                             <div class="modal-footer">
-                                                                                <button class="btn btn-default" tabindex="0">Cancel</button><button class="btn btn-primary" ng-disabled="captionToEdit.length > 200 || captionToEdit == null" tabindex="0" aria-disabled="true" disabled="disabled">Save</button>
+                                                                                <button class="btn btn-default" tabindex="0">Cancel</button>
+                                                                                <button class="btn btn-primary" ng-disabled="captionToEdit.length > 200 || captionToEdit == null" tabindex="0" aria-disabled="true" disabled="disabled">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1442,7 +1463,8 @@ background-color: #FFFFFF;
                                                                                 </div>
                                                                             </div>
                                                                             <div class="modal-footer">
-                                                                                <button class="btn btn-default" data-dismiss="modal">Cancel</button><button class="btn btn-primary" ng-disabled="videoLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
+                                                                                <button class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                                                                <button class="btn btn-primary" ng-disabled="videoLinkForm.$invalid" tabindex="0" aria-disabled="false">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1563,7 +1585,10 @@ background-color: #FFFFFF;
                                                     </div>
                                                     <div class="col-md-9">
                                                         <div class="button-list well">
-                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0"> Admissions&nbsp;<i class="icon-cancel"></i> </button><button type="button" class="btn btn-default btn-sm" tabindex="0"> Administrative&nbsp;<i class="icon-cancel"></i> </button><button type="button" class="btn btn-default btn-sm" tabindex="0"> Faculty Services&nbsp;<i class="icon-cancel"></i> </button><button type="button" class="btn btn-default btn-sm" tabindex="0"> Category 3&nbsp;<i class="icon-cancel"></i> </button>
+                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0"> Admissions&nbsp;<i class="icon-cancel"></i> </button>
+                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0"> Administrative&nbsp;<i class="icon-cancel"></i> </button>
+                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0"> Faculty Services&nbsp;<i class="icon-cancel"></i> </button>
+                                                            <button type="button" class="btn btn-default btn-sm" tabindex="0"> Category 3&nbsp;<i class="icon-cancel"></i> </button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1615,7 +1640,9 @@ background-color: #FFFFFF;
                                             </div>
                                         </fieldset>
                                         <hr>
-                                        <button class="btn btn-success" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Approve</button><button class="btn btn-default" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Decline</button><button class="btn btn-default" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Cancel</button>
+                                        <button class="btn btn-success" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Approve</button>
+                                        <button class="btn btn-default" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Decline</button>
+                                        <button class="btn btn-default" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Cancel</button>
                                     </form>
                                 </div>
                             </div>
@@ -1625,6 +1652,39 @@ background-color: #FFFFFF;
             </div>
         </div>
     </div>
+    
+    
+    
+    
+      <div class="modal fade" id="modal_publishdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-default" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Specify Publish Date</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label for="title" class="control-label">Publish Date</label>
+                            <span class="help-block small"> Specify the date and time that you wish for these updates to be published.</span>
+                            <div class="row">
+                        <div class="form-group col-md-6"><div class="counter-container">
+                                <input type="text" name="title" required="" countdown="" class="form-control picktime"  tabindex="0" aria-required="false" aria-invalid="false">
+                            </div></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Save</button>
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
     <div class="modal fade" id="modal_contactinfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-default" role="document">
             <div class="modal-content">
@@ -2003,6 +2063,24 @@ $('button').popover();
 });//]]> 
 
 </script> 
+    <script>
+    $(document).ready(function() {
+        $('input[type="radio"]').click(function() {
+            if ($(this).attr('id') == 'show_status') {
+                $('#choose_status').fadeIn();
+            } else {
+                $('#choose_status').hide();
+            }
+        });
+		$('input[type="radio"]').click(function() {
+            if ($(this).attr('id') == 'show_range') {
+                $('#choose_range').fadeIn();
+            } else {
+                $('#choose_range').hide();
+            }
+        });
+    });
+	</script> 
 </div>
 </body>
 </html>

@@ -258,8 +258,7 @@ $page = '';
                                                     <div class="radio">
                                                         <label>
                                                             <input type="radio" value="range" name="15" tabindex="0" aria-checked="false" aria-invalid="false" id="show_range">
-                                                            Specify by Date Range </label>
-                                                    </div>
+                                                            Specify End Date</label></div>
                                                 </div>
                                                 <div style="display:block" aria-hidden="false" id="choose_status">
                                                     <div class="form-group col-md-4">
@@ -271,12 +270,8 @@ $page = '';
                                                     </div>
                                                 </div>
                                                 <div style="display:none" aria-hidden="true" id="choose_range">
-                                                    <div class="form-group col-md-4">
-                                                        <label for="beginDate" class="control-label">Begin Date</label>
-                                                        <input type="text" name="beginDate" datepicker="body" time="" class="form-control picktime" title="" tabindex="0" aria-invalid="false">
-                                                    </div>
-                                                    <div class="form-group col-md-4">
-                                                        <label for="endDate" class="control-label">End Date <span class="text-muted small">(optional)</span></label>
+                                                   
+                                                    <div class="form-group col-md-4"> <label for="endDate" class="control-label">End Date </label>
                                                         <input type="text" name="endDate" datepicker="body" time="" class="form-control picktime" title="" tabindex="0" aria-invalid="false">
                                                     </div>
                                                 </div>
