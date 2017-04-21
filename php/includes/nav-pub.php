@@ -21,16 +21,10 @@
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
                     </ul>
                 </li>
                 <li data-toggle="collapse" data-target="#nav-branding" class="collapsed"><a href="#">Data <span class="arrow"></span></a>
                     <ul <?php if ($section == 'branding') {echo 'class="sub-menu"';} else {echo 'class="sub-menu collapse"';} ?> id="nav-branding">
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
@@ -41,16 +35,10 @@
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
                     </ul>
                 </li>
                 <li data-toggle="collapse" data-target="#nav-branding" class="collapsed"><a href="#">Advanced <span class="arrow"></span></a>
                     <ul <?php if ($section == 'branding') {echo 'class="sub-menu"';} else {echo 'class="sub-menu collapse"';} ?> id="nav-branding">
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">asdfasdf</a></li>
