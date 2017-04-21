@@ -65,8 +65,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -77,7 +76,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -103,8 +102,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -115,7 +113,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -140,7 +138,7 @@ $page = '';
                                                 </tbody>
                                             </table></td>
                                         <td> Active</td>
-                                        <td><i class="icon-ok"><span class="sr-only">yes</span></i></td>
+                                        <td>07/15/2017 5:00am</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -175,8 +173,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -187,7 +184,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -211,8 +208,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Inactive</td>
-                                        <td>&nbsp;</td>
+                                        <td> Inactive</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -223,7 +219,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -250,7 +246,7 @@ $page = '';
                                                 </tbody>
                                             </table></td>
                                         <td> Active</td>
-                                        <td><i class="icon-ok"><span class="sr-only">yes</span></i></td>
+                                        <td>Upon admin approval</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -285,8 +281,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -297,7 +292,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -321,8 +316,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td>Inactive</td>
-                                        <td>&nbsp;</td>
+                                        <td>Inactive</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -333,7 +327,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -357,8 +351,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -369,7 +362,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -394,7 +387,7 @@ $page = '';
                                                 </tbody>
                                             </table></td>
                                         <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td>07/18/2017 5:00am</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -430,7 +423,7 @@ $page = '';
                                                 </tbody>
                                             </table></td>
                                         <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td>07/18/2017 5:00am</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -466,7 +459,7 @@ $page = '';
                                                 </tbody>
                                             </table></td>
                                         <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td>07/18/2017 5:00am</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -501,8 +494,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -513,7 +505,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -537,8 +529,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -549,7 +540,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -573,8 +564,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Inactive</td>
-                                        <td>&nbsp;</td>
+                                        <td> Inactive</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -585,7 +575,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -609,8 +599,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Inactive</td>
-                                        <td>&nbsp;</td>
+                                        <td> Inactive</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -621,7 +610,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -646,7 +635,7 @@ $page = '';
                                                 </tbody>
                                             </table></td>
                                         <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td>Upon admin approval</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -681,8 +670,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -693,7 +681,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -717,8 +705,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -729,7 +716,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -753,8 +740,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -765,7 +751,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -789,8 +775,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Inactive</td>
-                                        <td>&nbsp;</td>
+                                        <td> Inactive</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -801,7 +786,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -825,8 +810,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -837,7 +821,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -861,8 +845,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -873,7 +856,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -897,8 +880,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -909,7 +891,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -933,8 +915,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -945,7 +926,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -969,8 +950,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -981,7 +961,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -1005,8 +985,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -1017,7 +996,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -1041,8 +1020,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -1053,7 +1031,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -1077,8 +1055,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -1089,7 +1066,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -1113,8 +1090,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -1125,7 +1101,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -1149,8 +1125,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Inactive</td>
-                                        <td>&nbsp;</td>
+                                        <td> Inactive</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -1161,7 +1136,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -1185,8 +1160,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -1197,7 +1171,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -1221,8 +1195,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -1233,7 +1206,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -1257,8 +1230,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -1269,7 +1241,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -1295,8 +1267,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -1307,7 +1278,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>
@@ -1333,8 +1304,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Active</td>
-                                        <td>&nbsp;</td>
+                                        <td> Active</td> <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
                                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
@@ -1345,7 +1315,7 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Cancel Pending Updates</a></li>
+                                      
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
                                                 </ul>

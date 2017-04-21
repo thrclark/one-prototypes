@@ -294,7 +294,7 @@ $page = '';
                                             </div>--></td>
                                     </tr>
                                     <tr >
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Capital Asset Management<span aria-hidden="false"> (FR)</span></div>
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Capital Asset Management<span aria-hidden="false" class="small text-muted"> (FR)</span></div>
                                             <table class="small taskmeta">
                                                 <tbody>
                                                     <tr>
@@ -335,7 +335,7 @@ $page = '';
                                             </div>--></td>
                                     </tr>
                                     <tr >
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> IU Peer Coaches<span aria-hidden="false"> (University Division)</span></div>
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> IU Peer Coaches <span aria-hidden="false" class="small text-muted">(University Division)</span></div>
                                             <table class="small taskmeta">
                                                 <tbody>
                                                     <tr>
