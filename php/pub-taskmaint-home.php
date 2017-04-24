@@ -1344,8 +1344,8 @@ $page = '';
                     <p> This task has previously been edited, and is scheduled to become effective on 09/13/2017 at 5:00am.  Choose which version of this task you wish to edit: </p>
                     <div class="well" style="    margin-left: 80px;
     margin-right: 80px;">
-                        <button type="button" class="btn btn-default btn-lg btn-block">Current</button>
-                        <button type="button" class="btn btn-default btn-lg btn-block">Pending</button>
+                        <a href="pub-taskmaint-edit.php" class="btn btn-default btn-lg btn-block">Current</a>
+                        <a href="#" class="btn btn-default btn-lg btn-block">Pending</a>
                     </div>
                 </div>
             </div>
