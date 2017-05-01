@@ -1276,10 +1276,9 @@ background-color: #FFFFFF;
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Save</button>
-                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+                </div> <div class="modal-footer">
+                      <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>  <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Save</button>
+                
                 </div>
             </div>
         </div>

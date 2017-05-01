@@ -1124,7 +1124,7 @@ $page = '';
                                             </div>
                                         </fieldset>
                                         <hr>
-                                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Save <span class="caret"></span> </button>
+                                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal_publishdate"> Save...</button>
                                         <ul class="dropdown-menu">
                                             <li><a href="#">Publish Immediately (Upon Approval)</a></li>
                                             <li><a href="#"  data-toggle="modal" data-target="#modal_publishdate">Specify Publish Date</a></li>
@@ -1149,18 +1149,38 @@ $page = '';
                 <div class="modal-body">
                     <div class="row">
                         <div class="form-group col-md-12">
+                            <label class="control-label " for="api_account_type"> Publish Date Options </label>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="cars" value="1">
+                                    Publish immediately upon admin approval </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="cars" value="2">
+                                    I will manually release these changes when ready </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="cars" value="3">
+                                    Specify publish date </label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12" id="pubdate_widget3"  style="display:none">
                             <label for="title" class="control-label">Publish Date</label>
-                            <span class="help-block small"> Specify the date and time that you wish for these updates to be published.</span>
+                            <span class="help-block small"> Specify the date and time that you wish for these updates to be published. Note that if this task is not reviewed for approval before this date, it will be published immediately upon approval.</span>
                             <div class="row">
-                        <div class="form-group col-md-6"><div class="counter-container">
-                                <input type="text" name="title" required="" countdown="" class="form-control picktime"  tabindex="0" aria-required="false" aria-invalid="false">
-                            </div></div></div>
+                                <div class="form-group col-md-6">
+                                    <div class="counter-container">
+                                        <input type="text" name="title" required="" countdown="" class="form-control picktime"  tabindex="0" aria-required="false" aria-invalid="false">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Save</button>
-                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+                </div> <div class="modal-footer">
+                      <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>  <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Save</button>
+                
                 </div>
             </div>
         </div>
@@ -1333,6 +1353,28 @@ $page = '';
             });
             
      </script> 
+     
+     
+     
+    
+    <script type="text/javascript">//<![CDATA[
+
+
+
+$(document).ready(function() {
+
+    $("input[name$='cars']").click(function() {
+        var test = $(this).val();
+
+        $("#pubdate_widget3").slideUp();
+        $("#pubdate_widget" + test).slideDown();
+    });
+});
+
+</script> 
+
+
+
 </div>
 </body>
 </html>

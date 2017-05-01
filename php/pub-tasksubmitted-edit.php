@@ -108,6 +108,8 @@ background-color: #FFFFFF;
                                                 <p>Updates to this task will become effective on the following date: 07/14/2017 12:01pm (<a href="#" data-toggle="modal" data-target="#modal_publishdate">change effective date</a>).</p>
                                                 <p class="text-muted">-- or-- </p>
                                                 <p>Updates to this task will become effective immediately upon approval (<a href="#" data-toggle="modal" data-target="#modal_publishdate">set effective date</a>).</p>
+                                                <p class="text-muted">-- or-- </p>
+                                                <p>An effective date for these updates has not yet been specified (<a href="#" data-toggle="modal" data-target="#modal_publishdate">set effective date</a>).</p>
                                             </fieldset>
                                             <fieldset>
                                                 <legend>Summary of Changes</legend>
@@ -1660,8 +1662,26 @@ background-color: #FFFFFF;
                 <div class="modal-body">
                     <div class="row">
                         <div class="form-group col-md-12">
+                            <label class="control-label " for="api_account_type"> Publish Date Options </label>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="cars" value="1">
+                                    Publish immediately upon admin approval </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="cars" value="2">
+                                    Set post-approval publish date to TBD </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="cars" value="3">
+                                    Specify post-approval publish date </label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12" id="pubdate_widget3"  style="display:none">
                             <label for="title" class="control-label">Publish Date</label>
-                            <span class="help-block small"> Specify the date and time that you wish for these updates to be published.</span>
+                            <span class="help-block small"> Specify the date and time that you wish for these updates to be published. Note that if this task is not reviewed for approval before this date, it will be published immediately upon approval.</span>
                             <div class="row">
                                 <div class="form-group col-md-6">
                                     <div class="counter-container">
@@ -1673,8 +1693,8 @@ background-color: #FFFFFF;
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Save</button>
                     <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Save</button>
                 </div>
             </div>
         </div>
@@ -2075,6 +2095,21 @@ $('button').popover();
         });
     });
 	</script> 
+    <script type="text/javascript">//<![CDATA[
+
+
+
+$(document).ready(function() {
+
+    $("input[name$='cars']").click(function() {
+        var test = $(this).val();
+
+        $("#pubdate_widget3").slideUp();
+        $("#pubdate_widget" + test).slideDown();
+    });
+});
+
+</script> 
 </div>
 </body>
 </html>

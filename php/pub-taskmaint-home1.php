@@ -22,10 +22,39 @@ $page = '';
                 </div>
                 <div class="col-md-9">
                     <div class="primary-content">
+                    
+                     <div class="row section-head">
+                                <div class="col-xs-12 col-sm-9 section-header">
+                                    <h2 class="h3">Maintain Tasks</h2>
+                                </div>
+                                <div class="col-xs-12  col-sm-3 section-controls"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default"><i class="fa fa-plus" aria-hidden="true"></i> Task</a></div>
+                            </div>
+                    
+                    
+                      <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">All </a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Submitted</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Featured</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">...</div>
+    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+  </div>
+  
+  
+  <br><br><br><br><br><br><br><br><br><br>
+  
+  
                         <section style="display:;" id="all_verifications">
                             <div class="row section-head">
                                 <div class="col-xs-12 col-sm-9 section-header">
-                                    <h2 class="h3">All Tasks</h2>
+                                    <h3 class="h4">All Tasks</h3>
                                 </div>
                                 <div class="col-xs-12  col-sm-3 section-controls"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default"><i class="fa fa-plus" aria-hidden="true"></i> Task</a></div>
                             </div>
@@ -666,7 +695,7 @@ $page = '';
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
-                                                    <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
+                                                     <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
@@ -706,7 +735,7 @@ $page = '';
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
                                                     <li class="disabled"><a href="#" class="">Manually Publish Update Now</a></li>
-                                                    <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
+                                                      <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
@@ -814,9 +843,10 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Draft Task Summary</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Task Summary</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#">Manually Publish Task Now</a></li>
-                                                    <li><a href="#" data-toggle="modal" data-target="#modal_publishdate1">Set Task Release Date</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_publishdate1">Set Pending Update Release Date</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -1507,6 +1537,15 @@ $page = '';
                     <div class="row">
                         <div class="form-group col-md-12">
                             <label class="control-label " for="api_account_type"> Publish Date Options </label>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
                             <div class="radio">
                                 <label>
                                     <input type="radio" name="cars" value="2">
@@ -1518,54 +1557,7 @@ $page = '';
                                     Specify publish date </label>
                             </div>
                         </div>
-                        <div class="form-group col-md-12 pubdate_widget3" id=""  style="display:none">
-                            <label for="title" class="control-label">Publish Date</label>
-                            <span class="help-block small"> Specify the date and time that you wish for these updates to be published.</span>
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    <div class="counter-container">
-                                        <input type="text" name="title" required="" countdown="" class="form-control picktime"  tabindex="0" aria-required="false" aria-invalid="false">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Save</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="modal_publishdate2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog modal-default" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <h4 class="modal-title">Specify Publish Date</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="form-group col-md-12">
-                            <label class="control-label " for="api_account_type"> Publish Date Options </label>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="cars" value="1">
-                                    Publish immediately upon admin approval</label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="cars" value="2">
-                                    I will manually release these changes when ready</label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="cars" value="3">
-                                    Specify publish date </label>
-                            </div>
-                        </div>
-                        <div class="form-group col-md-12 pubdate_widget3" id=""  style="display:none">
+                        <div class="form-group col-md-12" id="pubdate_widget3"  style="display:none">
                             <label for="title" class="control-label">Publish Date</label>
                             <span class="help-block small"> Specify the date and time that you wish for these updates to be published. Note that if this task is not reviewed for approval before this date, it will be published immediately upon approval.</span>
                             <div class="row">
@@ -1585,6 +1577,69 @@ $page = '';
             </div>
         </div>
     </div>
+    
+    
+    
+    
+    
+     <div class="modal fade" id="modal_publishdate2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-default" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Specify Publish Date</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label class="control-label " for="api_account_type"> Publish Date Options </label>
+                            
+                            
+                            
+                            
+                            
+                            
+                               <div class="radio">
+                                <label>
+                                    <input type="radio" name="cars" value="2">
+                                   Publish immediately upon admin approval</label>
+                            </div>
+                            
+                            
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="cars" value="2">
+                                    I will manually release these changes when ready</label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="cars" value="3">
+                                    Specify publish date </label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12" id="pubdate_widget3"  style="display:none">
+                            <label for="title" class="control-label">Publish Date</label>
+                            <span class="help-block small"> Specify the date and time that you wish for these updates to be published. Note that if this task is not reviewed for approval before this date, it will be published immediately upon approval.</span>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <div class="counter-container">
+                                        <input type="text" name="title" required="" countdown="" class="form-control picktime"  tabindex="0" aria-required="false" aria-invalid="false">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
     <div class="modal fade" id="modal_cancelupdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-default" role="document">
             <div class="modal-content">
@@ -1606,21 +1661,12 @@ $page = '';
 
 $(document).ready(function() {
 
-    $("#modal_publishdate1 input[name$='cars']").click(function() {
+    $("input[name$='cars']").click(function() {
         var test = $(this).val();
 
-        $("#modal_publishdate1 .pubdate_widget3").slideUp();
-        $("#modal_publishdate1 .pubdate_widget" + test).slideDown();
+        $("#pubdate_widget3").slideUp();
+        $("#pubdate_widget" + test).slideDown();
     });
-	
-	  $("#modal_publishdate2 input[name$='cars']").click(function() {
-        var test = $(this).val();
-
-        $("#modal_publishdate2 .pubdate_widget3").slideUp();
-        $("#modal_publishdate2 .pubdate_widget" + test).slideDown();
-    });
-	
-	
 });
 
 </script> 
@@ -1659,12 +1705,6 @@ $(document).ready(function() {
         });
     });
 </script> 
-    <script type='text/javascript'>
-     $(function() {
-                $('.picktime').datetimepicker();
-            });
-            
-     </script> 
 </div>
 </body>
 </html>
