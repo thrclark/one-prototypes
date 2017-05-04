@@ -93,7 +93,7 @@ background-color: #FFFFFF;
                 </div>
                 <div class="col-md-9">
                     <div class="primary-content" style="min-height:500px">
-                        <section style="display:;" id="all_verifications">
+                        <section>
                             <div class="row section-head">
                                 <div class="col-xs-12 col-sm-9 section-header">
                                     <h2 class="h3">Resubmit Task </h2>

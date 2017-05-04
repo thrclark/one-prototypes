@@ -54,7 +54,7 @@ $page = '';
                         <br>
                         <br>
                         <br>
-                        <section style="display:;" id="all_verifications">
+                        <section>
                             <div class="row section-head">
                                 <div class="col-xs-12 col-sm-9 section-header">
                                     <h3 class="h4">All Tasks</h3>

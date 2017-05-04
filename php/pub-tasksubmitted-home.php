@@ -64,7 +64,7 @@ $page = '';
                 </div>
                 <div class="col-md-9">
                     <div class="primary-content">
-                        <section style="display:;" id="all_verifications">
+                        <section>
                             <div class="row section-head">
                                 <div class="col-xs-12 col-sm-9 section-header">
                                     <h2 class="h3">Submitted Tasks</h2>
