@@ -81,7 +81,7 @@ $page = '';
                                     <tr>
                                         <th scope="row">Title</th>
                                         <th scope="row">Type</th>
-                                        <th scope="row">Requested Effective Date</th>
+                                        <th scope="row">Publish Date</th>
                                         <th scope="row">Submitted By</th>
                                         <th scope="row"><span class="sr-only">Actions</span></th>
                                     </tr>
@@ -108,7 +108,7 @@ $page = '';
                                         <td>Updated </td>
                                         <td><span class="text-danger" > Declined </span></td>
                                         <td > thrclark </td>
-                                        <td><a href="pub-taskdeclined-edit.php" class="btn btn-default btn-xs">Resubmit</a>
+                                        <td>
                                             <div class="dropdown" style="display:inline">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
@@ -148,7 +148,7 @@ $page = '';
                                         <td>Updated</td>
                                         <td><span class="text-danger" > Declined </span></td>
                                         <td > hesenthal </td>
-                                        <td><a href="pub-taskdeclined-edit.php" class="btn btn-default btn-xs">Resubmit</a>
+                                        <td>
                                             <div class="dropdown" style="display:inline">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
@@ -188,7 +188,7 @@ $page = '';
                                         <td>Updated</td>
                                         <td><span class="text-danger" > Declined </span></td>
                                         <td > seenyj </td>
-                                        <td><a href="pub-taskdeclined-edit.php" class="btn btn-default btn-xs">Resubmit</a>
+                                        <td>
                                             <div class="dropdown" style="display:inline">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
@@ -226,14 +226,13 @@ $page = '';
                                                 </tbody>
                                             </table></td>
                                         <td>New </td>
-                                        <td>07/15/2017 5:00am<br></td>
+                                        <td>Upon admin approval<br></td>
                                         <td > breckerm </td>
                                         <td><a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Review</a>
                                             <div class="dropdown" style="display:inline">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted" >View Notes</a></li>
-                                                    <li><a href="#" data-toggle="modal" data-target="#modal_publishdate" >Edit  Effective Date</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
                                                 </ul>
@@ -247,7 +246,7 @@ $page = '';
                                                 </ul>
                                             </div>--></td>
                                     </tr>
-                                        <tr >
+                                    <tr >
                                         <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus 411 Information</div>
                                             <table class="small taskmeta">
                                                 <tbody>
@@ -267,14 +266,13 @@ $page = '';
                                                 </tbody>
                                             </table></td>
                                         <td>New </td>
-                                        <td>Upon admin approval<br></td>
+                                        <td>TBD by publisher<br></td>
                                         <td > breckerm </td>
                                         <td><a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Review</a>
                                             <div class="dropdown" style="display:inline">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted" >View Notes</a></li>
-                                                    <li><a href="#" data-toggle="modal" data-target="#modal_publishdate" >Edit  Effective Date</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
                                                 </ul>
@@ -288,9 +286,7 @@ $page = '';
                                                 </ul>
                                             </div>--></td>
                                     </tr>
-                                    
-                                    
-                                        <tr >
+                                    <tr >
                                         <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Tour</div>
                                             <table class="small taskmeta">
                                                 <tbody>
@@ -317,7 +313,6 @@ $page = '';
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted" >View Notes</a></li>
-                                                    <li><a href="#" data-toggle="modal" data-target="#modal_publishdate" >Edit  Effective Date</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
                                                 </ul>
@@ -357,7 +352,6 @@ $page = '';
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted" >View Notes</a></li>
-                                                    <li><a href="#" data-toggle="modal" data-target="#modal_publishdate" >Edit  Effective Date</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
                                                 </ul>
@@ -397,7 +391,6 @@ $page = '';
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted" >View Notes</a></li>
-                                                    <li><a href="#" data-toggle="modal" data-target="#modal_publishdate" >Edit  Effective Date</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
                                                 </ul>
@@ -430,14 +423,13 @@ $page = '';
                                                 </tbody>
                                             </table></td>
                                         <td> New </td>
-                                        <td>4/09/17 5:00pm<br></td>
+                                        <td>TBD by publisher<br></td>
                                         <td > adobiega </td>
                                         <td><a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Review</a>
                                             <div class="dropdown" style="display:inline">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted" >View Notes</a></li>
-                                                    <li><a href="#" data-toggle="modal" data-target="#modal_publishdate" >Edit  Effective Date</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
                                                 </ul>
@@ -459,7 +451,7 @@ $page = '';
             </div>
         </div>
     </div>
-   <div class="modal fade" id="modal_publishdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="modal_publishdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-default" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -478,7 +470,7 @@ $page = '';
                             <div class="radio">
                                 <label>
                                     <input type="radio" name="cars" value="2">
-                                     I will manually release these changes when ready</label>
+                                    I will manually release these changes when ready</label>
                             </div>
                             <div class="radio">
                                 <label>
@@ -577,41 +569,23 @@ $page = '';
             </div>
         </div>
     </div>
-    
-    
-    
-    
-    
-     <div class="modal fade" id="modal_cancelupdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="modal_cancelupdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-default" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     <h4 class="modal-title">Cancel Task Updates</h4>
                 </div>
-                <div class="modal-body">
-                  By canceling the submitted updates to this task, the original values will remain in place and the new values will be discarded. Are you sure you would like to proceed?
-                </div>
+                <div class="modal-body"> By canceling the submitted updates to this task, the original values will remain in place and the new values will be discarded. Are you sure you would like to proceed? </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
                     <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Cancel Task Updates</button>
-         
                 </div>
             </div>
         </div>
     </div>
-    
-    
-    
-    
-    
     <?php include('includes/brand-footer.php') ?>
     <?php include('includes/footer-scripts.php') ?>
-    
-    
-    
-    
-    
     <script type="text/javascript">//<![CDATA[
 
 
@@ -627,8 +601,6 @@ $(document).ready(function() {
 });
 
 </script> 
-
-
     <script>
         //$(document).ready(function {
           //  $('.divider').on('hide.bs.dropdown', function {

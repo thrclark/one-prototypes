@@ -94,7 +94,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -131,7 +131,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -166,7 +166,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>07/15/2017 5:00am<br>
                                             <span class="small text-muted">(pending approval)</span></td>
                                         <td><div class="dropdown">
@@ -206,7 +206,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -241,7 +241,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Not Live</td>
+                                        <td>Inactive</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -278,7 +278,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>Upon admin approval<br>
                                             <span class="small text-muted">(pending approval)</span></td>
                                         <td><div class="dropdown">
@@ -317,7 +317,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -352,7 +352,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td>Not Live</td>
+                                        <td>Inactive</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -387,7 +387,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -422,7 +422,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>07/18/2017 5:00am<br>
                                             <span class="small text-muted">(approved)</span></td>
                                         <td><div class="dropdown">
@@ -462,7 +462,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>07/18/2017 5:00am<br>
                                             <span class="small text-muted">(approved)</span></td>
                                         <td><div class="dropdown">
@@ -502,7 +502,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>07/18/2017 5:00am<br>
                                             <span class="small text-muted">(approved)</span></td>
                                         <td><div class="dropdown">
@@ -542,7 +542,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -577,7 +577,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -612,7 +612,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Not Live</td>
+                                        <td>Inactive</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -647,7 +647,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Not Live</td>
+                                        <td>Inactive</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -721,7 +721,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>Manual release by publisher<br>
                                             <span class="small text-muted">(pending approval)</span></td>
                                         <td><div class="dropdown">
@@ -761,7 +761,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -796,7 +796,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -871,7 +871,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Not Live</td>
+                                        <td>Inactive</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -906,7 +906,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -941,7 +941,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -976,7 +976,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1011,7 +1011,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1046,7 +1046,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1081,7 +1081,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1116,7 +1116,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1151,7 +1151,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1186,7 +1186,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1221,7 +1221,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Not Live</td>
+                                        <td>Inactive</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1256,7 +1256,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1291,7 +1291,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1326,7 +1326,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1363,7 +1363,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1400,7 +1400,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"

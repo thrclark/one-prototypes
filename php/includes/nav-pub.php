@@ -14,6 +14,7 @@
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Task Support</a></li>
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Task Contacts</a></li>
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Shared Task Images</a></li>
+                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Deleted Tasks</a></li>
                     </ul>
                 </li>
                 <li data-toggle="collapse" data-target="#nav-settings" class="collapsed"><a href="#">Filter <span class="arrow"></span></a>

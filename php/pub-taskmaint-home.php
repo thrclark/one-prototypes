@@ -27,7 +27,7 @@ $page = '';
                                 <div class="col-xs-12 col-sm-9 section-header">
                                     <h2 class="h3">All Tasks</h2>
                                 </div>
-                                <div class="col-xs-12  col-sm-3 section-controls"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default"><i class="fa fa-plus" aria-hidden="true"></i> Task</a></div>
+                                <div class="col-xs-12  col-sm-3 section-controls"><a href="pub-taskmaint-edit.php" class="btn btn-xs btn-default"><i class="icon-plus-2"></i>Task</a></div>
                             </div>
                             <div class="checkbox">
                                 <label>
@@ -38,13 +38,11 @@ $page = '';
                                    data-tablesaw-mode="stack" id="tablesaw-3579">
                                 <thead>
                                     <tr>
-                                        <th>Title (Application)</th>
+                                        <th>Title <span class="small text-muted">(Application)</span></th>
                                         <th>Status</th>
-                                        <th>Scheduled Update</th>
+                                        <th>Scheduling </th>
                                         <th><span class="sr-only">Actions</span></th>
                                     </tr>
-                                </thead>
-                                <tbody>
                                     <tr>
                                         <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
                                             <table class="small taskmeta">
@@ -65,25 +63,22 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td>Draft</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                    id="dropdownMenu10" data-toggle="dropdown" aria-haspopup="true"
                                                     aria-expanded="true"><span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right"
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                    <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>AlcoholEdu</div>
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
                                             <table class="small taskmeta">
                                                 <tbody>
                                                     <tr>
@@ -102,7 +97,49 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Live</td>
+                                        <td>Inactive</td>
+                                        <td>(awaiting approval)</td>
+                                        <td><div class="dropdown">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                                    id="dropdownMenu10" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right"
+                                                aria-labelledby="dropdownMenu1">
+                                                    <li class="disabled"><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                </ul>
+                                            </div></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Campus Life</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td>Student</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>IUPUI, IUPUC<span
+                                                        aria-hidden="true">, </span><span
+                                                aria-hidden="true">All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td> Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -114,10 +151,866 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Set Task to 'Inactive'</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Status</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
                                                 </ul>
                                             </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Campus Life</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td>Student</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>IUPUI, IUPUC<span
+                                                        aria-hidden="true">, </span><span
+                                                aria-hidden="true">All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td>Inactive</td>
+                                        <td>&nbsp;</td>
+                                        <td><div class="dropdown">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right"
+                                                aria-labelledby="dropdownMenu1">
+                                                    <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                    <li><a href="#">Feature</a></li>
+                                                    <li><a href="#">View Comments</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Set Task to 'Active'</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Set Dates for 'Active/Inactive' Status</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                </ul>
+                                            </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Campus Life</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td>Student</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>IUPUI, IUPUC<span
+                                                        aria-hidden="true">, </span><span
+                                                aria-hidden="true">All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td> Active</td>
+                                        <td>Inactive: 09/15/2017 5:00am</td>
+                                        <td><div class="dropdown">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right"
+                                                aria-labelledby="dropdownMenu1">
+                                                    <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                    <li><a href="#">Feature</a></li>
+                                                    <li><a href="#">View Comments</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Set Task to 'Inactive'</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Reschedule Task 'Inactive' Date</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                </ul>
+                                            </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Campus Life</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td>Student</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>IUPUI, IUPUC<span
+                                                        aria-hidden="true">, </span><span
+                                                aria-hidden="true">All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td>Inactive<br></td>
+                                        <td>Active: 07/15/2017 5:00am<br>
+                                            Inactive: 09/15/2017 5:00am</td>
+                                        <td><div class="dropdown">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right"
+                                                aria-labelledby="dropdownMenu1">
+                                                    <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                    <li><a href="#">Feature</a></li>
+                                                    <li><a href="#">View Comments</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Set Task to 'Active'</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Edit Task 'Active/Inactive' Dates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                </ul>
+                                            </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Campus Life</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td>Student</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>IUPUI, IUPUC<span
+                                                        aria-hidden="true">, </span><span
+                                                aria-hidden="true">All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td> Active<br>
+                                            <span class="small text-muted">pending updates</span></td>
+                                        <td>Update: (awaiting approval)</td>
+                                        <td><div class="dropdown">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right"
+                                                aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit</a></li>
+                                                    <li><a href="#">Feature</a></li>
+                                                    <li><a href="#">View Comments</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Set Task to 'Inactive'</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Status</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
+                                                     <li><a href="pub-tasksubmitted-edit.php">Edit Pending Updates</a></li>
+                                                    <li><a href="#">Delete Pending Updates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                </ul>
+                                            </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Campus Life</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td>Student</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>IUPUI, IUPUC<span
+                                                        aria-hidden="true">, </span><span
+                                                aria-hidden="true">All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td> Active <br>
+                                            <span class="small text-muted">pending updates</span></td>
+                                        <td>Update: (awaiting approval)<br>
+                                            Inactive: 09/15/2017 5:00am <br></td>
+                                        <td><div class="dropdown">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right"
+                                                aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit</a></li>
+                                                    <li><a href="#">Feature</a></li>
+                                                    <li><a href="#">View Comments</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Set Task to 'Inactive'</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Reschedule Task 'Inactive' Date</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
+                                                    <li><a href="pub-tasksubmitted-edit.php">Edit Pending Updates</a></li>
+                                                    <li><a href="#">Delete Pending Updates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                </ul>
+                                            </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Campus Life</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td>Student</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>IUPUI, IUPUC<span
+                                                        aria-hidden="true">, </span><span
+                                                aria-hidden="true">All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td> Active <br>
+                                            <span class="small text-muted">pending updates</span></td>
+                                        <td>Update: TBD<br></td>
+                                        <td><div class="dropdown">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right"
+                                                aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit</a></li>
+                                                    <li><a href="#">Feature</a></li>
+                                                    <li><a href="#">View Comments</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Set Task to 'Inactive'</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Status</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
+                                                     <li><a href="pub-tasksubmitted-edit.php">Edit Pending Updates</a></li>
+                                                    <li><a href="#">Release Pending Updates Now</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setpendingreleasedate">Schedule Pending Updates Release</a></li>
+                                                    <li><a href="#">Delete Pending Updates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                </ul>
+                                            </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Campus Life</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td>Student</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>IUPUI, IUPUC<span
+                                                        aria-hidden="true">, </span><span
+                                                aria-hidden="true">All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td> Active <br>
+                                            <span class="small text-muted">pending updates</span></td>
+                                        <td>Update: 07/15/2017 5:00am<br></td>
+                                        <td><div class="dropdown">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right"
+                                                aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit</a></li>
+                                                    <li><a href="#">Feature</a></li>
+                                                    <li><a href="#">View Comments</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Set Task to 'Inactive'</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Status</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
+                                                     <li><a href="pub-tasksubmitted-edit.php">Edit Pending Updates</a></li>
+                                                    <li><a href="#">Release Pending Updates Now</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setpendingreleasedate">Edit Pending Updates Release Date</a></li>
+                                                    <li><a href="#">Delete Pending Updates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                </ul>
+                                            </div></td>
+                                    </tr>
+                                    <tr >
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Campus Life</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td>Student</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>IUPUI, IUPUC<span
+                                                        aria-hidden="true">, </span><span
+                                                aria-hidden="true">All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td> Active <br>
+                                            <span class="small text-muted">pending updates</span></td>
+                                        <td>Update: TBD<br>
+                                            Inactive: 09/15/2017 5:00am <br></td>
+                                        <td ><div class="dropdown">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right"
+                                                aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit</a></li>
+                                                    <li><a href="#">Feature</a></li>
+                                                    <li><a href="#">View Comments</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Set Task to 'Inactive'</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Reschedule Task 'Inactive' Date</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
+                                                     <li><a href="pub-tasksubmitted-edit.php">Edit Pending Updates</a></li>
+                                                    <li><a href="#">Release Pending Updates Now</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setpendingreleasedate">Schedule Pending Updates Release</a></li>
+                                                    <li><a href="#">Delete Pending Updates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                </ul>
+                                            </div></td>
+                                    </tr>
+                                    <tr >
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Campus Life</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td>Student</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>IUPUI, IUPUC<span
+                                                        aria-hidden="true">, </span><span
+                                                aria-hidden="true">All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td> Active <br>
+                                            <span class="small text-muted">pending updates</span></td>
+                                        <td>Update: 07/15/2017 5:00am<br>
+                                            Inactive: 09/15/2017 5:00am</td>
+                                        <td ><div class="dropdown">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right"
+                                                aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit</a></li>
+                                                    <li><a href="#">Feature</a></li>
+                                                    <li><a href="#">View Comments</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Set Task to 'Inactive'</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Reschedule Task 'Inactive' Date</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
+                                                     <li><a href="pub-tasksubmitted-edit.php">Edit Pending Updates</a></li>
+                                                    <li><a href="#">Release Pending Updates Now</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setpendingreleasedate">Edit Pending Updates Release Date</a></li>
+                                                    <li><a href="#">Delete Pending Updates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                </ul>
+                                            </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Campus Life</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td>Student</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>IUPUI, IUPUC<span
+                                                        aria-hidden="true">, </span><span
+                                                aria-hidden="true">All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td>Inactive<br>
+                                            <span class="small text-muted">pending updates</span></td>
+                                        <td>Update: (awaiting approval)</td>
+                                        <td><div class="dropdown">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                                    id="dropdownMenu16" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit</a></li>
+                                                    <li><a href="#">Feature</a></li>
+                                                    <li><a href="#">View Comments</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Set Task to 'Active'</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Set Dates for 'Active/Inactive' Status</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
+                                                     <li><a href="pub-tasksubmitted-edit.php">Edit Pending Updates</a></li>
+                                                    <li><a href="#">Delete Pending Updates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                </ul>
+                                            </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Campus Life</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td>Student</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>IUPUI, IUPUC<span
+                                                        aria-hidden="true">, </span><span
+                                                aria-hidden="true">All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td>Inactive<br>
+                                            <span class="small text-muted">pending updates</span></td>
+                                        <td>Active: 06/15/2017 5:00am<br>
+                                            Update: (awaiting approval)<br></td>
+                                        <td><div class="dropdown">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                                    id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit</a></li>
+                                                    <li><a href="#">Feature</a></li>
+                                                    <li><a href="#">View Comments</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Set Task to 'Active'</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Edit Task 'Active/Inactive' Dates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
+                                                     <li><a href="pub-tasksubmitted-edit.php">Edit Pending Updates</a></li>
+                                                    <li><a href="#">Delete Pending Updates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                </ul>
+                                            </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Campus Life</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td>Student</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>IUPUI, IUPUC<span
+                                                        aria-hidden="true">, </span><span
+                                                aria-hidden="true">All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td>Inactive<br>
+                                            <span class="small text-muted">pending updates</span></td>
+                                        <td>Active: 06/15/2017 5:00am<br>
+                                            Update: (awaiting approval)<br>
+                                            Inactive: 09/15/2017 5:00am</td>
+                                        <td><div class="dropdown">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                                    id="dropdownMenu7" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit</a></li>
+                                                    <li><a href="#">Feature</a></li>
+                                                    <li><a href="#">View Comments</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Set Task to 'Active'</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Edit Task 'Active/Inactive' Dates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
+                                                     <li><a href="pub-tasksubmitted-edit.php">Edit Pending Updates</a></li>
+                                                    <li><a href="#">Delete Pending Updates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                </ul>
+                                            </div></td>
+                                    </tr>
+                                    <tr >
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Campus Life</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td>Student</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>IUPUI, IUPUC<span
+                                                        aria-hidden="true">, </span><span
+                                                aria-hidden="true">All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td>Inactive<br>
+                                            <span class="small text-muted">pending updates</span></td>
+                                        <td>Update: TBD<br></td>
+                                        <td><div class="dropdown">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                                    id="dropdownMenu13" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit</a></li>
+                                                    <li><a href="#">Feature</a></li>
+                                                    <li><a href="#">View Comments</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Set Task to 'Active'</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Set Dates for 'Active/Inactive' Status</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
+                                                     <li><a href="pub-tasksubmitted-edit.php">Edit Pending Updates</a></li>
+                                                    <li><a href="#">Release Pending Updates Now</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setpendingreleasedate">Schedule Pending Updates Release</a></li>
+                                                    <li><a href="#">Delete Pending Updates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                </ul>
+                                            </div></td>
+                                    </tr>
+                                    <tr >
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Campus Life</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td>Student</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>IUPUI, IUPUC<span
+                                                        aria-hidden="true">, </span><span
+                                                aria-hidden="true">All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td>Inactive<br>
+                                            <span class="small text-muted">pending updates</span></td>
+                                        <td>Update: TBD<br>
+                                            Inactive: 09/15/2017 5:00am <br></td>
+                                        <td><div class="dropdown">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                                    id="dropdownMenu12" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit</a></li>
+                                                    <li><a href="#">Feature</a></li>
+                                                    <li><a href="#">View Comments</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Set Task to 'Active'</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Edit Task 'Active/Inactive' Dates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
+                                                     <li><a href="pub-tasksubmitted-edit.php">Edit Pending Updates</a></li>
+                                                    <li><a href="#">Release Pending Updates Now</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setpendingreleasedate">Schedule Pending Updates Release</a></li>
+                                                    <li><a href="#">Delete Pending Updates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                </ul>
+                                            </div></td>
+                                    </tr>
+                                    <tr >
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Campus Life</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td>Student</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>IUPUI, IUPUC<span
+                                                        aria-hidden="true">, </span><span
+                                                aria-hidden="true">All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td>Inactive<br>
+                                            <span class="small text-muted">pending updates</span></td>
+                                        <td>Update: 07/15/2017 5:00am<br></td>
+                                        <td><div class="dropdown">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                                    id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit</a></li>
+                                                    <li><a href="#">Feature</a></li>
+                                                    <li><a href="#">View Comments</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Set Task to 'Active'</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Set Dates for 'Active/Inactive' Status</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
+                                                     <li><a href="pub-tasksubmitted-edit.php">Edit Pending Updates</a></li>
+                                                    <li><a href="#">Release Pending Updates Now</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setpendingreleasedate">Edit Pending Updates Release Date</a></li>
+                                                    <li><a href="#">Delete Pending Updates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                </ul>
+                                            </div></td>
+                                    </tr>
+                                    <tr >
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Campus Life</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td>Student</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>IUPUI, IUPUC<span
+                                                        aria-hidden="true">, </span><span
+                                                aria-hidden="true">All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td>Inactive<br>
+                                            <span class="small text-muted">pending updates</span></td>
+                                        <td>Active: 06/15/2017 5:00am<br>
+                                            Update: 07/15/2017 5:00am</td>
+                                        <td><div class="dropdown">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                                    id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit</a></li>
+                                                    <li><a href="#">Feature</a></li>
+                                                    <li><a href="#">View Comments</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Set Task to 'Active'</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Edit Task 'Active/Inactive' Dates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
+                                                     <li><a href="pub-tasksubmitted-edit.php">Edit Pending Updates</a></li>
+                                                    <li><a href="#">Release Pending Updates Now</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setpendingreleasedate">Edit Pending Updates Release Date</a></li>
+                                                    <li><a href="#">Delete Pending Updates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                </ul>
+                                            </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Campus Life</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td>Student</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>IUPUI, IUPUC<span
+                                                        aria-hidden="true">, </span><span
+                                                aria-hidden="true">All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td>Inactive<br>
+                                            <span class="small text-muted">pending updates</span></td>
+                                        <td>Update: 07/15/2017 5:00am<br>
+                                            Inactive: 09/15/2017 5:00am</td>
+                                        <td><div class="dropdown">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                                    id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit</a></li>
+                                                    <li><a href="#">Feature</a></li>
+                                                    <li><a href="#">View Comments</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Set Task to 'Active'</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Edit Task 'Active/Inactive' Dates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
+                                                     <li><a href="pub-tasksubmitted-edit.php">Edit Pending Updates</a></li>
+                                                    <li><a href="#">Release Pending Updates Now</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setpendingreleasedate">Edit Pending Updates Release Date</a></li>
+                                                    <li><a href="#">Delete Pending Updates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                </ul>
+                                            </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
+                                            <table class="small taskmeta">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Categories:</td>
+                                                        <td>Campus Life</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Roles:</td>
+                                                        <td>Student</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IU Campuses:</td>
+                                                        <td>IUPUI, IUPUC<span
+                                                        aria-hidden="true">, </span><span
+                                                aria-hidden="true">All IU Campuses</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></td>
+                                        <td>Inactive<br>
+                                            <span class="small text-muted">pending updates</span></td>
+                                        <td>Active: 06/15/2017 5:00am<br>
+                                            Update: 07/15/2017 5:00am<br>
+                                            Inactive: 09/15/2017 5:00am</td>
+                                        <td><div class="dropdown">
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                                    id="dropdownMenu14" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit</a></li>
+                                                    <li><a href="#">Feature</a></li>
+                                                    <li><a href="#">View Comments</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Set Task to 'Active'</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Edit Task 'Active/Inactive' Dates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
+                                                     <li><a href="pub-tasksubmitted-edit.php">Edit Pending Updates</a></li>
+                                                    <li><a href="#">Release Pending Updates Now</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_setpendingreleasedate">Edit Pending Updates Release Date</a></li>
+                                                    <li><a href="#">Delete Pending Updates</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                </ul>
+                                            </div></td>
+                                    </tr>
+                                    <!-- <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
                                     </tr>
                                     <tr>
                                         <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Apple</div>
@@ -153,9 +1046,8 @@ $page = '';
                                                     <li class="disabled"><a href="#" class="">Manually Publish Update Now</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -188,9 +1080,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -212,7 +1103,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Not Live</td>
+                                        <td>Inactive</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -223,9 +1114,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -264,9 +1154,8 @@ $page = '';
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -299,9 +1188,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -323,7 +1211,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td>Not Live</td>
+                                        <td>Inactive</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -334,9 +1222,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -369,9 +1256,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -409,9 +1295,8 @@ $page = '';
                                                     <li><a href="#" data-toggle="modal" data-target="#">Manually Publish Update Now</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_publishdate1">Change Pending Update Release Date</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -449,9 +1334,8 @@ $page = '';
                                                     <li><a href="#" data-toggle="modal" data-target="#">Manually Publish Update Now</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_publishdate1">Change Pending Update Release Date</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -489,9 +1373,8 @@ $page = '';
                                                     <li><a href="#" data-toggle="modal" data-target="#">Manually Publish Update Now</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_publishdate1">Change Pending Update Release Date</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -524,9 +1407,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -559,9 +1441,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -583,7 +1464,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Not Live</td>
+                                        <td>Inactive</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -594,9 +1475,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -618,7 +1498,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Not Live</td>
+                                        <td>Inactive</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -629,9 +1509,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -668,9 +1547,8 @@ $page = '';
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -708,9 +1586,8 @@ $page = '';
                                                     <li class="disabled"><a href="#" class="">Manually Publish Update Now</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -743,9 +1620,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -778,9 +1654,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -817,9 +1692,8 @@ $page = '';
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Draft Task Summary</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#">Manually Publish Task Now</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_publishdate1">Set Task Release Date</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -841,7 +1715,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Not Live</td>
+                                        <td>Inactive</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -852,9 +1726,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -887,9 +1760,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -922,9 +1794,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -957,9 +1828,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -992,9 +1862,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -1027,9 +1896,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -1062,9 +1930,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -1097,9 +1964,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -1132,9 +1998,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -1167,9 +2032,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -1191,7 +2055,7 @@ $page = '';
                                                     </tr>
                                                 </tbody>
                                             </table></td>
-                                        <td> Not Live</td>
+                                        <td>Inactive</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1202,9 +2066,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -1237,9 +2100,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -1272,9 +2134,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -1307,9 +2168,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -1344,9 +2204,8 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
                                     </tr>
@@ -1381,16 +2240,14 @@ $page = '';
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">View Comments</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li role="separator" class="divider"></li> <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete</a></li>
+                                                  
                                                 </ul>
                                             </div></td>
-                                    </tr>
+                                    </tr>-->
                                 </tbody>
                             </table>
-                            <div class="text-center"><a href="#" class="btn btn-xs btn-default"><i
-                                            class="fa fa-angle-down" aria-hidden="true"></i> View More </a></div>
+                            <div class="text-center"><a href="#" class="btn btn-xs btn-default"><i class="icon-plus-2"></i>View More </a></div>
                         </section>
                     </div>
                 </div>
@@ -1399,103 +2256,13 @@ $page = '';
     </div>
     <?php include('includes/brand-footer.php') ?>
     <?php include('includes/footer-scripts.php') ?>
-    <div class="modal fade" id="modal_updatesummary" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog modal-default modal-tabs-top">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <ul class="nav nav-tabs nav-justified" id="myTab">
-                        <li class="active"><a data-target="#toptab1" data-toggle="tab">Summary of Changes</a></li>
-                        <li><a data-target="#toptab2" data-toggle="tab"> Notes</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="toptab1">
-                            <h4>Summary of Changes</h4>
-                            <table class="table table-condensed table-comparison">
-                                <thead class="">
-                                    <tr>
-                                        <th scope="column">Item</th>
-                                        <th scope="column">Current Value<span class="small text-muted"></span></th>
-                                        <th scope="column">Pending Value</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Authentication Type</th>
-                                        <td class="">None</td>
-                                        <td class="">External</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Unique Key</th>
-                                        <td>task-123</td>
-                                        <td>task-234</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Stat Recording Type</th>
-                                        <td>User</td>
-                                        <td>Anonymous</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="tab-pane" id="toptab2">
-                            <h4>Notes</h4>
-                            <div class="comment-list">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <div class="message">
-                                            <div class="row message-header">
-                                                <div class="col-xs-12 col-sm-8 message-title">Admin <small>(rvallow)</small></div>
-                                                <div class="col-xs-12 col-sm-4 message-meta"> <small class="message-date">6/3/16 2:16 PM</small> </div>
-                                            </div>
-                                            <div class="message-content">
-                                                <p> We strongly recommend looking at your icon. We are moving away from small text due to users not being able to read it and it appearing blurry. We can submit a redesign for your icon to our designers. *if so please change to universal icon requesting the redesign or email one@iu.edu requesting this.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="message">
-                                            <div class="row message-header">
-                                                <div class="col-xs-12 col-sm-8 message-title"> Publisher <small>(abretts)</small></div>
-                                                <div class="col-xs-12 col-sm-4 message-meta"> <small class="message-date">6/3/16 1:08 PM</small> </div>
-                                            </div>
-                                            <div class="message-content">
-                                                <p>This is a task submission note Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large. </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-            <!-- /.modal-content --> 
-        </div>
-    </div>
-    <div class="modal fade" id="modal_whichversion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog modal-default" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <h4 class="modal-title">Select Version</h4>
-                </div>
-                <div class="modal-body" id="page1" style="display: block">
-                    <p> You may use either the currently published version or pending version of this task as a starting point for new edits. </p>
-                    <div class="well" style="    margin-left: 80px;
-    margin-right: 80px;"> <a href="#" class="btn btn-default btn-lg btn-block nextpage">Use Current Version</a> <a href="#" class="btn btn-default btn-lg btn-block nextpage">Use Pending Version</a> </div>
-                </div>
-                <div class="modal-footer" id="footer1"> <a href="#" class="btn btn-default" data-dismiss="modal">Cancel</a></div>
-                <div class="modal-body" id="page2" style="display:none">
-                    <p> There is a pending version of this task that is scheduled to be released on 09/13/2017 at 5:00am. By proceeding to create a new version, the currently pending version will be discarded and you will be asked to provide a new release date for the new version.</p>
-                    <p> Do you wish to proceed?</p>
-                </div>
-                <div class="modal-footer" id="footer2" style="display:none"> <a href="#" class="btn btn-default" data-dismiss="modal">Cancel</a> <a href="pub-taskmaint-edit.php" class="btn btn-primary">Edit Task</a></div>
-            </div>
-        </div>
-    </div>
+    <?php include('modal/pub-task-summary.php') ?>
+    <?php include('modal/pub-task-edit-selectversion.php') ?>
+    <?php include('modal/pub-task-setnotlivedate.php') ?>
+    <?php include('modal/pub-task-setlivedate.php') ?>
+    <?php include('modal/pub-task-edit-pendingwarning.php') ?>
+    <?php include('modal/pub-task-setpendingreleasedate.php') ?>
+    <?php include('modal/pub-task-edit-deletewarning.php') ?>
     <div class="modal fade" id="modal_publishdate1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-default" role="document">
             <div class="modal-content">
@@ -1600,30 +2367,6 @@ $page = '';
             </div>
         </div>
     </div>
-    <script type="text/javascript">//<![CDATA[
-
-
-
-$(document).ready(function() {
-
-    $("#modal_publishdate1 input[name$='cars']").click(function() {
-        var test = $(this).val();
-
-        $("#modal_publishdate1 .pubdate_widget3").slideUp();
-        $("#modal_publishdate1 .pubdate_widget" + test).slideDown();
-    });
-	
-	  $("#modal_publishdate2 input[name$='cars']").click(function() {
-        var test = $(this).val();
-
-        $("#modal_publishdate2 .pubdate_widget3").slideUp();
-        $("#modal_publishdate2 .pubdate_widget" + test).slideDown();
-    });
-	
-	
-});
-
-</script> 
     <script>
     $(document).ready(function() {
         $(".nextpage").click(function() {

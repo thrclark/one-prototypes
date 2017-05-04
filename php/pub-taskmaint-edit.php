@@ -246,7 +246,7 @@ $page = '';
                                                 </div>
                                             </div>
                                         </fieldset>
-                                        <fieldset>
+                                        <!-- <fieldset>
                                             <legend>Active Dates/Status <small class="text-muted" style="text-transform:lowercase;">(currently inactive)</small></legend>
                                             <div class="row">
                                                 <div class="form-group col-md-4">
@@ -276,7 +276,7 @@ $page = '';
                                                     </div>
                                                 </div>
                                             </div>
-                                        </fieldset>
+                                        </fieldset>-->
                                         <fieldset>
                                             <legend>Versioning</legend>
                                             <div class="row">
@@ -1124,11 +1124,9 @@ $page = '';
                                             </div>
                                         </fieldset>
                                         <hr>
-                                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal_publishdate"> Save...</button>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Publish Immediately (Upon Approval)</a></li>
-                                            <li><a href="#"  data-toggle="modal" data-target="#modal_publishdate">Specify Publish Date</a></li>
-                                        </ul>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_publishdate"> Submit for Approval...</button>
+                                      
+                                        <button class="btn btn-default" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Save as Draft</button>
                                         <button class="btn btn-default" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Cancel</button>
                                     </form>
                                 </div>
@@ -1144,7 +1142,7 @@ $page = '';
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <h4 class="modal-title">Specify Publish Date</h4>
+                    <h4 class="modal-title">Submit Task for Approval</h4>
                 </div>
                 <div class="modal-body">
                     <div class="row">
@@ -1153,34 +1151,21 @@ $page = '';
                             <div class="radio">
                                 <label>
                                     <input type="radio" name="cars" value="1">
-                                    Publish immediately upon admin approval </label>
+                                    Upon approval, publish this task immediately and send me an email notification. </label>
                             </div>
                             <div class="radio">
                                 <label>
                                     <input type="radio" name="cars" value="2">
-                                    I will manually release these changes when ready </label>
+                                   Notify me when this task is approved, afterwhich I will specify a publish date.</label>
                             </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="cars" value="3">
-                                    Specify publish date </label>
-                            </div>
+                          
                         </div>
-                        <div class="form-group col-md-12" id="pubdate_widget3"  style="display:none">
-                            <label for="title" class="control-label">Publish Date</label>
-                            <span class="help-block small"> Specify the date and time that you wish for these updates to be published. Note that if this task is not reviewed for approval before this date, it will be published immediately upon approval.</span>
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    <div class="counter-container">
-                                        <input type="text" name="title" required="" countdown="" class="form-control picktime"  tabindex="0" aria-required="false" aria-invalid="false">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       
                     </div>
-                </div> <div class="modal-footer">
-                      <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>  <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Save</button>
-                
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Submit Task for Approval</button>
                 </div>
             </div>
         </div>
@@ -1353,10 +1338,6 @@ $page = '';
             });
             
      </script> 
-     
-     
-     
-    
     <script type="text/javascript">//<![CDATA[
 
 
@@ -1372,9 +1353,6 @@ $(document).ready(function() {
 });
 
 </script> 
-
-
-
 </div>
 </body>
 </html>
