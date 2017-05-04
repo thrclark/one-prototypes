@@ -22,35 +22,38 @@ $page = '';
                 </div>
                 <div class="col-md-9">
                     <div class="primary-content">
-                    
-                     <div class="row section-head">
-                                <div class="col-xs-12 col-sm-9 section-header">
-                                    <h2 class="h3">Maintain Tasks</h2>
-                                </div>
-                                <div class="col-xs-12  col-sm-3 section-controls"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default"><i class="fa fa-plus" aria-hidden="true"></i> Task</a></div>
+                        <div class="row section-head">
+                            <div class="col-xs-12 col-sm-9 section-header">
+                                <h2 class="h3">Maintain Tasks</h2>
                             </div>
-                    
-                    
-                      <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">All </a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Submitted</a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Featured</a></li>
-    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
-  </ul>
-
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="home">...</div>
-    <div role="tabpanel" class="tab-pane" id="profile">...</div>
-    <div role="tabpanel" class="tab-pane" id="messages">...</div>
-    <div role="tabpanel" class="tab-pane" id="settings">...</div>
-  </div>
-  
-  
-  <br><br><br><br><br><br><br><br><br><br>
-  
-  
+                            <div class="col-xs-12  col-sm-3 section-controls"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default"><i class="fa fa-plus" aria-hidden="true"></i> Task</a></div>
+                        </div>
+                        
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">All </a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Submitted</a></li>
+                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Featured</a></li>
+                            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                        </ul>
+                        
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home">...</div>
+                            <div role="tabpanel" class="tab-pane" id="profile">...</div>
+                            <div role="tabpanel" class="tab-pane" id="messages">...</div>
+                            <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
                         <section style="display:;" id="all_verifications">
                             <div class="row section-head">
                                 <div class="col-xs-12 col-sm-9 section-header">
@@ -695,7 +698,7 @@ $page = '';
                                                     <li><a href="#">View Comments</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
-                                                     <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
@@ -735,7 +738,7 @@ $page = '';
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
                                                     <li class="disabled"><a href="#" class="">Manually Publish Update Now</a></li>
-                                                      <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
@@ -1537,15 +1540,6 @@ $page = '';
                     <div class="row">
                         <div class="form-group col-md-12">
                             <label class="control-label " for="api_account_type"> Publish Date Options </label>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
                             <div class="radio">
                                 <label>
                                     <input type="radio" name="cars" value="2">
@@ -1577,12 +1571,7 @@ $page = '';
             </div>
         </div>
     </div>
-    
-    
-    
-    
-    
-     <div class="modal fade" id="modal_publishdate2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="modal_publishdate2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-default" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -1593,19 +1582,11 @@ $page = '';
                     <div class="row">
                         <div class="form-group col-md-12">
                             <label class="control-label " for="api_account_type"> Publish Date Options </label>
-                            
-                            
-                            
-                            
-                            
-                            
-                               <div class="radio">
+                            <div class="radio">
                                 <label>
                                     <input type="radio" name="cars" value="2">
-                                   Publish immediately upon admin approval</label>
+                                    Publish immediately upon admin approval</label>
                             </div>
-                            
-                            
                             <div class="radio">
                                 <label>
                                     <input type="radio" name="cars" value="2">
@@ -1637,9 +1618,6 @@ $page = '';
             </div>
         </div>
     </div>
-    
-    
-    
     <div class="modal fade" id="modal_cancelupdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-default" role="document">
             <div class="modal-content">
