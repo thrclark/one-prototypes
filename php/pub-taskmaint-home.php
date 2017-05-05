@@ -11,19 +11,14 @@ $page = '';
 .primary-content .tab-content .section-head .section-controls .btn {
 	margin-top: 10px;
 }
-
 .tab-content .tab-pane {
-    padding-top: 15px;
-	border-bottom:none;
+	padding-top: 15px;
+	border-bottom: none;
 }
-
-
 .tab-content {
-
-    border-left: none;
-   border-right: none;
+	border-left: none;
+	border-right: none;
 }
-
 </style>
 <?php include('includes/scripts.php') ?>
 </head>
@@ -3174,16 +3169,7 @@ $page = '';
                                 </table>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="tasks_deleted" style="">
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                               <div class="row section-head">
+                                <div class="row section-head">
                                     <div class="col-xs-12 col-sm-9 section-header">
                                         <h3 class="h4">Deleted Items</h3>
                                     </div>
@@ -3529,11 +3515,7 @@ $page = '';
                                         </tr>
                                     </tbody>
                                 </table>
-                                
-                                
-                                
-                                
-                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
