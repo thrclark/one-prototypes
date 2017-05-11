@@ -107,7 +107,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -144,7 +144,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -179,7 +179,7 @@ $page = '';
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_whichversion">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
                                                     <li class="disabled"><a href="#" class="">Manually Publish Update Now</a></li>
@@ -219,7 +219,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -254,7 +254,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -291,7 +291,7 @@ $page = '';
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_whichversion">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
@@ -330,7 +330,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -365,7 +365,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -400,7 +400,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -435,7 +435,7 @@ $page = '';
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_whichversion">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#">Manually Publish Update Now</a></li>
@@ -475,7 +475,7 @@ $page = '';
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_whichversion">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#">Manually Publish Update Now</a></li>
@@ -515,7 +515,7 @@ $page = '';
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_whichversion">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#">Manually Publish Update Now</a></li>
@@ -555,7 +555,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -590,7 +590,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -625,7 +625,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -660,7 +660,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -695,7 +695,7 @@ $page = '';
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_whichversion">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
@@ -734,7 +734,7 @@ $page = '';
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_whichversion">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
                                                     <li class="disabled"><a href="#" class="">Manually Publish Update Now</a></li>
@@ -774,7 +774,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -809,7 +809,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -844,7 +844,7 @@ $page = '';
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_whichversion">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Task Summary</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#">Manually Publish Task Now</a></li>
@@ -884,7 +884,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -919,7 +919,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -954,7 +954,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -989,7 +989,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -1024,7 +1024,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -1059,7 +1059,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -1094,7 +1094,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -1129,7 +1129,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -1164,7 +1164,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -1199,7 +1199,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -1234,7 +1234,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -1269,7 +1269,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -1304,7 +1304,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -1339,7 +1339,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -1376,7 +1376,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>
@@ -1413,7 +1413,7 @@ $page = '';
                                                 aria-labelledby="dropdownMenu1">
                                                     <li><a href="pub-taskmaint-edit.php">Edit</a></li>
                                                     <li><a href="#">Feature</a></li>
-                                                    <li><a href="#">View Comments</a></li>
+                                                    <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Remove</a></li>
                                                     <li><a href="#">Delete</a></li>

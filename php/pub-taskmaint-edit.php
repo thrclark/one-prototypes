@@ -1151,15 +1151,38 @@ $page = '';
                             <div class="radio">
                                 <label>
                                     <input type="radio" name="cars" value="1">
-                                    Upon approval, publish this task immediately and send me an email notification. </label>
+                                    Upon approval, publish this task immediately. </label>
+                            </div>
+                            
+                              <div class="radio">
+                                <label>
+                                    <input type="radio" name="cars" value="2">
+                                   Upon approval, do not publish this task until I specify a date for publication.</label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="cars" value="2">
-                                   Notify me when this task is approved, afterwhich I will specify a publish date.</label>
+                                    <input type="radio" name="cars" value="3">
+                                   Upon approval, publish these updates on a specified date.</label>
                             </div>
                           
                         </div>
+                        
+                        
+                        
+                         <div class="form-group col-md-12 pubdate_widget pubdate_widget3"  style="display:none">
+                        <label for="title" class="control-label">Set Date</label>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <div class="counter-container">
+                                    <input type="text" name="title" required="" countdown="" class="form-control picktime"  tabindex="0" aria-required="false" aria-invalid="false">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
                        
                     </div>
                 </div>
@@ -1347,8 +1370,8 @@ $(document).ready(function() {
     $("input[name$='cars']").click(function() {
         var test = $(this).val();
 
-        $("#pubdate_widget3").slideUp();
-        $("#pubdate_widget" + test).slideDown();
+        $(".pubdate_widget3").slideUp();
+        $(".pubdate_widget" + test).slideDown();
     });
 });
 
