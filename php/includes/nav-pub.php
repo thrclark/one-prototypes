@@ -8,12 +8,10 @@
                     <ul <?php if ($section == 'publishing') {echo 'class="sub-menu"';} else {echo 'class="sub-menu collapse"';} ?> id="nav-publishing">
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="pub-taskmaint-home.php">Maintain Tasks</a></li>
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Maintain Task Centers</a></li>
-                
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Announcements</a></li>
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Task Support</a></li>
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Task Contacts</a></li>
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Shared Task Images</a></li>
-                    
                     </ul>
                 </li>
                 <li data-toggle="collapse" data-target="#nav-settings" class="collapsed"><a href="#">Filter <span class="arrow"></span></a>
