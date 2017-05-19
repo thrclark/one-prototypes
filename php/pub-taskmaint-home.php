@@ -64,35 +64,46 @@ $page = '';
 	left: 14px;
 }
 }
-.primary-content .tab-content .well.well-sm .filter-list {
+.primary-content .tab-content .well .filter-list {
 	margin-bottom: 15px;
 	display: inline;
 	padding-left: 30px;
 	position: relative;
 }
-.primary-content .tab-content .well.well-sm .filter-list:before {
+.primary-content .tab-content .well .filter-list:before {
 	content: '';
 	background: #ddd;
 	position: absolute;
-	height: 41px;
+	height: 34px;
 	width: 1px;
-	top: -9px;
+	top: -6px;
 	left: 11px;
 }
-.primary-content .tab-content .well.well-sm .filter-list .label.label-default {
+.primary-content .tab-content .well {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.label.label-white .icon-cancel-circled {
+	margin-left: 5px;
+	MARGIN-RIGHT: -3px;
+	color: #555555;
+}
+.label.label-white {
 	border-radius: 10px;
 	background-color: #fff;
 	color: #555;
 	border: solid 1px #cccccc;
 }
-.primary-content .tab-content .well.well-sm {
-	margin-bottom: 5px;
-	margin-top: 5px;
+.label.label-white.text-danger {
+	color: #a94442;
+	border: solid 1px #a94442;
 }
-.primary-content .tab-content .well.well-sm .filter-list .label.label-default .icon-cancel-circled {
-	margin-left: 5px;
-	MARGIN-RIGHT: -3px;
-	color: #555555;
+</style>
+<style type="text/css">
+.dropdown1 {
+	position: static !important;
 }
 </style>
 <?php include('includes/scripts.php') ?>
@@ -369,23 +380,21 @@ $page = '';
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="well well-sm">
+                                    <div class="well">
                                         <div class="checkbox small" style="display: inline">
                                             <label >
                                                 <input type="checkbox" id="showdetails1">
                                                 Detail View </label>
                                         </div>
                                         <div class="filter-list"> <span class="small">Filters:</span> <span class="small" id="filters_none" style="display:none">none</span>
-                                            <div id="filter_tags" style="display:inline"> <span class="label label-default"><span class="text-muted">Keyword:</span> Bus <i class="icon-cancel-circled"></i></span> <span class="label label-default"><span class="text-muted">Publisher:</span> Student Academic Systems <i class="icon-cancel-circled"></i></span></div>
+                                            <div id="filter_tags" style="display:inline"> <span class="label label-white"><span class="text-muted">Keyword:</span> Bus <i class="icon-cancel-circled"></i></span> <span class="label label-white"><span class="text-muted">Publisher:</span> Student Academic Systems <i class="icon-cancel-circled"></i></span></div>
                                         </div>
                                     </div>
-                                    <table class="table table-condensed table-borderewwwd table-actions tablesaw tablesaw-stack"
-   data-tablesaw-mode="stack" id="tablesaw-3579">
+                                    <table class="table table-hover table-condensed">
                                         <thead>
                                             <tr>
                                                 <th>Title <span class="small text-muted">(Application)</span></th>
                                                 <th>Campus</th>
-                                                <th>&nbsp;</th>
                                                 <th><span class="sr-only">Actions</span></th>
                                             </tr>
                                         </thead>
@@ -409,20 +418,27 @@ $page = '';
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUPUI, IUPUC</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
+                                                            <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -444,20 +460,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUPUI, IUPUC</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
+                                                            <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -479,24 +502,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>All IU Campuses</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_whichversion">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
-                                                            <li class="disabled"><a href="#" class="">Manually Publish Update Now</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -518,20 +544,27 @@ aria-expanded="true"><span class="caret"></span></button>
                                                         </tbody>
                                                     </table></td>
                                                 <td>All IU Campuses</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
+                                                            <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -553,20 +586,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUS</td>
-                                                <td><span data-toggle="popover" title="Schedule" data-placement="bottom" data-content="This task is set to go idle on 06/27/2017 11:59 pm"><i class="icon-info-circled"></i></span></td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
+                                                            <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -588,23 +628,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUB, IUPUI</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_whichversion">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -626,20 +670,27 @@ aria-expanded="true"><span class="caret"></span></button>
                                                         </tbody>
                                                     </table></td>
                                                 <td>All IU Campuses</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
+                                                            <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -661,20 +712,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUSB</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
+                                                            <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -696,20 +754,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUE</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
+                                                            <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -731,24 +796,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUPUI</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_whichversion">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#">Manually Publish Update Now</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_publishdate1">Change Pending Update Release Date</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -770,24 +838,27 @@ aria-expanded="true"><span class="caret"></span></button>
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUPUC</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_whichversion">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#">Manually Publish Update Now</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_publishdate1">Change Pending Update Release Date</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -809,24 +880,27 @@ aria-expanded="true"><span class="caret"></span></button>
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUN</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_whichversion">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#">Manually Publish Update Now</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_publishdate1">Change Pending Update Release Date</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -848,20 +922,27 @@ aria-expanded="true"><span class="caret"></span></button>
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUK</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
+                                                            <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -883,20 +964,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUB</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
+                                                            <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -918,20 +1006,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUS</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
+                                                            <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -953,20 +1048,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUSB</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
+                                                            <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -988,23 +1090,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUB</td>
-                                                <td><span data-toggle="popover" title="Schedule" data-placement="bottom" data-content="This task is set to be updated on 07/12/2017 11:59 pm"><i class="icon-info-circled"></i></span></td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_whichversion">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -1026,24 +1132,27 @@ aria-expanded="true"><span class="caret"></span></button>
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUB</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_whichversion">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Update Summary</a></li>
-                                                            <li class="disabled"><a href="#" class="">Manually Publish Update Now</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -1065,20 +1174,27 @@ aria-expanded="true"><span class="caret"></span></button>
                                                         </tbody>
                                                     </table></td>
                                                 <td>All IU Campuses</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
+                                                            <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -1100,20 +1216,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUS</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
-                                                aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -1135,24 +1258,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>All IU Campuses</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_whichversion">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View Pending Task Summary</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#">Manually Publish Task Now</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_publishdate1">Set Pending Update Release Date</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -1174,20 +1300,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>All IU Campuses</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
-                                                aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -1209,20 +1342,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUPUI</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
-                                                aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -1244,20 +1384,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUB</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
-                                                aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -1279,20 +1426,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>All IU Campuses</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
-                                                aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -1314,20 +1468,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>All IU Campuses</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
-                                                aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -1349,20 +1510,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>All IU Campuses</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
-                                                aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -1384,20 +1552,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>All IU Campuses</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
-                                                aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -1419,20 +1594,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>All IU Campuses</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
-                                                aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -1454,20 +1636,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUB</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
-                                                aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -1489,20 +1678,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUB</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
-                                                aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -1524,20 +1720,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUB</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
-                                                aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -1559,20 +1762,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>All IU Campuses</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
-                                                aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -1594,20 +1804,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>All IU Campuses</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
-                                                aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -1629,20 +1846,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>All IU Campuses</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
-                                                aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -1664,20 +1888,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUPUI, IUPUC</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
-                                                aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
@@ -1699,20 +1930,27 @@ aria-labelledby="dropdownMenu1">
                                                         </tbody>
                                                     </table></td>
                                                 <td>IUPUI, IUPUC</td>
-                                                <td>&nbsp;</td>
                                                 <td><div class="dropdown">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-                                                    id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu dropdown-menu-right"
-                                                aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">Edit</a></li>
-                                                            <li><a href="#">Feature</a></li>
-                                                            <li><a href="#">See Reviews</a></li>
-                                                            <li role="separator" class="divider"></li>
-                                                            <li><a href="#">Remove</a></li>
-                                                            <li><a href="#">Delete</a></li>
-                                                        </ul>
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Idle' Now</a></li>
+                                                                <li><a href="#">Schedule 'Idle' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div></td>
                                             </tr>
                                         </tbody>
@@ -1720,7 +1958,7 @@ aria-labelledby="dropdownMenu1">
                                     <div class="text-center"><a href="#" class="btn btn-xs btn-default"><i class="icon-plus-2"></i>View More </a></div>
                                 </section>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="tasks_idle" style="display: ">
+                            <div role="tabpanel" class="tab-pane" id="tasks_idle" style="display:; ">
                                 <section>
                                     <div class="row">
                                         <div class="col-sm-6">
@@ -1965,7 +2203,7 @@ aria-labelledby="dropdownMenu1">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="well well-sm">
+                                    <div class="well">
                                         <div class="checkbox small" style="display: inline">
                                             <label>
                                                 <input type="checkbox" id="showdetails1">
@@ -1976,10 +2214,10 @@ aria-labelledby="dropdownMenu1">
                                     <table class="table table-hover table-condensed">
                                         <thead>
                                             <tr>
-                                                <th>Title (Application)</th>
+                                                <th>Title <span class="small text-muted">(Application)</span></th>
+                                                <th ><span class="sr-only">Status</span></th>
                                                 <th >IU Campuses</th>
-                                                <th>Status</th>
-                                                <th>Actions</th>
+                                                <th><span class="sr-only">Actions</span></th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -2001,12 +2239,29 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td >&nbsp;</td>
                                                 <td ><span aria-hidden="false">All IU Campuses</span></td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td><div class="dropdown">
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Live' Now</a></li>
+                                                                <li><a href="#">Schedule 'Live' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Endowment information<span aria-hidden="false"> (ETA-Web)</span></div>
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Endowment information<span aria-hidden="false"><span class="small text-muted"> (ETA-Web)</span></span></div>
                                                     <table class="small taskmeta" style="display: none;">
                                                         <tbody>
                                                             <tr>
@@ -2023,12 +2278,29 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td >&nbsp;</td>
                                                 <td ><span aria-hidden="false">All IU Campuses</span></td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td><div class="dropdown">
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Live' Now</a></li>
+                                                                <li><a href="#">Schedule 'Live' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> FMS Support Form<span aria-hidden="false"> (Web Form)</span></div>
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> FMS Support Form<span aria-hidden="false"><span class="small text-muted"> (Web Form)</span></span></div>
                                                     <table class="small taskmeta" style="display: none;">
                                                         <tbody>
                                                             <tr>
@@ -2045,12 +2317,21 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td ><span class="label label-white">Draft</span></td>
                                                 <td ><span aria-hidden="false">All IU Campuses</span></td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td><div class="dropdown">
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> FNIS - International Tax Questionnaire<span aria-hidden="false"> (FMS Website: University Tax Services)</span></div>
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> FNIS - International Tax Questionnaire<span aria-hidden="false"> <span class="small text-muted">(FMS Website: University Tax Services)</span></span></div>
                                                     <table class="small taskmeta" style="display: none;">
                                                         <tbody>
                                                             <tr>
@@ -2067,9 +2348,26 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td >&nbsp;</td>
                                                 <td ><span aria-hidden="false">All IU Campuses</span></td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td><div class="dropdown">
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Live' Now</a></li>
+                                                                <li><a href="#">Schedule 'Live' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Health and Wellness</div>
@@ -2089,9 +2387,26 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td >&nbsp;</td>
                                                 <td ><span aria-hidden="false"><span >IUPUI</span></span></td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td><div class="dropdown">
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Live' Now</a></li>
+                                                                <li><a href="#">Schedule 'Live' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Healthy IU — Your Workplace Wellness Program</div>
@@ -2111,9 +2426,26 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td >&nbsp;</td>
                                                 <td ><span aria-hidden="false">All IU Campuses</span></td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td><div class="dropdown">
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Live' Now</a></li>
+                                                                <li><a href="#">Schedule 'Live' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> IU Northwest Library</div>
@@ -2133,12 +2465,29 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td >&nbsp;</td>
                                                 <td ><span aria-hidden="false"><span >IUN</span></span></td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td><div class="dropdown">
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Live' Now</a></li>
+                                                                <li><a href="#">Schedule 'Live' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> IUSON Help Desk<span aria-hidden="false"> (Web Application)</span></div>
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> IUSON Help Desk<span aria-hidden="false"><span class="small text-muted"> (Web Application)</span></span></div>
                                                     <table class="small taskmeta" style="display: none;">
                                                         <tbody>
                                                             <tr>
@@ -2155,12 +2504,29 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td >&nbsp;</td>
                                                 <td ><span aria-hidden="false"><span >IUB<span aria-hidden="false">, </span></span><span >IUPUI</span></span></td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td><div class="dropdown">
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Live' Now</a></li>
+                                                                <li><a href="#">Schedule 'Live' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Late Drop / Add Classes<span aria-hidden="false"> (after 1st week of classes)</span></div>
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Late Drop / Add Classes</div>
                                                     <table class="small taskmeta" style="display: none;">
                                                         <tbody>
                                                             <tr>
@@ -2177,9 +2543,26 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td >&nbsp;</td>
                                                 <td ><span aria-hidden="false">All IU Campuses</span></td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td><div class="dropdown">
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Live' Now</a></li>
+                                                                <li><a href="#">Schedule 'Live' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Open Enrollment Webinar Info</div>
@@ -2199,12 +2582,21 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td ><span class="label label-white">Draft</span></td>
                                                 <td ><span aria-hidden="false">All IU Campuses</span></td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td><div class="dropdown">
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Weeks of Welcome (WOW)</div>
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Weeks of Welcome<span class="small text-muted"> (WOW)</span></div>
                                                     <table class="small taskmeta" style="display: none;">
                                                         <tbody>
                                                             <tr>
@@ -2221,9 +2613,26 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td >&nbsp;</td>
                                                 <td ><span aria-hidden="false"><span >IUPUI</span></span></td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td><div class="dropdown">
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Live' Now</a></li>
+                                                                <li><a href="#">Schedule 'Live' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Wells Learning Commons</div>
@@ -2243,12 +2652,29 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td >&nbsp;</td>
                                                 <td ><span aria-hidden="false"><span >IUB</span></span></td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td><div class="dropdown">
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Live' Now</a></li>
+                                                                <li><a href="#">Schedule 'Live' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Zoom<span aria-hidden="false"> (Zoom Web Collaboration)</span></div>
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Zoom<span aria-hidden="false"><span class="small text-muted"> (Zoom Web Collaboration)</span></span></div>
                                                     <table class="small taskmeta" style="display: none;">
                                                         <tbody>
                                                             <tr>
@@ -2265,15 +2691,32 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td >&nbsp;</td>
                                                 <td ><span aria-hidden="false">All IU Campuses</span></td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td><div class="dropdown">
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
+                                                                <li><a href="pub-taskmaint-edit.php">Edit</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Set to 'Live' Now</a></li>
+                                                                <li><a href="#">Schedule 'Live' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">View Pending Updates</a></li>
+                                                                <li><a href="#">Release Pending Updates Now</a></li>
+                                                                <li><a href="#">Schedule Pending Updates Release Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div></td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </section>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="tasks_submitted">
+                            <div role="tabpanel" class="tab-pane" id="tasks_submitted" style=" display:">
                                 <section>
                                     <div class="row section-head">
                                         <div class="col-xs-12 col-sm-9 section-header">
@@ -2281,17 +2724,26 @@ aria-labelledby="dropdownMenu1">
                                         </div>
                                         <div class="col-xs-12  col-sm-3 section-controls"></div>
                                     </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox" id="toggledeclined">
-                                            Show declined tasks </label>
+                                    <div class="well">
+                                        <div class="checkbox small" style="display: inline">
+                                            <label>
+                                                <input type="checkbox" id="showdetails3">
+                                                Detail View </label>
+                                        </div>
+                                        <div class="filter-list">
+                                            <div class="checkbox small" style="display: inline">
+                                                <label>
+                                                    <input type="checkbox" id="toggledeclined">
+                                                    Show Declined Tasks </label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <table class="table table-condensed table-actions tablesaw tablesaw-stack table-collection" data-tablesaw-mode="stack" id="">
                                         <thead>
                                             <tr>
                                                 <th scope="row">Title</th>
+                                                <th scope="row"><span class="sr-only">Status</span></th>
                                                 <th scope="row">Type</th>
-                                                <th scope="row">Publish Date</th>
                                                 <th scope="row">Submitted By</th>
                                                 <th scope="row"><span class="sr-only">Actions</span></th>
                                             </tr>
@@ -2315,8 +2767,8 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td><span class="label label-white text-danger" > Declined </span></td>
                                                 <td>Updated </td>
-                                                <td><span class="text-danger" > Declined </span></td>
                                                 <td > thrclark </td>
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
@@ -2354,8 +2806,8 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td><span class="label label-white text-danger" > Declined </span></td>
                                                 <td>Updated</td>
-                                                <td><span class="text-danger" > Declined </span></td>
                                                 <td > hesenthal </td>
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
@@ -2393,8 +2845,8 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td><span class="label label-white text-danger" > Declined </span></td>
                                                 <td>Updated</td>
-                                                <td><span class="text-danger" > Declined </span></td>
                                                 <td > seenyj </td>
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
@@ -2432,8 +2884,8 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td>&nbsp;</td>
                                                 <td>New </td>
-                                                <td>Upon admin approval<br></td>
                                                 <td > breckerm </td>
                                                 <td><a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Review</a>
                                                     <div class="dropdown" style="display:inline">
@@ -2472,8 +2924,8 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td>&nbsp;</td>
                                                 <td>New </td>
-                                                <td>TBD by publisher<br></td>
                                                 <td > breckerm </td>
                                                 <td><a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Review</a>
                                                     <div class="dropdown" style="display:inline">
@@ -2512,8 +2964,8 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td>&nbsp;</td>
                                                 <td>New </td>
-                                                <td>Upon admin approval<br></td>
                                                 <td > breckerm </td>
                                                 <td><a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Review</a>
                                                     <div class="dropdown" style="display:inline">
@@ -2551,8 +3003,8 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td>&nbsp;</td>
                                                 <td> Updated </td>
-                                                <td>Upon admin approval</td>
                                                 <td > tcain </td>
                                                 <td><a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Review</a>
                                                     <div class="dropdown" style="display:inline">
@@ -2590,8 +3042,8 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td>&nbsp;</td>
                                                 <td> Updated</td>
-                                                <td>TBD by publisher<br></td>
                                                 <td > tozogar </td>
                                                 <td><a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Review</a>
                                                     <div class="dropdown" style="display:inline">
@@ -2629,8 +3081,8 @@ aria-labelledby="dropdownMenu1">
                                                             </tr>
                                                         </tbody>
                                                     </table></td>
+                                                <td>&nbsp;</td>
                                                 <td> New </td>
-                                                <td>TBD by publisher<br></td>
                                                 <td > adobiega </td>
                                                 <td><a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Review</a>
                                                     <div class="dropdown" style="display:inline">
@@ -2695,7 +3147,7 @@ aria-labelledby="dropdownMenu1">
                                             <td>1</td>
                                             <td>End: 07/03/2017 5:00am</td>
                                             <td>&nbsp;</td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Delete</a></td>
+                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Classifieds</div>
@@ -2719,7 +3171,7 @@ aria-labelledby="dropdownMenu1">
                                             <td>2</td>
                                             <td>End: 07/03/2017 5:00am</td>
                                             <td>&nbsp;</td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Delete</a></td>
+                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr class="warning">
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Orientation</div>
@@ -2743,7 +3195,7 @@ aria-labelledby="dropdownMenu1">
                                             <td>3</td>
                                             <td>End: 05/03/2017 5:00am </td>
                                             <td><span class="label label-warning">Ending soon</span></td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Delete</a></td>
+                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>IU Anyware</div>
@@ -2768,7 +3220,7 @@ aria-labelledby="dropdownMenu1">
                                             <td>Begin: 06/03/2017 5:00am<br>
                                                 End: 07/03/2017 5:00am</td>
                                             <td>&nbsp;</td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Delete</a></td>
+                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Open Enrollment</div>
@@ -2793,7 +3245,7 @@ aria-labelledby="dropdownMenu1">
                                             <td>Begin: 06/03/2017 5:00am<br>
                                                 End: 07/03/2017 5:00am</td>
                                             <td>&nbsp;</td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Delete</a></td>
+                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -2831,7 +3283,7 @@ aria-labelledby="dropdownMenu1">
                                                     </tbody>
                                                 </table></td>
                                             <td>Task</td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Delete</a></td>
+                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Report IU Secure Outages </div>
@@ -2852,7 +3304,7 @@ aria-labelledby="dropdownMenu1">
                                                     </tbody>
                                                 </table></td>
                                             <td>Task</td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Delete</a></td>
+                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Status.IU </div>
@@ -2873,7 +3325,7 @@ aria-labelledby="dropdownMenu1">
                                                     </tbody>
                                                 </table></td>
                                             <td>Task Center</td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Delete</a></td>
+                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>My Class Schedule </div>
@@ -2894,7 +3346,7 @@ aria-labelledby="dropdownMenu1">
                                                     </tbody>
                                                 </table></td>
                                             <td>Task</td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Delete</a></td>
+                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Imail <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(Email)</span></div>
@@ -2915,7 +3367,7 @@ aria-labelledby="dropdownMenu1">
                                                     </tbody>
                                                 </table></td>
                                             <td>Task</td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Delete</a></td>
+                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Umail <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(Email)</span></div>
@@ -2936,7 +3388,7 @@ aria-labelledby="dropdownMenu1">
                                                     </tbody>
                                                 </table></td>
                                             <td>Task</td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Delete</a></td>
+                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Textbook Orders (Student) </div>
@@ -2957,7 +3409,7 @@ aria-labelledby="dropdownMenu1">
                                                     </tbody>
                                                 </table></td>
                                             <td>Task</td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Delete</a></td>
+                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Print quota <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(IU Print)</span></div>
@@ -2978,7 +3430,7 @@ aria-labelledby="dropdownMenu1">
                                                     </tbody>
                                                 </table></td>
                                             <td>Task</td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Delete</a></td>
+                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Canvas </div>
@@ -2999,7 +3451,7 @@ aria-labelledby="dropdownMenu1">
                                                     </tbody>
                                                 </table></td>
                                             <td>Task</td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Delete</a></td>
+                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Talk Nerdy to Me </div>
@@ -3020,7 +3472,7 @@ aria-labelledby="dropdownMenu1">
                                                     </tbody>
                                                 </table></td>
                                             <td>Task</td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Delete</a></td>
+                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>IU Knowledge Base <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(KB)</span></div>
@@ -3041,7 +3493,7 @@ aria-labelledby="dropdownMenu1">
                                                     </tbody>
                                                 </table></td>
                                             <td>Task</td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Delete</a></td>
+                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Student Center <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(SIS)</span></div>
@@ -3062,7 +3514,7 @@ aria-labelledby="dropdownMenu1">
                                                     </tbody>
                                                 </table></td>
                                             <td>Task</td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Delete</a></td>
+                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Cloud Storage </div>
@@ -3083,7 +3535,7 @@ aria-labelledby="dropdownMenu1">
                                                     </tbody>
                                                 </table></td>
                                             <td>Task</td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Delete</a></td>
+                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Course History </div>
@@ -3104,7 +3556,7 @@ aria-labelledby="dropdownMenu1">
                                                     </tbody>
                                                 </table></td>
                                             <td>Task</td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Delete</a></td>
+                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>1095-C Statement </div>
@@ -3125,7 +3577,7 @@ aria-labelledby="dropdownMenu1">
                                                     </tbody>
                                                 </table></td>
                                             <td>Task</td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Delete</a></td>
+                                            <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -3587,7 +4039,7 @@ aria-labelledby="dropdownMenu1">
 </script> 
     <script>
     $(document).ready(function() {
-        $('#showdetails1, #showdetails2').change(function() {
+        $('#showdetails1, #showdetails2,#showdetails3').change(function() {
             if (this.checked)
                 $(".taskmeta").show();
             else
@@ -3597,7 +4049,7 @@ aria-labelledby="dropdownMenu1">
 </script> 
     <script>
     $(document).ready(function() {
-        $("#showdetails1, #showdetails2").click(function() {
+        $("#showdetails1, #showdetails2,#showdetails3").click(function() {
             $(".icon-angle-right").toggleClass("icon-angle-down");
         });
     });
@@ -3632,7 +4084,7 @@ $(function () {
         });
 		
 		$(".apply_filter").click(function(){
-    $("#filter_tags .label.label-default").show();
+    $("#filter_tags .label.label-white").show();
 });
 
 
