@@ -59,24 +59,8 @@
 <style>
 
 
-.taskmeta {
-	margin-left: 20px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+.app-name, .sub-header, header .container .dropdown.navbar-text .btn-link, .navbar-text {
+    color: #ffffff;
 }
-.taskmeta tbody tr td {
-	padding: 0px
-}
-.taskmeta tbody tr td:first-child {
-    width: 1%;
-	white-space: nowrap;
-	text-align: right
-}
-.taskmeta tbody tr td:last-child {
-	width: 99%;
-	padding-left: 20px
-}
-
-
 
 </style>
