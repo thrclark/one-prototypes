@@ -108,15 +108,15 @@ background-color: #FFFFFF;
                                 <div class="col-md-12">
                                     <form name="taskForm" novalidate validate="errors" id="taskForm" class=" -maxlength -url -pattern -min -max -required">
                                         <div class="well well-sm" style="background:#f8f8f8; margin-bottom:;"> 
-                                            <!--       <fieldset>
+                                                  <fieldset>
                                                 <legend>Scheduled Update Request</legend>
-                                                <p>Updates to this task will be published on the following date: 07/14/2017 12:01pm (<a href="#" data-toggle="modal" data-target="#modal_publishdate">change publish date</a>).</p>
-                                                <p class="text-muted">-- or-- </p>
+                                                <p>Updates to this task have a requested publish date of: 07/14/2017 12:01pm (<a href="#" data-toggle="modal" data-target="#modal_publishdate">change publish date</a>).</p>
+                                                <!--<p class="text-muted">-- or-- </p>
                                                 <p>Updates to this task will be published immediately upon approval (<a href="#" data-toggle="modal" data-target="#modal_publishdate">set publish date</a>).</p>
                                                 <p class="text-muted">-- or-- </p>
-                                                <p>An effective date for these updates has not yet been specified (<a href="#" data-toggle="modal" data-target="#modal_publishdate">set publish date</a>).</p>
-                                            </fieldset>-->
-                                            
+                                                <p>An effective date for these updates has not yet been specified (<a href="#" data-toggle="modal" data-target="#modal_publishdate">set publish date</a>).</p>-->
+                                            </fieldset>
+                                            </div>  <div class="well well-sm" style="background:#f8f8f8; margin-bottom:;"> 
                                             <fieldset>
                                                 <legend style="margin-bottom:0px">Notes</legend>
                                                 <div class="comment-list">

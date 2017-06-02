@@ -36,7 +36,7 @@ $page = '';
                         <section>
                             <div class="row section-head">
                                 <div class="col-xs-12 col-sm-9 section-header">
-                                    <h2 class="h3">Update Task</h2>
+                                    <h2 class="h3">New Task</h2>
                                 </div>
                                 <div class="col-xs-12  col-sm-3 section-controls"></div>
                             </div>
@@ -46,6 +46,7 @@ $page = '';
                                     <?php include('includes/taskformfields.php') ?>
                                     <hr>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_publishdate"> Submit for Approval...</button>
+                                    <button class="btn btn-default" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Save as Draft</button>
                                     <button class="btn btn-default" type="button" tabindex="0" aria-disabled="true" aria-hidden="false">Cancel</button>
                                     </form>
                                 </div>
