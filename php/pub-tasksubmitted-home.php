@@ -88,8 +88,10 @@ $page = '';
                                 </thead>
                                 <tbody>
                                     <tr class="declined">
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Explore Programs</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Explore Programs</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -101,11 +103,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td><span aria-hidden="true" >All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td>Updated </td>
+                                                        <td><span aria-hidden="true" >All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td >Updated </td>
                                         <td><span class="text-danger" > Declined </span></td>
                                         <td > thrclark </td>
                                         <td>
@@ -127,8 +128,10 @@ $page = '';
                                             </div>--></td>
                                     </tr>
                                     <tr class="declined">
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Motor Vehicle Records Check</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Motor Vehicle Records Check</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -141,11 +144,10 @@ $page = '';
                                                     <tr>
                                                         <td>IU Campuses:</td>
                                                         <td>UB, All IU Campuses,
-                                                            IUPUI </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td>Updated</td>
+                                                            IUPUI </td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td >Updated</td>
                                         <td><span class="text-danger" > Declined </span></td>
                                         <td > hesenthal </td>
                                         <td>
@@ -167,8 +169,10 @@ $page = '';
                                             </div>--></td>
                                     </tr>
                                     <tr class="declined">
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Waiver Request</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Waiver Request</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -181,11 +185,10 @@ $page = '';
                                                     <tr>
                                                         <td>IU Campuses:</td>
                                                         <td>UB, All IU Campuses,
-                                                            IUPUI </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td>Updated</td>
+                                                            IUPUI </td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td >Updated</td>
                                         <td><span class="text-danger" > Declined </span></td>
                                         <td > seenyj </td>
                                         <td>
@@ -207,8 +210,10 @@ $page = '';
                                             </div>--></td>
                                     </tr>
                                     <tr >
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Apple</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Apple</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -220,15 +225,13 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses<br>
-                                                            IUPUI </span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td>New </td>
+                                                        <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses, IUPUI </span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td >New </td>
                                         <td>Upon admin approval<br></td>
                                         <td > breckerm </td>
-                                        <td><a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Review</a>
+                                        <td><a href="pub-taskmaint-approve.php" class="btn btn-default btn-xs">Review</a>
                                             <div class="dropdown" style="display:inline">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
@@ -247,8 +250,10 @@ $page = '';
                                             </div>--></td>
                                     </tr>
                                     <tr >
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus 411 Information</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus 411 Information</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -260,15 +265,13 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses<br>
-                                                            IUPUI </span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td>New </td>
+                                                        <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses, IUPUI </span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td >New </td>
                                         <td>TBD by publisher<br></td>
                                         <td > breckerm </td>
-                                        <td><a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Review</a>
+                                        <td><a href="pub-taskmaint-approve.php" class="btn btn-default btn-xs">Review</a>
                                             <div class="dropdown" style="display:inline">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
@@ -287,8 +290,10 @@ $page = '';
                                             </div>--></td>
                                     </tr>
                                     <tr >
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Tour</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Tour</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -300,15 +305,13 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses<br>
-                                                            IUPUI </span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td>New </td>
+                                                        <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses, IUPUI </span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td >New </td>
                                         <td>Upon admin approval<br></td>
                                         <td > breckerm </td>
-                                        <td><a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Review</a>
+                                        <td><a href="pub-taskmaint-approve.php" class="btn btn-default btn-xs">Review</a>
                                             <div class="dropdown" style="display:inline">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
@@ -327,8 +330,10 @@ $page = '';
                                             </div>--></td>
                                     </tr>
                                     <tr >
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Asset Retirement Global <span aria-hidden="false" class="small text-muted"> (KFS)</span></div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Asset Retirement Global <span aria-hidden="false" class="small text-muted"> (KFS)</span></div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -340,14 +345,13 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Updated </td>
+                                                        <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Updated </td>
                                         <td>Upon admin approval</td>
                                         <td > tcain </td>
-                                        <td><a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Review</a>
+                                        <td><a href="pub-taskmaint-approve.php" class="btn btn-default btn-xs">Review</a>
                                             <div class="dropdown" style="display:inline">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
@@ -366,8 +370,10 @@ $page = '';
                                             </div>--></td>
                                     </tr>
                                     <tr >
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Capital Asset Management<span aria-hidden="false" class="small text-muted"> (FR)</span></div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Capital Asset Management<span aria-hidden="false" class="small text-muted"> (FR)</span></div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -379,14 +385,13 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Updated</td>
+                                                        <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Updated</td>
                                         <td>TBD by publisher<br></td>
                                         <td > tozogar </td>
-                                        <td><a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Review</a>
+                                        <td><a href="pub-taskmaint-approve.php" class="btn btn-default btn-xs">Review</a>
                                             <div class="dropdown" style="display:inline">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
@@ -405,8 +410,10 @@ $page = '';
                                             </div>--></td>
                                     </tr>
                                     <tr >
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> IU Peer Coaches <span aria-hidden="false" class="small text-muted">(University Division)</span></div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> IU Peer Coaches <span aria-hidden="false" class="small text-muted">(University Division)</span></div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -418,14 +425,13 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> New </td>
+                                                        <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > New </td>
                                         <td>TBD by publisher<br></td>
                                         <td > adobiega </td>
-                                        <td><a href="pub-tasksubmitted-edit.php" class="btn btn-default btn-xs">Review</a>
+                                        <td><a href="pub-taskmaint-approve.php" class="btn btn-default btn-xs">Review</a>
                                             <div class="dropdown" style="display:inline">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">

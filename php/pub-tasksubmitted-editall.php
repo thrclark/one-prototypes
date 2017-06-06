@@ -1671,12 +1671,11 @@ background-color: #FFFFFF;
                             <div class="radio">
                                 <label>
                                     <input type="radio" name="cars" value="2">
-                                    Set publish date to TBD. </label>
+                                    Set task to 'Inactive' upon approval. </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="cars" value="3">
-                                    Specify publish date. </label>
+                                    <input type="radio" name="cars" value="3">Specify date on which this task will be set to 'Live'. </label>
                             </div>
                         </div>
                         <div class="form-group col-md-12" id="pubdate_widget3"  style="display:none">

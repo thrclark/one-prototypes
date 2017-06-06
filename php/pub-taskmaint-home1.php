@@ -78,8 +78,10 @@ $page = '';
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -93,11 +95,10 @@ $page = '';
                                                         <td>IU Campuses:</td>
                                                         <td>IUPUI, IUPUC<span
                                                         aria-hidden="true">, </span><span
-                                                aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -109,14 +110,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>AlcoholEdu</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>AlcoholEdu</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -130,11 +134,10 @@ $page = '';
                                                         <td>IU Campuses:</td>
                                                         <td>IUPUI, IUPUC<span
                                                         aria-hidden="true">, </span><span
-                                                aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -146,14 +149,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Apple</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Apple</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -165,11 +171,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>All IU Campuses</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td>All IU Campuses</td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>07/15/2017 5:00am<br>
                                             <span class="small text-muted">(pending approval)</span></td>
                                         <td><div class="dropdown">
@@ -186,14 +191,17 @@ $page = '';
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Approved Chartered Buses <span class="small text-muted">(BusCompanies.cfm)</span></div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Approved Chartered Buses <span class="small text-muted">(BusCompanies.cfm)</span></div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -205,11 +213,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>All IU Campuses</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td>All IU Campuses</td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -221,14 +228,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Bus Routes <span class="small text-muted">(TARC)</span></div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Bus Routes <span class="small text-muted">(TARC)</span></div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -240,11 +250,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>IUS<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td>Inactive</td>
+                                                        <td>IUS<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td >Inactive</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -256,14 +265,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus 411 Information</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus 411 Information</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -277,11 +289,10 @@ $page = '';
                                                         <td>IU Campuses:</td>
                                                         <td>IUB, IUPUI<span
                                                         aria-hidden="true">, </span><span
-                                                aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>Upon admin approval<br>
                                             <span class="small text-muted">(pending approval)</span></td>
                                         <td><div class="dropdown">
@@ -297,14 +308,17 @@ $page = '';
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Alerts</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Alerts</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -316,11 +330,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td><span aria-hidden="true" >All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td><span aria-hidden="true" >All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -332,14 +345,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Elections <span class="small text-muted">(IUSB Vote)</span></div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Elections <span class="small text-muted">(IUSB Vote)</span></div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -351,11 +367,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>IUSB<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td>Inactive</td>
+                                                        <td>IUSB<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td >Inactive</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -367,14 +382,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -386,11 +404,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>IUE<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td>IUE<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -402,14 +419,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -421,11 +441,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>IUPUI<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td>IUPUI<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>07/18/2017 5:00am<br>
                                             <span class="small text-muted">(approved)</span></td>
                                         <td><div class="dropdown">
@@ -442,14 +461,17 @@ $page = '';
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_publishdate1">Change Pending Update Release Date</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -461,11 +483,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>IUPUC<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td>IUPUC<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>07/18/2017 5:00am<br>
                                             <span class="small text-muted">(approved)</span></td>
                                         <td><div class="dropdown">
@@ -482,14 +503,17 @@ $page = '';
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_publishdate1">Change Pending Update Release Date</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -501,11 +525,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>IUN<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td>IUN<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>07/18/2017 5:00am<br>
                                             <span class="small text-muted">(approved)</span></td>
                                         <td><div class="dropdown">
@@ -522,14 +545,17 @@ $page = '';
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_publishdate1">Change Pending Update Release Date</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -541,11 +567,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>IUK<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td>IUK<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -557,14 +582,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -576,11 +604,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>IUB<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td>IUB<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -592,14 +619,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -611,11 +641,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>IUS<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td>Inactive</td>
+                                                        <td>IUS<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td >Inactive</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -627,14 +656,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus events</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus events</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -646,11 +678,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>IUSB<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td>Inactive</td>
+                                                        <td>IUSB<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td >Inactive</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -662,14 +693,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Tour</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Tour</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -681,11 +715,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>IUB<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Draft</td>
+                                                        <td>IUB<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Draft</td>
                                         <td>Upon admin approval<br>
                                             <span class="small text-muted">(pending approval)</span></td>
                                         <td><div class="dropdown">
@@ -701,14 +734,17 @@ $page = '';
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Capital Asset Management<span aria-hidden="false" class="small text-muted"> (FR)</span></div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Capital Asset Management<span aria-hidden="false" class="small text-muted"> (FR)</span></div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -720,11 +756,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>IUB<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td>IUB<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>Manual release by publisher<br>
                                             <span class="small text-muted">(pending approval)</span></td>
                                         <td><div class="dropdown">
@@ -741,14 +776,17 @@ $page = '';
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_publishdate2">Change Pending Update Release Date</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Check Account Balance <span class="small text-muted">(Jagtag)</span></div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Check Account Balance <span class="small text-muted">(Jagtag)</span></div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -760,11 +798,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td><span aria-hidden="true" >All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td><span aria-hidden="true" >All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -776,14 +813,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Childcare fees</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Childcare fees</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -795,11 +835,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>IUS<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td>IUS<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -811,14 +850,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Classifieds</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Classifieds</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -830,11 +872,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td><span aria-hidden="true" >All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Draft</td>
+                                                        <td><span aria-hidden="true" >All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Draft</td>
                                         <td>Manual release by publisher<br>
                                             <span class="small text-muted">(approved)</span></td>
                                         <td><div class="dropdown">
@@ -851,14 +892,17 @@ $page = '';
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_publishdate1">Set Pending Update Release Date</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Pending Update</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Code of conduct</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Code of conduct</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -870,11 +914,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td><span aria-hidden="true" >All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td>Inactive</td>
+                                                        <td><span aria-hidden="true" >All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td >Inactive</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -886,14 +929,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Competitive Scholarship Application <span class="small text-muted">(Academic Works)</span></div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Competitive Scholarship Application <span class="small text-muted">(Academic Works)</span></div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -905,11 +951,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>IUPUI<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td>IUPUI<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -921,14 +966,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Construction Alerts</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Construction Alerts</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -940,11 +988,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>IUB<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td>IUB<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -956,14 +1003,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Counseling and Psychological Services <span class="small text-muted">(CAPS)</span></div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Counseling and Psychological Services <span class="small text-muted">(CAPS)</span></div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -975,11 +1025,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td><span aria-hidden="true" >All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td><span aria-hidden="true" >All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -991,14 +1040,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Deal of the Day Promotion <span class="small text-muted">(Jagtag)</span></div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Deal of the Day Promotion <span class="small text-muted">(Jagtag)</span></div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -1010,11 +1062,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td><span aria-hidden="true" >All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td><span aria-hidden="true" >All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1026,14 +1077,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>DeviceNet</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>DeviceNet</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -1045,11 +1099,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td><span aria-hidden="true" >All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td><span aria-hidden="true" >All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1061,14 +1114,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Division of Student Affairs</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Division of Student Affairs</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -1080,11 +1136,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td><span aria-hidden="true" >asdfasdfasdf</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td><span aria-hidden="true" >asdfasdfasdf</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1096,14 +1151,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Emergency Contact Phone Numbers <span class="small text-muted">(Protect.IU)</span></div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Emergency Contact Phone Numbers <span class="small text-muted">(Protect.IU)</span></div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -1115,11 +1173,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>All IU Campuses</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td>All IU Campuses</td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1131,14 +1188,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Energy Matters</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Energy Matters</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -1150,11 +1210,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>IUB<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td>IUB<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1166,14 +1225,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Explore Majors and More <span class="small text-muted">(University Division)</span></div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Explore Majors and More <span class="small text-muted">(University Division)</span></div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -1185,11 +1247,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>IUB<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td>IUB<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1201,14 +1262,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Explore Programs <span class="small text-muted">(University Division)</span></div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Explore Programs <span class="small text-muted">(University Division)</span></div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -1220,11 +1284,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>IUB<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td>Inactive</td>
+                                                        <td>IUB<span aria-hidden="true">, </span><span aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td >Inactive</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1236,14 +1299,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Extinguisher Information - IU Departments <span class="small text-muted">(Show Extinguishers)</span></div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Extinguisher Information - IU Departments <span class="small text-muted">(Show Extinguishers)</span></div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -1255,11 +1321,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>All IU Campuses</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td>All IU Campuses</td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1271,14 +1336,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Extinguisher Information - Public <span class="small text-muted">(Unit Inspection Report)</span></div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Extinguisher Information - Public <span class="small text-muted">(Unit Inspection Report)</span></div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -1290,11 +1358,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>All IU Campuses</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td>All IU Campuses</td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1306,14 +1373,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>First Aid - CPR Classes</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>First Aid - CPR Classes</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -1325,11 +1395,10 @@ $page = '';
                                                     </tr>
                                                     <tr>
                                                         <td>IU Campuses:</td>
-                                                        <td>All IU Campuses</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                        <td>All IU Campuses</td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1341,14 +1410,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Haven</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Haven</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -1362,11 +1434,10 @@ $page = '';
                                                         <td>IU Campuses:</td>
                                                         <td>IUPUI, IUPUC<span
                                                         aria-hidden="true">, </span><span
-                                                aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1378,14 +1449,17 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>HavenPlus</div>
-                                            <table class="small taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>HavenPlus</div> <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                           
+                                                <table class="taskmeta-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>Categories:</td>
@@ -1399,11 +1473,10 @@ $page = '';
                                                         <td>IU Campuses:</td>
                                                         <td>IUPUC, IUPUI<span
                                                         aria-hidden="true">, </span><span
-                                                aria-hidden="true">All IU Campuses</span></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table></td>
-                                        <td> Active</td>
+                                                aria-hidden="true">All IU Campuses</span></td> </tr>
+                                                        </tbody>
+                                                    </table></div></td>
+                                                <td > Active</td>
                                         <td>&nbsp;</td>
                                         <td><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1415,8 +1488,9 @@ $page = '';
                                                     <li><a href="#">Feature</a></li>
                                                     <li><a href="#">See Reviews</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Remove</a></li>
-                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">Remove</a></li> <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+
+
                                                 </ul>
                                             </div></td>
                                     </tr>

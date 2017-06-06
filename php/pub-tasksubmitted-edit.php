@@ -107,8 +107,8 @@ background-color: #FFFFFF;
                             <div class="row">
                                 <div class="col-md-12">
                                     <form name="taskForm" novalidate validate="errors" id="taskForm" class=" -maxlength -url -pattern -min -max -required">
-                                        <div class="well well-sm" style="background:#f8f8f8; margin-bottom:;"> 
-                                                  <fieldset>
+                                        <div class="well well-sm" style="background:#f8f8f8; margin-bottom:;">
+                                            <fieldset>
                                                 <legend>Scheduled Update Request</legend>
                                                 <p>Updates to this task have a requested publish date of: 07/14/2017 12:01pm (<a href="#" data-toggle="modal" data-target="#modal_publishdate">change publish date</a>).</p>
                                                 <!--<p class="text-muted">-- or-- </p>
@@ -116,7 +116,8 @@ background-color: #FFFFFF;
                                                 <p class="text-muted">-- or-- </p>
                                                 <p>An effective date for these updates has not yet been specified (<a href="#" data-toggle="modal" data-target="#modal_publishdate">set publish date</a>).</p>-->
                                             </fieldset>
-                                            </div>  <div class="well well-sm" style="background:#f8f8f8; margin-bottom:;"> 
+                                        </div>
+                                        <div class="well well-sm" style="background:#f8f8f8; margin-bottom:;">
                                             <fieldset>
                                                 <legend style="margin-bottom:0px">Notes</legend>
                                                 <div class="comment-list">
@@ -281,6 +282,13 @@ background-color: #FFFFFF;
                                                 </table>
                                             </fieldset>
                                         </div>
+                                        
+                                        
+                                        
+                                        
+                                         <?php include('includes/taskformfields.php') ?>
+                                         
+<!--                                         
                                         <fieldset>
                                             <legend>General</legend>
                                             <div class="row">
@@ -486,38 +494,6 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </fieldset>
-                                        <!--  <fieldset>
-                                            <legend>Active Dates/Status <small class="text-muted" style="text-transform:lowercase;">(currently inactive)</small></legend>
-                                            <div class="row">
-                                                <div class="form-group col-md-4">
-                                                    <div class="radio">
-                                                        <label class="control-label">
-                                                            <input type="radio" value="status" name="15" tabindex="0" aria-checked="true" aria-invalid="false" id="show_status">
-                                                            Specify by Status </label>
-                                                    </div>
-                                                    <div class="radio">
-                                                        <label>
-                                                            <input type="radio" value="range" name="15" tabindex="0" aria-checked="false" aria-invalid="false" id="show_range">
-                                                            Specify End Date</label>
-                                                    </div>
-                                                </div>
-                                                <div style="display:block" aria-hidden="false" id="choose_status">
-                                                    <div class="form-group col-md-4">
-                                                        <label for="status" class="control-label">Status</label>
-                                                        <select class="form-control " required tabindex="0" aria-required="false" aria-invalid="false">
-                                                            <option value="A" selected="selected" label="Active">Active</option>
-                                                            <option value="I" label="Inactive">Inactive</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div style="display:none" aria-hidden="true" id="choose_range">
-                                                    <div class="form-group col-md-4">
-                                                        <label for="endDate" class="control-label">End Date </label>
-                                                        <input type="text" name="endDate" datepicker="body" time="" class="form-control picktime" title="" tabindex="0" aria-invalid="false">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </fieldset>-->
                                         <fieldset>
                                             <legend>Versioning</legend>
                                             <div class="row">
@@ -1346,7 +1322,7 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </fieldset>
-                                        <fieldset>
+-->                                        <fieldset>
                                             <legend>Approver's Notes</legend>
                                             <div class="form-group ">
                                                 <label class="control-label" for="comments"> Comments </label>
@@ -1385,12 +1361,11 @@ background-color: #FFFFFF;
                             <div class="radio">
                                 <label>
                                     <input type="radio" name="cars" value="2">
-                                    Set publish date to TBD. </label>
+                                    Set task to 'Inactive' upon approval. </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="cars" value="3">
-                                    Specify publish date. </label>
+                                    <input type="radio" name="cars" value="3">Specify date on which this task will be set to 'Live'. </label>
                             </div>
                         </div>
                         <div class="form-group col-md-12" id="pubdate_widget3"  style="display:none">

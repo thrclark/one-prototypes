@@ -130,6 +130,12 @@ $page = '';
     <?php include('includes/header-brand.php') ?>
     <?php include('includes/header-publishing.php') ?>
     <div class="main-content container" role="main">
+    
+    
+    
+    
+    
+    
         <div id="main-content">
             <div class="row">
                 <div class="col-md-3">
@@ -422,7 +428,7 @@ $page = '';
                                             <div id="filter_tags" style="display:inline"> <span class="label label-white"><span class="text-muted">Keyword:</span> Bus <i class="icon-cancel-circled"></i></span> <span class="label label-white"><span class="text-muted">Publisher:</span> Student Academic Systems <i class="icon-cancel-circled"></i></span></div>
                                         </div>
                                     </div>
-                                    <table class="table table-hover table-condensed">
+                                    <table class="table table-hover table-condensed display" id="table1">
                                         <thead>
                                             <tr>
                                                 <th>Title <span class="small text-muted">(Application)</span></th>
@@ -434,74 +440,72 @@ $page = '';
                                         <tbody>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
-                                                   
-                                                   
-                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
-                                                   
-                                                   
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUPUI, IUPUC</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Kelly School of Business</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUPUI, IUPUC</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Kelly School of Business</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td>IUPUI, IUPUC</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
-id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
-                                                            <ul class="dropdown-menu dropdown-menu-right"
-aria-labelledby="dropdownMenu1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Update</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>AlcoholEdu</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUPUI, IUPUC</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Parking</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-account-creation.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUPUI, IUPUC</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Parking</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td>IUPUI, IUPUC</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
@@ -515,36 +519,39 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Drop or Add Classes</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Academics</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>UITS - IUIE</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-change-name.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Academics</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>UITS - IUIE</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td ><span aria-hidden="false">All IU Campuses</span></td>
                                                 <td><span class="label label-white">Inactive</span></td>
                                                 <td><div class="dropdown">
@@ -554,37 +561,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Update</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Live' Now</a></li>
-                                                                <li><a href="#">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule 'Live' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Apple</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>IT Services, Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Staff, Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Policy Coordinator</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>All IU Campuses</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-resident.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>IT Services, Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Staff, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Policy Coordinator</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >All IU Campuses</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -597,37 +607,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Approved Chartered Buses <span class="small text-muted">(BusCompanies.cfm)</span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Transportation, Administrative, Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>All Roles</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Oncourse</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>All IU Campuses</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-incident.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Transportation, Administrative, Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>All Roles</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Oncourse</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >All IU Campuses</td>
                                                 <td><span class="label label-white" data-toggle="tooltip" data-placement="bottom" title="Scheduled to go  inactive on 07/31/17 5:00pm">Live <i class="icon-circle"></i> </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -640,38 +653,41 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
                                                                 <li><a href="#">Reschedule 'Inactive' Date</a></li>
                                                                 <li><a href="#">Remove 'Inactive' Scheduling</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Bus Routes <span class="small text-muted">(TARC)</span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student, Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUS</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>OVPUE</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUS</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/SD-002.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUS</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>OVPUE</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUS</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -684,37 +700,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus 411 Information</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student, Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUB, IUPUI</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>RPS Application Administration</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUB, IUPUI</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-empty4.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUB, IUPUI</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>RPS Application Administration</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUB, IUPUI</td>
                                                 <td><span class="label label-white "> <span class="text-muted">Draft</span></span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -725,34 +744,37 @@ aria-expanded="true"><span class="caret"></span></button>
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Update</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Alerts</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Staff, Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td><span aria-hidden="true" >All IU Campuses</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Office of the Registrar - IU Southeast</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>All IU Campuses</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-academic-calendar.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Staff, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td><span aria-hidden="true" >All IU Campuses</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Office of the Registrar - IU Southeast</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >All IU Campuses</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -765,36 +787,39 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Health and Wellness</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>IT Services, Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>All Roles</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUPUI</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>RPS Application Administration</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/SD-004.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>IT Services, Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>All Roles</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUPUI</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>RPS Application Administration</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td ><span aria-hidden="false"><span >IUPUI</span></span></td>
                                                 <td><span class="label label-white">Inactive</span></td>
                                                 <td><div class="dropdown">
@@ -804,36 +829,39 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Update</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Live' Now</a></li>
-                                                                <li><a href="#">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule 'Live' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Drop or Add Classes</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Academics</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>UITS - IUIE</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/SD-018.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Academics</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>UITS - IUIE</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td ><span aria-hidden="false">All IU Campuses</span></td>
                                                 <td><span class="label label-white" data-toggle="tooltip" data-placement="bottom" title="Scheduled to go  live on 07/31/17 5:00pm">Inactive <i class="icon-circle"></i> </span></td>
                                                 <td><div class="dropdown">
@@ -845,38 +873,41 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Live' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
                                                                 <li><a href="#">Reschedule 'Live' Date</a></li>
                                                                 <li><a href="#">Remove 'Live' Scheduling</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Elections <span class="small text-muted">(IUSB Vote)</span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Administrative, Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>All Roles</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUSB</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>RASD - Grants</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUSB</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/SD-017.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Administrative, Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>All Roles</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUSB</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>RASD - Grants</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUSB</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -889,37 +920,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>All Roles</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUE</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Policy Coordinator</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUE</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-bill-pay.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>All Roles</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUE</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Policy Coordinator</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUE</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -932,37 +966,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>All Roles</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUPUI</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>RASD - Compliance</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUPUI</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-box.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>All Roles</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUPUI</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>RASD - Compliance</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUPUI</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -975,37 +1012,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student, Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUPUC</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>University College</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUPUC</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-childcare-fees.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUPUC</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>University College</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUPUC</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -1018,37 +1058,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student, Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUN</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>USSS</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUN</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-campus-events.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUN</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>USSS</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUN</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -1061,37 +1104,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>All Roles</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUK</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Libraries - SouthBend</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUK</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>All Roles</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUK</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Libraries - SouthBend</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUK</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -1104,37 +1150,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Staff, Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUB</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>IU Contact Center</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUB</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-classifieds.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Staff, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUB</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>IU Contact Center</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUB</td>
                                                 <td><span class="label label-white" data-toggle="tooltip" data-placement="bottom" title="Scheduled to be updated on 07/31/17 5:00pm">Live <i class="icon-circle"></i></span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -1147,41 +1196,44 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#">Publish Pending Updates Now</a></li>
                                                                 <li><a href="#">Reschedule Pending Updates Release</a></li>
                                                                 <li><a href="#">Cancel Pending Updates Release</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Staff, Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUS</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Career and Accessibility Services</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUS</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-parking.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Staff, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUS</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Career and Accessibility Services</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUS</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -1194,37 +1246,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>All Roles</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUSB</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>ABITC</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUSB</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-change-name.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>All Roles</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUSB</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>ABITC</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUSB</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -1237,37 +1292,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Tour</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student, Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUB</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Athletics</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUB</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-IUanyWare.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUB</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Athletics</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUB</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -1280,37 +1338,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Capital Asset Management<span aria-hidden="false" class="small text-muted"> (FR)</span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student, Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUB</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>CRM</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUB</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-paycheck.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUB</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>CRM</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUB</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -1323,36 +1384,39 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> FMS Support Form<span aria-hidden="false"><span class="small text-muted"> (Web Form)</span></span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Finances</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Faculty, Staff</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Storage and Virtualization</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-classifieds.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Finances</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Faculty, Staff</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Storage and Virtualization</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td ><span aria-hidden="false">All IU Campuses</span></td>
                                                 <td><span class="label label-white" data-toggle="tooltip" data-placement="bottom" title="Scheduled to go live with updates on 07/31/17 5:00pm">Inactive <i class="icon-circle"></i></span></td>
                                                 <td><div class="dropdown">
@@ -1363,41 +1427,44 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Live' Now</a></li>
-                                                                <li><a href="#">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule 'Live' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#">Publish Pending Updates Now</a></li>
                                                                 <li><a href="#">Reschedule Pending Updates Release</a></li>
                                                                 <li><a href="#">Cancel Pending Updates Release</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Check Account Balance <span class="small text-muted">(Jagtag)</span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Housing &amp; Dining, Finances, Personal Information</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student, Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td><span aria-hidden="true" >All IU Campuses</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>CTSI</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>All IU Campuses</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-passphrase.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Housing &amp; Dining, Finances, Personal Information</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td><span aria-hidden="true" >All IU Campuses</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>CTSI</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >All IU Campuses</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -1410,37 +1477,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Childcare fees</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>All Roles</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUS</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Division of Student Affairs</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUS</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-paycheck.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>All Roles</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUS</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Division of Student Affairs</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUS</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -1453,37 +1523,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Classifieds</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>All Roles</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td><span aria-hidden="true" >All IU Campuses</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Human Resources and Payroll - Kokomo</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>All IU Campuses</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-ForeignLanguage.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>All Roles</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td><span aria-hidden="true" >All IU Campuses</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Human Resources and Payroll - Kokomo</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >All IU Campuses</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -1496,37 +1569,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Code of conduct</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td><span aria-hidden="true" >All IU Campuses</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>IT Community Partners</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>All IU Campuses</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/SD-004.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td><span aria-hidden="true" >All IU Campuses</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>IT Community Partners</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >All IU Campuses</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -1539,37 +1615,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Competitive Scholarship Application <span class="small text-muted">(Academic Works)</span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Admissions, Academics, Campus Life, Enrollment, Orientation</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Staff, Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUPUI</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>IT Statewide Conference</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUPUI</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-bt.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Admissions, Academics, Campus Life, Enrollment, Orientation</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Staff, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUPUI</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>IT Statewide Conference</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUPUI</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -1582,36 +1661,39 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> IUSON Help Desk<span aria-hidden="false"><span class="small text-muted"> (Web Application)</span></span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td><span class="col-lg-3 col-md-4 col-sm-4 col-xs-12"> <i data-ng-class="::category.fontIcon ? 'icon-' + category.fontIcon : 'icon-dot'" class="icon-monitor"></i> <span data-ng-bind="::category.name">IT Services</span></span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Faculty, Staff</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td><span >IUB<span aria-hidden="false">, </span></span><span >IUPUI</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>School of Optometry</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-account-creation.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td><span class="col-lg-3 col-md-4 col-sm-4 col-xs-12"> <i data-ng-class="::category.fontIcon ? 'icon-' + category.fontIcon : 'icon-dot'" class="icon-monitor"></i> <span data-ng-bind="::category.name">IT Services</span></span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Faculty, Staff</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td><span >IUB<span aria-hidden="false">, </span></span><span >IUPUI</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>School of Optometry</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td ><span aria-hidden="false"><span >IUB<span aria-hidden="false">, </span></span><span >IUPUI</span></span></td>
                                                 <td><span class="label label-white">Inactive</span></td>
                                                 <td><div class="dropdown">
@@ -1621,37 +1703,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Update</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Live' Now</a></li>
-                                                                <li><a href="#">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule 'Live' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Construction Alerts</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Housing &amp; Dining, Transportation, Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>All Roles</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUB</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>IUPUI Human Resources</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUB</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-registration.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Housing &amp; Dining, Transportation, Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>All Roles</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUB</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>IUPUI Human Resources</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUB</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -1664,37 +1749,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Counseling and Psychological Services <span class="small text-muted">(CAPS)</span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student, Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td><span aria-hidden="true" >All IU Campuses</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>KOWeb</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>All IU Campuses</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/SD-007.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td><span aria-hidden="true" >All IU Campuses</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>KOWeb</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >All IU Campuses</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -1707,37 +1795,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Deal of the Day Promotion <span class="small text-muted">(Jagtag)</span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Housing &amp; Dining, Campus Life, HR &amp; Benefits</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student, Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td><span aria-hidden="true" >All IU Campuses</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Kelly School of Business</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>All IU Campuses</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-newsroom.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Housing &amp; Dining, Campus Life, HR &amp; Benefits</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td><span aria-hidden="true" >All IU Campuses</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Kelly School of Business</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >All IU Campuses</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -1750,36 +1841,39 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Endowment information<span aria-hidden="false"><span class="small text-muted"> (ETA-Web)</span></span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Research</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>University Division</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-talk-nerdy.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Research</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>University Division</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td ><span aria-hidden="false">All IU Campuses</span></td>
                                                 <td><span class="label label-white">Inactive</span></td>
                                                 <td><div class="dropdown">
@@ -1789,36 +1883,39 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Update</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Live' Now</a></li>
-                                                                <li><a href="#">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule 'Live' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Late Drop / Add Classes</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Academics</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>RASD - OVPR</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/SD-016.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Academics</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>RASD - OVPR</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td ><span aria-hidden="false">All IU Campuses</span></td>
                                                 <td><span class="label label-white">Inactive</span></td>
                                                 <td><div class="dropdown">
@@ -1828,37 +1925,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Update</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Live' Now</a></li>
-                                                                <li><a href="#">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule 'Live' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>DeviceNet</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>IT Services, Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Staff, Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td><span aria-hidden="true" >All IU Campuses</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Kuali Rice (ESI)</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>All IU Campuses</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/SD-012.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>IT Services, Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Staff, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td><span aria-hidden="true" >All IU Campuses</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Kuali Rice (ESI)</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >All IU Campuses</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -1871,37 +1971,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Division of Student Affairs</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student, Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>MDEP</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>All IU Campuses</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/SD-003.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>MDEP</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >All IU Campuses</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -1914,37 +2017,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Emergency Contact Phone Numbers <span class="small text-muted">(Protect.IU)</span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>All Roles</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Office of the Registrar - South Bend</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>All IU Campuses</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/SD-001.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>All Roles</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Office of the Registrar - South Bend</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >All IU Campuses</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -1957,37 +2063,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Energy Matters</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student, Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUB</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>RASD - OVPR/VPR</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUB</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/SD-005.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUB</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>RASD - OVPR/VPR</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUB</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -2000,72 +2109,86 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Open Enrollment Webinar Info</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td><span class="col-lg-3 col-md-4 col-sm-4 col-xs-12"> <i data-ng-class="::category.fontIcon ? 'icon-' + category.fontIcon : 'icon-dot'" class="icon-users"></i> <span data-ng-bind="::category.name">Faculty Services, HR &amp; Bneefits</span></span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Faculty, Staff</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Orientation - Northwest</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td ><span aria-hidden="false">All IU Campuses</span></td>
-                                                <td><span class="label label-white">Inactive</span></td>
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Open Enrollment Webinar Info</div>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-myra.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUB</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>RASD - OVPR/VPR</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >All IU Campuses</td>
+                                                <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu23" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
-                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"
+aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="#">Feature</a></li>
+                                                                <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Explore Majors and More <span class="small text-muted">(University Division)</span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Academics, Campus Life, Careers, Orientation</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student, Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUB</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>RASD - Grants</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUB</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-mobile-security.jpg" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Academics, Campus Life, Careers, Orientation</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUB</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>RASD - Grants</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUB</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -2078,37 +2201,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Explore Programs <span class="small text-muted">(University Division)</span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Admissions, Academics, Campus Life, Careers, Orientation</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>All Roles</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUB</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Orientation - IUPUI</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUB</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/SD-007.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Admissions, Academics, Campus Life, Careers, Orientation</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>All Roles</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUB</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Orientation - IUPUI</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUB</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -2121,37 +2247,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Extinguisher Information - IU Departments <span class="small text-muted">(Show Extinguishers)</span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Housing &amp; Dining, Administrative, Campus Life, Research</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student, Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Support Center</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>All IU Campuses</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-iucat.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Housing &amp; Dining, Administrative, Campus Life, Research</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Support Center</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >All IU Campuses</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -2164,36 +2293,39 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Healthy IU — Your Workplace Wellness Program</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>IT Services, Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Faculty, Staff</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Student Organization Accounts</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-academic-calendar.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>IT Services, Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Faculty, Staff</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Student Organization Accounts</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td ><span aria-hidden="false">All IU Campuses</span></td>
                                                 <td><span class="label label-white">Inactive</span></td>
                                                 <td><div class="dropdown">
@@ -2203,37 +2335,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Update</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Live' Now</a></li>
-                                                                <li><a href="#">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule 'Live' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Extinguisher Information - Public <span class="small text-muted">(Unit Inspection Report)</span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Housing &amp; Dining, Administrative, Campus Life, Research, Libraries</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>All Roles</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Ruth Lilly Medical Library</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>All IU Campuses</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-one-logo.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Housing &amp; Dining, Administrative, Campus Life, Research, Libraries</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>All Roles</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Ruth Lilly Medical Library</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >All IU Campuses</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -2246,36 +2381,39 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Wells Learning Commons</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Libraries</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUB</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>IT Training - Kokomo</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-parking.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Libraries</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUB</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>IT Training - Kokomo</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td ><span aria-hidden="false"><span >IUB</span></span></td>
                                                 <td><span class="label label-white">Inactive</span></td>
                                                 <td><div class="dropdown">
@@ -2285,37 +2423,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Update</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Live' Now</a></li>
-                                                                <li><a href="#">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule 'Live' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>First Aid - CPR Classes</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Administrative, Campus Life, Training</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student, Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Student Academic Systems</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>All IU Campuses</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/SD-003.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Administrative, Campus Life, Training</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student, Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Student Academic Systems</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >All IU Campuses</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -2328,37 +2469,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Haven</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>All Roles</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUPUI, IUPUC</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>UITS - Northwest</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUPUI, IUPUC</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/SD-018.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>All Roles</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUPUI, IUPUC</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>UITS - Northwest</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUPUI, IUPUC</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -2371,37 +2515,40 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>HavenPlus</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUPUC, IUPUI</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>UITS - eLearning Design & Services</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>IUPUI, IUPUC</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/SD-019.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUPUC, IUPUI</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>UITS - eLearning Design & Services</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >IUPUI, IUPUC</td>
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -2414,36 +2561,39 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Zoom<span aria-hidden="false"><span class="small text-muted"> (Zoom Web Collaboration)</span></span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>IT Services, Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>All Roles</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>IUPUI Human Resources</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/SD-004.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>IT Services, Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>All Roles</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>IUPUI Human Resources</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td ><span aria-hidden="false">All IU Campuses</span></td>
                                                 <td><span class="label label-white">Inactive</span></td>
                                                 <td><div class="dropdown">
@@ -2453,10 +2603,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Update</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Set to 'Live' Now</a></li>
-                                                                <li><a href="#">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule 'Live' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2480,7 +2630,7 @@ aria-labelledby="dropdownMenu1">
                                                 Detail View </label>
                                         </div>
                                     </div>
-                                    <table class="table table-hover table-condensed">
+                                    <table class="table table-hover table-condensed display" id="table2">
                                         <thead>
                                             <tr>
                                                 <th>Title <span class="small text-muted">(Application)</span></th>
@@ -2492,69 +2642,68 @@ aria-labelledby="dropdownMenu1">
                                         <tbody>
                                             <tr>
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Drop or Add Classes</div>
-                                                
-                                                
-                                                
-                                               
-                                                
-                                                
-                                                
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Academics</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>UITS - IUIE</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-childcare-fees.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Academics</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>UITS - IUIE</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td >Update existing task</td>
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#">Update existing task now</a></li>
-                                                                <li><a href="#">Reschedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Update existing task now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">View pending updates</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View pending updates</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Endowment information<span aria-hidden="false"><span class="small text-muted"> (ETA-Web)</span></span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Research</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Faculty</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>University Division</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-account-creation.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Research</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Faculty</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>University Division</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td >Set  new task to 'Live'</td>
                                                 <td><span class="label label-white">Upon Approval </span></td>
                                                 <td><div class="dropdown">
@@ -2562,175 +2711,227 @@ aria-labelledby="dropdownMenu1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li class="disabled"><a href="#">Set new task to 'Live' now</a></li>
-                                                                <li><a href="#">Schedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule date of action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">View new task details</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View new task details</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> FMS Support Form<span aria-hidden="false"><span class="small text-muted"> (Web Form)</span></span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Finances</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Faculty, Staff</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Storage and Virtualization</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-acadcal.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Finances</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Faculty, Staff</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Storage and Virtualization</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td >Set  new task to 'Live'</td>
                                                 <td><span class="label label-white">07/26/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#">Set new task to 'Live' now</a></li>
-                                                                <li><a href="#">Reschedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set new task to 'Live' now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">View new task details</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View new task details</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> FNIS - International Tax Questionnaire<span aria-hidden="false"> <span class="small text-muted">(FMS Website: University Tax Services)</span></span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Finances</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Faculty, Staff</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Student Development Center</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-change-name.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Finances</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Faculty, Staff</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Student Development Center</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td >Set task to 'Live'</td>
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#">Set task to 'Live' now</a></li>
-                                                                <li><a href="#">Reschedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set task to 'Live' now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Health and Wellness</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>IT Services, Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>All Roles</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUPUI</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>RPS Application Administration</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/SD-006.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>IT Services, Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>All Roles</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUPUI</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>RPS Application Administration</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td >Set task to 'Inactive'</td>
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#">Set task to 'Inactive' now</a></li>
-                                                                <li><a href="#">Reschedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set task to 'Inactive' now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Healthy IU — Your Workplace Wellness Program</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>IT Services, Campus Life</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Faculty, Staff</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Student Organization Accounts</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-childcare-fees.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>IT Services, Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Faculty, Staff</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Student Organization Accounts</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >Set task to 'Inactive'</td>
+                                                <td><span class="label label-white">09/30/17 12:00am </span></td>
+                                                <td><div class="dropdown">
+                                                        <div class="dropdown1">
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set task to 'Inactive' now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div></td>
+                                            </tr>
+                                            <tr >
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Healthy IU — Your Workplace Wellness Program</div>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-childcare-fees.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>IT Services, Campus Life</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Faculty, Staff</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Student Organization Accounts</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td >Update existing task</td>
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#">Update existing task now</a></li>
-                                                                <li><a href="#">Reschedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Update existing task now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">View pending updates</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View pending updates</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> IU Northwest Library</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Libraries</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>All Roles</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>IUN</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Training: SIS</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-time.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Libraries</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>All Roles</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>IUN</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Training: SIS</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td >Update existing task</td>
                                                 <td><span class="label label-white">Upon Approval </span></td>
                                                 <td><div class="dropdown">
@@ -2738,69 +2939,75 @@ aria-labelledby="dropdownMenu1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li class="disabled"><a href="#">Update existing task now</a></li>
-                                                                <li><a href="#">Schedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule date of action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">View pending updates</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View pending updates</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> IUSON Help Desk<span aria-hidden="false"><span class="small text-muted"> (Web Application)</span></span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td><span class="col-lg-3 col-md-4 col-sm-4 col-xs-12"> <i data-ng-class="::category.fontIcon ? 'icon-' + category.fontIcon : 'icon-dot'" class="icon-monitor"></i> <span data-ng-bind="::category.name">IT Services</span> </span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Faculty, Staff</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td><span >IUB<span aria-hidden="false">, </span></span><span >IUPUI</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>School of Optometry</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/SD-004.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>IT Services</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Faculty, Staff</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td><span >IUB<span aria-hidden="false">, </span></span><span >IUPUI</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>School of Optometry</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td >Set task to 'Inactive'</td>
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#">Set task to 'Inactive' now</a></li>
-                                                                <li><a href="#">Reschedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set task to 'Inactive' now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Late Drop / Add Classes</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Academics</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td>Student</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>All IU Campuses</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>RASD - OVPR</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Academics</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td>Student</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>All IU Campuses</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>RASD - OVPR</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
                                                 <td >Update existing task</td>
                                                 <td><span class="label label-white">Upon Approval </span></td>
                                                 <td><div class="dropdown">
@@ -2808,9 +3015,9 @@ aria-labelledby="dropdownMenu1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li class="disabled"><a href="#">Update existing task now</a></li>
-                                                                <li><a href="#">Schedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule date of action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#">View pending updates</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View pending updates</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2819,7 +3026,7 @@ aria-labelledby="dropdownMenu1">
                                     </table>
                                 </section>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="tasks_submitted" style=" display:;">
+                            <div role="tabpanel" class="tab-pane" id="tasks_submitted" style=" display: ;">
                                 <section>
                                     <div class="row section-head">
                                         <div class="col-xs-12 col-sm-9 section-header">
@@ -2841,7 +3048,7 @@ aria-labelledby="dropdownMenu1">
                                             </div>
                                         </div>
                                     </div>
-                                    <table class="table table-condensed table-actions tablesaw tablesaw-stack table-collection" data-tablesaw-mode="stack" id="">
+                                    <table class="table table-condensed table-actions table-hover tablesaw tablesaw-stack table-collection" data-tablesaw-mode="stack" id="">
                                         <thead>
                                             <tr>
                                                 <th scope="row">Title</th>
@@ -2854,27 +3061,30 @@ aria-labelledby="dropdownMenu1">
                                         <tbody>
                                             <tr class="declined">
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Explore Programs</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Admissions, Academics, Campus Life, Careers, Orientation</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td><span >All</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td><span aria-hidden="true" >All IU Campuses</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Libraries - SouthBend</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>Update to existing </td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-change-name.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Admissions, Academics, Campus Life, Careers, Orientation</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td><span >All</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td><span aria-hidden="true" >All IU Campuses</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Libraries - SouthBend</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >Update to existing </td>
                                                 <td > thrclark </td>
                                                 <td><span class="label label-white text-danger" > Declined </span></td>
                                                 <td><div class="dropdown" style="display:inline">
@@ -2896,28 +3106,31 @@ aria-labelledby="dropdownMenu1">
                                             </tr>
                                             <tr class="declined">
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Motor Vehicle Records Check</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Transportation</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td><span >All</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>UB, All IU Campuses,
-                                                                    IUPUI </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>MoneySmarts</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>New</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-childcare-fees.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Transportation</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td><span >All</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>UB, All IU Campuses,
+                                                                        IUPUI </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>MoneySmarts</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >New</td>
                                                 <td > hesenthal </td>
                                                 <td><span class="label label-white text-danger" > Declined </span></td>
                                                 <td><div class="dropdown" style="display:inline">
@@ -2939,28 +3152,31 @@ aria-labelledby="dropdownMenu1">
                                             </tr>
                                             <tr class="declined">
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Waiver Request</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Training</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td><span >All</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td>UB, All IU Campuses,
-                                                                    IUPUI </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Libraries - East</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>Update to existing</td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-registration.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Training</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td><span >All</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td>UB, All IU Campuses,
+                                                                        IUPUI </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Libraries - East</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >Update to existing</td>
                                                 <td > seenyj </td>
                                                 <td><span class="label label-white text-danger" > Declined </span></td>
                                                 <td><div class="dropdown" style="display:inline">
@@ -2982,34 +3198,36 @@ aria-labelledby="dropdownMenu1">
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Apple</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Training</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td><span >All</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses<br>
-                                                                    IUPUI </span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>One.IU Support Team</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>New </td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-bt.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Training</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td><span >All</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses, IUPUI </span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>One.IU Support Team</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >New </td>
                                                 <td > breckerm </td>
                                                 <td><span class="label label-white" > Pending Review </span></td>
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-tasksubmitted-edit.php" >Review Submission</a></li>
+                                                            <li><a href="pub-taskmaint-approve.php" >Review Submission</a></li>
                                                             <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted" >View Notes</a></li>
                                                             <li role="separator" class="divider"></li>
                                                             <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
@@ -3026,34 +3244,36 @@ aria-labelledby="dropdownMenu1">
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus 411 Information</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Training</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td><span >All</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses<br>
-                                                                    IUPUI </span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>Orientation - IUPUC</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>New </td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-bill-pay.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Training</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td><span >All</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses, IUPUI </span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>Orientation - IUPUC</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >New </td>
                                                 <td > breckerm </td>
                                                 <td><span class="label label-white" > Pending Review </span></td>
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-tasksubmitted-edit.php" >Review Submission</a></li>
+                                                            <li><a href="pub-taskmaint-approve.php" >Review Submission</a></li>
                                                             <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted" >View Notes</a></li>
                                                             <li role="separator" class="divider"></li>
                                                             <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
@@ -3070,34 +3290,36 @@ aria-labelledby="dropdownMenu1">
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Tour</div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td>Training</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td><span >All</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses<br>
-                                                                    IUPUI </span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>School of Public and Environmental Affairs (SPEA)</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td>New </td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-guest-accounts.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td>Training</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td><span >All</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses, IUPUI </span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>School of Public and Environmental Affairs (SPEA)</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td >New </td>
                                                 <td > breckerm </td>
                                                 <td><span class="label label-white" > Pending Review </span></td>
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-tasksubmitted-edit.php" >Review Submission</a></li>
+                                                            <li><a href="pub-taskmaint-approve.php" >Review Submission</a></li>
                                                             <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted" >View Notes</a></li>
                                                             <li role="separator" class="divider"></li>
                                                             <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
@@ -3114,33 +3336,36 @@ aria-labelledby="dropdownMenu1">
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Asset Retirement Global <span aria-hidden="false" class="small text-muted"> (KFS)</span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td><span >Finances<span aria-hidden="false">, </span></span><span >Administrative</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td><span >Staff<span aria-hidden="false">, </span></span><span >Faculty</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>RASD - OVCR</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td> Update to existing </td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td><span >Finances<span aria-hidden="false">, </span></span><span >Administrative</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td><span >Staff<span aria-hidden="false">, </span></span><span >Faculty</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>RASD - OVCR</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td > Update to existing </td>
                                                 <td > tcain </td>
                                                 <td><span class="label label-white" > Pending Review </span></td>
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-tasksubmitted-edit.php" >Review Submission</a></li>
+                                                            <li><a href="pub-taskmaint-approve.php" >Review Submission</a></li>
                                                             <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted" >View Notes</a></li>
                                                             <li role="separator" class="divider"></li>
                                                             <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
@@ -3156,34 +3381,37 @@ aria-labelledby="dropdownMenu1">
                                             </div>--></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Capital Asset Management<span aria-hidden="false" class="small text-muted"> (FR)</span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td><span >Finances<span aria-hidden="false">, </span></span><span >Administrative</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td><span >Staff<span aria-hidden="false">, </span></span><span >Faculty</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>School of Public Health – Bloomington IT Services (SPHBITS)</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td> Update to existing</td>
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Capital Asset Management<span aria-hidden="false" class="small text-muted"> (FR)</span></div>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-academic-calendar.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td><span >Finances<span aria-hidden="false">, </span></span><span >Administrative</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td><span >Staff<span aria-hidden="false">, </span></span><span >Faculty</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>RASD - OVCR</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td > Update to existing </td>
                                                 <td > tozogar </td>
                                                 <td><span class="label label-white" > Pending Review </span></td>
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-tasksubmitted-edit.php" >Review Submission</a></li>
+                                                            <li><a href="pub-taskmaint-approve.php" >Review Submission</a></li>
                                                             <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted" >View Notes</a></li>
                                                             <li role="separator" class="divider"></li>
                                                             <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
@@ -3200,33 +3428,36 @@ aria-labelledby="dropdownMenu1">
                                             </tr>
                                             <tr >
                                                 <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> IU Peer Coaches <span aria-hidden="false" class="small text-muted">(University Division)</span></div>
-                                                    <table class="small taskmeta">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Categories:</td>
-                                                                <td><span >Finances<span aria-hidden="false">, </span></span><span >Administrative</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Roles:</td>
-                                                                <td><span >Staff<span aria-hidden="false">, </span></span><span >Faculty</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>IU Campuses:</td>
-                                                                <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Publisher:</td>
-                                                                <td>ROAR - Registry of Options and Resources</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table></td>
-                                                <td> New </td>
+                                                    <div class="taskmeta">
+                                                        <div class="task-icon"><img src="../img/task-icons-new/icon-iuath.png" alt=""/></div>
+                                                        <table class="taskmeta-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Categories:</td>
+                                                                    <td><span >Finances<span aria-hidden="false">, </span></span><span >Administrative</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Roles:</td>
+                                                                    <td><span >Staff<span aria-hidden="false">, </span></span><span >Faculty</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>IU Campuses:</td>
+                                                                    <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Publisher:</td>
+                                                                    <td>ROAR - Registry of Options and Resources</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div></td>
+                                                <td > New </td>
                                                 <td > adobiega </td>
                                                 <td><span class="label label-white" > Pending Review </span></td>
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-tasksubmitted-edit.php" >Review Submission</a></li>
+                                                            <li><a href="pub-taskmaint-approve.php" >Review Submission</a></li>
                                                             <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted" >View Notes</a></li>
                                                             <li role="separator" class="divider"></li>
                                                             <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
@@ -3266,27 +3497,30 @@ aria-labelledby="dropdownMenu1">
                                     <tbody>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>RASD - OVPR/VPR</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td>Task</td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>RASD - OVPR/VPR</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td >Task</td>
                                             <td>1</td>
                                             <td>End: 07/03/2017 5:00am</td>
                                             <td>&nbsp;</td>
@@ -3294,27 +3528,30 @@ aria-labelledby="dropdownMenu1">
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Classifieds</div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Office of the Registrar - Bloomington</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td>Task</td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Office of the Registrar - Bloomington</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td >Task</td>
                                             <td>2</td>
                                             <td>End: 07/03/2017 5:00am</td>
                                             <td>&nbsp;</td>
@@ -3322,27 +3559,30 @@ aria-labelledby="dropdownMenu1">
                                         </tr>
                                         <tr class="warning">
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Orientation</div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Orientation - IUPUC</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td>Task Center</td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Orientation - IUPUC</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td >Task Center</td>
                                             <td>3</td>
                                             <td>End: 05/03/2017 5:00am </td>
                                             <td><span class="label label-warning">Ending soon</span></td>
@@ -3350,27 +3590,30 @@ aria-labelledby="dropdownMenu1">
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>IU Anyware</div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Orientation - IUPUC</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td>Task</td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Orientation - IUPUC</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td >Task</td>
                                             <td>&nbsp;</td>
                                             <td>Begin: 06/03/2017 5:00am<br>
                                                 End: 07/03/2017 5:00am</td>
@@ -3379,27 +3622,30 @@ aria-labelledby="dropdownMenu1">
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Open Enrollment</div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Office of the Registrar - IUPUC</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td>Task</td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Office of the Registrar - IUPUC</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td >Task</td>
                                             <td>&nbsp;</td>
                                             <td>Begin: 06/03/2017 5:00am<br>
                                                 End: 07/03/2017 5:00am</td>
@@ -3425,377 +3671,422 @@ aria-labelledby="dropdownMenu1">
                                     <tbody>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>3rd Party User or Parent Access </div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Office of Admissions - IUSB</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td>Task</td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Office of Admissions - IUSB</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td >Task</td>
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Report IU Secure Outages </div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Libraries - IUPUC</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td>Task</td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Libraries - IUPUC</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td >Task</td>
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Status.IU </div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Kelley School - Help Desk</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td>Task Center</td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Kelley School - Help Desk</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td >Task Center</td>
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>My Class Schedule </div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Admitted JD Law Students</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td>Task</td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Admitted JD Law Students</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td >Task</td>
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Imail <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(Email)</span></div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Enterprise Document Management</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td>Task</td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Enterprise Document Management</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td >Task</td>
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Umail <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(Email)</span></div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Access Management Team / IMS</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td>Task</td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Access Management Team / IMS</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td >Task</td>
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Textbook Orders (Student) </div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>AIT</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td>Task</td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>AIT</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td >Task</td>
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Print quota <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(IU Print)</span></div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Career Services Office - South Bend</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td>Task</td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Career Services Office - South Bend</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td >Task</td>
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Canvas </div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>IT Services</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td>Task</td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>IT Services</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td >Task</td>
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Talk Nerdy to Me </div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Healthy IU</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td>Task</td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Healthy IU</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td >Task</td>
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>IU Knowledge Base <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(KB)</span></div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>IT Training - Kokomo</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td>Task</td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>IT Training - Kokomo</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td >Task</td>
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Student Center <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(SIS)</span></div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Office of Overseas Study</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td>Task</td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Office of Overseas Study</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td >Task</td>
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Cloud Storage </div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Libraries - Kokomo</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td>Task</td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Libraries - Kokomo</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td >Task</td>
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Course History </div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Office of the Registrar - IU Southeast</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td>Task</td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Office of the Registrar - IU Southeast</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td >Task</td>
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>1095-C Statement </div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>PTI Research Services</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td>Task</td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>PTI Research Services</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td >Task</td>
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                     </tbody>
@@ -3818,363 +4109,408 @@ aria-labelledby="dropdownMenu1">
                                     <tbody>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>3rd Party User or Parent Access </div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>SOIC: School of Informatics and Computing</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>SOIC: School of Informatics and Computing</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Report IU Secure Outages </div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>UITS - South Bend</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>UITS - South Bend</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Status.IU </div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Advance College Project (ACP)</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Advance College Project (ACP)</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>My Class Schedule </div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Career Services Office - South Bend</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Career Services Office - South Bend</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Imail <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(Email)</span></div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Bepko</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Bepko</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Umail <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(Email)</span></div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Division of Undergraduate Education Technology Services</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Division of Undergraduate Education Technology Services</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Textbook Orders (Student) </div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>IT Training - Kokomo</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>IT Training - Kokomo</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Print quota <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(IU Print)</span></div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Libraries - SouthBend</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Libraries - SouthBend</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Canvas </div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>IUPUI Testing Center</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>IUPUI Testing Center</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Talk Nerdy to Me </div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Office of the Registrar - IU East</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Office of the Registrar - IU East</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>IU Knowledge Base <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(KB)</span></div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Principal Online Services</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Principal Online Services</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Student Center <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(SIS)</span></div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>IU Alumni Association</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>IU Alumni Association</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Cloud Storage </div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Enrollments/Student Services</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Enrollments/Student Services</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Course History </div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Financial Management Services (FMS)</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Financial Management Services (FMS)</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>1095-C Statement </div>
-                                                <table class="small taskmeta">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Categories:</td>
-                                                            <td>Campus Life</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Roles:</td>
-                                                            <td>Student</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>IU Campuses:</td>
-                                                            <td>IUPUI, IUPUC</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Publisher:</td>
-                                                            <td>Auxiliary IT</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table></td>
-                                            <td><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
+                                                <div class="taskmeta">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                                    <table class="taskmeta-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Categories:</td>
+                                                                <td>Campus Life</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roles:</td>
+                                                                <td>Student</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>IU Campuses:</td>
+                                                                <td>IUPUI, IUPUC</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publisher:</td>
+                                                                <td>Auxiliary IT</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div></td>
+                                            <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -4369,6 +4705,19 @@ $(function () {
 
       
     });
+</script> 
+    <script>
+
+
+$(document).ready(function() {
+    $('#table1, #table2').DataTable( {
+        "paging":   false,
+		"bFilter":   false,
+        "info":     false,
+    } );
+} );
+
+
 </script> 
 </div>
 </body>
