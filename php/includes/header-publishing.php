@@ -1,4 +1,3 @@
-
 <script>
 $(document).ready(function() {
     //toggle `popup` / `inline` mode
@@ -59,7 +58,6 @@ $(document).ready(function() {
 });
 
 </script>
-
 <script>
 
 
@@ -74,22 +72,13 @@ $(function() {
 
 <header class="">
     <div class="container app-header " id="contain2">
-       
-       
-       
-       
-       
-       
-       
-       <div class="row">
-            <div class="col-sm-6 col-xs-10 brand">
-                <a class="logo" href="store.php" id="sidebar_logo" tabindex="0"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo.png" class="hidden-xs hidden-sm"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo-mobile.png" class="hidden-md hidden-lg">
+        <div class="row">
+            <div class="col-sm-6 col-xs-10 brand"> <a class="logo" href="store.php" id="sidebar_logo" tabindex="0"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo.png" class="hidden-xs hidden-sm"> <img alt="clear all search filters and return to the home page" src="../img/oneiu-logo-mobile.png" class="hidden-md hidden-lg">
                 <h1><span class="sr-only">One.IU</span></h1>
-                </a>
-            </div>
+                </a> </div>
             <div class="col-sm-6 col-xs-2">
                 <div class="dropdown navbar-text">
-                    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-link"><i class="fa fa-user visible-xs-inline" aria-hidden="true"></i> <span class="hidden-xs">Hello, Tom </span><span class="caret"></span> </button>
+                    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-link" style="padding-top:0px"> <i class="icon-user-3 visible-xs-inline" aria-hidden="true"></i> <span class="hidden-xs">Hello, Tom </span><span class="caret"></span> </button>
                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel">
                         <li><a href="vfy-pub-home.php">Publishing</a></li>
                         <li><a href="vfy-admin-sysparam.php">Administration</a></li>
@@ -99,10 +88,6 @@ $(function() {
                 </div>
             </div>
         </div>
-        
-        
-        
-      
     </div>
 </header>
 <script type='text/javascript'>
@@ -119,19 +104,14 @@ $(function() {
         });
       
     });
-</script>
-
-
-
-
-
+</script> 
 <script>
 $(function() {                      
   $("#role_allroles").click(function() {  
     $("#role_allroles i").addClass("icon-ok");      
   });
 });
-</script>
+</script> 
 <script>
 
     $(document).ready(function() {
@@ -149,8 +129,7 @@ $(function() {
 	
 	
 	
-</script>
-
+</script> 
 <script>
 $(function () {
     $(".inline-dropdown-menu").click(function (e) {

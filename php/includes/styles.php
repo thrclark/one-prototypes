@@ -15,15 +15,10 @@
 <link href="../vendor/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet" type="text/css">
 <link href="../app/vendor/js/colorbox/colorbox.css" rel="stylesheet" type="text/css">
 <link href="../app/vendor/js/expandgrid/css/component.css" rel="stylesheet" type="text/css">
-
-
 <link href="../bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css">
-
 
 <!--<link rel="stylesheet" type="text/css" href="../app/vendor/js/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="../app/vendor/js/slick/slick-theme.css"/>-->
-
-
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,48 +28,56 @@
     <![endif]-->
 
 <style>
-	#ga-slider {
-		margin-left: -7px;
-	}
-	
-	@media (max-width: 767px) {
-		#ga-slider {
-			margin-left: 0px;
-		}
-	}
+#ga-slider {
+	margin-left: -7px;
+}
+
+@media (max-width: 767px) {
+#ga-slider {
+	margin-left: 0px;
+}
+}
 </style>
 <style>
-	.menuslide-out {
-		right: -227px;
-		visibility: hidden;
-	}
-	
-	.menuslide-in {
-		right: 0px;
-		visibility: visible;
-	}
+.menuslide-out {
+	right: -227px;
+	visibility: hidden;
+}
+.menuslide-in {
+	right: 0px;
+	visibility: visible;
+}
 </style>
-
-
 <style>
-
-
-.taskmeta {
-	margin-left: 20px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+.app-name, .sub-header, header .container .dropdown.navbar-text .btn-link, .navbar-text {
+	color: #ffffff;
 }
-.taskmeta tbody tr td {
-	padding: 0px
+</style>
+<style>
+table.dataTable thead th {
+	position: relative;
+	background-image: none !important;
 }
-.taskmeta tbody tr td:first-child {
-    width: 1%;
-	white-space: nowrap;
-	text-align: right
+table.dataTable thead th.sorting:after, table.dataTable thead th.sorting_asc:after, table.dataTable thead th.sorting_desc:after {
+	position: absolute;
+	top: 12px;
+	right: 8px;
+	display: block;
+	font-family: fontello;
 }
-.taskmeta tbody tr td:last-child {
-	width: 99%;
-	padding-left: 20px
+</style>
+<style>
+table.dataTable thead th.sorting:after {
+	content: '\ebca';
+	color: #ddd;
+	font-size: 0.8em;
+	padding-top: 0.12em;
+}
+table.dataTable thead th.sorting_asc:after {
+	content: '\ebcc';
+}
+table.dataTable thead th.sorting_desc:after {
+	content: '\ebcb';
 }
 
 
