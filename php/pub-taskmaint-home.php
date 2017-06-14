@@ -85,21 +85,7 @@ $page = '';
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
-.label.label-white .icon-cancel-circled {
-	margin-left: 5px;
-	MARGIN-RIGHT: -3px;
-	color: #555555;
-}
-.label.label-white {
-	border-radius: 10px;
-	background-color: #fff;
-	color: #555;
-	border: solid 1px #cccccc;
-}
-.label.label-white.text-danger {
-	color: #a94442;
-	border: solid 1px #a94442;
-}
+
 </style>
 <style type="text/css">
 .dropdown1 {
@@ -1677,7 +1663,7 @@ aria-labelledby="dropdownMenu1">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>Categories:</td>
-                                                                    <td><span class="col-lg-3 col-md-4 col-sm-4 col-xs-12"> <i data-ng-class="::category.fontIcon ? 'icon-' + category.fontIcon : 'icon-dot'" class="icon-monitor"></i> <span data-ng-bind="::category.name">IT Services</span></span></td>
+                                                                    <td>IT Services</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Roles:</td>
