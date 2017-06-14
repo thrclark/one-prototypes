@@ -31,6 +31,11 @@
 <script type="text/javascript" src="../bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript" src="../js/jquery.dataTables.js"></script>
 <script type="text/javascript" src="../js/dataTables.bootstrap.js"></script>
+
+<script type="text/javascript" src="../bower_components/cropperjs/dist/cropper.min.js"></script>
+
+
+
 <script>localStorage.clear(); </script>
 <script>
 $(document).ready(function(){
