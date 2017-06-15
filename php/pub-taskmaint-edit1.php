@@ -39,6 +39,20 @@ $page = '';
 	border-right: none;
 }
 </style>
+<style>
+.help-block {
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+.page-utilities {
+	border-bottom: solid 1px #dddddd;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+hr {
+	border-top: 1px solid #dddddd;
+}
 </style>
 <?php include('includes/scripts.php') ?>
 </head>
@@ -50,20 +64,29 @@ $page = '';
     <div class="main-content container" role="main">
         <div id="main-content">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <?php include('includes/nav-pub.php') ?>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-10">
                     <div class="primary-content" style="min-height:500px">
                         <section>
                             <div class="row section-head">
                                 <div class="col-xs-12 col-sm-9 section-header">
-                                    <h2 class="h3">Edit Task</h2>
+                                    <div class="edittask-preview" style="display: inline-block; position:relative;"> <img src="../img/task-icons-new/icon-classifieds.png"  alt=""/ style="max-height: 42px;width: auto;vertical-align: text-bottom;">
+                                        <div class="edittask-preview-content" style="display: inline-block; padding-left:5px;">
+                                            <div class="edittask-preview-content-title" style="font-weight: bold; font-size:20px">Edit Task: Classifieds</div>
+                                            <div class="small text-muted">(All IU Campuses)</div>
+                                        </div>
+                                    </div>
+                                </div>	
+                                <div class="col-xs-12  col-sm-3 text-right">
+                                    <div id="help_toggle" class=""> Help: <a href="#" id="help_toggle_switch">on</a> </div>
                                 </div>
-                                <div class="col-xs-12  col-sm-3 section-controls"></div>
                             </div>
+                            <!--  <div class="page-utilities"> </div>-->
+                            <hr style="margin-top: 0px;margin-bottom: 10px;">
                             <div class="row">
-                                <div class="col-md-9">
+                                <div class="col-md-8">
                                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                                         <div class="panel panel-default">
                                             <div class="panel-heading" role="tab" id="heading_taskbasics">
@@ -72,7 +95,7 @@ $page = '';
                                             <div id="collapse_taskbasics" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading_taskbasics">
                                                 <div class="panel-body">
                                                     <div class="form-group ">
-                                                        <label class="control-label" for="tasktitle"> Task Title</label>
+                                                        <label class="control-label" for="tasktitle"> Task Title <span class="small text-muted">(required)</span> </label>
                                                         <span class="help-block small">The Task title is how the Task will be referred to throughout the system.</span>
                                                         <div class="row">
                                                             <div class="col-sm-6">
@@ -81,12 +104,22 @@ $page = '';
                                                         </div>
                                                     </div>
                                                     <div class="form-group ">
-                                                        <label class="control-label" for="taskurl"> Task URL</label>
+                                                        <label class="control-label" for="taskurl"> Task URL <span class="small text-muted">(required)</span></label>
                                                         <span class="help-block small">The URL will take users to the location where they can perform this Task.</span>
                                                         <div class="row">
                                                             <div class="col-sm-6">
                                                                 <input class="form-control" id="taskurl" name="taskurl" type="text" placeholder="" required="required">
                                                             </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group ">
+                                                        <label class="control-label" for="uniquekey">Unique Key <span class="small text-muted">(required)</span></label>
+                                                        <span class="help-block small">The unique key uniquely identifies this Task in its Campuses (if any). This value will be used as part of the URL for this Task.</span>
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <input class="form-control" id="uniquekey" name="uniquekey" type="text" placeholder="" required="required">
+                                                            </div>
+                                                            <div class="col-sm-6" style="padding-top:14px"> <a href="#" class="small" style="font-style: italic;margin-left: -15px;"> Suggest a key</a> </div>
                                                         </div>
                                                     </div>
                                                     <div class="form-group ">
@@ -96,16 +129,6 @@ $page = '';
                                                             <div class="col-sm-6">
                                                                 <input class="form-control" id="applicationname" name="applicationname" type="text" placeholder="" required="required">
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group ">
-                                                        <label class="control-label" for="tasktitle">Unique Key</label>
-                                                        <span class="help-block small">The unique key uniquely identifies this Task in its Campuses (if any). This value will be used as part of the URL for this Task.</span>
-                                                        <div class="row">
-                                                            <div class="col-sm-6">
-                                                                <input class="form-control" id="tasktitle" name="tasktitle" type="text" placeholder="" required="required">
-                                                            </div>
-                                                            <div class="col-sm-6" style="padding-top:14px"> <a href="#" class="small" style="font-style: italic;margin-left: -15px;"> Suggest a key</a> </div>
                                                         </div>
                                                     </div>
                                                     <div class="form-group ">
@@ -185,6 +208,168 @@ $page = '';
                                                         </div>
                                                     </div>
                                                     <hr>
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_taskicon" aria-expanded="false" aria-controls="collapse_taskicon" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="heading_taskicon">
+                                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_taskicon" aria-expanded="false" aria-controls="collapse_taskicon">Task Icon</a> </h4>
+                                            </div>
+                                            <div id="collapse_taskicon" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_taskicon">
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-xs-8">
+                                                            <div class="form-group ">
+                                                                <label class="control-label " for="api_account_type">Select the source of the icon image </label>
+                                                                <div class="radio">
+                                                                    <label>
+                                                                        <input type="radio" name="cars" value="1" id="show_custom">
+                                                                        Custom image upload </label>
+                                                                </div>
+                                                                <div class="radio">
+                                                                    <label>
+                                                                        <input type="radio" name="cars" value="2" id="show_library">
+                                                                        Selected from current library </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-4" >
+                                                            <div id="crop-avatar" style="display:;">
+                                                                <div class="avatar-view text-center"> <img src="../img/task-icons-new/icon-classifieds.png" alt="Avatar"> </div>
+                                                                <div class="text-center"> <a href="#" class="">Upload</a></div>
+                                                                <div class="modal fade" id="avatar-modal" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
+                                                                    <div class="modal-dialog modal-default modal-lg">
+                                                                        <div class="modal-content">
+                                                                            <form class="avatar-form" action="crop.php" enctype="multipart/form-data" method="post">
+                                                                                <div class="modal-header">
+                                                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                                    <h4 class="modal-title" id="avatar-modal-label">Edit Application Icon</h4>
+                                                                                </div>
+                                                                                <div class="modal-body">
+                                                                                    <div class="avatar-body">
+                                                                                        <div class="avatar-upload"> </div>
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-9">
+                                                                                                <div class="avatar-wrapper"></div>
+                                                                                            </div>
+                                                                                            <div class="col-md-3">
+                                                                                                <div class="avatar-preview preview-lg hidden-xs"></div>
+                                                                                                <div class="avatar-preview preview-md"></div>
+                                                                                                <div class="avatar-preview preview-sm"></div>
+                                                                                                <div class="avatar-preview preview-xs"></div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row avatar-btns">
+                                                                                            <div class="col-md-3 col-xs-4">
+                                                                                                <input type="hidden" class="avatar-src" name="avatar_src">
+                                                                                                <input type="hidden" class="avatar-data" name="avatar_data">
+                                                                                                <label class="btn btn-default btn-upload btn-xs" for="avatarInput" title="Upload image file">
+                                                                                                    <input type="file" class="sr-only avatar-input" id="avatarInput" name="avatar_file" accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">
+                                                                                                    <span class="docs-tooltip" data-toggle="tooltip" title=""><span class="hidden-xsdd">Upload</span> </span> </label>
+                                                                                                <button type="button" class="btn btn-default btn-xs" data-method="reset" title="Reset"> <span class="icon-arrows-cw" data-method="reset" title="Reset"></span> </button>
+                                                                                            </div>
+                                                                                            <div class="col-md-6 col-xs-8 text-right">
+                                                                                                <div class="btn-group">
+                                                                                                    <button type="button" class="btn btn-default btn-xs" data-method="zoom" data-option="0.1" title="Zoom In"> <span class="icon-zoom-in" data-method="zoom" data-option="0.1" title="Zoom In"></span> </button>
+                                                                                                    <button type="button" class="btn btn-default btn-xs" data-method="zoom" data-option="-0.1" title="Zoom Out"> <span class="icon-zoom-out" data-method="zoom" data-option="-0.1" title="Zoom Out"></span></button>
+                                                                                                </div>
+                                                                                                <div class="btn-group hidden-xs">
+                                                                                                    <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="-10" data-second-option="0" title="Move Left"> <span class="icon-left-open" data-method="move" data-option="-10" data-second-option="0" title="Move Left"></span></button>
+                                                                                                    <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="10" data-second-option="0" title="Move Right"> <span class="icon-right-open" data-method="move" data-option="10" data-second-option="0" title="Move Right"></span></button>
+                                                                                                    <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="0" data-second-option="-10" title="Move Up"> <span class="icon-up-open" data-method="move" data-option="0" data-second-option="-10" title="Move Up"></span> </button>
+                                                                                                    <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="0" data-second-option="10" title="Move Down"> <span class="icon-down-open" data-method="move" data-option="0" data-second-option="10" title="Move Down"></span> </button>
+                                                                                                </div>
+                                                                                                <div class="btn-group hidden-xs">
+                                                                                                    <button type="button" class="btn btn-default btn-xs" data-method="rotate" data-option="-45" title="Rotate Left"> <span class="icon-ccw-1" data-method="rotate" data-option="-45" title="Rotate Left"></span> </button>
+                                                                                                    <button type="button" class="btn btn-default btn-xs" data-method="rotate" data-option="45" title="Rotate Right"> <span class="icon-cw-3" data-method="rotate" data-option="45" title="Rotate Right"></span> </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-md-3"> </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="modal-footer">
+                                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                                                                    <button type="submit" class="btn btn-primary avatar-save">Done</button>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="loading" aria-label="Loading" role="img" tabindex="-1"></div>
+                                                            </div>
+                                                            <div class="form-group" id="image_library" style="display:none">
+                                                                <div class="row">
+                                                                    <div class="col-md-4" style=" width:205px">
+                                                                        <label for="imageSetId" class=" sr-only ">Choose an Image</label>
+                                                                        <img src="../img/task-icons-new/icon-bill-pay.png" alt="" style="width:100%; margin-bottom:10px"/>
+                                                                        <select name="imageSetId" class="form-control" tabindex="0" aria-invalid="false">
+                                                                            <option value="0" label="A Example">A Example</option>
+                                                                            <option value="1" label="A Test">A Test</option>
+                                                                            <option value="2" label="Admissions">Admissions</option>
+                                                                            <option value="3" label="Alert">Alert</option>
+                                                                            <option value="4" label="Approved">Approved</option>
+                                                                            <option value="5" label="Blocked">Blocked</option>
+                                                                            <option value="6" label="Box test">Box test</option>
+                                                                            <option value="7" label="Bus">Bus</option>
+                                                                            <option value="8" label="Calendar">Calendar</option>
+                                                                            <option value="9" label="Calendar - IU Mobile">Calendar - IU Mobile</option>
+                                                                            <option value="10" label="Calendar - old">Calendar - old</option>
+                                                                            <option value="11" label="Canvas">Canvas</option>
+                                                                            <option value="12" label="Cap">Cap</option>
+                                                                            <option value="13" label="Car">Car</option>
+                                                                            <option value="14" label="Checkbox">Checkbox</option>
+                                                                            <option value="15" label="Clipboard">Clipboard</option>
+                                                                            <option value="16" label="Cloud">Cloud</option>
+                                                                            <option value="17" label="Computer">Computer</option>
+                                                                            <option value="18" label="Document">Document</option>
+                                                                            <option value="19" label="Down arrow">Down arrow</option>
+                                                                            <option value="20" label="Emergency">Emergency</option>
+                                                                            <option value="21" label="Gear">Gear</option>
+                                                                            <option value="22" label="Globe">Globe</option>
+                                                                            <option value="23" label="Google">Google</option>
+                                                                            <option value="24" label="Grades">Grades</option>
+                                                                            <option value="25" label="Graduation">Graduation</option>
+                                                                            <option value="26" label="Guest">Guest</option>
+                                                                            <option value="27" label="Hard Drive">Hard Drive</option>
+                                                                            <option value="28" label="Holds">Holds</option>
+                                                                            <option value="29" label="House">House</option>
+                                                                            <option value="30" label="IUPUI">IUPUI</option>
+                                                                            <option value="31" label="Key">Key</option>
+                                                                            <option value="32" label="Link">Link</option>
+                                                                            <option value="33" label="Lock">Lock</option>
+                                                                            <option value="34" label="Mail">Mail</option>
+                                                                            <option value="35" selected="selected" label="Money">Money</option>
+                                                                            <option value="36" label="Nametag">Nametag</option>
+                                                                            <option value="37" label="Nodes">Nodes</option>
+                                                                            <option value="38" label="OneStart Running Man plus eighty more characters to fill up this space here and another twenty five!">OneStart Running Man plus eighty more characters to fill up this space here and another twenty five!</option>
+                                                                            <option value="39" label="Outlink">Outlink</option>
+                                                                            <option value="40" label="Papers">Papers</option>
+                                                                            <option value="41" label="Password">Password</option>
+                                                                            <option value="42" label="People">People</option>
+                                                                            <option value="43" label="Question">Question</option>
+                                                                            <option value="44" label="Rewind">Rewind</option>
+                                                                            <option value="45" label="Rolodex">Rolodex</option>
+                                                                            <option value="46" label="Scholarships">Scholarships</option>
+                                                                            <option value="47" label="Search">Search</option>
+                                                                            <option value="48" label="Star">Star</option>
+                                                                            <option value="49" label="Talisma">Talisma</option>
+                                                                            <option value="50" label="Tenant Admin test">Tenant Admin test</option>
+                                                                            <option value="51" label="test">test</option>
+                                                                            <option value="52" label="Test only GLOBE">Test only GLOBE</option>
+                                                                            <option value="53" label="Test only MONEY">Test only MONEY</option>
+                                                                            <option value="54" label="Textbooks">Textbooks</option>
+                                                                            <option value="55" label="Textbooks - old">Textbooks - old</option>
+                                                                            <option value="56" label="Urgent">Urgent</option>
+                                                                            <option value="57" label="User">User</option>
+                                                                            <option value="58" label="Wrench">Wrench</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
                                                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_authentication" aria-expanded="false" aria-controls="collapse_authentication" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
                                             </div>
                                         </div>
@@ -233,7 +418,7 @@ $page = '';
                                                         <label class="control-label" for="contact1"> Primary Contact</label>
                                                         <span class="help-block small">Specify the primary contact information to be associated with this task.</span>
                                                         <div class="row">
-                                                            <div class="col-sm-6">
+                                                            <div class="col-sm-8">
                                                                 <select id="contactId1" class="form-control   -required" required tabindex="0" aria-required="false" aria-invalid="false">
                                                                     <option value="">Select Contact</option>
                                                                     <option value="duo" label="CyberDH Group">CyberDH Group</option>
@@ -301,7 +486,7 @@ $page = '';
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td>Duo Support Documentation</td>
-                                                                                <td class="forcewrap"><a href="https://kb.iu.edu/d/bfgm" target="_blank">https://kb.iu.edu/d/bfgmsdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf</a></td>
+                                                                                <td class="forcewrap"><a href="https://kb.iu.edu/d/bfgm" target="_blank">https://kb.iu.edu/d/bfgm</a></td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td>Email Support</td>
@@ -321,7 +506,7 @@ $page = '';
                                                         <label class="control-label" for="contact2"> Secondary Contact</label>
                                                         <span class="help-block small">Specify the secondary contact information to be associated with this task.</span>
                                                         <div class="row">
-                                                            <div class="col-sm-6">
+                                                            <div class="col-sm-8">
                                                                 <select id="contactId2" class="form-control   -required" required tabindex="0" aria-required="false" aria-invalid="false">
                                                                     <option value="">Select Contact</option>
                                                                     <option value="duo" label="CyberDH Group">CyberDH Group</option>
@@ -389,7 +574,7 @@ $page = '';
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td>Duo Support Documentation</td>
-                                                                                <td class="forcewrap"><a href="https://kb.iu.edu/d/bfgm" target="_blank">https://kb.iu.edu/d/bfgmsdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf</a></td>
+                                                                                <td class="forcewrap"><a href="https://kb.iu.edu/d/bfgm" target="_blank">https://kb.iu.edu/d/bfgm</a></td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td>Email Support</td>
@@ -409,7 +594,7 @@ $page = '';
                                                         <label class="control-label" for="contact2">Publisher</label>
                                                         <span class="help-block small">Specify the publisher of this task.</span>
                                                         <div class="row">
-                                                            <div class="col-sm-6">
+                                                            <div class="col-sm-8">
                                                                 <select ng-model="task.publisherId" name="publisherId" id="publisherId" ng-options="publisher.publisherId as publisher.name for publisher in ::pageData.publishers" class="form-control ng-pristine ng-not-empty ng-valid ng-valid-required ng-touched" required aria-invalid="false">
                                                                     <option value="" selected="selected"> Select Publisher </option>
                                                                     <option value="number:3660"  label="AA/CTL Webmaster">AA/CTL Webmaster</option>
@@ -618,7 +803,7 @@ $page = '';
                                                         <span class="help-block small">Add notes to inform users of changes or new features in this version.</span>
                                                         <div class="row">
                                                             <div class="col-sm-12">
-                                                                <div class="input-group">
+                                                                <div class="input-group" style="margin-bottom:10px">
                                                                     <input type="text" class="form-control" placeholder="" required="required" id="versionnote">
                                                                     <span class="input-group-btn">
                                                                     <button class="btn btn-default" type="button">Add</button>
@@ -643,174 +828,7 @@ $page = '';
                                                         </div>
                                                     </div>
                                                     <hr>
-                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_taskicon" aria-expanded="false" aria-controls="collapse_taskicon" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="heading_taskicon">
-                                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_taskicon" aria-expanded="false" aria-controls="collapse_taskicon">Task Icon</a> </h4>
-                                            </div>
-                                            <div id="collapse_taskicon" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_taskicon">
-                                                <div class="panel-body">
-                                                    <div class="row">
-                                                        <div class="col-xs-8">
-                                                            <div class="form-group ">
-                                                                <label class="control-label " for="api_account_type">Select the source of the icon image </label>
-                                                                <div class="radio">
-                                                                    <label>
-                                                                        <input type="radio" name="cars" value="1" id="show_custom">
-                                                                        Custom image upload </label>
-                                                                </div>
-                                                                <div class="radio">
-                                                                    <label>
-                                                                        <input type="radio" name="cars" value="2" id="show_library">
-                                                                        Selected from current library </label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xs-4" >
-                                                            <div id="crop-avatar" style="display:none">
-                                                                <div class="avatar-view text-center" title="Upload/Edit Icon"> <img src="../img/task-icons-new/icon-upload.png" alt="Avatar"> </div>
-                                                                <div class="text-center"> <a href="#" class="">Upload</a></div>
-                                                                <div class="modal fade" id="avatar-modal" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
-                                                                    <div class="modal-dialog modal-default modal-lg">
-                                                                        <div class="modal-content">
-                                                                            <form class="avatar-form" action="crop.php" enctype="multipart/form-data" method="post">
-                                                                                <div class="modal-header">
-                                                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                                                    <h4 class="modal-title" id="avatar-modal-label">Edit Application Icon</h4>
-                                                                                </div>
-                                                                                <div class="modal-body">
-                                                                                    <div class="avatar-body">
-                                                                                        <div class="avatar-upload"> </div>
-                                                                                        <div class="row">
-                                                                                            <div class="col-md-9">
-                                                                                                <div class="avatar-wrapper"></div>
-                                                                                            </div>
-                                                                                            <div class="col-md-3">
-                                                                                                <div class="avatar-preview preview-lg hidden-xs"></div>
-                                                                                                <div class="avatar-preview preview-md"></div>
-                                                                                                <div class="avatar-preview preview-sm"></div>
-                                                                                                <div class="avatar-preview preview-xs"></div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="row avatar-btns">
-                                                                                            <div class="col-md-3 col-xs-4">
-                                                                                                <input type="hidden" class="avatar-src" name="avatar_src">
-                                                                                                <input type="hidden" class="avatar-data" name="avatar_data">
-                                                                                                <label class="btn btn-default btn-upload btn-xs" for="avatarInput" title="Upload image file">
-                                                                                                    <input type="file" class="sr-only avatar-input" id="avatarInput" name="avatar_file" accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">
-                                                                                                    <span class="docs-tooltip" data-toggle="tooltip" title=""><span class="hidden-xsdd">Upload</span> </span> </label>
-                                                                                                <button type="button" class="btn btn-default btn-xs" data-method="reset" title="Reset"> <span class="fa fa-refresh" data-method="reset" title="Reset"></span> </button>
-                                                                                            </div>
-                                                                                            <div class="col-md-6 col-xs-8 text-right">
-                                                                                                <div class="btn-group">
-                                                                                                    <button type="button" class="btn btn-default btn-xs" data-method="zoom" data-option="0.1" title="Zoom In"> <span class="fa fa-search-plus" data-method="zoom" data-option="0.1" title="Zoom In"></span> </button>
-                                                                                                    <button type="button" class="btn btn-default btn-xs" data-method="zoom" data-option="-0.1" title="Zoom Out"> <span class="fa fa-search-minus" data-method="zoom" data-option="-0.1" title="Zoom Out"></span></button>
-                                                                                                </div>
-                                                                                                <div class="btn-group hidden-xs">
-                                                                                                    <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="-10" data-second-option="0" title="Move Left"> <span class="fa fa-arrow-left" data-method="move" data-option="-10" data-second-option="0" title="Move Left"></span></button>
-                                                                                                    <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="10" data-second-option="0" title="Move Right"> <span class="fa fa-arrow-right" data-method="move" data-option="10" data-second-option="0" title="Move Right"></span></button>
-                                                                                                    <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="0" data-second-option="-10" title="Move Up"> <span class="fa fa-arrow-up" data-method="move" data-option="0" data-second-option="-10" title="Move Up"></span> </button>
-                                                                                                    <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="0" data-second-option="10" title="Move Down"> <span class="fa fa-arrow-down" data-method="move" data-option="0" data-second-option="10" title="Move Down"></span> </button>
-                                                                                                </div>
-                                                                                                <div class="btn-group hidden-xs">
-                                                                                                    <button type="button" class="btn btn-default btn-xs" data-method="rotate" data-option="-45" title="Rotate Left"> <span class="fa fa-rotate-left" data-method="rotate" data-option="-45" title="Rotate Left"></span> </button>
-                                                                                                    <button type="button" class="btn btn-default btn-xs" data-method="rotate" data-option="45" title="Rotate Right"> <span class="fa fa-rotate-right" data-method="rotate" data-option="45" title="Rotate Right"></span> </button>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="col-md-3"> </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="modal-footer">
-                                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                                                                    <button type="submit" class="btn btn-primary avatar-save">Done</button>
-                                                                                </div>
-                                                                            </form>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="loading" aria-label="Loading" role="img" tabindex="-1"></div>
-                                                            </div>
-                                                            <div class="form-group" id="image_library" style="display:none">
-                                                                <div class="row">
-                                                                    <div class="col-md-4" style=" width:205px">
-                                                                        <label for="imageSetId" class=" sr-only ">Choose an Image</label>
-                                                                        <img src="../img/task-icons-new/icon-bill-pay.png" alt="" style="width:100%; margin-bottom:10px"/>
-                                                                        <select name="imageSetId" class="form-control" tabindex="0" aria-invalid="false">
-                                                                            <option value="0" label="A Example">A Example</option>
-                                                                            <option value="1" label="A Test">A Test</option>
-                                                                            <option value="2" label="Admissions">Admissions</option>
-                                                                            <option value="3" label="Alert">Alert</option>
-                                                                            <option value="4" label="Approved">Approved</option>
-                                                                            <option value="5" label="Blocked">Blocked</option>
-                                                                            <option value="6" label="Box test">Box test</option>
-                                                                            <option value="7" label="Bus">Bus</option>
-                                                                            <option value="8" label="Calendar">Calendar</option>
-                                                                            <option value="9" label="Calendar - IU Mobile">Calendar - IU Mobile</option>
-                                                                            <option value="10" label="Calendar - old">Calendar - old</option>
-                                                                            <option value="11" label="Canvas">Canvas</option>
-                                                                            <option value="12" label="Cap">Cap</option>
-                                                                            <option value="13" label="Car">Car</option>
-                                                                            <option value="14" label="Checkbox">Checkbox</option>
-                                                                            <option value="15" label="Clipboard">Clipboard</option>
-                                                                            <option value="16" label="Cloud">Cloud</option>
-                                                                            <option value="17" label="Computer">Computer</option>
-                                                                            <option value="18" label="Document">Document</option>
-                                                                            <option value="19" label="Down arrow">Down arrow</option>
-                                                                            <option value="20" label="Emergency">Emergency</option>
-                                                                            <option value="21" label="Gear">Gear</option>
-                                                                            <option value="22" label="Globe">Globe</option>
-                                                                            <option value="23" label="Google">Google</option>
-                                                                            <option value="24" label="Grades">Grades</option>
-                                                                            <option value="25" label="Graduation">Graduation</option>
-                                                                            <option value="26" label="Guest">Guest</option>
-                                                                            <option value="27" label="Hard Drive">Hard Drive</option>
-                                                                            <option value="28" label="Holds">Holds</option>
-                                                                            <option value="29" label="House">House</option>
-                                                                            <option value="30" label="IUPUI">IUPUI</option>
-                                                                            <option value="31" label="Key">Key</option>
-                                                                            <option value="32" label="Link">Link</option>
-                                                                            <option value="33" label="Lock">Lock</option>
-                                                                            <option value="34" label="Mail">Mail</option>
-                                                                            <option value="35" selected="selected" label="Money">Money</option>
-                                                                            <option value="36" label="Nametag">Nametag</option>
-                                                                            <option value="37" label="Nodes">Nodes</option>
-                                                                            <option value="38" label="OneStart Running Man plus eighty more characters to fill up this space here and another twenty five!">OneStart Running Man plus eighty more characters to fill up this space here and another twenty five!</option>
-                                                                            <option value="39" label="Outlink">Outlink</option>
-                                                                            <option value="40" label="Papers">Papers</option>
-                                                                            <option value="41" label="Password">Password</option>
-                                                                            <option value="42" label="People">People</option>
-                                                                            <option value="43" label="Question">Question</option>
-                                                                            <option value="44" label="Rewind">Rewind</option>
-                                                                            <option value="45" label="Rolodex">Rolodex</option>
-                                                                            <option value="46" label="Scholarships">Scholarships</option>
-                                                                            <option value="47" label="Search">Search</option>
-                                                                            <option value="48" label="Star">Star</option>
-                                                                            <option value="49" label="Talisma">Talisma</option>
-                                                                            <option value="50" label="Tenant Admin test">Tenant Admin test</option>
-                                                                            <option value="51" label="test">test</option>
-                                                                            <option value="52" label="Test only GLOBE">Test only GLOBE</option>
-                                                                            <option value="53" label="Test only MONEY">Test only MONEY</option>
-                                                                            <option value="54" label="Textbooks">Textbooks</option>
-                                                                            <option value="55" label="Textbooks - old">Textbooks - old</option>
-                                                                            <option value="56" label="Urgent">Urgent</option>
-                                                                            <option value="57" label="User">User</option>
-                                                                            <option value="58" label="Wrench">Wrench</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                           
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    
-                                                      <hr>
-                                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_screenshots" aria-expanded="false" aria-controls="collapse_screenshots" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> 
-                                                            
-                                                </div>
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_screenshots" aria-expanded="false" aria-controls="collapse_screenshots" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
                                             </div>
                                         </div>
                                         <div class="panel panel-default screenshots">
@@ -891,7 +909,7 @@ $page = '';
                                             <div id="collapse_discoverability" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_discoverability">
                                                 <div class="panel-body">
                                                     <div class="form-group">
-                                                        <label class="control-label" for="tasktitle">Campus</label>
+                                                        <label class="control-label" for="campus">Campus</label>
                                                         <span class="help-block small">Select the campuses with which this task is affiliated with.</span>
                                                         <div class="row">
                                                             <div class="col-xs-8">
@@ -917,7 +935,7 @@ $page = '';
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label" for="tasktitle">Role</label>
+                                                        <label class="control-label" for="role">Role</label>
                                                         <span class="help-block small">Select the roles with which this task is affiliated with.</span>
                                                         <div class="row">
                                                             <div class="col-xs-8">
@@ -938,7 +956,7 @@ $page = '';
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label" for="tasktitle">Categories</label>
+                                                        <label class="control-label" for="categories">Categories</label>
                                                         <span class="help-block small">Select the categories that this task will be placed under.</span>
                                                         <div class="row">
                                                             <div class="col-xs-8">
@@ -976,11 +994,11 @@ $page = '';
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label" for="tasktitle">Tags</label>
+                                                        <label class="control-label" for="tags">Tags</label>
                                                         <span class="help-block small">Select the tags with which this task will be affiliated.</span>
                                                         <div class="row">
                                                             <div class="col-xs-8">
-                                                                <div class="input-group">
+                                                                <div class="input-group" style="margin-bottom:15px">
                                                                     <input type="text" class="form-control" placeholder="" required="required" id="versionnote">
                                                                     <span class="input-group-btn">
                                                                     <button class="btn btn-default" type="button">Add</button>
@@ -1032,11 +1050,11 @@ $page = '';
                                             <div id="collapse_activecontent" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_activecontent">
                                                 <div class="panel-body">
                                                     <div class="form-group ">
-                                                        <label class="control-label" for="tasktitle"> Active Content Public URL </label>
+                                                        <label class="control-label" for="activecontenturl"> Active Content Public URL </label>
                                                         <span class="help-block small">Specify the public URL from which active content will be provided</span>
                                                         <div class="row">
                                                             <div class="col-sm-6">
-                                                                <input class="form-control" id="tasktitle" name="tasktitle" type="text" placeholder="" required="required">
+                                                                <input class="form-control" id="activecontenturl" name="activecontenturl" type="text" placeholder="" required="required">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1050,11 +1068,11 @@ $page = '';
                                                         </div>
                                                     </div>
                                                     <div class="form-group ">
-                                                        <label class="control-label" for="tasktitle"> Update Frequency (seconds) </label>
+                                                        <label class="control-label" for="updatefreq"> Update Frequency (seconds) </label>
                                                         <span class="help-block small">Set the update frequency (in seconds) at which you want a tile to refresh its Active Content. Becareful with how short the interval is because the content will reset back to the first item after a refresh.</span>
                                                         <div class="row">
                                                             <div class="col-sm-3">
-                                                                <input class="form-control" id="tasktitle" name="tasktitle" type="text" placeholder="" required="required">
+                                                                <input class="form-control" id="updatefreq" name="updatefreq" type="text" placeholder="" required="required">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1073,13 +1091,13 @@ $page = '';
                                         
                                     </div>
                                 </div>
-                                <div class="col-md-3"><div style="    background-color:;
-    border-top: 1px solid #dddddd;
-    border-bottom: 1px solid #dddddd;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
-    position: relative;">asdfasdf</div> </div>
+                                <div class="col-md-4">
+                                    <div class="well well-sm" id="page_controls">
+                                        <button type="button" disabled class="btn btn-primary btn-block" id="submitapproval">Submit for Approval...</button>
+                                        <button type="button" disabled class="btn btn-default btn-block" id="savedraft">Save as Draft</button>
+                                        <button type="button" disabled class="btn btn-default btn-block" id="cancelbutton">Cancel</button>
+                                    </div>
+                                </div>
                             </div>
                         </section>
                     </div>
@@ -1133,6 +1151,36 @@ $page = '';
 </script> 
     <script src="../js/cropper-main.js"></script> 
     <script>
+  $(document).ready(function(){
+    $("#page_controls").sticky({topSpacing:40});
+  });
+</script> 
+    <script>
+    $(document).ready(function() {
+        $('#tasktitle').blur(function() {
+            tmpval = $(this).val();
+            if (tmpval == '') {
+                $("#submitapproval,#savedraft,#cancelbutton").attr("disabled");
+            } else {
+                $("#submitapproval,#savedraft,#cancelbutton").removeAttr("disabled");
+            }
+        });
+
+    });
+</script> 
+    <script>
+$(document).ready(function () {
+    $("#help_toggle").click(function () {
+        $("#help_toggle_switch").fadeOut(function () {
+            $("#help_toggle_switch").text(($("#help_toggle_switch").text() == 'off') ? 'on' : 'off').fadeIn();
+        })
+    })
+});
+</script> 
+    <script>
+$( "#help_toggle" ).click(function() {
+  $( ".help-block" ).fadeToggle();
+});
 </script> 
 </div>
 </body>

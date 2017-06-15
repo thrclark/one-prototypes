@@ -9,6 +9,7 @@
 	 -ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
     transform: rotate(90deg);
+	margin-top:-4px;
 }
 
 </style>

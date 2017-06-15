@@ -78,7 +78,7 @@ $(function() {
                 </a> </div>
             <div class="col-sm-6 col-xs-2">
                 <div class="dropdown navbar-text">
-                    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-link" style="padding-top:0px"> <i class="icon-user-3 visible-xs-inline" aria-hidden="true"></i> <span class="hidden-xs">Hello, Tom </span><span class="caret"></span> </button>
+                    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-link" style="padding-top:0px; padding-right:0px;"> <i class="icon-user-3 visible-xs-inline" aria-hidden="true"></i> <span class="hidden-xs">Hello, Tom </span><span class="caret"></span> </button>
                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel">
                         <li><a href="vfy-pub-home.php">Publishing</a></li>
                         <li><a href="vfy-admin-sysparam.php">Administration</a></li>
