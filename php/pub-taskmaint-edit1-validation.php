@@ -8,7 +8,6 @@ $page = '';
 <?php include('includes/head-meta.php') ?>
 <?php include('includes/styles.php') ?>
 <link  href="../bower_components/cropperjs/dist/cropper.css" rel="stylesheet" type="text/css">
-
 <style type="text/css">
 .screenshots .tab-content .img-thumbnail {
 }
@@ -71,7 +70,7 @@ hr {
                                             <div class="small text-muted">(All IU Campuses)</div>
                                         </div>
                                     </div>
-                                </div>	
+                                </div>
                                 <div class="col-xs-12  col-sm-3 text-right">
                                     <div id="help_toggle" class=""> Help: <a href="#" id="help_toggle_switch">on</a> </div>
                                 </div>
@@ -83,7 +82,12 @@ hr {
                                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                                         <div class="panel panel-default">
                                             <div class="panel-heading" role="tab" id="heading_taskbasics">
-                                                <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_taskbasics" aria-expanded="true" aria-controls="collapse_taskbasics">Task Basics</a> </h4>
+                                                <div class="row">
+                                                    <div class="col-xs-9">
+                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_taskbasics" aria-expanded="true" aria-controls="collapse_taskbasics">Task Basics</a> </h4>
+                                                    </div>
+                                                    <div class="col-xs-3 panel-validation text-right"><i class="icon-error-alt"></i></div>
+                                                </div>
                                             </div>
                                             <div id="collapse_taskbasics" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading_taskbasics">
                                                 <div class="panel-body">
@@ -105,12 +109,13 @@ hr {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group ">
+                                                    <div class="form-group form-group-error">
                                                         <label class="control-label" for="uniquekey">Unique Key <span class="small text-muted">(required)</span></label>
                                                         <span class="help-block small">The unique key uniquely identifies this Task in its Campuses (if any). This value will be used as part of the URL for this Task.</span>
                                                         <div class="row">
                                                             <div class="col-sm-6">
                                                                 <input class="form-control" id="uniquekey" name="uniquekey" type="text" placeholder="" required="required">
+                                                                <div class="validation-fieldmessage" id="validate_name"> <i class="icon-error-alt"></i> A name is required for this verification.</div>
                                                             </div>
                                                             <div class="col-sm-6" style="padding-top:14px"> <a href="#" class="small" style="font-style: italic;margin-left: -15px;"> Suggest a key</a> </div>
                                                         </div>
@@ -148,7 +153,12 @@ hr {
                                         </div>
                                         <div class="panel panel-default">
                                             <div class="panel-heading" role="tab" id="heading_description">
-                                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_description" aria-expanded="false" aria-controls="collapse_description">Description</a> </h4>
+                                                <div class="row">
+                                                    <div class="col-xs-9">
+                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_description" aria-expanded="true" aria-controls="collapse_description">Description</a> </h4>
+                                                    </div>
+                                                    <div class="col-xs-3 panel-validation text-right"></div>
+                                                </div>
                                             </div>
                                             <div id="collapse_description" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_description">
                                                 <div class="panel-body">
@@ -206,7 +216,12 @@ hr {
                                         </div>
                                         <div class="panel panel-default">
                                             <div class="panel-heading" role="tab" id="heading_taskicon">
-                                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_taskicon" aria-expanded="false" aria-controls="collapse_taskicon">Task Icon</a> </h4>
+                                                <div class="row">
+                                                    <div class="col-xs-9">
+                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_taskicon" aria-expanded="true" aria-controls="collapse_taskicon">Task Icon</a> </h4>
+                                                    </div>
+                                                    <div class="col-xs-3 panel-validation text-right"></div>
+                                                </div>
                                             </div>
                                             <div id="collapse_taskicon" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_taskicon">
                                                 <div class="panel-body">
@@ -368,7 +383,12 @@ hr {
                                         </div>
                                         <div class="panel panel-default">
                                             <div class="panel-heading" role="tab" id="heading_authentication">
-                                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_authentication" aria-expanded="false" aria-controls="collapse_authentication">Authentication</a> </h4>
+                                                <div class="row">
+                                                    <div class="col-xs-9">
+                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_authentication" aria-expanded="true" aria-controls="collapse_authentication">Authentication</a> </h4>
+                                                    </div>
+                                                    <div class="col-xs-3 panel-validation text-right"></div>
+                                                </div>
                                             </div>
                                             <div id="collapse_authentication" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_authentication">
                                                 <div class="panel-body">
@@ -403,7 +423,12 @@ hr {
                                         </div>
                                         <div class="panel panel-default">
                                             <div class="panel-heading" role="tab" id="heading_contacts">
-                                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_contacts" aria-expanded="false" aria-controls="collapse_contacts">Contacts &amp; Publisher</a> </h4>
+                                                <div class="row">
+                                                    <div class="col-xs-9">
+                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_contacts" aria-expanded="true" aria-controls="collapse_contacts">Contacts &amp; Publisher</a> </h4>
+                                                    </div>
+                                                    <div class="col-xs-3 panel-validation text-right"></div>
+                                                </div>
                                             </div>
                                             <div id="collapse_contacts" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_contacts">
                                                 <div class="panel-body">
@@ -778,7 +803,12 @@ hr {
                                         </div>
                                         <div class="panel panel-default">
                                             <div class="panel-heading" role="tab" id="heading_versioning">
-                                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_versioning" aria-expanded="false" aria-controls="collapse_versioning">Versioning</a> </h4>
+                                                <div class="row">
+                                                    <div class="col-xs-9">
+                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_versioning" aria-expanded="true" aria-controls="collapse_versioning">Versioning</a> </h4>
+                                                    </div>
+                                                    <div class="col-xs-3 panel-validation text-right"></div>
+                                                </div>
                                             </div>
                                             <div id="collapse_versioning" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_versioning">
                                                 <div class="panel-body">
@@ -826,7 +856,12 @@ hr {
                                         </div>
                                         <div class="panel panel-default screenshots">
                                             <div class="panel-heading" role="tab" id="heading_screenshots">
-                                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_screenshots" aria-expanded="false" aria-controls="collapse_screenshots">Screen Shots &amp; Video</a> </h4>
+                                                <div class="row">
+                                                    <div class="col-xs-9">
+                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_screenshots" aria-expanded="true" aria-controls="collapse_screenshots">Screen Shots &amp; Video</a> </h4>
+                                                    </div>
+                                                    <div class="col-xs-3 panel-validation text-right"></div>
+                                                </div>
                                             </div>
                                             <div id="collapse_screenshots" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_screenshots">
                                                 <div class="panel-body">
@@ -897,7 +932,12 @@ hr {
                                         </div>
                                         <div class="panel panel-default">
                                             <div class="panel-heading" role="tab" id="heading_discoverability">
-                                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_discoverability" aria-expanded="false" aria-controls="collapse_discoverability">Discoverability</a> </h4>
+                                                <div class="row">
+                                                    <div class="col-xs-9">
+                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_discoverability" aria-expanded="true" aria-controls="collapse_discoverability">Discoverability</a> </h4>
+                                                    </div>
+                                                    <div class="col-xs-3 panel-validation text-right"><i class="icon-error-alt"></i></div>
+                                                </div>
                                             </div>
                                             <div id="collapse_discoverability" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_discoverability">
                                                 <div class="panel-body">
@@ -948,7 +988,7 @@ hr {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group">
+                                                    <div class="form-group form-group-error">
                                                         <label class="control-label" for="categories">Categories</label>
                                                         <span class="help-block small">Select the categories that this task will be placed under.</span>
                                                         <div class="row">
@@ -981,10 +1021,8 @@ hr {
                                                                     <button class="btn btn-default" type="button" style="margin-left:10px">Add</button>
                                                                     </span> </div>
                                                             </div>
-                                                            <div class="col-xs-8">
-                                                                <div class="well well-sm" style="width: 344px;"><span class="label label-white"> IT Services <i class="icon-cancel-circled"></i></span> <span class="label label-white"> Libraries <i class="icon-cancel-circled"></i></span></div>
-                                                            </div>
                                                         </div>
+                                                        <div class="validation-fieldmessage" id="validate_name"> <i class="icon-error-alt"></i> A category is required for this task.</div>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="control-label" for="tags">Tags</label>
@@ -1038,7 +1076,12 @@ hr {
                                         </div>
                                         <div class="panel panel-default">
                                             <div class="panel-heading" role="tab" id="heading_activecontent">
-                                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_activecontent" aria-expanded="false" aria-controls="collapse_activecontent">Active Content</a> </h4>
+                                                <div class="row">
+                                                    <div class="col-xs-9">
+                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_taskbasics" aria-expanded="true" aria-controls="collapse_taskbasics">ctive Content</a> </h4>
+                                                    </div>
+                                                    <div class="col-xs-3 panel-validation text-right"></div>
+                                                </div>
                                             </div>
                                             <div id="collapse_activecontent" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_activecontent">
                                                 <div class="panel-body">
