@@ -927,19 +927,19 @@ hr {
                                                         <!-- tab content --> 
                                                     </div>
                                                     <hr>
-                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_discoverability" aria-expanded="false" aria-controls="collapse_discoverability" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_audience" aria-expanded="false" aria-controls="collapse_audience" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
                                             </div>
                                         </div>
                                         <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="heading_discoverability">
+                                            <div class="panel-heading" role="tab" id="heading_audience">
                                                 <div class="row">
                                                     <div class="col-xs-9">
-                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_discoverability" aria-expanded="true" aria-controls="collapse_discoverability">Discoverability</a> </h4>
+                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_audience" aria-expanded="true" aria-controls="collapse_audience">Audience</a> </h4>
                                                     </div>
                                                     <div class="col-xs-3 panel-validation text-right"><i class="icon-error-alt"></i></div>
                                                 </div>
                                             </div>
-                                            <div id="collapse_discoverability" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_discoverability">
+                                            <div id="collapse_audience" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_audience">
                                                 <div class="panel-body">
                                                     <div class="form-group">
                                                         <label class="control-label" for="campus">Campus</label>
