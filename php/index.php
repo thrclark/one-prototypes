@@ -42,6 +42,7 @@ header .app-header h1 {
                 <li><a href="pub-taskmaint-home.php" target="_blank">Edit Task - Home</a></li>
                 <li><a href="pub-taskmaint-edit.php" target="_blank">Edit Task</a></li>
                 <li><a href="pub-taskmaint-edit1.php" target="_blank">Edit Task (alt)</a></li>
+                <li><a href="pub-taskmaint-edit1-validation.php" target="_blank">Edit Task (alt - validation)</a></li>
                 <li><a href="pub-tasksubmitted-home.php" target="_blank">Submitted Tasks</a></li>
             </ul>
         </div>
