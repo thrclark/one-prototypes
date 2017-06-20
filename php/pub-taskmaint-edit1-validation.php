@@ -45,6 +45,9 @@ $page = '';
 hr {
 	border-top: 1px solid #dddddd;
 }
+.panel.panel-default .panel-title .small.text-muted {
+	font-family: BentonSansRegular;
+}
 </style>
 <?php include('includes/scripts.php') ?>
 </head>
@@ -84,15 +87,15 @@ hr {
                                             <div class="panel-heading" role="tab" id="heading_taskbasics">
                                                 <div class="row">
                                                     <div class="col-xs-9">
-                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_taskbasics" aria-expanded="true" aria-controls="collapse_taskbasics">Task Basics</a> </h4>
+                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_taskbasics" aria-expanded="true" aria-controls="collapse_taskbasics" class="">Task Basics</a> </h4>
                                                     </div>
-                                                    <div class="col-xs-3 panel-validation text-right"><i class="icon-error-alt"></i></div>
+                                                    <div class="col-xs-3 panel-validation text-right">1 error</div>
                                                 </div>
                                             </div>
                                             <div id="collapse_taskbasics" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading_taskbasics">
                                                 <div class="panel-body">
                                                     <div class="form-group ">
-                                                        <label class="control-label" for="tasktitle"> Task Title <span class="small text-muted">(required)</span> </label>
+                                                        <label class="control-label" for="tasktitle"> Task Title </label>
                                                         <span class="help-block small">The Task title is how the Task will be referred to throughout the system.</span>
                                                         <div class="row">
                                                             <div class="col-sm-6">
@@ -101,7 +104,7 @@ hr {
                                                         </div>
                                                     </div>
                                                     <div class="form-group ">
-                                                        <label class="control-label" for="taskurl"> Task URL <span class="small text-muted">(required)</span></label>
+                                                        <label class="control-label" for="taskurl"> Task URL </label>
                                                         <span class="help-block small">The URL will take users to the location where they can perform this Task.</span>
                                                         <div class="row">
                                                             <div class="col-sm-6">
@@ -110,7 +113,7 @@ hr {
                                                         </div>
                                                     </div>
                                                     <div class="form-group form-group-error">
-                                                        <label class="control-label" for="uniquekey">Unique Key <span class="small text-muted">(required)</span></label>
+                                                        <label class="control-label" for="uniquekey">Unique Key</label>
                                                         <span class="help-block small">The unique key uniquely identifies this Task in its Campuses (if any). This value will be used as part of the URL for this Task.</span>
                                                         <div class="row">
                                                             <div class="col-sm-6">
@@ -121,7 +124,7 @@ hr {
                                                         </div>
                                                     </div>
                                                     <div class="form-group ">
-                                                        <label class="control-label" for="applicationname"> Application Name</label>
+                                                        <label class="control-label" for="applicationname"> Application Name <span class="small text-muted">(optional)</span></label>
                                                         <span class="help-block small">The name of the application that provides this Task. If two Tasks have the same title, the application can be used to differentiate between them.</span>
                                                         <div class="row">
                                                             <div class="col-sm-6">
@@ -155,7 +158,7 @@ hr {
                                             <div class="panel-heading" role="tab" id="heading_description">
                                                 <div class="row">
                                                     <div class="col-xs-9">
-                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_description" aria-expanded="true" aria-controls="collapse_description">Description</a> </h4>
+                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_description" aria-expanded="true" aria-controls="collapse_description" class="">Description</a> </h4>
                                                     </div>
                                                     <div class="col-xs-3 panel-validation text-right"></div>
                                                 </div>
@@ -218,7 +221,7 @@ hr {
                                             <div class="panel-heading" role="tab" id="heading_taskicon">
                                                 <div class="row">
                                                     <div class="col-xs-9">
-                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_taskicon" aria-expanded="true" aria-controls="collapse_taskicon">Task Icon</a> </h4>
+                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_taskicon" aria-expanded="true" aria-controls="collapse_taskicon" class="">Task Icon</a> </h4>
                                                     </div>
                                                     <div class="col-xs-3 panel-validation text-right"></div>
                                                 </div>
@@ -382,50 +385,10 @@ hr {
                                             </div>
                                         </div>
                                         <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="heading_authentication">
-                                                <div class="row">
-                                                    <div class="col-xs-9">
-                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_authentication" aria-expanded="true" aria-controls="collapse_authentication">Authentication</a> </h4>
-                                                    </div>
-                                                    <div class="col-xs-3 panel-validation text-right"></div>
-                                                </div>
-                                            </div>
-                                            <div id="collapse_authentication" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_authentication">
-                                                <div class="panel-body">
-                                                    <div class="form-group ">
-                                                        <label class="control-label" for="authtype"> Authentication Type</label>
-                                                        <span class="help-block small">Select the authentication type used by this task.</span>
-                                                        <div class="row">
-                                                            <div class="col-sm-6">
-                                                                <select ng-model="task.authenticated" ng-options="key as value for (key, value) in ::pageData.authenticatedValues" class="form-control ng-valid ng-touched ng-dirty ng-valid-parse" tabindex="0" aria-invalid="false">
-                                                                    <option value="1" selected="selected" label="External">External</option>
-                                                                    <option value="2" label="None">None</option>
-                                                                    <option value="3" label="Internal">Internal</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group ">
-                                                        <label class="control-label" for="authtype"> Stat Recording Type</label>
-                                                        <span class="help-block small">If the user is logged in, record who the user was with the stat being recorded.</span>
-                                                        <div class="row">
-                                                            <div class="col-sm-6">
-                                                                <select ng-model="task.statType" name="statType" id="statType" ng-options="key as value for (key, value) in ::pageData.statTypes" class="form-control ng-pristine ng-not-empty ng-valid ng-valid-required ng-touched" required popover="If the user is logged in, record who the user was with the stat being recorded." data-original-title="" title="" aria-invalid="false">
-                                                                    <option label="User" value="string:U" selected="selected">User</option>
-                                                                    <option label="Anonymous" value="string:A">Anonymous</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <hr>
-                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_contacts" aria-expanded="false" aria-controls="collapse_contacts" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default">
                                             <div class="panel-heading" role="tab" id="heading_contacts">
                                                 <div class="row">
                                                     <div class="col-xs-9">
-                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_contacts" aria-expanded="true" aria-controls="collapse_contacts">Contacts &amp; Publisher</a> </h4>
+                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_contacts" aria-expanded="true" aria-controls="collapse_contacts" class="">Contacts &amp; Publisher</a> </h4>
                                                     </div>
                                                     <div class="col-xs-3 panel-validation text-right"></div>
                                                 </div>
@@ -521,7 +484,7 @@ hr {
                                                         </div>
                                                     </div>
                                                     <div class="form-group ">
-                                                        <label class="control-label" for="contact2"> Secondary Contact</label>
+                                                        <label class="control-label" for="contact2"> Secondary Contact <span class="small text-muted">(optional)</span></label>
                                                         <span class="help-block small">Specify the secondary contact information to be associated with this task.</span>
                                                         <div class="row">
                                                             <div class="col-sm-8">
@@ -613,187 +576,227 @@ hr {
                                                         <span class="help-block small">Specify the publisher of this task.</span>
                                                         <div class="row">
                                                             <div class="col-sm-8">
-                                                                <select ng-model="task.publisherId" name="publisherId" id="publisherId" ng-options="publisher.publisherId as publisher.name for publisher in ::pageData.publishers" class="form-control ng-pristine ng-not-empty ng-valid ng-valid-required ng-touched" required aria-invalid="false">
+                                                                <select id="publisherId" class="form-control" required aria-invalid="false">
                                                                     <option value="" selected="selected"> Select Publisher </option>
-                                                                    <option value="number:3660"  label="AA/CTL Webmaster">AA/CTL Webmaster</option>
-                                                                    <option label="ABITC" value="number:2800">ABITC</option>
-                                                                    <option label="Access Management Team / IMS" value="number:1561">Access Management Team / IMS</option>
-                                                                    <option label="Admissions - IUK" value="number:2840">Admissions - IUK</option>
-                                                                    <option label="Admitted JD Law Students" value="number:1900">Admitted JD Law Students</option>
-                                                                    <option label="Advance College Project (ACP)" value="number:3960">Advance College Project (ACP)</option>
-                                                                    <option label="AIT" value="number:1020">AIT</option>
-                                                                    <option label="Appear" value="number:1382">Appear</option>
-                                                                    <option label="ASQA - EIG" value="number:1840">ASQA - EIG</option>
-                                                                    <option label="ASQA - Testing Tools" value="number:3160">ASQA - Testing Tools</option>
-                                                                    <option label="Athletics" value="number:3860">Athletics</option>
-                                                                    <option label="Auxiliary IT" value="number:1440">Auxiliary IT</option>
-                                                                    <option label="BCP" value="number:3480">BCP</option>
-                                                                    <option label="Bepko" value="number:2500">Bepko</option>
-                                                                    <option label="BL-SPEA (SPEA IT)" value="number:2461">BL-SPEA (SPEA IT)</option>
-                                                                    <option label="Bursar - Bloomington" value="number:1763">Bursar - Bloomington</option>
-                                                                    <option label="CAITS" value="number:3340">CAITS</option>
-                                                                    <option label="CANC" value="number:2220">CANC</option>
-                                                                    <option label="Capital Planning and Facilities" value="number:1762">Capital Planning and Facilities</option>
-                                                                    <option label="Career and Accessibility Services" value="number:1601">Career and Accessibility Services</option>
-                                                                    <option label="Career Services Office - South Bend" value="number:1663">Career Services Office - South Bend</option>
-                                                                    <option label="Classroom Technology Services" value="number:3520">Classroom Technology Services</option>
-                                                                    <option label="Cloud Technologies" value="number:2880">Cloud Technologies</option>
-                                                                    <option label="Compliance Office" value="number:1261">Compliance Office</option>
-                                                                    <option label="CRM" value="number:2160">CRM</option>
-                                                                    <option label="CTSI" value="number:3580">CTSI</option>
-                                                                    <option label="Data Center Operations" value="number:1940">Data Center Operations</option>
-                                                                    <option label="DEMA" value="number:3341">DEMA</option>
-                                                                    <option label="Department of Emergency Medicine" value="number:2900">Department of Emergency Medicine</option>
-                                                                    <option label="Department of OB/GYN" value="number:2740">Department of OB/GYN</option>
-                                                                    <option label="Division of Student Affairs" value="number:3560">Division of Student Affairs</option>
-                                                                    <option label="Division of Undergraduate Education Technology Services" value="number:3920">Division of Undergraduate Education Technology Services</option>
-                                                                    <option label="Educational Partnerships and Student Success" value="number:2940">Educational Partnerships and Student Success</option>
-                                                                    <option label="EIG" value="number:1560">EIG</option>
-                                                                    <option value="number:1800">Emergency Management &amp; Continuity</option>
-                                                                    <option label="Engagement" value="number:3680">Engagement</option>
-                                                                    <option label="Enrollments/Student Services" value="number:3921">Enrollments/Student Services</option>
-                                                                    <option label="Enterprise Document Management" value="number:3940">Enterprise Document Management</option>
-                                                                    <option label="ESS" value="number:1642">ESS</option>
-                                                                    <option label="etrain" value="number:2060">etrain</option>
-                                                                    <option label="Financial Management Services (FMS)" value="number:1820">Financial Management Services (FMS)</option>
-                                                                    <option label="First year Seminar - IUPUC" value="number:2420">First year Seminar - IUPUC</option>
-                                                                    <option label="Functional Contact – Support Center" value="number:2920">Functional Contact – Support Center</option>
-                                                                    <option label="Healthy IU" value="number:3800">Healthy IU</option>
-                                                                    <option label="Housing and Residence Life - IUPUI" value="number:3760">Housing and Residence Life - IUPUI</option>
-                                                                    <option label="HRMS" value="number:1360">HRMS</option>
-                                                                    <option label="HRMS - Technical" value="number:2360">HRMS - Technical</option>
-                                                                    <option label="Human Resources and Payroll - Kokomo" value="number:1764">Human Resources and Payroll - Kokomo</option>
-                                                                    <option label="IN-TEST" value="number:3000">IN-TEST</option>
-                                                                    <option label="Indiana University Cinema" value="number:1782">Indiana University Cinema</option>
-                                                                    <option label="Indiana University School of Dentistry" value="number:3820">Indiana University School of Dentistry</option>
-                                                                    <option label="Indiana University School of Medicine (IUSM)" value="number:3360">Indiana University School of Medicine (IUSM)</option>
-                                                                    <option label="INLOCCA" value="number:3440">INLOCCA</option>
-                                                                    <option label="Internal Audit Group" value="number:3980">Internal Audit Group</option>
-                                                                    <option label="IT Community Partners" value="number:3100">IT Community Partners</option>
-                                                                    <option label="IT Services" value="number:1920">IT Services</option>
-                                                                    <option label="IT Southeast Campus" value="number:1501">IT Southeast Campus</option>
-                                                                    <option label="IT Statewide Conference" value="number:1480">IT Statewide Conference</option>
-                                                                    <option label="IT Training - Bloomington" value="number:2640">IT Training - Bloomington</option>
-                                                                    <option label="IT Training - Kokomo" value="number:3300">IT Training - Kokomo</option>
-                                                                    <option label="IU Alumni Association" value="number:1662">IU Alumni Association</option>
-                                                                    <option label="IU Communications" value="number:2180">IU Communications</option>
-                                                                    <option label="IU Contact Center" value="number:3700">IU Contact Center</option>
-                                                                    <option label="IU East Career Services" value="number:3260">IU East Career Services</option>
-                                                                    <option label="IU Foundation" value="number:2042">IU Foundation</option>
-                                                                    <option label="IU Southeast Career Development Center" value="number:1741">IU Southeast Career Development Center</option>
-                                                                    <option label="IUEHS" value="number:4060">IUEHS</option>
-                                                                    <option label="IUEP EXECRES System Administrators" value="number:2700">IUEP EXECRES System Administrators</option>
-                                                                    <option label="IUESCC" value="number:3421">IUESCC</option>
-                                                                    <option label="IUPUI Campus Career and Advising Services" value="number:4000">IUPUI Campus Career and Advising Services</option>
-                                                                    <option label="IUPUI Finance and Administration" value="number:3240">IUPUI Finance and Administration</option>
-                                                                    <option label="IUPUI Finance and Administration Office of Technology Services" value="number:3200">IUPUI Finance and Administration Office of Technology Services</option>
-                                                                    <option label="IUPUI Human Resources" value="number:1620">IUPUI Human Resources</option>
-                                                                    <option label="IUPUI Testing Center" value="number:2960">IUPUI Testing Center</option>
-                                                                    <option label="Kelley School - Help Desk" value="number:2480">Kelley School - Help Desk</option>
-                                                                    <option label="KelleyOnlineDegrees" value="number:2520">KelleyOnlineDegrees</option>
-                                                                    <option label="Kelly School of Business" value="number:3180">Kelly School of Business</option>
-                                                                    <option label="KFS" value="number:1300">KFS</option>
-                                                                    <option label="KOWeb" value="number:2061">KOWeb</option>
-                                                                    <option label="Kuali Rice (ESI)" value="number:1260">Kuali Rice (ESI)</option>
-                                                                    <option label="Libraries - Bloomington" value="number:1740">Libraries - Bloomington</option>
-                                                                    <option label="Libraries - East" value="number:2200">Libraries - East</option>
-                                                                    <option label="Libraries - IUPUC" value="number:2202">Libraries - IUPUC</option>
-                                                                    <option label="Libraries - IUPUI" value="number:2203">Libraries - IUPUI</option>
-                                                                    <option label="Libraries - Kokomo" value="number:1701">Libraries - Kokomo</option>
-                                                                    <option label="Libraries - Northwest" value="number:1961">Libraries - Northwest</option>
-                                                                    <option label="Libraries - SouthBend" value="number:1960">Libraries - SouthBend</option>
-                                                                    <option label="Libraries - Southeast" value="number:2201">Libraries - Southeast</option>
-                                                                    <option label="Mathematical Science IUPUI" value="number:1500">Mathematical Science IUPUI</option>
-                                                                    <option label="MDEP" value="number:3120">MDEP</option>
-                                                                    <option label="MoneySmarts" value="number:1380">MoneySmarts</option>
-                                                                    <option label="Multicultural Center - IUPUI" value="number:2041">Multicultural Center - IUPUI</option>
-                                                                    <option label="Oasis" value="number:2560">Oasis</option>
-                                                                    <option label="Office of Admissions - IUSB" value="number:2720">Office of Admissions - IUSB</option>
-                                                                    <option label="Office of Online Education" value="number:4020">Office of Online Education</option>
-                                                                    <option label="Office of Overseas Study" value="number:1600">Office of Overseas Study</option>
-                                                                    <option label="Office of Student Employment" value="number:3620">Office of Student Employment</option>
-                                                                    <option label="Office of the Registrar - Bloomington" value="number:2280">Office of the Registrar - Bloomington</option>
-                                                                    <option label="Office of the Registrar - IU East" value="number:1700">Office of the Registrar - IU East</option>
-                                                                    <option label="Office of the Registrar - IU Southeast" value="number:1703">Office of the Registrar - IU Southeast</option>
-                                                                    <option label="Office of the Registrar - IUPUC" value="number:2421">Office of the Registrar - IUPUC</option>
-                                                                    <option label="Office of the Registrar - IUPUI" value="number:2240">Office of the Registrar - IUPUI</option>
-                                                                    <option label="Office of the Registrar - Kokomo" value="number:2580">Office of the Registrar - Kokomo</option>
-                                                                    <option label="Office of the Registrar - Northwest" value="number:2581">Office of the Registrar - Northwest</option>
-                                                                    <option label="Office of the Registrar - South Bend" value="number:2582">Office of the Registrar - South Bend</option>
-                                                                    <option label="OMS Southeast" value="number:1540">OMS Southeast</option>
-                                                                    <option label="Oncourse" value="number:3420">Oncourse</option>
-                                                                    <option label="One.IU Support Team" value="number:1000">One.IU Support Team</option>
-                                                                    <option label="Orientation - Bloomington" value="number:1604">Orientation - Bloomington</option>
-                                                                    <option label="Orientation - East" value="number:1660">Orientation - East</option>
-                                                                    <option label="Orientation - IUPUC" value="number:2081">Orientation - IUPUC</option>
-                                                                    <option label="Orientation - IUPUI" value="number:1641">Orientation - IUPUI</option>
-                                                                    <option label="Orientation - Northwest" value="number:2680">Orientation - Northwest</option>
-                                                                    <option label="Orientation - Southeast" value="number:1640">Orientation - Southeast</option>
-                                                                    <option label="Orientation and Academic Advising - Kokomo" value="number:1720">Orientation and Academic Advising - Kokomo</option>
-                                                                    <option label="OVPIA" value="number:3500">OVPIA</option>
-                                                                    <option label="OVPUE" value="number:2460">OVPUE</option>
-                                                                    <option label="Parking" value="number:2320">Parking</option>
-                                                                    <option value="number:2000">Payroll &amp; Time</option>
-                                                                    <option label="Policy Coordinator" value="number:3400">Policy Coordinator</option>
-                                                                    <option label="Principal Online Services" value="number:3040">Principal Online Services</option>
-                                                                    <option label="PROVEVP" value="number:2440">PROVEVP</option>
-                                                                    <option label="PSIA" value="number:1702">PSIA</option>
-                                                                    <option label="PTI Research Services" value="number:1240">PTI Research Services</option>
-                                                                    <option label="RASD" value="number:1381">RASD</option>
-                                                                    <option label="RASD - Compliance" value="number:1883">RASD - Compliance</option>
-                                                                    <option label="RASD - Grants" value="number:1882">RASD - Grants</option>
-                                                                    <option label="RASD - Grants/Compliance" value="number:1881">RASD - Grants/Compliance</option>
-                                                                    <option label="RASD - OVCR" value="number:1884">RASD - OVCR</option>
-                                                                    <option label="RASD - OVPR" value="number:1887">RASD - OVPR</option>
-                                                                    <option label="RASD - OVPR/VPR" value="number:1885">RASD - OVPR/VPR</option>
-                                                                    <option label="RASD - VPR" value="number:1886">RASD - VPR</option>
-                                                                    <option value="number:3780">ROAR - Registry of Options and Resources</option>
-                                                                    <option label="RPAS" value="number:3460">RPAS</option>
-                                                                    <option label="RPS Application Administration" value="number:3600">RPS Application Administration</option>
-                                                                    <option label="Ruth Lilly Medical Library" value="number:2620">Ruth Lilly Medical Library</option>
-                                                                    <option label="School of Nursing" value="number:3840">School of Nursing</option>
-                                                                    <option label="School of Optometry" value="number:2040">School of Optometry</option>
-                                                                    <option label="School of Public and Environmental Affairs (SPEA)" value="number:3320">School of Public and Environmental Affairs (SPEA)</option>
-                                                                    <option label="School of Public Health – Bloomington IT Services (SPHBITS)" value="number:3881">School of Public Health – Bloomington IT Services (SPHBITS)</option>
-                                                                    <option label="Schools of Education - IUPUI" value="number:3140">Schools of Education - IUPUI</option>
-                                                                    <option label="SCMC" value="number:3020">SCMC</option>
-                                                                    <option label="SIS" value="number:1340">SIS</option>
-                                                                    <option label="SOIC: School of Informatics and Computing" value="number:2080">SOIC: School of Informatics and Computing</option>
-                                                                    <option label="STC" value="number:3640">STC</option>
-                                                                    <option label="Storage and Virtualization" value="number:2340">Storage and Virtualization</option>
-                                                                    <option label="Student Academic Systems" value="number:1580">Student Academic Systems</option>
-                                                                    <option label="Student Central on Union" value="number:1721">Student Central on Union</option>
-                                                                    <option label="Student Development Center" value="number:2980">Student Development Center</option>
-                                                                    <option label="Student Organization Accounts" value="number:3080">Student Organization Accounts</option>
-                                                                    <option label="Student Outreach" value="number:1680">Student Outreach</option>
-                                                                    <option label="Student Support - South Bend" value="number:1541">Student Support - South Bend</option>
-                                                                    <option label="Support Center" value="number:2140">Support Center</option>
-                                                                    <option label="Support Center Tool" value="number:2600">Support Center Tool</option>
-                                                                    <option label="Training: SIS" value="number:1661">Training: SIS</option>
-                                                                    <option label="UCard" value="number:2400">UCard</option>
-                                                                    <option label="UHRS" value="number:1880">UHRS</option>
-                                                                    <option label="UIPO" value="number:2260">UIPO</option>
-                                                                    <option label="UIRR" value="number:1921">UIRR</option>
-                                                                    <option label="UITS - CCI" value="number:1801">UITS - CCI</option>
-                                                                    <option label="UITS - Collaboration Technologies" value="number:2860">UITS - Collaboration Technologies</option>
-                                                                    <option value="number:2781">UITS - eLearning Design &amp; Services</option>
-                                                                    <option label="UITS - Finance Office" value="number:1420">UITS - Finance Office</option>
-                                                                    <option label="UITS - Internal Resources" value="number:2100">UITS - Internal Resources</option>
-                                                                    <option label="UITS - IU eTexts" value="number:2780">UITS - IU eTexts</option>
-                                                                    <option label="UITS - IUIE" value="number:2120">UITS - IUIE</option>
-                                                                    <option label="UITS - Leveraged Services" value="number:1602">UITS - Leveraged Services</option>
-                                                                    <option label="UITS - Northwest" value="number:2300">UITS - Northwest</option>
-                                                                    <option label="UITS - South Bend" value="number:2380">UITS - South Bend</option>
-                                                                    <option label="UITS Campus Networks" value="number:3220">UITS Campus Networks</option>
-                                                                    <option label="University College" value="number:3380">University College</option>
-                                                                    <option label="University Division" value="number:1980">University Division</option>
-                                                                    <option label="University Graduate School - Bloomington" value="number:1760">University Graduate School - Bloomington</option>
-                                                                    <option label="University Graduate School - IUPUI" value="number:1761">University Graduate School - IUPUI</option>
-                                                                    <option label="USSS" value="number:1460">USSS</option>
-                                                                    <option label="VPFA" value="number:3060">VPFA</option>
-                                                                    <option label="Writing Tutorial Service (WTS)" value="number:2820">Writing Tutorial Service (WTS)</option>
-                                                                    <option label="Writing Tutorial Services WTS" value="number:4040">Writing Tutorial Services WTS</option>
+                                                                    <option value="duo"  label="AA/CTL Webmaster">AA/CTL Webmaster</option>
+                                                                    <option label="ABITC" value="duo">ABITC</option>
+                                                                    <option label="Access Management Team / IMS" value="duo">Access Management Team / IMS</option>
+                                                                    <option label="Admissions - IUK" value="duo">Admissions - IUK</option>
+                                                                    <option label="Admitted JD Law Students" value="duo">Admitted JD Law Students</option>
+                                                                    <option label="Advance College Project (ACP)" value="duo">Advance College Project (ACP)</option>
+                                                                    <option label="AIT" value="duo">AIT</option>
+                                                                    <option label="Appear" value="duo">Appear</option>
+                                                                    <option label="ASQA - EIG" value="duo">ASQA - EIG</option>
+                                                                    <option label="ASQA - Testing Tools" value="duo">ASQA - Testing Tools</option>
+                                                                    <option label="Athletics" value="duo">Athletics</option>
+                                                                    <option label="Auxiliary IT" value="duo">Auxiliary IT</option>
+                                                                    <option label="BCP" value="duo">BCP</option>
+                                                                    <option label="Bepko" value="duo">Bepko</option>
+                                                                    <option label="BL-SPEA (SPEA IT)" value="duo">BL-SPEA (SPEA IT)</option>
+                                                                    <option label="Bursar - Bloomington" value="duo">Bursar - Bloomington</option>
+                                                                    <option label="CAITS" value="duo">CAITS</option>
+                                                                    <option label="CANC" value="duo">CANC</option>
+                                                                    <option label="Capital Planning and Facilities" value="duo">Capital Planning and Facilities</option>
+                                                                    <option label="Career and Accessibility Services" value="duo">Career and Accessibility Services</option>
+                                                                    <option label="Career Services Office - South Bend" value="duo">Career Services Office - South Bend</option>
+                                                                    <option label="Classroom Technology Services" value="duo">Classroom Technology Services</option>
+                                                                    <option label="Cloud Technologies" value="duo">Cloud Technologies</option>
+                                                                    <option label="Compliance Office" value="duo">Compliance Office</option>
+                                                                    <option label="CRM" value="duo">CRM</option>
+                                                                    <option label="CTSI" value="duo">CTSI</option>
+                                                                    <option label="Data Center Operations" value="duo">Data Center Operations</option>
+                                                                    <option label="DEMA" value="duo">DEMA</option>
+                                                                    <option label="Department of Emergency Medicine" value="duo">Department of Emergency Medicine</option>
+                                                                    <option label="Department of OB/GYN" value="duo">Department of OB/GYN</option>
+                                                                    <option label="Division of Student Affairs" value="duo">Division of Student Affairs</option>
+                                                                    <option label="Division of Undergraduate Education Technology Services" value="duo">Division of Undergraduate Education Technology Services</option>
+                                                                    <option label="Educational Partnerships and Student Success" value="duo">Educational Partnerships and Student Success</option>
+                                                                    <option label="EIG" value="duo">EIG</option>
+                                                                    <option value="duo">Emergency Management &amp; Continuity</option>
+                                                                    <option label="Engagement" value="duo">Engagement</option>
+                                                                    <option label="Enrollments/Student Services" value="duo">Enrollments/Student Services</option>
+                                                                    <option label="Enterprise Document Management" value="duo">Enterprise Document Management</option>
+                                                                    <option label="ESS" value="duo">ESS</option>
+                                                                    <option label="etrain" value="duo">etrain</option>
+                                                                    <option label="Financial Management Services (FMS)" value="duo">Financial Management Services (FMS)</option>
+                                                                    <option label="First year Seminar - IUPUC" value="duo">First year Seminar - IUPUC</option>
+                                                                    <option label="Functional Contact – Support Center" value="duo">Functional Contact – Support Center</option>
+                                                                    <option label="Healthy IU" value="duo">Healthy IU</option>
+                                                                    <option label="Housing and Residence Life - IUPUI" value="duo">Housing and Residence Life - IUPUI</option>
+                                                                    <option label="HRMS" value="duo">HRMS</option>
+                                                                    <option label="HRMS - Technical" value="duo">HRMS - Technical</option>
+                                                                    <option label="Human Resources and Payroll - Kokomo" value="duo">Human Resources and Payroll - Kokomo</option>
+                                                                    <option label="IN-TEST" value="duo">IN-TEST</option>
+                                                                    <option label="Indiana University Cinema" value="duo">Indiana University Cinema</option>
+                                                                    <option label="Indiana University School of Dentistry" value="duo">Indiana University School of Dentistry</option>
+                                                                    <option label="Indiana University School of Medicine (IUSM)" value="duo">Indiana University School of Medicine (IUSM)</option>
+                                                                    <option label="INLOCCA" value="duo">INLOCCA</option>
+                                                                    <option label="Internal Audit Group" value="duo">Internal Audit Group</option>
+                                                                    <option label="IT Community Partners" value="duo">IT Community Partners</option>
+                                                                    <option label="IT Services" value="duo">IT Services</option>
+                                                                    <option label="IT Southeast Campus" value="duo">IT Southeast Campus</option>
+                                                                    <option label="IT Statewide Conference" value="duo">IT Statewide Conference</option>
+                                                                    <option label="IT Training - Bloomington" value="duo">IT Training - Bloomington</option>
+                                                                    <option label="IT Training - Kokomo" value="duo">IT Training - Kokomo</option>
+                                                                    <option label="IU Alumni Association" value="duo">IU Alumni Association</option>
+                                                                    <option label="IU Communications" value="duo">IU Communications</option>
+                                                                    <option label="IU Contact Center" value="duo">IU Contact Center</option>
+                                                                    <option label="IU East Career Services" value="duo">IU East Career Services</option>
+                                                                    <option label="IU Foundation" value="duo">IU Foundation</option>
+                                                                    <option label="IU Southeast Career Development Center" value="duo">IU Southeast Career Development Center</option>
+                                                                    <option label="IUEHS" value="duo">IUEHS</option>
+                                                                    <option label="IUEP EXECRES System Administrators" value="duo">IUEP EXECRES System Administrators</option>
+                                                                    <option label="IUESCC" value="duo">IUESCC</option>
+                                                                    <option label="IUPUI Campus Career and Advising Services" value="duo">IUPUI Campus Career and Advising Services</option>
+                                                                    <option label="IUPUI Finance and Administration" value="duo">IUPUI Finance and Administration</option>
+                                                                    <option label="IUPUI Finance and Administration Office of Technology Services" value="duo">IUPUI Finance and Administration Office of Technology Services</option>
+                                                                    <option label="IUPUI Human Resources" value="duo">IUPUI Human Resources</option>
+                                                                    <option label="IUPUI Testing Center" value="duo">IUPUI Testing Center</option>
+                                                                    <option label="Kelley School - Help Desk" value="duo">Kelley School - Help Desk</option>
+                                                                    <option label="KelleyOnlineDegrees" value="duo">KelleyOnlineDegrees</option>
+                                                                    <option label="Kelly School of Business" value="duo">Kelly School of Business</option>
+                                                                    <option label="KFS" value="duo">KFS</option>
+                                                                    <option label="KOWeb" value="duo">KOWeb</option>
+                                                                    <option label="Kuali Rice (ESI)" value="duo">Kuali Rice (ESI)</option>
+                                                                    <option label="Libraries - Bloomington" value="duo">Libraries - Bloomington</option>
+                                                                    <option label="Libraries - East" value="duo">Libraries - East</option>
+                                                                    <option label="Libraries - IUPUC" value="duo">Libraries - IUPUC</option>
+                                                                    <option label="Libraries - IUPUI" value="duo">Libraries - IUPUI</option>
+                                                                    <option label="Libraries - Kokomo" value="duo">Libraries - Kokomo</option>
+                                                                    <option label="Libraries - Northwest" value="duo">Libraries - Northwest</option>
+                                                                    <option label="Libraries - SouthBend" value="duo">Libraries - SouthBend</option>
+                                                                    <option label="Libraries - Southeast" value="duo">Libraries - Southeast</option>
+                                                                    <option label="Mathematical Science IUPUI" value="duo">Mathematical Science IUPUI</option>
+                                                                    <option label="MDEP" value="duo">MDEP</option>
+                                                                    <option label="MoneySmarts" value="duo">MoneySmarts</option>
+                                                                    <option label="Multicultural Center - IUPUI" value="duo">Multicultural Center - IUPUI</option>
+                                                                    <option label="Oasis" value="duo">Oasis</option>
+                                                                    <option label="Office of Admissions - IUSB" value="duo">Office of Admissions - IUSB</option>
+                                                                    <option label="Office of Online Education" value="duo">Office of Online Education</option>
+                                                                    <option label="Office of Overseas Study" value="duo">Office of Overseas Study</option>
+                                                                    <option label="Office of Student Employment" value="duo">Office of Student Employment</option>
+                                                                    <option label="Office of the Registrar - Bloomington" value="duo">Office of the Registrar - Bloomington</option>
+                                                                    <option label="Office of the Registrar - IU East" value="duo">Office of the Registrar - IU East</option>
+                                                                    <option label="Office of the Registrar - IU Southeast" value="duo">Office of the Registrar - IU Southeast</option>
+                                                                    <option label="Office of the Registrar - IUPUC" value="duo">Office of the Registrar - IUPUC</option>
+                                                                    <option label="Office of the Registrar - IUPUI" value="duo">Office of the Registrar - IUPUI</option>
+                                                                    <option label="Office of the Registrar - Kokomo" value="duo">Office of the Registrar - Kokomo</option>
+                                                                    <option label="Office of the Registrar - Northwest" value="duo">Office of the Registrar - Northwest</option>
+                                                                    <option label="Office of the Registrar - South Bend" value="duo">Office of the Registrar - South Bend</option>
+                                                                    <option label="OMS Southeast" value="duo">OMS Southeast</option>
+                                                                    <option label="Oncourse" value="duo">Oncourse</option>
+                                                                    <option label="One.IU Support Team" value="duo">One.IU Support Team</option>
+                                                                    <option label="Orientation - Bloomington" value="duo">Orientation - Bloomington</option>
+                                                                    <option label="Orientation - East" value="duo">Orientation - East</option>
+                                                                    <option label="Orientation - IUPUC" value="duo">Orientation - IUPUC</option>
+                                                                    <option label="Orientation - IUPUI" value="duo">Orientation - IUPUI</option>
+                                                                    <option label="Orientation - Northwest" value="duo">Orientation - Northwest</option>
+                                                                    <option label="Orientation - Southeast" value="duo">Orientation - Southeast</option>
+                                                                    <option label="Orientation and Academic Advising - Kokomo" value="duo">Orientation and Academic Advising - Kokomo</option>
+                                                                    <option label="OVPIA" value="duo">OVPIA</option>
+                                                                    <option label="OVPUE" value="duo">OVPUE</option>
+                                                                    <option label="Parking" value="duo">Parking</option>
+                                                                    <option value="duo">Payroll &amp; Time</option>
+                                                                    <option label="Policy Coordinator" value="duo">Policy Coordinator</option>
+                                                                    <option label="Principal Online Services" value="duo">Principal Online Services</option>
+                                                                    <option label="PROVEVP" value="duo">PROVEVP</option>
+                                                                    <option label="PSIA" value="duo">PSIA</option>
+                                                                    <option label="PTI Research Services" value="duo">PTI Research Services</option>
+                                                                    <option label="RASD" value="duo">RASD</option>
+                                                                    <option label="RASD - Compliance" value="duo">RASD - Compliance</option>
+                                                                    <option label="RASD - Grants" value="duo">RASD - Grants</option>
+                                                                    <option label="RASD - Grants/Compliance" value="duo">RASD - Grants/Compliance</option>
+                                                                    <option label="RASD - OVCR" value="duo">RASD - OVCR</option>
+                                                                    <option label="RASD - OVPR" value="duo">RASD - OVPR</option>
+                                                                    <option label="RASD - OVPR/VPR" value="duo">RASD - OVPR/VPR</option>
+                                                                    <option label="RASD - VPR" value="duo">RASD - VPR</option>
+                                                                    <option value="duo">ROAR - Registry of Options and Resources</option>
+                                                                    <option label="RPAS" value="duo">RPAS</option>
+                                                                    <option label="RPS Application Administration" value="duo">RPS Application Administration</option>
+                                                                    <option label="Ruth Lilly Medical Library" value="duo">Ruth Lilly Medical Library</option>
+                                                                    <option label="School of Nursing" value="duo">School of Nursing</option>
+                                                                    <option label="School of Optometry" value="duo">School of Optometry</option>
+                                                                    <option label="School of Public and Environmental Affairs (SPEA)" value="duo">School of Public and Environmental Affairs (SPEA)</option>
+                                                                    <option label="School of Public Health – Bloomington IT Services (SPHBITS)" value="duo">School of Public Health – Bloomington IT Services (SPHBITS)</option>
+                                                                    <option label="Schools of Education - IUPUI" value="duo">Schools of Education - IUPUI</option>
+                                                                    <option label="SCMC" value="duo">SCMC</option>
+                                                                    <option label="SIS" value="duo">SIS</option>
+                                                                    <option label="SOIC: School of Informatics and Computing" value="duo">SOIC: School of Informatics and Computing</option>
+                                                                    <option label="STC" value="duo">STC</option>
+                                                                    <option label="Storage and Virtualization" value="duo">Storage and Virtualization</option>
+                                                                    <option label="Student Academic Systems" value="duo">Student Academic Systems</option>
+                                                                    <option label="Student Central on Union" value="duo">Student Central on Union</option>
+                                                                    <option label="Student Development Center" value="duo">Student Development Center</option>
+                                                                    <option label="Student Organization Accounts" value="duo">Student Organization Accounts</option>
+                                                                    <option label="Student Outreach" value="duo">Student Outreach</option>
+                                                                    <option label="Student Support - South Bend" value="duo">Student Support - South Bend</option>
+                                                                    <option label="Support Center" value="duo">Support Center</option>
+                                                                    <option label="Support Center Tool" value="duo">Support Center Tool</option>
+                                                                    <option label="Training: SIS" value="duo">Training: SIS</option>
+                                                                    <option label="UCard" value="duo">UCard</option>
+                                                                    <option label="UHRS" value="duo">UHRS</option>
+                                                                    <option label="UIPO" value="duo">UIPO</option>
+                                                                    <option label="UIRR" value="duo">UIRR</option>
+                                                                    <option label="UITS - CCI" value="duo">UITS - CCI</option>
+                                                                    <option label="UITS - Collaboration Technologies" value="duo">UITS - Collaboration Technologies</option>
+                                                                    <option value="duo">UITS - eLearning Design &amp; Services</option>
+                                                                    <option label="UITS - Finance Office" value="duo">UITS - Finance Office</option>
+                                                                    <option label="UITS - Internal Resources" value="duo">UITS - Internal Resources</option>
+                                                                    <option label="UITS - IU eTexts" value="duo">UITS - IU eTexts</option>
+                                                                    <option label="UITS - IUIE" value="duo">UITS - IUIE</option>
+                                                                    <option label="UITS - Leveraged Services" value="duo">UITS - Leveraged Services</option>
+                                                                    <option label="UITS - Northwest" value="duo">UITS - Northwest</option>
+                                                                    <option label="UITS - South Bend" value="duo">UITS - South Bend</option>
+                                                                    <option label="UITS Campus Networks" value="duo">UITS Campus Networks</option>
+                                                                    <option label="University College" value="duo">University College</option>
+                                                                    <option label="University Division" value="duo">University Division</option>
+                                                                    <option label="University Graduate School - Bloomington" value="duo">University Graduate School - Bloomington</option>
+                                                                    <option label="University Graduate School - IUPUI" value="duo">University Graduate School - IUPUI</option>
+                                                                    <option label="USSS" value="duo">USSS</option>
+                                                                    <option label="VPFA" value="duo">VPFA</option>
+                                                                    <option label="Writing Tutorial Service (WTS)" value="duo">Writing Tutorial Service (WTS)</option>
+                                                                    <option label="Writing Tutorial Services WTS" value="duo">Writing Tutorial Services WTS</option>
                                                                 </select>
+                                                                <div class="well well-sm" id="selectpublisher">
+                                                                    <table class="table table-condensed">
+                                                                        <thead class="sr-only">
+                                                                            <tr>
+                                                                                <th>Label</th>
+                                                                                <th>Value</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Functional Contact</td>
+                                                                                <td><a href="mailto">thrclark@iu.edu</a></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Technical Contact</td>
+                                                                                <td><a href="mailto">thrclark@iu.edu</a></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Description</td>
+                                                                                <td>&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>ACL Members</td>
+                                                                                <td><ul ng-show="isNonLeafExpression(expression)" aria-hidden="false">
+                                                                                        <li ng-repeat="expression in expression.children" tree=""> <span ng-show="$parent.$parent.expression != null" aria-hidden="false">GROUPS : memberOf = BL-VPFA-ONE-PUBLISHER</span></li>
+                                                                                        <li ng-repeat="expression in expression.children" tree="">  <span ng-show="$parent.$parent.expression != null" aria-hidden="false">GROUPS : memberOf = BL-UHRS-ONE-PUBLISHER</span></li>
+                                                                                        <li ng-repeat="expression in expression.children" tree="">  <span ng-show="$parent.$parent.expression != null" aria-hidden="false">GROUPS : memberOf = BL-FMOP-ONE-PUBLISHER</span></li>
+                                                                                    </ul></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Receive Task Notifications</td>
+                                                                                <td>yes</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Receive Review Notifications</td>
+                                                                                <td>yes</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -801,64 +804,11 @@ hr {
                                                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_versioning" aria-expanded="false" aria-controls="collapse_versioning" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
                                             </div>
                                         </div>
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="heading_versioning">
-                                                <div class="row">
-                                                    <div class="col-xs-9">
-                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_versioning" aria-expanded="true" aria-controls="collapse_versioning">Versioning</a> </h4>
-                                                    </div>
-                                                    <div class="col-xs-3 panel-validation text-right"></div>
-                                                </div>
-                                            </div>
-                                            <div id="collapse_versioning" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_versioning">
-                                                <div class="panel-body">
-                                                    <div class="form-group ">
-                                                        <label class="control-label" for="versionnumber">Version Number</label>
-                                                        <span class="help-block small">Versioning helps users to identify when improvements have been made to the service.  Note that when this version number changes, reviews and ratings will start over, but the old ones will be kept for review.</span>
-                                                        <div class="row">
-                                                            <div class="col-sm-6">
-                                                                <input class="form-control" id="versionnumber" name="versionnumber" type="text" placeholder="1.1.0" required="required">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group ">
-                                                        <label class="control-label" for="versionnote">Version Release Notes</label>
-                                                        <span class="help-block small">Add notes to inform users of changes or new features in this version.</span>
-                                                        <div class="row">
-                                                            <div class="col-sm-12">
-                                                                <div class="input-group" style="margin-bottom:10px">
-                                                                    <input type="text" class="form-control" placeholder="" required="required" id="versionnote">
-                                                                    <span class="input-group-btn">
-                                                                    <button class="btn btn-default" type="button">Add</button>
-                                                                    </span> </div>
-                                                                <table class="table table-condensed table-actions">
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td>Started his hearted any civilly. So me by marianne admitted speaking.</td>
-                                                                            <td><a href="#" class="btn btn-default btn-xs">Delete</a></td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Cottage out enabled was entered greatly prevent message. No procured unlocked an likewise.</td>
-                                                                            <td><a href="#" class="btn btn-default btn-xs">Delete</a></td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Do so written as raising parlors spirits mr elderly. Made late in of high left hold.</td>
-                                                                            <td><a href="#" class="btn btn-default btn-xs">Delete</a></td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <hr>
-                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_screenshots" aria-expanded="false" aria-controls="collapse_screenshots" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
-                                            </div>
-                                        </div>
                                         <div class="panel panel-default screenshots">
                                             <div class="panel-heading" role="tab" id="heading_screenshots">
                                                 <div class="row">
                                                     <div class="col-xs-9">
-                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_screenshots" aria-expanded="true" aria-controls="collapse_screenshots">Screen Shots &amp; Video</a> </h4>
+                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_screenshots" aria-expanded="true" aria-controls="collapse_screenshots" class="">Screen Shots &amp; Video</a> </h4>
                                                     </div>
                                                     <div class="col-xs-3 panel-validation text-right"></div>
                                                 </div>
@@ -897,7 +847,9 @@ hr {
                                                                 </div>
                                                             </div>
                                                             <div class="tab-pane" id="tab_b">
-                                                                <h5>Tablet</h5>
+                                                                <h5>Tablet <span class="small text-muted">(optional)</span>
+                                                                    </label>
+                                                                </h5>
                                                                 <div class="row">
                                                                     <div class="col-xs-12 text-center">
                                                                         <hr style="margin-bottom:10px">
@@ -905,7 +857,7 @@ hr {
                                                                 </div>
                                                             </div>
                                                             <div class="tab-pane " id="tab_c">
-                                                                <h5>Mobile</h5>
+                                                                <h5>Mobile <span class="small text-muted">(optional)</span></h5>
                                                                 <div class="row">
                                                                     <div class="col-xs-6 col-sm-4">
                                                                         <div class="image-controls"><img src="../img/app-screenshots/ccl-mobile-001.png" class="img-responsive"alt=""> <a href="#" class="btn btn-xs btn-default">Delete</a> <a href="#" class="btn btn-xs btn-default">Alt Text</a></div>
@@ -934,9 +886,9 @@ hr {
                                             <div class="panel-heading" role="tab" id="heading_audience">
                                                 <div class="row">
                                                     <div class="col-xs-9">
-                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_audience" aria-expanded="true" aria-controls="collapse_audience">Audience</a> </h4>
+                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_audience" aria-expanded="true" aria-controls="collapse_audience" class="">Audience</a> </h4>
                                                     </div>
-                                                    <div class="col-xs-3 panel-validation text-right"><i class="icon-error-alt"></i></div>
+                                                    <div class="col-xs-3 panel-validation text-right">1 error</div>
                                                 </div>
                                             </div>
                                             <div id="collapse_audience" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_audience">
@@ -1075,10 +1027,103 @@ hr {
                                             </div>
                                         </div>
                                         <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="heading_authentication">
+                                                <div class="row">
+                                                    <div class="col-xs-9">
+                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_authentication" aria-expanded="true" aria-controls="collapse_authentication" class="">Authentication <span class="small text-muted">(optional)</span></a> </h4>
+                                                    </div>
+                                                    <div class="col-xs-3 panel-validation text-right"></div>
+                                                </div>
+                                            </div>
+                                            <div id="collapse_authentication" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_authentication">
+                                                <div class="panel-body">
+                                                    <div class="form-group ">
+                                                        <label class="control-label" for="authtype"> Authentication Type</label>
+                                                        <span class="help-block small">Select the authentication type used by this task.</span>
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <select ng-model="task.authenticated" ng-options="key as value for (key, value) in ::pageData.authenticatedValues" class="form-control ng-valid ng-touched ng-dirty ng-valid-parse" tabindex="0" aria-invalid="false">
+                                                                    <option value="1" selected="selected" label="External">External</option>
+                                                                    <option value="2" label="None">None</option>
+                                                                    <option value="3" label="Internal">Internal</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group ">
+                                                        <label class="control-label" for="authtype"> Stat Recording Type</label>
+                                                        <span class="help-block small">If the user is logged in, record who the user was with the stat being recorded.</span>
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <select ng-model="task.statType" name="statType" id="statType" ng-options="key as value for (key, value) in ::pageData.statTypes" class="form-control ng-pristine ng-not-empty ng-valid ng-valid-required ng-touched" required popover="If the user is logged in, record who the user was with the stat being recorded." data-original-title="" title="" aria-invalid="false">
+                                                                    <option label="User" value="string:U" selected="selected">User</option>
+                                                                    <option label="Anonymous" value="string:A">Anonymous</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_contacts" aria-expanded="false" aria-controls="collapse_contacts" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="heading_versioning">
+                                                <div class="row">
+                                                    <div class="col-xs-9">
+                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_versioning" aria-expanded="true" aria-controls="collapse_versioning" class="">Versioning <span class="small text-muted">(optional)</span></a> </h4>
+                                                    </div>
+                                                    <div class="col-xs-3 panel-validation text-right"></div>
+                                                </div>
+                                            </div>
+                                            <div id="collapse_versioning" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_versioning">
+                                                <div class="panel-body">
+                                                    <div class="form-group ">
+                                                        <label class="control-label" for="versionnumber">Version Number</label>
+                                                        <span class="help-block small">Versioning helps users to identify when improvements have been made to the service.  Note that when this version number changes, reviews and ratings will start over, but the old ones will be kept for review.</span>
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <input class="form-control" id="versionnumber" name="versionnumber" type="text" placeholder="1.1.0" required="required">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group ">
+                                                        <label class="control-label" for="versionnote">Version Release Notes</label>
+                                                        <span class="help-block small">Add notes to inform users of changes or new features in this version.</span>
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <div class="input-group" style="margin-bottom:10px">
+                                                                    <input type="text" class="form-control" placeholder="" required="required" id="versionnote">
+                                                                    <span class="input-group-btn">
+                                                                    <button class="btn btn-default" type="button">Add</button>
+                                                                    </span> </div>
+                                                                <table class="table table-condensed table-actions">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Started his hearted any civilly. So me by marianne admitted speaking.</td>
+                                                                            <td><a href="#" class="btn btn-default btn-xs">Delete</a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Cottage out enabled was entered greatly prevent message. No procured unlocked an likewise.</td>
+                                                                            <td><a href="#" class="btn btn-default btn-xs">Delete</a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Do so written as raising parlors spirits mr elderly. Made late in of high left hold.</td>
+                                                                            <td><a href="#" class="btn btn-default btn-xs">Delete</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_screenshots" aria-expanded="false" aria-controls="collapse_screenshots" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
                                             <div class="panel-heading" role="tab" id="heading_activecontent">
                                                 <div class="row">
                                                     <div class="col-xs-9">
-                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_taskbasics" aria-expanded="true" aria-controls="collapse_taskbasics">ctive Content</a> </h4>
+                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_activecontent" aria-expanded="true" aria-controls="collapse_activecontent" class="">Active Content <span class="small text-muted">(optional)</span></a> </h4>
                                                     </div>
                                                     <div class="col-xs-3 panel-validation text-right"></div>
                                                 </div>
@@ -1183,6 +1228,21 @@ hr {
         });
     });
 
+
+
+
+$(function() {
+        $('#selectpublisher').hide();
+        $('#publisherId').change(function() {
+            if ($('#publisherId').val() == 'duo') {
+                $('#selectpublisher').show();
+            } else {
+                $('#selectpublisher').hide();
+            }
+        });
+    });
+	
+	
 
 </script> 
     <script src="../js/cropper-main.js"></script> 
