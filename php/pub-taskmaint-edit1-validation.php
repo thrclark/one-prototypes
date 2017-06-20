@@ -977,7 +977,7 @@ hr {
                                                         <div class="validation-fieldmessage" id="validate_name"> <i class="icon-error-alt"></i> A category is required for this task.</div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label" for="tags">Tags</label>
+                                                        <label class="control-label" for="tags">Tags <span class="small text-muted">(optional)</span> </label>
                                                         <span class="help-block small">Select the tags with which this task will be affiliated.</span>
                                                         <div class="row">
                                                             <div class="col-xs-8">
