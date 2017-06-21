@@ -1317,7 +1317,7 @@ background-color: #FFFFFF;
                                                     </div>
                                                     <div class="form-group col-sm-3" id="field_frequency">
                                                         <label for="activeContentUpdateFrequency" class="">Update Frequency (seconds)</label>
-                                                        <input type="number" name="activeContentUpdateFrequency" min="5" max="14400" step="1" class="form-control ng-pristine ng-untouched ng-valid ng-valid-min ng-valid-max" popover="Set the update frequency (in seconds) at which you want a tile to refresh its Active Content. Becareful with how short the interval is because the content will reset back to the first item after a refresh." data-original-title="" title="" tabindex="0" aria-invalid="false">
+                                                        <input type="number" name="activeContentUpdateFrequency" min="5" max="14400" step="1" class="form-control ng-pristine ng-untouched ng-valid ng-valid-min ng-valid-max" popover="Set the update frequency (in seconds) at which you want a tile to refresh its Active Content. Be careful with how short the interval is because the content will reset back to the first item after a refresh." data-original-title="" title="" tabindex="0" aria-invalid="false">
                                                     </div>
                                                 </div>
                                             </div>

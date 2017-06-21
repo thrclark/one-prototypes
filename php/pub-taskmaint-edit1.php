@@ -1152,7 +1152,7 @@ hr {
                                                     </div>
                                                     <div class="form-group ">
                                                         <label class="control-label" for="updatefreq"> Update Frequency (seconds) </label>
-                                                        <span class="help-block small">Set the update frequency (in seconds) at which you want a tile to refresh its Active Content. Becareful with how short the interval is because the content will reset back to the first item after a refresh.</span>
+                                                        <span class="help-block small">Set the update frequency (in seconds) at which you want a tile to refresh its Active Content. Be careful with how short the interval is because the content will reset back to the first item after a refresh.</span>
                                                         <div class="row">
                                                             <div class="col-sm-3">
                                                                 <input class="form-control" id="updatefreq" name="updatefreq" type="text" placeholder="" required="required">
