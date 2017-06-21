@@ -99,7 +99,7 @@ hr {
                                                         <span class="help-block small">The Task title is how the Task will be referred to throughout the system.</span>
                                                         <div class="row">
                                                             <div class="col-sm-6">
-                                                                <input class="form-control" id="tasktitle" name="tasktitle" type="text" placeholder="" required="required">
+                                                                <input name="tasktitle" type="text" required="required" class="form-control" id="tasktitle" placeholder="" value="Classifieds">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -108,7 +108,7 @@ hr {
                                                         <span class="help-block small">The URL will take users to the location where they can perform this Task.</span>
                                                         <div class="row">
                                                             <div class="col-sm-6">
-                                                                <input class="form-control" id="taskurl" name="taskurl" type="text" placeholder="" required="required">
+                                                                <input name="taskurl" type="text" required="required" class="form-control" id="taskurl" placeholder="" value="https://apps.iu.edu/ccf2-prd/classifieds">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -117,7 +117,7 @@ hr {
                                                         <span class="help-block small">The unique key uniquely identifies this Task in its Campuses (if any). This value will be used as part of the URL for this Task.</span>
                                                         <div class="row">
                                                             <div class="col-sm-6">
-                                                                <input class="form-control" id="uniquekey" name="uniquekey" type="text" placeholder="" required="required">
+                                                                <input name="uniquekey" type="text" required="required" class="form-control" id="uniquekey" placeholder="" value="classifieds">
                                                             </div>
                                                             <div class="col-sm-6" style="padding-top:14px"> <a href="#" class="small" style="font-style: italic;margin-left: -15px;"> Suggest a key</a> </div>
                                                         </div>
@@ -136,7 +136,7 @@ hr {
                                                         <span class="help-block small">Specify if this task is to open in a new window. Task will open in existing window if left unchecked.</span>
                                                         <div class="checkbox">
                                                             <label>
-                                                                <input type="checkbox" value="">
+                                                                <input type="checkbox" value="" checked="checked">
                                                                 Open in new window </label>
                                                         </div>
                                                     </div>
@@ -145,7 +145,7 @@ hr {
                                                         <span class="help-block small">Specify if this task has been optimized for mobile devices.</span>
                                                         <div class="checkbox">
                                                             <label>
-                                                                <input type="checkbox" value="">
+                                                                <input type="checkbox" value="" checked="checked">
                                                                 Task is mobile-optimized </label>
                                                         </div>
                                                     </div>
@@ -1177,7 +1177,7 @@ hr {
                                     <div class="well well-sm" id="page_controls">
                                         <button type="button" disabled class="btn btn-primary btn-block" id="submitapproval" data-toggle="modal" data-target="#modal_publishdate">Submit for Approval...</button>
                                         <button type="button" disabled class="btn btn-default btn-block" id="savedraft">Save as Draft</button>
-                                        <button type="button" disabled class="btn btn-default btn-block" id="cancelbutton">Cancel</button>
+                                          <a href="pub-taskmaint-home.php"class="btn btn-default btn-block" id="cancelbutton">Cancel</a>
                                     </div>
                                 </div>
                             </div>

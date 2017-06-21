@@ -59,7 +59,7 @@ $page = '';
 	max-width: 434px;
 }
 .dropdown.dropdown-lg .dropdown-menu {
-	margin-top: -56px;
+	margin-top: -51px;
 	padding: 20px;
 	left: 14px;
 }
@@ -455,7 +455,7 @@ $page = '';
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -501,7 +501,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -544,7 +544,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu16" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
@@ -589,7 +589,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -635,7 +635,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -682,7 +682,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -728,7 +728,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -769,7 +769,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -812,7 +812,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu17" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
@@ -855,7 +855,7 @@ aria-labelledby="dropdownMenu1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu18" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -902,7 +902,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -948,7 +948,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -994,7 +994,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -1040,7 +1040,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -1086,7 +1086,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -1132,7 +1132,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -1178,7 +1178,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -1228,7 +1228,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -1274,7 +1274,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -1320,7 +1320,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -1366,7 +1366,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -1409,7 +1409,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu26" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -1459,7 +1459,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -1505,7 +1505,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -1551,7 +1551,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -1597,7 +1597,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -1643,7 +1643,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -1686,7 +1686,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu24" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
@@ -1731,7 +1731,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -1777,7 +1777,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -1823,7 +1823,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -1866,7 +1866,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu22" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
@@ -1908,7 +1908,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
@@ -1953,7 +1953,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -1999,7 +1999,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -2045,7 +2045,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -2091,7 +2091,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -2137,7 +2137,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -2183,7 +2183,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -2229,7 +2229,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -2275,7 +2275,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -2318,7 +2318,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu21" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
@@ -2363,7 +2363,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -2406,7 +2406,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu20" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
@@ -2451,7 +2451,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -2497,7 +2497,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -2543,7 +2543,7 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -2586,7 +2586,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu19" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Update</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
@@ -2657,7 +2657,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Update existing task now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View pending updates</a></li>
@@ -2696,7 +2696,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li class="disabled"><a href="#">Set new task to 'Live' now</a></li>
+                                                                <li class="disabled"><a href="#">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule date of action</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View new task details</a></li>
@@ -2735,7 +2735,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set new task to 'Live' now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View new task details</a></li>
@@ -2774,7 +2774,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set task to 'Live' now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
                                                             </ul>
                                                         </div>
@@ -2811,7 +2811,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set task to 'Inactive' now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
                                                             </ul>
                                                         </div>
@@ -2848,7 +2848,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set task to 'Inactive' now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
                                                             </ul>
                                                         </div>
@@ -2885,7 +2885,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Update existing task now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View pending updates</a></li>
@@ -2924,7 +2924,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li class="disabled"><a href="#">Update existing task now</a></li>
+                                                                <li class="disabled"><a href="#">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule date of action</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View pending updates</a></li>
@@ -2963,7 +2963,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set task to 'Inactive' now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
                                                             </ul>
                                                         </div>
@@ -3000,7 +3000,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li class="disabled"><a href="#">Update existing task now</a></li>
+                                                                <li class="disabled"><a href="#">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule date of action</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View pending updates</a></li>

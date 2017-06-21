@@ -1176,7 +1176,7 @@ hr {
                                     <div class="well well-sm" id="page_controls">
                                         <button type="button" disabled class="btn btn-primary btn-block" id="submitapproval" data-toggle="modal" data-target="#modal_publishdate">Submit for Approval...</button>
                                         <button type="button" disabled class="btn btn-default btn-block" id="savedraft">Save as Draft</button>
-                                        <button type="button" disabled class="btn btn-default btn-block" id="cancelbutton">Cancel</button>
+                                          <a href="pub-taskmaint-home.php"class="btn btn-default btn-block" id="cancelbutton">Cancel</a>
                                     </div>
                                 </div>
                             </div>
