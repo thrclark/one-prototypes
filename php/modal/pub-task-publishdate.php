@@ -3,7 +3,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <h4 class="modal-title">Submit Task for Approval</h4>
+                    <h4 class="modal-title">Specify Publish Date</h4>
                 </div>
                 <div class="modal-body">
                     <div class="row">
@@ -12,21 +12,22 @@
                             <div class="radio">
                                 <label>
                                     <input type="radio" name="cars" value="1">
-                                    Upon approval, publish this task immediately. </label>
+                                    Publish immediately upon admin approval. </label>
                             </div>
                             <div class="radio">
                                 <label>
                                     <input type="radio" name="cars" value="2">
-                                    Upon approval, leave this task set to 'Inactive'.</label>
+                                    Set task to 'Inactive' upon approval. </label>
                             </div>
                             <div class="radio">
                                 <label>
                                     <input type="radio" name="cars" value="3">
-                                    Set this task to 'Active' on a specified date (pending approval).</label>
+                                    Specify date on which this task will be set to 'Live'. </label>
                             </div>
                         </div>
-                        <div class="form-group col-md-12 pubdate_widget pubdate_widget3"  style="display:none">
-                            <label for="title" class="control-label">Set Date</label>
+                        <div class="form-group col-md-12" id="pubdate_widget3"  style="display:none">
+                            <label for="title" class="control-label">Publish Date</label>
+                            <span class="help-block small"> Specify the date and time that you wish for these updates to be published. Note that if this task is not reviewed for approval before this date, it will be published immediately upon approval.</span>
                             <div class="row">
                                 <div class="form-group col-md-6">
                                     <div class="counter-container">
@@ -39,7 +40,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Submit Task for Approval</button>
+                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Save</button>
                 </div>
             </div>
         </div>

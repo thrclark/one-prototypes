@@ -118,7 +118,6 @@ hr {
                                                         <div class="row">
                                                             <div class="col-sm-6">
                                                                 <input class="form-control" id="uniquekey" name="uniquekey" type="text" placeholder="" required="required">
-                                                               
                                                             </div>
                                                             <div class="col-sm-6" style="padding-top:14px"> <a href="#" class="small" style="font-style: italic;margin-left: -15px;"> Suggest a key</a> </div>
                                                         </div>
@@ -231,15 +230,15 @@ hr {
                                                     <div class="row">
                                                         <div class="col-xs-8">
                                                             <div class="form-group ">
-                                                                <label class="control-label " for="api_account_type">Select the source of the icon image </label>
+                                                                <label class="control-label " for="">Select the source of the icon image </label>
                                                                 <div class="radio">
                                                                     <label>
-                                                                        <input type="radio" name="cars" value="1" id="show_custom">
+                                                                        <input type="radio" name="iconsource" value="1" id="show_custom">
                                                                         Custom image upload </label>
                                                                 </div>
                                                                 <div class="radio">
                                                                     <label>
-                                                                        <input type="radio" name="cars" value="2" id="show_library">
+                                                                        <input type="radio" name="iconsource" value="2" id="show_library">
                                                                         Selected from current library </label>
                                                                 </div>
                                                             </div>
@@ -381,7 +380,7 @@ hr {
                                                         </div>
                                                     </div>
                                                     <hr>
-                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_authentication" aria-expanded="false" aria-controls="collapse_authentication" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_contacts" aria-expanded="false" aria-controls="collapse_contacts" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
                                             </div>
                                         </div>
                                         <div class="panel panel-default">
@@ -801,7 +800,7 @@ hr {
                                                         </div>
                                                     </div>
                                                     <hr>
-                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_versioning" aria-expanded="false" aria-controls="collapse_versioning" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_screenshots" aria-expanded="false" aria-controls="collapse_screenshots" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
                                             </div>
                                         </div>
                                         <div class="panel panel-default screenshots">
@@ -940,7 +939,7 @@ hr {
                                                             </div>
                                                         </div>
                                                     </div>
-                                               <div class="form-group">
+                                                    <div class="form-group">
                                                         <label class="control-label" for="categories">Categories</label>
                                                         <span class="help-block small">Select the categories that this task will be placed under.</span>
                                                         <div class="row">
@@ -1025,7 +1024,7 @@ hr {
                                                         </div>
                                                     </div>
                                                     <hr>
-                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_activecontent" aria-expanded="false" aria-controls="collapse_activecontent" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_authentication" aria-expanded="false" aria-controls="collapse_authentication" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
                                             </div>
                                         </div>
                                         <div class="panel panel-default">
@@ -1065,7 +1064,7 @@ hr {
                                                         </div>
                                                     </div>
                                                     <hr>
-                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_contacts" aria-expanded="false" aria-controls="collapse_contacts" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_versioning" aria-expanded="false" aria-controls="collapse_versioning" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
                                             </div>
                                         </div>
                                         <div class="panel panel-default">
@@ -1118,7 +1117,7 @@ hr {
                                                         </div>
                                                     </div>
                                                     <hr>
-                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_screenshots" aria-expanded="false" aria-controls="collapse_screenshots" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_activecontent" aria-expanded="false" aria-controls="collapse_activecontent" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
                                             </div>
                                         </div>
                                         <div class="panel panel-default">
@@ -1188,13 +1187,19 @@ hr {
             </div>
         </div>
     </div>
-    
-           <?php include('modal/pub-task-publishdate.php') ?>
-           
-           
+    <?php include('modal/pub-task-publishdate.php') ?>
     <?php include('includes/brand-footer.php') ?>
     <?php include('includes/footer-scripts.php') ?>
-    <script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("input[name$='cars']").click(function() {
+            var test = $(this).val();
+            $("#pubdate_widget3").slideUp();
+            $("#pubdate_widget" + test).slideDown();
+        });
+    });
+</script>
+<script>
     $(document).ready(function() {
         $('input[type="radio"]').click(function() {
             if ($(this).attr('id') == 'show_custom') {
@@ -1203,7 +1208,7 @@ hr {
                 $('#crop-avatar').slideUp();
             }
         });
-		$('input[type="radio"]').click(function() {
+        $('input[type="radio"]').click(function() {
             if ($(this).attr('id') == 'show_library') {
                 $('#image_library').slideDown();
             } else {
@@ -1211,8 +1216,8 @@ hr {
             }
         });
     });
-	</script> 
-    <script>
+</script>
+<script>
     $(function() {
         $('#selectcontact1').hide();
         $('#contactId1').change(function() {
@@ -1223,7 +1228,7 @@ hr {
             }
         });
     });
-	$(function() {
+    $(function() {
         $('#selectcontact2').hide();
         $('#contactId2').change(function() {
             if ($('#contactId2').val() == 'duo') {
@@ -1233,11 +1238,7 @@ hr {
             }
         });
     });
-
-
-
-
-$(function() {
+    $(function() {
         $('#selectpublisher').hide();
         $('#publisherId').change(function() {
             if ($('#publisherId').val() == 'duo') {
@@ -1247,17 +1248,16 @@ $(function() {
             }
         });
     });
-	
-	
-
-</script> 
-    <script src="../js/cropper-main.js"></script> 
-    <script>
-  $(document).ready(function(){
-    $("#page_controls").sticky({topSpacing:40});
-  });
-</script> 
-    <script>
+</script>
+<script src="../js/cropper-main.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#page_controls").sticky({
+            topSpacing: 40
+        });
+    });
+</script>
+<script>
     $(document).ready(function() {
         $('#tasktitle').blur(function() {
             tmpval = $(this).val();
@@ -1267,23 +1267,22 @@ $(function() {
                 $("#submitapproval,#savedraft,#cancelbutton").removeAttr("disabled");
             }
         });
-
     });
-</script> 
-    <script>
-$(document).ready(function () {
-    $("#help_toggle").click(function () {
-        $("#help_toggle_switch").fadeOut(function () {
-            $("#help_toggle_switch").text(($("#help_toggle_switch").text() == 'off') ? 'on' : 'off').fadeIn();
+</script>
+<script>
+    $(document).ready(function() {
+        $("#help_toggle").click(function() {
+            $("#help_toggle_switch").fadeOut(function() {
+                $("#help_toggle_switch").text(($("#help_toggle_switch").text() == 'off') ? 'on' : 'off').fadeIn();
+            })
         })
-    })
-});
-</script> 
-    <script>
-$( "#help_toggle" ).click(function() {
-  $( ".help-block" ).fadeToggle();
-});
-</script> 
+    });
+</script>
+<script>
+    $("#help_toggle").click(function() {
+        $(".help-block").fadeToggle();
+    });
+</script>
 </div>
 </body>
 </html>

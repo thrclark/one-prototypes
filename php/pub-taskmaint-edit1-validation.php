@@ -381,7 +381,7 @@ hr {
                                                         </div>
                                                     </div>
                                                     <hr>
-                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_authentication" aria-expanded="false" aria-controls="collapse_authentication" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_contacts" aria-expanded="false" aria-controls="collapse_contacts" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
                                             </div>
                                         </div>
                                         <div class="panel panel-default">
@@ -801,7 +801,7 @@ hr {
                                                         </div>
                                                     </div>
                                                     <hr>
-                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_versioning" aria-expanded="false" aria-controls="collapse_versioning" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_screenshots" aria-expanded="false" aria-controls="collapse_screenshots" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
                                             </div>
                                         </div>
                                         <div class="panel panel-default screenshots">
@@ -1023,7 +1023,7 @@ hr {
                                                         </div>
                                                     </div>
                                                     <hr>
-                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_activecontent" aria-expanded="false" aria-controls="collapse_activecontent" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_authentication" aria-expanded="false" aria-controls="collapse_authentication" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
                                             </div>
                                         </div>
                                         <div class="panel panel-default">
@@ -1063,7 +1063,7 @@ hr {
                                                         </div>
                                                     </div>
                                                     <hr>
-                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_contacts" aria-expanded="false" aria-controls="collapse_contacts" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_versioning" aria-expanded="false" aria-controls="collapse_versioning" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
                                             </div>
                                         </div>
                                         <div class="panel panel-default">
@@ -1116,7 +1116,7 @@ hr {
                                                         </div>
                                                     </div>
                                                     <hr>
-                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_screenshots" aria-expanded="false" aria-controls="collapse_screenshots" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_activecontent" aria-expanded="false" aria-controls="collapse_activecontent" class="btn btn-primary btn-sm pull-right">Continue <i class="icon-down-open-1"></i></a> </div>
                                             </div>
                                         </div>
                                         <div class="panel panel-default">
@@ -1172,7 +1172,7 @@ hr {
                                         
                                     </div>
                                 </div>
-                              <div class="col-md-4">
+                                <div class="col-md-4">
                                     <div class="well well-sm" id="page_controls">
                                         <button type="button" disabled class="btn btn-primary btn-block" id="submitapproval" data-toggle="modal" data-target="#modal_publishdate">Submit for Approval...</button>
                                         <button type="button" disabled class="btn btn-default btn-block" id="savedraft">Save as Draft</button>
@@ -1186,10 +1186,18 @@ hr {
             </div>
         </div>
     </div>
-    
-           <?php include('modal/pub-task-publishdate.php') ?>
+    <?php include('modal/pub-task-publishdate.php') ?>
     <?php include('includes/brand-footer.php') ?>
     <?php include('includes/footer-scripts.php') ?>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("input[name$='cars']").click(function() {
+            var test = $(this).val();
+            $("#pubdate_widget3").slideUp();
+            $("#pubdate_widget" + test).slideDown();
+        });
+    });
+</script> 
     <script>
     $(document).ready(function() {
         $('input[type="radio"]').click(function() {
@@ -1199,7 +1207,7 @@ hr {
                 $('#crop-avatar').slideUp();
             }
         });
-		$('input[type="radio"]').click(function() {
+        $('input[type="radio"]').click(function() {
             if ($(this).attr('id') == 'show_library') {
                 $('#image_library').slideDown();
             } else {
@@ -1207,7 +1215,7 @@ hr {
             }
         });
     });
-	</script> 
+</script> 
     <script>
     $(function() {
         $('#selectcontact1').hide();
@@ -1219,7 +1227,7 @@ hr {
             }
         });
     });
-	$(function() {
+    $(function() {
         $('#selectcontact2').hide();
         $('#contactId2').change(function() {
             if ($('#contactId2').val() == 'duo') {
@@ -1229,11 +1237,7 @@ hr {
             }
         });
     });
-
-
-
-
-$(function() {
+    $(function() {
         $('#selectpublisher').hide();
         $('#publisherId').change(function() {
             if ($('#publisherId').val() == 'duo') {
@@ -1243,15 +1247,14 @@ $(function() {
             }
         });
     });
-	
-	
-
 </script> 
     <script src="../js/cropper-main.js"></script> 
     <script>
-  $(document).ready(function(){
-    $("#page_controls").sticky({topSpacing:40});
-  });
+    $(document).ready(function() {
+        $("#page_controls").sticky({
+            topSpacing: 40
+        });
+    });
 </script> 
     <script>
     $(document).ready(function() {
@@ -1263,22 +1266,21 @@ $(function() {
                 $("#submitapproval,#savedraft,#cancelbutton").removeAttr("disabled");
             }
         });
-
     });
 </script> 
     <script>
-$(document).ready(function () {
-    $("#help_toggle").click(function () {
-        $("#help_toggle_switch").fadeOut(function () {
-            $("#help_toggle_switch").text(($("#help_toggle_switch").text() == 'off') ? 'on' : 'off').fadeIn();
+    $(document).ready(function() {
+        $("#help_toggle").click(function() {
+            $("#help_toggle_switch").fadeOut(function() {
+                $("#help_toggle_switch").text(($("#help_toggle_switch").text() == 'off') ? 'on' : 'off').fadeIn();
+            })
         })
-    })
-});
+    });
 </script> 
     <script>
-$( "#help_toggle" ).click(function() {
-  $( ".help-block" ).fadeToggle();
-});
+    $("#help_toggle").click(function() {
+        $(".help-block").fadeToggle();
+    });
 </script> 
 </div>
 </body>
