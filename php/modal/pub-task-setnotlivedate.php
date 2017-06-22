@@ -1,16 +1,20 @@
 
-<div class="modal fade" id="modal_setnolivedate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="modal_setinactivedate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog modal-default" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                <h4 class="modal-title">Set 'Inactive' Date</h4>
+                <h4 class="modal-title">Task 'Inactive' Date</h4>
             </div>
             <div class="modal-body">
                 <div class="row">
-          
-                    <div class="form-group col-md-12  "  style="display:">
-                        <label for="title" class="control-label">Set a date for this task to be set to 'Inactive'</label>
+                   
+                    <div class="form-group col-md-12">
+                        <label for="title" class="control-label">'Inactive' Date</label>
+                        
+                        <span class="help-block small">Set a date for this task to become 'inactive'.</span>
+                        
+                        
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <div class="counter-container">
@@ -19,6 +23,7 @@
                             </div>
                         </div>
                     </div>
+                   
                 </div>
             </div>
             <div class="modal-footer">
@@ -28,26 +33,3 @@
         </div>
     </div>
 </div>
-
-
-
-<script type="text/javascript">//<![CDATA[
-
-
-
-$(document).ready(function() {
-
-    $("#modal_setnolivedate input[name$='cars']").click(function() {
-        var test = $(this).val();
-
-        $("#modal_setnolivedate .pubdate_widget3").slideUp();
-        $("#modal_setnolivedate .pubdate_widget" + test).slideDown();
-    });
-	
-	 
-	
-	
-});
-
-</script> 
-

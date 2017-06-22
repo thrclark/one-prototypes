@@ -32,10 +32,7 @@ $page = '';
 }
 </style>
 <style>
-.help-block {
-	margin-top: 0px;
-	margin-bottom: 5px;
-}
+
 .page-utilities {
 	border-bottom: solid 1px #dddddd;
 	padding-top: 5px;

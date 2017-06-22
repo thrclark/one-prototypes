@@ -85,7 +85,6 @@ $page = '';
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
-
 </style>
 <style type="text/css">
 .dropdown1 {
@@ -116,12 +115,6 @@ $page = '';
     <?php include('includes/header-brand.php') ?>
     <?php include('includes/header-publishing.php') ?>
     <div class="main-content container" role="main">
-    
-    
-    
-    
-    
-    
         <div id="main-content">
             <div class="row">
                 <div class="col-md-2">
@@ -146,10 +139,10 @@ $page = '';
                             <div role="tabpanel" class="tab-pane active" id="tasks_all" style=" display:;">
                                 <section>
                                     <div class="row section-head">
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-8">
                                             <h3 class="h4">All Tasks</h3>
                                         </div>
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div class="input-group" id="adv-search">
                                                 <input type="text" class="form-control input-sm" placeholder="Filter by Keyword" />
                                                 <div class="input-group-btn">
@@ -460,7 +453,9 @@ $page = '';
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -506,7 +501,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -547,8 +544,8 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule 'Live' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -594,7 +591,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -687,7 +686,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -774,7 +775,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -815,8 +818,8 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule 'Live' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -859,7 +862,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
                                                                 <li><a href="#">Reschedule 'Live' Date</a></li>
                                                                 <li><a href="#">Remove 'Live' Scheduling</a></li>
                                                                 <li role="separator" class="divider"></li>
@@ -907,7 +910,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -953,7 +958,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -999,7 +1006,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1045,7 +1054,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1091,7 +1102,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1137,7 +1150,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1178,16 +1193,14 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
-                                                                <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Publish Pending Updates Now</a></li>
-                                                                <li><a href="#">Reschedule Pending Updates Release</a></li>
-                                                                <li><a href="#">Cancel Pending Updates Release</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1233,7 +1246,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1279,7 +1294,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1325,7 +1342,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1371,7 +1390,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1409,16 +1430,12 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu26" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
+                                                                <li> <a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit Task</a></li>
                                                                 <li><a href="#">Feature</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule 'Live' Date</a></li>
-                                                                <li role="separator" class="divider"></li>
-                                                                <li><a href="#">Publish Pending Updates Now</a></li>
-                                                                <li><a href="#">Reschedule Pending Updates Release</a></li>
-                                                                <li><a href="#">Cancel Pending Updates Release</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule 'Live' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1464,7 +1481,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1510,7 +1529,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1556,7 +1577,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1602,7 +1625,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1648,7 +1673,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1689,8 +1716,8 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule 'Live' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1736,7 +1763,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1782,7 +1811,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1828,7 +1859,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1869,8 +1902,8 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule 'Live' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1911,8 +1944,8 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule 'Live' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1958,7 +1991,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2004,7 +2039,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2050,7 +2087,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2096,7 +2135,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2142,7 +2183,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2188,7 +2231,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2234,7 +2279,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2280,7 +2327,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2321,8 +2370,8 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule 'Live' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2368,7 +2417,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2409,8 +2460,8 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule 'Live' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2456,7 +2507,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2502,7 +2555,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2548,7 +2603,9 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setnolivedate">Schedule 'Inactive' Date</a></li>
+                                                               
+
+ <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2589,8 +2646,8 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule 'Live' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2651,7 +2708,7 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
-                                                <td >Update existing task</td>
+                                                <td >Publish updates to task</td>
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -2879,7 +2936,7 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
-                                                <td >Update existing task</td>
+                                                <td >Publish updates to task</td>
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -2918,7 +2975,7 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
-                                                <td >Update existing task</td>
+                                                <td >Publish updates to task</td>
                                                 <td><span class="label label-white">Upon Approval </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -2994,7 +3051,7 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
-                                                <td >Update existing task</td>
+                                                <td >Publish updates to task</td>
                                                 <td><span class="label label-white">Upon Approval </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">

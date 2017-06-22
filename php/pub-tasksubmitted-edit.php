@@ -1361,7 +1361,7 @@ background-color: #FFFFFF;
                             <div class="radio">
                                 <label>
                                     <input type="radio" name="cars" value="2">
-                                    Set task to 'Inactive' upon approval. </label>
+                                    I will manually release these changes when ready. </label>
                             </div>
                             <div class="radio">
                                 <label>
