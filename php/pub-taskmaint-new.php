@@ -1028,7 +1028,7 @@ hr {
                                             <div class="panel-heading" role="tab" id="heading_authentication">
                                                 <div class="row">
                                                     <div class="col-xs-9">
-                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_authentication" aria-expanded="true" aria-controls="collapse_authentication" class="">Authentication <span class="small text-muted">(optional)</span></a> </h4>
+                                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_authentication" aria-expanded="true" aria-controls="collapse_authentication" class="">Authentication</a> </h4>
                                                     </div>
                                                     <div class="col-xs-3 panel-validation text-right"></div>
                                                 </div>
