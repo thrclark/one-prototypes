@@ -453,9 +453,7 @@ $page = '';
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -501,9 +499,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -591,9 +587,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -686,9 +680,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -775,9 +767,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -910,9 +900,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -958,9 +946,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1006,9 +992,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1054,9 +1038,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1102,9 +1084,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1150,9 +1130,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1198,9 +1176,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1246,9 +1222,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1294,9 +1268,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1342,9 +1314,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1390,9 +1360,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1481,9 +1449,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1529,9 +1495,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1577,9 +1541,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1625,9 +1587,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1673,9 +1633,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1763,9 +1721,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1811,9 +1767,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1859,9 +1813,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1991,9 +1943,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2039,9 +1989,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2087,9 +2035,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2135,9 +2081,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2183,9 +2127,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2231,9 +2173,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2279,9 +2219,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2327,9 +2265,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2417,9 +2353,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2507,9 +2441,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2555,9 +2487,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2603,9 +2533,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">See Reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                               
-
- <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2715,9 +2643,10 @@ aria-labelledby="dropdownMenu1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Reschedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View pending updates</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View pending updates</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2754,7 +2683,8 @@ aria-labelledby="dropdownMenu1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li class="disabled"><a href="#">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View new task details</a></li>
                                                             </ul>
@@ -2793,7 +2723,8 @@ aria-labelledby="dropdownMenu1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Reschedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View new task details</a></li>
                                                             </ul>
@@ -2832,7 +2763,8 @@ aria-labelledby="dropdownMenu1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Reschedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2869,7 +2801,8 @@ aria-labelledby="dropdownMenu1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Reschedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2906,7 +2839,8 @@ aria-labelledby="dropdownMenu1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Reschedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2943,7 +2877,8 @@ aria-labelledby="dropdownMenu1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Reschedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View pending updates</a></li>
                                                             </ul>
@@ -2982,7 +2917,8 @@ aria-labelledby="dropdownMenu1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li class="disabled"><a href="#">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Schedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View pending updates</a></li>
                                                             </ul>
@@ -3021,7 +2957,8 @@ aria-labelledby="dropdownMenu1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Reschedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Reschedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -3058,7 +2995,8 @@ aria-labelledby="dropdownMenu1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li class="disabled"><a href="#">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Schedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Schedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View pending updates</a></li>
                                                             </ul>
@@ -4567,12 +4505,18 @@ aria-labelledby="dropdownMenu1">
     <?php include('includes/brand-footer.php') ?>
     <?php include('includes/footer-scripts.php') ?>
     <?php include('modal/pub-task-summary.php') ?>
+    <?php include('modal/pub-task-summary-update.php') ?>
     <?php include('modal/pub-task-edit-selectversion.php') ?>
     <?php include('modal/pub-task-setnotlivedate.php') ?>
     <?php include('modal/pub-task-setlivedate.php') ?>
     <?php include('modal/pub-task-edit-pendingwarning.php') ?>
     <?php include('modal/pub-task-setpendingreleasedate.php') ?>
     <?php include('modal/pub-task-edit-deletewarning.php') ?>
+    <?php include('modal/pub-task-setpublishdate.php') ?>
+    
+    
+    
+    
     <div class="modal fade" id="modal_publishdate1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-default" role="document">
             <div class="modal-content">

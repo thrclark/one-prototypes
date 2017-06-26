@@ -83,3 +83,28 @@ table.dataTable thead th.sorting_desc:after {
 
 
 </style>
+
+<style type="text/css">
+.screenshots .tab-content .img-thumbnail {
+}
+.screenshots .panel-body .tab-content .image-controls {
+	border: 1px solid #ddd;
+	padding: 4px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.screenshots .panel-body .tab-content .image-controls img {
+	margin-bottom: 5px;
+}
+.screenshots .nav-pills>li.active>a, .screenshots .nav-pills>li.active>a:hover, .screenshots .nav-pills>li.active>a:focus {
+	color: #333;
+	background-color: #f5f5f5;
+}
+.screenshots .panel-body .tab-content .tab-pane {
+	border-bottom: none;
+}
+.screenshots .panel-body .tab-content {
+	border-right: none;
+}
+</style>
+
