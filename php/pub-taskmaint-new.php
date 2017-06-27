@@ -32,7 +32,6 @@ $page = '';
 }
 </style>
 <style>
-
 .page-utilities {
 	border-bottom: solid 1px #dddddd;
 	padding-top: 5px;
@@ -1155,6 +1154,28 @@ hr {
                                                             </div>
                                                         </div>
                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="heading_pubnote">
+                                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_pubnote" aria-expanded="false" aria-controls="collapse_pubnote"> Notes </a> </h4>
+                                            </div>
+                                            <div id="collapse_pubnote" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_pubnote">
+                                                <div class="panel-body">
+                                                    <div class="form-group" id="addnote">
+                                                        <label class="control-label" for="tasktitle"> Add Note </label>
+                                                        <span class="help-block small">Notes are used to track discussions between publishers and approvers during the task approval process.</span>
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <textarea class="form-control" rows="3"></textarea>
+                                                            </div>
+                                                            <div class="col-sm-12 text-right"> <a href="#" class="btn btn-default btn-sm" style="margin-top:10px">Add</a> </div>
+                                                        </div>
+                                                        <div class="validation-fieldmessage showerror" id="validate_name" style="display:none"> <i class="icon-error-alt"></i> A note is required when a task is dissaproved.</div>
+                                                    </div>
+                                         
                                                 </div>
                                             </div>
                                         </div>

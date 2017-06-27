@@ -1159,6 +1159,58 @@ hr {
                                             </div>
                                         </div>
                                         
+                                        <hr>
+                                        
+                                                <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="heading_pubnote">
+                                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_pubnote" aria-expanded="false" aria-controls="collapse_pubnote"> Notes </a> </h4>
+                                            </div>
+                                            <div id="collapse_pubnote" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_pubnote">
+                                                <div class="panel-body">
+                                                    <div class="form-group" id="addnote">
+                                                        <label class="control-label" for="tasktitle"> Add Note </label>
+                                                        <span class="help-block small">Notes are used to track discussions between publishers and approvers during the task approval process.</span>
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <textarea class="form-control" rows="3"></textarea>
+                                                            </div>
+                                                            <div class="col-sm-12 text-right"> <a href="#" class="btn btn-default btn-sm" style="margin-top:10px">Add</a> </div>
+                                                        </div>
+                                                        <div class="validation-fieldmessage showerror" id="validate_name" style="display:none"> <i class="icon-error-alt"></i> A note is required when a task is dissaproved.</div>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="comment-list">
+                                                        <ul class="list-unstyled">
+                                                            <li>
+                                                                <div class="message">
+                                                                    <div class="row message-header">
+                                                                        <div class="col-xs-12 col-sm-8 message-title">Task Declined <small>(rvallow)</small></div>
+                                                                        <div class="col-xs-12 col-sm-4 message-meta"> <small class="message-date">6/3/16 2:16 PM</small> </div>
+                                                                    </div>
+                                                                    <div class="message-content">
+                                                                        <p> We strongly recommend looking at your icon. We are moving away from small text due to users not being able to read it and it appearing blurry. We can submit a redesign for your icon to our designers. *if so please change to universal icon requesting the redesign or email one@iu.edu requesting this.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="message">
+                                                                    <div class="row message-header">
+                                                                        <div class="col-xs-12 col-sm-8 message-title"> Task Submitted <small>(abretts)</small></div>
+                                                                        <div class="col-xs-12 col-sm-4 message-meta"> <small class="message-date">6/3/16 1:08 PM</small> </div>
+                                                                    </div>
+                                                                    <div class="message-content">
+                                                                        <p>This is a task submission note Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large. </p>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        
                                         <!-- <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="heading12">
                                             <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false" aria-controls="collapse12"> asdfasdfasdf </a> </h4>

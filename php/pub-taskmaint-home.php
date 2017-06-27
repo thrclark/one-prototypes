@@ -107,6 +107,65 @@ $page = '';
 	color: #2879ba;
 }
 </style>
+<style>
+/* Tabs panel */
+.tabbable-panel {
+}
+/* Default mode */
+.tabbable-line > .nav-tabs {
+	border: none;
+	margin: 0px;
+}
+.tabbable-line > .nav-tabs > li {
+	margin-right: 2px;
+}
+.tabbable-line > .nav-tabs > li > a {
+	border: 0;
+	margin-right: 0;
+	color: #737373;
+	
+}
+.tabbable-line > .nav-tabs > li > a > i {
+	color: #a6a6a6;
+}
+.tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover {
+	border-bottom: 4px solid #eeeeee;
+}
+.tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
+	border: 0;
+	background: none !important;
+	color: #333333;
+}
+.tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i {
+	color: #a6a6a6;
+}
+.tabbable-line > .nav-tabs > li.open .dropdown-menu, .tabbable-line > .nav-tabs > li:hover .dropdown-menu {
+	margin-top: 0px;
+}
+.tabbable-line > .nav-tabs > li.active {
+	border-bottom: 4px solid #cccccc;
+	position: relative;
+}
+.tabbable-line > .nav-tabs > li.active > a {
+	border: 0;
+	color: #333333;
+	
+}
+.tabbable-line > .nav-tabs > li.active > a > i {
+	color: #404040;
+}
+.tabbable-line > .tab-content {
+	margin-top: -3px;
+	background-color: #fff;
+	border: 0;
+	border-top: 1px solid #eee;
+	padding-bottom: 15px;
+	padding-top:0px;
+}
+.portlet .tabbable-line > .tab-content {
+	padding-bottom: 0;
+}
+</style>
 <?php include('includes/scripts.php') ?>
 </head>
 <body id="top" class="view-admin">
@@ -2646,7 +2705,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Reschedule date of action</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_updatesummary">View pending updates</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_summaryupdate">View pending updates</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2686,7 +2745,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule date of action</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View new task details</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_summary">View new task details</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2726,7 +2785,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Reschedule date of action</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View new task details</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_summary">View new task details</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2880,7 +2939,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Reschedule date of action</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View pending updates</a></li>
+                                                                  <li><a href="#" data-toggle="modal" data-target="#modal_summaryupdate">View pending updates</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2920,7 +2979,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Schedule date of action</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View pending updates</a></li>
+                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_summaryupdate">View pending updates</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2998,7 +3057,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Schedule date of action</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">View pending updates</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_summaryupdate">View pending updates</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -4513,10 +4572,6 @@ aria-labelledby="dropdownMenu1">
     <?php include('modal/pub-task-setpendingreleasedate.php') ?>
     <?php include('modal/pub-task-edit-deletewarning.php') ?>
     <?php include('modal/pub-task-setpublishdate.php') ?>
-    
-    
-    
-    
     <div class="modal fade" id="modal_publishdate1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-default" role="document">
             <div class="modal-content">
