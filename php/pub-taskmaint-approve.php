@@ -128,7 +128,7 @@ background-color: #FFFFFF;
                                             <div id="collapse_approveroverview" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading_approveroverview">
                                                 <div class="panel-body">
                                                     <label class="control-label" for=""> Scheduled Update Request </label>
-                                                    <span class="help-block small">Updates to this task have a requested publish date of: 07/14/2017 12:01pm (<a href="#" data-toggle="modal" data-target="#modal_publishdate">change publish date</a>).</span>
+                                                    <span class="help-block small">Updates to this task have a requested publish date of: 07/14/2017 12:01pm (<a href="#" data-toggle="modal" data-target="#modal_publishdateapprover">change publish date</a>).</span>
                                                     <label class="control-label" for=""> Changed Items </label>
                                                     <table class="table table-condensed table-comparison">
                                                         <thead class="">
@@ -1371,7 +1371,7 @@ background-color: #FFFFFF;
                                 <div class="col-md-4">
                                     <div class="well well-sm" id="page_controls">
                                         <button type="button" class="btn btn-primary btn-block" id="submitapproval">Approve</button>
-                                        <a href="#"class="btn btn-default btn-block" id="dissaprovebutton">Dissaprove</a> <a href="pub-taskmaint-home.php"class="btn btn-default btn-block" id="cancelbutton">Cancel</a> </div>
+                                        <a href="#"class="btn btn-default btn-block" id="dissaprovebutton">Dissaprove</a><a href="pub-taskmaint-home.php"class="btn btn-default btn-block" id="cancelbutton">Cancel</a></div>
                                 </div>
                             </div>
                         </section>
@@ -1380,7 +1380,7 @@ background-color: #FFFFFF;
             </div>
         </div>
     </div>
-    <?php include('modal/pub-task-publishdate.php') ?>
+    <?php include('modal/pub-task-publishdate-approver.php') ?>
     <div class="modal fade" id="modal_contactinfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-default" role="document">
             <div class="modal-content">
