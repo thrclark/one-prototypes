@@ -454,14 +454,18 @@ $page = '';
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="well">
-                                        <div class="checkbox small" style="display: inline">
-                                            <label >
-                                                <input type="checkbox" id="showdetails1">
-                                                Detail View </label>
+                                    <div class="page-utilities">
+                                        <div class="page-utilities-item">
+                                            <div class="checkbox">
+                                                <label >
+                                                    <input type="checkbox" id="showdetails1">
+                                                    Detail View </label>
+                                            </div>
                                         </div>
-                                        <div class="filter-list"> <span class="small">Filters:</span> <span class="small" id="filters_none" style="display:none">none</span>
-                                            <div id="filter_tags" style="display:inline"> <span class="label label-white"><span class="text-muted">Keyword:</span> Bus <i class="icon-cancel-circled"></i></span> <span class="label label-white"><span class="text-muted">Publisher:</span> Student Academic Systems <i class="icon-cancel-circled"></i></span></div>
+                                        <div class="page-utilities-item">
+                                            <div class="filter-list"> Filters:<span id="filters_none" style="display:none">none</span>
+                                                <div id="filter_tags" style="display:inline"> <span class="label label-white"><span class="text-muted">Keyword:</span> Bus <i class="icon-cancel-circled"></i></span> <span class="label label-white"><span class="text-muted">Publisher:</span> Student Academic Systems <i class="icon-cancel-circled"></i></span> &nbsp;</div>
+                                            </div>
                                         </div>
                                     </div>
                                     <table class="table table-hover table-condensed display" id="table1">
@@ -2651,11 +2655,13 @@ aria-labelledby="dropdownMenu1">
                                             <h3 class="h4">Task Scheduling</h3>
                                         </div>
                                     </div>
-                                    <div class="well">
-                                        <div class="checkbox small" style="display: inline">
-                                            <label>
-                                                <input type="checkbox" id="showdetails1">
-                                                Detail View </label>
+                                    <div class="page-utilities">
+                                        <div class="page-utilities-item">
+                                            <div class="checkbox">
+                                                <label >
+                                                    <input type="checkbox" id="showdetails2">
+                                                    Detail View </label>
+                                            </div>
                                         </div>
                                     </div>
                                     <table class="table table-hover table-condensed display" id="table2">
@@ -3064,7 +3070,7 @@ aria-labelledby="dropdownMenu1">
                                     </table>
                                 </section>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="tasks_submitted" style=" display: block;">
+                            <div role="tabpanel" class="tab-pane" id="tasks_submitted" style=" display:;">
                                 <section>
                                     <div class="row section-head">
                                         <div class="col-xs-12 col-sm-9 section-header">
@@ -3072,14 +3078,16 @@ aria-labelledby="dropdownMenu1">
                                         </div>
                                         <div class="col-xs-12  col-sm-3 section-controls"></div>
                                     </div>
-                                    <div class="well">
-                                        <div class="checkbox small" style="display: inline">
-                                            <label>
-                                                <input type="checkbox" id="showdetails3">
-                                                Detail View </label>
+                                    <div class="page-utilities">
+                                        <div class="page-utilities-item">
+                                            <div class="checkbox">
+                                                <label >
+                                                    <input type="checkbox" id="showdetails3">
+                                                    Detail View </label>
+                                            </div>
                                         </div>
-                                        <div class="filter-list">
-                                            <div class="checkbox small" style="display: inline">
+                                        <div class="page-utilities-item">
+                                            <div class="checkbox">
                                                 <label>
                                                     <input type="checkbox" id="toggledeclined">
                                                     Show Declined Tasks </label>
@@ -3130,7 +3138,8 @@ aria-labelledby="dropdownMenu1">
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">View/Edit</a></li> <li role="separator" class="divider"></li>
+                                                            <li><a href="pub-taskmaint-edit.php">View/Edit</a></li>
+                                                            <li role="separator" class="divider"></li>
                                                             <li><a href="#">Remove</a></li>
                                                         </ul>
                                                     </div>
@@ -3176,7 +3185,8 @@ aria-labelledby="dropdownMenu1">
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">View/Edit</a></li> <li role="separator" class="divider"></li>
+                                                            <li><a href="pub-taskmaint-edit.php">View/Edit</a></li>
+                                                            <li role="separator" class="divider"></li>
                                                             <li><a href="#">Remove</a></li>
                                                         </ul>
                                                     </div>
@@ -3223,7 +3233,8 @@ aria-labelledby="dropdownMenu1">
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-edit.php">View/Edit</a></li> <li role="separator" class="divider"></li>
+                                                            <li><a href="pub-taskmaint-edit.php">View/Edit</a></li>
+                                                            <li role="separator" class="divider"></li>
                                                             <li><a href="#">Remove</a></li>
                                                         </ul>
                                                     </div>
