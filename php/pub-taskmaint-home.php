@@ -123,7 +123,6 @@ $page = '';
 	border: 0;
 	margin-right: 0;
 	color: #737373;
-	
 }
 .tabbable-line > .nav-tabs > li > a > i {
 	color: #a6a6a6;
@@ -149,7 +148,6 @@ $page = '';
 .tabbable-line > .nav-tabs > li.active > a {
 	border: 0;
 	color: #333333;
-	
 }
 .tabbable-line > .nav-tabs > li.active > a > i {
 	color: #404040;
@@ -160,7 +158,7 @@ $page = '';
 	border: 0;
 	border-top: 1px solid #eee;
 	padding-bottom: 15px;
-	padding-top:0px;
+	padding-top: 0px;
 }
 .portlet .tabbable-line > .tab-content {
 	padding-bottom: 0;
@@ -2736,13 +2734,13 @@ aria-labelledby="dropdownMenu1">
                                                         </table>
                                                     </div></td>
                                                 <td >Set  new task to 'Live'</td>
-                                                <td><span class="label label-white">Upon Approval </span></td>
+                                                <td><span class="label label-white">07/26/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li class="disabled"><a href="#">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Reschedule date of action</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_summary">View new task details</a></li>
@@ -2897,7 +2895,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_previousschedule">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Reschedule date of action</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                             </ul>
@@ -2939,7 +2937,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Reschedule date of action</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                  <li><a href="#" data-toggle="modal" data-target="#modal_summaryupdate">View pending updates</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_summaryupdate">View pending updates</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2970,16 +2968,16 @@ aria-labelledby="dropdownMenu1">
                                                         </table>
                                                     </div></td>
                                                 <td >Publish updates to task</td>
-                                                <td><span class="label label-white">Upon Approval </span></td>
+                                                <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li class="disabled"><a href="#">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Schedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Reschedule date of action</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_summaryupdate">View pending updates</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_summaryupdate">View pending updates</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -3048,13 +3046,13 @@ aria-labelledby="dropdownMenu1">
                                                         </table>
                                                     </div></td>
                                                 <td >Publish updates to task</td>
-                                                <td><span class="label label-white">Upon Approval </span></td>
+                                                <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li class="disabled"><a href="#">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Schedule date of action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Reschedule date of action</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_summaryupdate">View pending updates</a></li>
@@ -3066,7 +3064,7 @@ aria-labelledby="dropdownMenu1">
                                     </table>
                                 </section>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="tasks_submitted" style=" display: ;">
+                            <div role="tabpanel" class="tab-pane" id="tasks_submitted" style=" display: block;">
                                 <section>
                                     <div class="row section-head">
                                         <div class="col-xs-12 col-sm-9 section-header">
@@ -3092,6 +3090,7 @@ aria-labelledby="dropdownMenu1">
                                         <thead>
                                             <tr>
                                                 <th scope="row">Title</th>
+                                                <th scope="row">Campus</th>
                                                 <th scope="row">Type</th>
                                                 <th scope="row">Submitted By</th>
                                                 <th scope="row"><span class="sr-only">Status</span>Status</th>
@@ -3124,14 +3123,14 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
+                                                <td >All IU Campuses</td>
                                                 <td >Update to existing </td>
                                                 <td > thrclark </td>
                                                 <td><span class="label label-white text-danger" > Declined </span></td>
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-declined" >View Notes</a></li>
-                                                            <li role="separator" class="divider"></li>
+                                                            <li><a href="pub-taskmaint-edit.php">View/Edit</a></li> <li role="separator" class="divider"></li>
                                                             <li><a href="#">Remove</a></li>
                                                         </ul>
                                                     </div>
@@ -3160,7 +3159,7 @@ aria-labelledby="dropdownMenu1">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>IU Campuses:</td>
-                                                                    <td>UB, All IU Campuses,
+                                                                    <td>IUB,
                                                                         IUPUI </td>
                                                                 </tr>
                                                                 <tr>
@@ -3170,14 +3169,14 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
+                                                <td >UB, IUPUI</td>
                                                 <td >New</td>
                                                 <td > hesenthal </td>
                                                 <td><span class="label label-white text-danger" > Declined </span></td>
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-declined" >View Notes</a></li>
-                                                            <li role="separator" class="divider"></li>
+                                                            <li><a href="pub-taskmaint-edit.php">View/Edit</a></li> <li role="separator" class="divider"></li>
                                                             <li><a href="#">Remove</a></li>
                                                         </ul>
                                                     </div>
@@ -3206,7 +3205,7 @@ aria-labelledby="dropdownMenu1">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>IU Campuses:</td>
-                                                                    <td>UB, All IU Campuses,
+                                                                    <td>IUB,
                                                                         IUPUI </td>
                                                                 </tr>
                                                                 <tr>
@@ -3216,14 +3215,15 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
+                                                <td class="taskmeta-table">IUB,
+                                                    IUPUI </td>
                                                 <td >Update to existing</td>
                                                 <td > seenyj </td>
                                                 <td><span class="label label-white text-danger" > Declined </span></td>
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-declined" >View Notes</a></li>
-                                                            <li role="separator" class="divider"></li>
+                                                            <li><a href="pub-taskmaint-edit.php">View/Edit</a></li> <li role="separator" class="divider"></li>
                                                             <li><a href="#">Remove</a></li>
                                                         </ul>
                                                     </div>
@@ -3252,7 +3252,8 @@ aria-labelledby="dropdownMenu1">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>IU Campuses:</td>
-                                                                    <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses, IUPUI </span></td>
+                                                                    <td>IUB,
+                                                                        IUPUI </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Publisher:</td>
@@ -3261,6 +3262,8 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
+                                                <td class="taskmeta-table">IUB,
+                                                    IUPUI </td>
                                                 <td >New </td>
                                                 <td > breckerm </td>
                                                 <td><span class="label label-white" > Pending Review </span></td>
@@ -3268,7 +3271,6 @@ aria-labelledby="dropdownMenu1">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                             <li><a href="pub-taskmaint-approve.php" >Review Submission</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted" >View Notes</a></li>
                                                             <li role="separator" class="divider"></li>
                                                             <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
                                                         </ul>
@@ -3298,7 +3300,8 @@ aria-labelledby="dropdownMenu1">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>IU Campuses:</td>
-                                                                    <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses, IUPUI </span></td>
+                                                                    <td>IUB,
+                                                                        IUPUI </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Publisher:</td>
@@ -3307,6 +3310,8 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
+                                                <td class="taskmeta-table">IUB,
+                                                    IUPUI </td>
                                                 <td >New </td>
                                                 <td > breckerm </td>
                                                 <td><span class="label label-white" > Pending Review </span></td>
@@ -3314,7 +3319,6 @@ aria-labelledby="dropdownMenu1">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                             <li><a href="pub-taskmaint-approve.php" >Review Submission</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted" >View Notes</a></li>
                                                             <li role="separator" class="divider"></li>
                                                             <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
                                                         </ul>
@@ -3344,7 +3348,8 @@ aria-labelledby="dropdownMenu1">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>IU Campuses:</td>
-                                                                    <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses, IUPUI </span></td>
+                                                                    <td>IUB,
+                                                                        IUPUI </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Publisher:</td>
@@ -3353,6 +3358,8 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
+                                                <td class="taskmeta-table">IUB,
+                                                    IUPUI </td>
                                                 <td >New </td>
                                                 <td > breckerm </td>
                                                 <td><span class="label label-white" > Pending Review </span></td>
@@ -3360,7 +3367,6 @@ aria-labelledby="dropdownMenu1">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                             <li><a href="pub-taskmaint-approve.php" >Review Submission</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted" >View Notes</a></li>
                                                             <li role="separator" class="divider"></li>
                                                             <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
                                                         </ul>
@@ -3390,7 +3396,7 @@ aria-labelledby="dropdownMenu1">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>IU Campuses:</td>
-                                                                    <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses</span></td>
+                                                                    <td>IUB</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Publisher:</td>
@@ -3399,6 +3405,7 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
+                                                <td class="taskmeta-table"><span aria-hidden="false"><span >IUB</span></span></td>
                                                 <td > Update to existing </td>
                                                 <td > tcain </td>
                                                 <td><span class="label label-white" > Pending Review </span></td>
@@ -3406,7 +3413,6 @@ aria-labelledby="dropdownMenu1">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                             <li><a href="pub-taskmaint-approve.php" >Review Submission</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted" >View Notes</a></li>
                                                             <li role="separator" class="divider"></li>
                                                             <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
                                                         </ul>
@@ -3436,7 +3442,7 @@ aria-labelledby="dropdownMenu1">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>IU Campuses:</td>
-                                                                    <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses</span></td>
+                                                                    <td>IUB</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Publisher:</td>
@@ -3445,6 +3451,7 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
+                                                <td class="taskmeta-table"><span aria-hidden="false"><span >IUB</span></span></td>
                                                 <td > Update to existing </td>
                                                 <td > tozogar </td>
                                                 <td><span class="label label-white" > Pending Review </span></td>
@@ -3452,7 +3459,6 @@ aria-labelledby="dropdownMenu1">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                             <li><a href="pub-taskmaint-approve.php" >Review Submission</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted" >View Notes</a></li>
                                                             <li role="separator" class="divider"></li>
                                                             <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
                                                         </ul>
@@ -3482,7 +3488,7 @@ aria-labelledby="dropdownMenu1">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>IU Campuses:</td>
-                                                                    <td><span aria-hidden="false"><span >IUB<span aria-hidden="true" >, </span></span></span> <span aria-hidden="true" >All IU Campuses</span></td>
+                                                                    <td><span aria-hidden="false"><span >IUB</span></span></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Publisher:</td>
@@ -3491,6 +3497,7 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
+                                                <td class="taskmeta-table"><span aria-hidden="false"><span >IUB</span></span></td>
                                                 <td > New </td>
                                                 <td > adobiega </td>
                                                 <td><span class="label label-white" > Pending Review </span></td>
@@ -3498,7 +3505,6 @@ aria-labelledby="dropdownMenu1">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                             <li><a href="pub-taskmaint-approve.php" >Review Submission</a></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages-submitted" >View Notes</a></li>
                                                             <li role="separator" class="divider"></li>
                                                             <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
                                                         </ul>
@@ -4572,6 +4578,7 @@ aria-labelledby="dropdownMenu1">
     <?php include('modal/pub-task-setpendingreleasedate.php') ?>
     <?php include('modal/pub-task-edit-deletewarning.php') ?>
     <?php include('modal/pub-task-setpublishdate.php') ?>
+    <?php include('modal/pub-task-previousschedule.php') ?>
     <div class="modal fade" id="modal_publishdate1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-default" role="document">
             <div class="modal-content">
