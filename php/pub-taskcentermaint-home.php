@@ -216,7 +216,7 @@ $page = '';
                                    
                                    </div>
                             </div>
-                            <table class="table table-hover table-condensed display" id="table1">
+                            <table class="table table-hover table-condensed display table-actions" id="table1">
                                 <thead>
                                     <tr>
                                         <th>Title <span class="small text-muted">(Application)</span></th>
