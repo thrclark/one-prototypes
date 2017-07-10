@@ -55,10 +55,10 @@ hr {
     <div class="main-content container" role="main">
         <div id="main-content">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <?php include('includes/nav-pub.php') ?>
                 </div>
-                <div class="col-md-10">
+                <div class="col-md-9">
                     <div class="primary-content" style="min-height:500px">
                         <section>
                             <div class="row section-head">
@@ -77,7 +77,7 @@ hr {
                             <!--  <div class="page-utilities"> </div>-->
                             <hr style="margin-top: 0px;margin-bottom: 10px;">
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-md-9">
                                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                                         <div class="panel panel-default">
                                             <div class="panel-heading" role="tab" id="heading_taskbasics">
@@ -1191,7 +1191,7 @@ hr {
                                         
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="well well-sm" id="page_controls">
                                         <button type="button" disabled class="btn btn-primary btn-block" id="submitapproval" data-toggle="modal" data-target="#modal_publishdate">Submit for Approval...</button>
                                         <button type="button" disabled class="btn btn-default btn-block" id="savedraft">Save as Draft</button>

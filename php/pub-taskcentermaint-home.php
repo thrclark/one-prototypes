@@ -205,11 +205,11 @@ $page = '';
                                    <div class="page-utilities-item">
                                    
                                    
-                                     <div class="input-group col-xs-4 pull-right" id="adv-search">
-                                        <input type="text" class="form-control input-sm" placeholder="Filter by Keyword" />
+                                     <div class="input-group input-group-sm col-xs-4 pull-right" id="adv-search">
+                                        <input type="text" class="form-control" placeholder="Filter by Keyword" />
                                         <div class="input-group-btn">
                                             <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-default btn-sm apply_filter">Apply Filter</button>
+                                                <button type="button" class="btn btn-default btn-sm">Apply Filter</button>
                                             </div>
                                         </div>
                                     </div>
