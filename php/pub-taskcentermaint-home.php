@@ -1,6 +1,6 @@
 <?php
-$section = '';
-$page = '';
+$section = 'publishing';
+$page_title = 'pub-taskcentermaint';
 ?>
 <!DOCTYPE html>
 <html lang="en-us">
