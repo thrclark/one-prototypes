@@ -21,7 +21,7 @@
                 <li  data-toggle="collapse" data-target="#nav-publishing" class="collapsed"><a href="#">Tasks <i class="icon-down-open-big"></i></a>
                     <ul <?php if ($section == 'publishing') {echo 'class="sub-menu"';} else {echo 'class="sub-menu collapse"';} ?> id="nav-publishing">
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="pub-taskmaint-home.php">Maintain Tasks</a></li>
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Maintain Task Centers</a></li>
+                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="pub-taskcentermaint-home.php">Maintain Task Centers</a></li>
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Announcements</a></li>
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Task Support</a></li>
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Task Contacts</a></li>
