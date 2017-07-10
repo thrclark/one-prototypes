@@ -3540,7 +3540,7 @@ aria-labelledby="dropdownMenu1">
                             <div role="tabpanel" class="tab-pane" id="tasks_featured" style=" display:">
                                 <div class="row section-head">
                                     <div class="col-xs-12 col-sm-9 section-header">
-                                        <h3 class="h4">Current &amp; Pending Featured Items</h3>
+                                        <h3 class="h4">Current &amp; Pending Featured Tasks</h3>
                                     </div>
                                     <div class="col-xs-12  col-sm-3 section-controls"><a href="pub-taskmaint-edit.php" class="btn btn-xs btn-default"><i class="icon-plus-2"></i>Featured Task</a></div>
                                 </div>
@@ -3717,7 +3717,7 @@ aria-labelledby="dropdownMenu1">
                                 </table>
                                 <div class="row section-head">
                                     <div class="col-xs-12 col-sm-9 section-header">
-                                        <h3 class="h4">Previously Featured Items</h3>
+                                        <h3 class="h4">Previously Featured Tasks</h3>
                                     </div>
                                     <div class="col-xs-12  col-sm-3 section-controls"></div>
                                 </div>
@@ -4156,7 +4156,7 @@ aria-labelledby="dropdownMenu1">
                             <div role="tabpanel" class="tab-pane" id="tasks_deleted" style="">
                                 <div class="row section-head">
                                     <div class="col-xs-12 col-sm-9 section-header">
-                                        <h3 class="h4">Deleted Items</h3>
+                                        <h3 class="h4">Deleted Tasks</h3>
                                     </div>
                                     <div class="col-xs-12  col-sm-3 section-controls"></div>
                                 </div>

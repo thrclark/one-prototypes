@@ -86,6 +86,11 @@ hr {
 	text-shadow: 0px 1px 2px #000000;
 	color: #ffffff;
 }
+
+
+.primary-content .form-group {
+	padding-left:5px}
+
 </style>
 <?php include('includes/scripts.php') ?>
 <script>
@@ -304,7 +309,13 @@ $(function() {
                             <!--  <div class="page-utilities"> </div>-->
                             <hr style="margin-top: 0px;margin-bottom: 10px;">
                             <div class="row">
+                                <div class="col-md-12">
+                                    <div class="header-form-section" style="margin-top:0px">
+                                        <h3> Task Center Basics</h3>
+                                    </div>
+                                     <div class="row">
                                 <div class="col-md-9">
+                                    
                                     <div class="form-group ">
                                         <label class="control-label" for="taskcentertitle"> Task Center Title </label>
                                         <span class="help-block small">The Task Center title is how the Task will be referred to throughout the system.</span>
@@ -553,6 +564,17 @@ $(function() {
                                             </div>
                                         </div>
                                     </div>
+                                    
+                                    </div></div>
+                                    
+                                    
+                                     <div class="header-form-section">
+                                        <h3> Description</h3>
+                                    </div>
+                                    
+                                         <div class="row">
+                                <div class="col-md-9">
+                                    
                                     <div class="form-group ">
                                         <label class="control-label " for="description"> Description</label>
                                         <span class="help-block small"> Add a description for this task center. </span>
@@ -601,6 +623,19 @@ $(function() {
                                             </div>
                                         </div>
                                     </div>
+                                    
+                                    </div></div>
+                                    
+                                    
+                                     <div class="header-form-section">
+                                        <h3> Add Tasks</h3>
+                                    </div>
+                                    
+                                    
+                                    
+                                         <div class="row">
+                                <div class="col-md-9">
+                                    
                                     <div class="form-group">
                                         <label class="control-label" for="role">Select Tasks</label>
                                         <div class="row">
@@ -648,7 +683,7 @@ $(function() {
                                                     <div class="task-select"> <img src="../img/task-icons-new/icon-change-name.png" alt=""/>
                                                         <div class="task-select-content">
                                                             <div>Name Change</div>
-                                                            <div class="small text-muted">(All Campuses)</div>
+                                                            <div class="small text-muted">(All Capmuses)</div>
                                                         </div>
                                                         <div class="delete-task"><i class="icon-cancel-1"></i></div>
                                                     </div>
@@ -726,6 +761,17 @@ $(function() {
                                             </div>--> 
                                         </div>
                                     </div>
+                                    
+                                    
+</div></div>                                    
+                                     <div class="header-form-section">
+                                        <h3> Audience</h3>
+                                    </div>
+                                    
+                                    
+                                         <div class="row">
+                                <div class="col-md-9">
+                                    
                                     <div class="form-group">
                                         <label class="control-label" for="campus">Campus</label>
                                         <span class="help-block small">Select the campuses with which this task is affiliated with.</span>
@@ -748,7 +794,7 @@ $(function() {
                                                     </span> </div>
                                             </div>
                                             <div class="col-xs-8">
-                                                <div class="well well-sm" style="width: 344px;"><span class="label label-white"> IU Bloomington <i class="icon-cancel-circled"></i></span> <span class="label label-white"> IU Kokomo <i class="icon-cancel-circled"></i></span></div>
+                                                <div class="well well-sm" style="width: 366px;"><span class="label label-white"> IU Bloomington <i class="icon-cancel-circled"></i></span> <span class="label label-white"> IU Kokomo <i class="icon-cancel-circled"></i></span></div>
                                             </div>
                                         </div>
                                     </div>
@@ -769,7 +815,7 @@ $(function() {
                                                     </span> </div>
                                             </div>
                                             <div class="col-xs-8">
-                                                <div class="well well-sm" style="width: 344px;"><span class="label label-white"> All Roles <i class="icon-cancel-circled"></i></span></div>
+                                                <div class="well well-sm" style="width: 366px;"><span class="label label-white"> All Roles <i class="icon-cancel-circled"></i></span></div>
                                             </div>
                                         </div>
                                     </div>
@@ -807,16 +853,20 @@ $(function() {
                                                     </span> </div>
                                             </div>
                                             <div class="col-xs-8">
-                                                <div class="well well-sm" style="width: 344px;"><span class="label label-white"> IT Services <i class="icon-cancel-circled"></i></span> <span class="label label-white"> Libraries <i class="icon-cancel-circled"></i></span></div>
+                                                <div class="well well-sm" style="width: 366px;"><span class="label label-white"> IT Services <i class="icon-cancel-circled"></i></span> <span class="label label-white"> Libraries <i class="icon-cancel-circled"></i></span></div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div></div></div>
+                                    
+                                    
                                 </div>
-                                <div class="col-md-3">
-                                    <div class="well well-sm" id="page_controls">
-                                        <button type="button" disabled class="btn btn-primary btn-block" id="submitapproval" data-toggle="modal" data-target="#modal_publishdate">Submit for Approval...</button>
-                                        <button type="button" disabled class="btn btn-default btn-block" id="savedraft">Save as Draft</button>
-                                        <a href="pub-taskmaint-home.php"class="btn btn-default btn-block" id="cancelbutton">Cancel</a> </div>
+                                
+                            
+                                <div class="col-md-12">
+                                      <hr>
+                                        <button type="button"  class="btn btn-primary" id="submitapproval" data-toggle="modal" data-target="#modal_publishdate">Submit for Approval...</button>
+                                        <button type="button"  class="btn btn-default " id="savedraft">Save as Draft</button>
+                                        <a href="pub-taskmaint-home.php"class="btn btn-default" id="cancelbutton">Cancel</a> 
                                 </div>
                             </div>
                         </section>
