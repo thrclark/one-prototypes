@@ -73,9 +73,8 @@ background-color: #FFFFFF;
 .table-comparison tbody tr .compare-tags .btn.btn-default.btn-sm {
 	margin-right: 3px;
 }
-
 .table-comparison tbody tr th:first-child {
-    font-size: 85%;
+	font-size: 85%;
 }
 </style>
 <?php include('includes/scripts.php') ?>
@@ -127,7 +126,7 @@ background-color: #FFFFFF;
                                                         <td>&nbsp;</td>
                                                         <td>&nbsp;</td>
                                                         <td><a href="#" class="btn btn-default btn-xs" id="edit_scheduled">edit</a></td>
-                                                    </tr>-->
+                                                    </tr>--> 
                                                         <!--
                                                     
                                                     
@@ -1239,7 +1238,7 @@ background-color: #FFFFFF;
                                                 <textarea class="form-control" rows="3" id="comments"></textarea>
                                             </div>
                                         </fieldset>
-                                           <hr>
+                                        <hr>
                                         <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Save <span class="caret"></span> </button>
                                         <ul class="dropdown-menu">
                                             <li><a href="#">Publish Immediately (Upon Approval)</a></li>
@@ -1276,9 +1275,10 @@ background-color: #FFFFFF;
                             </div>
                         </div>
                     </div>
-                </div> <div class="modal-footer">
-                      <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>  <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Save</button>
-                
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Save</button>
                 </div>
             </div>
         </div>

@@ -92,17 +92,17 @@ background-color: #FFFFFF;
     <div class="main-content container" role="main">
         <div id="main-content">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <?php include('includes/nav-pub.php') ?>
                 </div>
-                <div class="col-md-10">
+                <div class="col-md-9">
                     <div class="primary-content" style="min-height:500px">
                         <section>
                             <div class="row section-head">
                                 <div class="col-xs-12 col-sm-9 section-header">
-                                    <div class="edittask-preview" style="display: inline-block; position:relative;"> <img src="../img/task-icons-new/icon-classifieds.png"  alt=""/ style="max-height: 42px;width: auto;vertical-align: text-bottom;">
-                                        <div class="edittask-preview-content" style="display: inline-block; padding-left:5px;">
-                                            <div class="edittask-preview-content-title" style="font-weight: bold; font-size:20px">Approve Task: Classifieds</div>
+                                    <div class="taskmaint-preview"> <img src="../img/task-icons-new/icon-classifieds.png"  alt=""/>
+                                        <div class="taskmaint-preview-content">
+                                            <h2 class="taskmaint-preview-content-title">Approve Task: Classifieds</h2>
                                             <div class="small text-muted">(All IU Campuses)</div>
                                         </div>
                                     </div>
@@ -114,7 +114,7 @@ background-color: #FFFFFF;
                             <!--  <div class="page-utilities"> </div>-->
                             <hr style="margin-top: 0px;margin-bottom: 10px;">
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-md-9">
                                     <fieldset>
                                         <legend>Notes</legend>
                                         <div class="form-group" id="addnote">
@@ -286,7 +286,7 @@ background-color: #FFFFFF;
                                                     Task is mobile-optimized </label>
                                             </div>
                                         </div>
-</fieldset>
+                                    </fieldset>
                                     <fieldset>
                                         <legend> Description</legend>
                                         <div class="form-group ">
@@ -337,7 +337,7 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </div>
-</fieldset>
+                                    </fieldset>
                                     <fieldset>
                                         <legend>Task Icon</legend>
                                         <div class="row">
@@ -492,7 +492,7 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </div>
-</fieldset>
+                                    </fieldset>
                                     <fieldset>
                                         <legend>Contacts &amp; Publisher</legend>
                                         <div class="form-group ">
@@ -900,10 +900,10 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </div>
-</fieldset>
+                                    </fieldset>
                                     <fieldset>
                                         <legend>Screenshots &amp; Video</legend>
-<div class="row">
+                                        <div class="row">
                                             <ul class="nav nav-pills nav-stacked col-sm-2 col-md-2">
                                                 <li class="active"><a href="#tab_a" data-toggle="pill">Desktop</a></li>
                                                 <li class=""><a href="#tab_b" data-toggle="pill">Tablet</a></li>
@@ -966,7 +966,7 @@ background-color: #FFFFFF;
                                             </div>
                                             <!-- tab content --> 
                                         </div>
-</fieldset>
+                                    </fieldset>
                                     <fieldset>
                                         <legend>Audience</legend>
                                         <div class="form-group">
@@ -1100,10 +1100,10 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </div>
-</fieldset>
+                                    </fieldset>
                                     <fieldset>
                                         <legend>Authentication</legend>
-<div class="form-group ">
+                                        <div class="form-group ">
                                             <label class="control-label" for="authtype"> Authentication Type</label>
                                             <span class="help-block small">Select the authentication type used by this task.</span>
                                             <div class="row">
@@ -1128,7 +1128,7 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </div>
-                                          </fieldset>
+                                    </fieldset>
                                     <fieldset>
                                         <legend>Versioning</legend>
                                         <div class="form-group ">
@@ -1169,7 +1169,7 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </div>
-</fieldset>
+                                    </fieldset>
                                     <fieldset>
                                         <legend>Active Content</legend>
                                         <div class="form-group ">
@@ -1201,7 +1201,7 @@ background-color: #FFFFFF;
                                         </div>
                                     </fieldset>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="well well-sm" id="page_controls">
                                         <button type="button" class="btn btn-primary btn-block" id="submitapproval">Approve</button>
                                         <a href="#"class="btn btn-default btn-block" id="dissaprovebutton">Dissaprove</a> <a href="pub-taskmaint-home.php"class="btn btn-default btn-block" id="cancelbutton">Cancel</a> </div>

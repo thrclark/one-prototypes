@@ -282,13 +282,9 @@ background-color: #FFFFFF;
                                                 </table>
                                             </fieldset>
                                         </div>
+                                        <?php include('includes/taskformfields.php') ?>
                                         
-                                        
-                                        
-                                        
-                                         <?php include('includes/taskformfields.php') ?>
-                                         
-<!--                                         
+                                        <!--                                         
                                         <fieldset>
                                             <legend>General</legend>
                                             <div class="row">
@@ -1322,7 +1318,8 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </fieldset>
--->                                        <fieldset>
+-->
+                                        <fieldset>
                                             <legend>Approver's Notes</legend>
                                             <div class="form-group ">
                                                 <label class="control-label" for="comments"> Comments </label>
@@ -1365,7 +1362,8 @@ background-color: #FFFFFF;
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="cars" value="3">Specify date on which this task will be set to 'Live'. </label>
+                                    <input type="radio" name="cars" value="3">
+                                    Specify date on which this task will be set to 'Live'. </label>
                             </div>
                         </div>
                         <div class="form-group col-md-12" id="pubdate_widget3"  style="display:none">

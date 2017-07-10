@@ -92,17 +92,17 @@ background-color: #FFFFFF;
     <div class="main-content container" role="main">
         <div id="main-content">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <?php include('includes/nav-pub.php') ?>
                 </div>
-                <div class="col-md-10">
+                <div class="col-md-9">
                     <div class="primary-content" style="min-height:500px">
                         <section>
                             <div class="row section-head">
                                 <div class="col-xs-12 col-sm-9 section-header">
-                                    <div class="edittask-preview" style="display: inline-block; position:relative;"> <img src="../img/task-icons-new/icon-classifieds.png"  alt=""/ style="max-height: 42px;width: auto;vertical-align: text-bottom;">
-                                        <div class="edittask-preview-content" style="display: inline-block; padding-left:5px;">
-                                            <div class="edittask-preview-content-title" style="font-weight: bold; font-size:20px">Approve Task: Classifieds</div>
+                                    <div class="taskmaint-preview"> <img src="../img/task-icons-new/icon-classifieds.png"  alt=""/>
+                                        <div class="taskmaint-preview-content">
+                                            <h2 class="taskmaint-preview-content-title">Approve Task: Classifieds</h2>
                                             <div class="small text-muted">(All IU Campuses)</div>
                                         </div>
                                     </div>
@@ -114,7 +114,7 @@ background-color: #FFFFFF;
                             <!--  <div class="page-utilities"> </div>-->
                             <hr style="margin-top: 0px;margin-bottom: 10px;">
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-md-9">
                                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                                         <div class="panel panel-default">
                                             <div class="panel-heading" role="tab" id="heading_approveroverview">
@@ -1368,7 +1368,7 @@ background-color: #FFFFFF;
                                         
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="well well-sm" id="page_controls">
                                         <button type="button" class="btn btn-primary btn-block" id="submitapproval">Approve</button>
                                         <a href="#"class="btn btn-default btn-block" id="dissaprovebutton">Dissaprove</a> <a href="pub-taskmaint-home.php"class="btn btn-default btn-block" id="cancelbutton">Cancel</a> </div>
@@ -1792,9 +1792,7 @@ $(document).ready(function() {
 });
 
 </script> 
-
-
-<script>
+    <script>
 $(document).ready(function(){
     $("#dissaprovebutton").click(function(){
         $(".showerror").toggle();
@@ -1802,17 +1800,14 @@ $(document).ready(function(){
     });
    
 });
-</script>
-
-
-<script>
+</script> 
+    <script>
     $(document).ready(function() {
         $("#page_controls").sticky({
             topSpacing: 40
         });
     });
-</script>
-
+</script> 
     <script>
     $(document).ready(function() {
         $("#help_toggle").click(function() {
@@ -1822,13 +1817,11 @@ $(document).ready(function(){
         })
     });
 </script> 
-
     <script>
     $("#help_toggle").click(function() {
         $(".help-block").fadeToggle();
     });
 </script> 
-
 </div>
 </body>
 </html>

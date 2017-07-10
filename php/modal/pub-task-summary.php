@@ -7,9 +7,9 @@
             <h4 class="modal-title"> Task Updates Summary</h4>
         </div>-->
             <div class="modal-body">
-                <div class="edittask-preview" style="display: inline-block; position:relative;"> <img src="../img/task-icons-new/icon-classifieds.png" alt="" style="max-height: 42px;width: auto;vertical-align: text-bottom;">
-                    <div class="edittask-preview-content" style="display: inline-block; padding-left:5px;">
-                        <div class="edittask-preview-content-title" style="font-weight: bold; font-size:20px">Classifieds</div>
+                <div class="taskmaint-preview"> <img src="../img/task-icons-new/icon-classifieds.png" alt=""/>
+                    <div class="taskmaint-preview-content">
+                         <h2 class="taskmaint-preview-content-title">Classifieds</h2>
                         <div class="small text-muted">(All IU Campuses)</div>
                     </div>
                 </div>

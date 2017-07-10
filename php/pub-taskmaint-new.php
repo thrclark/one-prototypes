@@ -62,10 +62,10 @@ hr {
                     <div class="primary-content" style="min-height:500px">
                         <section>
                             <div class="row section-head">
-                                <div class="col-xs-12 col-sm-9 section-header">
-                                    <div class="edittask-preview" style="display: inline-block; position:relative;"> <img src="../img/task-icons-new/icon-upload.png"  alt=""/ style="max-height: 42px;width: auto;vertical-align: text-bottom;">
-                                        <div class="edittask-preview-content" style="display: inline-block; padding-left:5px;">
-                                            <div class="edittask-preview-content-title" style="font-weight: bold; font-size:20px">New Task: (unnamed)</div>
+                                <div class="col-xs-12 col-sm-9  ">
+                                    <div class="taskmaint-preview"> <img src="../img/task-icons-new/icon-upload.png"  alt=""/>
+                                        <div class="taskmaint-preview-content">
+                                            <h2 class="taskmaint-preview-content-title">New Task: (unnamed)</h2>
                                             <div class="small text-muted"> &nbsp;</div>
                                         </div>
                                     </div>
@@ -1175,7 +1175,6 @@ hr {
                                                         </div>
                                                         <div class="validation-fieldmessage showerror" id="validate_name" style="display:none"> <i class="icon-error-alt"></i> A note is required when a task is dissaproved.</div>
                                                     </div>
-                                         
                                                 </div>
                                             </div>
                                         </div>

@@ -174,16 +174,20 @@ $page = '';
     <div class="main-content container" role="main">
         <div id="main-content">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <?php include('includes/nav-pub.php') ?>
                 </div>
-                <div class="col-md-10">
+                <div class="col-md-9">
                     <div class="primary-content">
                         <div class="row section-head">
                             <div class="col-xs-12 col-sm-9 section-header">
-                                <h2 class="h3">Maintain Tasks</h2>
+                                <div class="taskmaint-preview">
+                                    <div class="taskmaint-preview-content">
+                                        <h2 class="taskmaint-preview-content-title">Maintain Tasks</h2>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-xs-12  col-sm-3 section-controls"><a href="pub-taskmaint-new.php" class="btn btn-xs btn-default pull-right"><i class="icon-plus-2"></i>New Task</a> </div>
+                            <div class="col-xs-12  col-sm-3 text-right"> <a href="pub-taskmaint-new.php" class="btn btn-xs btn-default pull-right"><i class="icon-plus-2"></i>New Task</a> </div>
                         </div>
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active"><a href="#tasks_all" aria-controls="tasks_live" role="tab" data-toggle="tab">All Tasks</a></li>

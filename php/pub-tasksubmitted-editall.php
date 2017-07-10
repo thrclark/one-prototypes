@@ -102,8 +102,8 @@ background-color: #FFFFFF;
                             <div class="row">
                                 <div class="col-md-12">
                                     <form name="taskForm" novalidate validate="errors" id="taskForm" class=" -maxlength -url -pattern -min -max -required">
-                                        <div class="well well-sm" style="background:#f8f8f8; margin-bottom:60px;">
-                                     <!--       <fieldset>
+                                        <div class="well well-sm" style="background:#f8f8f8; margin-bottom:60px;"> 
+                                            <!--       <fieldset>
                                                 <legend>Scheduled Update Request</legend>
                                                 <p>Updates to this task will be published on the following date: 07/14/2017 12:01pm (<a href="#" data-toggle="modal" data-target="#modal_publishdate">change publish date</a>).</p>
                                                 <p class="text-muted">-- or-- </p>
@@ -772,7 +772,7 @@ background-color: #FFFFFF;
                                                 </div>
                                             </div>
                                         </fieldset>
-                                      <!--  <fieldset>
+                                        <!--  <fieldset>
                                             <legend>Active Dates/Status <small class="text-muted" style="text-transform:lowercase;">(currently inactive)</small></legend>
                                             <div class="row">
                                                 <div class="form-group col-md-4">
@@ -1675,7 +1675,8 @@ background-color: #FFFFFF;
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="cars" value="3">Specify date on which this task will be set to 'Live'. </label>
+                                    <input type="radio" name="cars" value="3">
+                                    Specify date on which this task will be set to 'Live'. </label>
                             </div>
                         </div>
                         <div class="form-group col-md-12" id="pubdate_widget3"  style="display:none">

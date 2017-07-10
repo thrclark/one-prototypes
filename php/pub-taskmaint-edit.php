@@ -32,7 +32,6 @@ $page = '';
 }
 </style>
 <style>
-
 .page-utilities {
 	border-bottom: solid 1px #dddddd;
 	padding-top: 5px;
@@ -56,17 +55,17 @@ hr {
     <div class="main-content container" role="main">
         <div id="main-content">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <?php include('includes/nav-pub.php') ?>
                 </div>
-                <div class="col-md-10">
+                <div class="col-md-9">
                     <div class="primary-content" style="min-height:500px">
                         <section>
                             <div class="row section-head">
                                 <div class="col-xs-12 col-sm-9 section-header">
-                                    <div class="edittask-preview" style="display: inline-block; position:relative;"> <img src="../img/task-icons-new/icon-classifieds.png"  alt=""/ style="max-height: 42px;width: auto;vertical-align: text-bottom;">
-                                        <div class="edittask-preview-content" style="display: inline-block; padding-left:5px;">
-                                            <div class="edittask-preview-content-title" style="font-weight: bold; font-size:20px">Edit Task: Classifieds</div>
+                                    <div class="taskmaint-preview"> <img src="../img/task-icons-new/icon-classifieds.png"  alt=""/>
+                                        <div class="taskmaint-preview-content">
+                                            <h2 class="taskmaint-preview-content-title">Edit Task: Classifieds</h2>
                                             <div class="small text-muted">(All IU Campuses)</div>
                                         </div>
                                     </div>
@@ -78,10 +77,8 @@ hr {
                             <!--  <div class="page-utilities"> </div>-->
                             <hr style="margin-top: 0px;margin-bottom: 10px;">
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-md-9">
                                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                        
-                                        
                                         <div class="panel panel-default">
                                             <div class="panel-heading" role="tab" id="heading_pubnote">
                                                 <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_pubnote" aria-expanded="false" aria-controls="collapse_pubnote"> Notes </a></h4>
@@ -99,11 +96,9 @@ hr {
                                                         </div>
                                                         <div class="validation-fieldmessage showerror" id="validate_name" style="display:none"> <i class="icon-error-alt"></i> A note is required when a task is dissaproved.</div>
                                                     </div>
-                                                
                                                 </div>
                                             </div>
                                         </div>
-                                        
                                         <hr>
                                         <div class="panel panel-default">
                                             <div class="panel-heading" role="tab" id="heading_taskbasics">
@@ -1184,10 +1179,6 @@ hr {
                                             </div>
                                         </div>
                                         
-                            
-                                        
-                                        
-                                        
                                         <!-- <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="heading12">
                                             <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false" aria-controls="collapse12"> asdfasdfasdf </a> </h4>
@@ -1199,12 +1190,11 @@ hr {
                                         
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="well well-sm" id="page_controls">
                                         <button type="button" disabled class="btn btn-primary btn-block" id="submitapproval" data-toggle="modal" data-target="#modal_publishdate">Submit for Approval...</button>
                                         <button type="button" disabled class="btn btn-default btn-block" id="savedraft">Save as Draft</button>
-                                          <a href="pub-taskmaint-home.php"class="btn btn-default btn-block" id="cancelbutton">Cancel</a>
-                                    </div>
+                                        <a href="pub-taskmaint-home.php"class="btn btn-default btn-block" id="cancelbutton">Cancel</a> </div>
                                 </div>
                             </div>
                         </section>
@@ -1216,7 +1206,7 @@ hr {
     <?php include('modal/pub-task-publishdate.php') ?>
     <?php include('includes/brand-footer.php') ?>
     <?php include('includes/footer-scripts.php') ?>
-<script type="text/javascript">
+    <script type="text/javascript">
     $(document).ready(function() {
         $("input[name$='cars']").click(function() {
             var test = $(this).val();
@@ -1224,8 +1214,8 @@ hr {
             $("#pubdate_widget" + test).slideDown();
         });
     });
-</script>
-<script>
+</script> 
+    <script>
     $(document).ready(function() {
         $('input[type="radio"]').click(function() {
             if ($(this).attr('id') == 'show_custom') {
@@ -1242,8 +1232,8 @@ hr {
             }
         });
     });
-</script>
-<script>
+</script> 
+    <script>
     $(function() {
         $('#selectcontact1').hide();
         $('#contactId1').change(function() {
@@ -1274,16 +1264,16 @@ hr {
             }
         });
     });
-</script>
-<script src="../js/cropper-main.js"></script>
-<script>
+</script> 
+    <script src="../js/cropper-main.js"></script> 
+    <script>
     $(document).ready(function() {
         $("#page_controls").sticky({
             topSpacing: 40
         });
     });
-</script>
-<script>
+</script> 
+    <script>
     $(document).ready(function() {
         $('#tasktitle').blur(function() {
             tmpval = $(this).val();
@@ -1294,8 +1284,8 @@ hr {
             }
         });
     });
-</script>
-<script>
+</script> 
+    <script>
     $(document).ready(function() {
         $("#help_toggle").click(function() {
             $("#help_toggle_switch").fadeOut(function() {
@@ -1303,12 +1293,12 @@ hr {
             })
         })
     });
-</script>
-<script>
+</script> 
+    <script>
     $("#help_toggle").click(function() {
         $(".help-block").fadeToggle();
     });
-</script>
+</script> 
 </div>
 </body>
 </html>
