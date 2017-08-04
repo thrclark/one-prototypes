@@ -118,7 +118,7 @@ background-color: #FFFFFF;
                                                         <tr>
                                                             <th scope="column">Item</th>
                                                             <th scope="column">Current Value<span class="small text-muted"></span></th>
-                                                            <th scope="column">Submitted Value</th>
+                                                            <th scope="column">Pending Value</th>
                                                             <th scope="column">&nbsp;</th>
                                                         </tr>
                                                     </thead>
@@ -185,7 +185,7 @@ background-color: #FFFFFF;
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">Active Dates/Status</th>
-                                                            <td>Specified by Status: 'Inactive'</td>
+                                                            <td>Specified by Status: Inactive </td>
                                                             <td>Specified by Status: 'Active'</td>
                                                             <td><a href="#" class="btn btn-default btn-xs" id="edit_activedate">edit</a></td>
                                                         </tr>
@@ -196,7 +196,7 @@ background-color: #FFFFFF;
                                                                     <li>Start: 10/27/2016 12:01pm</li>
                                                                     <li>End: 10/27/2018 12:01pm</li>
                                                                 </ul></td>
-                                                            <td>Specified by Status: 'Inactive'</td>
+                                                            <td>Specified by Status: Inactive </td>
                                                             <td><a href="#" class="btn btn-default btn-xs" id="edit_activedate">edit</a></td>
                                                         </tr>
                                                         <tr>
@@ -210,7 +210,7 @@ background-color: #FFFFFF;
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">Active Dates/Status</th>
-                                                            <td>Specified by Status: 'Inactive'</td>
+                                                            <td>Specified by Status: Inactive </td>
                                                             <td><p>Specified by Date Range:</p>
                                                                 <ul>
                                                                     <li>Start: 10/27/2018 12:01pm</li>
@@ -1671,12 +1671,12 @@ background-color: #FFFFFF;
                             <div class="radio">
                                 <label>
                                     <input type="radio" name="cars" value="2">
-                                    I will manually release these changes when ready. </label>
+                                    I will manually release these changes after they have been approved. </label>
                             </div>
                             <div class="radio">
                                 <label>
                                     <input type="radio" name="cars" value="3">
-                                    Specify date on which this task will be set to 'Live'. </label>
+                                    Specify date on which this task will be set to live. </label>
                             </div>
                         </div>
                         <div class="form-group col-md-12" id="pubdate_widget3"  style="display:none">

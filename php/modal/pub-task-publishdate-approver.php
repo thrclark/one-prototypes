@@ -18,7 +18,7 @@
                             <div class="radio">
                                 <label>
                                     <input type="radio" name="cars" value="3">
-                                    Specify date on which this task will be set to 'Live'. </label>
+                                    Specify date on which this task will be set to live. </label>
                             </div>
                         </div>
                         <div class="form-group col-md-12" id="pubdate_widget3"  style="display:none">

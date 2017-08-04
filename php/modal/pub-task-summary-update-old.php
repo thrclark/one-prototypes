@@ -13,8 +13,8 @@
                                 <thead class="">
                                     <tr>
                                         <th scope="column">Item</th>
-                                        <th scope="column">Previous</th>
-                                        <th scope="column">New</th>
+                                        <th scope="column">Current Value</th>
+                                        <th scope="column">Pending Value</th>
                                     </tr>
                                 </thead>
                                 <tbody>

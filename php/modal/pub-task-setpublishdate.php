@@ -10,7 +10,7 @@
                 <div class="row">
                    
                     <div class="form-group col-md-12">
-                        <label for="title" class="control-label">'Live' Date</label>
+                        <label for="title" class="control-label">Live Date</label>
                         
                         <span class="help-block small">Set a date for updates to this task to be published.</span>
                         

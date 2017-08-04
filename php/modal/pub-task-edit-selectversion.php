@@ -16,7 +16,7 @@
                     <p> There is a pending version of this task that is scheduled to be released on 09/13/2017 at 5:00am. By proceeding to create a new version, the currently pending version will be discarded and you will be asked to provide a new release date for the new version.</p>
                     <p> Do you wish to proceed?</p>
                 </div>
-                <div class="modal-footer" id="footer2" style="display:none"> <a href="#" class="btn btn-default" data-dismiss="modal">Cancel</a> <a href="pub-taskmaint-edit.php" class="btn btn-primary">Edit Task</a></div>
+                <div class="modal-footer" id="footer2" style="display:none"> <a href="#" class="btn btn-default" data-dismiss="modal">Cancel</a> <a href="pub-taskmaint-edit.php" class="btn btn-primary">Edit task</a></div>
             </div>
         </div>
     </div>

@@ -163,6 +163,14 @@ $page_title = 'pub-taskmaint';
 .portlet .tabbable-line > .tab-content {
 	padding-bottom: 0;
 }
+.dataTable i {
+	font-size: 12px;
+	color: #999;
+	margin-left: 5px;
+}
+.popover {
+	min-width: 300px;
+}
 </style>
 <?php include('includes/scripts.php') ?>
 </head>
@@ -191,7 +199,7 @@ $page_title = 'pub-taskmaint';
                         </div>
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active"><a href="#tasks_all" aria-controls="tasks_live" role="tab" data-toggle="tab">All Tasks</a></li>
-                            <li role="presentation"><a href="#task_scheduling" aria-controls="task_scheduling" role="tab" data-toggle="tab">Task Scheduling</a></li>
+                            <li role="presentation"><a href="#task_scheduling" aria-controls="task_scheduling" role="tab" data-toggle="tab">Pending Task Actions</a></li>
                             <li role="presentation"><a href="#tasks_submitted" aria-controls="tasks_submitted" role="tab" data-toggle="tab">Task Submissions</a></li>
                             <li role="presentation"><a href="#tasks_featured" aria-controls="tasks_featured" role="tab" data-toggle="tab">Featured Tasks</a></li>
                             <li role="presentation"><a href="#tasks_deleted" aria-controls="tasks_deleted" role="tab" data-toggle="tab">Deleted Tasks</a></li>
@@ -475,7 +483,7 @@ $page_title = 'pub-taskmaint';
                                     <table class="table table-hover table-condensed display" id="table1">
                                         <thead>
                                             <tr>
-                                                <th>Title <span class="small text-muted">(Application)</span></th>
+                                                <th>Task <span class="small text-muted">(Application)</span></th>
                                                 <th>Campus</th>
                                                 <th>Status</th>
                                                 <th><span class="sr-only">Actions</span></th>
@@ -513,12 +521,12 @@ $page_title = 'pub-taskmaint';
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -559,12 +567,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -602,11 +610,12 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu16" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to live now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule live date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -647,12 +656,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -685,7 +694,15 @@ aria-labelledby="dropdownMenu1">
                                                         </table>
                                                     </div></td>
                                                 <td >All IU Campuses</td>
-                                                <td><span class="label label-white" data-toggle="tooltip" data-placement="bottom" title="Scheduled to go  inactive on 07/31/17 5:00pm">Live <i class="icon-circle"></i> </span></td>
+                                                <td><span class="label label-white">Live </span> <a tabindex="0"
+   class="" 
+   role="button" 
+   data-html="true" 
+   data-toggle="popover" 
+   data-trigger="focus" 
+   data-placement="bottom"
+   title="<b>Pending Action</b>" 
+   data-content="<table class='table table-condensed small' ><tbody><tr><td>10/12/2017 at 5:00pm</td><td>Set to inactive</td></tr></tbody></table>"> <i class="icon-calendar-empty"></i></a></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -693,13 +710,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#">Reschedule 'Inactive' Date</a></li>
-                                                                <li><a href="#">Remove 'Inactive' Scheduling</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -740,12 +756,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -786,7 +802,8 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -827,12 +844,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -870,11 +887,12 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu17" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to live now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule live date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -907,19 +925,25 @@ aria-labelledby="dropdownMenu1">
                                                         </table>
                                                     </div></td>
                                                 <td ><span aria-hidden="false">All IU Campuses</span></td>
-                                                <td><span class="label label-white" data-toggle="tooltip" data-placement="bottom" title="Scheduled to go  live on 07/31/17 5:00pm">Inactive <i class="icon-circle"></i> </span></td>
+                                                <td><span class="label label-white">Inactive </span> <a tabindex="0"
+   class="" 
+   role="button" 
+   data-html="true" 
+   data-toggle="popover" 
+   data-trigger="focus" 
+   data-placement="bottom"
+   title="<b>Pending Action</b>" 
+   data-content="<table class='table table-condensed small' ><tbody><tr><td>10/12/2017 at 5:00pm</td><td>Set to live</td></tr></tbody></table>"> <i class="icon-calendar-empty"></i></a></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu18" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
-                                                            <ul class="dropdown-menu dropdown-menu-right"
-aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                                <li> <a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
-                                                                <li><a href="#">Reschedule 'Live' Date</a></li>
-                                                                <li><a href="#">Remove 'Live' Scheduling</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to live now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule live date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -960,12 +984,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1006,12 +1030,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1052,12 +1076,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1098,12 +1122,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1144,12 +1168,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1190,12 +1214,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1228,7 +1252,15 @@ aria-labelledby="dropdownMenu1">
                                                         </table>
                                                     </div></td>
                                                 <td >IUB</td>
-                                                <td><span class="label label-white" data-toggle="tooltip" data-placement="bottom" title="Scheduled to be updated on 07/31/17 5:00pm">Live <i class="icon-circle"></i></span></td>
+                                                <td><span class="label label-white" data-toggle="tooltip" data-placement="bottom" title="Scheduled to be updated on 07/31/17 5:00pm">Live</span> <a tabindex="0"
+   class="" 
+   role="button" 
+   data-html="true" 
+   data-toggle="popover" 
+   data-trigger="focus" 
+   data-placement="bottom"
+   title="<b>Pending Action</b>" 
+   data-content="<table class='table table-condensed small' ><tbody><tr><td>10/12/2017 at 5:00pm</td><td>Publish updates</td></tr></tbody></table>"> <i class="icon-calendar-empty"></i></a></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
@@ -1236,12 +1268,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1282,12 +1314,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1328,12 +1360,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1374,12 +1406,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1420,12 +1452,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1458,17 +1490,25 @@ aria-labelledby="dropdownMenu1">
                                                         </table>
                                                     </div></td>
                                                 <td ><span aria-hidden="false">All IU Campuses</span></td>
-                                                <td><span class="label label-white" data-toggle="tooltip" data-placement="bottom" title="Scheduled to go live with updates on 07/31/17 5:00pm">Inactive <i class="icon-circle"></i></span></td>
+                                                <td><span class="label label-white">Inactive</i></span> <a tabindex="0"
+   class="" 
+   role="button" 
+   data-html="true" 
+   data-toggle="popover" 
+   data-trigger="focus" 
+   data-placement="bottom"
+   title="<b>Pending Action</b>" 
+   data-content="<table class='table table-condensed small' ><tbody><tr><td>10/12/2017 at 5:00pm</td><td>Set to live</td></tr><tr><td>10/12/2017 at 5:00pm</td><td>Publish updates</td></tr></tbody></table>"> <i class="icon-calendar-empty"></i></a></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu26" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li> <a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li> <a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to live now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule live date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1509,12 +1549,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1555,12 +1595,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1601,12 +1641,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1647,12 +1687,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1693,12 +1733,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1736,11 +1776,12 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu24" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to live now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule live date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1781,12 +1822,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1827,12 +1868,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1873,12 +1914,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1916,11 +1957,12 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu22" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to live now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule live date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -1958,11 +2000,12 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to live now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule live date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2003,12 +2046,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2049,12 +2092,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2095,12 +2138,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2141,12 +2184,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2187,12 +2230,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2233,12 +2276,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2279,12 +2322,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2325,12 +2368,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2368,11 +2411,12 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu21" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to live now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule live date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2413,12 +2457,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2456,11 +2500,12 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu20" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to live now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule live date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2501,12 +2546,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2547,12 +2592,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2593,12 +2638,12 @@ id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
 aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">Feature</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to 'Inactive' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule 'Inactive' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2636,11 +2681,12 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu19" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="pub-taskmaint-edit.php">Edit Task</a></li>
-                                                                <li><a href="#">See Reviews</a></li>
+                                                                <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
+                                                                <li><a href="#">Feature task</a></li>
+                                                                <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to 'Live' Now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule 'Live' Date</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to live now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule live date</a></li>
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
                                                             </ul>
@@ -2656,7 +2702,7 @@ aria-labelledby="dropdownMenu1">
                                 <section>
                                     <div class="row section-head">
                                         <div class="col-sm-12">
-                                            <h3 class="h4">Task Scheduling</h3>
+                                            <h3 class="h4">Pending Task Actions</h3>
                                         </div>
                                     </div>
                                     <div class="page-utilities">
@@ -2671,8 +2717,8 @@ aria-labelledby="dropdownMenu1">
                                     <table class="table table-hover table-condensed display" id="table2">
                                         <thead>
                                             <tr>
-                                                <th>Title <span class="small text-muted">(Application)</span></th>
-                                                <th >Scheduled Action</th>
+                                                <th>Task <span class="small text-muted">(Application)</span></th>
+                                                <th >Pending Action</th>
                                                 <th >Date of Action</th>
                                                 <th><span class="sr-only">Actions</span></th>
                                             </tr>
@@ -2703,7 +2749,7 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
-                                                <td >Publish updates to task</td>
+                                                <td >Publish updates to task <span data-toggle="modal" data-target="#modal_summaryupdate"><i class="icon-info-circled-2"></i></span></td>
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -2711,9 +2757,9 @@ aria-labelledby="dropdownMenu1">
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Reschedule date of action</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Unschedule action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_summaryupdate">View pending updates</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2743,7 +2789,7 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
-                                                <td >Set  new task to 'Live'</td>
+                                                <td >Set new task to live <span data-toggle="modal" data-target="#modal_summary"><i class="icon-info-circled-2"></i></span></td>
                                                 <td><span class="label label-white">07/26/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -2751,9 +2797,9 @@ aria-labelledby="dropdownMenu1">
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Reschedule date of action</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Unschedule action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_summary">View new task details</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2783,7 +2829,7 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
-                                                <td >Set  new task to 'Live'</td>
+                                                <td >Set new task to live <span data-toggle="modal" data-target="#modal_summary"><i class="icon-info-circled-2"></i></span></td>
                                                 <td><span class="label label-white">07/26/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -2791,9 +2837,9 @@ aria-labelledby="dropdownMenu1">
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Reschedule date of action</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Unschedule action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_summary">View new task details</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2823,7 +2869,7 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
-                                                <td >Set task to 'Live'</td>
+                                                <td >Set task to live</td>
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -2831,7 +2877,9 @@ aria-labelledby="dropdownMenu1">
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Reschedule date of action</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Unschedule action</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2861,7 +2909,7 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
-                                                <td >Set task to 'Inactive'</td>
+                                                <td >Set task to inactive </td>
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -2869,7 +2917,9 @@ aria-labelledby="dropdownMenu1">
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Reschedule date of action</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Unschedule action</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2899,7 +2949,7 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
-                                                <td >Set task to 'Inactive'</td>
+                                                <td >Set task to inactive </td>
                                                 <td><span class="label label-white">09/30/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -2907,7 +2957,9 @@ aria-labelledby="dropdownMenu1">
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_previousschedule">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Reschedule date of action</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Unschedule action</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2937,7 +2989,7 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
-                                                <td >Publish updates to task</td>
+                                                <td >Publish updates to task <span data-toggle="modal" data-target="#modal_summaryupdate"><i class="icon-info-circled-2"></i></span></td>
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -2945,9 +2997,9 @@ aria-labelledby="dropdownMenu1">
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Reschedule date of action</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Unschedule action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_summaryupdate">View pending updates</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2977,17 +3029,17 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
-                                                <td >Publish updates to task</td>
-                                                <td><span class="label label-white">06/12/17 12:00am </span></td>
+                                                <td >Publish updates to task <span data-toggle="modal" data-target="#modal_summaryupdate"><i class="icon-info-circled-2"></i></span></td>
+                                                <td><span class="label label-white">unscheduled</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Reschedule date of action</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Schedule date of action</a></li>
+                                                                <li class="disabled"><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Unschedule action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_summaryupdate">View pending updates</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -3017,7 +3069,7 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
-                                                <td >Set task to 'Inactive'</td>
+                                                <td >Set task to inactive </td>
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -3025,7 +3077,9 @@ aria-labelledby="dropdownMenu1">
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Reschedule date of action</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Unschedule action</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -3055,7 +3109,7 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
-                                                <td >Publish updates to task</td>
+                                                <td >Publish updates to task <span data-toggle="modal" data-target="#modal_summaryupdate"><i class="icon-info-circled-2"></i></span></td>
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
@@ -3063,9 +3117,9 @@ aria-labelledby="dropdownMenu1">
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Reschedule date of action</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Remove this action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Unschedule action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_summaryupdate">View pending updates</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -3101,9 +3155,9 @@ aria-labelledby="dropdownMenu1">
                                     <table class="table table-condensed table-actions table-hover tablesaw tablesaw-stack table-collection" data-tablesaw-mode="stack" id="">
                                         <thead>
                                             <tr>
-                                                <th scope="row">Title</th>
+                                                <th scope="row">Task</th>
                                                 <th scope="row">Campus</th>
-                                                <th scope="row">Type</th>
+                                                <th scope="row">Submission Type</th>
                                                 <th scope="row">Submitted By</th>
                                                 <th scope="row"><span class="sr-only">Status</span>Status</th>
                                                 <th scope="row"><span class="sr-only">Actions</span></th>
@@ -3136,7 +3190,7 @@ aria-labelledby="dropdownMenu1">
                                                         </table>
                                                     </div></td>
                                                 <td >All IU Campuses</td>
-                                                <td >Update to existing </td>
+                                                <td >Update </td>
                                                 <td > thrclark </td>
                                                 <td><span class="label label-white text-danger" > Declined </span></td>
                                                 <td><div class="dropdown" style="display:inline">
@@ -3231,7 +3285,7 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                                 <td class="taskmeta-table">IUB,
                                                     IUPUI </td>
-                                                <td >Update to existing</td>
+                                                <td >Update</td>
                                                 <td > seenyj </td>
                                                 <td><span class="label label-white text-danger" > Declined </span></td>
                                                 <td><div class="dropdown" style="display:inline">
@@ -3285,9 +3339,9 @@ aria-labelledby="dropdownMenu1">
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-approve.php" >Review Submission</a></li>
+                                                            <li><a href="pub-taskmaint-approve.php" >Review submission</a></li>
                                                             <li role="separator" class="divider"></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel submission</a></li>
                                                         </ul>
                                                     </div>
                                                     
@@ -3333,9 +3387,9 @@ aria-labelledby="dropdownMenu1">
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-approve.php" >Review Submission</a></li>
+                                                            <li><a href="pub-taskmaint-approve.php" >Review submission</a></li>
                                                             <li role="separator" class="divider"></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel submission</a></li>
                                                         </ul>
                                                     </div>
                                                     
@@ -3381,9 +3435,9 @@ aria-labelledby="dropdownMenu1">
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-approve.php" >Review Submission</a></li>
+                                                            <li><a href="pub-taskmaint-approve.php" >Review submission</a></li>
                                                             <li role="separator" class="divider"></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel submission</a></li>
                                                         </ul>
                                                     </div>
                                                     
@@ -3421,15 +3475,15 @@ aria-labelledby="dropdownMenu1">
                                                         </table>
                                                     </div></td>
                                                 <td class="taskmeta-table"><span aria-hidden="false"><span >IUB</span></span></td>
-                                                <td > Update to existing </td>
+                                                <td > Update </td>
                                                 <td > tcain </td>
                                                 <td><span class="label label-white" > Pending Review </span></td>
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-approve.php" >Review Submission</a></li>
+                                                            <li><a href="pub-taskmaint-approve.php" >Review submission</a></li>
                                                             <li role="separator" class="divider"></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel submission</a></li>
                                                         </ul>
                                                     </div>
                                                     
@@ -3467,15 +3521,15 @@ aria-labelledby="dropdownMenu1">
                                                         </table>
                                                     </div></td>
                                                 <td class="taskmeta-table"><span aria-hidden="false"><span >IUB</span></span></td>
-                                                <td > Update to existing </td>
+                                                <td > Update </td>
                                                 <td > tozogar </td>
                                                 <td><span class="label label-white" > Pending Review </span></td>
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-approve.php" >Review Submission</a></li>
+                                                            <li><a href="pub-taskmaint-approve.php" >Review submission</a></li>
                                                             <li role="separator" class="divider"></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel submission</a></li>
                                                         </ul>
                                                     </div>
                                                     
@@ -3519,9 +3573,9 @@ aria-labelledby="dropdownMenu1">
                                                 <td><div class="dropdown" style="display:inline">
                                                         <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                            <li><a href="pub-taskmaint-approve.php" >Review Submission</a></li>
+                                                            <li><a href="pub-taskmaint-approve.php" >Review submission</a></li>
                                                             <li role="separator" class="divider"></li>
-                                                            <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel Submission</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal_cancelupdate">Cancel submission</a></li>
                                                         </ul>
                                                     </div>
                                                     
@@ -3547,7 +3601,7 @@ aria-labelledby="dropdownMenu1">
                                 <table class="table table-condensed table-borderewwwd table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack" id="">
                                     <thead>
                                         <tr>
-                                            <th>Title</th>
+                                            <th>Task</th>
                                             <th>Type</th>
                                             <th>Display Order</th>
                                             <th>Featured Schedule</th>
@@ -3724,7 +3778,7 @@ aria-labelledby="dropdownMenu1">
                                 <table class="table table-condensed table-borderewwwd table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack" id="">
                                     <thead>
                                         <tr>
-                                            <th>Title</th>
+                                            <th>Task</th>
                                             <th>Type</th>
                                             <th>&nbsp;</th>
                                         </tr>
@@ -4163,7 +4217,7 @@ aria-labelledby="dropdownMenu1">
                                 <table class="table table-condensed table-borderewwwd table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack" id="">
                                     <thead>
                                         <tr>
-                                            <th>Title</th>
+                                            <th>Task</th>
                                             <th>&nbsp;</th>
                                         </tr>
                                     </thead>
@@ -4594,6 +4648,7 @@ aria-labelledby="dropdownMenu1">
     <?php include('modal/pub-task-edit-deletewarning.php') ?>
     <?php include('modal/pub-task-setpublishdate.php') ?>
     <?php include('modal/pub-task-previousschedule.php') ?>
+    <?php include('modal/pub-task-viewscheduledaction.php') ?>
     <div class="modal fade" id="modal_publishdate1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-default" role="document">
             <div class="modal-content">

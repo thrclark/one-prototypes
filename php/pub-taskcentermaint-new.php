@@ -747,7 +747,7 @@ $(function() {
                                             </div>
                                             
                                             <!--    <hr>
-                                            <div class="small" style=" margin-bottom:15px"> The following tasks are currently set to 'inactive', and will appear in your task center once they are set to 'live' by the publisher.</div>
+                                            <div class="small" style=" margin-bottom:15px"> The following tasks are currently set to Inactive , and will appear in your task center once they are set to Live by the publisher.</div>
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <div class="task-select" > <img src="../img/task-icons-new/icon-guest-accounts.png" style="opacity:.3" alt=""/>

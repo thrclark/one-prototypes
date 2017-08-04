@@ -1,11 +1,11 @@
 
 <div class="modal fade" id="modal_summary" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-default modal-lg">
         <div class="modal-content"> 
-            <!-- <div class="modal-header">
+            <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <h4 class="modal-title"> Task Updates Summary</h4>
-        </div>-->
+            <h4 class="modal-title"> New Task Details</h4>
+        </div>
             <div class="modal-body">
                 <div class="taskmaint-preview"> <img src="../img/task-icons-new/icon-classifieds.png" alt=""/>
                     <div class="taskmaint-preview-content">
@@ -18,7 +18,7 @@
                 <div class="tabbable-panel">
                     <div class="tabbable-line">
                         <ul class="nav nav-tabs ">
-                            <li class="active"> <a href="#tab_default_1" data-toggle="tab"> Task Updates </a> </li>
+                            <li class="active"> <a href="#tab_default_1" data-toggle="tab"> Task Details </a> </li>
                             <li> <a href="#tab_default_2" data-toggle="tab"> Notes </a> </li>
                         </ul>
                         <div class="tab-content">
@@ -28,7 +28,7 @@
                                                     <thead class="">
                                                         <tr>
                                                             <th scope="column">Item</th>
-                                                            <th scope="column">Current Value<span class="small text-muted"></span></th>
+                                                            <th scope="column"> Value<span class="small text-muted"></span></th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -74,7 +74,7 @@
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">Active Dates/Status</th>
-                                                            <td>Specified by Status: 'Inactive'</td>
+                                                            <td>Specified by Status: Inactive </td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">Active Dates/Status</th>
@@ -90,7 +90,7 @@
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">Active Dates/Status</th>
-                                                            <td>Specified by Status: 'Inactive'</td>
+                                                            <td>Specified by Status: Inactive </td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">Active Dates/Status</th>
