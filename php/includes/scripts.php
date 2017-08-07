@@ -125,17 +125,45 @@ $(document).ready(function() {
       event.preventDefault();
       event.stopPropagation();
       return $.growl.notice({
-        message: "Item has been added to your list of favorites.", location: "tr"
+        message: "Item has been added to your list of favorites.", 
+		location: "tr"
       });
     });
-    return $('.warning').click(function(event) {
+     $('.confirm-setlive').click(function(event) {
       event.preventDefault();
       event.stopPropagation();
-      return $.growl.warning({
-        message: "The kitten is ugly!"
+      return $.growl.notice({
+        message: "This task has now been set to live."
+      });
+    });
+	
+	
+	 $('.confirm-setinactive').click(function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      return $.growl.notice({
+        message: "This task has now been set to inactive."
+      });
+    });
+	
+	 $('.confirm-actionperformed').click(function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      return $.growl.notice({
+        message: "This action has now been performed."
+      });
+    });
+	
+	 $('.confirm-actionunscheduled').click(function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      return $.growl.notice({
+        message: "This action is now unscheduled."
       });
     });
   });
 
 }).call(this);
 </script>
+
+

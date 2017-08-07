@@ -525,10 +525,10 @@ $page_title = 'pub-taskmaint';
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -571,10 +571,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -614,10 +614,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to live now</a></li>
+                                                                <li><a class="confirm-setlive" href="#">Set to live now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule live date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -660,10 +660,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -714,10 +714,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -760,10 +760,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -805,7 +805,7 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -848,10 +848,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -891,10 +891,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to live now</a></li>
+                                                                <li><a class="confirm-setlive" href="#">Set to live now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule live date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -942,10 +942,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to live now</a></li>
+                                                                <li><a class="confirm-setlive" href="#">Set to live now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule live date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -988,10 +988,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1034,10 +1034,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1080,10 +1080,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1126,10 +1126,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1172,10 +1172,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1218,10 +1218,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1272,10 +1272,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1318,10 +1318,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1364,10 +1364,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1410,10 +1410,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1456,10 +1456,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1507,10 +1507,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to live now</a></li>
+                                                                <li><a href="#" class="confirm-setlive">Set to live now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule live date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1553,10 +1553,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1599,10 +1599,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1645,10 +1645,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1691,10 +1691,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1737,10 +1737,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1780,10 +1780,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to live now</a></li>
+                                                                <li><a class="confirm-setlive" href="#">Set to live now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule live date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1826,10 +1826,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1872,10 +1872,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1918,10 +1918,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -1961,10 +1961,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to live now</a></li>
+                                                                <li><a class="confirm-setlive" href="#">Set to live now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule live date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2004,10 +2004,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to live now</a></li>
+                                                                <li><a class="confirm-setlive" href="#">Set to live now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule live date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2050,10 +2050,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2096,10 +2096,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2142,10 +2142,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2188,10 +2188,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2234,10 +2234,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2280,10 +2280,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2326,10 +2326,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2372,10 +2372,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2415,10 +2415,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to live now</a></li>
+                                                                <li><a class="confirm-setlive" href="#">Set to live now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule live date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2461,10 +2461,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2504,10 +2504,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to live now</a></li>
+                                                                <li><a class="confirm-setlive" href="#">Set to live now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule live date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2550,10 +2550,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2596,10 +2596,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2642,10 +2642,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxx">Set to inactive now</a></li>
+                                                                <li><a href="#" class="confirm-setinactive">Set to inactive now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Schedule inactive date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2685,10 +2685,10 @@ aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#">Feature task</a></li>
                                                                 <li><a href="#">See task reviews</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxxxxxxx">Set to live now</a></li>
+                                                                <li><a class="confirm-setlive" href="#">Set to live now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Schedule live date</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deletewarning">Delete this task</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2719,6 +2719,7 @@ aria-labelledby="dropdownMenu1">
                                             <tr>
                                                 <th>Task <span class="small text-muted">(Application)</span></th>
                                                 <th >Pending Action</th>
+                                                <th>Approval</th>
                                                 <th >Date of Action</th>
                                                 <th><span class="sr-only">Actions</span></th>
                                             </tr>
@@ -2749,17 +2750,18 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
-                                                <td >Publish updates to task <span data-toggle="modal" data-target="#modal_summaryupdate"><i class="icon-info-circled-2"></i></span></td>
+                                                <td >Publish task updates <span data-toggle="modal" data-target="#modal_summaryupdate"><i class="icon-info-circled-2"></i></span></td>
+                                                <td> approved</td>
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Reschedule date of action</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Unschedule action</a></li>
+                                                                <li><a href="#" class="confirm-actionperformed">Perform action now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_scheduleaction">Reschedule date of action</a></li>
+                                                                
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete this action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deleteactionwarning">Delete this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2790,16 +2792,16 @@ aria-labelledby="dropdownMenu1">
                                                         </table>
                                                     </div></td>
                                                 <td >Set new task to live <span data-toggle="modal" data-target="#modal_summary"><i class="icon-info-circled-2"></i></span></td>
+                                                <td>awaiting</td>
                                                 <td><span class="label label-white">07/26/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
-                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Reschedule date of action</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Unschedule action</a></li>
+                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1"> <li class="disabled"><a href="#">Perform action now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_scheduleaction">Reschedule date of action</a></li>
+                                                                
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete this action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deleteactionwarning">Delete this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2830,22 +2832,23 @@ aria-labelledby="dropdownMenu1">
                                                         </table>
                                                     </div></td>
                                                 <td >Set new task to live <span data-toggle="modal" data-target="#modal_summary"><i class="icon-info-circled-2"></i></span></td>
+                                                <td>approved</td>
                                                 <td><span class="label label-white">07/26/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Reschedule date of action</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Unschedule action</a></li>
+                                                                <li><a href="#" class="confirm-actionperformed">Perform action now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_scheduleaction">Reschedule date of action</a></li>
+                                                                
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete this action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deleteactionwarning">Delete this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> FNIS - International Tax Questionnaire<span aria-hidden="false"> <span class="small text-muted">(FMS Website: University Tax Services)</span></span></div>
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> FNIS - International Tax Questionnaire<span aria-hidden="false"> <span class="small text-muted">(Tax Services)</span></span></div>
                                                     <div class="taskmeta">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-change-name.png" alt=""/></div>
                                                         <table class="taskmeta-table">
@@ -2870,16 +2873,17 @@ aria-labelledby="dropdownMenu1">
                                                         </table>
                                                     </div></td>
                                                 <td >Set task to live</td>
+                                                <td>n/a</td>
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setlivedate">Reschedule date of action</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Unschedule action</a></li>
+                                                                <li><a href="#" class="confirm-actionperformed">Perform action now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_scheduleaction">Reschedule date of action</a></li>
+                                                                
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete this action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deleteactionwarning">Delete this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2910,16 +2914,17 @@ aria-labelledby="dropdownMenu1">
                                                         </table>
                                                     </div></td>
                                                 <td >Set task to inactive </td>
+                                                <td>n/a</td>
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Reschedule date of action</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Unschedule action</a></li>
+                                                                <li><a href="#" class="confirm-actionperformed">Perform action now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_scheduleaction">Reschedule date of action</a></li>
+                                                                
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete this action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deleteactionwarning">Delete this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2950,16 +2955,17 @@ aria-labelledby="dropdownMenu1">
                                                         </table>
                                                     </div></td>
                                                 <td >Set task to inactive </td>
+                                                <td>n/a</td>
                                                 <td><span class="label label-white">09/30/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_previousschedule">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Reschedule date of action</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Unschedule action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_scheduleaction">Reschedule date of action</a></li>
+                                                                
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete this action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deleteactionwarning">Delete this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -2989,17 +2995,18 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
-                                                <td >Publish updates to task <span data-toggle="modal" data-target="#modal_summaryupdate"><i class="icon-info-circled-2"></i></span></td>
+                                                <td >Publish task updates <span data-toggle="modal" data-target="#modal_summaryupdate"><i class="icon-info-circled-2"></i></span></td>
+                                                <td>approved</td>
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Reschedule date of action</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Unschedule action</a></li>
+                                                                <li><a href="#" class="confirm-actionperformed">Perform action now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_scheduleaction">Reschedule date of action</a></li>
+                                                                
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete this action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deleteactionwarning">Delete this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -3029,17 +3036,18 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
-                                                <td >Publish updates to task <span data-toggle="modal" data-target="#modal_summaryupdate"><i class="icon-info-circled-2"></i></span></td>
+                                                <td >Publish task updates <span data-toggle="modal" data-target="#modal_summaryupdate"><i class="icon-info-circled-2"></i></span></td>
+                                                <td>approved</td>
                                                 <td><span class="label label-white">unscheduled</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Schedule date of action</a></li>
-                                                                <li class="disabled"><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Unschedule action</a></li>
+                                                                <li><a href="#" class="confirm-actionperformed">Perform action now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_scheduleaction">Schedule date of action</a></li>
+                                                                <li class="disabled"><a href="#">Unschedule action</a></li>
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete this action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deleteactionwarning">Delete this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -3070,16 +3078,17 @@ aria-labelledby="dropdownMenu1">
                                                         </table>
                                                     </div></td>
                                                 <td >Set task to inactive </td>
+                                                <td>n/a</td>
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setinactivedate">Reschedule date of action</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Unschedule action</a></li>
+                                                                <li><a href="#" class="confirm-actionperformed">Perform action now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_scheduleaction">Reschedule date of action</a></li>
+                                                                
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete this action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deleteactionwarning">Delete this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -3109,17 +3118,17 @@ aria-labelledby="dropdownMenu1">
                                                             </tbody>
                                                         </table>
                                                     </div></td>
-                                                <td >Publish updates to task <span data-toggle="modal" data-target="#modal_summaryupdate"><i class="icon-info-circled-2"></i></span></td>
+                                                <td >Publish task updates <span data-toggle="modal" data-target="#modal_summaryupdate"><i class="icon-info-circled-2"></i></span></td>
+                                                <td>awaiting</td>
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
-                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Perform action now</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#modal_setpublishdate">Reschedule date of action</a></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Unschedule action</a></li>
+                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1"> <li class="disabled"><a href="#">Perform action now</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_scheduleaction">Reschedule date of action</a></li>
+                                                                
                                                                 <li role="separator" class="divider"></li>
-                                                                <li><a href="#" data-toggle="modal" data-target="#xxxxxxxxxxxxxxxxxx">Delete this action</a></li>
+                                                                <li><a href="#" data-toggle="modal" data-target="#modal_deleteactionwarning">Delete this action</a></li>
                                                             </ul>
                                                         </div>
                                                     </div></td>
@@ -3422,7 +3431,7 @@ aria-labelledby="dropdownMenu1">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Publisher:</td>
-                                                                    <td>School of Public and Environmental Affairs (SPEA)</td>
+                                                                    <td>(SPEA)</td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -4641,7 +4650,9 @@ aria-labelledby="dropdownMenu1">
     <?php include('modal/pub-task-summary.php') ?>
     <?php include('modal/pub-task-summary-update.php') ?>
     <?php include('modal/pub-task-edit-selectversion.php') ?>
+    <?php include('modal/pub-task-edit-deleteactionwarning.php') ?>
     <?php include('modal/pub-task-setnotlivedate.php') ?>
+    <?php include('modal/pub-task-scheduleaction.php') ?>
     <?php include('modal/pub-task-setlivedate.php') ?>
     <?php include('modal/pub-task-edit-pendingwarning.php') ?>
     <?php include('modal/pub-task-setpendingreleasedate.php') ?>
