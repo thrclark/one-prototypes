@@ -188,30 +188,39 @@ $page_title = 'pub-taskmaint';
                 <div class="col-md-9">
                     <div class="primary-content">
                         <div class="row section-head">
-                            <div class="col-xs-12 col-sm-9 section-header">
+                            <div class="col-xs-12 section-header">
                                 <div class="taskmaint-preview">
                                     <div class="taskmaint-preview-content">
                                         <h2 class="taskmaint-preview-content-title">Maintain Tasks</h2>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-12  col-sm-3 text-right"> <a href="pub-taskmaint-new.php" class="btn btn-xs btn-default pull-right"><i class="icon-plus-2"></i>New Task</a> </div>
                         </div>
                         <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#tasks_all" aria-controls="tasks_live" role="tab" data-toggle="tab">All Tasks</a></li>
-                            <li role="presentation"><a href="#task_scheduling" aria-controls="task_scheduling" role="tab" data-toggle="tab">Pending Task Actions</a></li>
-                            <li role="presentation"><a href="#tasks_submitted" aria-controls="tasks_submitted" role="tab" data-toggle="tab">Task Submissions</a></li>
-                            <li role="presentation"><a href="#tasks_featured" aria-controls="tasks_featured" role="tab" data-toggle="tab">Featured Tasks</a></li>
-                            <li role="presentation"><a href="#tasks_deleted" aria-controls="tasks_deleted" role="tab" data-toggle="tab">Deleted Tasks</a></li>
+                            <li role="presentation" class="active"><a href="#tasks_all" aria-controls="tasks_live" role="tab" data-toggle="tab"><i class="icon-th-list visible-xs"></i> <span class="hidden-xs">All</span></a></li>
+                            <li role="presentation"><a href="#task_scheduling" aria-controls="task_scheduling" role="tab" data-toggle="tab"><i class="icon-flash-1 visible-xs"></i><span class="hidden-xs">Pending Actions</span></a></li>
+                            <li role="presentation"><a href="#tasks_submitted" aria-controls="tasks_submitted" role="tab" data-toggle="tab"><i class="icon-upload-cloud visible-xs"></i><span class="hidden-xs">Submissions</span></a></li>
+                            <li role="presentation"><a href="#tasks_featured" aria-controls="tasks_featured" role="tab" data-toggle="tab"><i class="icon-flag-1 visible-xs"></i><span class="hidden-xs">Featured</span></a></li>
+                            <li role="presentation"><a href="#tasks_deleted" aria-controls="tasks_deleted" role="tab" data-toggle="tab"><i class="icon-trash visible-xs"></i><span class="hidden-xs">Deleted</span></a></li>
                         </ul>
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="tasks_all" style=" display:;">
                                 <section>
-                                    <div class="row section-head">
-                                        <div class="col-sm-8">
-                                            <h3 class="h4">All Tasks</h3>
-                                        </div>
-                                        <div class="col-sm-4">
+                                
+                                
+                                
+                                <div class="row section-head">
+                                    <div class="col-xs-9 section-header">
+                                         <h3 class="h4">All Tasks</h3>
+                                    </div>
+                                    <div class="col-xs-3 section-controls"><a href="pub-taskmaint-new.php" class="btn btn-xs btn-default pull-right"><i class="icon-plus-2"></i>New</a></div>
+                                </div>
+                                
+                                
+                                
+                                
+                                    <div class="row" style="margin-bottom:15px">
+                                        <div class="col-xs-12 col-sm-6">
                                             <div class="input-group" id="adv-search">
                                                 <input type="text" class="form-control input-sm" placeholder="Filter by Keyword" />
                                                 <div class="input-group-btn">
@@ -220,279 +229,279 @@ $page_title = 'pub-taskmaint';
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="dropdown dropdown-lg" style="margin-top:5px"> <a href="#" class="small pull-right" data-toggle="dropdown" aria-expanded="false">Advanced</a>
-                                                <div class="dropdown-menu dropdown-menu-right" role="menu">
-                                                    <form class="form-horizontal" role="form">
-                                                        <p> <strong>Filter List</strong> </p>
-                                                        <div class="form-group">
-                                                            <label for="publishers">By Keyword</label>
-                                                            <input type="text" class="form-control">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="publishers">By Publisher</label>
-                                                            <select name="publisher" id="publisher"class="form-control " tabindex="0" aria-invalid="false">
-                                                                <option value="" selected="selected"></option>
-                                                                <option value="0" label="AA/CTL Webmaster">AA/CTL Webmaster</option>
-                                                                <option value="1" label="ABITC">ABITC</option>
-                                                                <option value="2" label="Access Management Team / IMS">Access Management Team / IMS</option>
-                                                                <option value="3" label="Admissions - IUK">Admissions - IUK</option>
-                                                                <option value="4" label="Admitted JD Law Students">Admitted JD Law Students</option>
-                                                                <option value="5" label="Advance College Project (ACP)">Advance College Project (ACP)</option>
-                                                                <option value="6" label="AIT">AIT</option>
-                                                                <option value="7" label="Appear">Appear</option>
-                                                                <option value="8" label="ASQA - EIG">ASQA - EIG</option>
-                                                                <option value="9" label="ASQA - Testing Tools">ASQA - Testing Tools</option>
-                                                                <option value="10" label="Athletics">Athletics</option>
-                                                                <option value="11" label="Auxiliary IT">Auxiliary IT</option>
-                                                                <option value="12" label="BCP">BCP</option>
-                                                                <option value="13" label="Bepko">Bepko</option>
-                                                                <option value="14" label="BL-SPEA (SPEA IT)">BL-SPEA (SPEA IT)</option>
-                                                                <option value="15" label="Bursar - Bloomington">Bursar - Bloomington</option>
-                                                                <option value="16" label="CAITS">CAITS</option>
-                                                                <option value="17" label="CANC">CANC</option>
-                                                                <option value="18" label="Capital Planning and Facilities">Capital Planning and Facilities</option>
-                                                                <option value="19" label="Career and Accessibility Services">Career and Accessibility Services</option>
-                                                                <option value="20" label="Career Services Office - South Bend">Career Services Office - South Bend</option>
-                                                                <option value="21" label="Classroom Technology Services">Classroom Technology Services</option>
-                                                                <option value="22" label="Cloud Technologies">Cloud Technologies</option>
-                                                                <option value="23" label="Compliance Office">Compliance Office</option>
-                                                                <option value="24" label="CRM">CRM</option>
-                                                                <option value="25" label="CTSI">CTSI</option>
-                                                                <option value="26" label="Data Center Operations">Data Center Operations</option>
-                                                                <option value="27" label="DEMA">DEMA</option>
-                                                                <option value="28" label="Department of Emergency Medicine">Department of Emergency Medicine</option>
-                                                                <option value="29" label="Department of OB/GYN">Department of OB/GYN</option>
-                                                                <option value="30" label="Division of Student Affairs">Division of Student Affairs</option>
-                                                                <option value="31" label="Division of Undergraduate Education Technology Services">Division of Undergraduate Education Technology Services</option>
-                                                                <option value="32" label="Educational Partnerships and Student Success">Educational Partnerships and Student Success</option>
-                                                                <option value="33" label="EIG">EIG</option>
-                                                                <option value="34" label="Emergency Management &amp; Continuity">Emergency Management &amp; Continuity</option>
-                                                                <option value="35" label="Engagement">Engagement</option>
-                                                                <option value="36" label="Enrollments/Student Services">Enrollments/Student Services</option>
-                                                                <option value="37" label="Enterprise Document Management">Enterprise Document Management</option>
-                                                                <option value="38" label="ESS">ESS</option>
-                                                                <option value="39" label="etrain">etrain</option>
-                                                                <option value="40" label="Financial Management Services (FMS)">Financial Management Services (FMS)</option>
-                                                                <option value="41" label="First year Seminar - IUPUC">First year Seminar - IUPUC</option>
-                                                                <option value="42" label="Functional Contact – Support Center">Functional Contact – Support Center</option>
-                                                                <option value="43" label="Healthy IU">Healthy IU</option>
-                                                                <option value="44" label="Housing and Residence Life - IUPUI">Housing and Residence Life - IUPUI</option>
-                                                                <option value="45" label="HRMS">HRMS</option>
-                                                                <option value="46" label="HRMS - Technical">HRMS - Technical</option>
-                                                                <option value="47" label="Human Resources and Payroll - Kokomo">Human Resources and Payroll - Kokomo</option>
-                                                                <option value="48" label="IN-TEST">IN-TEST</option>
-                                                                <option value="49" label="Indiana University Cinema">Indiana University Cinema</option>
-                                                                <option value="50" label="Indiana University School of Dentistry">Indiana University School of Dentistry</option>
-                                                                <option value="51" label="Indiana University School of Medicine (IUSM)">Indiana University School of Medicine (IUSM)</option>
-                                                                <option value="52" label="INLOCCA">INLOCCA</option>
-                                                                <option value="53" label="Internal Audit Group">Internal Audit Group</option>
-                                                                <option value="54" label="IT Community Partners">IT Community Partners</option>
-                                                                <option value="55" label="IT Services">IT Services</option>
-                                                                <option value="56" label="IT Southeast Campus">IT Southeast Campus</option>
-                                                                <option value="57" label="IT Statewide Conference">IT Statewide Conference</option>
-                                                                <option value="58" label="IT Training - Bloomington">IT Training - Bloomington</option>
-                                                                <option value="59" label="IT Training - Kokomo">IT Training - Kokomo</option>
-                                                                <option value="60" label="IU Alumni Association">IU Alumni Association</option>
-                                                                <option value="61" label="IU Communications">IU Communications</option>
-                                                                <option value="62" label="IU Contact Center">IU Contact Center</option>
-                                                                <option value="63" label="IU East Career Services">IU East Career Services</option>
-                                                                <option value="64" label="IU Foundation">IU Foundation</option>
-                                                                <option value="65" label="IU Southeast Career Development Center">IU Southeast Career Development Center</option>
-                                                                <option value="66" label="IUEP EXECRES System Administrators">IUEP EXECRES System Administrators</option>
-                                                                <option value="67" label="IUESCC">IUESCC</option>
-                                                                <option value="68" label="IUPUI Campus Career and Advising Services">IUPUI Campus Career and Advising Services</option>
-                                                                <option value="69" label="IUPUI Finance and Administration">IUPUI Finance and Administration</option>
-                                                                <option value="70" label="IUPUI Finance and Administration Office of Technology Services">IUPUI Finance and Administration Office of Technology Services</option>
-                                                                <option value="71" label="IUPUI Human Resources">IUPUI Human Resources</option>
-                                                                <option value="72" label="IUPUI Testing Center">IUPUI Testing Center</option>
-                                                                <option value="73" label="Kelley School - Help Desk">Kelley School - Help Desk</option>
-                                                                <option value="74" label="KelleyOnlineDegrees">KelleyOnlineDegrees</option>
-                                                                <option value="75" label="Kelly School of Business">Kelly School of Business</option>
-                                                                <option value="76" label="KFS">KFS</option>
-                                                                <option value="77" label="KOWeb">KOWeb</option>
-                                                                <option value="78" label="Kuali Rice (ESI)">Kuali Rice (ESI)</option>
-                                                                <option value="79" label="Libraries - Bloomington">Libraries - Bloomington</option>
-                                                                <option value="80" label="Libraries - East">Libraries - East</option>
-                                                                <option value="81" label="Libraries - IUPUC">Libraries - IUPUC</option>
-                                                                <option value="82" label="Libraries - IUPUI">Libraries - IUPUI</option>
-                                                                <option value="83" label="Libraries - Kokomo">Libraries - Kokomo</option>
-                                                                <option value="84" label="Libraries - Northwest">Libraries - Northwest</option>
-                                                                <option value="85" label="Libraries - SouthBend">Libraries - SouthBend</option>
-                                                                <option value="86" label="Libraries - Southeast">Libraries - Southeast</option>
-                                                                <option value="87" label="Mathematical Science IUPUI">Mathematical Science IUPUI</option>
-                                                                <option value="88" label="MDEP">MDEP</option>
-                                                                <option value="89" label="MoneySmarts">MoneySmarts</option>
-                                                                <option value="90" label="Multicultural Center - IUPUI">Multicultural Center - IUPUI</option>
-                                                                <option value="91" label="Oasis">Oasis</option>
-                                                                <option value="92" label="Office of Admissions - IUSB">Office of Admissions - IUSB</option>
-                                                                <option value="93" label="Office of Overseas Study">Office of Overseas Study</option>
-                                                                <option value="94" label="Office of Student Employment">Office of Student Employment</option>
-                                                                <option value="95" label="Office of the Registrar - Bloomington">Office of the Registrar - Bloomington</option>
-                                                                <option value="96" label="Office of the Registrar - IU East">Office of the Registrar - IU East</option>
-                                                                <option value="97" label="Office of the Registrar - IU Southeast">Office of the Registrar - IU Southeast</option>
-                                                                <option value="98" label="Office of the Registrar - IUPUC">Office of the Registrar - IUPUC</option>
-                                                                <option value="99" label="Office of the Registrar - IUPUI">Office of the Registrar - IUPUI</option>
-                                                                <option value="100" label="Office of the Registrar - Kokomo">Office of the Registrar - Kokomo</option>
-                                                                <option value="101" label="Office of the Registrar - Northwest">Office of the Registrar - Northwest</option>
-                                                                <option value="102" label="Office of the Registrar - South Bend">Office of the Registrar - South Bend</option>
-                                                                <option value="103" label="OMS Southeast">OMS Southeast</option>
-                                                                <option value="104" label="Oncourse">Oncourse</option>
-                                                                <option value="105" label="One.IU Support Team">One.IU Support Team</option>
-                                                                <option value="106" label="Orientation - Bloomington">Orientation - Bloomington</option>
-                                                                <option value="107" label="Orientation - East">Orientation - East</option>
-                                                                <option value="108" label="Orientation - IUPUC">Orientation - IUPUC</option>
-                                                                <option value="109" label="Orientation - IUPUI">Orientation - IUPUI</option>
-                                                                <option value="110" label="Orientation - Northwest">Orientation - Northwest</option>
-                                                                <option value="111" label="Orientation - Southeast">Orientation - Southeast</option>
-                                                                <option value="112" label="Orientation and Academic Advising - Kokomo">Orientation and Academic Advising - Kokomo</option>
-                                                                <option value="113" label="OVPIA">OVPIA</option>
-                                                                <option value="114" label="OVPUE">OVPUE</option>
-                                                                <option value="115" label="Parking">Parking</option>
-                                                                <option value="116" label="Payroll &amp; Time">Payroll &amp; Time</option>
-                                                                <option value="117" label="Policy Coordinator">Policy Coordinator</option>
-                                                                <option value="118" label="Principal Online Services">Principal Online Services</option>
-                                                                <option value="119" label="PROVEVP">PROVEVP</option>
-                                                                <option value="120" label="PSIA">PSIA</option>
-                                                                <option value="121" label="PTI Research Services">PTI Research Services</option>
-                                                                <option value="122" label="RASD">RASD</option>
-                                                                <option value="123" label="RASD - Compliance">RASD - Compliance</option>
-                                                                <option value="124" label="RASD - Grants">RASD - Grants</option>
-                                                                <option value="125" label="RASD - Grants/Compliance">RASD - Grants/Compliance</option>
-                                                                <option value="126" label="RASD - OVCR">RASD - OVCR</option>
-                                                                <option value="127" label="RASD - OVPR">RASD - OVPR</option>
-                                                                <option value="128" label="RASD - OVPR/VPR">RASD - OVPR/VPR</option>
-                                                                <option value="129" label="RASD - VPR">RASD - VPR</option>
-                                                                <option value="130" label="ROAR  - Registry of Options and Resources">ROAR  - Registry of Options and Resources</option>
-                                                                <option value="131" label="RPAS">RPAS</option>
-                                                                <option value="132" label="RPS Application Administration">RPS Application Administration</option>
-                                                                <option value="133" label="Ruth Lilly Medical Library">Ruth Lilly Medical Library</option>
-                                                                <option value="134" label="School of Nursing">School of Nursing</option>
-                                                                <option value="135" label="School of Optometry">School of Optometry</option>
-                                                                <option value="136" label="School of Public and Environmental Affairs (SPEA)">School of Public and Environmental Affairs (SPEA)</option>
-                                                                <option value="137" label="School of Public Health – Bloomington IT Services (SPHBITS)">School of Public Health – Bloomington IT Services (SPHBITS)</option>
-                                                                <option value="138" label="Schools of Education - IUPUI">Schools of Education - IUPUI</option>
-                                                                <option value="139" label="SCMC">SCMC</option>
-                                                                <option value="140" label="SIS">SIS</option>
-                                                                <option value="141" label="SOIC: School of Informatics and Computing">SOIC: School of Informatics and Computing</option>
-                                                                <option value="142" label="STC">STC</option>
-                                                                <option value="143" label="Storage and Virtualization">Storage and Virtualization</option>
-                                                                <option value="144" label="Student Academic Systems">Student Academic Systems</option>
-                                                                <option value="145" label="Student Central on Union">Student Central on Union</option>
-                                                                <option value="146" label="Student Development Center">Student Development Center</option>
-                                                                <option value="147" label="Student Organization Accounts">Student Organization Accounts</option>
-                                                                <option value="148" label="Student Outreach">Student Outreach</option>
-                                                                <option value="149" label="Student Support - South Bend">Student Support - South Bend</option>
-                                                                <option value="150" label="Support Center">Support Center</option>
-                                                                <option value="151" label="Support Center Tool">Support Center Tool</option>
-                                                                <option value="152" label="Training: SIS">Training: SIS</option>
-                                                                <option value="153" label="UCard">UCard</option>
-                                                                <option value="154" label="UHRS">UHRS</option>
-                                                                <option value="155" label="UIPO">UIPO</option>
-                                                                <option value="156" label="UIRR">UIRR</option>
-                                                                <option value="157" label="UITS - CCI">UITS - CCI</option>
-                                                                <option value="158" label="UITS - Collaboration Technologies">UITS - Collaboration Technologies</option>
-                                                                <option value="159" label="UITS - eLearning Design &amp; Services">UITS - eLearning Design &amp; Services</option>
-                                                                <option value="160" label="UITS - Finance Office">UITS - Finance Office</option>
-                                                                <option value="161" label="UITS - Internal Resources">UITS - Internal Resources</option>
-                                                                <option value="162" label="UITS - IU eTexts">UITS - IU eTexts</option>
-                                                                <option value="163" label="UITS - IUIE">UITS - IUIE</option>
-                                                                <option value="164" label="UITS - Leveraged Services">UITS - Leveraged Services</option>
-                                                                <option value="165" label="UITS - Northwest">UITS - Northwest</option>
-                                                                <option value="166" label="UITS - South Bend">UITS - South Bend</option>
-                                                                <option value="167" label="UITS Campus Networks">UITS Campus Networks</option>
-                                                                <option value="168" label="University College">University College</option>
-                                                                <option value="169" label="University Division">University Division</option>
-                                                                <option value="170" label="University Graduate School - Bloomington">University Graduate School - Bloomington</option>
-                                                                <option value="171" label="University Graduate School - IUPUI">University Graduate School - IUPUI</option>
-                                                                <option value="172" label="USSS">USSS</option>
-                                                                <option value="173" label="VPFA">VPFA</option>
-                                                                <option value="174" label="Writing Tutorial Service (WTS)">Writing Tutorial Service (WTS)</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="categories">By Categories</label>
-                                                            <select name="category" class="form-control " tabindex="0" aria-invalid="false">
-                                                                <option value="" selected="selected"></option>
-                                                                <option value="0" label="Academics">Academics</option>
-                                                                <option value="1" label="Accounts">Accounts</option>
-                                                                <option value="2" label="Administrative">Administrative</option>
-                                                                <option value="3" label="Admissions">Admissions</option>
-                                                                <option value="4" label="Campus Life">Campus Life</option>
-                                                                <option value="5" label="Careers">Careers</option>
-                                                                <option value="6" label="Enrollment">Enrollment</option>
-                                                                <option value="7" label="Faculty Services">Faculty Services</option>
-                                                                <option value="8" label="Finances">Finances</option>
-                                                                <option value="9" label="Housing &amp; Dining">Housing &amp; Dining</option>
-                                                                <option value="10" label="HR &amp; Benefits">HR &amp; Benefits</option>
-                                                                <option value="11" label="International">International</option>
-                                                                <option value="12" label="IT Services">IT Services</option>
-                                                                <option value="13" label="Libraries">Libraries</option>
-                                                                <option value="14" label="Orientation">Orientation</option>
-                                                                <option value="15" label="Payroll &amp; Taxes">Payroll &amp; Taxes</option>
-                                                                <option value="16" label="Personal Information">Personal Information</option>
-                                                                <option value="17" label="Research">Research</option>
-                                                                <option value="18" label="Training">Training</option>
-                                                                <option value="19" label="Transportation">Transportation</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="status">By Campus</label>
-                                                            <select name="status" class="form-control " tabindex="0" aria-invalid="false">
-                                                                <option value="" selected="selected"></option>
-                                                                <option>All IU Campuses </option>
-                                                                <option>IU Bloomington </option>
-                                                                <option>IU East </option>
-                                                                <option>IU Kokomo </option>
-                                                                <option>IU Northwest </option>
-                                                                <option>IU South Bend </option>
-                                                                <option>IU Southeast </option>
-                                                                <option>IUPUC Columbus </option>
-                                                                <option>IUPUI Indianapolis</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="status">By Status</label>
-                                                            <select name="status" class="form-control " tabindex="0" aria-invalid="false">
-                                                                <option value="" selected="selected"></option>
-                                                                <option value="A" class="">Live</option>
-                                                                <option value="I" class="">Inactive</option>
-                                                                <option value="I" class="">Has Pending Updates</option>
-                                                                <option value="I" class="">Draft</option>
-                                                            </select>
-                                                        </div>
-                                                        <button type="submit" class="btn btn-default btn-xs pull-right apply_filter">Apply Filter</button>
-                                                    </form>
-                                                </div>
-                                            </div>
                                         </div>
+                                        <div class="col-sm-4" style="padding-top:8px"> <span class="dropdown dropdown-lg" style="margin-top:5px"> <a href="#" class="small" data-toggle="dropdown" aria-expanded="false">Advanced</a>
+                                            <div class="dropdown-menu dropdown-menu-righttttttt" role="menu">
+                                                <form class="form-horizontal" role="form">
+                                                    <p> <strong>Filter List</strong> </p>
+                                                    <div class="form-group">
+                                                        <label for="publishers">By Keyword</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="publishers">By Publisher</label>
+                                                        <select name="publisher" id="publisher"class="form-control " tabindex="0" aria-invalid="false">
+                                                            <option value="" selected="selected"></option>
+                                                            <option value="0" label="AA/CTL Webmaster">AA/CTL Webmaster</option>
+                                                            <option value="1" label="ABITC">ABITC</option>
+                                                            <option value="2" label="Access Management Team / IMS">Access Management Team / IMS</option>
+                                                            <option value="3" label="Admissions - IUK">Admissions - IUK</option>
+                                                            <option value="4" label="Admitted JD Law Students">Admitted JD Law Students</option>
+                                                            <option value="5" label="Advance College Project (ACP)">Advance College Project (ACP)</option>
+                                                            <option value="6" label="AIT">AIT</option>
+                                                            <option value="7" label="Appear">Appear</option>
+                                                            <option value="8" label="ASQA - EIG">ASQA - EIG</option>
+                                                            <option value="9" label="ASQA - Testing Tools">ASQA - Testing Tools</option>
+                                                            <option value="10" label="Athletics">Athletics</option>
+                                                            <option value="11" label="Auxiliary IT">Auxiliary IT</option>
+                                                            <option value="12" label="BCP">BCP</option>
+                                                            <option value="13" label="Bepko">Bepko</option>
+                                                            <option value="14" label="BL-SPEA (SPEA IT)">BL-SPEA (SPEA IT)</option>
+                                                            <option value="15" label="Bursar - Bloomington">Bursar - Bloomington</option>
+                                                            <option value="16" label="CAITS">CAITS</option>
+                                                            <option value="17" label="CANC">CANC</option>
+                                                            <option value="18" label="Capital Planning and Facilities">Capital Planning and Facilities</option>
+                                                            <option value="19" label="Career and Accessibility Services">Career and Accessibility Services</option>
+                                                            <option value="20" label="Career Services Office - South Bend">Career Services Office - South Bend</option>
+                                                            <option value="21" label="Classroom Technology Services">Classroom Technology Services</option>
+                                                            <option value="22" label="Cloud Technologies">Cloud Technologies</option>
+                                                            <option value="23" label="Compliance Office">Compliance Office</option>
+                                                            <option value="24" label="CRM">CRM</option>
+                                                            <option value="25" label="CTSI">CTSI</option>
+                                                            <option value="26" label="Data Center Operations">Data Center Operations</option>
+                                                            <option value="27" label="DEMA">DEMA</option>
+                                                            <option value="28" label="Department of Emergency Medicine">Department of Emergency Medicine</option>
+                                                            <option value="29" label="Department of OB/GYN">Department of OB/GYN</option>
+                                                            <option value="30" label="Division of Student Affairs">Division of Student Affairs</option>
+                                                            <option value="31" label="Division of Undergraduate Education Technology Services">Division of Undergraduate Education Technology Services</option>
+                                                            <option value="32" label="Educational Partnerships and Student Success">Educational Partnerships and Student Success</option>
+                                                            <option value="33" label="EIG">EIG</option>
+                                                            <option value="34" label="Emergency Management &amp; Continuity">Emergency Management &amp; Continuity</option>
+                                                            <option value="35" label="Engagement">Engagement</option>
+                                                            <option value="36" label="Enrollments/Student Services">Enrollments/Student Services</option>
+                                                            <option value="37" label="Enterprise Document Management">Enterprise Document Management</option>
+                                                            <option value="38" label="ESS">ESS</option>
+                                                            <option value="39" label="etrain">etrain</option>
+                                                            <option value="40" label="Financial Management Services (FMS)">Financial Management Services (FMS)</option>
+                                                            <option value="41" label="First year Seminar - IUPUC">First year Seminar - IUPUC</option>
+                                                            <option value="42" label="Functional Contact – Support Center">Functional Contact – Support Center</option>
+                                                            <option value="43" label="Healthy IU">Healthy IU</option>
+                                                            <option value="44" label="Housing and Residence Life - IUPUI">Housing and Residence Life - IUPUI</option>
+                                                            <option value="45" label="HRMS">HRMS</option>
+                                                            <option value="46" label="HRMS - Technical">HRMS - Technical</option>
+                                                            <option value="47" label="Human Resources and Payroll - Kokomo">Human Resources and Payroll - Kokomo</option>
+                                                            <option value="48" label="IN-TEST">IN-TEST</option>
+                                                            <option value="49" label="Indiana University Cinema">Indiana University Cinema</option>
+                                                            <option value="50" label="Indiana University School of Dentistry">Indiana University School of Dentistry</option>
+                                                            <option value="51" label="Indiana University School of Medicine (IUSM)">Indiana University School of Medicine (IUSM)</option>
+                                                            <option value="52" label="INLOCCA">INLOCCA</option>
+                                                            <option value="53" label="Internal Audit Group">Internal Audit Group</option>
+                                                            <option value="54" label="IT Community Partners">IT Community Partners</option>
+                                                            <option value="55" label="IT Services">IT Services</option>
+                                                            <option value="56" label="IT Southeast Campus">IT Southeast Campus</option>
+                                                            <option value="57" label="IT Statewide Conference">IT Statewide Conference</option>
+                                                            <option value="58" label="IT Training - Bloomington">IT Training - Bloomington</option>
+                                                            <option value="59" label="IT Training - Kokomo">IT Training - Kokomo</option>
+                                                            <option value="60" label="IU Alumni Association">IU Alumni Association</option>
+                                                            <option value="61" label="IU Communications">IU Communications</option>
+                                                            <option value="62" label="IU Contact Center">IU Contact Center</option>
+                                                            <option value="63" label="IU East Career Services">IU East Career Services</option>
+                                                            <option value="64" label="IU Foundation">IU Foundation</option>
+                                                            <option value="65" label="IU Southeast Career Development Center">IU Southeast Career Development Center</option>
+                                                            <option value="66" label="IUEP EXECRES System Administrators">IUEP EXECRES System Administrators</option>
+                                                            <option value="67" label="IUESCC">IUESCC</option>
+                                                            <option value="68" label="IUPUI Campus Career and Advising Services">IUPUI Campus Career and Advising Services</option>
+                                                            <option value="69" label="IUPUI Finance and Administration">IUPUI Finance and Administration</option>
+                                                            <option value="70" label="IUPUI Finance and Administration Office of Technology Services">IUPUI Finance and Administration Office of Technology Services</option>
+                                                            <option value="71" label="IUPUI Human Resources">IUPUI Human Resources</option>
+                                                            <option value="72" label="IUPUI Testing Center">IUPUI Testing Center</option>
+                                                            <option value="73" label="Kelley School - Help Desk">Kelley School - Help Desk</option>
+                                                            <option value="74" label="KelleyOnlineDegrees">KelleyOnlineDegrees</option>
+                                                            <option value="75" label="Kelly School of Business">Kelly School of Business</option>
+                                                            <option value="76" label="KFS">KFS</option>
+                                                            <option value="77" label="KOWeb">KOWeb</option>
+                                                            <option value="78" label="Kuali Rice (ESI)">Kuali Rice (ESI)</option>
+                                                            <option value="79" label="Libraries - Bloomington">Libraries - Bloomington</option>
+                                                            <option value="80" label="Libraries - East">Libraries - East</option>
+                                                            <option value="81" label="Libraries - IUPUC">Libraries - IUPUC</option>
+                                                            <option value="82" label="Libraries - IUPUI">Libraries - IUPUI</option>
+                                                            <option value="83" label="Libraries - Kokomo">Libraries - Kokomo</option>
+                                                            <option value="84" label="Libraries - Northwest">Libraries - Northwest</option>
+                                                            <option value="85" label="Libraries - SouthBend">Libraries - SouthBend</option>
+                                                            <option value="86" label="Libraries - Southeast">Libraries - Southeast</option>
+                                                            <option value="87" label="Mathematical Science IUPUI">Mathematical Science IUPUI</option>
+                                                            <option value="88" label="MDEP">MDEP</option>
+                                                            <option value="89" label="MoneySmarts">MoneySmarts</option>
+                                                            <option value="90" label="Multicultural Center - IUPUI">Multicultural Center - IUPUI</option>
+                                                            <option value="91" label="Oasis">Oasis</option>
+                                                            <option value="92" label="Office of Admissions - IUSB">Office of Admissions - IUSB</option>
+                                                            <option value="93" label="Office of Overseas Study">Office of Overseas Study</option>
+                                                            <option value="94" label="Office of Student Employment">Office of Student Employment</option>
+                                                            <option value="95" label="Office of the Registrar - Bloomington">Office of the Registrar - Bloomington</option>
+                                                            <option value="96" label="Office of the Registrar - IU East">Office of the Registrar - IU East</option>
+                                                            <option value="97" label="Office of the Registrar - IU Southeast">Office of the Registrar - IU Southeast</option>
+                                                            <option value="98" label="Office of the Registrar - IUPUC">Office of the Registrar - IUPUC</option>
+                                                            <option value="99" label="Office of the Registrar - IUPUI">Office of the Registrar - IUPUI</option>
+                                                            <option value="100" label="Office of the Registrar - Kokomo">Office of the Registrar - Kokomo</option>
+                                                            <option value="101" label="Office of the Registrar - Northwest">Office of the Registrar - Northwest</option>
+                                                            <option value="102" label="Office of the Registrar - South Bend">Office of the Registrar - South Bend</option>
+                                                            <option value="103" label="OMS Southeast">OMS Southeast</option>
+                                                            <option value="104" label="Oncourse">Oncourse</option>
+                                                            <option value="105" label="One.IU Support Team">One.IU Support Team</option>
+                                                            <option value="106" label="Orientation - Bloomington">Orientation - Bloomington</option>
+                                                            <option value="107" label="Orientation - East">Orientation - East</option>
+                                                            <option value="108" label="Orientation - IUPUC">Orientation - IUPUC</option>
+                                                            <option value="109" label="Orientation - IUPUI">Orientation - IUPUI</option>
+                                                            <option value="110" label="Orientation - Northwest">Orientation - Northwest</option>
+                                                            <option value="111" label="Orientation - Southeast">Orientation - Southeast</option>
+                                                            <option value="112" label="Orientation and Academic Advising - Kokomo">Orientation and Academic Advising - Kokomo</option>
+                                                            <option value="113" label="OVPIA">OVPIA</option>
+                                                            <option value="114" label="OVPUE">OVPUE</option>
+                                                            <option value="115" label="Parking">Parking</option>
+                                                            <option value="116" label="Payroll &amp; Time">Payroll &amp; Time</option>
+                                                            <option value="117" label="Policy Coordinator">Policy Coordinator</option>
+                                                            <option value="118" label="Principal Online Services">Principal Online Services</option>
+                                                            <option value="119" label="PROVEVP">PROVEVP</option>
+                                                            <option value="120" label="PSIA">PSIA</option>
+                                                            <option value="121" label="PTI Research Services">PTI Research Services</option>
+                                                            <option value="122" label="RASD">RASD</option>
+                                                            <option value="123" label="RASD - Compliance">RASD - Compliance</option>
+                                                            <option value="124" label="RASD - Grants">RASD - Grants</option>
+                                                            <option value="125" label="RASD - Grants/Compliance">RASD - Grants/Compliance</option>
+                                                            <option value="126" label="RASD - OVCR">RASD - OVCR</option>
+                                                            <option value="127" label="RASD - OVPR">RASD - OVPR</option>
+                                                            <option value="128" label="RASD - OVPR/VPR">RASD - OVPR/VPR</option>
+                                                            <option value="129" label="RASD - VPR">RASD - VPR</option>
+                                                            <option value="130" label="ROAR  - Registry of Options and Resources">ROAR  - Registry of Options and Resources</option>
+                                                            <option value="131" label="RPAS">RPAS</option>
+                                                            <option value="132" label="RPS Application Administration">RPS Application Administration</option>
+                                                            <option value="133" label="Ruth Lilly Medical Library">Ruth Lilly Medical Library</option>
+                                                            <option value="134" label="School of Nursing">School of Nursing</option>
+                                                            <option value="135" label="School of Optometry">School of Optometry</option>
+                                                            <option value="136" label="School of Public and Environmental Affairs (SPEA)">School of Public and Environmental Affairs (SPEA)</option>
+                                                            <option value="137" label="School of Public Health – Bloomington IT Services (SPHBITS)">School of Public Health – Bloomington IT Services (SPHBITS)</option>
+                                                            <option value="138" label="Schools of Education - IUPUI">Schools of Education - IUPUI</option>
+                                                            <option value="139" label="SCMC">SCMC</option>
+                                                            <option value="140" label="SIS">SIS</option>
+                                                            <option value="141" label="SOIC: School of Informatics and Computing">SOIC: School of Informatics and Computing</option>
+                                                            <option value="142" label="STC">STC</option>
+                                                            <option value="143" label="Storage and Virtualization">Storage and Virtualization</option>
+                                                            <option value="144" label="Student Academic Systems">Student Academic Systems</option>
+                                                            <option value="145" label="Student Central on Union">Student Central on Union</option>
+                                                            <option value="146" label="Student Development Center">Student Development Center</option>
+                                                            <option value="147" label="Student Organization Accounts">Student Organization Accounts</option>
+                                                            <option value="148" label="Student Outreach">Student Outreach</option>
+                                                            <option value="149" label="Student Support - South Bend">Student Support - South Bend</option>
+                                                            <option value="150" label="Support Center">Support Center</option>
+                                                            <option value="151" label="Support Center Tool">Support Center Tool</option>
+                                                            <option value="152" label="Training: SIS">Training: SIS</option>
+                                                            <option value="153" label="UCard">UCard</option>
+                                                            <option value="154" label="UHRS">UHRS</option>
+                                                            <option value="155" label="UIPO">UIPO</option>
+                                                            <option value="156" label="UIRR">UIRR</option>
+                                                            <option value="157" label="UITS - CCI">UITS - CCI</option>
+                                                            <option value="158" label="UITS - Collaboration Technologies">UITS - Collaboration Technologies</option>
+                                                            <option value="159" label="UITS - eLearning Design &amp; Services">UITS - eLearning Design &amp; Services</option>
+                                                            <option value="160" label="UITS - Finance Office">UITS - Finance Office</option>
+                                                            <option value="161" label="UITS - Internal Resources">UITS - Internal Resources</option>
+                                                            <option value="162" label="UITS - IU eTexts">UITS - IU eTexts</option>
+                                                            <option value="163" label="UITS - IUIE">UITS - IUIE</option>
+                                                            <option value="164" label="UITS - Leveraged Services">UITS - Leveraged Services</option>
+                                                            <option value="165" label="UITS - Northwest">UITS - Northwest</option>
+                                                            <option value="166" label="UITS - South Bend">UITS - South Bend</option>
+                                                            <option value="167" label="UITS Campus Networks">UITS Campus Networks</option>
+                                                            <option value="168" label="University College">University College</option>
+                                                            <option value="169" label="University Division">University Division</option>
+                                                            <option value="170" label="University Graduate School - Bloomington">University Graduate School - Bloomington</option>
+                                                            <option value="171" label="University Graduate School - IUPUI">University Graduate School - IUPUI</option>
+                                                            <option value="172" label="USSS">USSS</option>
+                                                            <option value="173" label="VPFA">VPFA</option>
+                                                            <option value="174" label="Writing Tutorial Service (WTS)">Writing Tutorial Service (WTS)</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="categories">By Categories</label>
+                                                        <select name="category" class="form-control " tabindex="0" aria-invalid="false">
+                                                            <option value="" selected="selected"></option>
+                                                            <option value="0" label="Academics">Academics</option>
+                                                            <option value="1" label="Accounts">Accounts</option>
+                                                            <option value="2" label="Administrative">Administrative</option>
+                                                            <option value="3" label="Admissions">Admissions</option>
+                                                            <option value="4" label="Campus Life">Campus Life</option>
+                                                            <option value="5" label="Careers">Careers</option>
+                                                            <option value="6" label="Enrollment">Enrollment</option>
+                                                            <option value="7" label="Faculty Services">Faculty Services</option>
+                                                            <option value="8" label="Finances">Finances</option>
+                                                            <option value="9" label="Housing &amp; Dining">Housing &amp; Dining</option>
+                                                            <option value="10" label="HR &amp; Benefits">HR &amp; Benefits</option>
+                                                            <option value="11" label="International">International</option>
+                                                            <option value="12" label="IT Services">IT Services</option>
+                                                            <option value="13" label="Libraries">Libraries</option>
+                                                            <option value="14" label="Orientation">Orientation</option>
+                                                            <option value="15" label="Payroll &amp; Taxes">Payroll &amp; Taxes</option>
+                                                            <option value="16" label="Personal Information">Personal Information</option>
+                                                            <option value="17" label="Research">Research</option>
+                                                            <option value="18" label="Training">Training</option>
+                                                            <option value="19" label="Transportation">Transportation</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="status">By Campus</label>
+                                                        <select name="status" class="form-control " tabindex="0" aria-invalid="false">
+                                                            <option value="" selected="selected"></option>
+                                                            <option>All IU Campuses </option>
+                                                            <option>IU Bloomington </option>
+                                                            <option>IU East </option>
+                                                            <option>IU Kokomo </option>
+                                                            <option>IU Northwest </option>
+                                                            <option>IU South Bend </option>
+                                                            <option>IU Southeast </option>
+                                                            <option>IUPUC Columbus </option>
+                                                            <option>IUPUI Indianapolis</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="status">By Status</label>
+                                                        <select name="status" class="form-control " tabindex="0" aria-invalid="false">
+                                                            <option value="" selected="selected"></option>
+                                                            <option value="A" class="">Live</option>
+                                                            <option value="I" class="">Inactive</option>
+                                                            <option value="I" class="">Has Pending Updates</option>
+                                                            <option value="I" class="">Draft</option>
+                                                        </select>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-default btn-xs pull-right apply_filter">Apply Filter</button>
+                                                </form>
+                                            </div>
+                                            </span> </div>
                                     </div>
                                     <div class="page-utilities">
-                                        <div class="page-utilities-item">
+                                        <div class="page-utilities-item hidden-xs">
                                             <div class="checkbox">
-                                                <label >
+                                                <label>
                                                     <input type="checkbox" id="showdetails1">
                                                     Detail View </label>
                                             </div>
                                         </div>
                                         <div class="page-utilities-item">
                                             <div class="filter-list"> Filters:<span id="filters_none" style="display:none">none</span>
-                                                <div id="filter_tags" style="display:inline"> <span class="label label-white"><span class="text-muted">Keyword:</span> Bus <i class="icon-cancel-circled"></i></span> <span class="label label-white"><span class="text-muted">Publisher:</span> Student Academic Systems <i class="icon-cancel-circled"></i></span> &nbsp;</div>
+                                                <div id="filter_tags" style="display:inline"> <span class="label label-white"><span class="text-muted">Keyword:</span> Bus <i class="icon-cancel-circled"></i></span>&nbsp; <span class="label label-white"><span class="text-muted">Publisher:</span> ACT <i class="icon-cancel-circled"></i></span> &nbsp;</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <table class="table table-hover table-condensed display" id="table1">
+                                    <table class="table table-hover table-condensed table-actions display tablesaw tablesaw-stack"  data-tablesaw-mode="stack" id="table1" style="width:100%">
                                         <thead>
                                             <tr>
-                                                <th>Task <span class="small text-muted">(Application)</span></th>
+                                                <th>Task <span class="small text-muted hidden-xs">(Application)</span></th>
                                                 <th>Campus</th>
                                                 <th>Status</th>
-                                                <th><span class="sr-only">Actions</span></th>
+                                                <th><span class="visible-xs">Actions</span></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Alcohol Sanctions</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -519,7 +528,7 @@ $page_title = 'pub-taskmaint';
                                                 <td><span class="label label-white">Live</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true"><span class="caret"></span></button>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
                                                                 <li><a href="#">Feature task</a></li>
@@ -534,8 +543,8 @@ $page_title = 'pub-taskmaint';
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>AlcoholEdu</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>AlcoholEdu</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-account-creation.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -564,7 +573,7 @@ $page_title = 'pub-taskmaint';
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -580,8 +589,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Drop or Add Classes</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Drop or Add Classes</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-change-name.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -608,7 +617,7 @@ aria-labelledby="dropdownMenu1">
                                                 <td><span class="label label-white">Inactive</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu16" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu16" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
                                                                 <li><a href="#">Feature task</a></li>
@@ -623,8 +632,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Apple</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Apple</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-resident.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -653,7 +662,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -669,8 +678,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Approved Chartered Buses <span class="small text-muted">(BusCompanies.cfm)</span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Approved Chartered Buses <span class="small text-muted">(BusCompanies.cfm)</span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-incident.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -707,7 +716,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -723,8 +732,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Bus Routes <span class="small text-muted">(TARC)</span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Bus Routes <span class="small text-muted">(TARC)</span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/SD-002.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -753,7 +762,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -769,8 +778,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus 411 Information</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Campus 411 Information</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-empty4.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -799,7 +808,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -811,8 +820,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Alerts</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Campus Alerts</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-academic-calendar.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -841,7 +850,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -857,8 +866,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Health and Wellness</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i> Health and Wellness</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/SD-004.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -885,7 +894,7 @@ aria-labelledby="dropdownMenu1">
                                                 <td><span class="label label-white">Inactive</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu17" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu17" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
                                                                 <li><a href="#">Feature task</a></li>
@@ -900,8 +909,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Drop or Add Classes</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Drop or Add Classes</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/SD-018.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -936,7 +945,7 @@ aria-labelledby="dropdownMenu1">
    data-content="<table class='table table-condensed small' ><tbody><tr><td>10/12/2017 at 5:00pm</td><td>Set to live</td></tr></tbody></table>"> <i class="icon-calendar-empty"></i></a></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu18" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu18" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                                 <li> <a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit task</a></li>
                                                                 <li><a href="#">Feature task</a></li>
@@ -951,8 +960,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Elections <span class="small text-muted">(IUSB Vote)</span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Campus Elections <span class="small text-muted">(IUSB Vote)</span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/SD-017.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -981,7 +990,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -997,8 +1006,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Campus Events</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-bill-pay.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1027,7 +1036,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -1043,8 +1052,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Campus Events</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-box.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1073,7 +1082,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -1089,8 +1098,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Campus Events</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-childcare-fees.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1119,7 +1128,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -1135,8 +1144,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Campus Events</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-campus-events.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1165,7 +1174,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -1181,8 +1190,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Campus Events</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1211,7 +1220,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -1227,8 +1236,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Campus Events</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-classifieds.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1265,7 +1274,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit task</a></li>
@@ -1281,8 +1290,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Campus Events</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-parking.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1311,7 +1320,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -1327,8 +1336,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Events</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Campus Events</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-change-name.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1357,7 +1366,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -1373,8 +1382,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Tour</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Campus Tour</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-IUanyWare.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1403,7 +1412,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -1419,8 +1428,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Capital Asset Management<span aria-hidden="false" class="small text-muted"> (FR)</span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Capital Asset Management<span aria-hidden="false" class="small text-muted"> (FR)</span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-paycheck.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1449,7 +1458,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -1465,8 +1474,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> FMS Support Form<span aria-hidden="false"><span class="small text-muted"> (Web Form)</span></span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i> FMS Support Form<span aria-hidden="false"><span class="small text-muted"> (Web Form)</span></span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-classifieds.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1501,7 +1510,7 @@ aria-labelledby="dropdownMenu1">
    data-content="<table class='table table-condensed small' ><tbody><tr><td>10/12/2017 at 5:00pm</td><td>Set to live</td></tr><tr><td>10/12/2017 at 5:00pm</td><td>Publish updates</td></tr></tbody></table>"> <i class="icon-calendar-empty"></i></a></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu26" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu26" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li> <a href="#" data-toggle="modal" data-target="#modal_pendingwarning">Edit task</a></li>
                                                                 <li><a href="#">Feature task</a></li>
@@ -1516,8 +1525,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Check Account Balance <span class="small text-muted">(Jagtag)</span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Check Account Balance <span class="small text-muted">(Jagtag)</span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-passphrase.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1546,7 +1555,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -1562,8 +1571,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Childcare fees</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Childcare fees</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-paycheck.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1592,7 +1601,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -1608,8 +1617,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Classifieds</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Classifieds</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-ForeignLanguage.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1638,7 +1647,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -1654,8 +1663,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Code of conduct</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Code of conduct</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/SD-004.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1684,7 +1693,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -1700,8 +1709,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Competitive Scholarship Application <span class="small text-muted">(Academic Works)</span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Competitive Scholarship Application <span class="small text-muted">(Academic Works)</span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-bt.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1730,7 +1739,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -1746,8 +1755,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> IUSON Help Desk<span aria-hidden="false"><span class="small text-muted"> (Web Application)</span></span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i> IUSON Help Desk<span aria-hidden="false"><span class="small text-muted"> (Web Application)</span></span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-account-creation.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1774,7 +1783,7 @@ aria-labelledby="dropdownMenu1">
                                                 <td><span class="label label-white">Inactive</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu24" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu24" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
                                                                 <li><a href="#">Feature task</a></li>
@@ -1789,8 +1798,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Construction Alerts</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Construction Alerts</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-registration.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1819,7 +1828,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -1835,8 +1844,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Counseling and Psychological Services <span class="small text-muted">(CAPS)</span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Counseling and Psychological Services <span class="small text-muted">(CAPS)</span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/SD-007.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1865,7 +1874,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -1881,8 +1890,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Deal of the Day Promotion <span class="small text-muted">(Jagtag)</span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Deal of the Day Promotion <span class="small text-muted">(Jagtag)</span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-newsroom.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1911,7 +1920,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -1927,8 +1936,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Endowment information<span aria-hidden="false"><span class="small text-muted"> (ETA-Web)</span></span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i> Endowment information<span aria-hidden="false"><span class="small text-muted"> (ETA-Web)</span></span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-talk-nerdy.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1955,7 +1964,7 @@ aria-labelledby="dropdownMenu1">
                                                 <td><span class="label label-white">Inactive</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu22" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu22" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
                                                                 <li><a href="#">Feature task</a></li>
@@ -1970,8 +1979,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Late Drop / Add Classes</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i> Late Drop / Add Classes</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/SD-016.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -1998,7 +2007,7 @@ aria-labelledby="dropdownMenu1">
                                                 <td><span class="label label-white">Inactive</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
                                                                 <li><a href="#">Feature task</a></li>
@@ -2013,8 +2022,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>DeviceNet</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>DeviceNet</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/SD-012.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2043,7 +2052,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -2059,8 +2068,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Division of Student Affairs</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Division of Student Affairs</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/SD-003.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2089,7 +2098,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -2105,8 +2114,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Emergency Contact Phone Numbers <span class="small text-muted">(Protect.IU)</span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Emergency Contact Phone Numbers <span class="small text-muted">(Protect.IU)</span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/SD-001.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2135,7 +2144,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -2151,8 +2160,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Energy Matters</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Energy Matters</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/SD-005.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2181,7 +2190,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -2197,8 +2206,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Open Enrollment Webinar Info</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Open Enrollment Webinar Info</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-myra.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2227,7 +2236,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -2243,8 +2252,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Explore Majors and More <span class="small text-muted">(University Division)</span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Explore Majors and More <span class="small text-muted">(University Division)</span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-mobile-security.jpg" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2273,7 +2282,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -2289,8 +2298,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Explore Programs <span class="small text-muted">(University Division)</span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Explore Programs <span class="small text-muted">(University Division)</span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/SD-007.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2319,7 +2328,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -2335,8 +2344,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Extinguisher Information - IU Departments <span class="small text-muted">(Show Extinguishers)</span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Extinguisher Information - IU Departments <span class="small text-muted">(Show Extinguishers)</span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-iucat.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2365,7 +2374,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -2381,8 +2390,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Healthy IU — Your Workplace Wellness Program</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i> Healthy IU — Your Workplace Wellness Program</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-academic-calendar.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2409,7 +2418,7 @@ aria-labelledby="dropdownMenu1">
                                                 <td><span class="label label-white">Inactive</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu21" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu21" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
                                                                 <li><a href="#">Feature task</a></li>
@@ -2424,8 +2433,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Extinguisher Information - Public <span class="small text-muted">(Unit Inspection Report)</span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Extinguisher Information - Public <span class="small text-muted">(Unit Inspection Report)</span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-one-logo.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2454,7 +2463,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -2470,8 +2479,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Wells Learning Commons</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i> Wells Learning Commons</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-parking.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2498,7 +2507,7 @@ aria-labelledby="dropdownMenu1">
                                                 <td><span class="label label-white">Inactive</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu20" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu20" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
                                                                 <li><a href="#">Feature task</a></li>
@@ -2513,8 +2522,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>First Aid - CPR Classes</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>First Aid - CPR Classes</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/SD-003.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2543,7 +2552,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -2559,8 +2568,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Haven</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Haven</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/SD-018.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2589,7 +2598,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -2605,8 +2614,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>HavenPlus</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>HavenPlus</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/SD-019.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2635,7 +2644,7 @@ aria-labelledby="dropdownMenu1">
                                                         <div class="dropdown1">
                                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button"
 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-aria-expanded="true"><span class="caret"></span></button>
+aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"
 aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
@@ -2651,8 +2660,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Zoom<span aria-hidden="false"><span class="small text-muted"> (Zoom Web Collaboration)</span></span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i> Zoom<span aria-hidden="false"><span class="small text-muted"> (Zoom Web Collaboration)</span></span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/SD-004.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2679,7 +2688,7 @@ aria-labelledby="dropdownMenu1">
                                                 <td><span class="label label-white">Inactive</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu19" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu19" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="pub-taskmaint-edit.php">Edit task</a></li>
                                                                 <li><a href="#">Feature task</a></li>
@@ -2705,7 +2714,7 @@ aria-labelledby="dropdownMenu1">
                                             <h3 class="h4">Pending Task Actions</h3>
                                         </div>
                                     </div>
-                                    <div class="page-utilities">
+                                    <div class="page-utilities hidden-xs">
                                         <div class="page-utilities-item">
                                             <div class="checkbox">
                                                 <label >
@@ -2714,20 +2723,25 @@ aria-labelledby="dropdownMenu1">
                                             </div>
                                         </div>
                                     </div>
-                                    <table class="table table-hover table-condensed display" id="table2">
+                                
+                                    
+                                    
+                                     <table class="table table-hover table-condensed table-actions display tablesaw tablesaw-stack"  data-tablesaw-mode="stack" id="table2" style="width:100%">
+                                     
+                                     
                                         <thead>
                                             <tr>
-                                                <th>Task <span class="small text-muted">(Application)</span></th>
+                                                <th>Task <span class="small text-muted hidden-xs">(Application)</span></th>
                                                 <th >Pending Action</th>
                                                 <th>Approval</th>
                                                 <th >Date of Action</th>
-                                                <th><span class="sr-only">Actions</span></th>
+                                                <th><span class="visible-xs">Actions</span></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Drop or Add Classes</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Drop or Add Classes</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-childcare-fees.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2755,11 +2769,10 @@ aria-labelledby="dropdownMenu1">
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" class="confirm-actionperformed">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_scheduleaction">Reschedule date of action</a></li>
-                                                                
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_deleteactionwarning">Delete this action</a></li>
                                                             </ul>
@@ -2767,8 +2780,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Endowment information<span aria-hidden="false"><span class="small text-muted"> (ETA-Web)</span></span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i> Endowment information<span aria-hidden="false"><span class="small text-muted"> (ETA-Web)</span></span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-account-creation.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2796,10 +2809,10 @@ aria-labelledby="dropdownMenu1">
                                                 <td><span class="label label-white">07/26/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
-                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1"> <li class="disabled"><a href="#">Perform action now</a></li>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
+                                                                <li class="disabled"><a href="#">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_scheduleaction">Reschedule date of action</a></li>
-                                                                
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_deleteactionwarning">Delete this action</a></li>
                                                             </ul>
@@ -2807,8 +2820,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> FMS Support Form<span aria-hidden="false"><span class="small text-muted"> (Web Form)</span></span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i> FMS Support Form<span aria-hidden="false"><span class="small text-muted"> (Web Form)</span></span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-acadcal.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2836,11 +2849,10 @@ aria-labelledby="dropdownMenu1">
                                                 <td><span class="label label-white">07/26/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" class="confirm-actionperformed">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_scheduleaction">Reschedule date of action</a></li>
-                                                                
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_deleteactionwarning">Delete this action</a></li>
                                                             </ul>
@@ -2848,8 +2860,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> FNIS - International Tax Questionnaire<span aria-hidden="false"> <span class="small text-muted">(Tax Services)</span></span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i> FNIS - International Tax Questionnaire<span aria-hidden="false"> <span class="small text-muted">(Tax Services)</span></span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-change-name.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2877,11 +2889,10 @@ aria-labelledby="dropdownMenu1">
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" class="confirm-actionperformed">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_scheduleaction">Reschedule date of action</a></li>
-                                                                
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_deleteactionwarning">Delete this action</a></li>
                                                             </ul>
@@ -2889,8 +2900,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Health and Wellness</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i> Health and Wellness</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/SD-006.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2918,11 +2929,10 @@ aria-labelledby="dropdownMenu1">
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" class="confirm-actionperformed">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_scheduleaction">Reschedule date of action</a></li>
-                                                                
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_deleteactionwarning">Delete this action</a></li>
                                                             </ul>
@@ -2930,8 +2940,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Healthy IU — Your Workplace Wellness Program</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i> Healthy IU — Your Workplace Wellness Program</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-childcare-fees.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -2959,11 +2969,10 @@ aria-labelledby="dropdownMenu1">
                                                 <td><span class="label label-white">09/30/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_previousschedule">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_scheduleaction">Reschedule date of action</a></li>
-                                                                
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_deleteactionwarning">Delete this action</a></li>
                                                             </ul>
@@ -2971,8 +2980,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Healthy IU — Your Workplace Wellness Program</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i> Healthy IU — Your Workplace Wellness Program</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-childcare-fees.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -3000,11 +3009,10 @@ aria-labelledby="dropdownMenu1">
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" class="confirm-actionperformed">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_scheduleaction">Reschedule date of action</a></li>
-                                                                
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_deleteactionwarning">Delete this action</a></li>
                                                             </ul>
@@ -3012,8 +3020,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> IU Northwest Library</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i> IU Northwest Library</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-time.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -3041,7 +3049,7 @@ aria-labelledby="dropdownMenu1">
                                                 <td><span class="label label-white">unscheduled</span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" class="confirm-actionperformed">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_scheduleaction">Schedule date of action</a></li>
@@ -3053,8 +3061,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> IUSON Help Desk<span aria-hidden="false"><span class="small text-muted"> (Web Application)</span></span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i> IUSON Help Desk<span aria-hidden="false"><span class="small text-muted"> (Web Application)</span></span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/SD-004.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -3082,11 +3090,10 @@ aria-labelledby="dropdownMenu1">
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                             <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
                                                                 <li><a href="#" class="confirm-actionperformed">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_scheduleaction">Reschedule date of action</a></li>
-                                                                
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_deleteactionwarning">Delete this action</a></li>
                                                             </ul>
@@ -3094,8 +3101,8 @@ aria-labelledby="dropdownMenu1">
                                                     </div></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Late Drop / Add Classes</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i> Late Drop / Add Classes</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -3123,10 +3130,10 @@ aria-labelledby="dropdownMenu1">
                                                 <td><span class="label label-white">06/12/17 12:00am </span></td>
                                                 <td><div class="dropdown">
                                                         <div class="dropdown1">
-                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
-                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1"> <li class="disabled"><a href="#">Perform action now</a></li>
+                                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right"aria-labelledby="dropdownMenu1">
+                                                                <li class="disabled"><a href="#">Perform action now</a></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_scheduleaction">Reschedule date of action</a></li>
-                                                                
                                                                 <li role="separator" class="divider"></li>
                                                                 <li><a href="#" data-toggle="modal" data-target="#modal_deleteactionwarning">Delete this action</a></li>
                                                             </ul>
@@ -3146,7 +3153,7 @@ aria-labelledby="dropdownMenu1">
                                         <div class="col-xs-12  col-sm-3 section-controls"></div>
                                     </div>
                                     <div class="page-utilities">
-                                        <div class="page-utilities-item">
+                                        <div class="page-utilities-item hidden-xs">
                                             <div class="checkbox">
                                                 <label >
                                                     <input type="checkbox" id="showdetails3">
@@ -3161,7 +3168,11 @@ aria-labelledby="dropdownMenu1">
                                             </div>
                                         </div>
                                     </div>
-                                    <table class="table table-condensed table-actions table-hover tablesaw tablesaw-stack table-collection" data-tablesaw-mode="stack" id="">
+                                
+                                    
+                                      <table class="table table-hover table-condensed table-actions display tablesaw tablesaw-stack"  data-tablesaw-mode="stack" id="" style="width:100%">
+                                      
+                                      
                                         <thead>
                                             <tr>
                                                 <th scope="row">Task</th>
@@ -3174,8 +3185,8 @@ aria-labelledby="dropdownMenu1">
                                         </thead>
                                         <tbody>
                                             <tr class="declined">
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Explore Programs</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Explore Programs</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-change-name.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -3203,7 +3214,7 @@ aria-labelledby="dropdownMenu1">
                                                 <td > thrclark </td>
                                                 <td><span class="label label-white text-danger" > Declined </span></td>
                                                 <td><div class="dropdown" style="display:inline">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                             <li><a href="pub-taskmaint-edit.php">View/Edit</a></li>
                                                             <li role="separator" class="divider"></li>
@@ -3212,7 +3223,7 @@ aria-labelledby="dropdownMenu1">
                                                     </div>
                                                     
                                                     <!-- <div class="dropdown" style="display:inline">
-                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Details</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages">Read Notes</a></li>
@@ -3220,8 +3231,8 @@ aria-labelledby="dropdownMenu1">
                                             </div>--></td>
                                             </tr>
                                             <tr class="declined">
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Motor Vehicle Records Check</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Motor Vehicle Records Check</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-childcare-fees.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -3250,7 +3261,7 @@ aria-labelledby="dropdownMenu1">
                                                 <td > hesenthal </td>
                                                 <td><span class="label label-white text-danger" > Declined </span></td>
                                                 <td><div class="dropdown" style="display:inline">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                             <li><a href="pub-taskmaint-edit.php">View/Edit</a></li>
                                                             <li role="separator" class="divider"></li>
@@ -3259,7 +3270,7 @@ aria-labelledby="dropdownMenu1">
                                                     </div>
                                                     
                                                     <!-- <div class="dropdown" style="display:inline">
-                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Details</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages">Read Notes</a></li>
@@ -3267,8 +3278,8 @@ aria-labelledby="dropdownMenu1">
                                             </div>--></td>
                                             </tr>
                                             <tr class="declined">
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Waiver Request</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Waiver Request</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-registration.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -3298,7 +3309,7 @@ aria-labelledby="dropdownMenu1">
                                                 <td > seenyj </td>
                                                 <td><span class="label label-white text-danger" > Declined </span></td>
                                                 <td><div class="dropdown" style="display:inline">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                             <li><a href="pub-taskmaint-edit.php">View/Edit</a></li>
                                                             <li role="separator" class="divider"></li>
@@ -3307,7 +3318,7 @@ aria-labelledby="dropdownMenu1">
                                                     </div>
                                                     
                                                     <!-- <div class="dropdown" style="display:inline">
-                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Details</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages">Read Notes</a></li>
@@ -3315,8 +3326,8 @@ aria-labelledby="dropdownMenu1">
                                             </div>--></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Apple</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Apple</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-bt.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -3346,7 +3357,7 @@ aria-labelledby="dropdownMenu1">
                                                 <td > breckerm </td>
                                                 <td><span class="label label-white" > Pending Review </span></td>
                                                 <td><div class="dropdown" style="display:inline">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                             <li><a href="pub-taskmaint-approve.php" >Review submission</a></li>
                                                             <li role="separator" class="divider"></li>
@@ -3355,7 +3366,7 @@ aria-labelledby="dropdownMenu1">
                                                     </div>
                                                     
                                                     <!-- <div class="dropdown" style="display:inline">
-                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Details</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages">Read Notes</a></li>
@@ -3363,8 +3374,8 @@ aria-labelledby="dropdownMenu1">
                                             </div>--></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus 411 Information</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Campus 411 Information</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-bill-pay.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -3394,7 +3405,7 @@ aria-labelledby="dropdownMenu1">
                                                 <td > breckerm </td>
                                                 <td><span class="label label-white" > Pending Review </span></td>
                                                 <td><div class="dropdown" style="display:inline">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                             <li><a href="pub-taskmaint-approve.php" >Review submission</a></li>
                                                             <li role="separator" class="divider"></li>
@@ -3403,7 +3414,7 @@ aria-labelledby="dropdownMenu1">
                                                     </div>
                                                     
                                                     <!-- <div class="dropdown" style="display:inline">
-                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Details</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages">Read Notes</a></li>
@@ -3411,8 +3422,8 @@ aria-labelledby="dropdownMenu1">
                                             </div>--></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Campus Tour</div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Campus Tour</div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-guest-accounts.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -3442,7 +3453,7 @@ aria-labelledby="dropdownMenu1">
                                                 <td > breckerm </td>
                                                 <td><span class="label label-white" > Pending Review </span></td>
                                                 <td><div class="dropdown" style="display:inline">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                             <li><a href="pub-taskmaint-approve.php" >Review submission</a></li>
                                                             <li role="separator" class="divider"></li>
@@ -3451,7 +3462,7 @@ aria-labelledby="dropdownMenu1">
                                                     </div>
                                                     
                                                     <!-- <div class="dropdown" style="display:inline">
-                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Details</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages">Read Notes</a></li>
@@ -3459,8 +3470,8 @@ aria-labelledby="dropdownMenu1">
                                             </div>--></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> Asset Retirement Global <span aria-hidden="false" class="small text-muted"> (KFS)</span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i> Asset Retirement Global <span aria-hidden="false" class="small text-muted"> (KFS)</span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -3488,7 +3499,7 @@ aria-labelledby="dropdownMenu1">
                                                 <td > tcain </td>
                                                 <td><span class="label label-white" > Pending Review </span></td>
                                                 <td><div class="dropdown" style="display:inline">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                             <li><a href="pub-taskmaint-approve.php" >Review submission</a></li>
                                                             <li role="separator" class="divider"></li>
@@ -3497,7 +3508,7 @@ aria-labelledby="dropdownMenu1">
                                                     </div>
                                                     
                                                     <!-- <div class="dropdown" style="display:inline">
-                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Details</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages">Read Notes</a></li>
@@ -3505,8 +3516,8 @@ aria-labelledby="dropdownMenu1">
                                             </div>--></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Capital Asset Management<span aria-hidden="false" class="small text-muted"> (FR)</span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Capital Asset Management<span aria-hidden="false" class="small text-muted"> (FR)</span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-academic-calendar.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -3534,7 +3545,7 @@ aria-labelledby="dropdownMenu1">
                                                 <td > tozogar </td>
                                                 <td><span class="label label-white" > Pending Review </span></td>
                                                 <td><div class="dropdown" style="display:inline">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                             <li><a href="pub-taskmaint-approve.php" >Review submission</a></li>
                                                             <li role="separator" class="divider"></li>
@@ -3543,7 +3554,7 @@ aria-labelledby="dropdownMenu1">
                                                     </div>
                                                     
                                                     <!-- <div class="dropdown" style="display:inline">
-                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Details</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages">Read Notes</a></li>
@@ -3551,8 +3562,8 @@ aria-labelledby="dropdownMenu1">
                                             </div>--></td>
                                             </tr>
                                             <tr >
-                                                <td><div class="task-details-triggerview"><i class="icon-angle-right"></i> IU Peer Coaches <span aria-hidden="false" class="small text-muted">(University Division)</span></div>
-                                                    <div class="taskmeta">
+                                                <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i> IU Peer Coaches <span aria-hidden="false" class="small text-muted">(University Division)</span></div>
+                                                    <div class="taskmeta hidden-xs">
                                                         <div class="task-icon"><img src="../img/task-icons-new/icon-iuath.png" alt=""/></div>
                                                         <table class="taskmeta-table">
                                                             <tbody>
@@ -3580,7 +3591,7 @@ aria-labelledby="dropdownMenu1">
                                                 <td > adobiega </td>
                                                 <td><span class="label label-white" > Pending Review </span></td>
                                                 <td><div class="dropdown" style="display:inline">
-                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                             <li><a href="pub-taskmaint-approve.php" >Review submission</a></li>
                                                             <li role="separator" class="divider"></li>
@@ -3589,7 +3600,7 @@ aria-labelledby="dropdownMenu1">
                                                     </div>
                                                     
                                                     <!-- <div class="dropdown" style="display:inline">
-                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
+                                                <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <li><a href="#" data-toggle="modal" data-target="#modal_compare" >View Details</a></li>
                                                     <li><a href="#" data-toggle="modal" data-target="#standardmodal_messages">Read Notes</a></li>
@@ -3603,25 +3614,25 @@ aria-labelledby="dropdownMenu1">
                             <div role="tabpanel" class="tab-pane" id="tasks_featured" style=" display:">
                                 <div class="row section-head">
                                     <div class="col-xs-12 col-sm-9 section-header">
-                                        <h3 class="h4">Current &amp; Pending Featured Tasks</h3>
+                                        <h3 class="h4">Current Featured Tasks</h3>
                                     </div>
                                     <div class="col-xs-12  col-sm-3 section-controls"><a href="pub-taskmaint-edit.php" class="btn btn-xs btn-default"><i class="icon-plus-2"></i>Featured Task</a></div>
                                 </div>
                                 <table class="table table-condensed table-borderewwwd table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack" id="">
                                     <thead>
                                         <tr>
+                                            <th>Sort</th>
                                             <th>Task</th>
                                             <th>Type</th>
-                                            <th>Display Order</th>
                                             <th>Featured Schedule</th>
-                                            <th><span class="sr-only">Expiration</span></th>
-                                            <th>&nbsp;</th>
+                                            <th><span class="visible-xs">Actions</span></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Alcohol Sanctions</div>
-                                                <div class="taskmeta">
+                                            <td style="cursor:move"><i class="icon-menu"></i></td>
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Alcohol Sanctions</div>
+                                                <div class="taskmeta hidden-xs">
                                                     <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
@@ -3645,15 +3656,14 @@ aria-labelledby="dropdownMenu1">
                                                     </table>
                                                 </div></td>
                                             <td >Task</td>
-                                            <td>1</td>
                                             <td>End: 07/03/2017 5:00am</td>
-                                            <td>&nbsp;</td>
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Classifieds</div>
-                                                <div class="taskmeta">
-                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                            <td style="cursor:move"><i class="icon-menu"></i></td>
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Classifieds</div>
+                                                <div class="taskmeta hidden-xs">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-classifieds.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
                                                             <tr>
@@ -3676,15 +3686,14 @@ aria-labelledby="dropdownMenu1">
                                                     </table>
                                                 </div></td>
                                             <td >Task</td>
-                                            <td>2</td>
                                             <td>End: 07/03/2017 5:00am</td>
-                                            <td>&nbsp;</td>
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
-                                        <tr class="warning">
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Orientation</div>
-                                                <div class="taskmeta">
-                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                        <tr>
+                                            <td style="cursor:move"><i class="icon-menu"></i></td>
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Orientation</div>
+                                                <div class="taskmeta hidden-xs">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-emergency-contact.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
                                                             <tr>
@@ -3707,15 +3716,34 @@ aria-labelledby="dropdownMenu1">
                                                     </table>
                                                 </div></td>
                                             <td >Task Center</td>
-                                            <td>3</td>
-                                            <td>End: 05/03/2017 5:00am </td>
-                                            <td><span class="label label-warning">Ending soon</span></td>
+                                            <td>End: 05/03/2017 5:00am  <span class="label label-white text-danger hidden-xs"> Ending soon </span> </td>
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
+                                    </tbody>
+                                </table>
+                                
+                                
+                                  <div class="row section-head">
+                                    <div class="col-xs-12 col-sm-9 section-header">
+                                        <h3 class="h4">Pending Featured Tasks</h3>
+                                    </div>
+                                    <div class="col-xs-12  col-sm-3 section-controls"></div>
+                                </div>
+                                
+                                                                <table class="table table-condensed table-borderewwwd table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack" id="">
+                                    <thead>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>IU Anyware</div>
-                                                <div class="taskmeta">
-                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                            <th>Task</th>
+                                            <th>Type</th>
+                                            <th>Featured Schedule</th>
+                                            <th><span class="visible-xs">Actions</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>IU Anyware</div>
+                                                <div class="taskmeta hidden-xs">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/SD-012.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
                                                             <tr>
@@ -3738,16 +3766,14 @@ aria-labelledby="dropdownMenu1">
                                                     </table>
                                                 </div></td>
                                             <td >Task</td>
-                                            <td>&nbsp;</td>
                                             <td>Begin: 06/03/2017 5:00am<br>
                                                 End: 07/03/2017 5:00am</td>
-                                            <td>&nbsp;</td>
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Open Enrollment</div>
-                                                <div class="taskmeta">
-                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Open Enrollment</div>
+                                                <div class="taskmeta hidden-xs">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-campus-events.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
                                                             <tr>
@@ -3770,14 +3796,17 @@ aria-labelledby="dropdownMenu1">
                                                     </table>
                                                 </div></td>
                                             <td >Task</td>
-                                            <td>&nbsp;</td>
                                             <td>Begin: 06/03/2017 5:00am<br>
                                                 End: 07/03/2017 5:00am</td>
-                                            <td>&nbsp;</td>
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
+
+
+
+
+
                                 <div class="row section-head">
                                     <div class="col-xs-12 col-sm-9 section-header">
                                         <h3 class="h4">Previously Featured Tasks</h3>
@@ -3794,9 +3823,9 @@ aria-labelledby="dropdownMenu1">
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>3rd Party User or Parent Access </div>
-                                                <div class="taskmeta">
-                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>3rd Party User or Parent Access </div>
+                                                <div class="taskmeta hidden-xs">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-parking-citation.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
                                                             <tr>
@@ -3822,9 +3851,9 @@ aria-labelledby="dropdownMenu1">
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Report IU Secure Outages </div>
-                                                <div class="taskmeta">
-                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Report IU Secure Outages </div>
+                                                <div class="taskmeta hidden-xs">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/SD-017.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
                                                             <tr>
@@ -3850,9 +3879,9 @@ aria-labelledby="dropdownMenu1">
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Status.IU </div>
-                                                <div class="taskmeta">
-                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Status.IU </div>
+                                                <div class="taskmeta hidden-xs">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-change-name.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
                                                             <tr>
@@ -3878,9 +3907,9 @@ aria-labelledby="dropdownMenu1">
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>My Class Schedule </div>
-                                                <div class="taskmeta">
-                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>My Class Schedule </div>
+                                                <div class="taskmeta hidden-xs">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-childcare-fees.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
                                                             <tr>
@@ -3906,9 +3935,9 @@ aria-labelledby="dropdownMenu1">
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Imail <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(Email)</span></div>
-                                                <div class="taskmeta">
-                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Imail <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(Email)</span></div>
+                                                <div class="taskmeta hidden-xs">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/SD-016.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
                                                             <tr>
@@ -3934,9 +3963,9 @@ aria-labelledby="dropdownMenu1">
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Umail <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(Email)</span></div>
-                                                <div class="taskmeta">
-                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Umail <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(Email)</span></div>
+                                                <div class="taskmeta hidden-xs">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/SD-005.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
                                                             <tr>
@@ -3962,9 +3991,9 @@ aria-labelledby="dropdownMenu1">
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Textbook Orders (Student) </div>
-                                                <div class="taskmeta">
-                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Textbook Orders (Student) </div>
+                                                <div class="taskmeta hidden-xs">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/SD-005.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
                                                             <tr>
@@ -3990,9 +4019,9 @@ aria-labelledby="dropdownMenu1">
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Print quota <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(IU Print)</span></div>
-                                                <div class="taskmeta">
-                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Print quota <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(IU Print)</span></div>
+                                                <div class="taskmeta hidden-xs">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/SD-017.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
                                                             <tr>
@@ -4018,9 +4047,9 @@ aria-labelledby="dropdownMenu1">
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Canvas </div>
-                                                <div class="taskmeta">
-                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Canvas </div>
+                                                <div class="taskmeta hidden-xs">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/SD-018.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
                                                             <tr>
@@ -4046,9 +4075,9 @@ aria-labelledby="dropdownMenu1">
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Talk Nerdy to Me </div>
-                                                <div class="taskmeta">
-                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Talk Nerdy to Me </div>
+                                                <div class="taskmeta hidden-xs">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-account-creation.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
                                                             <tr>
@@ -4074,9 +4103,9 @@ aria-labelledby="dropdownMenu1">
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>IU Knowledge Base <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(KB)</span></div>
-                                                <div class="taskmeta">
-                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>IU Knowledge Base <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(KB)</span></div>
+                                                <div class="taskmeta hidden-xs">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/SD-007.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
                                                             <tr>
@@ -4102,9 +4131,9 @@ aria-labelledby="dropdownMenu1">
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Student Center <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(SIS)</span></div>
-                                                <div class="taskmeta">
-                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Student Center <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(SIS)</span></div>
+                                                <div class="taskmeta hidden-xs">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-bill-pay.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
                                                             <tr>
@@ -4130,9 +4159,9 @@ aria-labelledby="dropdownMenu1">
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Cloud Storage </div>
-                                                <div class="taskmeta">
-                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Cloud Storage </div>
+                                                <div class="taskmeta hidden-xs">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-box.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
                                                             <tr>
@@ -4158,9 +4187,9 @@ aria-labelledby="dropdownMenu1">
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Course History </div>
-                                                <div class="taskmeta">
-                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Course History </div>
+                                                <div class="taskmeta hidden-xs">
+                                                    <div class="task-icon"><img src="../img/task-icons-new/icon-academic-calendar.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
                                                             <tr>
@@ -4186,8 +4215,8 @@ aria-labelledby="dropdownMenu1">
                                             <td><a href="#" class="btn btn-xs btn-default">Edit</a> <a href="#" class="btn btn-xs btn-default">Remove From List</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>1095-C Statement </div>
-                                                <div class="taskmeta">
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>1095-C Statement </div>
+                                                <div class="taskmeta hidden-xs">
                                                     <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
@@ -4216,7 +4245,7 @@ aria-labelledby="dropdownMenu1">
                                     </tbody>
                                 </table>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="tasks_deleted" style="">
+                            <div role="tabpanel" class="tab-pane" id="tasks_deleted" style=" display:;">
                                 <div class="row section-head">
                                     <div class="col-xs-12 col-sm-9 section-header">
                                         <h3 class="h4">Deleted Tasks</h3>
@@ -4227,13 +4256,13 @@ aria-labelledby="dropdownMenu1">
                                     <thead>
                                         <tr>
                                             <th>Task</th>
-                                            <th>&nbsp;</th>
+                                            <th><span class="visible-xs">Actions</span></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>3rd Party User or Parent Access </div>
-                                                <div class="taskmeta">
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>3rd Party User or Parent Access </div>
+                                                <div class="taskmeta hidden-xs">
                                                     <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
@@ -4259,8 +4288,8 @@ aria-labelledby="dropdownMenu1">
                                             <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Report IU Secure Outages </div>
-                                                <div class="taskmeta">
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Report IU Secure Outages </div>
+                                                <div class="taskmeta hidden-xs">
                                                     <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
@@ -4286,8 +4315,8 @@ aria-labelledby="dropdownMenu1">
                                             <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Status.IU </div>
-                                                <div class="taskmeta">
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Status.IU </div>
+                                                <div class="taskmeta hidden-xs">
                                                     <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
@@ -4313,8 +4342,8 @@ aria-labelledby="dropdownMenu1">
                                             <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>My Class Schedule </div>
-                                                <div class="taskmeta">
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>My Class Schedule </div>
+                                                <div class="taskmeta hidden-xs">
                                                     <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
@@ -4340,8 +4369,8 @@ aria-labelledby="dropdownMenu1">
                                             <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Imail <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(Email)</span></div>
-                                                <div class="taskmeta">
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Imail <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(Email)</span></div>
+                                                <div class="taskmeta hidden-xs">
                                                     <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
@@ -4367,8 +4396,8 @@ aria-labelledby="dropdownMenu1">
                                             <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Umail <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(Email)</span></div>
-                                                <div class="taskmeta">
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Umail <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(Email)</span></div>
+                                                <div class="taskmeta hidden-xs">
                                                     <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
@@ -4394,8 +4423,8 @@ aria-labelledby="dropdownMenu1">
                                             <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Textbook Orders (Student) </div>
-                                                <div class="taskmeta">
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Textbook Orders (Student) </div>
+                                                <div class="taskmeta hidden-xs">
                                                     <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
@@ -4421,8 +4450,8 @@ aria-labelledby="dropdownMenu1">
                                             <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Print quota <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(IU Print)</span></div>
-                                                <div class="taskmeta">
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Print quota <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(IU Print)</span></div>
+                                                <div class="taskmeta hidden-xs">
                                                     <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
@@ -4448,8 +4477,8 @@ aria-labelledby="dropdownMenu1">
                                             <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Canvas </div>
-                                                <div class="taskmeta">
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Canvas </div>
+                                                <div class="taskmeta hidden-xs">
                                                     <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
@@ -4475,8 +4504,8 @@ aria-labelledby="dropdownMenu1">
                                             <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Talk Nerdy to Me </div>
-                                                <div class="taskmeta">
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Talk Nerdy to Me </div>
+                                                <div class="taskmeta hidden-xs">
                                                     <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
@@ -4502,8 +4531,8 @@ aria-labelledby="dropdownMenu1">
                                             <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>IU Knowledge Base <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(KB)</span></div>
-                                                <div class="taskmeta">
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>IU Knowledge Base <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(KB)</span></div>
+                                                <div class="taskmeta hidden-xs">
                                                     <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
@@ -4529,8 +4558,8 @@ aria-labelledby="dropdownMenu1">
                                             <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Student Center <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(SIS)</span></div>
-                                                <div class="taskmeta">
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Student Center <span ng-show="!!featuredTask.task.applicationName" aria-hidden="false">(SIS)</span></div>
+                                                <div class="taskmeta hidden-xs">
                                                     <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
@@ -4556,8 +4585,8 @@ aria-labelledby="dropdownMenu1">
                                             <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Cloud Storage </div>
-                                                <div class="taskmeta">
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Cloud Storage </div>
+                                                <div class="taskmeta hidden-xs">
                                                     <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
@@ -4583,8 +4612,8 @@ aria-labelledby="dropdownMenu1">
                                             <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Course History </div>
-                                                <div class="taskmeta">
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Course History </div>
+                                                <div class="taskmeta hidden-xs">
                                                     <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>
@@ -4610,8 +4639,8 @@ aria-labelledby="dropdownMenu1">
                                             <td ><a href="#" class="btn btn-xs btn-default">Restore</a> <a href="#" class="btn btn-xs btn-default">Permanently Delete</a></td>
                                         </tr>
                                         <tr>
-                                            <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>1095-C Statement </div>
-                                                <div class="taskmeta">
+                                            <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>1095-C Statement </div>
+                                                <div class="taskmeta hidden-xs">
                                                     <div class="task-icon"><img src="../img/task-icons-new/icon-address.png" alt=""/></div>
                                                     <table class="taskmeta-table">
                                                         <tbody>

@@ -8,14 +8,27 @@
 	display: block;
 	height: 40px;
 }
-.table-actions td:last-child {
-	width: 1%;
-	white-space: nowrap;
-	.text-right;
-}
+
 .table-actions td:last-child .dropdown .dropdown-toggle {
 	padding-left: 10px;
 	padding-right: 10px;
 }
 
+
+
+.table-actions td:last-child {
+	width: inherit;
+	white-space: nowrap;
+	text-align: left;
+}
+
+
+@media (min-width: @screen-sm-min) {
+	.table-actions td:last-child {
+		width: 1%;
+		white-space: nowrap;
+		.text-right;
+	}
+
+}
 

@@ -15,7 +15,7 @@
 </style>
 <nav>
     <div class="nav-side-menu">
-        <div class="toggle-btn toggle-menu" data-toggle="collapse" data-target="#menu-content" style="">menu <i class="icon-down-open-big"></i></div>
+        <div class="toggle-btn toggle-menu" data-toggle="collapse" data-target="#menu-content" style=""><span class="sr-only">menu</span> <i class="icon-menu"></i></div>
         <div class="menu-list">
             <ul id="menu-content" class="menu-content">
                 <li  data-toggle="collapse" data-target="#nav-publishing" class="collapsed"><a href="#">Tasks <i class="icon-down-open-big"></i></a>

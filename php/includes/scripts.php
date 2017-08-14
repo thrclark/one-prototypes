@@ -36,6 +36,13 @@
 <script type="text/javascript" src="../bower_components/cropperjs/dist/cropper.min.js"></script>
 
 
+<script src="../js/tablesaw.jquery.js"></script>
+<script src="../js/tablesaw-init.js"></script>
+
+
+
+
+
 
 <script>localStorage.clear(); </script>
 <script>
