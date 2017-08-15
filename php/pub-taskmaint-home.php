@@ -92,77 +92,11 @@ $page_title = 'pub-taskmaint';
 }
 </style>
 <style type="text/css">
-.label1 {
-	border-radius: 10px;
-	background-color: #fff;
-	color: #555;
-	border: solid 1px #cccccc;
-}
-.label1 {
-	color: #a94442;
-	border: solid 1px #a94442;
-}
-.label.label-white .icon-circle {
-	font-size: 8px;
-	color: #2879ba;
-}
+
+
 </style>
 <style>
-/* Tabs panel */
-.tabbable-panel {
-}
-/* Default mode */
-.tabbable-line > .nav-tabs {
-	border: none;
-	margin: 0px;
-}
-.tabbable-line > .nav-tabs > li {
-	margin-right: 2px;
-}
-.tabbable-line > .nav-tabs > li > a {
-	border: 0;
-	margin-right: 0;
-	color: #737373;
-}
-.tabbable-line > .nav-tabs > li > a > i {
-	color: #a6a6a6;
-}
-.tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover {
-	border-bottom: 4px solid #eeeeee;
-}
-.tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
-	border: 0;
-	background: none !important;
-	color: #333333;
-}
-.tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i {
-	color: #a6a6a6;
-}
-.tabbable-line > .nav-tabs > li.open .dropdown-menu, .tabbable-line > .nav-tabs > li:hover .dropdown-menu {
-	margin-top: 0px;
-}
-.tabbable-line > .nav-tabs > li.active {
-	border-bottom: 4px solid #cccccc;
-	position: relative;
-}
-.tabbable-line > .nav-tabs > li.active > a {
-	border: 0;
-	color: #333333;
-}
-.tabbable-line > .nav-tabs > li.active > a > i {
-	color: #404040;
-}
-.tabbable-line > .tab-content {
-	margin-top: -3px;
-	background-color: #fff;
-	border: 0;
-	border-top: 1px solid #eee;
-	padding-bottom: 15px;
-	padding-top: 0px;
-}
-.portlet .tabbable-line > .tab-content {
-	padding-bottom: 0;
-}
+
 .dataTable i {
 	font-size: 12px;
 	color: #999;

@@ -187,22 +187,23 @@ $page_title = 'pub-taskcentermaint';
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-12  col-sm-3 text-right"> <a href="pub-taskcentermaint-new.php" class="btn btn-xs btn-default pull-right"><i class="icon-plus-2"></i>New Task Center</a> </div>
+                            <div class="col-sm-3 section-controls"> <a href="pub-taskcentermaint-new.php" class="btn btn-xs btn-default"><i class="icon-plus-2"></i>New Task Center</a></div>
                         </div>
                         <section>
                             <div class="row section-head">
                                 <div class="col-sm-8"> </div>
                                 <div class="col-sm-4"> </div>
                             </div>
-                            <div class="page-utilities">
-                                <div class="page-utilities-item" style="padding-top:11px">
+                            <div class="page-utilities hidden-xs">
+                                <div class="page-utilities-item hidden-xs">
                                     <div class="checkbox">
-                                        <label  style="white-space:nowrap">
+                                        <label>
                                             <input type="checkbox" id="showdetails1">
                                             Detail View </label>
                                     </div>
                                 </div>
-                                <div class="page-utilities-item">
+                                
+                                <!-- <div class="page-utilities-item">
                                     <div class="input-group input-group-sm col-xs-4 pull-right" id="adv-search">
                                         <input type="text" class="form-control" placeholder="Filter by Keyword" />
                                         <div class="input-group-btn">
@@ -211,21 +212,22 @@ $page_title = 'pub-taskcentermaint';
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>--> 
+                                
                             </div>
-                            <table class="table table-hover table-condensed display table-actions" id="table1">
+                            <table class="table table-hover table-condensed table-actions display tablesaw tablesaw-stack"  data-tablesaw-mode="stack" id="table1" style="width:100%">
                                 <thead>
                                     <tr>
-                                        <th>Title <span class="small text-muted">(Application)</span></th>
+                                        <th>Title <span class="small text-muted hidden-xs">(Application)</span></th>
                                         <th>Campus</th>
                                         <th>Status</th>
-                                        <th><span class="sr-only">Actions</span></th>
+                                        <th><span class="visible-xs">Actions</span></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>IUB Orientation</div>
-                                            <div class="taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>IUB Orientation</div>
+                                            <div class="taskmeta hidden-xs">
                                                 <table class="taskmeta-table">
                                                     <tbody>
                                                         <tr>
@@ -255,7 +257,7 @@ $page_title = 'pub-taskcentermaint';
                                         <td><span class="label label-white">Live</span></td>
                                         <td><div class="dropdown">
                                                 <div class="dropdown1">
-                                                    <button class="btn btn-default btn-xs dropdown-toggle" type="button"id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true"><span class="caret"></span></button>
+                                                    <button class="btn btn-default btn-xs dropdown-toggle" type="button"id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                         <li><a href="pub-taskmaint-edit.php">Edit Task Center</a></li>
                                                         <li><a href="#">Feature</a></li>
@@ -266,8 +268,8 @@ $page_title = 'pub-taskcentermaint';
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Employee Center</div>
-                                            <div class="taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Employee Center</div>
+                                            <div class="taskmeta hidden-xs">
                                                 <table class="taskmeta-table">
                                                     <tbody>
                                                         <tr>
@@ -297,7 +299,7 @@ $page_title = 'pub-taskcentermaint';
                                         <td><span class="label label-white">Live</span></td>
                                         <td><div class="dropdown">
                                                 <div class="dropdown1">
-                                                    <button class="btn btn-default btn-xs dropdown-toggle" type="button"id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true"><span class="caret"></span></button>
+                                                    <button class="btn btn-default btn-xs dropdown-toggle" type="button"id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                         <li><a href="pub-taskmaint-edit.php">Edit Task Center</a></li>
                                                         <li><a href="#">Feature</a></li>
@@ -308,8 +310,8 @@ $page_title = 'pub-taskcentermaint';
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>University Travel</div>
-                                            <div class="taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>University Travel</div>
+                                            <div class="taskmeta hidden-xs">
                                                 <table class="taskmeta-table">
                                                     <tbody>
                                                         <tr>
@@ -339,7 +341,7 @@ $page_title = 'pub-taskcentermaint';
                                         <td><span class="label label-white">Live</span></td>
                                         <td><div class="dropdown">
                                                 <div class="dropdown1">
-                                                    <button class="btn btn-default btn-xs dropdown-toggle" type="button"id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true"><span class="caret"></span></button>
+                                                    <button class="btn btn-default btn-xs dropdown-toggle" type="button"id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                         <li><a href="pub-taskmaint-edit.php">Edit Task Center</a></li>
                                                         <li><a href="#">Feature</a></li>
@@ -350,8 +352,8 @@ $page_title = 'pub-taskcentermaint';
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Purchasing</div>
-                                            <div class="taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Purchasing</div>
+                                            <div class="taskmeta hidden-xs">
                                                 <table class="taskmeta-table">
                                                     <tbody>
                                                         <tr>
@@ -381,7 +383,7 @@ $page_title = 'pub-taskcentermaint';
                                         <td><span class="label label-white">Inactive</span></td>
                                         <td><div class="dropdown">
                                                 <div class="dropdown1">
-                                                    <button class="btn btn-default btn-xs dropdown-toggle" type="button"id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true"><span class="caret"></span></button>
+                                                    <button class="btn btn-default btn-xs dropdown-toggle" type="button"id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                         <li><a href="pub-taskmaint-edit.php">Edit Task Center</a></li>
                                                         <li><a href="#">Feature</a></li>
@@ -392,8 +394,8 @@ $page_title = 'pub-taskcentermaint';
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>IUK Orientation</div>
-                                            <div class="taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>IUK Orientation</div>
+                                            <div class="taskmeta hidden-xs">
                                                 <table class="taskmeta-table">
                                                     <tbody>
                                                         <tr>
@@ -423,7 +425,7 @@ $page_title = 'pub-taskcentermaint';
                                         <td><span class="label label-white">Live</span></td>
                                         <td><div class="dropdown">
                                                 <div class="dropdown1">
-                                                    <button class="btn btn-default btn-xs dropdown-toggle" type="button"id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true"><span class="caret"></span></button>
+                                                    <button class="btn btn-default btn-xs dropdown-toggle" type="button"id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                         <li><a href="pub-taskmaint-edit.php">Edit Task Center</a></li>
                                                         <li><a href="#">Feature</a></li>
@@ -434,8 +436,8 @@ $page_title = 'pub-taskcentermaint';
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Hospitality Services</div>
-                                            <div class="taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Hospitality Services</div>
+                                            <div class="taskmeta hidden-xs">
                                                 <table class="taskmeta-table">
                                                     <tbody>
                                                         <tr>
@@ -465,7 +467,7 @@ $page_title = 'pub-taskcentermaint';
                                         <td><span class="label label-white">Inactive</span></td>
                                         <td><div class="dropdown">
                                                 <div class="dropdown1">
-                                                    <button class="btn btn-default btn-xs dropdown-toggle" type="button"id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true"><span class="caret"></span></button>
+                                                    <button class="btn btn-default btn-xs dropdown-toggle" type="button"id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                         <li><a href="pub-taskmaint-edit.php">Edit Task Center</a></li>
                                                         <li><a href="#">Feature</a></li>
@@ -476,8 +478,8 @@ $page_title = 'pub-taskcentermaint';
                                             </div></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="task-details-triggerview"><i class="icon-angle-right"></i>Parking</div>
-                                            <div class="taskmeta">
+                                        <td><div class="task-details-triggerview"><i class="icon-angle-right hidden-xs"></i>Parking</div>
+                                            <div class="taskmeta hidden-xs">
                                                 <table class="taskmeta-table">
                                                     <tbody>
                                                         <tr>
@@ -507,7 +509,7 @@ $page_title = 'pub-taskcentermaint';
                                         <td><span class="label label-white">Live</span></td>
                                         <td><div class="dropdown">
                                                 <div class="dropdown1">
-                                                    <button class="btn btn-default btn-xs dropdown-toggle" type="button"id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true"><span class="caret"></span></button>
+                                                    <button class="btn btn-default btn-xs dropdown-toggle" type="button"id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"aria-expanded="true"><span class="visible-xs-inline">Select</span> <span class="caret"></span></button>
                                                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                         <li><a href="pub-taskmaint-edit.php">Edit Task Center</a></li>
                                                         <li><a href="#">Feature</a></li>
