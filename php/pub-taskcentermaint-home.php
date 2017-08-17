@@ -183,7 +183,7 @@ $page_title = 'pub-taskcentermaint';
                             <div class="col-xs-12 col-sm-9 section-header">
                                 <div class="taskmaint-preview">
                                     <div class="taskmaint-preview-content">
-                                        <h2 class="taskmaint-preview-content-title">Maintain Task Centers</h2>
+                                        <h2 class="taskmaint-preview-content-title"> Task Centers</h2>
                                     </div>
                                 </div>
                             </div>

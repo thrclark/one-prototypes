@@ -121,7 +121,7 @@ $page_title = 'pub-announcements';
                             <div class="col-xs-12 section-header">
                                 <div class="taskmaint-preview">
                                     <div class="taskmaint-preview-content">
-                                        <h2 class="taskmaint-preview-content-title">Maintain Announcements</h2>
+                                        <h2 class="taskmaint-preview-content-title"> Announcements</h2>
                                     </div>
                                 </div>
                             </div>
