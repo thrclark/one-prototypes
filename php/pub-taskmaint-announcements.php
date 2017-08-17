@@ -137,7 +137,7 @@ $page_title = 'pub-announcements';
                                         <div class="col-xs-9 section-header">
                                             <h3 class="h4">All Announcements</h3>
                                         </div>
-                                        <div class="col-xs-3 section-controls"><a href="pub-taskmaint-new.php" class="btn btn-xs btn-default pull-right"><i class="icon-plus-2"></i>New</a></div>
+                                        <div class="col-xs-3 section-controls"><a href="#" class="btn btn-xs btn-default pull-right"><i class="icon-plus-2"></i>New</a></div>
                                     </div>
                                     <div class="page-utilities">
                                         <div class="page-utilities-item" style="padding-top:12px">
