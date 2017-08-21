@@ -196,6 +196,7 @@ $page_title = 'pub-taskcontacts';
                             </div>
                             <div class="col-xs-12  col-sm-3 text-right"> <a href="pub-taskcontacts-new.php" class="btn btn-xs btn-default pull-right"><i class="icon-plus-2"></i>New Contact</a> </div>
                         </div>
+                        <hr>
                         <div class="page-utilities">
                             <div class="page-utilities-item" style="padding-top:11px">
                                 <div class="checkbox">

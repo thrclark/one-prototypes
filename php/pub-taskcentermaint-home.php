@@ -188,7 +188,7 @@ $page_title = 'pub-taskcentermaint';
                                 </div>
                             </div>
                             <div class="col-sm-3 section-controls"> <a href="pub-taskcentermaint-new.php" class="btn btn-xs btn-default"><i class="icon-plus-2"></i>New Task Center</a></div>
-                        </div>
+                        </div><hr>
                         <section>
                             <div class="row section-head">
                                 <div class="col-sm-8"> </div>
