@@ -3552,7 +3552,7 @@ aria-labelledby="dropdownMenu1">
                                     </div>
                                     <div class="col-xs-12  col-sm-3 section-controls"><a href="pub-taskmaint-edit.php" class="btn btn-xs btn-default"><i class="icon-plus-2"></i>Featured Task</a></div>
                                 </div>
-                                <table class="table table-condensed table-borderewwwd table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack" id="">
+                                <table class="table table-condensed  table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack" id="">
                                     <thead>
                                         <tr>
                                             <th>Sort</th>
@@ -3664,7 +3664,7 @@ aria-labelledby="dropdownMenu1">
                                     <div class="col-xs-12  col-sm-3 section-controls"></div>
                                 </div>
                                 
-                                                                <table class="table table-condensed table-borderewwwd table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack" id="">
+                                                                <table class="table table-condensed  table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack" id="">
                                     <thead>
                                         <tr>
                                             <th>Task</th>
@@ -3747,7 +3747,7 @@ aria-labelledby="dropdownMenu1">
                                     </div>
                                     <div class="col-xs-12  col-sm-3 section-controls"></div>
                                 </div>
-                                <table class="table table-condensed table-borderewwwd table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack" id="">
+                                <table class="table table-condensed  table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack" id="">
                                     <thead>
                                         <tr>
                                             <th>Task</th>
@@ -4186,7 +4186,7 @@ aria-labelledby="dropdownMenu1">
                                     </div>
                                     <div class="col-xs-12  col-sm-3 section-controls"></div>
                                 </div>
-                                <table class="table table-condensed table-borderewwwd table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack" id="">
+                                <table class="table table-condensed  table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack" id="">
                                     <thead>
                                         <tr>
                                             <th>Task</th>

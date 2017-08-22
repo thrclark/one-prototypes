@@ -28,8 +28,8 @@
                 </li>
                 <li data-toggle="collapse" data-target="#nav-settings" class="collapsed"><a href="#">Filter Settings<i class="icon-down-open-big"></i></a>
                     <ul <?php if ($section == 'settings') {echo 'class="sub-menu"';} else {echo 'class="sub-menu collapse"';} ?>id="nav-settings">
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Tags</a></li>
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Categories</a></li>
+                        <li <?php if ($page_title == 'pub-filtersettings-tags') { echo 'class="active"'; } ?>><a href="pub-filtersettings-tags.php">Tags</a></li>
+                        <li <?php if ($page_title == 'pub-filtersettings-categories') { echo 'class="active"'; } ?>><a href="pub-filtersettings-categories.php">Categories</a></li>
                         <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Roles</a></li>
                     </ul>
                 </li>

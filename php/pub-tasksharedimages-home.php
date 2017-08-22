@@ -207,7 +207,11 @@ table.table-hover.table-condensed.table-actions td:first-child img {
                         </div>
                         <hr>
                         <section>
-                            <table class="table table-hover table-condensed table-actions" id="">
+                            <table class="table table-hover table-condensed table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack" id="" style="width:100%">
+                            
+                           
+                            
+                            
                                 <thead>
                                     <tr>
                                         <th>Preview</th>
