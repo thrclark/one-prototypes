@@ -23,7 +23,7 @@
                         <li <?php if ($page_title == 'pub-announcements') { echo 'class="active"'; } ?>><a href="pub-taskmaint-announcements.php">Announcements</a></li>
                         <li <?php if ($page_title == 'pub-tasksupport') { echo 'class="active"'; } ?>><a href="pub-taskmaint-support.php">Task Support</a></li>
                         <li <?php if ($page_title == 'pub-taskcontacts') { echo 'class="active"'; } ?>><a href="pub-taskcontacts-home.php">Task Contacts</a></li>
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Shared Task Images</a></li>
+                        <li <?php if ($page_title == 'pub-taskimages') { echo 'class="active"'; } ?>><a href="pub-tasksharedimages-home.php">Shared Task Images</a></li>
                     </ul>
                 </li>
                 <li data-toggle="collapse" data-target="#nav-settings" class="collapsed"><a href="#">Filter Settings<i class="icon-down-open-big"></i></a>
