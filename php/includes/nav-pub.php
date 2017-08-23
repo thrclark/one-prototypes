@@ -35,11 +35,9 @@
                 </li>
                 <li data-toggle="collapse" data-target="#nav-data" class="collapsed"><a href="#">Data Settings<i class="icon-down-open-big"></i></a>
                     <ul <?php if ($section == 'data') {echo 'class="sub-menu"';} else {echo 'class="sub-menu collapse"';} ?>id="nav-data">
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Flagged Reviews</a></li>
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Recent Reviews</a></li>
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Review Replies</a> (4)</li>
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">Deactivation Requests</a></li>
-                        <li <?php if ($page_title == 'xxxxxxxxxxxxxxxxx') { echo 'class="active"'; } ?>><a href="xxxxxxxxxxxxxxxxx.php">View Feedback</a></li>
+                        <li <?php if ($page_title == 'pub-datasettings-reviews') { echo 'class="active"'; } ?>><a href="pub-datasettings-reviews-home.php"> Reviews</a></li>
+                        
+                        <li <?php if ($page_title == 'pub-datasettings-feedback') { echo 'class="active"'; } ?>><a href="pub-datasettings-feedback.php">View Feedback</a></li>
                     </ul>
                 </li>
                 <li data-toggle="collapse" data-target="#nav-branding" class="collapsed"><a href="#">Branding <i class="icon-down-open-big"></i></a>
