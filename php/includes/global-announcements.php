@@ -20,10 +20,9 @@
                         </div>
                     </div>
                 </div>
-            </li>
-            <!-- <li class="col-xs-4">
+            </li><li class="col-xs-4">
                 <div class="global-announcement graphic"> <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a> <img src="../img/global-announcement/ga-classifieds-lg.png"  alt="classifieds global announcement" class="visible-lg"/> <img src="../img/global-announcement/ga-classifieds-md.png"  alt="classifieds global announcement" class="visible-md visible-xs-inline"/> <img src="../img/global-announcement/ga-classifieds-sm.png"  alt="classifieds global announcement" class="visible-sm"/></div>
-            </li>-->
+            </li>
             <li class="col-xs-4">
                 <div class="global-announcement" >
                     <div class="ga-header ga-color-2"> Telephone Service Disruption <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
@@ -33,10 +32,9 @@
                         </div>
                     </div>
                 </div>
-            </li>
-            <!-- <li class="col-xs-4">
+            </li><li class="col-xs-4">
                 <div class="global-announcement graphic"> <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a> <img src="../img/global-announcement/ga-3party-lg.png"  alt="3party global announcement" class="visible-lg"/> <img src="../img/global-announcement/ga-3party-md.png"  alt="3party global announcement" class="visible-md visible-xs-inline"/> <img src="../img/global-announcement/ga-3party-sm.png"  alt="3party global announcement" class="visible-sm"/></div>
-            </li>-->
+            </li>
             <li class="col-xs-4">
                 <div class="global-announcement" >
                     <div class="ga-header ga-color-3"> Spring Break Campus Hours <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
@@ -66,10 +64,9 @@
                         </div>
                     </div>
                 </div>
-            </li>
-            <!-- <li class="col-xs-4">
+            </li><li class="col-xs-4">
                 <div class="global-announcement graphic"> <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a> <img src="../img/global-announcement/ga-box-lg.png"  alt="box global announcement" class="visible-lg"/> <img src="../img/global-announcement/ga-box-md.png"  alt="box global announcement" class="visible-md visible-xs-inline"/> <img src="../img/global-announcement/ga-box-sm.png"  alt="box global announcement" class="visible-sm"/></div>
-            </li>-->
+            </li>
             <li class="col-xs-4">
                 <div class="global-announcement" >
                     <div class="ga-header ga-color-0"> Telephone Service Disruption <a href="#" class="close"> <i class="icon-cancel-1"></i> <span class="sr-only">close</span></a></div>
